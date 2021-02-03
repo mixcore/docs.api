@@ -1,0 +1,536 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions
+  commentId: T:Mix.Cms.Lib.Extensions.MixUrlHelperExtensions
+  id: MixUrlHelperExtensions
+  parent: Mix.Cms.Lib.Extensions
+  children:
+  - Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteAction(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String,System.String,System.Object)
+  - Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteContent(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String)
+  - Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteRouteUrl(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: MixUrlHelperExtensions
+  nameWithType: MixUrlHelperExtensions
+  fullName: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/Extensions/UrlHelperExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixUrlHelperExtensions
+    path: ../../mix.core/src/Mix.Cms.Lib/Extensions/UrlHelperExtensions.cs
+    startLine: 9
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.Extensions
+  summary: "\n<xref href=\"Microsoft.AspNetCore.Mvc.IUrlHelper\" data-throw-if-not-resolved=\"false\"></xref> extension methods.\n"
+  example: []
+  syntax:
+    content: public static class MixUrlHelperExtensions
+    content.vb: Public Module MixUrlHelperExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteAction(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String,System.String,System.Object)
+  commentId: M:Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteAction(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String,System.String,System.Object)
+  id: AbsoluteAction(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String,System.String,System.Object)
+  isExtensionMethod: true
+  parent: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions
+  langs:
+  - csharp
+  - vb
+  name: AbsoluteAction(IUrlHelper, String, String, Object)
+  nameWithType: MixUrlHelperExtensions.AbsoluteAction(IUrlHelper, String, String, Object)
+  fullName: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteAction(Microsoft.AspNetCore.Mvc.IUrlHelper, System.String, System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/Extensions/UrlHelperExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AbsoluteAction
+    path: ../../mix.core/src/Mix.Cms.Lib/Extensions/UrlHelperExtensions.cs
+    startLine: 20
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.Extensions
+  summary: "\nGenerates a fully qualified URL to an action method by using the specified action name, controller name and\nroute values.\n"
+  example: []
+  syntax:
+    content: public static string AbsoluteAction(this IUrlHelper url, string actionName, string controllerName, object routeValues = null)
+    parameters:
+    - id: url
+      type: Microsoft.AspNetCore.Mvc.IUrlHelper
+      description: The URL helper.
+    - id: actionName
+      type: System.String
+      description: The name of the action method.
+    - id: controllerName
+      type: System.String
+      description: The name of the controller.
+    - id: routeValues
+      type: System.Object
+      description: The route values.
+    return:
+      type: System.String
+      description: The absolute URL.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AbsoluteAction(url As IUrlHelper, actionName As String, controllerName As String, routeValues As Object = Nothing) As String
+  overload: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteAction*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteContent(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String)
+  commentId: M:Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteContent(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String)
+  id: AbsoluteContent(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String)
+  isExtensionMethod: true
+  parent: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions
+  langs:
+  - csharp
+  - vb
+  name: AbsoluteContent(IUrlHelper, String)
+  nameWithType: MixUrlHelperExtensions.AbsoluteContent(IUrlHelper, String)
+  fullName: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteContent(Microsoft.AspNetCore.Mvc.IUrlHelper, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/Extensions/UrlHelperExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AbsoluteContent
+    path: ../../mix.core/src/Mix.Cms.Lib/Extensions/UrlHelperExtensions.cs
+    startLine: 36
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.Extensions
+  summary: "\nGenerates a fully qualified URL to the specified content by using the specified content path. Converts a\nvirtual (relative) path to an application absolute path.\n"
+  example: []
+  syntax:
+    content: public static string AbsoluteContent(this IUrlHelper url, string contentPath)
+    parameters:
+    - id: url
+      type: Microsoft.AspNetCore.Mvc.IUrlHelper
+      description: The URL helper.
+    - id: contentPath
+      type: System.String
+      description: The content path.
+    return:
+      type: System.String
+      description: The absolute URL.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AbsoluteContent(url As IUrlHelper, contentPath As String) As String
+  overload: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteContent*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteRouteUrl(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String,System.Object)
+  commentId: M:Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteRouteUrl(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String,System.Object)
+  id: AbsoluteRouteUrl(Microsoft.AspNetCore.Mvc.IUrlHelper,System.String,System.Object)
+  isExtensionMethod: true
+  parent: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions
+  langs:
+  - csharp
+  - vb
+  name: AbsoluteRouteUrl(IUrlHelper, String, Object)
+  nameWithType: MixUrlHelperExtensions.AbsoluteRouteUrl(IUrlHelper, String, Object)
+  fullName: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteRouteUrl(Microsoft.AspNetCore.Mvc.IUrlHelper, System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/Extensions/UrlHelperExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AbsoluteRouteUrl
+    path: ../../mix.core/src/Mix.Cms.Lib/Extensions/UrlHelperExtensions.cs
+    startLine: 51
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.Extensions
+  summary: "\nGenerates a fully qualified URL to the specified route by using the route name and route values.\n"
+  example: []
+  syntax:
+    content: public static string AbsoluteRouteUrl(this IUrlHelper url, string routeName, object routeValues = null)
+    parameters:
+    - id: url
+      type: Microsoft.AspNetCore.Mvc.IUrlHelper
+      description: The URL helper.
+    - id: routeName
+      type: System.String
+      description: Name of the route.
+    - id: routeValues
+      type: System.Object
+      description: The route values.
+    return:
+      type: System.String
+      description: The absolute URL.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AbsoluteRouteUrl(url As IUrlHelper, routeName As String, routeValues As Object = Nothing) As String
+  overload: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteRouteUrl*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.AspNetCore.Mvc.IUrlHelper
+  commentId: T:Microsoft.AspNetCore.Mvc.IUrlHelper
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: IUrlHelper
+  nameWithType: IUrlHelper
+  fullName: Microsoft.AspNetCore.Mvc.IUrlHelper
+- uid: Mix.Cms.Lib.Extensions
+  commentId: N:Mix.Cms.Lib.Extensions
+  name: Mix.Cms.Lib.Extensions
+  nameWithType: Mix.Cms.Lib.Extensions
+  fullName: Mix.Cms.Lib.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteAction*
+  commentId: Overload:Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteAction
+  name: AbsoluteAction
+  nameWithType: MixUrlHelperExtensions.AbsoluteAction
+  fullName: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteAction
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteContent*
+  commentId: Overload:Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteContent
+  name: AbsoluteContent
+  nameWithType: MixUrlHelperExtensions.AbsoluteContent
+  fullName: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteContent
+- uid: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteRouteUrl*
+  commentId: Overload:Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteRouteUrl
+  name: AbsoluteRouteUrl
+  nameWithType: MixUrlHelperExtensions.AbsoluteRouteUrl
+  fullName: Mix.Cms.Lib.Extensions.MixUrlHelperExtensions.AbsoluteRouteUrl

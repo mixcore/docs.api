@@ -1,0 +1,655 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Cms.Lib.ViewModels.MixThemes.Helper
+  commentId: T:Mix.Cms.Lib.ViewModels.MixThemes.Helper
+  id: Helper
+  parent: Mix.Cms.Lib.ViewModels.MixThemes
+  children:
+  - Mix.Cms.Lib.ViewModels.MixThemes.Helper.ExportTheme(System.Int32,Mix.Cms.Lib.ViewModels.SiteStructureViewModel,System.String,System.String,System.String)
+  - Mix.Cms.Lib.ViewModels.MixThemes.Helper.InitTheme(System.String,System.String,Microsoft.AspNetCore.Http.IFormFile,Microsoft.AspNetCore.Http.IFormFile)
+  langs:
+  - csharp
+  - vb
+  name: Helper
+  nameWithType: Helper
+  fullName: Mix.Cms.Lib.ViewModels.MixThemes.Helper
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/MixThemes/Helper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Helper
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/MixThemes/Helper.cs
+    startLine: 13
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels.MixThemes
+  syntax:
+    content: public class Helper
+    content.vb: Public Class Helper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Cms.Lib.ViewModels.MixThemes.Helper.ExportTheme(System.Int32,Mix.Cms.Lib.ViewModels.SiteStructureViewModel,System.String,System.String,System.String)
+  commentId: M:Mix.Cms.Lib.ViewModels.MixThemes.Helper.ExportTheme(System.Int32,Mix.Cms.Lib.ViewModels.SiteStructureViewModel,System.String,System.String,System.String)
+  id: ExportTheme(System.Int32,Mix.Cms.Lib.ViewModels.SiteStructureViewModel,System.String,System.String,System.String)
+  parent: Mix.Cms.Lib.ViewModels.MixThemes.Helper
+  langs:
+  - csharp
+  - vb
+  name: ExportTheme(Int32, SiteStructureViewModel, String, String, String)
+  nameWithType: Helper.ExportTheme(Int32, SiteStructureViewModel, String, String, String)
+  fullName: Mix.Cms.Lib.ViewModels.MixThemes.Helper.ExportTheme(System.Int32, Mix.Cms.Lib.ViewModels.SiteStructureViewModel, System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/MixThemes/Helper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExportTheme
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/MixThemes/Helper.cs
+    startLine: 15
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels.MixThemes
+  syntax:
+    content: public static Task<RepositoryResponse<string>> ExportTheme(int id, SiteStructureViewModel data, string culture, string scheme, string host)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: data
+      type: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+    - id: culture
+      type: System.String
+    - id: scheme
+      type: System.String
+    - id: host
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{System.String}}
+    content.vb: Public Shared Function ExportTheme(id As Integer, data As SiteStructureViewModel, culture As String, scheme As String, host As String) As Task(Of RepositoryResponse(Of String))
+  overload: Mix.Cms.Lib.ViewModels.MixThemes.Helper.ExportTheme*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Cms.Lib.ViewModels.MixThemes.Helper.InitTheme(System.String,System.String,Microsoft.AspNetCore.Http.IFormFile,Microsoft.AspNetCore.Http.IFormFile)
+  commentId: M:Mix.Cms.Lib.ViewModels.MixThemes.Helper.InitTheme(System.String,System.String,Microsoft.AspNetCore.Http.IFormFile,Microsoft.AspNetCore.Http.IFormFile)
+  id: InitTheme(System.String,System.String,Microsoft.AspNetCore.Http.IFormFile,Microsoft.AspNetCore.Http.IFormFile)
+  parent: Mix.Cms.Lib.ViewModels.MixThemes.Helper
+  langs:
+  - csharp
+  - vb
+  name: InitTheme(String, String, IFormFile, IFormFile)
+  nameWithType: Helper.InitTheme(String, String, IFormFile, IFormFile)
+  fullName: Mix.Cms.Lib.ViewModels.MixThemes.Helper.InitTheme(System.String, System.String, Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.IFormFile)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/MixThemes/Helper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitTheme
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/MixThemes/Helper.cs
+    startLine: 80
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels.MixThemes
+  syntax:
+    content: public static Task<RepositoryResponse<InitViewModel>> InitTheme(string model, string culture, IFormFile assets, IFormFile theme)
+    parameters:
+    - id: model
+      type: System.String
+    - id: culture
+      type: System.String
+    - id: assets
+      type: Microsoft.AspNetCore.Http.IFormFile
+    - id: theme
+      type: Microsoft.AspNetCore.Http.IFormFile
+    return:
+      type: System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel}}
+    content.vb: Public Shared Function InitTheme(model As String, culture As String, assets As IFormFile, theme As IFormFile) As Task(Of RepositoryResponse(Of InitViewModel))
+  overload: Mix.Cms.Lib.ViewModels.MixThemes.Helper.InitTheme*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Mix.Cms.Lib.ViewModels.MixThemes
+  commentId: N:Mix.Cms.Lib.ViewModels.MixThemes
+  name: Mix.Cms.Lib.ViewModels.MixThemes
+  nameWithType: Mix.Cms.Lib.ViewModels.MixThemes
+  fullName: Mix.Cms.Lib.ViewModels.MixThemes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Cms.Lib.ViewModels.MixThemes.Helper.ExportTheme*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.MixThemes.Helper.ExportTheme
+  name: ExportTheme
+  nameWithType: Helper.ExportTheme
+  fullName: Mix.Cms.Lib.ViewModels.MixThemes.Helper.ExportTheme
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  commentId: T:Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  parent: Mix.Cms.Lib.ViewModels
+  name: SiteStructureViewModel
+  nameWithType: SiteStructureViewModel
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{System.String}}
+  commentId: T:System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RepositoryResponse<String>>
+  nameWithType: Task<RepositoryResponse<String>>
+  fullName: System.Threading.Tasks.Task<Mix.Domain.Core.ViewModels.RepositoryResponse<System.String>>
+  nameWithType.vb: Task(Of RepositoryResponse(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of Mix.Domain.Core.ViewModels.RepositoryResponse(Of System.String))
+  name.vb: Task(Of RepositoryResponse(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels
+  commentId: N:Mix.Cms.Lib.ViewModels
+  name: Mix.Cms.Lib.ViewModels
+  nameWithType: Mix.Cms.Lib.ViewModels
+  fullName: Mix.Cms.Lib.ViewModels
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.Cms.Lib.ViewModels.MixThemes.Helper.InitTheme*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.MixThemes.Helper.InitTheme
+  name: InitTheme
+  nameWithType: Helper.InitTheme
+  fullName: Mix.Cms.Lib.ViewModels.MixThemes.Helper.InitTheme
+- uid: Microsoft.AspNetCore.Http.IFormFile
+  commentId: T:Microsoft.AspNetCore.Http.IFormFile
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: IFormFile
+  nameWithType: IFormFile
+  fullName: Microsoft.AspNetCore.Http.IFormFile
+- uid: System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel}}
+  commentId: T:System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RepositoryResponse<InitViewModel>>
+  nameWithType: Task<RepositoryResponse<InitViewModel>>
+  fullName: System.Threading.Tasks.Task<Mix.Domain.Core.ViewModels.RepositoryResponse<Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel>>
+  nameWithType.vb: Task(Of RepositoryResponse(Of InitViewModel))
+  fullName.vb: System.Threading.Tasks.Task(Of Mix.Domain.Core.ViewModels.RepositoryResponse(Of Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel))
+  name.vb: Task(Of RepositoryResponse(Of InitViewModel))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel
+    name: InitViewModel
+    nameWithType: InitViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel
+    name: InitViewModel
+    nameWithType: InitViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixThemes.InitViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http

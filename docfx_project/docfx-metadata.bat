@@ -1,0 +1,1 @@
+docfx metadata "../../mix.core/src/MixCore.sln"

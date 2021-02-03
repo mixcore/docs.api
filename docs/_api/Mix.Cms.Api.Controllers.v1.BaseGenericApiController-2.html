@@ -1,0 +1,2080 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseGenericApiController&lt;TDbContext, TModel&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseGenericApiController&lt;TDbContext, TModel&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2">
+  
+  
+  <h1 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2" class="text-break">Class BaseGenericApiController&lt;TDbContext, TModel&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase</span></div>
+    <div class="level2"><span class="xref">Microsoft.AspNetCore.Mvc.Controller</span></div>
+    <div class="level3"><span class="xref">BaseGenericApiController&lt;TDbContext, TModel&gt;</span></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiAttributeFieldController.html">ApiAttributeFieldController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.html">ApiAttributeSetController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiConfigurationController.html">ApiConfigurationController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiCultureController.html">ApiCultureController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiMediaController.html">ApiMediaController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiModuleController.html">ApiModuleController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiModuleDataController.html">ApiModuleDataController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiModulePostController.html">ApiModulePostController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiPagePostController.html">ApiPagePostController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiPermissionController.html">ApiPermissionController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiTemplateController.html">ApiTemplateController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiThemeController.html">ApiThemeController</a></div>
+      <div class="level4"><a class="xref" href="Mix.Cms.Api.Controllers.v1.ApiUrlAliasController.html">ApiUrlAliasController</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IActionFilter</span></div>
+    <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter</span></div>
+    <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.View()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.View(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.View(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.View(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.PartialView()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.PartialView(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.PartialView(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.PartialView(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.ViewComponent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.ViewComponent(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.ViewComponent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.ViewComponent(System.Type, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.Json(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.Json(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext, Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.ViewData</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.TempData</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Controller.ViewBag</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.StatusCode(System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.StatusCode(System.Int32, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Content(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Content(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Content(System.String, System.String, System.Text.Encoding)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Content(System.String, Microsoft.Net.Http.Headers.MediaTypeHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.NoContent()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Ok()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Ok(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Redirect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectPermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectPreserveMethod(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectPermanentPreserveMethod(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.LocalRedirect(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.LocalRedirectPermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.LocalRedirectPreserveMethod(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.LocalRedirectPermanentPreserveMethod(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToAction()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToAction(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToAction(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToAction(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToAction(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToAction(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToAction(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToActionPreserveMethod(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToActionPermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToActionPermanent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToActionPermanent(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToActionPermanent(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToActionPermanent(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToActionPermanent(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToActionPermanentPreserveMethod(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoute(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoute(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoute(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoute(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoute(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoutePreserveMethod(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoutePermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoutePermanent(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoutePermanent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoutePermanent(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoutePermanent(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToRoutePermanentPreserveMethod(System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPage(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPage(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPage(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPage(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPage(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPage(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPagePermanent(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPagePermanent(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPagePermanent(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPagePermanent(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPagePermanent(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPagePreserveMethod(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RedirectToPagePermanentPreserveMethod(System.String, System.String, System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.Byte[], System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.Byte[], System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.Byte[], System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.Byte[], System.String, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.Byte[], System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.Byte[], System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.Byte[], System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.Byte[], System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.IO.Stream, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.IO.Stream, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.IO.Stream, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.IO.Stream, System.String, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.IO.Stream, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.IO.Stream, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.IO.Stream, System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.IO.Stream, System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.String, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.String, System.String, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.String, System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.File(System.String, System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.PhysicalFile(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.PhysicalFile(System.String, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.PhysicalFile(System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.PhysicalFile(System.String, System.String, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.PhysicalFile(System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.PhysicalFile(System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.PhysicalFile(System.String, System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.PhysicalFile(System.String, System.String, System.String, System.Nullable&lt;System.DateTimeOffset&gt;, Microsoft.Net.Http.Headers.EntityTagHeaderValue, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Unauthorized()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Unauthorized(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.NotFound()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.NotFound(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.BadRequest(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.UnprocessableEntity()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.UnprocessableEntity(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.UnprocessableEntity(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Conflict()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Conflict(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Conflict(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Problem(System.String, System.String, System.Nullable&lt;System.Int32&gt;, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ValidationProblem(Microsoft.AspNetCore.Mvc.ValidationProblemDetails)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ValidationProblem(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ValidationProblem()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ValidationProblem(System.String, System.String, System.Nullable&lt;System.Int32&gt;, System.String, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Created(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Created(System.Uri, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.CreatedAtAction(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.CreatedAtAction(System.String, System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.CreatedAtAction(System.String, System.String, System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.CreatedAtRoute(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.CreatedAtRoute(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.CreatedAtRoute(System.String, System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Accepted()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Accepted(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Accepted(System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Accepted(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Accepted(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Accepted(System.Uri, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtAction(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtAction(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtAction(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtAction(System.String, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtAction(System.String, System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtAction(System.String, System.String, System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtRoute(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtRoute(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtRoute(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtRoute(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.AcceptedAtRoute(System.String, System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Challenge()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Challenge(System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Challenge(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Challenge(Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Forbid()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Forbid(System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Forbid(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Forbid(Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.SignIn(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.SignIn(System.Security.Claims.ClaimsPrincipal, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.SignIn(System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.SignIn(System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.SignOut()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.SignOut(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.SignOut(System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.SignOut(Microsoft.AspNetCore.Authentication.AuthenticationProperties, System.String[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync&lt;TModel&gt;(TModel)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, System.Linq.Expressions.Expression&lt;System.Func&lt;TModel, System.Object&gt;&gt;[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, System.Func&lt;Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Boolean&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Linq.Expressions.Expression&lt;System.Func&lt;TModel, System.Object&gt;&gt;[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync&lt;TModel&gt;(TModel, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Func&lt;Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Boolean&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync(System.Object, System.Type, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryUpdateModelAsync(System.Object, System.Type, System.String, Microsoft.AspNetCore.Mvc.ModelBinding.IValueProvider, System.Func&lt;Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata, System.Boolean&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryValidateModel(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.TryValidateModel(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.HttpContext</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Request</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Response</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.RouteData</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ModelState</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ControllerContext</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.MetadataProvider</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ModelBinderFactory</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.Url</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ObjectValidator</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.ProblemDetailsFactory</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.ControllerBase.User</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Api.Controllers.v1.html">Mix.Cms.Api.Controllers.v1</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Cms.Api.dll</h6>
+  <h5 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BaseGenericApiController&lt;TDbContext, TModel&gt; : Controller, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable where TDbContext : DbContext where TModel : class</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDbContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__ctor__0_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_AspNetCore_SignalR_IHubContext_Mix_Cms_Service_SignalR_Hubs_PortalHub__.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.%23ctor(%600%2CMicrosoft.Extensions.Caching.Memory.IMemoryCache%2CMicrosoft.AspNetCore.SignalR.IHubContext%7BMix.Cms.Service.SignalR.Hubs.PortalHub%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L72">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__ctor_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.#ctor*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__ctor__0_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_AspNetCore_SignalR_IHubContext_Mix_Cms_Service_SignalR_Hubs_PortalHub__" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.#ctor(`0,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.AspNetCore.SignalR.IHubContext{Mix.Cms.Service.SignalR.Hubs.PortalHub})">BaseGenericApiController(TDbContext, IMemoryCache, IHubContext&lt;PortalHub&gt;)</h4>
+  <div class="markdown level1 summary"><p>The repo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseGenericApiController(TDbContext context, IMemoryCache memoryCache, IHubContext&lt;PortalHub&gt; hubContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Caching.Memory.IMemoryCache</span></td>
+        <td><span class="parametername">memoryCache</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.SignalR.IHubContext</span>&lt;<a class="xref" href="Mix.Cms.Service.SignalR.Hubs.PortalHub.html">PortalHub</a>&gt;</td>
+        <td><span class="parametername">hubContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__context.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602._context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L34">View Source</a>
+  </span>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__context" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._context">_context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static TDbContext _context</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__domain.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602._domain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L64">View Source</a>
+  </span>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__domain" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._domain">_domain</h4>
+  <div class="markdown level1 summary"><p>The domain</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _domain</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__forbidden.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602._forbidden%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L45">View Source</a>
+  </span>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__forbidden" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._forbidden">_forbidden</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _forbidden</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__hubContext.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602._hubContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L36">View Source</a>
+  </span>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__hubContext" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._hubContext">_hubContext</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IHubContext&lt;PortalHub&gt; _hubContext</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.SignalR.IHubContext</span>&lt;<a class="xref" href="Mix.Cms.Service.SignalR.Hubs.PortalHub.html">PortalHub</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__lang.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602._lang%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L43">View Source</a>
+  </span>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__lang" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._lang">_lang</h4>
+  <div class="markdown level1 summary"><p>The language</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string _lang</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__memoryCache.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602._memoryCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L38">View Source</a>
+  </span>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__memoryCache" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._memoryCache">_memoryCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IMemoryCache _memoryCache</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Caching.Memory.IMemoryCache</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__transaction.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602._transaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L35">View Source</a>
+  </span>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__transaction" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._transaction">_transaction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static IDbContextTransaction _transaction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__forbiddenPortal.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602._forbiddenPortal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L47">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__forbiddenPortal_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._forbiddenPortal*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2__forbiddenPortal" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2._forbiddenPortal">_forbiddenPortal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _forbiddenPortal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_AlertAsync_System_String_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.AlertAsync(System.String%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L340">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_AlertAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.AlertAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_AlertAsync_System_String_System_Int32_System_String_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.AlertAsync(System.String,System.Int32,System.String)">AlertAsync(String, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AlertAsync(string action, int status, string message = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteAsync__1___0_System_Boolean_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.DeleteAsync%60%601(%60%600%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L174">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.DeleteAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteAsync__1___0_System_Boolean_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.DeleteAsync``1(``0,System.Boolean)">DeleteAsync&lt;TView&gt;(TView, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;TModel&gt;&gt; DeleteAsync&lt;TView&gt;(TView data, bool isDeleteRelated = false)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TView</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDeleteRelated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteAsync__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.DeleteAsync%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L162">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.DeleteAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteAsync__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Boolean_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.DeleteAsync``1(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Boolean)">DeleteAsync&lt;TView&gt;(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;TModel&gt;&gt; DeleteAsync&lt;TView&gt;(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, bool isDeleteRelated = false)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isDeleteRelated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteListAsync__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.DeleteListAsync%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L186">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteListAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.DeleteListAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_DeleteListAsync__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Boolean_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.DeleteListAsync``1(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Boolean)">DeleteListAsync&lt;TView&gt;(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;List&lt;TModel&gt;&gt;&gt; DeleteListAsync&lt;TView&gt;(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, bool isRemoveRelatedModel = false)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isRemoveRelatedModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TModel&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ExportListAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___Mix_Cms_Lib_Enums_MixStructureType_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.ExportListAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CMix.Cms.Lib.Enums.MixStructureType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L194">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ExportListAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.ExportListAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ExportListAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___Mix_Cms_Lib_Enums_MixStructureType_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.ExportListAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Cms.Lib.Enums.MixStructureType)">ExportListAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, MixStructureType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;FileViewModel&gt;&gt; ExportListAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, MixStructureType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixStructureType.html">MixStructureType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">Mix.Services.FileViewModel</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetLanguage.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.GetLanguage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L432">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetLanguage_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.GetLanguage*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetLanguage" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.GetLanguage">GetLanguage()</h4>
+  <div class="markdown level1 summary"><p>Gets the language.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void GetLanguage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetListAsync__1_Mix_Domain_Core_ViewModels_RequestPaging_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____1_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.GetListAsync%60%601(Mix.Domain.Core.ViewModels.RequestPaging%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L224">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetListAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.GetListAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetListAsync__1_Mix_Domain_Core_ViewModels_RequestPaging_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____1_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.GetListAsync``1(Mix.Domain.Core.ViewModels.RequestPaging,System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`1)">GetListAsync&lt;TView&gt;(RequestPaging, Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;PaginationModel&lt;TView&gt;&gt;&gt; GetListAsync&lt;TView&gt;(RequestPaging request, Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate = null, TModel model = null)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.RequestPaging</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.PaginationModel</span>&lt;TView&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetSingleAsync__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____1_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.GetSingleAsync%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L138">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetSingleAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.GetSingleAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetSingleAsync__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____1_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.GetSingleAsync``1(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`1)">GetSingleAsync&lt;TView&gt;(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;TView&gt;&gt; GetSingleAsync&lt;TView&gt;(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate = null, TModel model = null)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;TView&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetSingleAsync__1_System_String_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____1_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.GetSingleAsync%60%601(System.String%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L108">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetSingleAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.GetSingleAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_GetSingleAsync__1_System_String_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____1_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.GetSingleAsync``1(System.String,System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`1)">GetSingleAsync&lt;TView&gt;(String, Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;TView&gt;&gt; GetSingleAsync&lt;TView&gt;(string key, Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate = null, TModel model = null)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;TView&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_Log_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.Log(System.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L366">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_Log_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.Log*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_Log_System_Object_System_Object_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.Log(System.Object,System.Object)">Log(Object, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log(dynamic request, dynamic response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_OnActionExecuting_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L85">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_OnActionExecuting_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.OnActionExecuting*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_OnActionExecuting_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">OnActionExecuting(ActionExecutingContext)</h4>
+  <div class="markdown level1 summary"><p>Called before the action method is invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnActionExecuting(ActionExecutingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The action executing context.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.AspNetCore.Mvc.Controller.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ParseQuery_Mix_Domain_Core_ViewModels_RequestPaging_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.ParseQuery(Mix.Domain.Core.ViewModels.RequestPaging)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L424">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ParseQuery_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.ParseQuery*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ParseQuery_Mix_Domain_Core_ViewModels_RequestPaging_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.ParseQuery(Mix.Domain.Core.ViewModels.RequestPaging)">ParseQuery(RequestPaging)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected QueryString ParseQuery(RequestPaging request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.RequestPaging</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.QueryString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ParseRequestPagingDate_Mix_Domain_Core_ViewModels_RequestPaging_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.ParseRequestPagingDate(Mix.Domain.Core.ViewModels.RequestPaging)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L410">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ParseRequestPagingDate_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.ParseRequestPagingDate*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_ParseRequestPagingDate_Mix_Domain_Core_ViewModels_RequestPaging_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.ParseRequestPagingDate(Mix.Domain.Core.ViewModels.RequestPaging)">ParseRequestPagingDate(RequestPaging)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ParseRequestPagingDate(RequestPaging request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.RequestPaging</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveAsync__1___0_System_Boolean_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.SaveAsync%60%601(%60%600%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L246">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveAsync__1___0_System_Boolean_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveAsync``1(``0,System.Boolean)">SaveAsync&lt;TView&gt;(TView, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;TView&gt;&gt; SaveAsync&lt;TView&gt;(TView vm, bool isSaveSubModel)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TView</span></td>
+        <td><span class="parametername">vm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSaveSubModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;TView&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveAsync__1_Newtonsoft_Json_Linq_JObject_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.SaveAsync%60%601(Newtonsoft.Json.Linq.JObject%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L258">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveAsync__1_Newtonsoft_Json_Linq_JObject_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveAsync``1(Newtonsoft.Json.Linq.JObject,System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})">SaveAsync&lt;TView&gt;(JObject, Expression&lt;Func&lt;TModel, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;TModel&gt;&gt; SaveAsync&lt;TView&gt;(JObject obj, Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.Linq.JObject</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveEncrypt_Mix_Domain_Core_ViewModels_RequestEncrypted_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.SaveEncrypt(Mix.Domain.Core.ViewModels.RequestEncrypted)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L319">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveEncrypt_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveEncrypt*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveEncrypt_Mix_Domain_Core_ViewModels_RequestEncrypted_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveEncrypt(Mix.Domain.Core.ViewModels.RequestEncrypted)">SaveEncrypt(RequestEncrypted)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JObject SaveEncrypt([FromBody] RequestEncrypted request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.RequestEncrypted</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.Linq.JObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveList__1_System_Collections_Generic_List___0__System_Boolean_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.SaveList%60%601(System.Collections.Generic.List%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L296">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveList_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveList*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveList__1_System_Collections_Generic_List___0__System_Boolean_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveList``1(System.Collections.Generic.List{``0},System.Boolean)">SaveList&lt;TView&gt;(List&lt;TView&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RepositoryResponse&lt;List&lt;TView&gt;&gt; SaveList&lt;TView&gt;(List&lt;TView&gt; lstVm, bool isSaveSubModel)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TView&gt;</td>
+        <td><span class="parametername">lstVm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSaveSubModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TView&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveListAsync__1_System_Collections_Generic_List___0__System_Boolean_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602.SaveListAsync%60%601(System.Collections.Generic.List%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L288">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveListAsync_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveListAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2_SaveListAsync__1_System_Collections_Generic_List___0__System_Boolean_" data-uid="Mix.Cms.Api.Controllers.v1.BaseGenericApiController`2.SaveListAsync``1(System.Collections.Generic.List{``0},System.Boolean)">SaveListAsync&lt;TView&gt;(List&lt;TView&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;RepositoryResponse&lt;List&lt;TView&gt;&gt;&gt; SaveListAsync&lt;TView&gt;(List&lt;TView&gt; lstVm, bool isSaveSubModel)
+
+    where TView : ViewModelBase&lt;TDbContext, TModel, TView&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;TView&gt;</td>
+        <td><span class="parametername">lstVm</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSaveSubModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TView&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_BaseGenericApiController_2.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.BaseGenericApiController%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api/Controllers/v1/BaseGenericApiController.cs/#L30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

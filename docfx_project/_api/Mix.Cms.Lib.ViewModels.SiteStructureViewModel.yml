@@ -1,0 +1,2031 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  commentId: T:Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  id: SiteStructureViewModel
+  parent: Mix.Cms.Lib.ViewModels
+  children:
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.#ctor
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSetDatas
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSets
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Configurations
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ExportSelectedItemsAsync
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ImportAsync(System.String,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.InitAsync(System.String)
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Languages
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModuleDatas
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModulePostNavs
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Modules
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PageModuleNavs
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PagePostNavs
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Pages
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Posts
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.RelatedData
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Specificulture
+  - Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ThemeName
+  langs:
+  - csharp
+  - vb
+  name: SiteStructureViewModel
+  nameWithType: SiteStructureViewModel
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SiteStructureViewModel
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 15
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: public class SiteStructureViewModel
+    content.vb: Public Class SiteStructureViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Pages
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Pages
+  id: Pages
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: Pages
+  nameWithType: SiteStructureViewModel.Pages
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Pages
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Pages
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 17
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("pages")]
+
+      public List<ImportViewModel> Pages { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("pages")>
+
+      Public Property Pages As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Pages*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pages
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Modules
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Modules
+  id: Modules
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: Modules
+  nameWithType: SiteStructureViewModel.Modules
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Modules
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Modules
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 20
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("modules")]
+
+      public List<ImportViewModel> Modules { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("modules")>
+
+      Public Property Modules As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Modules*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: modules
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSets
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSets
+  id: AttributeSets
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: AttributeSets
+  nameWithType: SiteStructureViewModel.AttributeSets
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSets
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AttributeSets
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 23
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("attributeSets")]
+
+      public List<ImportViewModel> AttributeSets { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("attributeSets")>
+
+      Public Property AttributeSets As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSets*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: attributeSets
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Configurations
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Configurations
+  id: Configurations
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: Configurations
+  nameWithType: SiteStructureViewModel.Configurations
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Configurations
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Configurations
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 26
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("configurations")]
+
+      public List<ImportViewModel> Configurations { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("configurations")>
+
+      Public Property Configurations As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Configurations*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: configurations
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Languages
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Languages
+  id: Languages
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: Languages
+  nameWithType: SiteStructureViewModel.Languages
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Languages
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Languages
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 29
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("languages")]
+
+      public List<ImportViewModel> Languages { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("languages")>
+
+      Public Property Languages As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Languages*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: languages
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.RelatedData
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.RelatedData
+  id: RelatedData
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: RelatedData
+  nameWithType: SiteStructureViewModel.RelatedData
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.RelatedData
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: RelatedData
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 32
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("relatedData")]
+
+      public List<ImportViewModel> RelatedData { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("relatedData")>
+
+      Public Property RelatedData As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.RelatedData*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: relatedData
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PagePostNavs
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PagePostNavs
+  id: PagePostNavs
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: PagePostNavs
+  nameWithType: SiteStructureViewModel.PagePostNavs
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PagePostNavs
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PagePostNavs
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 35
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("pagePostNavs")]
+
+      public List<ImportViewModel> PagePostNavs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("pagePostNavs")>
+
+      Public Property PagePostNavs As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PagePostNavs*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pagePostNavs
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PageModuleNavs
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PageModuleNavs
+  id: PageModuleNavs
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: PageModuleNavs
+  nameWithType: SiteStructureViewModel.PageModuleNavs
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PageModuleNavs
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PageModuleNavs
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 38
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("pageModuleNavs")]
+
+      public List<ImportViewModel> PageModuleNavs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("pageModuleNavs")>
+
+      Public Property PageModuleNavs As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PageModuleNavs*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pageModuleNavs
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModulePostNavs
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModulePostNavs
+  id: ModulePostNavs
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: ModulePostNavs
+  nameWithType: SiteStructureViewModel.ModulePostNavs
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModulePostNavs
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ModulePostNavs
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 41
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("modulePostNavs")]
+
+      public List<ImportViewModel> ModulePostNavs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("modulePostNavs")>
+
+      Public Property ModulePostNavs As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModulePostNavs*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: modulePostNavs
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Posts
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Posts
+  id: Posts
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: Posts
+  nameWithType: SiteStructureViewModel.Posts
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Posts
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Posts
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 44
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("posts")]
+
+      public List<ImportViewModel> Posts { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("posts")>
+
+      Public Property Posts As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Posts*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: posts
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModuleDatas
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModuleDatas
+  id: ModuleDatas
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: ModuleDatas
+  nameWithType: SiteStructureViewModel.ModuleDatas
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModuleDatas
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ModuleDatas
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 47
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("moduleDatas")]
+
+      public List<ImportViewModel> ModuleDatas { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("moduleDatas")>
+
+      Public Property ModuleDatas As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModuleDatas*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: moduleDatas
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSetDatas
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSetDatas
+  id: AttributeSetDatas
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: AttributeSetDatas
+  nameWithType: SiteStructureViewModel.AttributeSetDatas
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSetDatas
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AttributeSetDatas
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 50
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("attributeSetDatas")]
+
+      public List<ImportViewModel> AttributeSetDatas { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel}
+    content.vb: >-
+      <JsonProperty("attributeSetDatas")>
+
+      Public Property AttributeSetDatas As List(Of ImportViewModel)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSetDatas*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: attributeSetDatas
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Specificulture
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Specificulture
+  id: Specificulture
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: Specificulture
+  nameWithType: SiteStructureViewModel.Specificulture
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Specificulture
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Specificulture
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 53
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("specificulture")]
+
+      public string Specificulture { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("specificulture")>
+
+      Public Property Specificulture As String
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Specificulture*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: specificulture
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ThemeName
+  commentId: P:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ThemeName
+  id: ThemeName
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: ThemeName
+  nameWithType: SiteStructureViewModel.ThemeName
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ThemeName
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ThemeName
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 56
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: >-
+      [JsonProperty("themeName")]
+
+      public string ThemeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("themeName")>
+
+      Public Property ThemeName As String
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ThemeName*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: themeName
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.#ctor
+  commentId: M:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.#ctor
+  id: '#ctor'
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: SiteStructureViewModel()
+  nameWithType: SiteStructureViewModel.SiteStructureViewModel()
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.SiteStructureViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 59
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: public SiteStructureViewModel()
+    content.vb: Public Sub New
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.InitAsync(System.String)
+  commentId: M:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.InitAsync(System.String)
+  id: InitAsync(System.String)
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitAsync(String)
+  nameWithType: SiteStructureViewModel.InitAsync(String)
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.InitAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitAsync
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 63
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: public Task InitAsync(string culture)
+    parameters:
+    - id: culture
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function InitAsync(culture As String) As Task
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.InitAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ExportSelectedItemsAsync
+  commentId: M:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ExportSelectedItemsAsync
+  id: ExportSelectedItemsAsync
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: ExportSelectedItemsAsync()
+  nameWithType: SiteStructureViewModel.ExportSelectedItemsAsync()
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ExportSelectedItemsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExportSelectedItemsAsync
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 72
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: public RepositoryResponse<string> ExportSelectedItemsAsync()
+    return:
+      type: Mix.Domain.Core.ViewModels.RepositoryResponse{System.String}
+    content.vb: Public Function ExportSelectedItemsAsync As RepositoryResponse(Of String)
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ExportSelectedItemsAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ImportAsync(System.String,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  commentId: M:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ImportAsync(System.String,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  id: ImportAsync(System.String,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  parent: Mix.Cms.Lib.ViewModels.SiteStructureViewModel
+  langs:
+  - csharp
+  - vb
+  name: ImportAsync(String, MixCmsContext, IDbContextTransaction)
+  nameWithType: SiteStructureViewModel.ImportAsync(String, MixCmsContext, IDbContextTransaction)
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ImportAsync(System.String, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ImportAsync
+    path: ../../mix.core/src/Mix.Cms.Lib/ViewModels/SiteStructureViewModel.cs
+    startLine: 308
+  assemblies:
+  - Mix.Cms.Lib
+  namespace: Mix.Cms.Lib.ViewModels
+  syntax:
+    content: public Task<RepositoryResponse<bool>> ImportAsync(string destCulture, MixCmsContext _context = null, IDbContextTransaction _transaction = null)
+    parameters:
+    - id: destCulture
+      type: System.String
+    - id: _context
+      type: Mix.Cms.Lib.Models.Cms.MixCmsContext
+    - id: _transaction
+      type: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+    return:
+      type: System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{System.Boolean}}
+    content.vb: Public Function ImportAsync(destCulture As String, _context As MixCmsContext = Nothing, _transaction As IDbContextTransaction = Nothing) As Task(Of RepositoryResponse(Of Boolean))
+  overload: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ImportAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Cms.Lib.ViewModels
+  commentId: N:Mix.Cms.Lib.ViewModels
+  name: Mix.Cms.Lib.ViewModels
+  nameWithType: Mix.Cms.Lib.ViewModels
+  fullName: Mix.Cms.Lib.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Pages*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Pages
+  name: Pages
+  nameWithType: SiteStructureViewModel.Pages
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Pages
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixPages.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Modules*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Modules
+  name: Modules
+  nameWithType: SiteStructureViewModel.Modules
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Modules
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixModules.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSets*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSets
+  name: AttributeSets
+  nameWithType: SiteStructureViewModel.AttributeSets
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSets
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixAttributeSets.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Configurations*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Configurations
+  name: Configurations
+  nameWithType: SiteStructureViewModel.Configurations
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Configurations
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixConfigurations.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Languages*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Languages
+  name: Languages
+  nameWithType: SiteStructureViewModel.Languages
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Languages
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixLanguages.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.RelatedData*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.RelatedData
+  name: RelatedData
+  nameWithType: SiteStructureViewModel.RelatedData
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.RelatedData
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PagePostNavs*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PagePostNavs
+  name: PagePostNavs
+  nameWithType: SiteStructureViewModel.PagePostNavs
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PagePostNavs
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixPagePosts.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PageModuleNavs*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PageModuleNavs
+  name: PageModuleNavs
+  nameWithType: SiteStructureViewModel.PageModuleNavs
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.PageModuleNavs
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixPageModules.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModulePostNavs*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModulePostNavs
+  name: ModulePostNavs
+  nameWithType: SiteStructureViewModel.ModulePostNavs
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModulePostNavs
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixModulePosts.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Posts*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Posts
+  name: Posts
+  nameWithType: SiteStructureViewModel.Posts
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Posts
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixPosts.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModuleDatas*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModuleDatas
+  name: ModuleDatas
+  nameWithType: SiteStructureViewModel.ModuleDatas
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ModuleDatas
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixModuleDatas.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSetDatas*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSetDatas
+  name: AttributeSetDatas
+  nameWithType: SiteStructureViewModel.AttributeSetDatas
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.AttributeSetDatas
+- uid: System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel}
+  commentId: T:System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ImportViewModel>
+  nameWithType: List<ImportViewModel>
+  fullName: System.Collections.Generic.List<Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel>
+  nameWithType.vb: List(Of ImportViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel)
+  name.vb: List(Of ImportViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel
+    name: ImportViewModel
+    nameWithType: ImportViewModel
+    fullName: Mix.Cms.Lib.ViewModels.MixAttributeSetDatas.ImportViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Specificulture*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Specificulture
+  name: Specificulture
+  nameWithType: SiteStructureViewModel.Specificulture
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.Specificulture
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ThemeName*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ThemeName
+  name: ThemeName
+  nameWithType: SiteStructureViewModel.ThemeName
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ThemeName
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.#ctor*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.#ctor
+  name: SiteStructureViewModel
+  nameWithType: SiteStructureViewModel.SiteStructureViewModel
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.SiteStructureViewModel
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.InitAsync*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.InitAsync
+  name: InitAsync
+  nameWithType: SiteStructureViewModel.InitAsync
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.InitAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ExportSelectedItemsAsync*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ExportSelectedItemsAsync
+  name: ExportSelectedItemsAsync
+  nameWithType: SiteStructureViewModel.ExportSelectedItemsAsync
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ExportSelectedItemsAsync
+- uid: Mix.Domain.Core.ViewModels.RepositoryResponse{System.String}
+  commentId: T:Mix.Domain.Core.ViewModels.RepositoryResponse{System.String}
+  parent: Mix.Domain.Core.ViewModels
+  definition: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+  name: RepositoryResponse<String>
+  nameWithType: RepositoryResponse<String>
+  fullName: Mix.Domain.Core.ViewModels.RepositoryResponse<System.String>
+  nameWithType.vb: RepositoryResponse(Of String)
+  fullName.vb: Mix.Domain.Core.ViewModels.RepositoryResponse(Of System.String)
+  name.vb: RepositoryResponse(Of String)
+  spec.csharp:
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+  commentId: T:Mix.Domain.Core.ViewModels.RepositoryResponse`1
+  isExternal: true
+  name: RepositoryResponse<TResult>
+  nameWithType: RepositoryResponse<TResult>
+  fullName: Mix.Domain.Core.ViewModels.RepositoryResponse<TResult>
+  nameWithType.vb: RepositoryResponse(Of TResult)
+  fullName.vb: Mix.Domain.Core.ViewModels.RepositoryResponse(Of TResult)
+  name.vb: RepositoryResponse(Of TResult)
+  spec.csharp:
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Domain.Core.ViewModels
+  commentId: N:Mix.Domain.Core.ViewModels
+  isExternal: true
+  name: Mix.Domain.Core.ViewModels
+  nameWithType: Mix.Domain.Core.ViewModels
+  fullName: Mix.Domain.Core.ViewModels
+- uid: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ImportAsync*
+  commentId: Overload:Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ImportAsync
+  name: ImportAsync
+  nameWithType: SiteStructureViewModel.ImportAsync
+  fullName: Mix.Cms.Lib.ViewModels.SiteStructureViewModel.ImportAsync
+- uid: Mix.Cms.Lib.Models.Cms.MixCmsContext
+  commentId: T:Mix.Cms.Lib.Models.Cms.MixCmsContext
+  parent: Mix.Cms.Lib.Models.Cms
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: Mix.Cms.Lib.Models.Cms.MixCmsContext
+- uid: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+  commentId: T:Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+  parent: Microsoft.EntityFrameworkCore.Storage
+  isExternal: true
+  name: IDbContextTransaction
+  nameWithType: IDbContextTransaction
+  fullName: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+- uid: System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{System.Boolean}}
+  commentId: T:System.Threading.Tasks.Task{Mix.Domain.Core.ViewModels.RepositoryResponse{System.Boolean}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<RepositoryResponse<Boolean>>
+  nameWithType: Task<RepositoryResponse<Boolean>>
+  fullName: System.Threading.Tasks.Task<Mix.Domain.Core.ViewModels.RepositoryResponse<System.Boolean>>
+  nameWithType.vb: Task(Of RepositoryResponse(Of Boolean))
+  fullName.vb: System.Threading.Tasks.Task(Of Mix.Domain.Core.ViewModels.RepositoryResponse(Of System.Boolean))
+  name.vb: Task(Of RepositoryResponse(Of Boolean))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Domain.Core.ViewModels.RepositoryResponse`1
+    name: RepositoryResponse
+    nameWithType: RepositoryResponse
+    fullName: Mix.Domain.Core.ViewModels.RepositoryResponse
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Lib.Models.Cms
+  commentId: N:Mix.Cms.Lib.Models.Cms
+  name: Mix.Cms.Lib.Models.Cms
+  nameWithType: Mix.Cms.Lib.Models.Cms
+  fullName: Mix.Cms.Lib.Models.Cms
+- uid: Microsoft.EntityFrameworkCore.Storage
+  commentId: N:Microsoft.EntityFrameworkCore.Storage
+  isExternal: true
+  name: Microsoft.EntityFrameworkCore.Storage
+  nameWithType: Microsoft.EntityFrameworkCore.Storage
+  fullName: Microsoft.EntityFrameworkCore.Storage
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,1101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Cms.Api.Helpers.IdentityHelper
+  commentId: T:Mix.Cms.Api.Helpers.IdentityHelper
+  id: IdentityHelper
+  parent: Mix.Cms.Api.Helpers
+  children:
+  - Mix.Cms.Api.Helpers.IdentityHelper.#ctor(Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.SignInManager{Mix.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})
+  - Mix.Cms.Api.Helpers.IdentityHelper.CreateClaim(System.String,System.String)
+  - Mix.Cms.Api.Helpers.IdentityHelper.GenerateAccessTokenAsync(Mix.Identity.Models.ApplicationUser,System.Boolean)
+  - Mix.Cms.Api.Helpers.IdentityHelper.GenerateTokenAsync(Mix.Identity.Models.ApplicationUser,System.DateTime,System.String)
+  - Mix.Cms.Api.Helpers.IdentityHelper.GetClaimsAsync(Mix.Identity.Models.ApplicationUser)
+  - Mix.Cms.Api.Helpers.IdentityHelper.GetPrincipalFromExpiredToken(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IdentityHelper
+  nameWithType: IdentityHelper
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IdentityHelper
+    path: ../../mix.core/src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+    startLine: 15
+  assemblies:
+  - Mix.Cms.Api
+  namespace: Mix.Cms.Api.Helpers
+  syntax:
+    content: public class IdentityHelper
+    content.vb: Public Class IdentityHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.#ctor(Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.SignInManager{Mix.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})
+  commentId: M:Mix.Cms.Api.Helpers.IdentityHelper.#ctor(Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.SignInManager{Mix.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})
+  id: '#ctor(Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.SignInManager{Mix.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})'
+  parent: Mix.Cms.Api.Helpers.IdentityHelper
+  langs:
+  - csharp
+  - vb
+  name: IdentityHelper(UserManager<ApplicationUser>, SignInManager<ApplicationUser>, RoleManager<IdentityRole>)
+  nameWithType: IdentityHelper.IdentityHelper(UserManager<ApplicationUser>, SignInManager<ApplicationUser>, RoleManager<IdentityRole>)
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.IdentityHelper(Microsoft.AspNetCore.Identity.UserManager<Mix.Identity.Models.ApplicationUser>, Microsoft.AspNetCore.Identity.SignInManager<Mix.Identity.Models.ApplicationUser>, Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+    startLine: 21
+  assemblies:
+  - Mix.Cms.Api
+  namespace: Mix.Cms.Api.Helpers
+  syntax:
+    content: public IdentityHelper(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<IdentityRole> roleManager)
+    parameters:
+    - id: userManager
+      type: Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser}
+    - id: signInManager
+      type: Microsoft.AspNetCore.Identity.SignInManager{Mix.Identity.Models.ApplicationUser}
+    - id: roleManager
+      type: Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole}
+    content.vb: Public Sub New(userManager As UserManager(Of ApplicationUser), signInManager As SignInManager(Of ApplicationUser), roleManager As RoleManager(Of IdentityRole))
+  overload: Mix.Cms.Api.Helpers.IdentityHelper.#ctor*
+  nameWithType.vb: IdentityHelper.IdentityHelper(UserManager(Of ApplicationUser), SignInManager(Of ApplicationUser), RoleManager(Of IdentityRole))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Cms.Api.Helpers.IdentityHelper.IdentityHelper(Microsoft.AspNetCore.Identity.UserManager(Of Mix.Identity.Models.ApplicationUser), Microsoft.AspNetCore.Identity.SignInManager(Of Mix.Identity.Models.ApplicationUser), Microsoft.AspNetCore.Identity.RoleManager(Of Microsoft.AspNetCore.Identity.IdentityRole))
+  name.vb: IdentityHelper(UserManager(Of ApplicationUser), SignInManager(Of ApplicationUser), RoleManager(Of IdentityRole))
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.GenerateAccessTokenAsync(Mix.Identity.Models.ApplicationUser,System.Boolean)
+  commentId: M:Mix.Cms.Api.Helpers.IdentityHelper.GenerateAccessTokenAsync(Mix.Identity.Models.ApplicationUser,System.Boolean)
+  id: GenerateAccessTokenAsync(Mix.Identity.Models.ApplicationUser,System.Boolean)
+  parent: Mix.Cms.Api.Helpers.IdentityHelper
+  langs:
+  - csharp
+  - vb
+  name: GenerateAccessTokenAsync(ApplicationUser, Boolean)
+  nameWithType: IdentityHelper.GenerateAccessTokenAsync(ApplicationUser, Boolean)
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.GenerateAccessTokenAsync(Mix.Identity.Models.ApplicationUser, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GenerateAccessTokenAsync
+    path: ../../mix.core/src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+    startLine: 31
+  assemblies:
+  - Mix.Cms.Api
+  namespace: Mix.Cms.Api.Helpers
+  syntax:
+    content: public Task<AccessTokenViewModel> GenerateAccessTokenAsync(ApplicationUser user, bool isRemember)
+    parameters:
+    - id: user
+      type: Mix.Identity.Models.ApplicationUser
+    - id: isRemember
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel}
+    content.vb: Public Function GenerateAccessTokenAsync(user As ApplicationUser, isRemember As Boolean) As Task(Of AccessTokenViewModel)
+  overload: Mix.Cms.Api.Helpers.IdentityHelper.GenerateAccessTokenAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.GenerateTokenAsync(Mix.Identity.Models.ApplicationUser,System.DateTime,System.String)
+  commentId: M:Mix.Cms.Api.Helpers.IdentityHelper.GenerateTokenAsync(Mix.Identity.Models.ApplicationUser,System.DateTime,System.String)
+  id: GenerateTokenAsync(Mix.Identity.Models.ApplicationUser,System.DateTime,System.String)
+  parent: Mix.Cms.Api.Helpers.IdentityHelper
+  langs:
+  - csharp
+  - vb
+  name: GenerateTokenAsync(ApplicationUser, DateTime, String)
+  nameWithType: IdentityHelper.GenerateTokenAsync(ApplicationUser, DateTime, String)
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.GenerateTokenAsync(Mix.Identity.Models.ApplicationUser, System.DateTime, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GenerateTokenAsync
+    path: ../../mix.core/src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+    startLine: 71
+  assemblies:
+  - Mix.Cms.Api
+  namespace: Mix.Cms.Api.Helpers
+  syntax:
+    content: public Task<string> GenerateTokenAsync(ApplicationUser user, DateTime expires, string refreshToken)
+    parameters:
+    - id: user
+      type: Mix.Identity.Models.ApplicationUser
+    - id: expires
+      type: System.DateTime
+    - id: refreshToken
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Function GenerateTokenAsync(user As ApplicationUser, expires As Date, refreshToken As String) As Task(Of String)
+  overload: Mix.Cms.Api.Helpers.IdentityHelper.GenerateTokenAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.GetClaimsAsync(Mix.Identity.Models.ApplicationUser)
+  commentId: M:Mix.Cms.Api.Helpers.IdentityHelper.GetClaimsAsync(Mix.Identity.Models.ApplicationUser)
+  id: GetClaimsAsync(Mix.Identity.Models.ApplicationUser)
+  parent: Mix.Cms.Api.Helpers.IdentityHelper
+  langs:
+  - csharp
+  - vb
+  name: GetClaimsAsync(ApplicationUser)
+  nameWithType: IdentityHelper.GetClaimsAsync(ApplicationUser)
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.GetClaimsAsync(Mix.Identity.Models.ApplicationUser)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetClaimsAsync
+    path: ../../mix.core/src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+    startLine: 92
+  assemblies:
+  - Mix.Cms.Api
+  namespace: Mix.Cms.Api.Helpers
+  syntax:
+    content: public Task<List<Claim>> GetClaimsAsync(ApplicationUser user)
+    parameters:
+    - id: user
+      type: Mix.Identity.Models.ApplicationUser
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{System.Security.Claims.Claim}}
+    content.vb: Public Function GetClaimsAsync(user As ApplicationUser) As Task(Of List(Of Claim))
+  overload: Mix.Cms.Api.Helpers.IdentityHelper.GetClaimsAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.CreateClaim(System.String,System.String)
+  commentId: M:Mix.Cms.Api.Helpers.IdentityHelper.CreateClaim(System.String,System.String)
+  id: CreateClaim(System.String,System.String)
+  parent: Mix.Cms.Api.Helpers.IdentityHelper
+  langs:
+  - csharp
+  - vb
+  name: CreateClaim(String, String)
+  nameWithType: IdentityHelper.CreateClaim(String, String)
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.CreateClaim(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateClaim
+    path: ../../mix.core/src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+    startLine: 117
+  assemblies:
+  - Mix.Cms.Api
+  namespace: Mix.Cms.Api.Helpers
+  syntax:
+    content: public Claim CreateClaim(string type, string value)
+    parameters:
+    - id: type
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Security.Claims.Claim
+    content.vb: Public Function CreateClaim(type As String, value As String) As Claim
+  overload: Mix.Cms.Api.Helpers.IdentityHelper.CreateClaim*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.GetPrincipalFromExpiredToken(System.String)
+  commentId: M:Mix.Cms.Api.Helpers.IdentityHelper.GetPrincipalFromExpiredToken(System.String)
+  id: GetPrincipalFromExpiredToken(System.String)
+  parent: Mix.Cms.Api.Helpers.IdentityHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPrincipalFromExpiredToken(String)
+  nameWithType: IdentityHelper.GetPrincipalFromExpiredToken(String)
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.GetPrincipalFromExpiredToken(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetPrincipalFromExpiredToken
+    path: ../../mix.core/src/Mix.Cms.Api/Helpers/IdentityHelper.cs
+    startLine: 122
+  assemblies:
+  - Mix.Cms.Api
+  namespace: Mix.Cms.Api.Helpers
+  syntax:
+    content: public ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
+    parameters:
+    - id: token
+      type: System.String
+    return:
+      type: System.Security.Claims.ClaimsPrincipal
+    content.vb: Public Function GetPrincipalFromExpiredToken(token As String) As ClaimsPrincipal
+  overload: Mix.Cms.Api.Helpers.IdentityHelper.GetPrincipalFromExpiredToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Cms.Api.Helpers
+  commentId: N:Mix.Cms.Api.Helpers
+  name: Mix.Cms.Api.Helpers
+  nameWithType: Mix.Cms.Api.Helpers
+  fullName: Mix.Cms.Api.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.#ctor*
+  commentId: Overload:Mix.Cms.Api.Helpers.IdentityHelper.#ctor
+  name: IdentityHelper
+  nameWithType: IdentityHelper.IdentityHelper
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.IdentityHelper
+- uid: Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser}
+  commentId: T:Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.UserManager`1
+  name: UserManager<ApplicationUser>
+  nameWithType: UserManager<ApplicationUser>
+  fullName: Microsoft.AspNetCore.Identity.UserManager<Mix.Identity.Models.ApplicationUser>
+  nameWithType.vb: UserManager(Of ApplicationUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of Mix.Identity.Models.ApplicationUser)
+  name.vb: UserManager(Of ApplicationUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Identity.Models.ApplicationUser
+    name: ApplicationUser
+    nameWithType: ApplicationUser
+    fullName: Mix.Identity.Models.ApplicationUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Identity.Models.ApplicationUser
+    name: ApplicationUser
+    nameWithType: ApplicationUser
+    fullName: Mix.Identity.Models.ApplicationUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.SignInManager{Mix.Identity.Models.ApplicationUser}
+  commentId: T:Microsoft.AspNetCore.Identity.SignInManager{Mix.Identity.Models.ApplicationUser}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.SignInManager`1
+  name: SignInManager<ApplicationUser>
+  nameWithType: SignInManager<ApplicationUser>
+  fullName: Microsoft.AspNetCore.Identity.SignInManager<Mix.Identity.Models.ApplicationUser>
+  nameWithType.vb: SignInManager(Of ApplicationUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.SignInManager(Of Mix.Identity.Models.ApplicationUser)
+  name.vb: SignInManager(Of ApplicationUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Identity.Models.ApplicationUser
+    name: ApplicationUser
+    nameWithType: ApplicationUser
+    fullName: Mix.Identity.Models.ApplicationUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Identity.Models.ApplicationUser
+    name: ApplicationUser
+    nameWithType: ApplicationUser
+    fullName: Mix.Identity.Models.ApplicationUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole}
+  commentId: T:Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1
+  name: RoleManager<IdentityRole>
+  nameWithType: RoleManager<IdentityRole>
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Microsoft.AspNetCore.Identity.IdentityRole>
+  nameWithType.vb: RoleManager(Of IdentityRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Microsoft.AspNetCore.Identity.IdentityRole)
+  name.vb: RoleManager(Of IdentityRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole
+    name: IdentityRole
+    nameWithType: IdentityRole
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Identity.IdentityRole
+    name: IdentityRole
+    nameWithType: IdentityRole
+    fullName: Microsoft.AspNetCore.Identity.IdentityRole
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.UserManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.UserManager`1
+  isExternal: true
+  name: UserManager<TUser>
+  nameWithType: UserManager<TUser>
+  fullName: Microsoft.AspNetCore.Identity.UserManager<TUser>
+  nameWithType.vb: UserManager(Of TUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.UserManager(Of TUser)
+  name.vb: UserManager(Of TUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.UserManager`1
+    name: UserManager
+    nameWithType: UserManager
+    fullName: Microsoft.AspNetCore.Identity.UserManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: Microsoft.AspNetCore.Identity.SignInManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.SignInManager`1
+  isExternal: true
+  name: SignInManager<TUser>
+  nameWithType: SignInManager<TUser>
+  fullName: Microsoft.AspNetCore.Identity.SignInManager<TUser>
+  nameWithType.vb: SignInManager(Of TUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.SignInManager(Of TUser)
+  name.vb: SignInManager(Of TUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.RoleManager`1
+  isExternal: true
+  name: RoleManager<TRole>
+  nameWithType: RoleManager<TRole>
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>
+  nameWithType.vb: RoleManager(Of TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole)
+  name.vb: RoleManager(Of TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.GenerateAccessTokenAsync*
+  commentId: Overload:Mix.Cms.Api.Helpers.IdentityHelper.GenerateAccessTokenAsync
+  name: GenerateAccessTokenAsync
+  nameWithType: IdentityHelper.GenerateAccessTokenAsync
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.GenerateAccessTokenAsync
+- uid: Mix.Identity.Models.ApplicationUser
+  commentId: T:Mix.Identity.Models.ApplicationUser
+  parent: Mix.Identity.Models
+  name: ApplicationUser
+  nameWithType: ApplicationUser
+  fullName: Mix.Identity.Models.ApplicationUser
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks.Task{Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel}
+  commentId: T:System.Threading.Tasks.Task{Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AccessTokenViewModel>
+  nameWithType: Task<AccessTokenViewModel>
+  fullName: System.Threading.Tasks.Task<Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel>
+  nameWithType.vb: Task(Of AccessTokenViewModel)
+  fullName.vb: System.Threading.Tasks.Task(Of Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel)
+  name.vb: Task(Of AccessTokenViewModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel
+    name: AccessTokenViewModel
+    nameWithType: AccessTokenViewModel
+    fullName: Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel
+    name: AccessTokenViewModel
+    nameWithType: AccessTokenViewModel
+    fullName: Mix.Cms.Lib.ViewModels.Account.AccessTokenViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Models
+  commentId: N:Mix.Identity.Models
+  name: Mix.Identity.Models
+  nameWithType: Mix.Identity.Models
+  fullName: Mix.Identity.Models
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.GenerateTokenAsync*
+  commentId: Overload:Mix.Cms.Api.Helpers.IdentityHelper.GenerateTokenAsync
+  name: GenerateTokenAsync
+  nameWithType: IdentityHelper.GenerateTokenAsync
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.GenerateTokenAsync
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.GetClaimsAsync*
+  commentId: Overload:Mix.Cms.Api.Helpers.IdentityHelper.GetClaimsAsync
+  name: GetClaimsAsync
+  nameWithType: IdentityHelper.GetClaimsAsync
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.GetClaimsAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{System.Security.Claims.Claim}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{System.Security.Claims.Claim}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Claim>>
+  nameWithType: Task<List<Claim>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<System.Security.Claims.Claim>>
+  nameWithType.vb: Task(Of List(Of Claim))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of System.Security.Claims.Claim))
+  name.vb: Task(Of List(Of Claim))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.CreateClaim*
+  commentId: Overload:Mix.Cms.Api.Helpers.IdentityHelper.CreateClaim
+  name: CreateClaim
+  nameWithType: IdentityHelper.CreateClaim
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.CreateClaim
+- uid: System.Security.Claims.Claim
+  commentId: T:System.Security.Claims.Claim
+  parent: System.Security.Claims
+  isExternal: true
+  name: Claim
+  nameWithType: Claim
+  fullName: System.Security.Claims.Claim
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+- uid: Mix.Cms.Api.Helpers.IdentityHelper.GetPrincipalFromExpiredToken*
+  commentId: Overload:Mix.Cms.Api.Helpers.IdentityHelper.GetPrincipalFromExpiredToken
+  name: GetPrincipalFromExpiredToken
+  nameWithType: IdentityHelper.GetPrincipalFromExpiredToken
+  fullName: Mix.Cms.Api.Helpers.IdentityHelper.GetPrincipalFromExpiredToken
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal

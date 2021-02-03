@@ -1,0 +1,2156 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SyncViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SyncViewModel
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel">
+  
+  
+  <h1 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel" class="text-break">Class SyncViewModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a>, <a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPost.html">MixPost</a>, <a class="xref" href="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.html">SyncViewModel</a>&gt;</div>
+    <div class="level2"><span class="xref">SyncViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.Repository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.ModelRepository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.InitModel()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.ParseModel(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.Validate(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.UpdateFieldsAsync(Newtonsoft.Json.Linq.JObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.CloneAsync(Mix.Cms.Lib.Models.Cms.MixPost, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.CloneSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPost, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.RemoveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.RemoveRelatedModelsAsync(Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.SaveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.SaveSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.InitView(Mix.Cms.Lib.Models.Cms.MixPost, System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.ParseView(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.Clone(Mix.Cms.Lib.Models.Cms.MixPost, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.CloneSubModels(Mix.Cms.Lib.Models.Cms.MixPost, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.RemoveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.RemoveRelatedModels(Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.SaveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.SaveSubModels(Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.InitContext()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.GetCachedKey(Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.GetPropValue(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.GenerateCache(Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.AddToCache(Mix.Cms.Lib.Models.Cms.MixPost, System.Object, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.RemoveCache(Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.IsCache</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.Model</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.Errors</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Lib.ViewModels.MixPosts.html">Mix.Cms.Lib.ViewModels.MixPosts</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Cms.Lib.dll</h6>
+  <h5 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SyncViewModel : ViewModelBase&lt;MixCmsContext, MixPost, SyncViewModel&gt;, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel__ctor.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L231">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel__ctor" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.#ctor">SyncViewModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SyncViewModel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixPost_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.%23ctor(Mix.Cms.Lib.Models.Cms.MixPost%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L235">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixPost_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.#ctor(Mix.Cms.Lib.Models.Cms.MixPost,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">SyncViewModel(MixPost, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SyncViewModel(MixPost model, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPost.html">MixPost</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ActivedTheme.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ActivedTheme%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L142">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ActivedTheme_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ActivedTheme*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ActivedTheme" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ActivedTheme">ActivedTheme</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int ActivedTheme { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Columns.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Columns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L222">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Columns_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Columns*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Columns" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Columns">Columns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;columns&quot;)]
+public List&lt;ModuleFieldViewModel&gt; Columns { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.ModuleFieldViewModel.html">ModuleFieldViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Content.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Content%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L62">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Content_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Content*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Content" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Content">Content</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;content&quot;)]
+public string Content { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_CreatedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.CreatedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L92">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_CreatedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.CreatedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_CreatedBy" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.CreatedBy">CreatedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreatedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_CreatedDateTime.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.CreatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L93">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_CreatedDateTime_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.CreatedDateTime*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_CreatedDateTime" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.CreatedDateTime">CreatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdDateTime&quot;)]
+public DateTime CreatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Cultures.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Cultures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L32">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Cultures_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Cultures*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Cultures" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Cultures">Cultures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;cultures&quot;)]
+public List&lt;SupportedCulture&gt; Cultures { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Mix.Domain.Core.Models.SupportedCulture</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_DetailsUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.DetailsUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L216">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_DetailsUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.DetailsUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_DetailsUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.DetailsUrl">DetailsUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;detailsUrl&quot;)]
+public string DetailsUrl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Domain.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Domain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L107">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Domain_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Domain*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Domain" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Domain">Domain</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;domain&quot;)]
+public string Domain { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Excerpt.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Excerpt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L59">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Excerpt_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Excerpt*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Excerpt" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Excerpt">Excerpt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;excerpt&quot;)]
+public string Excerpt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExtraFields.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExtraFields%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L44">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExtraFields_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExtraFields*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExtraFields" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExtraFields">ExtraFields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+[JsonProperty(&quot;extraFields&quot;)]
+public string ExtraFields { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExtraProperties.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExtraProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L48">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExtraProperties_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExtraProperties*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExtraProperties" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExtraProperties">ExtraProperties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+[JsonProperty(&quot;extraProperties&quot;)]
+public string ExtraProperties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Icon.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Icon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L52">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Icon_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Icon*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Icon" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Icon">Icon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;icon&quot;)]
+public string Icon { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Id.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L28">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Id_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Id*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Id" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;id&quot;)]
+public int Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Image.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Image%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L41">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Image_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Image*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Image" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Image">Image</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;image&quot;)]
+public string Image { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ImageFileStream.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ImageFileStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L128">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ImageFileStream_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ImageFileStream*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ImageFileStream" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ImageFileStream">ImageFileStream</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;imageFileStream&quot;)]
+public FileStreamViewModel ImageFileStream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.FileStreamViewModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ImageUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ImageUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L177">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ImageUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ImageUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ImageUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ImageUrl">ImageUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;imageUrl&quot;)]
+public string ImageUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_LastModified.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.LastModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L97">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_LastModified_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.LastModified*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_LastModified" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.LastModified">LastModified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;lastModified&quot;)]
+public DateTime? LastModified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ListTag.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ListTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L125">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ListTag_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ListTag*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ListTag" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ListTag">ListTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;listTag&quot;)]
+public JArray ListTag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.Linq.JArray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_MediaNavs.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.MediaNavs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L116">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_MediaNavs_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.MediaNavs*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_MediaNavs" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.MediaNavs">MediaNavs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;mediaNavs&quot;)]
+public List&lt;ReadViewModel&gt; MediaNavs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPostMedias.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ModifiedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ModifiedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L95">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ModifiedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ModifiedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ModifiedBy" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ModifiedBy">ModifiedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;modifiedBy&quot;)]
+public string ModifiedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ModuleNavs.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ModuleNavs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L119">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ModuleNavs_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ModuleNavs*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ModuleNavs" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ModuleNavs">ModuleNavs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;moduleNavs&quot;)]
+public List&lt;ReadViewModel&gt; ModuleNavs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPostModules.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Modules.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Modules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L113">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Modules_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Modules*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Modules" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Modules">Modules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;modules&quot;)]
+public List&lt;ReadViewModel&gt; Modules { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixModulePosts.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Pages.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Pages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L110">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Pages_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Pages*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Pages" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Pages">Pages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;categories&quot;)]
+public List&lt;ReadViewModel&gt; Pages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPagePosts.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_PostNavs.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.PostNavs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L122">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_PostNavs_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.PostNavs*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_PostNavs" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.PostNavs">PostNavs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;postNavs&quot;)]
+public List&lt;ReadViewModel&gt; PostNavs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPostPosts.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Priority.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Priority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L99">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Priority_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Priority*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Priority" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Priority">Priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;priority&quot;)]
+public int Priority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Properties.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L213">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Properties_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Properties*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Properties" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Properties">Properties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;properties&quot;)]
+public List&lt;ExtraProperty&gt; Properties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.ExtraProperty.html">ExtraProperty</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_PublishedDateTime.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.PublishedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L86">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_PublishedDateTime_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.PublishedDateTime*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_PublishedDateTime" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.PublishedDateTime">PublishedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;publishedDateTime&quot;)]
+public DateTime? PublishedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoDescription.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L71">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoDescription_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoDescription*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoDescription" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoDescription">SeoDescription</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoDescription&quot;)]
+public string SeoDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoKeywords.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoKeywords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L74">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoKeywords_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoKeywords*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoKeywords" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoKeywords">SeoKeywords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoKeywords&quot;)]
+public string SeoKeywords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoName.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L65">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoName_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoName*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoName" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoName">SeoName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoName&quot;)]
+public string SeoName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoTitle.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L68">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoTitle_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoTitle*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SeoTitle" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SeoTitle">SeoTitle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoTitle&quot;)]
+public string SeoTitle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Source.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Source%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L77">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Source_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Source*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Source" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Source">Source</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;source&quot;)]
+public string Source { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Specificulture.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Specificulture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L30">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Specificulture_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Specificulture*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Specificulture" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Specificulture">Specificulture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;specificulture&quot;)]
+public string Specificulture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Status.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L101">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Status_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Status*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Status" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;status&quot;)]
+public MixContentStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixContentStatus.html">MixContentStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Tags.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Tags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L89">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Tags_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Tags*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Tags" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Tags">Tags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;tags&quot;)]
+public string Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Template.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Template%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L35">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Template_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Template*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Template" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Template">Template</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;template&quot;)]
+public string Template { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_TemplateFolder.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.TemplateFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L160">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_TemplateFolder_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.TemplateFolder*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_TemplateFolder" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.TemplateFolder">TemplateFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;templateFolder&quot;)]
+public string TemplateFolder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_TemplateFolderType.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.TemplateFolderType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L151">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_TemplateFolderType_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.TemplateFolderType*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_TemplateFolderType" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.TemplateFolderType">TemplateFolderType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string TemplateFolderType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Templates.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Templates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L139">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Templates_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Templates*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Templates" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Templates">Templates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;templates&quot;)]
+public List&lt;UpdateViewModel&gt; Templates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixTemplates.UpdateViewModel.html">UpdateViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Thumbnail.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Thumbnail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L38">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Thumbnail_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Thumbnail*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Thumbnail" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Thumbnail">Thumbnail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;thumbnail&quot;)]
+public string Thumbnail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ThumbnailFileStream.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ThumbnailFileStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L131">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ThumbnailFileStream_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ThumbnailFileStream*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ThumbnailFileStream" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ThumbnailFileStream">ThumbnailFileStream</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;thumbnailFileStream&quot;)]
+public FileStreamViewModel ThumbnailFileStream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.FileStreamViewModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ThumbnailUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ThumbnailUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L195">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ThumbnailUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ThumbnailUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ThumbnailUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ThumbnailUrl">ThumbnailUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;thumbnailUrl&quot;)]
+public string ThumbnailUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Title.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L55">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Title_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Title*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Title" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Title">Title</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[JsonProperty(&quot;title&quot;)]
+public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Type.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L83">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Type_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Type*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Type" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;)]
+public string Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_UrlAliases.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.UrlAliases%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L219">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_UrlAliases_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.UrlAliases*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_UrlAliases" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.UrlAliases">UrlAliases</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;urlAliases&quot;)]
+public List&lt;UpdateViewModel&gt; UrlAliases { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixUrlAliases.UpdateViewModel.html">UpdateViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_View.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.View%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L136">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_View_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.View*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_View" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.View">View</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;view&quot;)]
+public UpdateViewModel View { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixTemplates.UpdateViewModel.html">UpdateViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Views.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Views%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L80">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Views_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Views*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Views" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.Views">Views</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;views&quot;)]
+public int? Views { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExpandView_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L243">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExpandView_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExpandView*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ExpandView_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">ExpandView(MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExpandView(MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_GetAliases_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.GetAliases(Mix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L911">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_GetAliases_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.GetAliases*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_GetAliases_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.GetAliases(Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetAliases(MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UpdateViewModel&gt; GetAliases(MixCmsContext context, IDbContextTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixUrlAliases.UpdateViewModel.html">UpdateViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_GetRelated_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.GetRelated(Mix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L904">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_GetRelated_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.GetRelated*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_GetRelated_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.GetRelated(Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetRelated(MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ReadViewModel&gt; GetRelated(MixCmsContext context, IDbContextTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPostPosts.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ParseModel_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ParseModel(Mix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L373">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ParseModel_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ParseModel*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_ParseModel_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.ParseModel(Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">ParseModel(MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override MixPost ParseModel(MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPost.html">MixPost</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.ParseModel(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_RemoveRelatedModels_Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.RemoveRelatedModels(Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L778">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_RemoveRelatedModels_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.RemoveRelatedModels*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_RemoveRelatedModels_Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.RemoveRelatedModels(Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">RemoveRelatedModels(SyncViewModel, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override RepositoryResponse&lt;bool&gt; RemoveRelatedModels(SyncViewModel view, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.html">SyncViewModel</a></td>
+        <td><span class="parametername">view</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.RemoveRelatedModels(Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SaveSubModels_Mix_Cms_Lib_Models_Cms_MixPost_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SaveSubModels(Mix.Cms.Lib.Models.Cms.MixPost%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L634">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SaveSubModels_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SaveSubModels*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SaveSubModels_Mix_Cms_Lib_Models_Cms_MixPost_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SaveSubModels(Mix.Cms.Lib.Models.Cms.MixPost,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">SaveSubModels(MixPost, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override RepositoryResponse&lt;bool&gt; SaveSubModels(MixPost parent, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPost.html">MixPost</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.SaveSubModels(Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SaveSubModelsAsync_Mix_Cms_Lib_Models_Cms_MixPost_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SaveSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPost%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L440">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SaveSubModelsAsync_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SaveSubModelsAsync*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel_SaveSubModelsAsync_Mix_Cms_Lib_Models_Cms_MixPost_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel.SaveSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPost,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">SaveSubModelsAsync(MixPost, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;RepositoryResponse&lt;bool&gt;&gt; SaveSubModelsAsync(MixPost parent, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPost.html">MixPost</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel&gt;.SaveSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPost, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPosts_SyncViewModel.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPosts.SyncViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPosts/SyncViewModel.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
