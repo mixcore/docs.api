@@ -1,0 +1,1902 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DeleteViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DeleteViewModel
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel">
+  
+  
+  <h1 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel" class="text-break">Class DeleteViewModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a>, <a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPage.html">MixPage</a>, <a class="xref" href="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.html">DeleteViewModel</a>&gt;</div>
+    <div class="level2"><span class="xref">DeleteViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.Repository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.ModelRepository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.InitModel()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.ParseModel(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.Validate(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.UpdateFieldsAsync(Newtonsoft.Json.Linq.JObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.CloneAsync(Mix.Cms.Lib.Models.Cms.MixPage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.CloneSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.RemoveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.RemoveRelatedModelsAsync(Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.SaveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.SaveSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.InitView(Mix.Cms.Lib.Models.Cms.MixPage, System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.ParseView(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.Clone(Mix.Cms.Lib.Models.Cms.MixPage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.CloneSubModels(Mix.Cms.Lib.Models.Cms.MixPage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.RemoveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.RemoveRelatedModels(Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.SaveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.SaveSubModels(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.InitContext()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.GetCachedKey(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.GetPropValue(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.GenerateCache(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.AddToCache(Mix.Cms.Lib.Models.Cms.MixPage, System.Object, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.RemoveCache(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.IsCache</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.Model</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.Errors</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Lib.ViewModels.MixPages.html">Mix.Cms.Lib.ViewModels.MixPages</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Cms.Lib.dll</h6>
+  <h5 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DeleteViewModel : ViewModelBase&lt;MixCmsContext, MixPage, DeleteViewModel&gt;, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel__ctor.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L240">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel__ctor" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.#ctor">DeleteViewModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeleteViewModel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixPage_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.%23ctor(Mix.Cms.Lib.Models.Cms.MixPage%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L244">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixPage_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.#ctor(Mix.Cms.Lib.Models.Cms.MixPage,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">DeleteViewModel(MixPage, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DeleteViewModel(MixPage model, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPage.html">MixPage</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ActivedTheme.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ActivedTheme%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L184">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ActivedTheme_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ActivedTheme*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ActivedTheme" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ActivedTheme">ActivedTheme</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int ActivedTheme { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_AttributeData.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.AttributeData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L225">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_AttributeData_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.AttributeData*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_AttributeData" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.AttributeData">AttributeData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;attributeData&quot;)]
+public UpdateViewModel AttributeData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.UpdateViewModel.html">UpdateViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Attributes.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Attributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L222">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Attributes_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Attributes*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Attributes" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Attributes">Attributes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;attributes&quot;)]
+public UpdateViewModel Attributes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel.html">UpdateViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Content.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Content%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L61">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Content_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Content*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Content" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Content">Content</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;content&quot;)]
+public string Content { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CreatedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CreatedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L94">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CreatedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CreatedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CreatedBy" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CreatedBy">CreatedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdBy&quot;)]
+public string CreatedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CreatedDateTime.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CreatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L88">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CreatedDateTime_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CreatedDateTime*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CreatedDateTime" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CreatedDateTime">CreatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdDateTime&quot;)]
+public DateTime CreatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CssClass.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CssClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L48">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CssClass_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CssClass*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_CssClass" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.CssClass">CssClass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;cssClass&quot;)]
+public string CssClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Cultures.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Cultures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L33">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Cultures_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Cultures*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Cultures" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Cultures">Cultures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;cultures&quot;)]
+public List&lt;SupportedCulture&gt; Cultures { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Mix.Domain.Core.Models.SupportedCulture</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_DetailsUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.DetailsUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L119">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_DetailsUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.DetailsUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_DetailsUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.DetailsUrl">DetailsUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;detailsUrl&quot;)]
+public string DetailsUrl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Domain.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Domain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L131">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Domain_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Domain*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Domain" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Domain">Domain</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;domain&quot;)]
+public string Domain { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Excerpt.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Excerpt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L58">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Excerpt_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Excerpt*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Excerpt" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Excerpt">Excerpt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;excerpt&quot;)]
+public string Excerpt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Icon.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Icon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L45">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Icon_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Icon*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Icon" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Icon">Icon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;icon&quot;)]
+public string Icon { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Id.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L27">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Id_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Id*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Id" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;id&quot;)]
+public int Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Image.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Image%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L42">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Image_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Image*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Image" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Image">Image</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;image&quot;)]
+public string Image { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ImageFileStream.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ImageFileStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L128">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ImageFileStream_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ImageFileStream*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ImageFileStream" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ImageFileStream">ImageFileStream</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;imageFileStream&quot;)]
+public FileStreamViewModel ImageFileStream { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.FileStreamViewModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ImageUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ImageUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L134">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ImageUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ImageUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ImageUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ImageUrl">ImageUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;imageUrl&quot;)]
+public string ImageUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_LastModified.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.LastModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L106">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_LastModified_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.LastModified*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_LastModified" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.LastModified">LastModified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;lastModified&quot;)]
+public DateTime? LastModified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Layout.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Layout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L51">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Layout_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Layout*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Layout" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Layout">Layout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;layout&quot;)]
+public string Layout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Level.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Level%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L103">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Level_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Level*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Level" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Level">Level</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;level&quot;)]
+public int? Level { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ListTag.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ListTag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L125">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ListTag_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ListTag*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ListTag" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ListTag">ListTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;listTag&quot;)]
+public JArray ListTag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.Linq.JArray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Master.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Master%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L178">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Master_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Master*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Master" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Master">Master</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;master&quot;)]
+public UpdateViewModel Master { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixTemplates.UpdateViewModel.html">UpdateViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Masters.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Masters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L181">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Masters_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Masters*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Masters" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Masters">Masters</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;masters&quot;)]
+public List&lt;UpdateViewModel&gt; Masters { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixTemplates.UpdateViewModel.html">UpdateViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ModifiedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ModifiedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L109">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ModifiedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ModifiedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ModifiedBy" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ModifiedBy">ModifiedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;modifiedBy&quot;)]
+public string ModifiedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ModuleNavs.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ModuleNavs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L122">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ModuleNavs_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ModuleNavs*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ModuleNavs" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ModuleNavs">ModuleNavs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;moduleNavs&quot;)]
+public List&lt;ReadMvcViewModel&gt; ModuleNavs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPageModules.ReadMvcViewModel.html">ReadMvcViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_PageSize.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.PageSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L112">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_PageSize_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.PageSize*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_PageSize" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.PageSize">PageSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;pageSize&quot;)]
+public int? PageSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Priority.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Priority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L31">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Priority_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Priority*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Priority" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Priority">Priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;priority&quot;)]
+public int Priority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoDescription.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L70">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoDescription_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoDescription*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoDescription" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoDescription">SeoDescription</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoDescription&quot;)]
+public string SeoDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoKeywords.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoKeywords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L73">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoKeywords_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoKeywords*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoKeywords" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoKeywords">SeoKeywords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoKeywords&quot;)]
+public string SeoKeywords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoName.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L64">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoName_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoName*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoName" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoName">SeoName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoName&quot;)]
+public string SeoName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoTitle.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L67">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoTitle_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoTitle*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SeoTitle" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SeoTitle">SeoTitle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoTitle&quot;)]
+public string SeoTitle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Source.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Source%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L76">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Source_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Source*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Source" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Source">Source</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;source&quot;)]
+public string Source { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Specificulture.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Specificulture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L29">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Specificulture_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Specificulture*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Specificulture" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Specificulture">Specificulture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;specificulture&quot;)]
+public string Specificulture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_StaticUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.StaticUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L100">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_StaticUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.StaticUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_StaticUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.StaticUrl">StaticUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;staticUrl&quot;)]
+public string StaticUrl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Status.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L85">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Status_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Status*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Status" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;status&quot;)]
+public MixContentStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixContentStatus.html">MixContentStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SysCategories.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SysCategories%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L228">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SysCategories_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SysCategories*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SysCategories" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SysCategories">SysCategories</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;sysCategories&quot;)]
+public List&lt;UpdateViewModel&gt; SysCategories { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.UpdateViewModel.html">UpdateViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SysTags.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SysTags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L231">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SysTags_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SysTags*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_SysTags" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.SysTags">SysTags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;sysTags&quot;)]
+public List&lt;UpdateViewModel&gt; SysTags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixRelatedAttributeDatas.UpdateViewModel.html">UpdateViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Tags.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Tags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L97">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Tags_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Tags*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Tags" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Tags">Tags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;tags&quot;)]
+public string Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Template.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Template%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L36">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Template_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Template*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Template" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Template">Template</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;template&quot;)]
+public string Template { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_TemplateFolder.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.TemplateFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L202">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_TemplateFolder_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.TemplateFolder*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_TemplateFolder" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.TemplateFolder">TemplateFolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;templateFolder&quot;)]
+public string TemplateFolder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_TemplateFolderType.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.TemplateFolderType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L193">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_TemplateFolderType_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.TemplateFolderType*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_TemplateFolderType" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.TemplateFolderType">TemplateFolderType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string TemplateFolderType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Templates.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Templates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L175">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Templates_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Templates*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Templates" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Templates">Templates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;templates&quot;)]
+public List&lt;UpdateViewModel&gt; Templates { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixTemplates.UpdateViewModel.html">UpdateViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Thumbnail.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Thumbnail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L39">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Thumbnail_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Thumbnail*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Thumbnail" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Thumbnail">Thumbnail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;thumbnail&quot;)]
+public string Thumbnail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ThumbnailUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ThumbnailUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L152">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ThumbnailUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ThumbnailUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_ThumbnailUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.ThumbnailUrl">ThumbnailUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;thumbnailUrl&quot;)]
+public string ThumbnailUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Title.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L54">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Title_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Title*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Title" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Title">Title</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[JsonProperty(&quot;title&quot;)]
+public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Type.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L82">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Type_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Type*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Type" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;)]
+public MixPageType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixPageType.html">MixPageType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_UpdatedDateTime.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.UpdatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L91">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_UpdatedDateTime_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.UpdatedDateTime*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_UpdatedDateTime" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.UpdatedDateTime">UpdatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;updatedDateTime&quot;)]
+public DateTime? UpdatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_UrlAliases.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.UrlAliases%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L219">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_UrlAliases_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.UrlAliases*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_UrlAliases" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.UrlAliases">UrlAliases</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;urlAliases&quot;)]
+public List&lt;UpdateViewModel&gt; UrlAliases { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixUrlAliases.UpdateViewModel.html">UpdateViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_View.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.View%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L172">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_View_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.View*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_View" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.View">View</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;view&quot;)]
+public UpdateViewModel View { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixTemplates.UpdateViewModel.html">UpdateViewModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Views.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Views%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L79">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Views_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Views*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Views" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.Views">Views</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;views&quot;)]
+public int? Views { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_RemoveRelatedModelsAsync_Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.RemoveRelatedModelsAsync(Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L254">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_RemoveRelatedModelsAsync_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.RemoveRelatedModelsAsync*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_RemoveRelatedModelsAsync_Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.RemoveRelatedModelsAsync(Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">RemoveRelatedModelsAsync(DeleteViewModel, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;RepositoryResponse&lt;bool&gt;&gt; RemoveRelatedModelsAsync(DeleteViewModel view, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel.html">DeleteViewModel</a></td>
+        <td><span class="parametername">view</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel&gt;.RemoveRelatedModelsAsync(Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_DeleteViewModel.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.DeleteViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/DeleteViewModel.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

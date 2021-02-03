@@ -1,0 +1,1409 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MixCmsContext
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MixCmsContext
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext">
+  
+  
+  <h1 id="Mix_Cms_Lib_Models_Cms_MixCmsContext" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext" class="text-break">Class MixCmsContext
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.EntityFrameworkCore.DbContext</span></div>
+    <div class="level2"><span class="xref">MixCmsContext</span></div>
+      <div class="level3"><a class="xref" href="Mix.Cms.Lib.Models.Cms.MsSqlMixCmsContext.html">MsSqlMixCmsContext</a></div>
+      <div class="level3"><a class="xref" href="Mix.Cms.Lib.Models.Cms.MySqlMixCmsContext.html">MySqlMixCmsContext</a></div>
+      <div class="level3"><a class="xref" href="Mix.Cms.Lib.Models.Cms.PostgresqlMixCmsContext.html">PostgresqlMixCmsContext</a></div>
+      <div class="level3"><a class="xref" href="Mix.Cms.Lib.Models.Cms.SqliteMixCmsContext.html">SqliteMixCmsContext</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure</span>&lt;<span class="xref">System.IServiceProvider</span>&gt;</div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.IAsyncDisposable</span></div>
+    <div><span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IResettableService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbSetCache.GetOrAddSet(Microsoft.EntityFrameworkCore.Internal.IDbSetSource, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbSetCache.GetOrAddSet(Microsoft.EntityFrameworkCore.Internal.IDbSetSource, System.String, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Set&lt;TEntity&gt;(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChanges(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.ClearLease()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.SetLease(Microsoft.EntityFrameworkCore.Internal.DbContextLease)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable.SnapshotConfiguration()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IResettableService.ResetState()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IResettableService.ResetStateAsync(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.DisposeAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Entry&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Entry(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Add&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddAsync&lt;TEntity&gt;(TEntity, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Attach&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Update&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Remove&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Add(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddAsync(System.Object, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Attach(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Update(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Remove(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRangeAsync(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AttachRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.UpdateRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AddRangeAsync(System.Collections.Generic.IEnumerable&lt;System.Object&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.AttachRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.UpdateRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.RemoveRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync(System.Type, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync(System.Type, System.Object[], System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Find&lt;TEntity&gt;(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FindAsync&lt;TEntity&gt;(System.Object[], System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.FromExpression&lt;TResult&gt;(System.Linq.Expressions.Expression&lt;System.Func&lt;System.Linq.IQueryable&lt;TResult&gt;&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Database</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.ChangeTracker</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Model</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.ContextId</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.SetSource</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityFinderFactory</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.QueryProvider</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.StateManager</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.ChangeDetector</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.EntityGraphAttacher</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.UpdateLogger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.InfrastructureLogger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;System.IServiceProvider&gt;.Instance</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SavingChanges</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SavedChanges</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.DbContext.SaveChangesFailed</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Lib.Models.Cms.html">Mix.Cms.Lib.Models.Cms</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Cms.Lib.dll</h6>
+  <h5 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MixCmsContext : DbContext, IInfrastructure&lt;IServiceProvider&gt;, IDbContextDependencies, IDbSetCache, IDbContextPoolable, IDisposable, IAsyncDisposable, IResettableService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext__ctor.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L53">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext__ctor_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext__ctor" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.#ctor">MixCmsContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixCmsContext()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_Mix_Cms_Lib_Models_Cms_MixCmsContext__.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.%23ctor(Microsoft.EntityFrameworkCore.DbContextOptions%7BMix.Cms.Lib.Models.Cms.MixCmsContext%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L48">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext__ctor_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_Mix_Cms_Lib_Models_Cms_MixCmsContext__" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Mix.Cms.Lib.Models.Cms.MixCmsContext})">MixCmsContext(DbContextOptions&lt;MixCmsContext&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <see cref="!:ApplicationDbContext"></see> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixCmsContext(DbContextOptions&lt;MixCmsContext&gt; options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbContextOptions</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeField.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeField%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L13">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeField_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeField*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeField" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeField">MixAttributeField</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixAttributeField&gt; MixAttributeField { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeField.html">MixAttributeField</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSet.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L14">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSet_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSet*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSet" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSet">MixAttributeSet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixAttributeSet&gt; MixAttributeSet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeSet.html">MixAttributeSet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetData.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L15">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetData_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetData*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetData" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetData">MixAttributeSetData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixAttributeSetData&gt; MixAttributeSetData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeSetData.html">MixAttributeSetData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetReference.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L16">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetReference_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetReference*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetReference" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetReference">MixAttributeSetReference</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixAttributeSetReference&gt; MixAttributeSetReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeSetReference.html">MixAttributeSetReference</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetValue.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L17">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetValue_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetValue*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixAttributeSetValue" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixAttributeSetValue">MixAttributeSetValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixAttributeSetValue&gt; MixAttributeSetValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeSetValue.html">MixAttributeSetValue</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCache.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L18">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCache_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCache*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCache" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCache">MixCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixCache&gt; MixCache { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCache.html">MixCache</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCmsUser.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCmsUser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L19">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCmsUser_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCmsUser*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCmsUser" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCmsUser">MixCmsUser</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixCmsUser&gt; MixCmsUser { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsUser.html">MixCmsUser</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixConfiguration.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L20">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixConfiguration_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixConfiguration*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixConfiguration" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixConfiguration">MixConfiguration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixConfiguration&gt; MixConfiguration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixConfiguration.html">MixConfiguration</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCulture.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCulture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L21">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCulture_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCulture*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixCulture" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixCulture">MixCulture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixCulture&gt; MixCulture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCulture.html">MixCulture</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixFile.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L22">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixFile_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixFile*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixFile" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixFile">MixFile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixFile&gt; MixFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixFile.html">MixFile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixLanguage.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixLanguage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L23">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixLanguage_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixLanguage*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixLanguage" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixLanguage">MixLanguage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixLanguage&gt; MixLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixLanguage.html">MixLanguage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixMedia.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixMedia%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L24">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixMedia_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixMedia*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixMedia" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixMedia">MixMedia</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixMedia&gt; MixMedia { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixMedia.html">MixMedia</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModule.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L25">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModule_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModule*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModule" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModule">MixModule</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixModule&gt; MixModule { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixModule.html">MixModule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModuleData.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModuleData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L26">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModuleData_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModuleData*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModuleData" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModuleData">MixModuleData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixModuleData&gt; MixModuleData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixModuleData.html">MixModuleData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModulePost.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModulePost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L27">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModulePost_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModulePost*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixModulePost" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixModulePost">MixModulePost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixModulePost&gt; MixModulePost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixModulePost.html">MixModulePost</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPage.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L28">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPage_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPage*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPage" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPage">MixPage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPage&gt; MixPage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPage.html">MixPage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPageModule.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPageModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L29">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPageModule_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPageModule*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPageModule" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPageModule">MixPageModule</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPageModule&gt; MixPageModule { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPageModule.html">MixPageModule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPagePost.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPagePost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L30">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPagePost_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPagePost*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPagePost" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPagePost">MixPagePost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPagePost&gt; MixPagePost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPagePost.html">MixPagePost</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPage.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L31">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPage_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPage*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPage" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPage">MixPortalPage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPortalPage&gt; MixPortalPage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPortalPage.html">MixPortalPage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPageNavigation.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPageNavigation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L32">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPageNavigation_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPageNavigation*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPageNavigation" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPageNavigation">MixPortalPageNavigation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPortalPageNavigation&gt; MixPortalPageNavigation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPortalPageNavigation.html">MixPortalPageNavigation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPageRole.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPageRole%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L33">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPageRole_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPageRole*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPortalPageRole" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPortalPageRole">MixPortalPageRole</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPortalPageRole&gt; MixPortalPageRole { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPortalPageRole.html">MixPortalPageRole</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPost.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L34">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPost_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPost*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPost" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPost">MixPost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPost&gt; MixPost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPost.html">MixPost</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPostMedia.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPostMedia%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L35">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPostMedia_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPostMedia*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPostMedia" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPostMedia">MixPostMedia</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPostMedia&gt; MixPostMedia { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPostMedia.html">MixPostMedia</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPostModule.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPostModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L36">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPostModule_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPostModule*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixPostModule" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixPostModule">MixPostModule</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixPostModule&gt; MixPostModule { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPostModule.html">MixPostModule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedAttributeData.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedAttributeData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L37">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedAttributeData_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedAttributeData*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedAttributeData" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedAttributeData">MixRelatedAttributeData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixRelatedAttributeData&gt; MixRelatedAttributeData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixRelatedAttributeData.html">MixRelatedAttributeData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedAttributeSet.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedAttributeSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L38">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedAttributeSet_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedAttributeSet*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedAttributeSet" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedAttributeSet">MixRelatedAttributeSet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixRelatedAttributeSet&gt; MixRelatedAttributeSet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixRelatedAttributeSet.html">MixRelatedAttributeSet</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedPost.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L39">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedPost_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedPost*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixRelatedPost" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixRelatedPost">MixRelatedPost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixRelatedPost&gt; MixRelatedPost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixRelatedPost.html">MixRelatedPost</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixTemplate.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L40">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixTemplate_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixTemplate*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixTemplate" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixTemplate">MixTemplate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixTemplate&gt; MixTemplate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixTemplate.html">MixTemplate</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixTheme.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixTheme%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L41">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixTheme_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixTheme*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixTheme" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixTheme">MixTheme</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixTheme&gt; MixTheme { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixTheme.html">MixTheme</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_MixUrlAlias.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.MixUrlAlias%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L42">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixUrlAlias_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixUrlAlias*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_MixUrlAlias" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.MixUrlAlias">MixUrlAlias</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MixUrlAlias&gt; MixUrlAlias { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbSet</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixUrlAlias.html">MixUrlAlias</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_Dispose.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L89">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_Dispose_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.Dispose*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_Dispose" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.EntityFrameworkCore.DbContext.Dispose()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L56">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_OnConfiguring_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.OnConfiguring*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_OnConfiguring_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">OnConfiguring(DbContextOptionsBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.DbContextOptionsBuilder</span></td>
+        <td><span class="parametername">optionsBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.EntityFrameworkCore.DbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L104">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_Models_Cms_MixCmsContext_OnModelCreating_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.OnModelCreating*"></a>
+  <h4 id="Mix_Cms_Lib_Models_Cms_MixCmsContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_" data-uid="Mix.Cms.Lib.Models.Cms.MixCmsContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">OnModelCreating(ModelBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnModelCreating(ModelBuilder modelBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.ModelBuilder</span></td>
+        <td><span class="parametername">modelBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.EntityFrameworkCore.DbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IInfrastructure&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbSetCache</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Internal.IDbContextPoolable</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <span class="xref">System.IAsyncDisposable</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.EntityFrameworkCore.Infrastructure.IResettableService</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_Models_Cms_MixCmsContext.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.Models.Cms.MixCmsContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/Models/Cms/_MixCmsContext.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

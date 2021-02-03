@@ -1,0 +1,841 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SystemLanguageViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SystemLanguageViewModel
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel">
+  
+  
+  <h1 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel" class="text-break">Class SystemLanguageViewModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a>, <a class="xref" href="Mix.Cms.Lib.Models.Cms.MixLanguage.html">MixLanguage</a>, <a class="xref" href="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.html">SystemLanguageViewModel</a>&gt;</div>
+    <div class="level2"><span class="xref">SystemLanguageViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.Repository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.ModelRepository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.InitModel()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.ParseModel(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.Validate(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.UpdateFieldsAsync(Newtonsoft.Json.Linq.JObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.CloneAsync(Mix.Cms.Lib.Models.Cms.MixLanguage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.CloneSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixLanguage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.RemoveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.RemoveRelatedModelsAsync(Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.SaveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.SaveSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.InitView(Mix.Cms.Lib.Models.Cms.MixLanguage, System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.ParseView(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.Clone(Mix.Cms.Lib.Models.Cms.MixLanguage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.CloneSubModels(Mix.Cms.Lib.Models.Cms.MixLanguage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.RemoveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.RemoveRelatedModels(Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.SaveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.SaveSubModels(Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.InitContext()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.GetCachedKey(Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.GetPropValue(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.GenerateCache(Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.AddToCache(Mix.Cms.Lib.Models.Cms.MixLanguage, System.Object, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.RemoveCache(Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.IsCache</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.Model</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.Errors</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel&gt;.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Lib.ViewModels.MixLanguages.html">Mix.Cms.Lib.ViewModels.MixLanguages</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Cms.Lib.dll</h6>
+  <h5 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SystemLanguageViewModel : ViewModelBase&lt;MixCmsContext, MixLanguage, SystemLanguageViewModel&gt;, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel__ctor.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L69">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel__ctor" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.#ctor">SystemLanguageViewModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemLanguageViewModel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixLanguage_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.%23ctor(Mix.Cms.Lib.Models.Cms.MixLanguage%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L73">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixLanguage_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.#ctor(Mix.Cms.Lib.Models.Cms.MixLanguage,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">SystemLanguageViewModel(MixLanguage, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemLanguageViewModel(MixLanguage model, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixLanguage.html">MixLanguage</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Category.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Category%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L36">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Category_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Category*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Category" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Category">Category</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;category&quot;)]
+public string Category { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_CreatedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.CreatedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L51">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_CreatedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.CreatedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_CreatedBy" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.CreatedBy">CreatedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdBy&quot;)]
+public string CreatedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_CreatedDateTime.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.CreatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L53">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_CreatedDateTime_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.CreatedDateTime*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_CreatedDateTime" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.CreatedDateTime">CreatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdDateTime&quot;)]
+public DateTime CreatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Cultures.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Cultures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L29">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Cultures_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Cultures*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Cultures" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Cultures">Cultures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;cultures&quot;)]
+public List&lt;SupportedCulture&gt; Cultures { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Mix.Domain.Core.Models.SupportedCulture</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_DataType.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.DataType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L39">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_DataType_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.DataType*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_DataType" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.DataType">DataType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;dataType&quot;)]
+public MixDataType DataType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixDataType.html">MixDataType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_DefaultValue.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.DefaultValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L48">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_DefaultValue_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.DefaultValue*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_DefaultValue" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.DefaultValue">DefaultValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;defaultValue&quot;)]
+public string DefaultValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Description.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L42">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Description_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Description*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Description" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;description&quot;)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Id.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L24">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Id_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Id*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Id" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;id&quot;)]
+public int Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Keyword.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Keyword%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L32">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Keyword_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Keyword*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Keyword" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Keyword">Keyword</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+[JsonProperty(&quot;keyword&quot;)]
+public string Keyword { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_LastModified.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.LastModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L57">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_LastModified_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.LastModified*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_LastModified" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.LastModified">LastModified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;lastModified&quot;)]
+public DateTime? LastModified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_ModifiedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.ModifiedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L55">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_ModifiedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.ModifiedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_ModifiedBy" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.ModifiedBy">ModifiedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;modifiedBy&quot;)]
+public string ModifiedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Priority.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Priority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L59">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Priority_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Priority*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Priority" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Priority">Priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;priority&quot;)]
+public int Priority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Specificulture.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Specificulture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L26">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Specificulture_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Specificulture*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Specificulture" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Specificulture">Specificulture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;specificulture&quot;)]
+public string Specificulture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Status.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L61">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Status_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Status*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Status" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;status&quot;)]
+public MixContentStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixContentStatus.html">MixContentStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Value.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L45">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Value_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Value*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_Value" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.Value">Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;value&quot;)]
+public string Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_ImportLanguages_System_Collections_Generic_List_Mix_Cms_Lib_Models_Cms_MixLanguage__System_String_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.ImportLanguages(System.Collections.Generic.List%7BMix.Cms.Lib.Models.Cms.MixLanguage%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L86">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_ImportLanguages_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.ImportLanguages*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel_ImportLanguages_System_Collections_Generic_List_Mix_Cms_Lib_Models_Cms_MixLanguage__System_String_" data-uid="Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel.ImportLanguages(System.Collections.Generic.List{Mix.Cms.Lib.Models.Cms.MixLanguage},System.String)">ImportLanguages(List&lt;MixLanguage&gt;, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;RepositoryResponse&lt;bool&gt;&gt; ImportLanguages(List&lt;MixLanguage&gt; arrLanguage, string destCulture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixLanguage.html">MixLanguage</a>&gt;</td>
+        <td><span class="parametername">arrLanguage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">destCulture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixLanguages_SystemLanguageViewModel.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixLanguages.SystemLanguageViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixLanguages/SystemLanguageViewModel.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

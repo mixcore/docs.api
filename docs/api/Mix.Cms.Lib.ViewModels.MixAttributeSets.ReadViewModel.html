@@ -1,0 +1,919 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReadViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReadViewModel
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel">
+  
+  
+  <h1 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel" class="text-break">Class ReadViewModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a>, <a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeSet.html">MixAttributeSet</a>, <a class="xref" href="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.html">ReadViewModel</a>&gt;</div>
+    <div class="level2"><span class="xref">ReadViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.Repository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.ModelRepository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.InitModel()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.ParseModel(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.Validate(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.UpdateFieldsAsync(Newtonsoft.Json.Linq.JObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.CloneAsync(Mix.Cms.Lib.Models.Cms.MixAttributeSet, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.CloneSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixAttributeSet, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.RemoveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.RemoveRelatedModelsAsync(Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.SaveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.SaveSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.InitView(Mix.Cms.Lib.Models.Cms.MixAttributeSet, System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.ParseView(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.Clone(Mix.Cms.Lib.Models.Cms.MixAttributeSet, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.CloneSubModels(Mix.Cms.Lib.Models.Cms.MixAttributeSet, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.RemoveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.RemoveRelatedModels(Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.SaveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.SaveSubModels(Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.InitContext()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.GetCachedKey(Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.GetPropValue(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.GenerateCache(Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.AddToCache(Mix.Cms.Lib.Models.Cms.MixAttributeSet, System.Object, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.RemoveCache(Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.IsCache</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.Model</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.Errors</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Lib.ViewModels.MixAttributeSets.html">Mix.Cms.Lib.ViewModels.MixAttributeSets</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Cms.Lib.dll</h6>
+  <h5 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ReadViewModel : ViewModelBase&lt;MixCmsContext, MixAttributeSet, ReadViewModel&gt;, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel__ctor.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L75">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel__ctor" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.#ctor">ReadViewModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadViewModel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixAttributeSet_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.%23ctor(Mix.Cms.Lib.Models.Cms.MixAttributeSet%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L79">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixAttributeSet_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.#ctor(Mix.Cms.Lib.Models.Cms.MixAttributeSet,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">ReadViewModel(MixAttributeSet, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadViewModel(MixAttributeSet model, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeSet.html">MixAttributeSet</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_CreatedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.CreatedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L51">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_CreatedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.CreatedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_CreatedBy" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.CreatedBy">CreatedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdBy&quot;)]
+public string CreatedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_CreatedDateTime.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.CreatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L53">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_CreatedDateTime_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.CreatedDateTime*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_CreatedDateTime" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.CreatedDateTime">CreatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdDateTime&quot;)]
+public DateTime CreatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Description.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L33">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Description_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Description*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Description" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Description">Description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;description&quot;)]
+public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmAutoSend.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmAutoSend%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L48">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmAutoSend_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmAutoSend*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmAutoSend" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmAutoSend">EdmAutoSend</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;edmAutoSend&quot;)]
+public bool? EdmAutoSend { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmFrom.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmFrom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L45">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmFrom_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmFrom*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmFrom" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmFrom">EdmFrom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;edmFrom&quot;)]
+public string EdmFrom { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmSubject.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmSubject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L42">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmSubject_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmSubject*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmSubject" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmSubject">EdmSubject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;edmSubject&quot;)]
+public string EdmSubject { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmTemplate.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L39">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmTemplate_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmTemplate*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_EdmTemplate" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.EdmTemplate">EdmTemplate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;edmTemplate&quot;)]
+public string EdmTemplate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Fields.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Fields%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L67">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Fields_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Fields*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Fields" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Fields">Fields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ReadViewModel&gt; Fields { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixAttributeFields.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_FormTemplate.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.FormTemplate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L36">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_FormTemplate_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.FormTemplate*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_FormTemplate" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.FormTemplate">FormTemplate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;formTemplate&quot;)]
+public string FormTemplate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Id.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L18">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Id_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Id*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Id" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;id&quot;)]
+public int Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_LastModified.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.LastModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L57">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_LastModified_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.LastModified*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_LastModified" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.LastModified">LastModified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;lastModified&quot;)]
+public DateTime? LastModified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ModifiedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ModifiedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L55">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ModifiedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ModifiedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ModifiedBy" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ModifiedBy">ModifiedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;modifiedBy&quot;)]
+public string ModifiedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Name.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L30">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Name_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Name*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Name" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
+public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Priority.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Priority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L59">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Priority_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Priority*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Priority" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Priority">Priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;priority&quot;)]
+public int Priority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ReferenceId.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ReferenceId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L21">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ReferenceId_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ReferenceId*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ReferenceId" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ReferenceId">ReferenceId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ReferenceId&quot;)]
+public int? ReferenceId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Status.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L61">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Status_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Status*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Status" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;status&quot;)]
+public MixContentStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixContentStatus.html">MixContentStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Title.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L27">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Title_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Title*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Title" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Title">Title</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;title&quot;)]
+public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Type.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L24">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Type_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Type*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_Type" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;)]
+public string Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ExpandView_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L87">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ExpandView_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ExpandView*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel_ExpandView_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">ExpandView(MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExpandView(MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixAttributeSet, Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel&gt;.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixAttributeSets_ReadViewModel.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixAttributeSets.ReadViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixAttributeSets/ReadViewModel.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1556 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReadViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReadViewModel
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel">
+  
+  
+  <h1 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel" class="text-break">Class ReadViewModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a>, <a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPage.html">MixPage</a>, <a class="xref" href="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.html">ReadViewModel</a>&gt;</div>
+    <div class="level2"><span class="xref">ReadViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.Repository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.ModelRepository</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.InitModel()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.ParseModel(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.Validate(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.UpdateFieldsAsync(Newtonsoft.Json.Linq.JObject)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.CloneAsync(Mix.Cms.Lib.Models.Cms.MixPage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.CloneSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.RemoveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.RemoveRelatedModelsAsync(Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.SaveModelAsync(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.SaveSubModelsAsync(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.InitView(Mix.Cms.Lib.Models.Cms.MixPage, System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.ParseView(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.Clone(Mix.Cms.Lib.Models.Cms.MixPage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.CloneSubModels(Mix.Cms.Lib.Models.Cms.MixPage, System.Collections.Generic.List&lt;Mix.Domain.Core.Models.SupportedCulture&gt;, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.RemoveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.RemoveRelatedModels(Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.SaveModel(System.Boolean, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.SaveSubModels(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.InitContext()</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.GetCachedKey(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.GetPropValue(System.Object, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.GenerateCache(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.AddToCache(Mix.Cms.Lib.Models.Cms.MixPage, System.Object, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.RemoveCache(Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.IsCache</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.Model</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.Errors</span>
+    </div>
+    <div>
+      <span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.IsValid</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Lib.ViewModels.MixPages.html">Mix.Cms.Lib.ViewModels.MixPages</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Cms.Lib.dll</h6>
+  <h5 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ReadViewModel : ViewModelBase&lt;MixCmsContext, MixPage, ReadViewModel&gt;, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel__ctor.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L166">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel__ctor" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.#ctor">ReadViewModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadViewModel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixPage_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.%23ctor(Mix.Cms.Lib.Models.Cms.MixPage%2CMix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L170">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel__ctor_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.#ctor*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel__ctor_Mix_Cms_Lib_Models_Cms_MixPage_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.#ctor(Mix.Cms.Lib.Models.Cms.MixPage,Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">ReadViewModel(MixPage, MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadViewModel(MixPage model, MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixPage.html">MixPage</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Childs.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Childs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L145">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Childs_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Childs*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Childs" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Childs">Childs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;childs&quot;)]
+public List&lt;ReadViewModel&gt; Childs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Content.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Content%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L55">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Content_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Content*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Content" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Content">Content</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;content&quot;)]
+public string Content { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CreatedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CreatedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L90">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CreatedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CreatedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CreatedBy" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CreatedBy">CreatedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdBy&quot;)]
+public string CreatedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CreatedDateTime.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CreatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L92">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CreatedDateTime_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CreatedDateTime*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CreatedDateTime" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CreatedDateTime">CreatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;createdDateTime&quot;)]
+public DateTime CreatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CssClass.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CssClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L43">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CssClass_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CssClass*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_CssClass" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.CssClass">CssClass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;cssClass&quot;)]
+public string CssClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Cultures.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Cultures%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L28">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Cultures_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Cultures*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Cultures" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Cultures">Cultures</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;cultures&quot;)]
+public List&lt;SupportedCulture&gt; Cultures { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Mix.Domain.Core.Models.SupportedCulture</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_DetailsUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.DetailsUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L157">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_DetailsUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.DetailsUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_DetailsUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.DetailsUrl">DetailsUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;detailsUrl&quot;)]
+public string DetailsUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Domain.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Domain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L106">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Domain_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Domain*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Domain" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Domain">Domain</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;domain&quot;)]
+public string Domain { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Excerpt.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Excerpt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L52">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Excerpt_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Excerpt*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Excerpt" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Excerpt">Excerpt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;excerpt&quot;)]
+public string Excerpt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Icon.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Icon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L40">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Icon_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Icon*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Icon" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Icon">Icon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;icon&quot;)]
+public string Icon { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Id.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L24">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Id_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Id*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Id" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;id&quot;)]
+public int Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Image.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Image%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L37">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Image_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Image*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Image" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Image">Image</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;image&quot;)]
+public string Image { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ImageUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ImageUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L109">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ImageUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ImageUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ImageUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ImageUrl">ImageUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;imageUrl&quot;)]
+public string ImageUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_IsActived.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.IsActived%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L154">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_IsActived_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.IsActived*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_IsActived" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.IsActived">IsActived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;isActived&quot;)]
+public bool IsActived { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_LastModified.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.LastModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L96">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_LastModified_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.LastModified*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_LastModified" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.LastModified">LastModified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;lastModified&quot;)]
+public DateTime? LastModified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Layout.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Layout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L46">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Layout_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Layout*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Layout" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Layout">Layout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;layout&quot;)]
+public string Layout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Level.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Level%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L84">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Level_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Level*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Level" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Level">Level</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;level&quot;)]
+public int? Level { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ModifiedBy.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ModifiedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L94">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ModifiedBy_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ModifiedBy*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ModifiedBy" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ModifiedBy">ModifiedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;modifiedBy&quot;)]
+public string ModifiedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_PageSize.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.PageSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L87">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_PageSize_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.PageSize*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_PageSize" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.PageSize">PageSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;pageSize&quot;)]
+public int? PageSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Priority.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Priority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L98">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Priority_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Priority*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Priority" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Priority">Priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;priority&quot;)]
+public int Priority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoDescription.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoDescription%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L64">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoDescription_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoDescription*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoDescription" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoDescription">SeoDescription</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoDescription&quot;)]
+public string SeoDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoKeywords.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoKeywords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L67">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoKeywords_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoKeywords*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoKeywords" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoKeywords">SeoKeywords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoKeywords&quot;)]
+public string SeoKeywords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoName.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L58">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoName_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoName*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoName" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoName">SeoName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoName&quot;)]
+public string SeoName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoTitle.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoTitle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L61">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoTitle_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoTitle*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_SeoTitle" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.SeoTitle">SeoTitle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;seoTitle&quot;)]
+public string SeoTitle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Source.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Source%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L70">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Source_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Source*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Source" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Source">Source</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;source&quot;)]
+public string Source { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Specificulture.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Specificulture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L26">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Specificulture_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Specificulture*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Specificulture" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Specificulture">Specificulture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;specificulture&quot;)]
+public string Specificulture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_StaticUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.StaticUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L81">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_StaticUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.StaticUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_StaticUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.StaticUrl">StaticUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;staticUrl&quot;)]
+public string StaticUrl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Status.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L100">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Status_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Status*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Status" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;status&quot;)]
+public MixContentStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixContentStatus.html">MixContentStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Tags.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Tags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L78">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Tags_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Tags*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Tags" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Tags">Tags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;tags&quot;)]
+public string Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Template.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Template%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L31">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Template_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Template*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Template" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Template">Template</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;template&quot;)]
+public string Template { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Thumbnail.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Thumbnail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L34">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Thumbnail_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Thumbnail*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Thumbnail" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Thumbnail">Thumbnail</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;thumbnail&quot;)]
+public string Thumbnail { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ThumbnailUrl.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ThumbnailUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L127">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ThumbnailUrl_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ThumbnailUrl*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ThumbnailUrl" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ThumbnailUrl">ThumbnailUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;thumbnailUrl&quot;)]
+public string ThumbnailUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Title.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L49">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Title_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Title*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Title" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Title">Title</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;title&quot;)]
+public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_TotalPost.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.TotalPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L148">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_TotalPost_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.TotalPost*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_TotalPost" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.TotalPost">TotalPost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;totalPost&quot;)]
+public int TotalPost { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_TotalProduct.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.TotalProduct%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L151">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_TotalProduct_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.TotalProduct*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_TotalProduct" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.TotalProduct">TotalProduct</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;totalProduct&quot;)]
+public int TotalProduct { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Type.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L76">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Type_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Type*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Type" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;)]
+public MixPageType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Enums.MixPageType.html">MixPageType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Views.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Views%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L73">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Views_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Views*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_Views" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.Views">Views</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;views&quot;)]
+public int? Views { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ExpandView_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L178">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ExpandView_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ExpandView*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_ExpandView_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">ExpandView(MixCmsContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExpandView(MixCmsContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">_context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Domain.Data.ViewModels.ViewModelBase&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPage, Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel&gt;.ExpandView(Mix.Cms.Lib.Models.Cms.MixCmsContext, Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_UpdateInfosAsync_System_Collections_Generic_List_Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel__.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.UpdateInfosAsync(System.Collections.Generic.List%7BMix.Cms.Lib.ViewModels.MixPages.ReadViewModel%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L193">View Source</a>
+  </span>
+  <a id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_UpdateInfosAsync_" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.UpdateInfosAsync*"></a>
+  <h4 id="Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel_UpdateInfosAsync_System_Collections_Generic_List_Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel__" data-uid="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.UpdateInfosAsync(System.Collections.Generic.List{Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel})">UpdateInfosAsync(List&lt;ReadViewModel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;RepositoryResponse&lt;List&lt;ReadViewModel&gt;&gt;&gt; UpdateInfosAsync(List&lt;ReadViewModel&gt; cates)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.html">ReadViewModel</a>&gt;</td>
+        <td><span class="parametername">cates</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel.html">ReadViewModel</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Lib_ViewModels_MixPages_ReadViewModel.md&amp;value=---%0Auid%3A%20Mix.Cms.Lib.ViewModels.MixPages.ReadViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Lib/ViewModels/MixPages/ReadViewModel.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
