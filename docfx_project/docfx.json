@@ -2,8 +2,18 @@
   "metadata": [
     {
       "src": [
-          "../../mix.core/src/MixCore.sln"
-        
+        {
+          "src": "../../",
+          "files": [
+            "mix.core/src/MixCore.sln"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "**/_site/**",
+            "**/docs/**"
+          ]
+        }
       ],
       "dest": "api",
       "disableGitFeatures": false,
@@ -15,9 +25,7 @@
       {
         "files": [
           "api/**.yml",
-          "api/index.md",
-          "_api/**.yml",
-          "_api/index.md"
+          "api/index.md"
         ]
       },
       {
@@ -51,10 +59,18 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default"
+      "default",
+      "docfx.plugins.plantuml/1.1.24/template"
     ],
     "postProcessors": [],
-    "markdownEngineName": "markdig",
+    "markdownEngineProperties": {
+        "plantUml.localPlantUmlPath": "plantuml.jar",
+        "plantUml.outputFormat":"svg",
+        "plantUml.javaPath": "C:/Program Files/Java/jre1.8.0_271",
+        "plantUml.localGraphvizDotPath": "C:/Program Files/Graphviz/bin/dot.exe",
+        "plantUml.remoteUrl":"http://www.plantuml.com/plantuml/",
+        "plantUml.renderingMode":"remote"
+    },
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": false,
