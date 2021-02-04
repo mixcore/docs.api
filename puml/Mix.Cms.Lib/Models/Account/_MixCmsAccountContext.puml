@@ -1,0 +1,20 @@
+@startuml
+class MixCmsAccountContext <<partial>> {
+    + MixCmsAccountContext(options:DbContextOptions<ApplicationDbContext>)
+    + MixCmsAccountContext()
+    + <<override>> Dispose() : void
+    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- MixCmsAccountContext
+MixCmsAccountContext --> "AspNetRoleClaims<AspNetRoleClaims>" "DbSet`1"
+MixCmsAccountContext --> "AspNetRoles<AspNetRoles>" "DbSet`1"
+MixCmsAccountContext --> "AspNetUserClaims<AspNetUserClaims>" "DbSet`1"
+MixCmsAccountContext --> "AspNetUserLogins<AspNetUserLogins>" "DbSet`1"
+MixCmsAccountContext --> "AspNetUserRoles<AspNetUserRoles>" "DbSet`1"
+MixCmsAccountContext --> "AspNetUsers<AspNetUsers>" "DbSet`1"
+MixCmsAccountContext --> "AspNetUserTokens<AspNetUserTokens>" "DbSet`1"
+MixCmsAccountContext --> "Clients<Clients>" "DbSet`1"
+MixCmsAccountContext --> "RefreshTokens<RefreshTokens>" "DbSet`1"
+@enduml

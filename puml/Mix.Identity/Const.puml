@@ -1,0 +1,11 @@
+@startuml
+class Const {
+    + <<const>> CONST_DEFAULT_CONNECTION : string = "AccountConnection"
+    + <<const>> CONST_FILE_APPSETTING : string = "appsettings.json"
+}
+enum ApplicationTypes {
+    JavaScript= 0,
+    NativeConfidential= 1,
+}
+Const +-- ApplicationTypes
+@enduml

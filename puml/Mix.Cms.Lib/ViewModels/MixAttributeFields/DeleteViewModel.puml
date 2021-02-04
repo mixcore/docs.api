@@ -1,0 +1,28 @@
+@startuml
+class DeleteViewModel {
+    + Id : int <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + DataType : int <<get>> <<set>>
+    + DefaultValue : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + IsRequire : bool <<get>> <<set>>
+    + IsEncrypt : bool <<get>> <<set>>
+    + IsSelect : bool <<get>> <<set>>
+    + IsUnique : bool <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + DeleteViewModel()
+    + DeleteViewModel(model:MixAttributeField, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:DeleteViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeField,DeleteViewModel>" <|-- DeleteViewModel
+DeleteViewModel --> "CreatedDateTime" DateTime
+DeleteViewModel --> "Status" MixContentStatus
+@enduml

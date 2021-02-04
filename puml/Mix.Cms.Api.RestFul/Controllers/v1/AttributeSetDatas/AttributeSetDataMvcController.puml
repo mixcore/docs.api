@@ -1,0 +1,8 @@
+@startuml
+class AttributeSetDataMvcController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadMvcViewModel>>>
+}
+class "BaseReadOnlyApiController`3"<T1,T2,T3> {
+}
+"BaseReadOnlyApiController`3" "<MixCmsContext,MixAttributeSetData,ReadMvcViewModel>" <|-- AttributeSetDataMvcController
+@enduml

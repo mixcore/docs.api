@@ -1,0 +1,28 @@
+@startuml
+class NavigationViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + DataId : string <<get>> <<set>>
+    + ParentId : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + ParentName : string <<get>> <<set>>
+    + NavigationViewModel(model:MixRelatedAttributeData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + NavigationViewModel()
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixRelatedAttributeData,NavigationViewModel>" <|-- NavigationViewModel
+NavigationViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+NavigationViewModel --> "ParentType" MixDatabaseParentType
+NavigationViewModel --> "CreatedDateTime" DateTime
+NavigationViewModel --> "Status" MixContentStatus
+@enduml

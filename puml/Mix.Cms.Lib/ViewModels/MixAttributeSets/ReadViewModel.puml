@@ -1,0 +1,30 @@
+@startuml
+class ReadViewModel {
+    + Id : int <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + FormTemplate : string <<get>> <<set>>
+    + EdmTemplate : string <<get>> <<set>>
+    + EdmSubject : string <<get>> <<set>>
+    + EdmFrom : string <<get>> <<set>>
+    + EdmAutoSend : bool? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + ReadViewModel()
+    + ReadViewModel(model:MixAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSet,ReadViewModel>" <|-- ReadViewModel
+ReadViewModel --> "CreatedDateTime" DateTime
+ReadViewModel --> "Status" MixContentStatus
+ReadViewModel --> "Fields<MixAttributeFields.ReadViewModel>" "List`1"
+@enduml

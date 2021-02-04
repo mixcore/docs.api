@@ -1,0 +1,6 @@
+@startuml
+class CommonRepository {
+    + LoadCultures(initCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : List<SupportedCulture>
+}
+CommonRepository --> "Instance" CommonRepository
+@enduml

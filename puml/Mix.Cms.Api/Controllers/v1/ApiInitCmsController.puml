@@ -1,0 +1,12 @@
+@startuml
+class ApiInitCmsController {
+    + ApiInitCmsController(userManager:UserManager<ApplicationUser>, signInManager:SignInManager<ApplicationUser>, roleManager:RoleManager<IdentityRole>, hubContext:Microsoft.AspNetCore.SignalR.IHubContext<Mix.Cms.Service.SignalR.Hubs.PortalHub>, memoryCache:IMemoryCache)
+    + <<async>> Step1(model:InitCmsViewModel) : Task<RepositoryResponse<bool>>
+    + <<async>> InitSuperAdmin(model:MixRegisterViewModel) : Task<RepositoryResponse<AccessTokenViewModel>>
+    + <<async>> InitLanguages(model:List<MixLanguage>) : Task<RepositoryResponse<bool>>
+    + <<async>> Save(model:string, assets:IFormFile, theme:IFormFile) : Task<RepositoryResponse<Cms.Lib.ViewModels.MixThemes.InitViewModel>>
+}
+class "BaseApiController`1"<T> {
+}
+"BaseApiController`1" "<MixCmsContext>" <|-- ApiInitCmsController
+@enduml

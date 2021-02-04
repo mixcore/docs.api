@@ -1,0 +1,19 @@
+@startuml
+class MixMessengerHubRoom <<partial>> {
+    + MixMessengerHubRoom()
+    + Avatar : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + HostId : string <<get>> <<set>>
+    + IsOpen : bool <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + TeamId : int? <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+MixMessengerHubRoom --> "Id" Guid
+MixMessengerHubRoom --> "CreatedDate" DateTime
+MixMessengerHubRoom --> "MixMessengerMessage<MixMessengerMessage>" "ICollection`1"
+MixMessengerHubRoom --> "MixMessengerNavRoomUser<MixMessengerNavRoomUser>" "ICollection`1"
+@enduml

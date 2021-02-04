@@ -1,0 +1,19 @@
+@startuml
+class MixCmsUser <<partial>> {
+    + Id : string <<get>> <<set>>
+    + Address : string <<get>> <<set>>
+    + Avatar : string <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + MiddleName : string <<get>> <<set>>
+    + PhoneNumber : string <<get>> <<set>>
+    + Username : string <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixCmsUser --> "CreatedDateTime" DateTime
+MixCmsUser --> "Status" MixUserStatus
+@enduml

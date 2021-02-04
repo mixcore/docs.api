@@ -1,0 +1,43 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + ThemeId : int <<get>> <<set>>
+    + ThemeName : string <<get>> <<set>>
+    + FolderType : string <<get>> <<set>>
+    + FileFolder : string <<get>> <<set>>
+    + FileName : string <<get>> <<set>>
+    + Extension : string <<get>> <<set>> = ".cshtml"
+    + Content : string <<get>> <<set>>
+    + MobileContent : string <<get>> <<set>> = "{}"
+    + SpaContent : string <<get>> <<set>> = ""
+    + Scripts : string <<get>> <<set>>
+    + Styles : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Layout : string <<get>> <<set>>
+    + AssetFolder : string <<get>>
+    + TemplateFolder : string <<get>>
+    + TemplatePath : string <<get>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixTemplate, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixTemplate
+    + <<override>> <<async>> SaveModelAsync(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<override>> RemoveModel(isRemoveRelatedModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<MixTemplate>
+    + <<override>> SaveSubModels(parent:MixTemplate, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + <<override>> <<async>> RemoveModelAsync(isRemoveRelatedModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<MixTemplate>>
+    + <<override>> SaveSubModelsAsync(parent:MixTemplate, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + {static} GetTemplateByPath(path:string, culture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<UpdateViewModel>
+    + {static} GetTemplateByPath(path:string, specificulture:string, folderType:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : UpdateViewModel
+    + {static} GetDefault(folderType:string, specificulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : UpdateViewModel
+    + <<async>> CopyAsync() : Task<RepositoryResponse<UpdateViewModel>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixTemplate,UpdateViewModel>" <|-- UpdateViewModel
+UpdateViewModel --> "CreatedDateTime" DateTime
+UpdateViewModel --> "Status" MixContentStatus
+@enduml

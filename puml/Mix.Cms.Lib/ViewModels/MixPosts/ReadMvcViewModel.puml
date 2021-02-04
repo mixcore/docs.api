@@ -1,0 +1,60 @@
+@startuml
+class ReadMvcViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + ExtraFields : string <<get>> <<set>> = "[]"
+    + ExtraProperties : string <<get>> <<set>> = "[]"
+    + Icon : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + PublishedDateTime : DateTime? <<get>> <<set>>
+    + Tags : string <<get>> <<set>> = "[]"
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + DetailsUrl : string <<get>>
+    + Domain : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + TemplatePath : string <<get>>
+    + Layout : string <<get>> <<set>>
+    + ReadMvcViewModel()
+    + ReadMvcViewModel(model:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + HasValue(fieldName:string) : bool
+    + Property(fieldName:string) : T
+    + GetModule(name:string) : MixModules.ReadMvcViewModel
+    + GetAttributeSet(name:string) : MixAttributeSets.ReadViewModel
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixPost,ReadMvcViewModel>" <|-- ReadMvcViewModel
+MvcViewModel <|-- ReadMvcViewModel
+ReadMvcViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+ReadMvcViewModel --> "CreatedDateTime" DateTime
+ReadMvcViewModel --> "Status" MixContentStatus
+ReadMvcViewModel --> "Modules<ViewModels.MixModules.ReadMvcViewModel>" "List`1"
+ReadMvcViewModel --> "MediaNavs<MixPostMedias.ReadViewModel>" "List`1"
+ReadMvcViewModel --> "ModuleNavs<MixPostModules.ReadViewModel>" "List`1"
+ReadMvcViewModel --> "PostNavs<MixPostPosts.ReadViewModel>" "List`1"
+ReadMvcViewModel o-> "AttributeSets<MixAttributeSets.ReadViewModel>" "List`1"
+ReadMvcViewModel o-> "SysTags<MixRelatedAttributeDatas.FormViewModel>" "List`1"
+ReadMvcViewModel o-> "SysCategories<MixRelatedAttributeDatas.FormViewModel>" "List`1"
+ReadMvcViewModel --> "ListTag<string>" "List`1"
+ReadMvcViewModel --> "ListCategory<string>" "List`1"
+ReadMvcViewModel --> "Pages<MixPagePosts.ReadViewModel>" "List`1"
+@enduml

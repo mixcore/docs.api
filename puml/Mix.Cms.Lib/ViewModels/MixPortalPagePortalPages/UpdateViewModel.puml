@@ -1,0 +1,27 @@
+@startuml
+class UpdateViewModel {
+    + UpdateViewModel(model:MixPortalPageNavigation, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + UpdateViewModel()
+    + Specificulture : string <<get>> <<set>>
+    + Id : int <<get>> <<set>>
+    + PageId : int <<get>> <<set>>
+    + ParentId : int <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Level : int <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + IsActived : bool <<get>> <<set>>
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPortalPageNavigation
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixPortalPageNavigation, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + {static} <<async>> UpdateInfosAsync(cates:List<MixPortalPagePortalPages.UpdateViewModel>) : System.Threading.Tasks.Task<RepositoryResponse<List<UpdateViewModel>>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixPortalPageNavigation,UpdateViewModel>" <|-- UpdateViewModel
+UpdateViewModel --> "CreatedDateTime" DateTime
+UpdateViewModel --> "Status" MixContentStatus
+@enduml

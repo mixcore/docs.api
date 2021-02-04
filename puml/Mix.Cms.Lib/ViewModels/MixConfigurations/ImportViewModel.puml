@@ -1,0 +1,28 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Keyword : string <<get>> <<set>>
+    + Category : string <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Domain : string <<get>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixConfiguration, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixConfiguration
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> <<async>> SaveModelAsync(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<UpdateViewModel>>
+    + {static} <<async>> ImportConfigurations(arrConfiguration:List<MixConfiguration>, destCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixConfiguration,UpdateViewModel>" <|-- UpdateViewModel
+UpdateViewModel --> "DataType" MixDataType
+UpdateViewModel --> "CreatedDateTime" DateTime
+UpdateViewModel --> "Status" MixContentStatus
+UpdateViewModel --> "Property" DataValueViewModel
+@enduml

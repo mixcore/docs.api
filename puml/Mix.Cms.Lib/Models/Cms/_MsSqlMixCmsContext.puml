@@ -1,0 +1,7 @@
+@startuml
+class MsSqlMixCmsContext <<partial>> {
+    + MsSqlMixCmsContext()
+    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
+}
+MixCmsContext <|-- MsSqlMixCmsContext
+@enduml

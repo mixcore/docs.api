@@ -1,0 +1,29 @@
+@startuml
+class FormViewModel {
+    + FormViewModel(model:MixRelatedAttributeData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + FormViewModel()
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + DataId : string <<get>> <<set>>
+    + ParentId : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixRelatedAttributeData
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> <<async>> SaveModelAsync(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<FormViewModel>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixRelatedAttributeData,FormViewModel>" <|-- FormViewModel
+FormViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+FormViewModel --> "ParentType" MixDatabaseParentType
+FormViewModel --> "CreatedDateTime" DateTime
+FormViewModel --> "Status" MixContentStatus
+@enduml

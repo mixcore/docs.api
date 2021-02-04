@@ -1,0 +1,23 @@
+@startuml
+class MixPortalPage <<partial>> {
+    + MixPortalPage()
+    + Id : int <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + TextKeyword : string <<get>> <<set>>
+    + Url : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + TextDefault : string <<get>> <<set>>
+    + Level : int <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+MixPortalPage --> "CreatedDateTime" DateTime
+MixPortalPage --> "Status" MixContentStatus
+MixPortalPage --> "MixPortalPageNavigationPage<MixPortalPageNavigation>" "ICollection`1"
+MixPortalPage --> "MixPortalPageNavigationParent<MixPortalPageNavigation>" "ICollection`1"
+MixPortalPage --> "MixPortalPageRole<MixPortalPageRole>" "ICollection`1"
+@enduml

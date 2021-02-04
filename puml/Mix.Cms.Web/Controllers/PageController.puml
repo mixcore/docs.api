@@ -1,0 +1,6 @@
+@startuml
+class PageController {
+    + <<async>> Index(culture:string, seoName:string) : Task<IActionResult>
+}
+BaseController <|-- PageController
+@enduml

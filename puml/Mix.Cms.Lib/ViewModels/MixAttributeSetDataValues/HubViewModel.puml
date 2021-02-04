@@ -1,0 +1,34 @@
+@startuml
+class HubViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + AttributeFieldId : int <<get>> <<set>>
+    + Regex : string <<get>> <<set>>
+    + Status : string <<get>> <<set>>
+    + AttributeFieldName : string <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + BooleanValue : bool? <<get>> <<set>>
+    + DataId : string <<get>> <<set>>
+    + DateTimeValue : DateTime? <<get>> <<set>>
+    + DoubleValue : double? <<get>> <<set>>
+    + IntegerValue : int? <<get>> <<set>>
+    + StringValue : string <<get>> <<set>>
+    + EncryptValue : string <<get>> <<set>>
+    + EncryptKey : string <<get>> <<set>>
+    + EncryptType : int <<get>> <<set>>
+    + HubViewModel()
+    + HubViewModel(model:MixAttributeSetValue, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixAttributeSetValue
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetValue,HubViewModel>" <|-- HubViewModel
+HubViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+HubViewModel --> "CreatedDateTime" DateTime
+HubViewModel --> "DataNavs<MixRelatedAttributeDatas.HubViewModel>" "List`1"
+@enduml

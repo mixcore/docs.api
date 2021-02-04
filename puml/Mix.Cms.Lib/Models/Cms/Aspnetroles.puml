@@ -1,0 +1,13 @@
+@startuml
+class Aspnetroles <<partial>> {
+    + Aspnetroles()
+    + Id : string <<get>> <<set>>
+    + ConcurrencyStamp : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + NormalizedName : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+Aspnetroles --> "Aspnetroleclaims<Aspnetroleclaims>" "ICollection`1"
+Aspnetroles --> "Aspnetuserroles<Aspnetuserroles>" "ICollection`1"
+@enduml

@@ -1,0 +1,43 @@
+@startuml
+class ImportViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + FormTemplate : string <<get>> <<set>>
+    + EdmTemplate : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Fields : string <<get>> <<set>>
+    + PageSize : int? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + PostId : string <<get>> <<set>>
+    + PageId : int <<get>> <<set>>
+    + IsExportData : bool <<get>> <<set>>
+    + ImportViewModel()
+    + ImportViewModel(model:MixModule, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixModule
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixModule, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> RemoveModelAsync(isRemoveRelatedModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<MixModule>>
+    + LoadData(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + GetPostNavs(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixModulePosts.ImportViewModel>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixModule,ImportViewModel>" <|-- ImportViewModel
+ImportViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+ImportViewModel --> "Type" MixModuleType
+ImportViewModel --> "CreatedDateTime" DateTime
+ImportViewModel --> "Status" MixContentStatus
+ImportViewModel o-> "Data<MixModuleDatas.ImportViewModel>" "List`1"
+ImportViewModel --> "PostNavs<MixModulePosts.ImportViewModel>" "List`1"
+@enduml

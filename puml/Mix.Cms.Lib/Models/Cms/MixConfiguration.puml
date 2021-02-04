@@ -1,0 +1,18 @@
+@startuml
+class MixConfiguration <<partial>> {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Keyword : string <<get>> <<set>>
+    + Category : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixConfiguration --> "DataType" MixDataType
+MixConfiguration --> "CreatedDateTime" DateTime
+MixConfiguration --> "Status" MixContentStatus
+MixConfiguration --> "SpecificultureNavigation" MixCulture
+@enduml

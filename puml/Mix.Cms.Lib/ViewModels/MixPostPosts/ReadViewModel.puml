@@ -1,0 +1,24 @@
+@startuml
+class ReadViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + SourceId : int <<get>> <<set>>
+    + DestinationId : int <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + IsActived : bool <<get>> <<set>>
+    + ReadViewModel()
+    + ReadViewModel(model:MixRelatedPost, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixRelatedPost
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixRelatedPost,ReadViewModel>" <|-- ReadViewModel
+ReadViewModel --> "CreatedDateTime" DateTime
+ReadViewModel --> "Status" MixContentStatus
+@enduml

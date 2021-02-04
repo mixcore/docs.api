@@ -1,0 +1,221 @@
+<html>
+<title>CreateViewModel</title>
+<h2>Class</h2>
+CreateViewModel
+<br>
+<hr>
+<h2>Fields:</h2>
+<ul>
+<li>
++ Id : int &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Specificulture : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Template : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Thumbnail : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Image : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ ExtraFields : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62; = "[]"
+</li>
+<li>
++ ExtraProperties : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62; = "[]"
+</li>
+<li>
++ Icon : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Title : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Excerpt : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Content : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ SeoName : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ SeoTitle : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ SeoDescription : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ SeoKeywords : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Source : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Views : int? &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Type : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ PublishedDateTime : DateTime? &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Tags : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62; = "[]"
+</li>
+<li>
++ CreatedBy : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ ModifiedBy : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ LastModified : DateTime? &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Priority : int &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+<li>
++ Domain : string &#60;&#60;get&#62;&#62;
+</li>
+<li>
++ ActivedTheme : int &#60;&#60;get&#62;&#62;
+</li>
+<li>
++ TemplateFolderType : string &#60;&#60;get&#62;&#62;
+</li>
+<li>
++ TemplateFolder : string &#60;&#60;get&#62;&#62;
+</li>
+<li>
++ ImageUrl : string &#60;&#60;get&#62;&#62;
+</li>
+<li>
++ ThumbnailUrl : string &#60;&#60;get&#62;&#62;
+</li>
+<li>
++ DetailsUrl : string &#60;&#60;get&#62;&#62; &#60;&#60;set&#62;&#62;
+</li>
+</ul>
+<hr>
+<h2>Methods:</h2>
+<ul>
+<li>
++ CreateViewModel()
+</li>
+<li>
++ CreateViewModel(model:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction)
+</li>
+<li>
++ &#60;&#60;override&#62;&#62; ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+</li>
+<li>
++ &#60;&#60;override&#62;&#62; ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPost
+</li>
+<li>
++ &#60;&#60;override&#62;&#62; &#60;&#60;async&#62;&#62; SaveSubModelsAsync(parent:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;bool&#62;&#62;
+</li>
+<li>
++ &#60;&#60;override&#62;&#62; &#60;&#60;async&#62;&#62; RemoveRelatedModelsAsync(view:CreateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;bool&#62;&#62;
+</li>
+<li>
++ &#60;&#60;override&#62;&#62; CloneAsync(model:MixPost, cloneCultures:List&#60;SupportedCulture&#62;, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;List&#60;CreateViewModel&#62;&#62;&#62;
+</li>
+<li>
++ &#60;&#60;override&#62;&#62; SaveSubModels(parent:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse&#60;bool&#62;
+</li>
+<li>
++ &#60;&#60;override&#62;&#62; RemoveRelatedModels(view:CreateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse&#60;bool&#62;
+</li>
+<li>
++ GetRelated(context:MixCmsContext, transaction:IDbContextTransaction) : List&#60;MixPostPosts.ReadViewModel&#62;
+</li>
+<li>
++ GetAliases(context:MixCmsContext, transaction:IDbContextTransaction) : List&#60;MixUrlAliases.UpdateViewModel&#62;
+</li>
+</ul>
+<hr>
+<h2>Links:</h2>
+<ul>
+<li>
+<i>CreateViewModel</i> extends <a href="cl0078.html">ViewModelBase`3</a> (<MixCmsContext,MixPost,CreateViewModel>)
+&nbsp;:&nbsp;
+(<MixCmsContext,MixPost,CreateViewModel> <a href="cl0078.html">ViewModelBase`3</a>) 
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (Cultures<Domain.Core.Models.SupportedCulture>)
+&nbsp;:&nbsp;
+ (Cultures<Domain.Core.Models.SupportedCulture> <a href="cl0069.html">List`1</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="DateTime.html">DateTime</a> (CreatedDateTime)
+&nbsp;:&nbsp;
+ (CreatedDateTime <a href="DateTime.html">DateTime</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="MixContentStatus.html">MixContentStatus</a> (Status)
+&nbsp;:&nbsp;
+ (Status <a href="MixContentStatus.html">MixContentStatus</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (Pages<MixPagePosts.ReadViewModel>)
+&nbsp;:&nbsp;
+ (Pages<MixPagePosts.ReadViewModel> <a href="cl0069.html">List`1</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (Modules<MixModulePosts.ReadViewModel>)
+&nbsp;:&nbsp;
+ (Modules<MixModulePosts.ReadViewModel> <a href="cl0069.html">List`1</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (MediaNavs<MixPostMedias.ReadViewModel>)
+&nbsp;:&nbsp;
+ (MediaNavs<MixPostMedias.ReadViewModel> <a href="cl0069.html">List`1</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (PostNavs<MixPostPosts.ReadViewModel>)
+&nbsp;:&nbsp;
+ (PostNavs<MixPostPosts.ReadViewModel> <a href="cl0069.html">List`1</a>)
+</li>
+<li>
+<i>CreateViewModel</i> is aggregated by  <a href="JArray.html">JArray</a> (ListTag)
+&nbsp;:&nbsp;
+ (ListTag <a href="JArray.html">JArray</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="FileStreamViewModel.html">FileStreamViewModel</a> (ImageFileStream)
+&nbsp;:&nbsp;
+ (ImageFileStream <a href="FileStreamViewModel.html">FileStreamViewModel</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="FileStreamViewModel.html">FileStreamViewModel</a> (ThumbnailFileStream)
+&nbsp;:&nbsp;
+ (ThumbnailFileStream <a href="FileStreamViewModel.html">FileStreamViewModel</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (Templates<MixTemplates.UpdateViewModel>)
+&nbsp;:&nbsp;
+ (Templates<MixTemplates.UpdateViewModel> <a href="cl0069.html">List`1</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (Properties<ExtraProperty>)
+&nbsp;:&nbsp;
+ (Properties<ExtraProperty> <a href="cl0069.html">List`1</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (UrlAliases<MixUrlAliases.UpdateViewModel>)
+&nbsp;:&nbsp;
+ (UrlAliases<MixUrlAliases.UpdateViewModel> <a href="cl0069.html">List`1</a>)
+</li>
+<li>
+<i>CreateViewModel</i> navigates to  <a href="cl0069.html">List`1</a> (Columns<ModuleFieldViewModel>)
+&nbsp;:&nbsp;
+ (Columns<ModuleFieldViewModel> <a href="cl0069.html">List`1</a>)
+</li>
+</ul>
+<hr>
+<a href=index.html>Back to index</a>
+</html>

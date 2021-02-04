@@ -1,0 +1,28 @@
+@startuml
+class MixCmsHelper {
+    + {static} GetSEOString(input:string) : string
+    + {static} LoadDataFile(folder:string, name:string) : FileViewModel
+    + {static} GetAssetFolder(culture:string) : string
+    + {static} GetTemplateFolder(culture:string) : string
+    + {static} Property(obj:JObject, fieldName:string) : T
+    + {static} GetCategory(Url:IUrlHelper, culture:string, cateType:MixPageType, activePath:string) : List<ViewModels.MixPages.ReadListItemViewModel>
+    + {static} GetRouterUrl(routeValues:object, request:HttpRequest, Url:IUrlHelper) : string
+    + {static} FormatPrice(price:double?, oldPrice:string) : string
+    + {static} CheckIsPrice(number:string) : bool
+    + {static} ReversePrice(formatedPrice:string) : double
+    + {static} LogException(ex:Exception) : void
+    + {static} GetModuleAsync(name:string, culture:string, url:IUrlHelper) : System.Threading.Tasks.Task<ViewModels.MixModules.ReadMvcViewModel>
+    + {static} <<async>> GetPageAsync(id:int, culture:string) : System.Threading.Tasks.Task<ViewModels.MixPages.ReadMvcViewModel>
+    + {static} GetModule(name:string, culture:string) : ViewModels.MixModules.ReadMvcViewModel
+    + {static} GetPage(id:int, culture:string) : ViewModels.MixPages.ReadMvcViewModel
+    + {static} <<async>> GetTemplateByPath(themeName:string, templatePath:string) : System.Threading.Tasks.Task<ViewModels.MixTemplates.ReadViewModel>
+    + {static} <<async>> GetNavigation(name:string, culture:string, Url:IUrlHelper) : System.Threading.Tasks.Task<ViewModels.MixAttributeSetDatas.Navigation>
+    + {static} <<async>> GetListPostByAdditionalField(fieldName:string, fieldValue:object, culture:string, dataType:MixDataType, filterType:MixCompareOperatorKind, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<TView>>>
+    + {static} FilterObjectSet(propName:string, data2:T, filterType:MixCompareOperatorKind) : Expression<Func<TModel, bool>>
+    + <<async>> {static} GetPostlistByMeta(context:HttpContext, culture:string, type:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<TView>>>
+    + <<async>> {static} GetPostlistByAdditionalField(fieldName:string, value:string, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<TView>>>
+    + {static} <<async>> GetAttributeDataByParent(culture:string, attributeSetName:string, parentId:string, parentType:MixDatabaseParentType, orderBy:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<TView>>>
+    + {static} <<async>> GetPostListByPageId(context:HttpContext, pageId:int, keyword:string, culture:string, orderBy:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<Lib.ViewModels.MixPagePosts.ReadViewModel>>>
+    + {static} <<async>> GetAttributeDataListBySet(context:HttpContext, attributeSetName:string, culture:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<Lib.ViewModels.MixAttributeSetDatas.ReadMvcViewModel>>>
+}
+@enduml

@@ -1,0 +1,27 @@
+@startuml
+class SystemConfigurationViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Keyword : string <<get>> <<set>>
+    + Category : string <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Domain : string <<get>>
+    + SystemConfigurationViewModel()
+    + SystemConfigurationViewModel(model:MixConfiguration, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixConfiguration
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + {static} <<async>> ImportConfigurations(arrConfiguration:List<MixConfiguration>, destCulture:string) : Task<RepositoryResponse<bool>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixConfiguration,SystemConfigurationViewModel>" <|-- SystemConfigurationViewModel
+SystemConfigurationViewModel --> "DataType" MixDataType
+SystemConfigurationViewModel --> "CreatedDateTime" DateTime
+SystemConfigurationViewModel --> "Status" MixContentStatus
+SystemConfigurationViewModel --> "Property" DataValueViewModel
+@enduml

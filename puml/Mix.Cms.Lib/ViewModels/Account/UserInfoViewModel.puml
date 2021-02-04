@@ -1,0 +1,38 @@
+@startuml
+class UserInfoViewModel {
+    + Id : string <<get>> <<set>>
+    + Username : string <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + MiddleName : string <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + Avatar : string <<get>> <<set>>
+    + Address : string <<get>> <<set>>
+    + PhoneNumber : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + DetailsUrl : string <<get>> <<set>>
+    + Domain : string <<get>>
+    + AvatarUrl : string <<get>>
+    + IsChangePassword : bool <<get>> <<set>>
+    + UserInfoViewModel()
+    + UserInfoViewModel(model:MixCmsUser, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixCmsUser
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+class ChangePasswordViewModel {
+    + CurrentPassword : string <<get>> <<set>>
+    + NewPassword : string <<get>> <<set>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixCmsUser,UserInfoViewModel>" <|-- UserInfoViewModel
+UserInfoViewModel --> "CreatedDateTime" DateTime
+UserInfoViewModel --> "Status" MixUserStatus
+UserInfoViewModel o-> "UserRoles<UserRoleViewModel>" "List`1"
+UserInfoViewModel o-> "MediaFile" FileViewModel
+UserInfoViewModel --> "ResetPassword" ResetPasswordViewModel
+UserInfoViewModel --> "ChangePassword" ChangePasswordViewModel
+@enduml

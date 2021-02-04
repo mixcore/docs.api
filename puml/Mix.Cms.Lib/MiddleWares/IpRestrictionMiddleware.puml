@@ -1,0 +1,17 @@
+@startuml
+class IpRestrictionMiddleware {
+    + IpRestrictionMiddleware(next:RequestDelegate, ipSecuritySettings:IOptions<IpSecuritySettings>)
+    + <<async>> Invoke(context:HttpContext) : Task
+}
+class IpSecuritySettings {
+    + IsRetrictIp : bool <<get>> <<set>>
+    + AllowedPortalIps : string <<get>> <<set>>
+    + AllowedIps : string <<get>> <<set>>
+    + ExceptIps : string <<get>> <<set>>
+}
+class "List`1"<T> {
+}
+IpRestrictionMiddleware --> "Next" RequestDelegate
+IpRestrictionMiddleware --> "IpSecuritySettings" IpSecuritySettings
+IpSecuritySettings --> "AllowedIPsList<string>" "List`1"
+@enduml

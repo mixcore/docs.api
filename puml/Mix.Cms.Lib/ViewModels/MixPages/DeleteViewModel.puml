@@ -1,0 +1,57 @@
+@startuml
+class DeleteViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + CssClass : string <<get>> <<set>>
+    + Layout : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + UpdatedDateTime : DateTime? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + Tags : string <<get>> <<set>>
+    + StaticUrl : string <<get>> <<set>>
+    + Level : int? <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + PageSize : int? <<get>> <<set>>
+    + DetailsUrl : string <<get>> <<set>>
+    + Domain : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + ActivedTheme : int <<get>>
+    + TemplateFolderType : string <<get>>
+    + TemplateFolder : string <<get>>
+    + DeleteViewModel()
+    + DeleteViewModel(model:MixPage, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:DeleteViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixPage,DeleteViewModel>" <|-- DeleteViewModel
+DeleteViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+DeleteViewModel --> "Type" MixPageType
+DeleteViewModel --> "Status" MixContentStatus
+DeleteViewModel --> "CreatedDateTime" DateTime
+DeleteViewModel --> "ModuleNavs<MixPageModules.ReadMvcViewModel>" "List`1"
+DeleteViewModel o-> "ListTag" JArray
+DeleteViewModel --> "ImageFileStream" FileStreamViewModel
+DeleteViewModel --> "Templates<MixTemplates.UpdateViewModel>" "List`1"
+DeleteViewModel --> "Masters<MixTemplates.UpdateViewModel>" "List`1"
+DeleteViewModel --> "UrlAliases<MixUrlAliases.UpdateViewModel>" "List`1"
+DeleteViewModel --> "SysCategories<MixRelatedAttributeDatas.UpdateViewModel>" "List`1"
+DeleteViewModel --> "SysTags<MixRelatedAttributeDatas.UpdateViewModel>" "List`1"
+@enduml

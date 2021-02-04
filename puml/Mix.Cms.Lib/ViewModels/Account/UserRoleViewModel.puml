@@ -1,0 +1,14 @@
+@startuml
+class UserRoleViewModel {
+    + UserId : string <<get>> <<set>>
+    + RoleId : string <<get>> <<set>>
+    + ApplicationUserId : string <<get>> <<set>>
+    + UserRoleViewModel()
+    + UserRoleViewModel(model:AspNetUserRoles, _context:MixCmsAccountContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsAccountContext, _transaction:IDbContextTransaction) : void
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsAccountContext,AspNetUserRoles,UserRoleViewModel>" <|-- UserRoleViewModel
+UserRoleViewModel --> "Role" RoleViewModel
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class "BaseGenericApiController`2"<TDbContext,TModel> {
+    + BaseGenericApiController(context:TDbContext, memoryCache:IMemoryCache, hubContext:IHubContext<Mix.Cms.Service.SignalR.Hubs.PortalHub>)
+    + <<override>> OnActionExecuting(context:ActionExecutingContext) : void
+    + SaveEncrypt(request:RequestEncrypted) : JObject
+    + {static} Log(request:dynamic, response:dynamic) : void
+}
+Controller <|-- "BaseGenericApiController`2"
+@enduml

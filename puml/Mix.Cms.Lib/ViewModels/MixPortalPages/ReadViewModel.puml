@@ -1,0 +1,24 @@
+@startuml
+class ReadViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + TextKeyword : string <<get>> <<set>>
+    + TextDefault : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Descriotion : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + Url : string <<get>> <<set>>
+    + Level : int <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + ReadViewModel()
+    + ReadViewModel(model:MixPortalPage, _context:MixCmsContext, _transaction:IDbContextTransaction)
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixPortalPage,ReadViewModel>" <|-- ReadViewModel
+ReadViewModel --> "CreatedDateTime" DateTime
+ReadViewModel --> "Status" MixContentStatus
+@enduml

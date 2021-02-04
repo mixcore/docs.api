@@ -1,0 +1,35 @@
+@startuml
+class UpdateViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + ModuleId : int <<get>> <<set>>
+    + Fields : string <<get>> <<set>> = "[]"
+    + Value : string <<get>> <<set>>
+    + PostId : int? <<get>> <<set>>
+    + ProductId : int? <<get>> <<set>>
+    + PageId : int? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixModuleData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixModuleData
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + ParseObjectValue() : string
+    + InitValue() : JObject
+    + GetStringValue(name:string) : string
+    + GetDataProperty(name:string) : ApiModuleDataValueViewModel
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixModuleData,UpdateViewModel>" <|-- UpdateViewModel
+UpdateViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+UpdateViewModel --> "CreatedDateTime" DateTime
+UpdateViewModel --> "Status" MixContentStatus
+UpdateViewModel --> "DataProperties<ApiModuleDataValueViewModel>" "List`1"
+UpdateViewModel --> "JItem" JObject
+@enduml

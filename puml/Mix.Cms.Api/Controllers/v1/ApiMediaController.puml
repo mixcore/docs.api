@@ -1,0 +1,13 @@
+@startuml
+class ApiMediaController {
+    + ApiMediaController(context:MixCmsContext, memoryCache:IMemoryCache, hubContext:Microsoft.AspNetCore.SignalR.IHubContext<Mix.Cms.Service.SignalR.Hubs.PortalHub>)
+    + <<async>> DeleteAsync(id:int) : Task<RepositoryResponse<MixMedia>>
+    + <<async>> Details(viewType:string, id:int?) : Task<ActionResult<JObject>>
+    + <<async>> Save(model:string, file:IFormFile) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> GetList(request:RequestPaging) : Task<ActionResult<JObject>>
+    + <<async>> UpdateInfos(models:List<UpdateViewModel>) : Task<RepositoryResponse<List<UpdateViewModel>>>
+}
+class "BaseGenericApiController`2"<T1,T2> {
+}
+"BaseGenericApiController`2" "<MixCmsContext,MixMedia>" <|-- ApiMediaController
+@enduml

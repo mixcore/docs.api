@@ -1,0 +1,22 @@
+@startuml
+class ReadViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Keyword : string <<get>> <<set>>
+    + Category : string <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + ReadViewModel()
+    + ReadViewModel(model:MixConfiguration, _context:MixCmsContext, _transaction:IDbContextTransaction)
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixConfiguration,ReadViewModel>" <|-- ReadViewModel
+ReadViewModel --> "DataType" MixDataType
+ReadViewModel --> "CreatedDateTime" DateTime
+ReadViewModel --> "Status" MixContentStatus
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+class InitCmsViewModel {
+    + ConnectionString : string <<get>>
+    + DatabaseServer : string <<get>> <<set>>
+    + DatabasePort : string <<get>> <<set>>
+    + DatabaseName : string <<get>> <<set>>
+    + DatabaseUser : string <<get>> <<set>>
+    + DatabasePassword : string <<get>> <<set>>
+    + IsUseLocal : bool <<get>> <<set>>
+    + LocalDbConnectionString : string <<get>> <<set>>
+    + SqliteDbConnectionString : string <<get>> <<set>>
+    + Lang : string <<get>> <<set>>
+    + SiteName : string <<get>> <<set>> = "MixCore"
+    + InitCmsViewModel()
+}
+InitCmsViewModel --> "DatabaseProvider" MixDatabaseProvider
+InitCmsViewModel --> "Culture" InitCulture
+@enduml

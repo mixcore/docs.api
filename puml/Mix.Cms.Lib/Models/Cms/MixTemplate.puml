@@ -1,0 +1,23 @@
+@startuml
+class MixTemplate <<partial>> {
+    + Id : int <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + Extension : string <<get>> <<set>>
+    + FileFolder : string <<get>> <<set>>
+    + FileName : string <<get>> <<set>>
+    + FolderType : string <<get>> <<set>>
+    + MobileContent : string <<get>> <<set>>
+    + Scripts : string <<get>> <<set>>
+    + SpaContent : string <<get>> <<set>>
+    + Styles : string <<get>> <<set>>
+    + ThemeId : int <<get>> <<set>>
+    + ThemeName : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixTemplate --> "CreatedDateTime" DateTime
+MixTemplate --> "Status" MixContentStatus
+MixTemplate --> "Theme" MixTheme
+@enduml

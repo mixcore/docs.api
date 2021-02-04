@@ -1,0 +1,13 @@
+@startuml
+class MixMessengerMessage <<partial>> {
+    + Content : string <<get>> <<set>>
+    + RoomId : Guid? <<get>> <<set>>
+    + TeamId : int? <<get>> <<set>>
+    + UserId : string <<get>> <<set>>
+}
+MixMessengerMessage --> "Id" Guid
+MixMessengerMessage --> "CreatedDate" DateTime
+MixMessengerMessage --> "Room" MixMessengerHubRoom
+MixMessengerMessage --> "Team" MixMessengerTeam
+MixMessengerMessage --> "User" MixMessengerUser
+@enduml

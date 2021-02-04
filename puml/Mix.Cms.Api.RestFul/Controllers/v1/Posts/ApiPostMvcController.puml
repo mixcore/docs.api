@@ -1,0 +1,13 @@
+@startuml
+class ApiPostMvcController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadMvcViewModel>>>
+    + <<async>> GetByAttribute() : Task<ActionResult<PaginationModel<ReadMvcViewModel>>>
+    + <<async>> GetByValueId() : Task<ActionResult<PaginationModel<ReadMvcViewModel>>>
+    + <<async>> GetByValueIds(valueIds:List<string>) : Task<ActionResult<PaginationModel<ReadMvcViewModel>>>
+    + <<async>> SearchPost(dataIds:List<string>, keyword:string) : Task<ActionResult<PaginationModel<ReadListItemViewModel>>>
+    + <<async>> GetByAttributeDataId() : Task<ActionResult<PaginationModel<ReadMvcViewModel>>>
+}
+class "BaseReadOnlyApiController`3"<T1,T2,T3> {
+}
+"BaseReadOnlyApiController`3" "<MixCmsContext,MixPost,ReadMvcViewModel>" <|-- ApiPostMvcController
+@enduml

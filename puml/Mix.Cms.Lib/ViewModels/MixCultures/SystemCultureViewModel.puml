@@ -1,0 +1,23 @@
+@startuml
+class SystemCultureViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Alias : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + FullName : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + Lcid : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + SystemCultureViewModel()
+    + SystemCultureViewModel(model:MixCulture, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:SystemCultureViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixCulture,SystemCultureViewModel>" <|-- SystemCultureViewModel
+SystemCultureViewModel --> "CreatedDateTime" DateTime
+SystemCultureViewModel --> "Status" MixContentStatus
+@enduml

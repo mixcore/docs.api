@@ -1,0 +1,12 @@
+@startuml
+class "HubResponse`1"<T> {
+    + IsSucceed : bool <<get>> <<set>>
+    + ResponseKey : string <<get>> <<set>>
+    + Data : T <<get>> <<set>>
+}
+class "List`1"<T> {
+}
+"HubResponse`1" o-> "Errors<string>" "List`1"
+"HubResponse`1" --> "Exception" Exception
+"HubResponse`1" --> "RenderDate" DateTime
+@enduml

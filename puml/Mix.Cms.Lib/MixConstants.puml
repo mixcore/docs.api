@@ -1,0 +1,57 @@
+@startuml
+class MixConstants {
+    + <<const>> CONST_CMS_CONNECTION : string = "MixCmsConnection"
+    + <<const>> CONST_MESSENGER_CONNECTION : string = "MixMessengerConnection"
+    + <<const>> CONST_ACCOUNT_CONNECTION : string = "MixAccountConnection"
+    + <<const>> CONST_SETTING_IS_MYSQL : string = "IsMysql"
+    + <<const>> CONST_SETTING_DATABASE_PROVIDER : string = "DatabaseProvider"
+    + <<const>> CONST_SETTING_LANGUAGE : string = "Language"
+    + <<const>> CONST_FILE_APPSETTING : string = "appsettings.json"
+    + <<const>> CONST_DEFAULT_FILE_APPSETTING : string = "default.appsettings.json"
+    + <<const>> CONST_FILE_CONFIGURATIONS : string = "configurations.json"
+    + <<const>> CONST_FILE_ATTRIBUTE_SETS : string = "attribute_sets.json"
+    + <<const>> CONST_FILE_POSITIONS : string = "menu-positions.json"
+    + <<const>> CONST_FILE_LANGUAGES : string = "languages.json"
+    + <<const>> CONST_FILE_CULTURES : string = "cultures.json"
+    + <<const>> CONST_FILE_PAGES : string = "pages.json"
+    + <<const>> CONST_PATH_HOME_ACCESS_DENIED : string = "/home/access-denied"
+    + <<const>> CONST_PATH_HOME_ERROR : string = "/Home/Error"
+    + <<const>> CONST_SECTION_LOGGING : string = "Logging"
+    + <<const>> CONST_ROUTE_DEFAULT : string = "default"
+    + <<const>> CONST_APPID : string = "SetYourDataHere"
+    + <<const>> CONST_APPSECRET : string = "SetYourDataHere"
+    + <<const>> CONST_DOMAIN_NOTIFICATION_KEY_COMMIT : string = "Commit"
+    + <<const>> CONST_DOMAIN_NOTIFICATION_KEY_COMMIT_VALUE : string = "We had a problem during saving your data."
+    + <<const>> CONST_DOMAIN_NOTIFICATION : string = "DomainNotification"
+    + <<const>> CONST_DEFAULT_EXTENSIONS_FILE_PATH : string = "\\Contents\\Extensions\\"
+    + <<const>> CONST_DEFAULT_EXTENSION_FILE_NAME : string = "extensions.json"
+    + <<const>> CONST_DEFAULT_STRING_ID : string = "default"
+}
+class AttributeSetName <<static>> {
+    + <<const>> ADDITIONAL_FIELD_PAGE : string = "sys_additional_field_page"
+    + <<const>> ADDITIONAL_FIELD_POST : string = "sys_additional_field_post"
+    + <<const>> ADDITIONAL_FIELD_MODULE : string = "sys_additional_field_module"
+    + <<const>> NAVIGATION : string = "sys_navigation"
+    + <<const>> MENU_ITEM : string = "sys_menu_item"
+    + <<const>> SYSTEM_CATEGORY : string = "sys_category"
+    + <<const>> SYSTEM_TAG : string = "sys_tag"
+}
+class TemplateFolder <<static>> {
+    + <<const>> Masters : string = "Masters"
+    + <<const>> Layouts : string = "Layouts"
+    + <<const>> Pages : string = "Pages"
+    + <<const>> Posts : string = "Posts"
+    + <<const>> Modules : string = "Modules"
+    + <<const>> Forms : string = "Forms"
+    + <<const>> Edms : string = "Edms"
+}
+class DefaultTemplate <<static>> {
+    + <<const>> Master : string = "_Layout.cshtml"
+    + <<const>> Page : string = "_Blank.cshtml"
+    + <<const>> Post : string = "_Blank.cshtml"
+    + <<const>> Module : string = "_Blank.cshtml"
+}
+MixConstants +-- AttributeSetName
+MixConstants +-- TemplateFolder
+MixConstants +-- DefaultTemplate
+@enduml

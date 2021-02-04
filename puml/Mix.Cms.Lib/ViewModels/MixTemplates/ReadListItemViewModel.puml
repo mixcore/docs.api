@@ -1,0 +1,33 @@
+@startuml
+class ReadListItemViewModel {
+    + Id : int <<get>> <<set>>
+    + ThemeId : int <<get>> <<set>>
+    + ThemeName : string <<get>> <<set>>
+    + FolderType : string <<get>> <<set>>
+    + FileFolder : string <<get>> <<set>>
+    + FileName : string <<get>> <<set>>
+    + Extension : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + MobileContent : string <<get>> <<set>> = "{}"
+    + SpaContent : string <<get>> <<set>> = ""
+    + Scripts : string <<get>> <<set>>
+    + Styles : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + AssetFolder : string <<get>>
+    + TemplateFolder : string <<get>>
+    + TemplatePath : string <<get>>
+    + ReadListItemViewModel()
+    + ReadListItemViewModel(model:MixTemplate, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + {static} GetTemplateByPath(path:string, culture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<ReadListItemViewModel>
+    + {static} GetTemplateByPath(themeId:int, path:string, type:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : ReadListItemViewModel
+    + {static} GetDefault(activedTemplate:string, folderType:string, folder:string, specificulture:string) : ReadListItemViewModel
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixTemplate,ReadListItemViewModel>" <|-- ReadListItemViewModel
+ReadListItemViewModel --> "CreatedDateTime" DateTime
+ReadListItemViewModel --> "Status" MixContentStatus
+@enduml

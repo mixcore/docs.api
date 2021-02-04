@@ -1,0 +1,37 @@
+@startuml
+class ImportViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + ParentId : string <<get>> <<set>>
+    + ImportViewModel()
+    + ImportViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixAttributeSetData
+    + <<override>> <<async>> SaveModelAsync(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<ImportViewModel>>
+    + <<override>> SaveModel(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<ImportViewModel>
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + {static} <<async>> SaveObjectAsync(data:JObject, attributeSetName:string) : Task<RepositoryResponse<ImportViewModel>>
+    + HasValue(fieldName:string) : bool
+    + Property(fieldName:string) : T
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,ImportViewModel>" <|-- ImportViewModel
+ImportViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+ImportViewModel --> "CreatedDateTime" DateTime
+ImportViewModel --> "Status" MixContentStatus
+ImportViewModel --> "Obj" JObject
+ImportViewModel --> "ParentType" MixDatabaseParentType
+ImportViewModel o-> "RelatedData<MixRelatedAttributeDatas.UpdateViewModel>" "List`1"
+ImportViewModel --> "Values<MixAttributeSetValues.UpdateViewModel>" "List`1"
+ImportViewModel --> "Fields<MixAttributeFields.UpdateViewModel>" "List`1"
+ImportViewModel o-> "RefData<MixAttributeSetDatas.ImportViewModel>" "List`1"
+@enduml

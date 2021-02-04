@@ -1,0 +1,6 @@
+@startuml
+class PostController {
+    + <<async>> Index(id:int, culture:string, seoName:string) : Task<IActionResult>
+}
+BaseController <|-- PostController
+@enduml

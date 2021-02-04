@@ -1,0 +1,10 @@
+@startuml
+class AspNetUserRoles <<partial>> {
+    + UserId : string <<get>> <<set>>
+    + RoleId : string <<get>> <<set>>
+    + ApplicationUserId : string <<get>> <<set>>
+}
+AspNetUserRoles --> "ApplicationUser" AspNetUsers
+AspNetUserRoles --> "Role" AspNetRoles
+AspNetUserRoles --> "User" AspNetUsers
+@enduml

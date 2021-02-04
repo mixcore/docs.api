@@ -1,0 +1,10 @@
+@startuml
+class BaseController {
+    + BaseController()
+    + culture : string <<get>> <<set>>
+    + <<override>> OnActionExecuting(context:ActionExecutingContext) : void
+    + <<async>> Error(page:string) : System.Threading.Tasks.Task<IActionResult>
+}
+Controller <|-- BaseController
+BaseController --> "ViewContext" ViewContext
+@enduml

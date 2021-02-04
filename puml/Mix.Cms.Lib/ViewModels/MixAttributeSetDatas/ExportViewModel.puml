@@ -1,0 +1,29 @@
+@startuml
+class ExportViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + ExportViewModel()
+    + ExportViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixAttributeSetData
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,ExportViewModel>" <|-- ExportViewModel
+ExportViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+ExportViewModel --> "CreatedDateTime" DateTime
+ExportViewModel --> "Status" MixContentStatus
+ExportViewModel --> "Values<MixAttributeSetValues.UpdateViewModel>" "List`1"
+ExportViewModel --> "Fields<MixAttributeFields.UpdateViewModel>" "List`1"
+ExportViewModel o-> "RefData<MixAttributeSetDatas.UpdateViewModel>" "List`1"
+ExportViewModel --> "Data" JObject
+ExportViewModel o-> "RelatedData<MixRelatedAttributeDatas.UpdateViewModel>" "List`1"
+@enduml

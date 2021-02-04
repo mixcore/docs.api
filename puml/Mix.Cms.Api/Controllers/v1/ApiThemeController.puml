@@ -1,0 +1,15 @@
+@startuml
+class ApiThemeController {
+    + ApiThemeController(context:MixCmsContext, memoryCache:IMemoryCache, hubContext:Microsoft.AspNetCore.SignalR.IHubContext<Mix.Cms.Service.SignalR.Hubs.PortalHub>)
+    + <<async>> Sync(id:int) : Task<RepositoryResponse<List<Lib.ViewModels.MixTemplates.UpdateViewModel>>>
+    + <<async>> Export(id:int) : Task<RepositoryResponse<SiteStructureViewModel>>
+    + Export(id:int, data:SiteStructureViewModel) : Task<RepositoryResponse<string>>
+    + <<async>> DeleteAsync(id:int) : Task<RepositoryResponse<MixTheme>>
+    + <<async>> Details(viewType:string, id:int?) : Task<ActionResult<JObject>>
+    + <<async>> Save(model:string, assets:IFormFile, theme:IFormFile) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> GetList(request:RequestPaging) : Task<ActionResult<JObject>>
+}
+class "BaseGenericApiController`2"<T1,T2> {
+}
+"BaseGenericApiController`2" "<MixCmsContext,MixTheme>" <|-- ApiThemeController
+@enduml

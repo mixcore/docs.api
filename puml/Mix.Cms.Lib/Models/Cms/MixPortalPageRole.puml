@@ -1,0 +1,14 @@
+@startuml
+class MixPortalPageRole <<partial>> {
+    + Id : int <<get>> <<set>>
+    + PageId : int <<get>> <<set>>
+    + RoleId : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixPortalPageRole --> "CreatedDateTime" DateTime
+MixPortalPageRole --> "Status" MixContentStatus
+MixPortalPageRole --> "Page" MixPortalPage
+@enduml

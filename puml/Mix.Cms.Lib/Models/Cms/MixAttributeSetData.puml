@@ -1,0 +1,15 @@
+@startuml
+class MixAttributeSetData <<partial>> {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixAttributeSetData --> "CreatedDateTime" DateTime
+MixAttributeSetData --> "Status" MixContentStatus
+MixAttributeSetData --> "AttributeSet" MixAttributeSet
+@enduml

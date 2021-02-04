@@ -1,0 +1,116 @@
+<html>
+<title>Helper</title>
+<h2>Class</h2>
+Helper
+<br>
+<hr>
+<h3>Stereotype</h3>
+«static»
+<br>
+<hr>
+<h2>No fields</h2>
+<hr>
+<h2>Methods:</h2>
+<ul>
+<li>
++ {static} &#60;&#60;async&#62;&#62; ImportData(culture:string, attributeSet:Lib.ViewModels.MixAttributeSets.ReadViewModel, file:IFormFile) : Task&#60;RepositoryResponse&#60;bool&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetAdditionalData(parentType:MixDatabaseParentType, parentId:int, request:HttpRequest, culture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;AdditionalViewModel&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; FilterByKeywordAsync(culture:string, attributeSetName:string, request:RequestPaging, keyword:string, queryDictionary:Dictionary&#60;string, Microsoft.Extensions.Primitives.StringValues&#62;, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; FilterByKeywordAsync(request:HttpRequest, culture:string, attributeSetName:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; FilterByKeywordAsync(culture:string, attributeSetName:string, filterType:string, fieldName:string, keyword:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;List&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetAttributeDataByParent(culture:string, attributeSetName:string, parentId:string, parentType:MixDatabaseParentType, orderBy:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} ExportAttributeToExcel(lstData:List&#60;JObject&#62;, sheetName:string, folderPath:string, fileName:string, headers:List&#60;string&#62;) : RepositoryResponse&#60;FileViewModel&#62;
+</li>
+<li>
++ {static} ParseData(dataId:string, culture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : JObject
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; FilterByOtherValueAsync(culture:string, attributeSetName:string, filterType:string, queries:Dictionary&#60;string, string&#62;, responseName:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;List&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} ParseValue(JItem:JObject, item:ApiModuleDataValueViewModel) : JToken
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; Import(arrModule:List&#60;MixModule&#62;, destCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;bool&#62;&#62;
+</li>
+<li>
++ {static} LoadCultures(id:int, initCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : List&#60;SupportedCulture&#62;
+</li>
+<li>
++ {static} GetBy(predicate:Expression&#60;Func&#60;MixModule, bool&#62;&#62;, postId:string, productId:string, pageId:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse&#60;UpdateViewModel&#62;
+</li>
+<li>
++ {static} GetNavAsync(postId:int, specificulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse&#60;List&#60;MixPagePosts.ReadViewModel&#62;&#62;
+</li>
+<li>
++ {static} GetActivedNavAsync(postId:int?, pageId:int?, specificulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse&#60;List&#60;TView&#62;&#62;
+</li>
+<li>
++ {static} LoadCultures(id:int, initCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : List&#60;SupportedCulture&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetModelistByMeta(metaName:string, metaValue:string, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetPostListByValueId(valueId:string, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetPostListByValueIds(valueIds:List&#60;string&#62;, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetPostListByPageId(pageId:int, keyword:string, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetPostListByDataId(dataId:string, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetPostListByDataIds(dataIds:List&#60;string&#62;, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; SearchPost(keyword:string, dataIds:List&#60;string&#62;, pageIds:List&#60;int&#62;, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; GetModelistByAdditionalField(fieldName:string, value:string, culture:string, orderByPropertyName:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;PaginationModel&#60;TView&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; PublishScheduledPosts() : Task
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; RemoveRelatedDataAsync(parentId:string, parentType:MixDatabaseParentType, specificulture:string, context:MixCmsContext, transaction:IDbContextTransaction) : Task&#60;RepositoryResponse&#60;List&#60;MixRelatedAttributeData&#62;&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; ExportTheme(id:int, data:SiteStructureViewModel, culture:string, scheme:string, host:string) : Task&#60;RepositoryResponse&#60;string&#62;&#62;
+</li>
+<li>
++ {static} &#60;&#60;async&#62;&#62; InitTheme(model:string, culture:string, assets:IFormFile, theme:IFormFile) : Task&#60;RepositoryResponse&#60;InitViewModel&#62;&#62;
+</li>
+</ul>
+<hr>
+<h2>Links:</h2>
+<ul>
+<li>
+<i>Helper</i> is linked to <a href="Efmigrationshistory.html">Efmigrationshistory</a>
+&nbsp;:&nbsp;
+
+</li>
+<li>
+<i>Helper</i> is linked to <a href="CookieValidator.html">CookieValidator</a>
+&nbsp;:&nbsp;
+
+</li>
+</ul>
+<hr>
+<a href=index.html>Back to index</a>
+</html>

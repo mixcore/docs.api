@@ -1,0 +1,42 @@
+@startuml
+class Aspnetusers <<partial>> {
+    + Aspnetusers()
+    + Id : string <<get>> <<set>>
+    + AccessFailedCount : int <<get>> <<set>>
+    + Avatar : string <<get>> <<set>>
+    + ConcurrencyStamp : string <<get>> <<set>>
+    + CountryId : int <<get>> <<set>>
+    + Culture : string <<get>> <<set>>
+    + Dob : DateTime? <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + EmailConfirmed : ulong <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + Gender : string <<get>> <<set>>
+    + IsActived : ulong <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + LockoutEnabled : ulong <<get>> <<set>>
+    + LockoutEnd : DateTime? <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + NickName : string <<get>> <<set>>
+    + NormalizedEmail : string <<get>> <<set>>
+    + NormalizedUserName : string <<get>> <<set>>
+    + PasswordHash : string <<get>> <<set>>
+    + PhoneNumber : string <<get>> <<set>>
+    + PhoneNumberConfirmed : ulong <<get>> <<set>>
+    + RegisterType : string <<get>> <<set>>
+    + SecurityStamp : string <<get>> <<set>>
+    + TwoFactorEnabled : ulong <<get>> <<set>>
+    + UserName : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+Aspnetusers --> "JoinDate" DateTime
+Aspnetusers --> "LastModified" DateTime
+Aspnetusers --> "AspnetuserclaimsApplicationUser<Aspnetuserclaims>" "ICollection`1"
+Aspnetusers --> "AspnetuserclaimsUser<Aspnetuserclaims>" "ICollection`1"
+Aspnetusers --> "AspnetuserloginsApplicationUser<Aspnetuserlogins>" "ICollection`1"
+Aspnetusers --> "AspnetuserloginsUser<Aspnetuserlogins>" "ICollection`1"
+Aspnetusers --> "AspnetuserrolesApplicationUser<Aspnetuserroles>" "ICollection`1"
+Aspnetusers --> "AspnetuserrolesUser<Aspnetuserroles>" "ICollection`1"
+Aspnetusers --> "Aspnetusertokens<Aspnetusertokens>" "ICollection`1"
+@enduml

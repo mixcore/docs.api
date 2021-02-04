@@ -1,0 +1,41 @@
+<html>
+<title>IdentityHelper</title>
+<h2>Class</h2>
+IdentityHelper
+<br>
+<hr>
+<h2>No fields</h2>
+<hr>
+<h2>Methods:</h2>
+<ul>
+<li>
++ IdentityHelper(userManager:UserManager&#60;ApplicationUser&#62;, signInManager:SignInManager&#60;ApplicationUser&#62;, roleManager:RoleManager&#60;IdentityRole&#62;)
+</li>
+<li>
++ &#60;&#60;async&#62;&#62; GenerateAccessTokenAsync(user:ApplicationUser, isRemember:bool) : Task&#60;AccessTokenViewModel&#62;
+</li>
+<li>
++ &#60;&#60;async&#62;&#62; GenerateTokenAsync(user:ApplicationUser, expires:DateTime, refreshToken:string) : Task&#60;string&#62;
+</li>
+<li>
++ &#60;&#60;async&#62;&#62; GetClaimsAsync(user:ApplicationUser) : Task&#60;List&#60;Claim&#62;&#62;
+</li>
+<li>
++ CreateClaim(type:string, value:string) : Claim
+</li>
+<li>
++ GetPrincipalFromExpiredToken(token:string) : ClaimsPrincipal
+</li>
+</ul>
+<hr>
+<h2>Links:</h2>
+<ul>
+<li>
+<i>IdentityHelper</i> NONE-PLUS <a href="JwtSecurityKey.html">JwtSecurityKey</a>
+&nbsp;:&nbsp;
+
+</li>
+</ul>
+<hr>
+<a href=index.html>Back to index</a>
+</html>

@@ -1,0 +1,11 @@
+@startuml
+class MixChatHub {
+    + Join(request:HubRequest<MessengerConnection>) : void
+    + SendMessage(request:JObject) : void
+    + SendMessageToCaller(message:string) : Task
+    + SendMessageToGroups(message:string) : Task
+    + <<override>> <<async>> OnConnectedAsync() : Task
+    + <<override>> OnDisconnectedAsync(exception:Exception) : Task
+}
+BaseSignalRHub <|-- MixChatHub
+@enduml

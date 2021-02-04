@@ -1,0 +1,18 @@
+@startuml
+class MixRelatedPost <<partial>> {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + SourceId : int <<get>> <<set>>
+    + DestinationId : int <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixRelatedPost --> "CreatedDateTime" DateTime
+MixRelatedPost --> "Status" MixContentStatus
+MixRelatedPost --> "MixPost" MixPost
+MixRelatedPost --> "S" MixPost
+@enduml

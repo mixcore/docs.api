@@ -1,0 +1,42 @@
+@startuml
+class AspNetUsers <<partial>> {
+    + AspNetUsers()
+    + Id : string <<get>> <<set>>
+    + AccessFailedCount : int <<get>> <<set>>
+    + Avatar : string <<get>> <<set>>
+    + ConcurrencyStamp : string <<get>> <<set>>
+    + CountryId : int <<get>> <<set>>
+    + Culture : string <<get>> <<set>>
+    + Dob : DateTime? <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + EmailConfirmed : bool <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + Gender : string <<get>> <<set>>
+    + IsActived : bool <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + LockoutEnabled : bool <<get>> <<set>>
+    + LockoutEnd : DateTime? <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + NickName : string <<get>> <<set>>
+    + NormalizedEmail : string <<get>> <<set>>
+    + NormalizedUserName : string <<get>> <<set>>
+    + PasswordHash : string <<get>> <<set>>
+    + PhoneNumber : string <<get>> <<set>>
+    + PhoneNumberConfirmed : bool <<get>> <<set>>
+    + RegisterType : string <<get>> <<set>>
+    + SecurityStamp : string <<get>> <<set>>
+    + TwoFactorEnabled : bool <<get>> <<set>>
+    + UserName : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+AspNetUsers --> "JoinDate" DateTime
+AspNetUsers --> "LastModified" DateTime
+AspNetUsers --> "AspNetUserClaimsApplicationUser<AspNetUserClaims>" "ICollection`1"
+AspNetUsers --> "AspNetUserClaimsUser<AspNetUserClaims>" "ICollection`1"
+AspNetUsers --> "AspNetUserLoginsApplicationUser<AspNetUserLogins>" "ICollection`1"
+AspNetUsers --> "AspNetUserLoginsUser<AspNetUserLogins>" "ICollection`1"
+AspNetUsers --> "AspNetUserRolesApplicationUser<AspNetUserRoles>" "ICollection`1"
+AspNetUsers --> "AspNetUserRolesUser<AspNetUserRoles>" "ICollection`1"
+AspNetUsers --> "AspNetUserTokens<AspNetUserTokens>" "ICollection`1"
+@enduml

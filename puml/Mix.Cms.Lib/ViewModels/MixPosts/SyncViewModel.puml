@@ -1,0 +1,64 @@
+@startuml
+class SyncViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + ExtraFields : string <<get>> <<set>> = "[]"
+    + ExtraProperties : string <<get>> <<set>> = "[]"
+    + Icon : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + PublishedDateTime : DateTime? <<get>> <<set>>
+    + Tags : string <<get>> <<set>> = "[]"
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Domain : string <<get>>
+    + ActivedTheme : int <<get>>
+    + TemplateFolderType : string <<get>>
+    + TemplateFolder : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + DetailsUrl : string <<get>> <<set>>
+    + SyncViewModel()
+    + SyncViewModel(model:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPost
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> SaveSubModels(parent:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + <<override>> RemoveRelatedModels(view:SyncViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + GetRelated(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixPostPosts.ReadViewModel>
+    + GetAliases(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixUrlAliases.UpdateViewModel>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixPost,SyncViewModel>" <|-- SyncViewModel
+SyncViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+SyncViewModel --> "CreatedDateTime" DateTime
+SyncViewModel --> "Status" MixContentStatus
+SyncViewModel --> "Pages<MixPagePosts.ReadViewModel>" "List`1"
+SyncViewModel --> "Modules<MixModulePosts.ReadViewModel>" "List`1"
+SyncViewModel --> "MediaNavs<MixPostMedias.ReadViewModel>" "List`1"
+SyncViewModel --> "ModuleNavs<MixPostModules.ReadViewModel>" "List`1"
+SyncViewModel --> "PostNavs<MixPostPosts.ReadViewModel>" "List`1"
+SyncViewModel o-> "ListTag" JArray
+SyncViewModel --> "ImageFileStream" FileStreamViewModel
+SyncViewModel --> "ThumbnailFileStream" FileStreamViewModel
+SyncViewModel --> "Templates<MixTemplates.UpdateViewModel>" "List`1"
+SyncViewModel --> "Properties<ExtraProperty>" "List`1"
+SyncViewModel --> "UrlAliases<MixUrlAliases.UpdateViewModel>" "List`1"
+SyncViewModel --> "Columns<ModuleFieldViewModel>" "List`1"
+@enduml

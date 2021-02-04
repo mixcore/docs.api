@@ -1,0 +1,8 @@
+@startuml
+class MixThemeConfiguration {
+    + Configure(entity:EntityTypeBuilder<MixTheme>) : void
+}
+class "IEntityTypeConfiguration`1"<T> {
+}
+"IEntityTypeConfiguration`1" "<MixTheme>" <|-- MixThemeConfiguration
+@enduml

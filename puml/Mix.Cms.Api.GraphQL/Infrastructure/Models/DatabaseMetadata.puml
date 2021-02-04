@@ -1,0 +1,8 @@
+@startuml
+class DatabaseMetadata <<sealed>> {
+    + DatabaseMetadata(dbContext:DbContext, tableNameLookup:ITableNameLookup)
+    + GetTableMetadatas() : IEnumerable<TableMetadata>
+    + ReloadMetadata() : void
+}
+IDatabaseMetadata <|-- DatabaseMetadata
+@enduml

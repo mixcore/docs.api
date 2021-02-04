@@ -1,0 +1,26 @@
+@startuml
+class MixAttributeSetValue <<partial>> {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + AttributeFieldId : int <<get>> <<set>>
+    + AttributeFieldName : string <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + Regex : string <<get>> <<set>>
+    + BooleanValue : bool? <<get>> <<set>>
+    + DataId : string <<get>> <<set>>
+    + DateTimeValue : DateTime? <<get>> <<set>>
+    + DoubleValue : double? <<get>> <<set>>
+    + IntegerValue : int? <<get>> <<set>>
+    + StringValue : string <<get>> <<set>>
+    + EncryptValue : string <<get>> <<set>>
+    + EncryptKey : string <<get>> <<set>>
+    + EncryptType : int <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixAttributeSetValue --> "DataType" MixDataType
+MixAttributeSetValue --> "CreatedDateTime" DateTime
+MixAttributeSetValue --> "Status" MixContentStatus
+@enduml

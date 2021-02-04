@@ -1,0 +1,21 @@
+@startuml
+class MixTheme <<partial>> {
+    + MixTheme()
+    + Id : int <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + PreviewUrl : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+MixTheme --> "CreatedDateTime" DateTime
+MixTheme --> "Status" MixContentStatus
+MixTheme --> "MixFile<MixFile>" "ICollection`1"
+MixTheme --> "MixTemplate<MixTemplate>" "ICollection`1"
+@enduml

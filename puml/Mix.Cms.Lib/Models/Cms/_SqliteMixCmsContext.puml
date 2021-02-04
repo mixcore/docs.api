@@ -1,0 +1,7 @@
+@startuml
+class SqliteMixCmsContext <<partial>> {
+    + SqliteMixCmsContext()
+    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
+}
+MixCmsContext <|-- SqliteMixCmsContext
+@enduml

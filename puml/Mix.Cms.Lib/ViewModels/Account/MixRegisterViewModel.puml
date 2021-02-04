@@ -1,0 +1,36 @@
+@startuml
+class MixRegisterViewModel {
+    + Id : string <<get>> <<set>>
+    + Username : string <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + MiddleName : string <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + Avatar : string <<get>> <<set>>
+    + Address : string <<get>> <<set>>
+    + PhoneNumber : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Password : string <<get>> <<set>>
+    + ConfirmPassword : string <<get>> <<set>>
+    + DetailsUrl : string <<get>> <<set>>
+    + Domain : string <<get>>
+    + AvatarUrl : string <<get>>
+    + MixRegisterViewModel()
+    + MixRegisterViewModel(model:MixCmsUser, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixCmsUser
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + GetRoleNavs() : List<NavUserRoleViewModel>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixCmsUser,MixRegisterViewModel>" <|-- MixRegisterViewModel
+MixRegisterViewModel --> "CreatedDateTime" DateTime
+MixRegisterViewModel --> "Status" MixUserStatus
+MixRegisterViewModel --> "UserRoles<NavUserRoleViewModel>" "List`1"
+MixRegisterViewModel o-> "MediaFile" FileViewModel
+@enduml

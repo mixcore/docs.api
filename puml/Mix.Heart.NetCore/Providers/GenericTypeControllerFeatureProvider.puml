@@ -1,0 +1,11 @@
+@startuml
+class GenericTypeControllerFeatureProvider {
+    + GenericTypeControllerFeatureProvider(assembly:Assembly, baseType:Type)
+    + PopulateFeature(parts:IEnumerable<ApplicationPart>, feature:ControllerFeature) : void
+}
+class "IApplicationFeatureProvider`1"<T> {
+}
+"IApplicationFeatureProvider`1" "<ControllerFeature>" <|-- GenericTypeControllerFeatureProvider
+GenericTypeControllerFeatureProvider --> "Assembly" Assembly
+GenericTypeControllerFeatureProvider --> "BaseType" Type
+@enduml

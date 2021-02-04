@@ -1,0 +1,38 @@
+@startuml
+class FormViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + DetailsUrl : string <<get>>
+    + ParentId : string <<get>> <<set>>
+    + FormViewModel()
+    + FormViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixAttributeSetData
+    + <<override>> <<async>> SaveModelAsync(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<FormViewModel>>
+    + <<override>> SaveModel(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<FormViewModel>
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + {static} <<async>> SaveObjectAsync(data:JObject, attributeSetName:string) : Task<RepositoryResponse<FormViewModel>>
+    + HasValue(fieldName:string) : bool
+    + Property(fieldName:string) : T
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,FormViewModel>" <|-- FormViewModel
+FormViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+FormViewModel --> "CreatedDateTime" DateTime
+FormViewModel --> "Status" MixContentStatus
+FormViewModel --> "Obj" JObject
+FormViewModel --> "ParentType" MixDatabaseParentType
+FormViewModel o-> "RelatedData<MixRelatedAttributeDatas.UpdateViewModel>" "List`1"
+FormViewModel --> "Values<MixAttributeSetValues.UpdateViewModel>" "List`1"
+FormViewModel --> "Fields<MixAttributeFields.UpdateViewModel>" "List`1"
+FormViewModel o-> "RefData<MixAttributeSetDatas.FormViewModel>" "List`1"
+@enduml

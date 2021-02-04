@@ -1,0 +1,51 @@
+@startuml
+class NavigationViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + NavigationViewModel()
+    + NavigationViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class Navigation {
+    + Id : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+}
+class MenuItem {
+    + Id : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Uri : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + Target : string <<get>> <<set>>
+    + Classes : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + TargetId : string <<get>> <<set>>
+    + IsActive : bool <<get>> <<set>>
+    + Property(fieldName:string) : T
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,NavigationViewModel>" <|-- NavigationViewModel
+NavigationViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+NavigationViewModel --> "CreatedDateTime" DateTime
+NavigationViewModel --> "Status" MixContentStatus
+NavigationViewModel --> "Values<MixAttributeSetValues.NavigationViewModel>" "List`1"
+NavigationViewModel --> "Fields<MixAttributeFields.ReadViewModel>" "List`1"
+NavigationViewModel --> "Obj" JObject
+NavigationViewModel --> "Nav" Navigation
+Navigation o-> "MenuItems<MenuItem>" "List`1"
+Navigation o-> "ActivedMenuItems<MenuItem>" "List`1"
+Navigation --> "ActivedMenuItem" MenuItem
+MenuItem --> "Obj" JObject
+MenuItem --> "MenuItems<MenuItem>" "List`1"
+@enduml

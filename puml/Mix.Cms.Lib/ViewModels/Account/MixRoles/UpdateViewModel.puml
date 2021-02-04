@@ -1,0 +1,20 @@
+@startuml
+class UpdateViewModel {
+    + Id : string <<get>> <<set>>
+    + ConcurrencyStamp : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + NormalizedName : string <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:AspNetRoles, _context:MixCmsAccountContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsAccountContext, _transaction:IDbContextTransaction) : AspNetRoles
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:UpdateViewModel, _context:MixCmsAccountContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<async>> LoadPermissions(_context:MixCmsContext, _transaction:IDbContextTransaction) : Task
+    + <<async>> SavePermissionsAsync(parent:AspNetRoles, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsAccountContext,AspNetRoles,UpdateViewModel>" <|-- UpdateViewModel
+UpdateViewModel --> "Permissions<MixPortalPages.UpdateRolePermissionViewModel>" "List`1"
+@enduml

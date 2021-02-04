@@ -1,0 +1,27 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + SourceId : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Alias : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixUrlAlias, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixUrlAlias
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixUrlAlias,UpdateViewModel>" <|-- UpdateViewModel
+UpdateViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+UpdateViewModel --> "Type" MixUrlAliasType
+UpdateViewModel --> "CreatedDateTime" DateTime
+UpdateViewModel --> "Status" MixContentStatus
+@enduml

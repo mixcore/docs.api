@@ -1,0 +1,10 @@
+@startuml
+class MethodRules {
+    + {static} RedirectXMLRequests(context:RewriteContext) : void
+}
+class RedirectImageRequests {
+    + RedirectImageRequests(extension:string, newPath:string)
+    + ApplyRule(context:RewriteContext) : void
+}
+IRule <|-- RedirectImageRequests
+@enduml

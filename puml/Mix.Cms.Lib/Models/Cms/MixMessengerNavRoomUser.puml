@@ -1,0 +1,9 @@
+@startuml
+class MixMessengerNavRoomUser <<partial>> {
+    + UserId : string <<get>> <<set>>
+}
+MixMessengerNavRoomUser --> "RoomId" Guid
+MixMessengerNavRoomUser --> "JoinedDate" DateTime
+MixMessengerNavRoomUser --> "Room" MixMessengerHubRoom
+MixMessengerNavRoomUser --> "User" MixMessengerUser
+@enduml

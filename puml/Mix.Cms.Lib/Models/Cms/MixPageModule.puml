@@ -1,0 +1,19 @@
+@startuml
+class MixPageModule <<partial>> {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + ModuleId : int <<get>> <<set>>
+    + PageId : int <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Position : int <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixPageModule --> "CreatedDateTime" DateTime
+MixPageModule --> "Status" MixContentStatus
+MixPageModule --> "MixModule" MixModule
+MixPageModule --> "MixPage" MixPage
+@enduml

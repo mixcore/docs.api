@@ -1,0 +1,7 @@
+@startuml
+class Helper {
+    + {static} <<async>> Import(arrModule:List<MixModule>, destCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + {static} LoadCultures(id:int, initCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : List<SupportedCulture>
+    + {static} GetBy(predicate:Expression<Func<MixModule, bool>>, postId:string, productId:string, pageId:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<UpdateViewModel>
+}
+@enduml

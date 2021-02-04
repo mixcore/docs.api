@@ -1,0 +1,33 @@
+@startuml
+class SiteStructureViewModel {
+    + Specificulture : string <<get>> <<set>>
+    + ThemeName : string <<get>> <<set>>
+    + SiteStructureViewModel()
+    + <<async>> InitAsync(culture:string) : Task
+    + ExportSelectedItemsAsync() : RepositoryResponse<string>
+    + <<async>> ImportAsync(destCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class "List`1"<T> {
+}
+class "Dictionary`2"<T1,T2> {
+}
+SiteStructureViewModel --> "Pages<MixPages.ImportViewModel>" "List`1"
+SiteStructureViewModel --> "Modules<MixModules.ImportViewModel>" "List`1"
+SiteStructureViewModel --> "AttributeSets<MixAttributeSets.ImportViewModel>" "List`1"
+SiteStructureViewModel --> "Configurations<MixConfigurations.ImportViewModel>" "List`1"
+SiteStructureViewModel --> "Languages<MixLanguages.ImportViewModel>" "List`1"
+SiteStructureViewModel o-> "RelatedData<MixRelatedAttributeDatas.ImportViewModel>" "List`1"
+SiteStructureViewModel o-> "PagePostNavs<MixPagePosts.ImportViewModel>" "List`1"
+SiteStructureViewModel o-> "PageModuleNavs<MixPageModules.ImportViewModel>" "List`1"
+SiteStructureViewModel o-> "ModulePostNavs<MixModulePosts.ImportViewModel>" "List`1"
+SiteStructureViewModel o-> "Posts<MixPosts.ImportViewModel>" "List`1"
+SiteStructureViewModel o-> "ModuleDatas<MixModuleDatas.ImportViewModel>" "List`1"
+SiteStructureViewModel o-> "AttributeSetDatas<MixAttributeSetDatas.ImportViewModel>" "List`1"
+SiteStructureViewModel o-> "dicConfigurationIds<int,int>" "Dictionary`2"
+SiteStructureViewModel o-> "dicLanguageIds<int,int>" "Dictionary`2"
+SiteStructureViewModel o-> "dicModuleIds<int,int>" "Dictionary`2"
+SiteStructureViewModel o-> "dicPostIds<int,int>" "Dictionary`2"
+SiteStructureViewModel o-> "dicPageIds<int,int>" "Dictionary`2"
+SiteStructureViewModel o-> "dicFieldIds<int,int>" "Dictionary`2"
+SiteStructureViewModel o-> "dicAttributeSetIds<int,int>" "Dictionary`2"
+@enduml

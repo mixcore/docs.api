@@ -1,0 +1,10 @@
+@startuml
+class PortalHub {
+    + <<async>> SendMessage(message:string) : Task
+    + SendMessageToCaller(message:string) : Task
+    + SendMessageToGroups(message:string) : Task
+    + <<override>> <<async>> OnConnectedAsync() : Task
+    + <<override>> <<async>> OnDisconnectedAsync(exception:Exception) : Task
+}
+BaseSignalRHub <|-- PortalHub
+@enduml

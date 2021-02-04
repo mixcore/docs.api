@@ -1,0 +1,14 @@
+@startuml
+class MixDbContext {
+    + MixDbContext(options:DbContextOptions<MixDbContext>)
+    + MixDbContext()
+    + <<override>> Dispose() : void
+}
+class "IdentityDbContext`1"<T> {
+}
+class "DbSet`1"<T> {
+}
+"IdentityDbContext`1" "<ApplicationUser>" <|-- MixDbContext
+MixDbContext --> "Clients<Client>" "DbSet`1"
+MixDbContext --> "RefreshTokens<RefreshToken>" "DbSet`1"
+@enduml

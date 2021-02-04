@@ -1,0 +1,18 @@
+@startuml
+class MixRelatedAttributeSet <<partial>> {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + ParentId : int <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+MixRelatedAttributeSet --> "ParentType" MixDatabaseType
+MixRelatedAttributeSet --> "CreatedDateTime" DateTime
+MixRelatedAttributeSet --> "Status" MixContentStatus
+MixRelatedAttributeSet --> "IdNavigation" MixAttributeSet
+@enduml

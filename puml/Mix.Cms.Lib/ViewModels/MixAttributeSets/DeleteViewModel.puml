@@ -1,0 +1,13 @@
+@startuml
+class DeleteViewModel {
+    + Id : int <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + DeleteViewModel()
+    + DeleteViewModel(model:MixAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> RemoveRelatedModels(view:DeleteViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:DeleteViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : System.Threading.Tasks.Task<RepositoryResponse<bool>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSet,DeleteViewModel>" <|-- DeleteViewModel
+@enduml

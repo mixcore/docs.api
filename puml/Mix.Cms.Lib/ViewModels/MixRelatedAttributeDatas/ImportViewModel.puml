@@ -1,0 +1,28 @@
+@startuml
+class ImportViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + DataId : string <<get>> <<set>>
+    + ParentId : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + IsProcessed : bool <<get>> <<set>>
+    + ImportViewModel()
+    + ImportViewModel(model:MixRelatedAttributeData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixRelatedAttributeData,ImportViewModel>" <|-- ImportViewModel
+ImportViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+ImportViewModel --> "ParentType" MixDatabaseParentType
+ImportViewModel --> "CreatedDateTime" DateTime
+ImportViewModel --> "Status" MixContentStatus
+@enduml

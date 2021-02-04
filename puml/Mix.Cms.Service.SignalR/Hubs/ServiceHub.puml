@@ -1,0 +1,9 @@
+@startuml
+class ServiceHub {
+    + ServiceHub(context:MixChatServiceContext, msgContext:MixCmsContext)
+    + HandleRequest(data:string) : Task
+    + <<override>> OnConnectedAsync() : Task
+    + <<override>> OnDisconnectedAsync(exception:Exception) : Task
+}
+BaseSignalRHub <|-- ServiceHub
+@enduml

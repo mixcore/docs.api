@@ -1,0 +1,12 @@
+@startuml
+class ApiAttributeSetController {
+    + ApiAttributeSetController(context:MixCmsContext, memoryCache:IMemoryCache, hubContext:Microsoft.AspNetCore.SignalR.IHubContext<Mix.Cms.Service.SignalR.Hubs.PortalHub>)
+    + <<async>> DeleteAsync(id:int) : Task<RepositoryResponse<MixAttributeSet>>
+    + <<async>> Details(viewType:string, name:string, id:int?) : Task<ActionResult<JObject>>
+    + <<async>> Save(data:UpdateViewModel) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> GetList(request:RequestPaging) : Task<ActionResult<JObject>>
+}
+class "BaseGenericApiController`2"<T1,T2> {
+}
+"BaseGenericApiController`2" "<MixCmsContext,MixAttributeSet>" <|-- ApiAttributeSetController
+@enduml

@@ -1,0 +1,26 @@
+@startuml
+class MixCulture <<partial>> {
+    + MixCulture()
+    + Id : int <<get>> <<set>>
+    + Alias : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + FullName : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + Lcid : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+MixCulture --> "CreatedDateTime" DateTime
+MixCulture --> "Status" MixContentStatus
+MixCulture --> "MixConfiguration<MixConfiguration>" "ICollection`1"
+MixCulture --> "MixLanguage<MixLanguage>" "ICollection`1"
+MixCulture --> "MixModule<MixModule>" "ICollection`1"
+MixCulture --> "MixPage<MixPage>" "ICollection`1"
+MixCulture --> "MixPost<MixPost>" "ICollection`1"
+MixCulture --> "MixUrlAlias<MixUrlAlias>" "ICollection`1"
+@enduml

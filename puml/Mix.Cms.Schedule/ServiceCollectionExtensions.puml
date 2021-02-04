@@ -1,0 +1,15 @@
+@startuml
+class ServiceCollectionExtensions <<static>> {
+    + {static} AddMixScheduler(services:IServiceCollection, configuration:IConfiguration) : IServiceCollection
+    + {static} UseMixScheduler(app:IApplicationBuilder) : IApplicationBuilder
+    + {static} <<async>> StartScheduler() : Task
+}
+class ConsoleLogProvider {
+    + GetLogger(name:string) : Logger
+    + OpenNestedContext(message:string) : IDisposable
+    + OpenMappedContext(key:string, value:string) : IDisposable
+    + OpenMappedContext(key:string, value:object, destructure:bool) : IDisposable
+}
+ServiceCollectionExtensions +-- ConsoleLogProvider
+ILogProvider <|-- ConsoleLogProvider
+@enduml

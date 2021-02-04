@@ -1,0 +1,17 @@
+@startuml
+class MixChatServiceContext <<partial>> {
+    + MixChatServiceContext()
+    + MixChatServiceContext(options:DbContextOptions<MixChatServiceContext>)
+    + <<override>> Dispose() : void
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- MixChatServiceContext
+MixChatServiceContext --> "MixMessengerHubRoom<MixMessengerHubRoom>" "DbSet`1"
+MixChatServiceContext --> "MixMessengerMessage<MixMessengerMessage>" "DbSet`1"
+MixChatServiceContext --> "MixMessengerNavRoomUser<MixMessengerNavRoomUser>" "DbSet`1"
+MixChatServiceContext --> "MixMessengerNavTeamUser<MixMessengerNavTeamUser>" "DbSet`1"
+MixChatServiceContext --> "MixMessengerTeam<MixMessengerTeam>" "DbSet`1"
+MixChatServiceContext --> "MixMessengerUser<MixMessengerUser>" "DbSet`1"
+MixChatServiceContext --> "MixMessengerUserDevice<MixMessengerUserDevice>" "DbSet`1"
+@enduml

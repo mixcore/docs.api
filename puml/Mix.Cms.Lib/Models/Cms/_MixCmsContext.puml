@@ -1,0 +1,41 @@
+@startuml
+class MixCmsContext <<partial>> {
+    + MixCmsContext(options:DbContextOptions<MixCmsContext>)
+    + MixCmsContext()
+    + <<override>> Dispose() : void
+    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- MixCmsContext
+MixCmsContext --> "MixAttributeField<MixAttributeField>" "DbSet`1"
+MixCmsContext --> "MixAttributeSet<MixAttributeSet>" "DbSet`1"
+MixCmsContext --> "MixAttributeSetData<MixAttributeSetData>" "DbSet`1"
+MixCmsContext --> "MixAttributeSetReference<MixAttributeSetReference>" "DbSet`1"
+MixCmsContext --> "MixAttributeSetValue<MixAttributeSetValue>" "DbSet`1"
+MixCmsContext --> "MixCache<MixCache>" "DbSet`1"
+MixCmsContext --> "MixCmsUser<MixCmsUser>" "DbSet`1"
+MixCmsContext --> "MixConfiguration<MixConfiguration>" "DbSet`1"
+MixCmsContext --> "MixCulture<MixCulture>" "DbSet`1"
+MixCmsContext --> "MixFile<MixFile>" "DbSet`1"
+MixCmsContext --> "MixLanguage<MixLanguage>" "DbSet`1"
+MixCmsContext --> "MixMedia<MixMedia>" "DbSet`1"
+MixCmsContext --> "MixModule<MixModule>" "DbSet`1"
+MixCmsContext --> "MixModuleData<MixModuleData>" "DbSet`1"
+MixCmsContext --> "MixModulePost<MixModulePost>" "DbSet`1"
+MixCmsContext --> "MixPage<MixPage>" "DbSet`1"
+MixCmsContext --> "MixPageModule<MixPageModule>" "DbSet`1"
+MixCmsContext --> "MixPagePost<MixPagePost>" "DbSet`1"
+MixCmsContext --> "MixPortalPage<MixPortalPage>" "DbSet`1"
+MixCmsContext --> "MixPortalPageNavigation<MixPortalPageNavigation>" "DbSet`1"
+MixCmsContext --> "MixPortalPageRole<MixPortalPageRole>" "DbSet`1"
+MixCmsContext --> "MixPost<MixPost>" "DbSet`1"
+MixCmsContext --> "MixPostMedia<MixPostMedia>" "DbSet`1"
+MixCmsContext --> "MixPostModule<MixPostModule>" "DbSet`1"
+MixCmsContext --> "MixRelatedAttributeData<MixRelatedAttributeData>" "DbSet`1"
+MixCmsContext --> "MixRelatedAttributeSet<MixRelatedAttributeSet>" "DbSet`1"
+MixCmsContext --> "MixRelatedPost<MixRelatedPost>" "DbSet`1"
+MixCmsContext --> "MixTemplate<MixTemplate>" "DbSet`1"
+MixCmsContext --> "MixTheme<MixTheme>" "DbSet`1"
+MixCmsContext --> "MixUrlAlias<MixUrlAlias>" "DbSet`1"
+@enduml

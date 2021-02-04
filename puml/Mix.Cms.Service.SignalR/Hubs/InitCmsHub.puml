@@ -1,0 +1,10 @@
+@startuml
+class InitCmsHub {
+    + <<async>> SendMessage(message:string) : Task
+    + SendMessageToCaller(message:string) : Task
+    + SendMessageToGroups(message:string) : Task
+    + <<override>> <<async>> OnConnectedAsync() : Task
+    + <<override>> <<async>> OnDisconnectedAsync(exception:Exception) : Task
+}
+BaseSignalRHub <|-- InitCmsHub
+@enduml

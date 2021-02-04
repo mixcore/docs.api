@@ -1,0 +1,69 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + ExtraFields : string <<get>> <<set>> = "[]"
+    + ExtraProperties : string <<get>> <<set>> = "[]"
+    + Icon : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + PublishedDateTime : DateTime? <<get>> <<set>>
+    + Tags : string <<get>> <<set>> = "[]"
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + TemplatePath : string <<get>> <<set>>
+    + Domain : string <<get>>
+    + ActivedTheme : int <<get>>
+    + TemplateFolderType : string <<get>>
+    + TemplateFolder : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + DetailsUrl : string <<get>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPost
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:UpdateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> CloneAsync(model:MixPost, cloneCultures:List<SupportedCulture>, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<List<UpdateViewModel>>>
+    + <<override>> SaveSubModels(parent:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + <<override>> RemoveRelatedModels(view:UpdateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + GetRelated(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixPostPosts.ReadViewModel>
+    + GetAliases(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixUrlAliases.UpdateViewModel>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixPost,UpdateViewModel>" <|-- UpdateViewModel
+UpdateViewModel --> "Cultures<Domain.Core.Models.SupportedCulture>" "List`1"
+UpdateViewModel --> "CreatedDateTime" DateTime
+UpdateViewModel --> "Status" MixContentStatus
+UpdateViewModel --> "Pages<MixPagePosts.ReadViewModel>" "List`1"
+UpdateViewModel --> "Modules<MixModulePosts.ReadViewModel>" "List`1"
+UpdateViewModel --> "MediaNavs<MixPostMedias.ReadViewModel>" "List`1"
+UpdateViewModel --> "ModuleNavs<MixPostModules.ReadViewModel>" "List`1"
+UpdateViewModel --> "PostNavs<MixPostPosts.ReadViewModel>" "List`1"
+UpdateViewModel o-> "ListTag" JArray
+UpdateViewModel --> "ImageFileStream" FileStreamViewModel
+UpdateViewModel --> "ThumbnailFileStream" FileStreamViewModel
+UpdateViewModel --> "SysCategories<MixRelatedAttributeDatas.FormViewModel>" "List`1"
+UpdateViewModel --> "SysTags<MixRelatedAttributeDatas.FormViewModel>" "List`1"
+UpdateViewModel --> "Templates<MixTemplates.UpdateViewModel>" "List`1"
+UpdateViewModel --> "Properties<ExtraProperty>" "List`1"
+UpdateViewModel --> "UrlAliases<MixUrlAliases.UpdateViewModel>" "List`1"
+UpdateViewModel --> "Columns<ModuleFieldViewModel>" "List`1"
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+class InitViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + IsCreateDefault : bool <<get>> <<set>>
+    + Domain : string <<get>>
+    + ImageUrl : string <<get>>
+    + IsActived : bool <<get>> <<set>>
+    + AssetFolder : string <<get>>
+    + UploadsFolder : string <<get>>
+    + TemplateFolder : string <<get>>
+    + InitViewModel()
+    + InitViewModel(model:MixTheme, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixTheme
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixTheme, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class "ViewModelBase`3"<T1,T2,T3> {
+}
+class "List`1"<T> {
+}
+"ViewModelBase`3" "<MixCmsContext,MixTheme,InitViewModel>" <|-- InitViewModel
+InitViewModel --> "CreatedDateTime" DateTime
+InitViewModel --> "Status" MixContentStatus
+InitViewModel --> "TemplateAsset" FileViewModel
+InitViewModel --> "Asset" FileViewModel
+InitViewModel --> "Templates<MixTemplates.InitViewModel>" "List`1"
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+class MixService {
+    + MixService()
+    + {static} GetConnectionString(name:string) : string
+    + {static} SetConnectionString(name:string, value:string) : void
+    + CheckValidCulture(specificulture:string) : bool
+    + {static} GetAuthConfig(name:string) : T
+    + {static} SetAuthConfig(name:string, value:T) : void
+    + {static} GetIpConfig(name:string) : T
+    + {static} SetIpConfig(name:string, value:T) : void
+    + {static} GetMixConfig(name:string) : T
+    + {static} SetMixConfig(name:string, value:T) : void
+    + {static} GetConfig(name:string) : T
+    + {static} GetEnumConfig(name:string) : T
+    + {static} SetConfig(name:string, value:T) : void
+    + {static} GetConfig(name:string, culture:string) : T
+    + {static} SetConfig(name:string, culture:string, value:T) : void
+    + {static} Translate(name:string, culture:string) : T
+    + {static} TranslateString(name:string, culture:string) : string
+    + {static} GetTranslator(culture:string) : JObject
+    + {static} GetLocalSettings(culture:string) : JObject
+    + {static} GetGlobalSetting() : JObject
+    + {static} SaveSettings() : bool
+    + {static} SaveSettings(content:string) : bool
+    + {static} Reload() : void
+    + {static} LoadFromDatabase(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + {static} SendEdm(culture:string, template:string, data:JObject, subject:string, from:string) : Task
+    + {static} SendMail(subject:string, message:string, to:string, from:string) : void
+    + {static} LogException(ex:Exception) : void
+    + {static} GetTemplateFolder(culture:string) : string
+    + {static} GetTemplateUploadFolder(culture:string) : string
+    + {static} GetDbContext() : MixCmsContext
+    + {static} GetAccountDbContext() : MixCmsAccountContext
+    + {static} <<async>> RemoveCacheAsync(type:Type, key:string) : Task
+}
+MixService --> "Instance" MixService
+MixService --> "DefaultInstance" MixService
+@enduml

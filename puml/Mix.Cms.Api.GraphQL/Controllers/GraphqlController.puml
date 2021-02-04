@@ -1,0 +1,7 @@
+@startuml
+class GraphqlController {
+    {static} GraphqlController()
+    + <<async>> Get(query:QueryRequest) : Task<ActionResult>
+}
+ControllerBase <|-- GraphqlController
+@enduml

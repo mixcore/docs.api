@@ -1,0 +1,9 @@
+@startuml
+class UsersInRoleModel {
+    + Id : string <<get>> <<set>>
+}
+class "List`1"<T> {
+}
+UsersInRoleModel --> "EnrolledUsers<string>" "List`1"
+UsersInRoleModel --> "RemovedUsers<string>" "List`1"
+@enduml
