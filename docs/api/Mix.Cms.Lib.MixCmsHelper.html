@@ -80,32 +80,9 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">MixCmsHelper</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Lib.html">Mix.Cms.Lib</a></h6>
-  <h6><strong>Assembly</strong>: Mix.Cms.Lib.dll</h6>
+  
+  <!-- inheritance -->
+  
   <h5 id="Mix_Cms_Lib_MixCmsHelper_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class MixCmsHelper</code></pre>
@@ -355,6 +332,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Task&lt;RepositoryResponse&lt;PaginationModel&lt;TView&gt;&gt;&gt; GetAttributeDataByParent&lt;TView&gt;(string culture, string attributeSetName, string parentId, MixDatabaseParentType parentType, string orderBy = &quot;CreatedDateTime&quot;, MixHeartEnums.DisplayDirection direction = MixHeartEnums.DisplayDirection.Desc, int? pageSize = default(int? ), int? pageIndex, MixCmsContext _context = null, IDbContextTransaction _transaction = null)
+
     where TView : ViewModelBase&lt;MixCmsContext, MixAttributeSetData, TView&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -597,6 +575,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Task&lt;RepositoryResponse&lt;PaginationModel&lt;TView&gt;&gt;&gt; GetListPostByAdditionalField&lt;TView&gt;(string fieldName, object fieldValue, string culture, MixDataType dataType, MixCompareOperatorKind filterType = MixCompareOperatorKind.Equal, string orderByPropertyName = null, MixHeartEnums.DisplayDirection direction = MixHeartEnums.DisplayDirection.Asc, int? pageSize = default(int? ), int? pageIndex = default(int? ), MixCmsContext _context = null, IDbContextTransaction _transaction = null)
+
     where TView : ViewModelBase&lt;MixCmsContext, MixPost, TView&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -980,6 +959,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Task&lt;RepositoryResponse&lt;PaginationModel&lt;TView&gt;&gt;&gt; GetPostlistByAdditionalField&lt;TView&gt;(string fieldName, string value, string culture, string orderByPropertyName = null, MixHeartEnums.DisplayDirection direction = MixHeartEnums.DisplayDirection.Asc, int? pageSize = default(int? ), int? pageIndex, MixCmsContext _context = null, IDbContextTransaction _transaction = null)
+
     where TView : ViewModelBase&lt;MixCmsContext, MixPost, TView&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1083,6 +1063,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Task&lt;RepositoryResponse&lt;PaginationModel&lt;TView&gt;&gt;&gt; GetPostlistByMeta&lt;TView&gt;(HttpContext context, string culture, string type = &quot;sys_tag&quot;, string orderByPropertyName = &quot;CreatedDateTime&quot;, MixHeartEnums.DisplayDirection direction = MixHeartEnums.DisplayDirection.Desc, MixCmsContext _context = null, IDbContextTransaction _transaction = null)
+
     where TView : ViewModelBase&lt;MixCmsContext, MixPost, TView&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1645,7 +1626,34 @@
       </tr>
     </tbody>
   </table>
-</article>
+  
+
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Lib.html">Mix.Cms.Lib</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Cms.Lib.dll</h6></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -1677,7 +1685,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Generated by <strong>DocFX</strong></span>
+            <span>From <strong>Mixcore</strong></span>
           </div>
         </div>
       </footer>

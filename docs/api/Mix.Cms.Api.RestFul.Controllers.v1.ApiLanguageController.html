@@ -90,6 +90,72 @@
     <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
+  
+  <!-- inheritance -->
+  
+  <h5 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Produces(&quot;application/json&quot;, new string[]{})]
+[Route(&quot;api/v1/rest/{culture}/language&quot;)]
+public class ApiLanguageController : BaseAuthorizedRestApiController&lt;MixCmsContext, MixLanguage, UpdateViewModel, ReadMvcViewModel, UpdateViewModel&gt;, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
+  </div>
+  <h5 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_puml">UML Diagram</h5>
+  <div class="puml">
+  <script>
+  var src="src/Mix.Cms.Api.RestFul/Controllers/v1/Languages/ApiLanguageController.cs";
+  document.write("<img src=\"/puml/"+src.slice(0, -3)+".png\"/>");
+  </script>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_Get.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.RestFul.Controllers.v1.ApiLanguageController.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api.RestFul/Controllers/v1/Languages/ApiLanguageController.cs/#L25">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_Get_" data-uid="Mix.Cms.Api.RestFul.Controllers.v1.ApiLanguageController.Get*"></a>
+  <h4 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_Get" data-uid="Mix.Cms.Api.RestFul.Controllers.v1.ApiLanguageController.Get">Get()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+public override Task&lt;ActionResult&lt;PaginationModel&lt;ReadMvcViewModel&gt;&gt;&gt; Get()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ActionResult</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.PaginationModel</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixLanguages.ReadMvcViewModel.html">ReadMvcViewModel</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Cms.Lib.Controllers.BaseAuthorizedRestApiController&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.UpdateViewModel, Mix.Cms.Lib.ViewModels.MixLanguages.ReadMvcViewModel, Mix.Cms.Lib.ViewModels.MixLanguages.UpdateViewModel&gt;.Get()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  
+
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -793,69 +859,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Api.RestFul.Controllers.v1.html">Mix.Cms.Api.RestFul.Controllers.v1</a></h6>
-  <h6><strong>Assembly</strong>: Mix.Cms.Api.RestFul.dll</h6>
-  <h5 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Produces(&quot;application/json&quot;, new string[]{})]
-[Route(&quot;api/v1/rest/{culture}/language&quot;)]
-public class ApiLanguageController : BaseAuthorizedRestApiController&lt;MixCmsContext, MixLanguage, UpdateViewModel, ReadMvcViewModel, UpdateViewModel&gt;, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
-  </div>
-  <h5 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_puml">UML Diagram</h5>
-  <div class="puml">
-  <script>
-  var src="src/Mix.Cms.Api.RestFul/Controllers/v1/Languages/ApiLanguageController.cs";
-  document.write("<img src=\"/puml/"+src.slice(0, -3)+".png\"/>");
-  </script>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_Get.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.RestFul.Controllers.v1.ApiLanguageController.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api.RestFul/Controllers/v1/Languages/ApiLanguageController.cs/#L25">View Source</a>
-  </span>
-  <a id="Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_Get_" data-uid="Mix.Cms.Api.RestFul.Controllers.v1.ApiLanguageController.Get*"></a>
-  <h4 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiLanguageController_Get" data-uid="Mix.Cms.Api.RestFul.Controllers.v1.ApiLanguageController.Get">Get()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpGet]
-public override Task&lt;ActionResult&lt;PaginationModel&lt;ReadMvcViewModel&gt;&gt;&gt; Get()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ActionResult</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.PaginationModel</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixLanguages.ReadMvcViewModel.html">ReadMvcViewModel</a>&gt;&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Mix.Cms.Lib.Controllers.BaseAuthorizedRestApiController&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixLanguage, Mix.Cms.Lib.ViewModels.MixLanguages.UpdateViewModel, Mix.Cms.Lib.ViewModels.MixLanguages.ReadMvcViewModel, Mix.Cms.Lib.ViewModels.MixLanguages.UpdateViewModel&gt;.Get()</span></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IActionFilter</span>
-  </div>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter</span>
-  </div>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span>
-  </div>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
-</article>
+  <h6><strong>Assembly</strong>: Mix.Cms.Api.RestFul.dll</h6></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -887,7 +891,7 @@ public override Task&lt;ActionResult&lt;PaginationModel&lt;ReadMvcViewModel&gt;&
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Generated by <strong>DocFX</strong></span>
+            <span>From <strong>Mixcore</strong></span>
           </div>
         </div>
       </footer>

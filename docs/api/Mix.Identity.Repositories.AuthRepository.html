@@ -85,6 +85,100 @@
     <h5>Implements</h5>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
+  
+  <!-- inheritance -->
+  
+  <h5 id="Mix_Identity_Repositories_AuthRepository_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AuthRepository : UserManager&lt;ApplicationUser&gt;, IDisposable</code></pre>
+  </div>
+  <h5 id="Mix_Identity_Repositories_AuthRepository_puml">UML Diagram</h5>
+  <div class="puml">
+  <script>
+  var src="src/Mix.Identity/Repositories/AuthRepository.cs";
+  document.write("<img src=\"/puml/"+src.slice(0, -3)+".png\"/>");
+  </script>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Identity_Repositories_AuthRepository__ctor_Microsoft_AspNetCore_Identity_IUserStore_Mix_Identity_Models_ApplicationUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_Mix_Identity_Models_ApplicationUser__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_Mix_Identity_Models_ApplicationUser___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_Mix_Identity_Models_ApplicationUser___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_UserManager_Mix_Identity_Models_ApplicationUser___.md&amp;value=---%0Auid%3A%20Mix.Identity.Repositories.AuthRepository.%23ctor(Microsoft.AspNetCore.Identity.IUserStore%7BMix.Identity.Models.ApplicationUser%7D%2CMicrosoft.Extensions.Options.IOptions%7BMicrosoft.AspNetCore.Identity.IdentityOptions%7D%2CMicrosoft.AspNetCore.Identity.IPasswordHasher%7BMix.Identity.Models.ApplicationUser%7D%2CSystem.Collections.Generic.IEnumerable%7BMicrosoft.AspNetCore.Identity.IUserValidator%7BMix.Identity.Models.ApplicationUser%7D%7D%2CSystem.Collections.Generic.IEnumerable%7BMicrosoft.AspNetCore.Identity.IPasswordValidator%7BMix.Identity.Models.ApplicationUser%7D%7D%2CMicrosoft.AspNetCore.Identity.ILookupNormalizer%2CMicrosoft.AspNetCore.Identity.IdentityErrorDescriber%2CSystem.IServiceProvider%2CMicrosoft.Extensions.Logging.ILogger%7BMicrosoft.AspNetCore.Identity.UserManager%7BMix.Identity.Models.ApplicationUser%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Identity/Repositories/AuthRepository.cs/#L16">View Source</a>
+  </span>
+  <a id="Mix_Identity_Repositories_AuthRepository__ctor_" data-uid="Mix.Identity.Repositories.AuthRepository.#ctor*"></a>
+  <h4 id="Mix_Identity_Repositories_AuthRepository__ctor_Microsoft_AspNetCore_Identity_IUserStore_Mix_Identity_Models_ApplicationUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_Mix_Identity_Models_ApplicationUser__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_Mix_Identity_Models_ApplicationUser___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_Mix_Identity_Models_ApplicationUser___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_UserManager_Mix_Identity_Models_ApplicationUser___" data-uid="Mix.Identity.Repositories.AuthRepository.#ctor(Microsoft.AspNetCore.Identity.IUserStore{Mix.Identity.Models.ApplicationUser},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Identity.IPasswordHasher{Mix.Identity.Models.ApplicationUser},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IUserValidator{Mix.Identity.Models.ApplicationUser}},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IPasswordValidator{Mix.Identity.Models.ApplicationUser}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser}})">AuthRepository(IUserStore&lt;ApplicationUser&gt;, IOptions&lt;IdentityOptions&gt;, IPasswordHasher&lt;ApplicationUser&gt;, IEnumerable&lt;IUserValidator&lt;ApplicationUser&gt;&gt;, IEnumerable&lt;IPasswordValidator&lt;ApplicationUser&gt;&gt;, ILookupNormalizer, IdentityErrorDescriber, IServiceProvider, ILogger&lt;UserManager&lt;ApplicationUser&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AuthRepository(IUserStore&lt;ApplicationUser&gt; store, IOptions&lt;IdentityOptions&gt; optionsAccessor, IPasswordHasher&lt;ApplicationUser&gt; passwordHasher, IEnumerable&lt;IUserValidator&lt;ApplicationUser&gt;&gt; userValidators, IEnumerable&lt;IPasswordValidator&lt;ApplicationUser&gt;&gt; passwordValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, IServiceProvider services, ILogger&lt;UserManager&lt;ApplicationUser&gt;&gt; logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IUserStore</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;</td>
+        <td><span class="parametername">store</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityOptions</span>&gt;</td>
+        <td><span class="parametername">optionsAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IPasswordHasher</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;</td>
+        <td><span class="parametername">passwordHasher</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IUserValidator</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;&gt;</td>
+        <td><span class="parametername">userValidators</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IPasswordValidator</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;&gt;</td>
+        <td><span class="parametername">passwordValidators</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.ILookupNormalizer</span></td>
+        <td><span class="parametername">keyNormalizer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IdentityErrorDescriber</span></td>
+        <td><span class="parametername">errors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IServiceProvider</span></td>
+        <td><span class="parametername">services</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.UserManager</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  
+
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -470,97 +564,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Identity.Repositories.html">Mix.Identity.Repositories</a></h6>
-  <h6><strong>Assembly</strong>: Mix.Identity.dll</h6>
-  <h5 id="Mix_Identity_Repositories_AuthRepository_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AuthRepository : UserManager&lt;ApplicationUser&gt;, IDisposable</code></pre>
-  </div>
-  <h5 id="Mix_Identity_Repositories_AuthRepository_puml">UML Diagram</h5>
-  <div class="puml">
-  <script>
-  var src="src/Mix.Identity/Repositories/AuthRepository.cs";
-  document.write("<img src=\"/puml/"+src.slice(0, -3)+".png\"/>");
-  </script>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Identity_Repositories_AuthRepository__ctor_Microsoft_AspNetCore_Identity_IUserStore_Mix_Identity_Models_ApplicationUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_Mix_Identity_Models_ApplicationUser__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_Mix_Identity_Models_ApplicationUser___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_Mix_Identity_Models_ApplicationUser___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_UserManager_Mix_Identity_Models_ApplicationUser___.md&amp;value=---%0Auid%3A%20Mix.Identity.Repositories.AuthRepository.%23ctor(Microsoft.AspNetCore.Identity.IUserStore%7BMix.Identity.Models.ApplicationUser%7D%2CMicrosoft.Extensions.Options.IOptions%7BMicrosoft.AspNetCore.Identity.IdentityOptions%7D%2CMicrosoft.AspNetCore.Identity.IPasswordHasher%7BMix.Identity.Models.ApplicationUser%7D%2CSystem.Collections.Generic.IEnumerable%7BMicrosoft.AspNetCore.Identity.IUserValidator%7BMix.Identity.Models.ApplicationUser%7D%7D%2CSystem.Collections.Generic.IEnumerable%7BMicrosoft.AspNetCore.Identity.IPasswordValidator%7BMix.Identity.Models.ApplicationUser%7D%7D%2CMicrosoft.AspNetCore.Identity.ILookupNormalizer%2CMicrosoft.AspNetCore.Identity.IdentityErrorDescriber%2CSystem.IServiceProvider%2CMicrosoft.Extensions.Logging.ILogger%7BMicrosoft.AspNetCore.Identity.UserManager%7BMix.Identity.Models.ApplicationUser%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Identity/Repositories/AuthRepository.cs/#L16">View Source</a>
-  </span>
-  <a id="Mix_Identity_Repositories_AuthRepository__ctor_" data-uid="Mix.Identity.Repositories.AuthRepository.#ctor*"></a>
-  <h4 id="Mix_Identity_Repositories_AuthRepository__ctor_Microsoft_AspNetCore_Identity_IUserStore_Mix_Identity_Models_ApplicationUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_Mix_Identity_Models_ApplicationUser__System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_Mix_Identity_Models_ApplicationUser___System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_Mix_Identity_Models_ApplicationUser___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_System_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Microsoft_AspNetCore_Identity_UserManager_Mix_Identity_Models_ApplicationUser___" data-uid="Mix.Identity.Repositories.AuthRepository.#ctor(Microsoft.AspNetCore.Identity.IUserStore{Mix.Identity.Models.ApplicationUser},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Identity.IPasswordHasher{Mix.Identity.Models.ApplicationUser},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IUserValidator{Mix.Identity.Models.ApplicationUser}},System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Identity.IPasswordValidator{Mix.Identity.Models.ApplicationUser}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,System.IServiceProvider,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.UserManager{Mix.Identity.Models.ApplicationUser}})">AuthRepository(IUserStore&lt;ApplicationUser&gt;, IOptions&lt;IdentityOptions&gt;, IPasswordHasher&lt;ApplicationUser&gt;, IEnumerable&lt;IUserValidator&lt;ApplicationUser&gt;&gt;, IEnumerable&lt;IPasswordValidator&lt;ApplicationUser&gt;&gt;, ILookupNormalizer, IdentityErrorDescriber, IServiceProvider, ILogger&lt;UserManager&lt;ApplicationUser&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AuthRepository(IUserStore&lt;ApplicationUser&gt; store, IOptions&lt;IdentityOptions&gt; optionsAccessor, IPasswordHasher&lt;ApplicationUser&gt; passwordHasher, IEnumerable&lt;IUserValidator&lt;ApplicationUser&gt;&gt; userValidators, IEnumerable&lt;IPasswordValidator&lt;ApplicationUser&gt;&gt; passwordValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, IServiceProvider services, ILogger&lt;UserManager&lt;ApplicationUser&gt;&gt; logger)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Identity.IUserStore</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;</td>
-        <td><span class="parametername">store</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityOptions</span>&gt;</td>
-        <td><span class="parametername">optionsAccessor</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Identity.IPasswordHasher</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;</td>
-        <td><span class="parametername">passwordHasher</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IUserValidator</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;&gt;</td>
-        <td><span class="parametername">userValidators</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IPasswordValidator</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;&gt;</td>
-        <td><span class="parametername">passwordValidators</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Identity.ILookupNormalizer</span></td>
-        <td><span class="parametername">keyNormalizer</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Identity.IdentityErrorDescriber</span></td>
-        <td><span class="parametername">errors</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.IServiceProvider</span></td>
-        <td><span class="parametername">services</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.UserManager</span>&lt;<a class="xref" href="Mix.Identity.Models.ApplicationUser.html">ApplicationUser</a>&gt;&gt;</td>
-        <td><span class="parametername">logger</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
-</article>
+  <h6><strong>Assembly</strong>: Mix.Identity.dll</h6></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -592,7 +596,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Generated by <strong>DocFX</strong></span>
+            <span>From <strong>Mixcore</strong></span>
           </div>
         </div>
       </footer>

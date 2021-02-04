@@ -90,6 +90,296 @@
     <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
+  
+  <!-- inheritance -->
+  
+  <h5 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Produces(&quot;application/json&quot;, new string[]{})]
+[Route(&quot;api/v1/{culture}/attribute-set&quot;)]
+public class ApiAttributeSetController : BaseGenericApiController&lt;MixCmsContext, MixAttributeSet&gt;, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
+  </div>
+  <h5 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_puml">UML Diagram</h5>
+  <div class="puml">
+  <script>
+  var src="src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs";
+  document.write("<img src=\"/puml/"+src.slice(0, -3)+".png\"/>");
+  </script>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController__ctor_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_AspNetCore_SignalR_IHubContext_Mix_Cms_Service_SignalR_Hubs_PortalHub__.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.%23ctor(Mix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.Extensions.Caching.Memory.IMemoryCache%2CMicrosoft.AspNetCore.SignalR.IHubContext%7BMix.Cms.Service.SignalR.Hubs.PortalHub%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L29">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController__ctor_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.#ctor*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController__ctor_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_AspNetCore_SignalR_IHubContext_Mix_Cms_Service_SignalR_Hubs_PortalHub__" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.#ctor(Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.AspNetCore.SignalR.IHubContext{Mix.Cms.Service.SignalR.Hubs.PortalHub})">ApiAttributeSetController(MixCmsContext, IMemoryCache, IHubContext&lt;PortalHub&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApiAttributeSetController(MixCmsContext context, IMemoryCache memoryCache, IHubContext&lt;PortalHub&gt; hubContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Caching.Memory.IMemoryCache</span></td>
+        <td><span class="parametername">memoryCache</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.SignalR.IHubContext</span>&lt;<a class="xref" href="Mix.Cms.Service.SignalR.Hubs.PortalHub.html">PortalHub</a>&gt;</td>
+        <td><span class="parametername">hubContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_DeleteAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.DeleteAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L36">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_DeleteAsync_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.DeleteAsync*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_DeleteAsync_System_Int32_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.DeleteAsync(System.Int32)">DeleteAsync(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[HttpOptions]
+[Route(&quot;delete/{id}&quot;)]
+public Task&lt;RepositoryResponse&lt;MixAttributeSet&gt;&gt; DeleteAsync(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeSet.html">MixAttributeSet</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Details_System_String_System_String_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Details(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L45">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Details_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Details*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Details_System_String_System_String_System_Nullable_System_Int32__" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Details(System.String,System.String,System.Nullable{System.Int32})">Details(String, String, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+[HttpOptions]
+[Route(&quot;details/{id}/{viewType}&quot;)]
+[Route(&quot;details/{name}/{viewType}&quot;)]
+[Route(&quot;details/{viewType}&quot;)]
+public Task&lt;ActionResult&lt;JObject&gt;&gt; Details(string viewType, string name, int? id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">viewType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ActionResult</span>&lt;<span class="xref">Newtonsoft.Json.Linq.JObject</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_GetList_Mix_Domain_Core_ViewModels_RequestPaging_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.GetList(Mix.Domain.Core.ViewModels.RequestPaging)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L120">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_GetList_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.GetList*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_GetList_Mix_Domain_Core_ViewModels_RequestPaging_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.GetList(Mix.Domain.Core.ViewModels.RequestPaging)">GetList(RequestPaging)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[HttpOptions]
+[Route(&quot;list&quot;)]
+public Task&lt;ActionResult&lt;JObject&gt;&gt; GetList([FromBody] RequestPaging request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Mix.Domain.Core.ViewModels.RequestPaging</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ActionResult</span>&lt;<span class="xref">Newtonsoft.Json.Linq.JObject</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Save_Mix_Cms_Lib_ViewModels_MixAttributeSets_UpdateViewModel_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Save(Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L100">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Save_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Save*"></a>
+  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Save_Mix_Cms_Lib_ViewModels_MixAttributeSets_UpdateViewModel_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Save(Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel)">Save(UpdateViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Authorize(AuthenticationSchemes = &quot;Bearer&quot;, Roles = &quot;SuperAdmin, Admin&quot;)]
+[HttpPost]
+[HttpOptions]
+[Route(&quot;save&quot;)]
+public Task&lt;RepositoryResponse&lt;UpdateViewModel&gt;&gt; Save([FromBody] UpdateViewModel data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel.html">UpdateViewModel</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel.html">UpdateViewModel</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  
+
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -772,293 +1062,7 @@
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Api.Controllers.v1.html">Mix.Cms.Api.Controllers.v1</a></h6>
-  <h6><strong>Assembly</strong>: Mix.Cms.Api.dll</h6>
-  <h5 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Produces(&quot;application/json&quot;, new string[]{})]
-[Route(&quot;api/v1/{culture}/attribute-set&quot;)]
-public class ApiAttributeSetController : BaseGenericApiController&lt;MixCmsContext, MixAttributeSet&gt;, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
-  </div>
-  <h5 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_puml">UML Diagram</h5>
-  <div class="puml">
-  <script>
-  var src="src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs";
-  document.write("<img src=\"/puml/"+src.slice(0, -3)+".png\"/>");
-  </script>
-  </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController__ctor_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_AspNetCore_SignalR_IHubContext_Mix_Cms_Service_SignalR_Hubs_PortalHub__.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.%23ctor(Mix.Cms.Lib.Models.Cms.MixCmsContext%2CMicrosoft.Extensions.Caching.Memory.IMemoryCache%2CMicrosoft.AspNetCore.SignalR.IHubContext%7BMix.Cms.Service.SignalR.Hubs.PortalHub%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L29">View Source</a>
-  </span>
-  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController__ctor_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.#ctor*"></a>
-  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController__ctor_Mix_Cms_Lib_Models_Cms_MixCmsContext_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_AspNetCore_SignalR_IHubContext_Mix_Cms_Service_SignalR_Hubs_PortalHub__" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.#ctor(Mix.Cms.Lib.Models.Cms.MixCmsContext,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.AspNetCore.SignalR.IHubContext{Mix.Cms.Service.SignalR.Hubs.PortalHub})">ApiAttributeSetController(MixCmsContext, IMemoryCache, IHubContext&lt;PortalHub&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ApiAttributeSetController(MixCmsContext context, IMemoryCache memoryCache, IHubContext&lt;PortalHub&gt; hubContext)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mix.Cms.Lib.Models.Cms.MixCmsContext.html">MixCmsContext</a></td>
-        <td><span class="parametername">context</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Caching.Memory.IMemoryCache</span></td>
-        <td><span class="parametername">memoryCache</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.SignalR.IHubContext</span>&lt;<a class="xref" href="Mix.Cms.Service.SignalR.Hubs.PortalHub.html">PortalHub</a>&gt;</td>
-        <td><span class="parametername">hubContext</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_DeleteAsync_System_Int32_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.DeleteAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L36">View Source</a>
-  </span>
-  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_DeleteAsync_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.DeleteAsync*"></a>
-  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_DeleteAsync_System_Int32_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.DeleteAsync(System.Int32)">DeleteAsync(Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpGet]
-[HttpOptions]
-[Route(&quot;delete/{id}&quot;)]
-public Task&lt;RepositoryResponse&lt;MixAttributeSet&gt;&gt; DeleteAsync(int id)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<a class="xref" href="Mix.Cms.Lib.Models.Cms.MixAttributeSet.html">MixAttributeSet</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Details_System_String_System_String_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Details(System.String%2CSystem.String%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L45">View Source</a>
-  </span>
-  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Details_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Details*"></a>
-  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Details_System_String_System_String_System_Nullable_System_Int32__" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Details(System.String,System.String,System.Nullable{System.Int32})">Details(String, String, Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpGet]
-[HttpOptions]
-[Route(&quot;details/{id}/{viewType}&quot;)]
-[Route(&quot;details/{name}/{viewType}&quot;)]
-[Route(&quot;details/{viewType}&quot;)]
-public Task&lt;ActionResult&lt;JObject&gt;&gt; Details(string viewType, string name, int? id)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">viewType</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ActionResult</span>&lt;<span class="xref">Newtonsoft.Json.Linq.JObject</span>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_GetList_Mix_Domain_Core_ViewModels_RequestPaging_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.GetList(Mix.Domain.Core.ViewModels.RequestPaging)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L120">View Source</a>
-  </span>
-  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_GetList_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.GetList*"></a>
-  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_GetList_Mix_Domain_Core_ViewModels_RequestPaging_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.GetList(Mix.Domain.Core.ViewModels.RequestPaging)">GetList(RequestPaging)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpPost]
-[HttpOptions]
-[Route(&quot;list&quot;)]
-public Task&lt;ActionResult&lt;JObject&gt;&gt; GetList([FromBody] RequestPaging request)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Mix.Domain.Core.ViewModels.RequestPaging</span></td>
-        <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ActionResult</span>&lt;<span class="xref">Newtonsoft.Json.Linq.JObject</span>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/master/apiSpec/new?filename=Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Save_Mix_Cms_Lib_ViewModels_MixAttributeSets_UpdateViewModel_.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Save(Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/master/src/Mix.Cms.Api/Controllers/v1/ApiAttributeSetController.cs/#L100">View Source</a>
-  </span>
-  <a id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Save_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Save*"></a>
-  <h4 id="Mix_Cms_Api_Controllers_v1_ApiAttributeSetController_Save_Mix_Cms_Lib_ViewModels_MixAttributeSets_UpdateViewModel_" data-uid="Mix.Cms.Api.Controllers.v1.ApiAttributeSetController.Save(Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel)">Save(UpdateViewModel)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Authorize(AuthenticationSchemes = &quot;Bearer&quot;, Roles = &quot;SuperAdmin, Admin&quot;)]
-[HttpPost]
-[HttpOptions]
-[Route(&quot;save&quot;)]
-public Task&lt;RepositoryResponse&lt;UpdateViewModel&gt;&gt; Save([FromBody] UpdateViewModel data)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel.html">UpdateViewModel</a></td>
-        <td><span class="parametername">data</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Mix.Domain.Core.ViewModels.RepositoryResponse</span>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixAttributeSets.UpdateViewModel.html">UpdateViewModel</a>&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IActionFilter</span>
-  </div>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter</span>
-  </div>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span>
-  </div>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
-</article>
+  <h6><strong>Assembly</strong>: Mix.Cms.Api.dll</h6></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -1090,7 +1094,7 @@ public Task&lt;RepositoryResponse&lt;UpdateViewModel&gt;&gt; Save([FromBody] Upd
               <a href="#top">Back to top</a>
             </span>
             
-            <span>Generated by <strong>DocFX</strong></span>
+            <span>From <strong>Mixcore</strong></span>
           </div>
         </div>
       </footer>
