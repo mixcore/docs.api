@@ -1,0 +1,7 @@
+@startuml
+class ApiPostController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadListItemViewModel>>>
+    + <<override>> Default() : ActionResult<UpdateViewModel>
+}
+"BaseAuthorizedRestApiController`5" "<MixCmsContext,MixPost,UpdateViewModel,ReadListItemViewModel,DeleteViewModel>" <|-- ApiPostController
+@enduml

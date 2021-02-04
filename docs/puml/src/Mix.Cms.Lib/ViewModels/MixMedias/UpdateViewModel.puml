@@ -1,0 +1,36 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Extension : string <<get>> <<set>>
+    + FileFolder : string <<get>> <<set>>
+    + FileName : string <<get>> <<set>>
+    + FileType : string <<get>> <<set>>
+    + FileSize : int <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + TargetUrl : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Tags : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Domain : string <<get>>
+    + FullPath : string <<get>>
+    + FilePath : string <<get>>
+    + MediaFile : FileViewModel <<get>> <<set>>
+    + File : IFormFile <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixMedia, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixMedia
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> RemoveRelatedModels(view:UpdateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:UpdateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - LoadCultures(initCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : List<SupportedCulture>
+}
+"ViewModelBase`3" "<MixCmsContext,MixMedia,UpdateViewModel>" <|-- UpdateViewModel
+@enduml

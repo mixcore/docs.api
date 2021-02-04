@@ -1,0 +1,19 @@
+@startuml
+class MixTheme <<partial>> {
+    + MixTheme()
+    + Id : int <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + PreviewUrl : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + <<virtual>> MixFile : ICollection<MixFile> <<get>> <<set>>
+    + <<virtual>> MixTemplate : ICollection<MixTemplate> <<get>> <<set>>
+}
+@enduml

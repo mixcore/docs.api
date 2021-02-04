@@ -1,0 +1,14 @@
+@startuml
+class DefaultViewModel {
+    + Id : string <<get>> <<set>>
+    + UserId : string <<get>> <<set>>
+    + ConnectionId : string <<get>> <<set>>
+    + DeviceId : string <<get>> <<set>>
+    + Status : Constants.Enums.DeviceStatus <<get>> <<set>>
+    + StartDate : DateTime <<get>> <<set>>
+    + EndDate : DateTime? <<get>> <<set>>
+    + DefaultViewModel()
+    + DefaultViewModel(model:MixMessengerUserDevice, _context:MixChatServiceContext, _transaction:IDbContextTransaction)
+}
+"ViewModelBase`3" "<MixChatServiceContext,MixMessengerUserDevice,DefaultViewModel>" <|-- DefaultViewModel
+@enduml

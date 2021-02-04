@@ -1,0 +1,7 @@
+@startuml
+class PageController {
+    # <<override>> ValidateRequest() : void
+    + <<async>> Index(culture:string, seoName:string) : Task<IActionResult>
+}
+BaseController <|-- PageController
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+class UpdateViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + ModuleId : int <<get>> <<set>>
+    + Fields : string <<get>> <<set>> = "[]"
+    + Value : string <<get>> <<set>>
+    + PostId : int? <<get>> <<set>>
+    + ProductId : int? <<get>> <<set>>
+    + PageId : int? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + DataProperties : List<ApiModuleDataValueViewModel> <<get>> <<set>>
+    + JItem : JObject <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixModuleData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixModuleData
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + ParseObjectValue() : string
+    + InitValue() : JObject
+    + GetStringValue(name:string) : string
+    + GetDataProperty(name:string) : ApiModuleDataValueViewModel
+}
+"ViewModelBase`3" "<MixCmsContext,MixModuleData,UpdateViewModel>" <|-- UpdateViewModel
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+class IdentityHelper {
+    - <<readonly>> _userManager : UserManager<ApplicationUser>
+    - <<readonly>> _signInManager : SignInManager<ApplicationUser>
+    - <<readonly>> _roleManager : RoleManager<IdentityRole>
+    + IdentityHelper(userManager:UserManager<ApplicationUser>, signInManager:SignInManager<ApplicationUser>, roleManager:RoleManager<IdentityRole>)
+    + <<async>> GenerateAccessTokenAsync(user:ApplicationUser, isRemember:bool) : Task<AccessTokenViewModel>
+    + <<async>> GenerateTokenAsync(user:ApplicationUser, expires:DateTime, refreshToken:string) : Task<string>
+    + <<async>> GetClaimsAsync(user:ApplicationUser) : Task<List<Claim>>
+    + CreateClaim(type:string, value:string) : Claim
+    + GetPrincipalFromExpiredToken(token:string) : ClaimsPrincipal
+}
+class JwtSecurityKey <<static>> {
+    + {static} Create(secret:string) : SymmetricSecurityKey
+}
+IdentityHelper +-- JwtSecurityKey
+@enduml

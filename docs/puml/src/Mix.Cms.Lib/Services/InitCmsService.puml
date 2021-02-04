@@ -1,0 +1,13 @@
+@startuml
+class InitCmsService {
+    + InitCmsService()
+    + {static} <<async>> InitCms(siteName:string, culture:InitCulture) : Task<RepositoryResponse<bool>>
+    + {static} <<async>> InitSiteData(siteName:string, culture:InitCulture) : Task<RepositoryResponse<bool>>
+    + {static} <<async>> InitConfigurationsAsync(siteName:string, specifiCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + {static} <<async>> InitAttributeSetsAsync(_context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<async>> InitLanguagesAsync(specificulture:string, languages:List<MixLanguage>, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<async>> InitThemesAsync(siteName:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    # {static} InitCultures(culture:InitCulture, context:MixCmsContext, transaction:IDbContextTransaction) : bool
+    # {static} InitPages(culture:string, context:MixCmsContext, transaction:IDbContextTransaction) : void
+}
+@enduml

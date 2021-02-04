@@ -1,8 +1,0 @@
-@startuml
-class AuthRepository {
-    + AuthRepository(store:IUserStore<ApplicationUser>, optionsAccessor:IOptions<IdentityOptions>, passwordHasher:IPasswordHasher<ApplicationUser>, userValidators:IEnumerable<IUserValidator<ApplicationUser>>, passwordValidators:IEnumerable<IPasswordValidator<ApplicationUser>>, keyNormalizer:ILookupNormalizer, errors:IdentityErrorDescriber, services:IServiceProvider, logger:ILogger<UserManager<ApplicationUser>>)
-}
-class "UserManager`1"<T> {
-}
-"UserManager`1" "<ApplicationUser>" <|-- AuthRepository
-@enduml

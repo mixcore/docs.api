@@ -1,9 +1,0 @@
-@startuml
-class ApiRelatedAttributeDataPortalController {
-    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<FormViewModel>>>
-    + <<async>> GetNavigation(name:string) : Task<ActionResult<Lib.ViewModels.MixAttributeSetDatas.Navigation>>
-}
-class "BaseAuthorizedRestApiController`5"<T1,T2,T3,T4,T5> {
-}
-"BaseAuthorizedRestApiController`5" "<MixCmsContext,MixRelatedAttributeData,FormViewModel,FormViewModel,DeleteViewModel>" <|-- ApiRelatedAttributeDataPortalController
-@enduml

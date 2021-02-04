@@ -1,0 +1,27 @@
+@startuml
+class ReadViewModel {
+    + Id : int <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + Regex : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + DataType : MixDataType <<get>> <<set>>
+    + DefaultValue : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + IsRequire : bool <<get>> <<set>>
+    + IsEncrypt : bool <<get>> <<set>>
+    + IsSelect : bool <<get>> <<set>>
+    + IsUnique : bool <<get>> <<set>>
+    + IsMultiple : bool <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + ReadViewModel()
+    + ReadViewModel(model:MixAttributeField, _context:MixCmsContext, _transaction:IDbContextTransaction)
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeField,ReadViewModel>" <|-- ReadViewModel
+@enduml

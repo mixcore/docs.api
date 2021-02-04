@@ -1,0 +1,26 @@
+@startuml
+class ReadMvcPostViewModel {
+    + Id : int <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + Type : int? <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + FormTemplate : string <<get>> <<set>>
+    + EdmTemplate : string <<get>> <<set>>
+    + EdmSubject : string <<get>> <<set>>
+    + EdmFrom : string <<get>> <<set>>
+    + EdmAutoSend : bool? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixEnums.MixContentStatus <<get>> <<set>>
+    + ReadMvcPostViewModel()
+    + ReadMvcPostViewModel(model:MixAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + LoadPostData(postId:int, specificulture:string, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSet,ReadMvcPostViewModel>" <|-- ReadMvcPostViewModel
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class ApiPagePostMvcController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadMvcViewModel>>>
+}
+"BaseAuthorizedRestApiController`4" "<MixCmsContext,MixPagePost,ReadMvcViewModel,ReadMvcViewModel>" <|-- ApiPagePostMvcController
+@enduml

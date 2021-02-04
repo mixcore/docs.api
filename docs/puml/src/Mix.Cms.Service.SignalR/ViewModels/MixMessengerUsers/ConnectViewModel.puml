@@ -1,0 +1,16 @@
+@startuml
+class ConnectViewModel {
+    + Id : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Avatar : string <<get>> <<set>>
+    + Device : MixMessengerUserDevice <<get>> <<set>>
+    + CreatedDate : DateTime <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + IsJoin : bool <<get>> <<set>>
+    + ConnectViewModel(connection:MessengerConnection)
+    - CheckIsJoin() : bool
+    + Join(_context:MixChatServiceContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - UpdateUser(context:MixChatServiceContext, transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - UpdateDevice(context:MixChatServiceContext, transaction:IDbContextTransaction) : RepositoryResponse<bool>
+}
+@enduml

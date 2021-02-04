@@ -1,0 +1,19 @@
+@startuml
+class MixPostMedia <<partial>> {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + MediaId : int <<get>> <<set>>
+    + PostId : int <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Position : int <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + <<virtual>> MixMedia : MixMedia <<get>> <<set>>
+    + <<virtual>> MixPost : MixPost <<get>> <<set>>
+}
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class ApiAttributeSetValueController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadViewModel>>>
+}
+"BaseAuthorizedRestApiController`4" "<MixCmsContext,MixAttributeSetValue,UpdateViewModel,ReadViewModel>" <|-- ApiAttributeSetValueController
+@enduml

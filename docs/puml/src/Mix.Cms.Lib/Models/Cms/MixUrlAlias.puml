@@ -1,0 +1,17 @@
+@startuml
+class MixUrlAlias <<partial>> {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + SourceId : string <<get>> <<set>>
+    + Type : int <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Alias : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + <<virtual>> SpecificultureNavigation : MixCulture <<get>> <<set>>
+}
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+class DeleteViewModel {
+    + Id : int <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + ParentId : int <<get>> <<set>>
+    + ParentType : MixDatabaseParentType <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + Status : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + DeleteViewModel()
+    + DeleteViewModel(model:MixRelatedAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixRelatedAttributeSet
+}
+"ViewModelBase`3" "<MixCmsContext,MixRelatedAttributeSet,DeleteViewModel>" <|-- DeleteViewModel
+@enduml

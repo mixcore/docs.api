@@ -1,0 +1,9 @@
+@startuml
+class GraphQLQuery {
+    - _dbMetadata : IDatabaseMetadata
+    - _tableNameLookup : ITableNameLookup
+    - _dbContext : DbContext
+    + GraphQLQuery(dbContext:DbContext, dbMetadata:IDatabaseMetadata, tableNameLookup:ITableNameLookup)
+}
+"ObjectGraphType`1" "<object>" <|-- GraphQLQuery
+@enduml

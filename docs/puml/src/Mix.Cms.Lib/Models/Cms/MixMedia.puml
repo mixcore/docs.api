@@ -1,0 +1,25 @@
+@startuml
+class MixMedia <<partial>> {
+    + MixMedia()
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Extension : string <<get>> <<set>>
+    + FileFolder : string <<get>> <<set>>
+    + FileName : string <<get>> <<set>>
+    + FileProperties : string <<get>> <<set>>
+    + FileSize : long <<get>> <<set>>
+    + FileType : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Tags : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + TargetUrl : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + <<virtual>> MixPostMedia : ICollection<MixPostMedia> <<get>> <<set>>
+}
+@enduml

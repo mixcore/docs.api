@@ -1,0 +1,36 @@
+@startuml
+class "BaseAuthorizedRestApiController`4"<TDbContext,TModel,TView,TRead> {
+    # {static} _context : TDbContext
+    # {static} _transaction : IDbContextTransaction
+    # _lang : string
+    # _forbidden : bool
+    # _domain : string
+    + <<virtual>> <<async>> Get() : Task<ActionResult<PaginationModel<TRead>>>
+    + <<async>> Get(id:string) : Task<ActionResult<TView>>
+    + <<virtual>> Default() : ActionResult<TView>
+    + <<virtual>> <<async>> ClearCacheAsync(id:string) : Task<ActionResult>
+    + <<virtual>> <<async>> ClearCacheAsync() : Task<ActionResult>
+    + <<virtual>> <<async>> Create(data:TView) : Task<ActionResult<TModel>>
+    + <<virtual>> <<async>> Update(id:string, data:TView) : Task<IActionResult>
+    + <<virtual>> <<async>> Patch(id:string, fields:JObject) : Task<IActionResult>
+    + <<virtual>> <<async>> Delete(id:string) : Task<ActionResult<TModel>>
+    + <<override>> OnActionExecuting(context:ActionExecutingContext) : void
+    # GetLanguage() : void
+    # <<async>> GetSingleAsync(id:string) : Task<RepositoryResponse<T>>
+    # <<async>> GetSingleAsync(id:string) : Task<RepositoryResponse<TView>>
+    # <<async>> GetSingleAsync(predicate:Expression<Func<TModel, bool>>) : Task<RepositoryResponse<TView>>
+    # <<async>> GetSingleAsync(predicate:Expression<Func<TModel, bool>>) : Task<RepositoryResponse<T>>
+    # <<async>> DeleteAsync(id:string, isDeleteRelated:bool) : Task<RepositoryResponse<TModel>>
+    # <<async>> DeleteAsync(id:string, isDeleteRelated:bool) : Task<RepositoryResponse<TModel>>
+    # <<async>> DeleteAsync(data:TView, isDeleteRelated:bool) : Task<RepositoryResponse<TModel>>
+    # <<async>> DeleteAsync(data:T, isDeleteRelated:bool) : Task<RepositoryResponse<TModel>>
+    # <<async>> DeleteListAsync(predicate:Expression<Func<TModel, bool>>, isRemoveRelatedModel:bool) : Task<RepositoryResponse<List<TModel>>>
+    # <<async>> ExportListAsync(predicate:Expression<Func<TModel, bool>>, type:string) : Task<RepositoryResponse<FileViewModel>>
+    # <<async>> GetListAsync(predicate:Expression<Func<TModel, bool>>) : Task<RepositoryResponse<PaginationModel<TRead>>>
+    # <<async>> SaveAsync(vm:TView, isSaveSubModel:bool) : Task<RepositoryResponse<TView>>
+    # <<async>> SaveAsync(obj:JObject, predicate:Expression<Func<TModel, bool>>) : Task<RepositoryResponse<TModel>>
+    # <<async>> SaveListAsync(lstVm:List<TView>, isSaveSubModel:bool) : Task<RepositoryResponse<List<TView>>>
+    # SaveList(lstVm:List<TView>, isSaveSubModel:bool) : RepositoryResponse<List<TView>>
+}
+Controller <|-- "BaseAuthorizedRestApiController`4"
+@enduml

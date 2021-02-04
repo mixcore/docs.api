@@ -1,0 +1,46 @@
+@startuml
+class ImportViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + PublishedDateTime : DateTime? <<get>> <<set>>
+    + Tags : string <<get>> <<set>> = "[]"
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Domain : string <<get>>
+    + Pages : List<MixPagePosts.ReadViewModel> <<get>> <<set>>
+    + Modules : List<MixModulePosts.ReadViewModel> <<get>> <<set>>
+    + MediaNavs : List<MixPostMedias.ReadViewModel> <<get>> <<set>>
+    + PostNavs : List<MixPostPosts.ReadViewModel> <<get>> <<set>>
+    + ListTag : JArray <<get>> <<set>>
+    + Attributes : MixAttributeSets.ImportViewModel <<get>> <<set>>
+    + AttributeData : MixRelatedAttributeDatas.UpdateViewModel <<get>> <<set>>
+    + SysCategories : List<MixRelatedAttributeDatas.FormViewModel> <<get>> <<set>>
+    + SysTags : List<MixRelatedAttributeDatas.FormViewModel> <<get>> <<set>>
+    + UrlAliases : List<MixUrlAliases.UpdateViewModel> <<get>> <<set>>
+    + RelatedData : MixRelatedAttributeDatas.ImportViewModel <<get>> <<set>>
+    + ImportViewModel()
+    + ImportViewModel(model:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - GetAdditionalData(id:string, type:MixDatabaseParentType, context:MixCmsContext, transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixPost,ImportViewModel>" <|-- ImportViewModel
+@enduml

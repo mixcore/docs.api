@@ -1,0 +1,86 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + ExtraFields : string <<get>> <<set>> = "[]"
+    + ExtraProperties : string <<get>> <<set>> = "[]"
+    + Icon : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + PublishedDateTime : DateTime? <<get>> <<set>>
+    + Tags : string <<get>> <<set>> = "[]"
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + TemplatePath : string <<get>> <<set>>
+    + Domain : string <<get>>
+    + Pages : List<MixPagePosts.ReadViewModel> <<get>> <<set>>
+    + Modules : List<MixModulePosts.ReadViewModel> <<get>> <<set>>
+    + MediaNavs : List<MixPostMedias.ReadViewModel> <<get>> <<set>>
+    + ModuleNavs : List<MixPostModules.ReadViewModel> <<get>> <<set>>
+    + PostNavs : List<MixPostPosts.ReadViewModel> <<get>> <<set>>
+    + ListTag : JArray <<get>> <<set>>
+    + ImageFileStream : FileStreamViewModel <<get>> <<set>>
+    + ThumbnailFileStream : FileStreamViewModel <<get>> <<set>>
+    + SysCategories : List<MixRelatedAttributeDatas.FormViewModel> <<get>> <<set>>
+    + SysTags : List<MixRelatedAttributeDatas.FormViewModel> <<get>> <<set>>
+    + View : MixTemplates.UpdateViewModel <<get>> <<set>>
+    + Templates : List<MixTemplates.UpdateViewModel> <<get>> <<set>>
+    + ActivedTheme : int <<get>>
+    + TemplateFolderType : string <<get>>
+    + TemplateFolder : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + Properties : List<ExtraProperty> <<get>> <<set>>
+    + DetailsUrl : string <<get>>
+    + UrlAliases : List<MixUrlAliases.UpdateViewModel> <<get>> <<set>>
+    + Columns : List<ModuleFieldViewModel> <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPost
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveAttributeAsync(parentId:int, context:MixCmsContext, transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveParentModulesAsync(newPostId:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveParentPagesAsync(newPostId:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveRelatedPostAsync(newPostId:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveMediasAsync(newPostid:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveUrlAliasAsync(parentId:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:UpdateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> CloneAsync(model:MixPost, cloneCultures:List<SupportedCulture>, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<List<UpdateViewModel>>>
+    + <<override>> SaveSubModels(parent:MixPost, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - SaveAttribute(parentId:int, context:MixCmsContext, transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - SaveParentModules(id:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - SaveParentPages(id:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - SaveRelatedPost(id:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - SaveMedias(id:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - SaveUrlAlias(parentId:int, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + <<override>> RemoveRelatedModels(view:UpdateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    - LoadRelatedPost(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - LoadMedias(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - LoadParentModules(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - LoadParentPage(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - LoadTemplates(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - LoadCultures(initCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : List<SupportedCulture>
+    - LoadAttributes(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - GenerateSEO(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + GetRelated(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixPostPosts.ReadViewModel>
+    + GetAliases(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixUrlAliases.UpdateViewModel>
+}
+"ViewModelBase`3" "<MixCmsContext,MixPost,UpdateViewModel>" <|-- UpdateViewModel
+@enduml

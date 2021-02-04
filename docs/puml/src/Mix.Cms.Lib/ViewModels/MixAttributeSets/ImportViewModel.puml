@@ -1,0 +1,32 @@
+@startuml
+class ImportViewModel {
+    + Id : int <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + FormTemplate : string <<get>> <<set>>
+    + EdmTemplate : string <<get>> <<set>>
+    + EdmSubject : string <<get>> <<set>>
+    + EdmFrom : string <<get>> <<set>>
+    + EdmAutoSend : bool? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Fields : List<Lib.ViewModels.MixAttributeFields.UpdateViewModel> <<get>> <<set>>
+    + Data : List<MixAttributeSetDatas.ImportViewModel> <<get>> <<set>>
+    + IsExportData : bool <<get>> <<set>>
+    + ImportViewModel()
+    + ImportViewModel(model:MixAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixAttributeSet
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - <<async>> SaveDataAsync(parent:MixAttributeSet, context:MixCmsContext, transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> SaveSubModels(parent:MixAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSet,ImportViewModel>" <|-- ImportViewModel
+@enduml

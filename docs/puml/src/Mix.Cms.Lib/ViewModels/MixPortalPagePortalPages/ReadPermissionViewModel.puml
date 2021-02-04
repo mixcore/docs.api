@@ -1,0 +1,24 @@
+@startuml
+class ReadPermissionViewModel {
+    + ReadPermissionViewModel(model:MixPortalPageNavigation, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + ReadPermissionViewModel()
+    + Specificulture : string <<get>> <<set>>
+    + Id : int <<get>> <<set>>
+    + PageId : int <<get>> <<set>>
+    + ParentId : int <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Level : int <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + IsActived : bool <<get>> <<set>>
+    + Page : MixPortalPages.ReadRolePermissionViewModel <<get>> <<set>>
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + {static} <<async>> UpdateInfosAsync(cates:List<MixPortalPagePortalPages.ReadViewModel>) : System.Threading.Tasks.Task<RepositoryResponse<List<ReadViewModel>>>
+}
+"ViewModelBase`3" "<MixCmsContext,MixPortalPageNavigation,ReadPermissionViewModel>" <|-- ReadPermissionViewModel
+@enduml

@@ -1,9 +1,0 @@
-@startuml
-class Startup <<partial>> {
-    + Startup(configuration:IConfiguration)
-    <<readonly>> MixcoreAllowSpecificOrigins : string = "_mixcoreAllowSpecificOrigins"
-    + ConfigureServices(services:IServiceCollection) : void
-    + Configure(app:IApplicationBuilder, env:IWebHostEnvironment) : void
-}
-Startup --> "Configuration" IConfiguration
-@enduml

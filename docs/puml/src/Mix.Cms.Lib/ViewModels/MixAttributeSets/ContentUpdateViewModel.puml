@@ -1,0 +1,25 @@
+@startuml
+class ContentUpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + Type : int? <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + FormTemplate : string <<get>> <<set>>
+    + EdmTemplate : string <<get>> <<set>>
+    + EdmSubject : string <<get>> <<set>>
+    + EdmFrom : string <<get>> <<set>>
+    + EdmAutoSend : bool? <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + Status : string <<get>> <<set>>
+    + Attributes : List<MixAttributeFields.UpdateViewModel> <<get>> <<set>>
+    + PostData : PaginationModel<MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + ContentUpdateViewModel()
+    + ContentUpdateViewModel(model:MixAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixAttributeSet
+    + LoadPostData(postId:int, specificulture:string, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSet,ContentUpdateViewModel>" <|-- ContentUpdateViewModel
+@enduml

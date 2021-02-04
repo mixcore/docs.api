@@ -1,0 +1,64 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + CssClass : string <<get>> <<set>>
+    + Layout : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : MixPageType <<get>> <<set>>
+    + Tags : string <<get>> <<set>>
+    + StaticUrl : string <<get>> <<set>>
+    + Level : int? <<get>> <<set>>
+    + PageSize : int? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + DetailsUrl : string <<get>>
+    + ModuleNavs : List<MixPageModules.ReadMvcViewModel> <<get>> <<set>>
+    + ListTag : JArray <<get>> <<set>>
+    + ImageFileStream : FileStreamViewModel <<get>> <<set>>
+    + Domain : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + View : MixTemplates.UpdateViewModel <<get>> <<set>>
+    + Templates : List<MixTemplates.UpdateViewModel> <<get>> <<set>>
+    + Master : MixTemplates.UpdateViewModel <<get>> <<set>>
+    + Masters : List<MixTemplates.UpdateViewModel> <<get>> <<set>>
+    + ActivedTheme : int <<get>>
+    + TemplateFolderType : string <<get>>
+    + TemplateFolder : string <<get>>
+    + UrlAliases : List<MixUrlAliases.UpdateViewModel> <<get>> <<set>>
+    + AttributeSet : MixAttributeSets.UpdateViewModel <<get>> <<set>>
+    + AttributeData : MixRelatedAttributeDatas.UpdateViewModel <<get>> <<set>>
+    + SysCategories : List<MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + SysTags : List<MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixPage, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPage
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> SaveSubModels(parent:MixPage, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixPage, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveAttributeAsync(parentId:int, context:MixCmsContext, transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - LoadAttributes(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - GenerateSEO(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + GetAliases(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixUrlAliases.UpdateViewModel>
+    + GetModuleNavs(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixPageModules.ReadMvcViewModel>
+}
+"ViewModelBase`3" "<MixCmsContext,MixPage,UpdateViewModel>" <|-- UpdateViewModel
+@enduml

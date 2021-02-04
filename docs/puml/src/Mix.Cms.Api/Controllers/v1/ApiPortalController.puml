@@ -1,0 +1,30 @@
+@startuml
+class ApiPortalController {
+    - <<readonly>> _userManager : UserManager<ApplicationUser>
+    - <<readonly>> _signInManager : SignInManager<ApplicationUser>
+    - <<readonly>> _roleManager : RoleManager<IdentityRole>
+    + ApiPortalController(userManager:UserManager<ApplicationUser>, signInManager:SignInManager<ApplicationUser>, roleManager:RoleManager<IdentityRole>, context:MixCmsContext, hubContext:Microsoft.AspNetCore.SignalR.IHubContext<Mix.Cms.Service.SignalR.Hubs.PortalHub>, memoryCache:IMemoryCache)
+    + Settings() : RepositoryResponse<GlobalSettingsViewModel>
+    + AllSettingsAsync() : RepositoryResponse<JObject>
+    + loadData(name:string) : RepositoryResponse<JArray>
+    + loadJsonData(name:string) : RepositoryResponse<JObject>
+    + Languages() : RepositoryResponse<JObject>
+    + GetGlobalSettings() : RepositoryResponse<JObject>
+    + Dashboard(culture:string) : RepositoryResponse<DashboardViewModel>
+    + checkConfig(lastSync:DateTime) : RepositoryResponse<JObject>
+    + SiteMap() : RepositoryResponse<FileViewModel>
+    + LoadAppSettings() : RepositoryResponse<JObject>
+    + <<async>> TranslateUrlAsync(culture:string, type:string, id:int) : Task<RepositoryResponse<string>>
+    + EncryptRsa(model:JObject) : RepositoryResponse<string>
+    + DecryptRsa(model:JObject) : RepositoryResponse<string>
+    + Encrypt(model:JObject) : RepositoryResponse<string>
+    + Decrypt(model:JObject) : RepositoryResponse<string>
+    + SaveAppSettings(model:JObject) : RepositoryResponse<JObject>
+    + SaveGlobalSettings(name:string, model:JObject) : RepositoryResponse<string>
+    + SaveDefaultAppSettings() : RepositoryResponse<bool>
+    + SendMail(model:JObject) : void
+    + <<async>> ImportAsync(assets:IFormFile) : Task<RepositoryResponse<bool>>
+    - GetAllSettings() : RepositoryResponse<JObject>
+}
+"BaseApiController`1" "<MixCmsContext>" <|-- ApiPortalController
+@enduml

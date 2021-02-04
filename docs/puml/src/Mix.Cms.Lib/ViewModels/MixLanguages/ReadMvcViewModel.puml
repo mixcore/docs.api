@@ -1,0 +1,26 @@
+@startuml
+class ReadMvcViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<SupportedCulture> <<get>> <<set>>
+    + Keyword : string <<get>> <<set>>
+    + Category : string <<get>> <<set>>
+    + DataType : MixDataType <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+    + DefaultValue : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Property : DataValueViewModel <<get>> <<set>>
+    + ReadMvcViewModel()
+    + ReadMvcViewModel(model:MixLanguage, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> RemoveRelatedModels(view:ReadMvcViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:ReadMvcViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+"ViewModelBase`3" "<MixCmsContext,MixLanguage,ReadMvcViewModel>" <|-- ReadMvcViewModel
+@enduml

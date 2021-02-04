@@ -1,0 +1,10 @@
+@startuml
+class ExpressionModel {
+    + ExpressionType : MixLogicalOperatorKind <<get>> <<set>>
+    + Functions : List<FunctionModel> <<get>> <<set>>
+    + Expressions : List<ExpressionModel> <<get>> <<set>>
+    + {static} Create(expressType:MixLogicalOperatorKind) : ExpressionModel
+    + AddFunction(function:FunctionModel) : ExpressionModel
+    + AddExpression(expression:ExpressionModel) : ExpressionModel
+}
+@enduml

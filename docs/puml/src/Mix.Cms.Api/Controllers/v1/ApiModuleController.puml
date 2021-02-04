@@ -1,0 +1,14 @@
+@startuml
+class ApiModuleController {
+    + ApiModuleController(context:MixCmsContext, memoryCache:IMemoryCache, hubContext:Microsoft.AspNetCore.SignalR.IHubContext<Mix.Cms.Service.SignalR.Hubs.PortalHub>)
+    + <<async>> DeleteAsync(id:int) : Task<RepositoryResponse<MixModule>>
+    + <<async>> Details(viewType:string, id:int?) : Task<ActionResult<JObject>>
+    + <<async>> Save(model:UpdateViewModel) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> SaveFields(id:int, fields:List<EntityField>) : Task<RepositoryResponse<MixModule>>
+    + <<async>> SaveData(name:string, formName:string, obj:JObject) : Task<ActionResult<JObject>>
+    + <<async>> GetList(request:RequestPaging) : Task<ActionResult<JObject>>
+    + <<async>> UpdateInfos(models:List<ReadListItemViewModel>) : Task<RepositoryResponse<List<ReadListItemViewModel>>>
+    + <<async>> ListActionAsync(data:ListAction<int>) : Task<ActionResult<JObject>>
+}
+"BaseGenericApiController`2" "<MixCmsContext,MixModule>" <|-- ApiModuleController
+@enduml

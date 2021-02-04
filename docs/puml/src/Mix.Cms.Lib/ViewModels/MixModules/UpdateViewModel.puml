@@ -1,0 +1,59 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + FormTemplate : string <<get>> <<set>>
+    + EdmTemplate : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Fields : string <<get>> <<set>>
+    + Type : MixModuleType <<get>> <<set>>
+    + PageSize : int? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + AttributeSet : MixAttributeSets.UpdateViewModel <<get>> <<set>>
+    + Domain : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + Data : PaginationModel<MixModuleDatas.ReadViewModel> <<get>> <<set>>
+    + Columns : List<ModuleFieldViewModel> <<get>> <<set>>
+    + Templates : List<MixTemplates.UpdateViewModel> <<get>> <<set>>
+    + TemplateFolderType : string <<get>>
+    + View : MixTemplates.UpdateViewModel <<get>> <<set>>
+    + ActivedTheme : int <<get>>
+    + ThemeFolderType : string <<get>>
+    + TemplateFolder : string <<get>>
+    + Forms : List<MixTemplates.UpdateViewModel> <<get>> <<set>>
+    + FormFolderType : string <<get>>
+    + FormView : MixTemplates.UpdateViewModel <<get>> <<set>>
+    + FormFolder : string <<get>>
+    + Edms : List<MixTemplates.UpdateViewModel> <<get>> <<set>>
+    + EdmFolderType : string <<get>>
+    + EdmView : MixTemplates.UpdateViewModel <<get>> <<set>>
+    + EdmFolder : string <<get>>
+    + PostId : string <<get>> <<set>>
+    + PageId : int <<get>> <<set>>
+    + UrlAliases : List<MixUrlAliases.UpdateViewModel> <<get>> <<set>>
+    + SysCategories : List<MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + SysTags : List<MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixModule, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> Validate(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixModule
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> RemoveModelAsync(isRemoveRelatedModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<MixModule>>
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixModule, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + {static} <<async>> SaveByModuleName(culture:string, createdBy:string, name:string, formName:string, obj:JObject, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<JObject>>
+    + LoadData(postId:int?, productId:int?, pageId:int?, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixModule,UpdateViewModel>" <|-- UpdateViewModel
+@enduml

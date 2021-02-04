@@ -1,0 +1,7 @@
+@startuml
+class DataController {
+    # <<override>> ValidateRequest() : void
+    + <<async>> Index(attributeSetName:string, seoName:string) : Task<IActionResult>
+}
+BaseController <|-- DataController
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class CommonRepository {
+    - {static} <<volatile>> instance : CommonRepository
+    - {static} <<readonly>> syncRoot : object
+    - CommonRepository()
+    + {static} Instance : CommonRepository <<get>>
+    + LoadCultures(initCulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : List<SupportedCulture>
+}
+@enduml

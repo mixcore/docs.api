@@ -1,0 +1,6 @@
+@startuml
+class MixAttributeSetValueHelper {
+    + {static} <<async>> FilterByOtherValueAsync(culture:string, attributeSetName:string, filterType:string, queries:Dictionary<string, string>, responseName:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<List<TView>>>
+    - {static} GetValueFilter(filterType:string, key:string, value:string) : Expression<Func<MixAttributeSetValue, bool>>
+}
+@enduml

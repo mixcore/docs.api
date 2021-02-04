@@ -1,0 +1,47 @@
+@startuml
+class NavigationViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Values : List<MixAttributeSetValues.NavigationViewModel> <<get>> <<set>>
+    + Fields : List<MixAttributeFields.ReadViewModel> <<get>> <<set>>
+    + Obj : JObject <<get>> <<set>>
+    + Nav : Navigation <<get>>
+    + NavigationViewModel()
+    + NavigationViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+class Navigation {
+    + Id : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + MenuItems : List<MenuItem> <<get>> <<set>>
+    + ActivedMenuItems : List<MenuItem> <<get>> <<set>>
+    + ActivedMenuItem : MenuItem <<get>> <<set>>
+}
+class MenuItem {
+    + Obj : JObject <<get>> <<set>>
+    + Id : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Uri : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + Target : string <<get>> <<set>>
+    + Classes : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + TargetId : string <<get>> <<set>>
+    + IsActive : bool <<get>> <<set>>
+    + MenuItems : List<MenuItem> <<get>> <<set>>
+    + Property(fieldName:string) : T
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,NavigationViewModel>" <|-- NavigationViewModel
+@enduml

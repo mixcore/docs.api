@@ -1,0 +1,25 @@
+@startuml
+class ImportViewModel {
+    + ImportViewModel(model:MixPagePost, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + ImportViewModel()
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + PostId : int <<get>> <<set>>
+    + PageId : int <<get>> <<set>>
+    + IsActived : bool <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Post : MixPosts.ImportViewModel <<get>> <<set>>
+    + Page : MixPages.ImportViewModel <<get>> <<set>>
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPagePost
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + {static} GetPagePostNavAsync(postId:int, specificulture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<List<MixPagePosts.ImportViewModel>>
+}
+"ViewModelBase`3" "<MixCmsContext,MixPagePost,ImportViewModel>" <|-- ImportViewModel
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+class TemplateRepository {
+    - {static} <<volatile>> instance : TemplateRepository
+    - {static} <<readonly>> syncRoot : object
+    + {static} Instance : TemplateRepository <<get>>
+    - TemplateRepository()
+    + GetTemplate(templatePath:string, templates:List<TemplateViewModel>, templateFolder:string) : TemplateViewModel
+    + GetTemplate(name:string, templateFolder:string) : TemplateViewModel
+    + DeleteTemplate(name:string, templateFolder:string) : bool
+    + GetTemplates(folder:string) : List<TemplateViewModel>
+    + SaveTemplate(file:TemplateViewModel) : bool
+}
+@enduml

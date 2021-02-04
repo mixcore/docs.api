@@ -1,0 +1,41 @@
+@startuml
+class MixCmsContext <<partial>> {
+    + <<virtual>> MixAttributeField : DbSet<MixAttributeField> <<get>> <<set>>
+    + <<virtual>> MixAttributeSet : DbSet<MixAttributeSet> <<get>> <<set>>
+    + <<virtual>> MixAttributeSetData : DbSet<MixAttributeSetData> <<get>> <<set>>
+    + <<virtual>> MixAttributeSetReference : DbSet<MixAttributeSetReference> <<get>> <<set>>
+    + <<virtual>> MixAttributeSetValue : DbSet<MixAttributeSetValue> <<get>> <<set>>
+    + <<virtual>> MixCache : DbSet<MixCache> <<get>> <<set>>
+    + <<virtual>> MixCmsUser : DbSet<MixCmsUser> <<get>> <<set>>
+    + <<virtual>> MixConfiguration : DbSet<MixConfiguration> <<get>> <<set>>
+    + <<virtual>> MixCulture : DbSet<MixCulture> <<get>> <<set>>
+    + <<virtual>> MixFile : DbSet<MixFile> <<get>> <<set>>
+    + <<virtual>> MixLanguage : DbSet<MixLanguage> <<get>> <<set>>
+    + <<virtual>> MixMedia : DbSet<MixMedia> <<get>> <<set>>
+    + <<virtual>> MixModule : DbSet<MixModule> <<get>> <<set>>
+    + <<virtual>> MixModuleData : DbSet<MixModuleData> <<get>> <<set>>
+    + <<virtual>> MixModulePost : DbSet<MixModulePost> <<get>> <<set>>
+    + <<virtual>> MixPage : DbSet<MixPage> <<get>> <<set>>
+    + <<virtual>> MixPageModule : DbSet<MixPageModule> <<get>> <<set>>
+    + <<virtual>> MixPagePost : DbSet<MixPagePost> <<get>> <<set>>
+    + <<virtual>> MixPortalPage : DbSet<MixPortalPage> <<get>> <<set>>
+    + <<virtual>> MixPortalPageNavigation : DbSet<MixPortalPageNavigation> <<get>> <<set>>
+    + <<virtual>> MixPortalPageRole : DbSet<MixPortalPageRole> <<get>> <<set>>
+    + <<virtual>> MixPost : DbSet<MixPost> <<get>> <<set>>
+    + <<virtual>> MixPostMedia : DbSet<MixPostMedia> <<get>> <<set>>
+    + <<virtual>> MixPostModule : DbSet<MixPostModule> <<get>> <<set>>
+    + <<virtual>> MixRelatedAttributeData : DbSet<MixRelatedAttributeData> <<get>> <<set>>
+    + <<virtual>> MixRelatedAttributeSet : DbSet<MixRelatedAttributeSet> <<get>> <<set>>
+    + <<virtual>> MixRelatedPost : DbSet<MixRelatedPost> <<get>> <<set>>
+    + <<virtual>> MixTemplate : DbSet<MixTemplate> <<get>> <<set>>
+    + <<virtual>> MixTheme : DbSet<MixTheme> <<get>> <<set>>
+    + <<virtual>> MixUrlAlias : DbSet<MixUrlAlias> <<get>> <<set>>
+    + MixCmsContext(options:DbContextOptions<MixCmsContext>)
+    + MixCmsContext()
+    # <<override>> OnConfiguring(optionsBuilder:DbContextOptionsBuilder) : void
+    + <<override>> Dispose() : void
+    # <<override>> OnModelCreating(modelBuilder:ModelBuilder) : void
+    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
+}
+DbContext <|-- MixCmsContext
+@enduml

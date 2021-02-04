@@ -1,0 +1,17 @@
+@startuml
+class MixAttributeSetReference <<partial>> {
+    + Id : int <<get>> <<set>>
+    + ParentId : int <<get>> <<set>>
+    + ParentType : int <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + <<virtual>> AttributeSet : MixAttributeSet <<get>> <<set>>
+}
+@enduml

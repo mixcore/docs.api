@@ -1,8 +1,0 @@
-@startuml
-class PostgresSQLAccountContext <<partial>> {
-    + PostgresSQLAccountContext(options:DbContextOptions<ApplicationDbContext>)
-    + PostgresSQLAccountContext()
-    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
-}
-MixCmsAccountContext <|-- PostgresSQLAccountContext
-@enduml

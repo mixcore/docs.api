@@ -1,0 +1,11 @@
+@startuml
+class AspNetUserLogins <<partial>> {
+    + LoginProvider : string <<get>> <<set>>
+    + ProviderKey : string <<get>> <<set>>
+    + ApplicationUserId : string <<get>> <<set>>
+    + ProviderDisplayName : string <<get>> <<set>>
+    + UserId : string <<get>> <<set>>
+    + <<virtual>> ApplicationUser : AspNetUsers <<get>> <<set>>
+    + <<virtual>> User : AspNetUsers <<get>> <<set>>
+}
+@enduml

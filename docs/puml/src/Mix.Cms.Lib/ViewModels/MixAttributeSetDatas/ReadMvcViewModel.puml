@@ -1,0 +1,26 @@
+@startuml
+class ReadMvcViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Values : List<MixAttributeSetValues.ReadViewModel> <<get>> <<set>>
+    + Obj : JObject <<get>> <<set>>
+    + PreviewUrl : string <<get>>
+    + DetailApiUrl : string <<get>>
+    + TemplatePath : string <<get>>
+    + ReadMvcViewModel()
+    + ReadMvcViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + HasValue(fieldName:string) : bool
+    + Property(fieldName:string) : T
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,ReadMvcViewModel>" <|-- ReadMvcViewModel
+@enduml

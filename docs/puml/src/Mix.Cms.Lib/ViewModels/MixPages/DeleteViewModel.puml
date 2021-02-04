@@ -1,0 +1,57 @@
+@startuml
+class DeleteViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + CssClass : string <<get>> <<set>>
+    + Layout : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : MixPageType <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + UpdatedDateTime : DateTime? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + Tags : string <<get>> <<set>>
+    + StaticUrl : string <<get>> <<set>>
+    + Level : int? <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + PageSize : int? <<get>> <<set>>
+    + DetailsUrl : string <<get>> <<set>>
+    + ModuleNavs : List<MixPageModules.ReadMvcViewModel> <<get>> <<set>>
+    + ListTag : JArray <<get>> <<set>>
+    + ImageFileStream : FileStreamViewModel <<get>> <<set>>
+    + Domain : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + View : MixTemplates.UpdateViewModel <<get>> <<set>>
+    + Templates : List<MixTemplates.UpdateViewModel> <<get>> <<set>>
+    + Master : MixTemplates.UpdateViewModel <<get>> <<set>>
+    + Masters : List<MixTemplates.UpdateViewModel> <<get>> <<set>>
+    + ActivedTheme : int <<get>>
+    + TemplateFolderType : string <<get>>
+    + TemplateFolder : string <<get>>
+    + UrlAliases : List<MixUrlAliases.UpdateViewModel> <<get>> <<set>>
+    + Attributes : MixAttributeSets.UpdateViewModel <<get>> <<set>>
+    + AttributeData : MixRelatedAttributeDatas.UpdateViewModel <<get>> <<set>>
+    + SysCategories : List<MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + SysTags : List<MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + DeleteViewModel()
+    + DeleteViewModel(model:MixPage, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:DeleteViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+}
+"ViewModelBase`3" "<MixCmsContext,MixPage,DeleteViewModel>" <|-- DeleteViewModel
+@enduml

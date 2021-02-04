@@ -1,0 +1,17 @@
+@startuml
+class ApiModuleDataController {
+    + ApiModuleDataController(context:MixCmsContext, memoryCache:IMemoryCache, hubContext:Microsoft.AspNetCore.SignalR.IHubContext<Mix.Cms.Service.SignalR.Hubs.PortalHub>)
+    + <<async>> DetailsAsync(viewType:string, moduleId:int, id:string) : Task<RepositoryResponse<UpdateViewModel>>
+    + Edit(id:string) : Task<RepositoryResponse<ReadViewModel>>
+    + <<async>> CreateAsync(moduleId:int) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> InitByName(moduleName:string) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> SaveByName(moduleName:string, data:JObject) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> InitByIdAsync(moduleId:int) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> DeleteAsync(id:string) : Task<RepositoryResponse<MixModuleData>>
+    + <<async>> Post(data:UpdateViewModel) : Task<RepositoryResponse<UpdateViewModel>>
+    + <<async>> ExportData(request:RequestPaging) : Task<ActionResult<RepositoryResponse<PaginationModel<ReadViewModel>>>>
+    + <<async>> GetList(request:RequestPaging, level:int?) : Task<ActionResult<RepositoryResponse<PaginationModel<ReadViewModel>>>>
+    + <<async>> UpdateInfos(models:List<ReadViewModel>) : Task<RepositoryResponse<List<ReadViewModel>>>
+}
+"BaseGenericApiController`2" "<MixCmsContext,MixModuleData>" <|-- ApiModuleDataController
+@enduml

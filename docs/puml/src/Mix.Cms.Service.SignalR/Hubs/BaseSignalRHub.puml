@@ -1,0 +1,10 @@
+@startuml
+abstract class BaseSignalRHub {
+    # {static} <<readonly>> Users : List<SignalRClient>
+    + <<override>> OnConnectedAsync() : Task
+    + <<override>> OnDisconnectedAsync(exception:Exception) : Task
+    + <<virtual>> UpdateGroupConnection() : void
+    + <<virtual>> UpdatePlayerConnectionIdAsync(playerId:string) : void
+    - FailResult(objData:dynamic, errorMsg:string) : void
+}
+@enduml

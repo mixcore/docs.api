@@ -1,0 +1,28 @@
+@startuml
+class ReadMvcViewModel {
+    + Id : int <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + FormTemplate : string <<get>> <<set>>
+    + EdmTemplate : string <<get>> <<set>>
+    + EdmSubject : string <<get>> <<set>>
+    + EdmFrom : string <<get>> <<set>>
+    + EdmAutoSend : bool? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Data : PaginationModel<MixRelatedAttributeDatas.ReadMvcViewModel> <<get>> <<set>>
+    + Fields : List<MixAttributeFields.UpdateViewModel> <<get>> <<set>>
+    + ReadMvcViewModel()
+    + ReadMvcViewModel(model:MixAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + LoadData(parentId:string, parentType:MixDatabaseParentType, specificulture:string, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSet,ReadMvcViewModel>" <|-- ReadMvcViewModel
+@enduml

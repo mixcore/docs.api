@@ -1,0 +1,14 @@
+@startuml
+class Helper <<static>> {
+    + {static} <<async>> ImportData(culture:string, attributeSet:Lib.ViewModels.MixAttributeSets.ReadViewModel, file:IFormFile) : Task<RepositoryResponse<bool>>
+    + {static} <<async>> GetAdditionalData(parentType:MixDatabaseParentType, parentId:int, request:HttpRequest, culture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<AdditionalViewModel>>
+    - {static} LoadFileData(culture:string, attributeSet:Lib.ViewModels.MixAttributeSets.ReadViewModel, file:IFormFile) : List<ImportViewModel>
+    + {static} <<async>> FilterByKeywordAsync(culture:string, attributeSetName:string, request:RequestPaging, keyword:string, queryDictionary:Dictionary<string, Microsoft.Extensions.Primitives.StringValues>, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<TView>>>
+    + {static} <<async>> FilterByKeywordAsync(request:HttpRequest, culture:string, attributeSetName:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<TView>>>
+    - {static} GetFilterValueByFields(fields:List<MixAttributeFields.ReadViewModel>, fieldQueries:JObject, filterType:string) : Expression<Func<MixAttributeSetValue, bool>>
+    + {static} <<async>> FilterByKeywordAsync(culture:string, attributeSetName:string, filterType:string, fieldName:string, keyword:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<List<TView>>>
+    + {static} <<async>> GetAttributeDataByParent(culture:string, attributeSetName:string, parentId:string, parentType:MixDatabaseParentType, orderBy:string, direction:Heart.Enums.MixHeartEnums.DisplayDirection, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<PaginationModel<TView>>>
+    + {static} ExportAttributeToExcel(lstData:List<JObject>, sheetName:string, folderPath:string, fileName:string, headers:List<string>) : RepositoryResponse<FileViewModel>
+    + {static} ParseData(dataId:string, culture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : JObject
+}
+@enduml

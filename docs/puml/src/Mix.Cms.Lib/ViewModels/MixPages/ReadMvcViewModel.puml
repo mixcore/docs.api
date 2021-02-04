@@ -1,0 +1,56 @@
+@startuml
+class ReadMvcViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + CssClass : string <<get>> <<set>>
+    + Layout : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : MixPageType <<get>> <<set>>
+    + Tags : string <<get>> <<set>>
+    + StaticUrl : string <<get>> <<set>>
+    + Level : int? <<get>> <<set>>
+    + PageSize : int? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + DetailsUrl : string <<get>>
+    + Domain : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + View : MixTemplates.ReadListItemViewModel <<get>> <<set>>
+    + Posts : PaginationModel<MixPagePosts.ReadViewModel> <<get>> <<set>>
+    + Modules : List<MixPageModules.ReadMvcViewModel> <<get>> <<set>>
+    + TemplatePath : string <<get>>
+    + AttributeData : MixRelatedAttributeDatas.ReadMvcViewModel <<get>> <<set>>
+    + ReadMvcViewModel()
+    + ReadMvcViewModel(model:MixPage, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + LoadData(pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + LoadDataByTag(tagName:string, orderBy:string, orderDirection:int, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + LoadDataByKeyword(keyword:string, orderBy:string, orderDirection:int, pageSize:int?, pageIndex:int?, _context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - GetSubModules(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - GetSubPosts(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - LoadAttributes(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + GetModule(name:string) : MixModules.ReadMvcViewModel
+    + HasValue(fieldName:string) : bool
+    + Property(fieldName:string) : T
+}
+"ViewModelBase`3" "<MixCmsContext,MixPage,ReadMvcViewModel>" <|-- ReadMvcViewModel
+MvcViewModel <|-- ReadMvcViewModel
+@enduml

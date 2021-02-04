@@ -1,0 +1,19 @@
+@startuml
+class ServiceHub {
+    - <<readonly>> _context : MixChatServiceContext
+    - <<readonly>> _msgContext : MixCmsContext
+    + ServiceHub(context:MixChatServiceContext, msgContext:MixCmsContext)
+    + HandleRequest(data:string) : Task
+    - <<async>> SaveData(request:HubRequest<JObject>) : Task
+    - <<async>> JoinGroup(request:HubRequest<JObject>) : Task
+    - <<async>> GetGroupMembersAsync(request:HubRequest<JObject>) : Task<object>
+    - SendToConnection(message:T, action:Constants.Enums.MessageReponseKey, connectionId:string, isMySelf:bool) : Task
+    - <<async>> SendToCaller(message:T, action:Constants.Enums.MessageReponseKey) : Task
+    - <<async>> SendToGroup(message:T, action:Constants.Enums.MessageReponseKey, groupName:string, isMySelf:bool) : Task
+    - <<async>> SendToAll(message:T, action:Constants.Enums.MessageReponseKey, isMySelf:bool) : Task
+    - GetResponseKey(e:T) : string
+    + <<override>> OnConnectedAsync() : Task
+    + <<override>> OnDisconnectedAsync(exception:Exception) : Task
+}
+BaseSignalRHub <|-- ServiceHub
+@enduml

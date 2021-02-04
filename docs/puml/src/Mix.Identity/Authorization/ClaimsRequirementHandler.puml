@@ -1,0 +1,6 @@
+@startuml
+class ClaimsRequirementHandler {
+    # <<override>> HandleRequirementAsync(context:AuthorizationHandlerContext, requirement:ClaimRequirement) : Task
+}
+"AuthorizationHandler`1" "<ClaimRequirement>" <|-- ClaimsRequirementHandler
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + ParentId : int <<get>> <<set>>
+    + ParentType : MixDatabaseParentType <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Data : MixAttributeSets.UpdateViewModel <<get>> <<set>>
+    + UpdateViewModel(model:MixRelatedAttributeSet, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + UpdateViewModel()
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixRelatedAttributeSet
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixRelatedAttributeSet,UpdateViewModel>" <|-- UpdateViewModel
+@enduml

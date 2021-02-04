@@ -1,0 +1,40 @@
+@startuml
+class Aspnetusers <<partial>> {
+    + Aspnetusers()
+    + Id : string <<get>> <<set>>
+    + AccessFailedCount : int <<get>> <<set>>
+    + Avatar : string <<get>> <<set>>
+    + ConcurrencyStamp : string <<get>> <<set>>
+    + CountryId : int <<get>> <<set>>
+    + Culture : string <<get>> <<set>>
+    + Dob : DateTime? <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + EmailConfirmed : ulong <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + Gender : string <<get>> <<set>>
+    + IsActived : ulong <<get>> <<set>>
+    + JoinDate : DateTime <<get>> <<set>>
+    + LastModified : DateTime <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + LockoutEnabled : ulong <<get>> <<set>>
+    + LockoutEnd : DateTime? <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + NickName : string <<get>> <<set>>
+    + NormalizedEmail : string <<get>> <<set>>
+    + NormalizedUserName : string <<get>> <<set>>
+    + PasswordHash : string <<get>> <<set>>
+    + PhoneNumber : string <<get>> <<set>>
+    + PhoneNumberConfirmed : ulong <<get>> <<set>>
+    + RegisterType : string <<get>> <<set>>
+    + SecurityStamp : string <<get>> <<set>>
+    + TwoFactorEnabled : ulong <<get>> <<set>>
+    + UserName : string <<get>> <<set>>
+    + <<virtual>> AspnetuserclaimsApplicationUser : ICollection<Aspnetuserclaims> <<get>> <<set>>
+    + <<virtual>> AspnetuserclaimsUser : ICollection<Aspnetuserclaims> <<get>> <<set>>
+    + <<virtual>> AspnetuserloginsApplicationUser : ICollection<Aspnetuserlogins> <<get>> <<set>>
+    + <<virtual>> AspnetuserloginsUser : ICollection<Aspnetuserlogins> <<get>> <<set>>
+    + <<virtual>> AspnetuserrolesApplicationUser : ICollection<Aspnetuserroles> <<get>> <<set>>
+    + <<virtual>> AspnetuserrolesUser : ICollection<Aspnetuserroles> <<get>> <<set>>
+    + <<virtual>> Aspnetusertokens : ICollection<Aspnetusertokens> <<get>> <<set>>
+}
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+class ApplicationDbContext {
+    + ApplicationDbContext(options:DbContextOptions<ApplicationDbContext>)
+    + ApplicationDbContext()
+    + Clients : DbSet<Client> <<get>> <<set>>
+    + RefreshTokens : DbSet<RefreshToken> <<get>> <<set>>
+    # <<override>> OnModelCreating(builder:ModelBuilder) : void
+    # <<override>> OnConfiguring(optionsBuilder:DbContextOptionsBuilder) : void
+}
+"IdentityDbContext`1" "<ApplicationUser>" <|-- ApplicationDbContext
+@enduml

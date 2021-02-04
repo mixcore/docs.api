@@ -1,0 +1,23 @@
+@startuml
+class ReadMvcViewModel {
+    + ReadMvcViewModel(model:MixPageModule, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + ReadMvcViewModel()
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + ModuleId : int <<get>> <<set>>
+    + PageId : int <<get>> <<set>>
+    + IsActived : bool <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Module : MixModules.ReadMvcViewModel <<get>> <<set>>
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPageModule
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixPageModule,ReadMvcViewModel>" <|-- ReadMvcViewModel
+@enduml

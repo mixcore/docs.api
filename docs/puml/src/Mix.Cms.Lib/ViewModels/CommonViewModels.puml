@@ -1,0 +1,105 @@
+@startuml
+class GlobalSettingsViewModel {
+    + Domain : string <<get>> <<set>>
+    + Lang : string <<get>> <<set>>
+    + LangIcon : string <<get>> <<set>>
+    + ThemeId : int <<get>> <<set>>
+    + PortalThemeSettings : JObject <<get>> <<set>>
+    + ApiEncryptKey : string <<get>> <<set>>
+    + ApiEncryptIV : string <<get>> <<set>>
+    + IsEncryptApi : bool <<get>> <<set>>
+    + Cultures : List<SupportedCulture> <<get>> <<set>>
+    + PageTypes : List<object> <<get>> <<set>>
+    + ModuleTypes : List<object> <<get>> <<set>>
+    + AttributeSetTypes : List<object> <<get>> <<set>>
+    + DataTypes : List<object> <<get>> <<set>>
+    + Statuses : List<object> <<get>> <<set>>
+    + LastUpdateConfiguration : DateTime? <<get>> <<set>>
+}
+class FilePageViewModel {
+    + Files : List<FileViewModel> <<get>> <<set>>
+    + Directories : List<string> <<get>> <<set>>
+}
+class InitCulture {
+    + Specificulture : string <<get>> <<set>>
+    + FullName : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + Alias : string <<get>> <<set>>
+}
+class ExtraProperty {
+    + Title : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + DataType : MixDataType <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+}
+class DataValueViewModel {
+    + DataType : MixDataType <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+}
+class TemplateViewModel {
+    + FileFolder : string <<get>> <<set>>
+    + Filename : string <<get>> <<set>>
+    + Extension : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + Scripts : string <<get>> <<set>>
+    + Styles : string <<get>> <<set>>
+    + FileStream : string <<get>> <<set>>
+}
+class ModuleFieldViewModel {
+    + Name : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + DefaultValue : string <<get>> <<set>>
+    + Options : JArray <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + DataType : MixDataType <<get>> <<set>>
+    + IsUnique : bool <<get>> <<set>>
+    + IsRequired : bool <<get>> <<set>>
+    + IsDisplay : bool <<get>> <<set>>
+    + IsSelect : bool <<get>> <<set>>
+    + IsGroupBy : bool <<get>> <<set>>
+    + Width : int <<get>> <<set>>
+}
+class ApiModuleDataValueViewModel {
+    + Name : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + IsUnique : bool <<get>> <<set>>
+    + IsRequired : bool <<get>> <<set>>
+    + DataType : MixDataType <<get>> <<set>>
+    + Value : string <<get>> <<set>>
+    + IsDisplay : bool <<get>> <<set>>
+    + IsSelect : bool <<get>> <<set>>
+    + IsGroupBy : bool <<get>> <<set>>
+    + Options : JArray <<get>> <<set>>
+    + Validate(id:IConvertible, specificulture:string, jItem:JObject, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<bool>
+}
+class MobileComponent {
+    + Id : int <<get>> <<set>>
+    + ComponentType : string <<get>> <<set>>
+    + StyleName : string <<get>> <<set>>
+    + DataType : string <<get>> <<set>>
+    + DataValue : string <<get>> <<set>>
+    + DataSource : List<MobileComponent> <<get>> <<set>>
+    + MobileComponent(element:XElement)
+}
+class SiteMap {
+    + LastMod : DateTime? <<get>> <<set>>
+    + ChangeFreq : string <<get>> <<set>>
+    + Priority : double <<get>> <<set>>
+    + Loc : string <<get>> <<set>>
+    + OtherLanguages : List<SitemapLanguage> <<get>> <<set>>
+    + ParseXElement() : XElement
+}
+class "ListAction`1"<T> {
+    + Action : string <<get>> <<set>>
+    + Data : List<T> <<get>> <<set>>
+}
+class SitemapLanguage {
+    + HrefLang : string <<get>> <<set>>
+    + Href : string <<get>> <<set>>
+}
+class FileInputModel {
+    + FileToUpload : IFormFile <<get>> <<set>>
+}
+@enduml

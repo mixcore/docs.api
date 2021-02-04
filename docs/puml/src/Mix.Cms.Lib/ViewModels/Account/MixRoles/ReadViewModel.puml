@@ -1,0 +1,16 @@
+@startuml
+class ReadViewModel {
+    + Id : string <<get>> <<set>>
+    + ConcurrencyStamp : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + NormalizedName : string <<get>> <<set>>
+    + Permissions : List<MixPortalPages.ReadRolePermissionViewModel> <<get>> <<set>>
+    + ReadViewModel()
+    + ReadViewModel(model:AspNetRoles, _context:MixCmsAccountContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsAccountContext, _transaction:IDbContextTransaction) : AspNetRoles
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:ReadViewModel, _context:MixCmsAccountContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> ExpandView(_context:MixCmsAccountContext, _transaction:IDbContextTransaction) : void
+    - GetPermission() : List<MixPortalPageRoles.ReadViewModel>
+}
+"ViewModelBase`3" "<MixCmsAccountContext,AspNetRoles,ReadViewModel>" <|-- ReadViewModel
+@enduml

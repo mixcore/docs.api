@@ -1,7 +1,0 @@
-@startuml
-class "BaseApiController`1"<TDbContext> {
-    + BaseApiController(context:TDbContext, memoryCache:IMemoryCache, hubContext:IHubContext<PortalHub>)
-    + <<override>> OnActionExecuting(context:ActionExecutingContext) : void
-}
-Controller <|-- "BaseApiController`1"
-@enduml

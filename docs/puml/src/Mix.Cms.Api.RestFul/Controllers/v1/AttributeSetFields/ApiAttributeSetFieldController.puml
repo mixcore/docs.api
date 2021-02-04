@@ -1,0 +1,7 @@
+@startuml
+class ApiAttributeFieldController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadViewModel>>>
+    + <<async>> Init(attributeSet:string) : Task<ActionResult<PaginationModel<UpdateViewModel>>>
+}
+"BaseAuthorizedRestApiController`5" "<MixCmsContext,MixAttributeField,UpdateViewModel,ReadViewModel,DeleteViewModel>" <|-- ApiAttributeFieldController
+@enduml

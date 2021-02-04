@@ -1,0 +1,11 @@
+@startuml
+class AspNetRoles <<partial>> {
+    + AspNetRoles()
+    + Id : string <<get>> <<set>>
+    + ConcurrencyStamp : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + NormalizedName : string <<get>> <<set>>
+    + <<virtual>> AspNetRoleClaims : ICollection<AspNetRoleClaims> <<get>> <<set>>
+    + <<virtual>> AspNetUserRoles : ICollection<AspNetUserRoles> <<get>> <<set>>
+}
+@enduml

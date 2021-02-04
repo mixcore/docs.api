@@ -1,0 +1,16 @@
+@startuml
+class VideoChatHub {
+    - <<new>> {static} <<readonly>> Users : List<User>
+    - {static} <<readonly>> UserCalls : List<UserCall>
+    - {static} <<readonly>> CallOffers : List<CallOffer>
+    + <<async>> Join(username:string) : Task
+    + <<override>> OnDisconnectedAsync(exception:Exception) : Task
+    + <<async>> CallUser(targetConnectionId:string) : Task
+    + <<async>> AnswerCall(acceptCall:bool, targetConnectionId:string) : Task
+    + <<async>> HangUp() : Task
+    + <<async>> SendSignal(signal:string, targetConnectionId:string) : Task
+    - <<async>> SendUserListUpdateAsync() : Task
+    - GetUserCall(connectionId:string) : UserCall
+}
+BaseSignalRHub <|-- VideoChatHub
+@enduml

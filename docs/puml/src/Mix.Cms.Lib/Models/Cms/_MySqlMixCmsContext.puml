@@ -1,0 +1,9 @@
+@startuml
+class MySqlMixCmsContext <<partial>> {
+    + MySqlMixCmsContext(options:DbContextOptions<MixCmsContext>)
+    + MySqlMixCmsContext()
+    # <<override>> OnModelCreating(modelBuilder:ModelBuilder) : void
+    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
+}
+MixCmsContext <|-- MySqlMixCmsContext
+@enduml

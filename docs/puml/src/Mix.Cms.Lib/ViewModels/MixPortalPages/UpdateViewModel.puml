@@ -1,0 +1,30 @@
+@startuml
+class UpdateViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + TextKeyword : string <<get>> <<set>>
+    + TextDefault : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + Url : string <<get>> <<set>>
+    + Level : int <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + ChildNavs : List<MixPortalPagePortalPages.UpdateViewModel> <<get>> <<set>>
+    + ParentNavs : List<MixPortalPagePortalPages.UpdateViewModel> <<get>> <<set>>
+    + UpdateViewModel()
+    + UpdateViewModel(model:MixPortalPage, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixPortalPage
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixPortalPage, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + <<override>> <<async>> RemoveRelatedModelsAsync(view:UpdateViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + GetParentNavs(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixPortalPagePortalPages.UpdateViewModel>
+    + GetChildNavs(context:MixCmsContext, transaction:IDbContextTransaction) : List<MixPortalPagePortalPages.UpdateViewModel>
+}
+"ViewModelBase`3" "<MixCmsContext,MixPortalPage,UpdateViewModel>" <|-- UpdateViewModel
+@enduml

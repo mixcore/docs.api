@@ -1,0 +1,7 @@
+@startuml
+class ApiTemplateController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadViewModel>>>
+    + <<async>> Copy(id:string) : Task<ActionResult<UpdateViewModel>>
+}
+"BaseAuthorizedRestApiController`5" "<MixCmsContext,MixTemplate,UpdateViewModel,ReadViewModel,DeleteViewModel>" <|-- ApiTemplateController
+@enduml

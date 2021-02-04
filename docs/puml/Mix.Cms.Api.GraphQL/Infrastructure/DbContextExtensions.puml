@@ -1,7 +1,0 @@
-@startuml
-class DbContextExtensions <<static>> {
-    + {static} Query(context:DbContext, entityName:string) : IQueryable
-    + {static} Query(context:DbContext, entityType:Type) : IQueryable
-}
-DbContextExtensions o-> "SetMethod" MethodInfo
-@enduml

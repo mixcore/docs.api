@@ -1,0 +1,9 @@
+@startuml
+class TableNameLookup {
+    - _lookupTable : IDictionary<string, string>
+    + InsertKeyName(correctName:string) : bool
+    + GetFriendlyName(correctName:string) : string
+    - CanonicalName(correctName:string) : string
+}
+ITableNameLookup <|-- TableNameLookup
+@enduml

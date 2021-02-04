@@ -1,0 +1,10 @@
+@startuml
+class AspNetUser {
+    - <<readonly>> _accessor : IHttpContextAccessor
+    + AspNetUser(accessor:IHttpContextAccessor)
+    + Name : string <<get>>
+    + IsAuthenticated() : bool
+    + GetClaimsIdentity() : IEnumerable<Claim>
+}
+IUser <|-- AspNetUser
+@enduml

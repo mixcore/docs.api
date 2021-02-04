@@ -1,0 +1,8 @@
+@startuml
+class MixAttributeValueModelExtensions <<static>> {
+    + {static} ToJProperty(item:MixAttributeSetValue, _context:MixCmsContext, _transaction:IDbContextTransaction) : JProperty
+    + {static} ToModelValue(item:ViewModels.MixAttributeSetValues.UpdateViewModel, property:JToken) : void
+    + {static} LoadAllReferenceData(obj:JObject, dataId:string, attributeSetId:int, culture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - {static} GetRelatedData(referenceId:int, dataId:string, culture:string, _context:MixCmsContext, _transaction:IDbContextTransaction) : JArray
+}
+@enduml

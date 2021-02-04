@@ -1,0 +1,35 @@
+@startuml
+class ImportViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Obj : JObject <<get>> <<set>>
+    + ParentId : string <<get>> <<set>>
+    + ParentType : MixDatabaseParentType <<get>> <<set>>
+    + RelatedData : List<MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + Values : List<MixAttributeSetValues.UpdateViewModel> <<get>> <<set>>
+    + Fields : List<MixAttributeFields.UpdateViewModel> <<get>> <<set>>
+    + RefData : List<MixAttributeSetDatas.ImportViewModel> <<get>> <<set>>
+    + ImportViewModel()
+    + ImportViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixAttributeSetData
+    + <<override>> <<async>> SaveModelAsync(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<ImportViewModel>>
+    + <<override>> SaveModel(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<ImportViewModel>
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveValues(parent:MixAttributeSetData, context:MixCmsContext, transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveRefDataAsync(parent:MixAttributeSetData, context:MixCmsContext, transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    + {static} <<async>> SaveObjectAsync(data:JObject, attributeSetName:string) : Task<RepositoryResponse<ImportViewModel>>
+    + HasValue(fieldName:string) : bool
+    + Property(fieldName:string) : T
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,ImportViewModel>" <|-- ImportViewModel
+@enduml

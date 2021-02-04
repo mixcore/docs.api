@@ -1,0 +1,11 @@
+@startuml
+class Aspnetuserclaims <<partial>> {
+    + Id : int <<get>> <<set>>
+    + ApplicationUserId : string <<get>> <<set>>
+    + ClaimType : string <<get>> <<set>>
+    + ClaimValue : string <<get>> <<set>>
+    + UserId : string <<get>> <<set>>
+    + <<virtual>> ApplicationUser : Aspnetusers <<get>> <<set>>
+    + <<virtual>> User : Aspnetusers <<get>> <<set>>
+}
+@enduml

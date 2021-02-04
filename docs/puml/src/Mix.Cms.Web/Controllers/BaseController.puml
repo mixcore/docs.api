@@ -1,0 +1,27 @@
+@startuml
+class BaseController {
+    # domain : string
+    # forbidden : bool = false
+    # isValid : bool = true
+    # _redirectUrl : string
+    # _forbiddenPortal : bool <<get>>
+    # _configuration : IConfiguration
+    + BaseController()
+    + ViewContext : ViewContext <<get>> <<set>>
+    - _culture : string
+    + culture : string <<get>> <<set>>
+    + <<override>> OnActionExecuting(context:ActionExecutingContext) : void
+    # <<virtual>> ValidateRequest() : void
+    # <<async>> AliasAsync(seoName:string) : Task<IActionResult>
+    # <<async>> Page(seoName:string) : System.Threading.Tasks.Task<IActionResult>
+    # <<async>> Page(pageId:int) : System.Threading.Tasks.Task<IActionResult>
+    # <<async>> Post(id:int) : System.Threading.Tasks.Task<IActionResult>
+    # <<async>> Data(attributeSetName:string, seoName:string) : System.Threading.Tasks.Task<IActionResult>
+    # <<async>> Module(id:int) : System.Threading.Tasks.Task<IActionResult>
+    # GeneratePageDetailsUrls(page:Lib.ViewModels.MixPages.ReadMvcViewModel) : void
+    # GenerateDetailsUrls(module:Lib.ViewModels.MixModules.ReadMvcViewModel) : void
+    # GenerateDetailsUrl(routeValues:object) : string
+    + <<async>> Error(page:string) : System.Threading.Tasks.Task<IActionResult>
+}
+Controller <|-- BaseController
+@enduml

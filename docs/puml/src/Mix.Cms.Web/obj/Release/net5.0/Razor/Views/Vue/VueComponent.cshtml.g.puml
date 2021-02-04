@@ -1,0 +1,10 @@
+@startuml
+class Views_Vue_VueComponent {
+    + <<async>> <<override>> ExecuteAsync() : global::System.Threading.Tasks.Task
+    + ModelExpressionProvider : global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider <<get>>
+    + Url : global::Microsoft.AspNetCore.Mvc.IUrlHelper <<get>>
+    + Component : global::Microsoft.AspNetCore.Mvc.IViewComponentHelper <<get>>
+    + Json : global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper <<get>>
+    + Html : global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<Mix.Cms.Lib.ViewModels.MixModules.ReadMvcViewModel> <<get>>
+}
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+class MixMessengerNavTeamUser <<partial>> {
+    + TeamId : int <<get>> <<set>>
+    + UserId : string <<get>> <<set>>
+    + JoinedDate : DateTime <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Status : int <<get>> <<set>>
+    + <<virtual>> Team : MixMessengerTeam <<get>> <<set>>
+    + <<virtual>> User : MixMessengerUser <<get>> <<set>>
+}
+@enduml

@@ -1,8 +1,0 @@
-@startuml
-class SQLAccountContext <<partial>> {
-    + SQLAccountContext(options:DbContextOptions<ApplicationDbContext>)
-    + SQLAccountContext()
-    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
-}
-MixCmsAccountContext <|-- SQLAccountContext
-@enduml

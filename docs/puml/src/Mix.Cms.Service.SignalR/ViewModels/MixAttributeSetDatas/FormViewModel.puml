@@ -1,0 +1,32 @@
+@startuml
+class FormViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + Status : string <<get>> <<set>>
+    + Data : JObject <<get>> <<set>>
+    + RelatedData : List<Lib.ViewModels.MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + Values : List<Lib.ViewModels.MixAttributeSetValues.UpdateViewModel> <<get>> <<set>>
+    + Fields : List<Lib.ViewModels.MixAttributeFields.UpdateViewModel> <<get>> <<set>>
+    + RefData : List<MixAttributeSetDatas.FormViewModel> <<get>> <<set>>
+    + FormViewModel()
+    + FormViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixAttributeSetData
+    + <<override>> <<async>> SaveModelAsync(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<FormViewModel>>
+    + <<override>> SaveModel(isSaveSubModels:bool, _context:MixCmsContext, _transaction:IDbContextTransaction) : RepositoryResponse<FormViewModel>
+    + <<override>> <<async>> SaveSubModelsAsync(parent:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveValues(parent:MixAttributeSetData, context:MixCmsContext, transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveRefDataAsync(parent:MixAttributeSetData, context:MixCmsContext, transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - <<async>> SaveRelatedDataAsync(parent:MixAttributeSetData, context:MixCmsContext, transaction:IDbContextTransaction) : Task<RepositoryResponse<bool>>
+    - ParseValue(item:Lib.ViewModels.MixAttributeSetValues.UpdateViewModel) : JProperty
+    - ParseModelValue(property:JToken, item:Lib.ViewModels.MixAttributeSetValues.UpdateViewModel) : void
+    + <<override>> <<async>> GenerateCache(model:MixAttributeSetData, view:FormViewModel, _context:MixCmsContext, _transaction:IDbContextTransaction) : Task
+    - ParseData() : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,FormViewModel>" <|-- FormViewModel
+@enduml

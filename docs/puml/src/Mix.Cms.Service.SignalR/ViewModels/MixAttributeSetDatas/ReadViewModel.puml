@@ -1,0 +1,25 @@
+@startuml
+class ReadViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + Status : string <<get>> <<set>>
+    + Data : JObject <<get>> <<set>>
+    + Connection : MessengerConnection <<get>> <<set>>
+    + RelatedData : List<Lib.ViewModels.MixRelatedAttributeDatas.UpdateViewModel> <<get>> <<set>>
+    + Values : List<Lib.ViewModels.MixAttributeSetValues.UpdateViewModel> <<get>> <<set>>
+    + Fields : List<Lib.ViewModels.MixAttributeFields.UpdateViewModel> <<get>> <<set>>
+    + RefData : List<MixAttributeSetDatas.FormViewModel> <<get>> <<set>>
+    + ReadViewModel()
+    + ReadViewModel(model:MixAttributeSetData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - ParseValueData(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+    - ParseValue(item:Lib.ViewModels.MixAttributeSetValues.UpdateViewModel) : JProperty
+    - ParseData() : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeSetData,ReadViewModel>" <|-- ReadViewModel
+@enduml

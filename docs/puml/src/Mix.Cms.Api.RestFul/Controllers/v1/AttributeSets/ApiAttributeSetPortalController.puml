@@ -1,0 +1,7 @@
+@startuml
+class ApiAttributeSetPortalController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadViewModel>>>
+    + <<override>> <<async>> Delete(id:string) : Task<ActionResult<MixAttributeSet>>
+}
+"BaseAuthorizedRestApiController`5" "<MixCmsContext,MixAttributeSet,UpdateViewModel,ReadViewModel,UpdateViewModel>" <|-- ApiAttributeSetPortalController
+@enduml

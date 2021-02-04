@@ -1,0 +1,44 @@
+@startuml
+class ReadListItemViewModel {
+    + Id : int <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + Template : string <<get>> <<set>>
+    + Thumbnail : string <<get>> <<set>>
+    + Image : string <<get>> <<set>>
+    + Icon : string <<get>> <<set>>
+    + CssClass : string <<get>> <<set>>
+    + Layout : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + Excerpt : string <<get>> <<set>>
+    + Content : string <<get>> <<set>>
+    + SeoName : string <<get>> <<set>>
+    + SeoTitle : string <<get>> <<set>>
+    + SeoDescription : string <<get>> <<set>>
+    + SeoKeywords : string <<get>> <<set>>
+    + Source : string <<get>> <<set>>
+    + Views : int? <<get>> <<set>>
+    + Type : MixPageType <<get>> <<set>>
+    + Tags : string <<get>> <<set>>
+    + StaticUrl : string <<get>> <<set>>
+    + Level : int? <<get>> <<set>>
+    + PageSize : int? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + Domain : string <<get>>
+    + ImageUrl : string <<get>>
+    + ThumbnailUrl : string <<get>>
+    + TotalPost : int <<get>> <<set>>
+    + TotalProduct : int <<get>> <<set>>
+    + IsActived : bool <<get>> <<set>>
+    + DetailsUrl : string <<get>> <<set>>
+    + ReadListItemViewModel()
+    + ReadListItemViewModel(model:MixPage, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixPage,ReadListItemViewModel>" <|-- ReadListItemViewModel
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+class MixChatServiceContext <<partial>> {
+    + MixChatServiceContext()
+    + MixChatServiceContext(options:DbContextOptions<MixChatServiceContext>)
+    + <<virtual>> MixMessengerHubRoom : DbSet<MixMessengerHubRoom> <<get>> <<set>>
+    + <<virtual>> MixMessengerMessage : DbSet<MixMessengerMessage> <<get>> <<set>>
+    + <<virtual>> MixMessengerNavRoomUser : DbSet<MixMessengerNavRoomUser> <<get>> <<set>>
+    + <<virtual>> MixMessengerNavTeamUser : DbSet<MixMessengerNavTeamUser> <<get>> <<set>>
+    + <<virtual>> MixMessengerTeam : DbSet<MixMessengerTeam> <<get>> <<set>>
+    + <<virtual>> MixMessengerUser : DbSet<MixMessengerUser> <<get>> <<set>>
+    + <<virtual>> MixMessengerUserDevice : DbSet<MixMessengerUserDevice> <<get>> <<set>>
+    # <<override>> OnConfiguring(optionsBuilder:DbContextOptionsBuilder) : void
+    + <<override>> Dispose() : void
+    # <<override>> OnModelCreating(modelBuilder:ModelBuilder) : void
+}
+DbContext <|-- MixChatServiceContext
+@enduml

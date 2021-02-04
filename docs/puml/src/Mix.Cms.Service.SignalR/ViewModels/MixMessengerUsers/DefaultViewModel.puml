@@ -1,0 +1,16 @@
+@startuml
+class DefaultViewModel {
+    + Id : string <<get>> <<set>>
+    + FacebookId : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Avatar : string <<get>> <<set>>
+    - Connections : List<Mix.Cms.Service.SignalR.ViewModels.MixMessengerUserDevices.DefaultViewModel> <<get>> <<set>>
+    + CreatedDate : DateTime <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Status : Constants.Enums.OnlineStatus <<get>> <<set>>
+    + DefaultViewModel()
+    + DefaultViewModel(model:MixMessengerUser, _context:MixChatServiceContext, _transaction:IDbContextTransaction)
+    + <<override>> ExpandView(_context:MixChatServiceContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixChatServiceContext,MixMessengerUser,DefaultViewModel>" <|-- DefaultViewModel
+@enduml

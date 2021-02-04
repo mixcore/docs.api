@@ -1,0 +1,6 @@
+@startuml
+class ApiConfigurationPortalController {
+    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<ReadMvcViewModel>>>
+}
+"BaseAuthorizedRestApiController`5" "<MixCmsContext,MixConfiguration,UpdateViewModel,ReadMvcViewModel,UpdateViewModel>" <|-- ApiConfigurationPortalController
+@enduml

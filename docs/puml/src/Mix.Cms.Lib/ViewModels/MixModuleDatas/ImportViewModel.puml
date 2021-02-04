@@ -1,0 +1,24 @@
+@startuml
+class ImportViewModel {
+    + Id : string <<get>> <<set>>
+    + Specificulture : string <<get>> <<set>>
+    + Cultures : List<Domain.Core.Models.SupportedCulture> <<get>> <<set>>
+    + ModuleId : int <<get>> <<set>>
+    + Fields : string <<get>> <<set>> = "[]"
+    + Value : string <<get>> <<set>>
+    + PostId : int? <<get>> <<set>>
+    + ProductId : int? <<get>> <<set>>
+    + PageId : int? <<get>> <<set>>
+    + CreatedBy : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + ModifiedBy : string <<get>> <<set>>
+    + LastModified : DateTime? <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + Status : MixContentStatus <<get>> <<set>>
+    + ImportViewModel()
+    + ImportViewModel(model:MixModuleData, _context:MixCmsContext, _transaction:IDbContextTransaction)
+    + <<override>> ParseModel(_context:MixCmsContext, _transaction:IDbContextTransaction) : MixModuleData
+    + <<override>> ExpandView(_context:MixCmsContext, _transaction:IDbContextTransaction) : void
+}
+"ViewModelBase`3" "<MixCmsContext,MixModuleData,ImportViewModel>" <|-- ImportViewModel
+@enduml

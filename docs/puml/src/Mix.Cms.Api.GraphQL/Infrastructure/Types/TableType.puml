@@ -1,0 +1,13 @@
+@startuml
+class TableType {
+    + TableArgs : QueryArguments <<get>> <<set>>
+    - _databaseTypeToSystemType : IDictionary<string, Type>
+    + _type : Type <<get>> <<set>>
+    # DatabaseTypeToSystemType : IDictionary<string, Type> <<get>>
+    + TableType(tableMetadata:TableMetadata, type:Type)
+    - InitGraphTableColumn(columnMetadata:ColumnMetadata) : void
+    - FillArgs(columnName:string) : void
+    - ResolveColumnMetaType(dbType:string) : Type
+}
+"ObjectGraphType`1" "<object>" <|-- TableType
+@enduml

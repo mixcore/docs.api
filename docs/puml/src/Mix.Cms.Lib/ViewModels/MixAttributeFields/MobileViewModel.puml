@@ -1,0 +1,23 @@
+@startuml
+class MobileViewModel {
+    + Id : int <<get>> <<set>>
+    + Priority : int <<get>> <<set>>
+    + AttributeSetId : int <<get>> <<set>>
+    + AttributeSetName : string <<get>> <<set>>
+    + ReferenceId : int? <<get>> <<set>>
+    + Regex : string <<get>> <<set>>
+    + Title : string <<get>> <<set>>
+    + DataType : MixEnums.MixDataType <<get>> <<set>>
+    + DefaultValue : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + IsRequire : bool <<get>> <<set>>
+    + IsEncrypt : bool <<get>> <<set>>
+    + IsSelect : bool <<get>> <<set>>
+    + IsUnique : bool <<get>> <<set>>
+    + Status : string <<get>> <<set>>
+    + CreatedDateTime : DateTime <<get>> <<set>>
+    + MobileViewModel()
+    + MobileViewModel(model:MixAttributeField, _context:MixCmsContext, _transaction:IDbContextTransaction)
+}
+"ViewModelBase`3" "<MixCmsContext,MixAttributeField,MobileViewModel>" <|-- MobileViewModel
+@enduml

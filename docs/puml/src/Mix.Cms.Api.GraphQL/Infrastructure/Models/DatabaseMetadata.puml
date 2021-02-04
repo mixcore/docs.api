@@ -1,0 +1,14 @@
+@startuml
+class DatabaseMetadata <<sealed>> {
+    - <<readonly>> _dbContext : DbContext
+    - <<readonly>> _tableNameLookup : ITableNameLookup
+    - _databaseName : string
+    - _tables : IEnumerable<TableMetadata>
+    + DatabaseMetadata(dbContext:DbContext, tableNameLookup:ITableNameLookup)
+    + GetTableMetadatas() : IEnumerable<TableMetadata>
+    + ReloadMetadata() : void
+    - FetchTableMetaData() : IReadOnlyList<TableMetadata>
+    - GetColumnsMetadata(entityType:IEntityType) : IReadOnlyList<ColumnMetadata>
+}
+IDatabaseMetadata <|-- DatabaseMetadata
+@enduml

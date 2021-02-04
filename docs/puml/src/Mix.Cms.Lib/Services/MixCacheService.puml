@@ -1,0 +1,11 @@
+@startuml
+class MixCacheService {
+    - {static} <<readonly>> syncRoot : object
+    - {static} <<volatile>> instance : MixCacheService
+    + Repository : DefaultModelRepository<MixCmsContext, MixCache>
+    + MixCacheService()
+    + {static} Instance : MixCacheService <<get>>
+    + {static} GetAsync(key:string) : Task<T>
+    + {static} RemoveCacheAsync() : Task
+}
+@enduml

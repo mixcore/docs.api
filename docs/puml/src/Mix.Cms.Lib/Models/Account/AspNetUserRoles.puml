@@ -1,0 +1,10 @@
+@startuml
+class AspNetUserRoles <<partial>> {
+    + UserId : string <<get>> <<set>>
+    + RoleId : string <<get>> <<set>>
+    + ApplicationUserId : string <<get>> <<set>>
+    + <<virtual>> ApplicationUser : AspNetUsers <<get>> <<set>>
+    + <<virtual>> Role : AspNetRoles <<get>> <<set>>
+    + <<virtual>> User : AspNetUsers <<get>> <<set>>
+}
+@enduml

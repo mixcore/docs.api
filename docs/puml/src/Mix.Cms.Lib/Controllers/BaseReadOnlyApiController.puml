@@ -1,0 +1,22 @@
+@startuml
+class "BaseReadOnlyApiController`3"<TDbContext,TModel,TView> {
+    # {static} _context : TDbContext
+    # {static} _transaction : IDbContextTransaction
+    # _lang : string
+    # _forbidden : bool
+    # _domain : string
+    + <<virtual>> <<async>> Get() : Task<ActionResult<PaginationModel<TView>>>
+    + <<async>> Get(id:string) : Task<ActionResult<TView>>
+    + <<virtual>> Default() : ActionResult<TView>
+    + <<virtual>> <<async>> ClearCacheAsync(id:string) : Task<ActionResult>
+    + <<virtual>> <<async>> ClearCacheAsync() : Task<ActionResult>
+    + <<override>> OnActionExecuting(context:ActionExecutingContext) : void
+    # GetLanguage() : void
+    # <<async>> GetSingleAsync(id:string) : Task<RepositoryResponse<T>>
+    # <<async>> GetSingleAsync(id:string) : Task<RepositoryResponse<TView>>
+    # <<async>> GetSingleAsync(predicate:Expression<Func<TModel, bool>>) : Task<RepositoryResponse<TView>>
+    # <<async>> GetSingleAsync(predicate:Expression<Func<TModel, bool>>) : Task<RepositoryResponse<T>>
+    # <<async>> GetListAsync(predicate:Expression<Func<TModel, bool>>) : Task<RepositoryResponse<PaginationModel<TView>>>
+}
+Controller <|-- "BaseReadOnlyApiController`3"
+@enduml
