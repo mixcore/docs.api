@@ -1,1 +1,0 @@
-puml-gen D:\mixcore\mix.core\src D:\mixcore\docs.api\puml -dir -ignore Private,Protected -createAssociation -allInOne
