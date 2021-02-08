@@ -1,0 +1,2915 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ModelRepositoryBase&lt;TDbContext, TModel&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ModelRepositoryBase&lt;TDbContext, TModel&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="//docs.mixcore.org/img/logo.png" alt="" style="
+                  margin-top: 0.5rem;
+                  height: 80%;
+              ">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2">
+  
+  
+  <h1 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2" class="text-break">Class ModelRepositoryBase&lt;TDbContext, TModel&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>View Repository Base</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ModelRepositoryBase&lt;TDbContext, TModel&gt;</span></div>
+      <div class="level2"><a class="xref" href="Mix.Domain.Data.Repository.DefaultModelRepository-2.html">DefaultModelRepository&lt;TDbContext, TModel&gt;</a></div>
+  </div>
+  
+  <!-- inheritance -->
+  
+  <h5 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ModelRepositoryBase&lt;TDbContext, TModel&gt;
+    where TDbContext : DbContext where TModel : class</code></pre>
+  </div>
+  <h5 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_puml">UML Diagram</h5>
+  <div class="puml">
+  <script>
+  var src="src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs";
+  document.write("<img src=\"/puml/"+src.slice(0, -3)+".png\"/>");
+  </script>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDbContext</span></td>
+        <td><p>The type of the database context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>The type of the model.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2__ctor.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L32">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2__ctor_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.#ctor*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2__ctor" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.#ctor">ModelRepositoryBase()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Mix.Domain.Data.Repository.ModelRepositoryBase-2.html">ModelRepositoryBase&lt;TDbContext, TModel&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ModelRepositoryBase()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_CheckIsExists__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.CheckIsExists(%601%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L43">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CheckIsExists_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CheckIsExists*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CheckIsExists__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CheckIsExists(`1,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">CheckIsExists(TModel, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Checks the is exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CheckIsExists(TModel entity, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td><p>The entity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_CheckIsExists_System_Func__1_System_Boolean___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.CheckIsExists(System.Func%7B%601%2CSystem.Boolean%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L77">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CheckIsExists_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CheckIsExists*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CheckIsExists_System_Func__1_System_Boolean___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CheckIsExists(System.Func{`1,System.Boolean},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">CheckIsExists(Func&lt;TModel, Boolean&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Checks the is exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckIsExists(Func&lt;TModel, bool&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_Count__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.Count(%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1528">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_Count_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.Count*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_Count__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.Count(`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">Count(TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Counts the specified context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;int&gt; Count(TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_Count_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.Count(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1452">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_Count_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.Count*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_Count_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.Count(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">Count(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Counts the specified predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;int&gt; Count(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_CountAsync__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.CountAsync(%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1560">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CountAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CountAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CountAsync__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CountAsync(`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">CountAsync(TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Counts the asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;int&gt;&gt; CountAsync(TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_CountAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.CountAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1486">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CountAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CountAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CountAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CountAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">CountAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Counts the asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;int&gt;&gt; CountAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_CreateModel__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.CreateModel(%601%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L111">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CreateModel_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CreateModel*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CreateModel__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CreateModel(`1,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">CreateModel(TModel, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Creates the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;TModel&gt; CreateModel(TModel view, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_CreateModelAsync__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.CreateModelAsync(%601%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L154">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CreateModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CreateModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_CreateModelAsync__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.CreateModelAsync(`1,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">CreateModelAsync(TModel, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Creates the model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;TModel&gt;&gt; CreateModelAsync(TModel view, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_EditModel__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.EditModel(%601%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L188">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_EditModel_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.EditModel*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_EditModel__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.EditModel(`1,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">EditModel(TModel, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Edits the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;TModel&gt; EditModel(TModel view, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_EditModelAsync__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.EditModelAsync(%601%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L224">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_EditModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.EditModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_EditModelAsync__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.EditModelAsync(`1,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">EditModelAsync(TModel, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Edits the model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;TModel&gt;&gt; EditModelAsync(TModel view, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetFirstModel_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetFirstModel(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L354">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetFirstModel_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetFirstModel*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetFirstModel_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetFirstModel(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetFirstModel(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the single model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;TModel&gt; GetFirstModel(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetFirstModelAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetFirstModelAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L405">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetFirstModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetFirstModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetFirstModelAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetFirstModelAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetFirstModelAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the single model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;TModel&gt;&gt; GetFirstModelAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetLambda_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetLambda(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1716">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetLambda_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetLambda*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetLambda_System_String_System_Boolean_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetLambda(System.String,System.Boolean)">GetLambda(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the lambda.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LambdaExpression GetLambda(string propName, bool isGetDefault = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">propName</span></td>
+        <td><p>Name of the property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isGetDefault</span></td>
+        <td><p>if set to <code>true</code> [is get default].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.LambdaExpression</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelList__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetModelList(%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L639">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelList_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelList*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelList__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelList(`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetModelList(TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the model list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;List&lt;TModel&gt;&gt; GetModelList(TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelList_System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetModelList(System.String%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L678">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelList_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelList*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelList_System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelList(System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetModelList(String, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the model list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;PaginationModel&lt;TModel&gt;&gt; GetModelList(string orderByPropertyName, int direction, int? pageSize, int? pageIndex, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderByPropertyName</span></td>
+        <td><p>Name of the order by property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>The direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>Size of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>Index of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.PaginationModel-1.html">PaginationModel</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListAsync__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetModelListAsync(%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L718">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListAsync__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListAsync(`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetModelListAsync(TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the model list asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;List&lt;TModel&gt;&gt;&gt; GetModelListAsync(TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TModel&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListAsync_System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetModelListAsync(System.String%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L758">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListAsync_System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListAsync(System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetModelListAsync(String, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the model list asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;PaginationModel&lt;TModel&gt;&gt;&gt; GetModelListAsync(string orderByPropertyName, int direction, int? pageSize, int? pageIndex, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderByPropertyName</span></td>
+        <td><p>Name of the order by property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>The direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>Size of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>Index of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.PaginationModel-1.html">PaginationModel</a>&lt;TModel&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListBy_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetModelListBy(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L801">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListBy_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListBy*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListBy_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListBy(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetModelListBy(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the model list by.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;List&lt;TModel&gt;&gt; GetModelListBy(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListBy_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetModelListBy(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CSystem.String%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L839">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListBy_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListBy*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListBy_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListBy(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetModelListBy(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, String, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the model list by.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;PaginationModel&lt;TModel&gt;&gt; GetModelListBy(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, string orderByPropertyName, int direction, int? pageSize, int? pageIndex, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderByPropertyName</span></td>
+        <td><p>Name of the order by property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>The direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>Size of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>Index of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.PaginationModel-1.html">PaginationModel</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListByAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetModelListByAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L877">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListByAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListByAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListByAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListByAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetModelListByAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the model list by asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;List&lt;TModel&gt;&gt;&gt; GetModelListByAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TModel&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListByAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetModelListByAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CSystem.String%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L917">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListByAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListByAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetModelListByAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetModelListByAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetModelListByAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, String, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the model list by asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;PaginationModel&lt;TModel&gt;&gt;&gt; GetModelListByAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, string orderByPropertyName, int direction, int? pageSize, int? pageIndex, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderByPropertyName</span></td>
+        <td><p>Name of the order by property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>The direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>Size of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>Index of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.PaginationModel-1.html">PaginationModel</a>&lt;TModel&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetSingleModel_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetSingleModel(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L257">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetSingleModel_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetSingleModel*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetSingleModel_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetSingleModel(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetSingleModel(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the single model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;TModel&gt; GetSingleModel(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetSingleModelAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.GetSingleModelAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L307">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetSingleModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetSingleModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_GetSingleModelAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.GetSingleModelAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">GetSingleModelAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Gets the single model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;TModel&gt;&gt; GetSingleModelAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_InitContext.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.InitContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L450">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_InitContext_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.InitContext*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_InitContext" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.InitContext">InitContext()</h4>
+  <div class="markdown level1 summary"><p>Initializes the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TDbContext InitContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_LogErrorMessage_System_Exception_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.LogErrorMessage(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L463">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_LogErrorMessage_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.LogErrorMessage*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_LogErrorMessage_System_Exception_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.LogErrorMessage(System.Exception)">LogErrorMessage(Exception)</h4>
+  <div class="markdown level1 summary"><p>Logs the error message.     User.Claims.ToList()    error CS0103: The name &apos;User&apos; does not exist in the current context</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LogErrorMessage(Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td><p>The ex.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_Max_System_Linq_Expressions_Expression_System_Func__1_System_Int32____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.Max(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Int32%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1304">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_Max_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.Max*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_Max_System_Linq_Expressions_Expression_System_Func__1_System_Int32____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.Max(System.Linq.Expressions.Expression{System.Func{`1,System.Int32}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">Max(Expression&lt;Func&lt;TModel, Int32&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Maximums the specified predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;int&gt; Max(Expression&lt;Func&lt;TModel, int&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_MaxAsync_System_Linq_Expressions_Expression_System_Func__1_System_Int32____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.MaxAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Int32%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1340">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_MaxAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.MaxAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_MaxAsync_System_Linq_Expressions_Expression_System_Func__1_System_Int32____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.MaxAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Int32}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">MaxAsync(Expression&lt;Func&lt;TModel, Int32&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Maximums the asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;int&gt;&gt; MaxAsync(Expression&lt;Func&lt;TModel, int&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_Min__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Linq_Expressions_Expression_System_Func__1___0____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.Min%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%601%2C%60%600%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1377">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_Min_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.Min*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_Min__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Linq_Expressions_Expression_System_Func__1___0____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.Min``1(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,``0}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">Min&lt;T&gt;(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, Expression&lt;Func&lt;TModel, T&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Maximums the specified predicate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;T&gt; Min&lt;T&gt;(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, Expression&lt;Func&lt;TModel, T&gt;&gt; min, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, T&gt;&gt;</td>
+        <td><span class="parametername">min</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_MinAsync__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Linq_Expressions_Expression_System_Func__1___0____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.MinAsync%60%601(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%601%2C%60%600%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1414">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_MinAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.MinAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_MinAsync__1_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Linq_Expressions_Expression_System_Func__1___0____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.MinAsync``1(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`1,``0}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">MinAsync&lt;T&gt;(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, Expression&lt;Func&lt;TModel, T&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Maximums the asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;T&gt;&gt; MinAsync&lt;T&gt;(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, Expression&lt;Func&lt;TModel, T&gt;&gt; min, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, T&gt;&gt;</td>
+        <td><span class="parametername">min</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_ParsePagingQuery_System_Linq_IQueryable__1__System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.ParsePagingQuery(System.Linq.IQueryable%7B%601%7D%2CSystem.String%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L478">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_ParsePagingQuery_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.ParsePagingQuery*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_ParsePagingQuery_System_Linq_IQueryable__1__System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.ParsePagingQuery(System.Linq.IQueryable{`1},System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">ParsePagingQuery(IQueryable&lt;TModel&gt;, String, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Parses the paging query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PaginationModel&lt;TModel&gt; ParsePagingQuery(IQueryable&lt;TModel&gt; query, string orderByPropertyName, int direction, int? pageSize, int? pageIndex, TDbContext context, IDbContextTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TModel&gt;</td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderByPropertyName</span></td>
+        <td><p>Name of the order by property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>The direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>Size of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>Index of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.PaginationModel-1.html">PaginationModel</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_ParsePagingQueryAsync_System_Linq_IQueryable__1__System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.ParsePagingQueryAsync(System.Linq.IQueryable%7B%601%7D%2CSystem.String%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L554">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_ParsePagingQueryAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.ParsePagingQueryAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_ParsePagingQueryAsync_System_Linq_IQueryable__1__System_String_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.ParsePagingQueryAsync(System.Linq.IQueryable{`1},System.String,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">ParsePagingQueryAsync(IQueryable&lt;TModel&gt;, String, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Parses the paging query asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;PaginationModel&lt;TModel&gt;&gt; ParsePagingQueryAsync(IQueryable&lt;TModel&gt; query, string orderByPropertyName, int direction, int? pageSize, int? pageIndex, TDbContext context, IDbContextTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TModel&gt;</td>
+        <td><span class="parametername">query</span></td>
+        <td><p>The query.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">orderByPropertyName</span></td>
+        <td><p>Name of the order by property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">direction</span></td>
+        <td><p>The direction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>Size of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">pageIndex</span></td>
+        <td><p>Index of the page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.PaginationModel-1.html">PaginationModel</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_RegisterAutoMapper.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.RegisterAutoMapper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L622">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RegisterAutoMapper_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RegisterAutoMapper*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RegisterAutoMapper" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RegisterAutoMapper">RegisterAutoMapper()</h4>
+  <div class="markdown level1 summary"><p>Registers the automatic mapper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterAutoMapper()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveListModel_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.RemoveListModel(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L960">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveListModel_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveListModel*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveListModel_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveListModel(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">RemoveListModel(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Removes the list model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;List&lt;TModel&gt;&gt; RemoveListModel(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveListModelAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.RemoveListModelAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1021">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveListModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveListModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveListModelAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveListModelAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">RemoveListModelAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Removes the list model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;List&lt;TModel&gt;&gt;&gt; RemoveListModelAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;TModel&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModel__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.RemoveModel(%601%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1124">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModel_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveModel*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModel__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveModel(`1,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">RemoveModel(TModel, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Removes the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;TModel&gt; RemoveModel(TModel model, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModel_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.RemoveModel(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1082">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModel_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveModel*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModel_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveModel(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">RemoveModel(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Removes the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;TModel&gt; RemoveModel(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModelAsync__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.RemoveModelAsync(%601%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1207">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModelAsync__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveModelAsync(`1,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">RemoveModelAsync(TModel, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Removes the model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;TModel&gt;&gt; RemoveModelAsync(TModel model, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModelAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.RemoveModelAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1165">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_RemoveModelAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean____0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.RemoveModelAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">RemoveModelAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Removes the model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;TModel&gt;&gt; RemoveModelAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveModel__1_System_Boolean__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.SaveModel(%601%2CSystem.Boolean%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1248">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveModel_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.SaveModel*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveModel__1_System_Boolean__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.SaveModel(`1,System.Boolean,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">SaveModel(TModel, Boolean, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Saves the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RepositoryResponse&lt;TModel&gt; SaveModel(TModel view, bool isSaveSubModels = false, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSaveSubModels</span></td>
+        <td><p>if set to <code>true</code> [is save sub models].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveModelAsync__1_System_Boolean__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.SaveModelAsync(%601%2CSystem.Boolean%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1269">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.SaveModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveModelAsync__1_System_Boolean__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.SaveModelAsync(`1,System.Boolean,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">SaveModelAsync(TModel, Boolean, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Saves the model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;RepositoryResponse&lt;TModel&gt;&gt; SaveModelAsync(TModel view, bool isSaveSubModels = false, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">view</span></td>
+        <td><p>The view.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isSaveSubModels</span></td>
+        <td><p>if set to <code>true</code> [is save sub models].</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveSubModelAsync__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.SaveSubModelAsync(%601%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1290">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveSubModelAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.SaveSubModelAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_SaveSubModelAsync__1__0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.SaveSubModelAsync(`1,`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">SaveSubModelAsync(TModel, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Saves the sub model asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;bool&gt; SaveSubModelAsync(TModel model, TDbContext context, IDbContextTransaction _transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.NotImplementedException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_UpdateFields_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Collections_Generic_List_Mix_Domain_Core_ViewModels_EntityField___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.UpdateFields(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CSystem.Collections.Generic.List%7BMix.Domain.Core.ViewModels.EntityField%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1598">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_UpdateFields_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.UpdateFields*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_UpdateFields_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Collections_Generic_List_Mix_Domain_Core_ViewModels_EntityField___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.UpdateFields(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Collections.Generic.List{Mix.Domain.Core.ViewModels.EntityField},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">UpdateFields(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, List&lt;EntityField&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Updates the fields.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RepositoryResponse&lt;TModel&gt; UpdateFields(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, List&lt;EntityField&gt; fields, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.EntityField.html">EntityField</a>&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>The fields.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2_UpdateFieldsAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Collections_Generic_List_Mix_Domain_Core_ViewModels_EntityField___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602.UpdateFieldsAsync(System.Linq.Expressions.Expression%7BSystem.Func%7B%601%2CSystem.Boolean%7D%7D%2CSystem.Collections.Generic.List%7BMix.Domain.Core.ViewModels.EntityField%7D%2C%600%2CMicrosoft.EntityFrameworkCore.Storage.IDbContextTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L1657">View Source</a>
+  </span>
+  <a id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_UpdateFieldsAsync_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.UpdateFieldsAsync*"></a>
+  <h4 id="Mix_Domain_Data_Repository_ModelRepositoryBase_2_UpdateFieldsAsync_System_Linq_Expressions_Expression_System_Func__1_System_Boolean___System_Collections_Generic_List_Mix_Domain_Core_ViewModels_EntityField___0_Microsoft_EntityFrameworkCore_Storage_IDbContextTransaction_" data-uid="Mix.Domain.Data.Repository.ModelRepositoryBase`2.UpdateFieldsAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},System.Collections.Generic.List{Mix.Domain.Core.ViewModels.EntityField},`0,Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)">UpdateFieldsAsync(Expression&lt;Func&lt;TModel, Boolean&gt;&gt;, List&lt;EntityField&gt;, TDbContext, IDbContextTransaction)</h4>
+  <div class="markdown level1 summary"><p>Updates the fields asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;RepositoryResponse&lt;TModel&gt;&gt; UpdateFieldsAsync(Expression&lt;Func&lt;TModel, bool&gt;&gt; predicate, List&lt;EntityField&gt; fields, TDbContext _context = null, IDbContextTransaction _transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TModel, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.EntityField.html">EntityField</a>&gt;</td>
+        <td><span class="parametername">fields</span></td>
+        <td><p>The fields.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">_context</span></td>
+        <td><p>The context.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction</span></td>
+        <td><span class="parametername">_transaction</span></td>
+        <td><p>The transaction.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.RepositoryResponse-1.html">RepositoryResponse</a>&lt;TModel&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Domain.Data.Repository.html">Mix.Domain.Data.Repository</a></h6>
+  <h6><strong>Assembly</strong>: Mix.Heart.dll</h6></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.heart/new/master/apiSpec/new?filename=Mix_Domain_Data_Repository_ModelRepositoryBase_2.md&amp;value=---%0Auid%3A%20Mix.Domain.Data.Repository.ModelRepositoryBase%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.heart/blob/master/src/Mix.Heart/Domain/Core/Repository/ModelRepositoryBase.cs/#L25" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>From <strong>Mixcore</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
