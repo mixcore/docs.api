@@ -1,7 +1,0 @@
-@startuml
-class PostController {
-    # <<override>> ValidateRequest() : void
-    + <<async>> Index(id:int, culture:string, seoName:string) : Task<IActionResult>
-}
-BaseController <|-- PostController
-@enduml

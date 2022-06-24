@@ -1,9 +1,0 @@
-@startuml
-class MyFieldResolver {
-    - _tableMetadata : TableMetadata
-    - _dbContext : DbContext
-    + MyFieldResolver(tableMetadata:TableMetadata, dbContext:DbContext)
-    + Resolve(context:IResolveFieldContext) : object
-}
-IFieldResolver <|-- MyFieldResolver
-@enduml

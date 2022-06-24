@@ -1,9 +1,0 @@
-@startuml
-class PostgresqlMixCmsContext <<partial>> {
-    + PostgresqlMixCmsContext()
-    + PostgresqlMixCmsContext(options:DbContextOptions<MixCmsContext>)
-    # <<override>> OnModelCreating(modelBuilder:ModelBuilder) : void
-    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
-}
-MixCmsContext <|-- PostgresqlMixCmsContext
-@enduml

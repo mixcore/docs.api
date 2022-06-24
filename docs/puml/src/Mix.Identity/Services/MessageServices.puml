@@ -1,9 +1,0 @@
-@startuml
-class AuthEmailMessageSender {
-    + SendEmailAsync(email:string, subject:string, message:string) : Task
-}
-class AuthSmsMessageSender {
-    + SendSmsAsync(number:string, message:string) : Task
-}
-ISmsSender <|-- AuthSmsMessageSender
-@enduml

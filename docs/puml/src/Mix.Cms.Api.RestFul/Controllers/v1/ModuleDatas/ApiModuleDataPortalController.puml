@@ -1,9 +1,0 @@
-@startuml
-class ApiModuleDataDataController {
-    + <<override>> <<async>> Get() : Task<ActionResult<PaginationModel<UpdateViewModel>>>
-    + <<async>> Export() : Task<ActionResult<FileViewModel>>
-    + <<async>> InitByIdAsync(moduleId:int) : Task<ActionResult<UpdateViewModel>>
-    + <<async>> SaveByName(moduleName:string, data:JObject) : Task<RepositoryResponse<UpdateViewModel>>
-}
-"BaseAuthorizedRestApiController`5" "<MixCmsContext,MixModuleData,UpdateViewModel,UpdateViewModel,UpdateViewModel>" <|-- ApiModuleDataDataController
-@enduml

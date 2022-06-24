@@ -1,6 +1,0 @@
-@startuml
-class ApplicationUserManager {
-    + ApplicationUserManager(store:IUserStore<ApplicationUser>, optionsAccessor:IOptions<IdentityOptions>, passwordHasher:IPasswordHasher<ApplicationUser>, userValidators:IEnumerable<IUserValidator<ApplicationUser>>, passwordValidators:IEnumerable<IPasswordValidator<ApplicationUser>>, keyNormalizer:ILookupNormalizer, errors:IdentityErrorDescriber, services:IServiceProvider, logger:ILogger<UserManager<ApplicationUser>>)
-}
-"UserManager`1" "<ApplicationUser>" <|-- ApplicationUserManager
-@enduml

@@ -1,9 +1,0 @@
-@startuml
-class HomeController {
-    # <<override>> ValidateRequest() : void
-    + <<async>> Index(seoName:string) : Task<IActionResult>
-    - HandleSeoName(seoName:string) : void
-    # CheckIsVueRoute(seoName:string) : bool
-}
-BaseController <|-- HomeController
-@enduml

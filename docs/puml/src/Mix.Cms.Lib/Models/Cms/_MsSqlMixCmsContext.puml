@@ -1,8 +1,0 @@
-@startuml
-class MsSqlMixCmsContext <<partial>> {
-    + MsSqlMixCmsContext()
-    # <<override>> OnModelCreating(modelBuilder:ModelBuilder) : void
-    <<partial>> OnModelCreatingPartial(modelBuilder:ModelBuilder) : void
-}
-MixCmsContext <|-- MsSqlMixCmsContext
-@enduml

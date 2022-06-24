@@ -1,9 +1,0 @@
-@startuml
-class DynamicLinqProvider {
-    + GetCustomTypes() : HashSet<Type>
-    + GetExtensionMethods() : Dictionary<Type, List<MethodInfo>>
-    + ResolveType(typeName:string) : Type
-    + ResolveTypeBySimpleName(simpleTypeName:string) : Type
-}
-IDynamicLinkCustomTypeProvider <|-- DynamicLinqProvider
-@enduml

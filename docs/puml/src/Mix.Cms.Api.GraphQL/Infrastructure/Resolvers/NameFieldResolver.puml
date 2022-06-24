@@ -1,7 +1,0 @@
-@startuml
-class NameFieldResolver {
-    - {static} GetPropValue(src:object, propName:string) : object
-    + Resolve(context:IResolveFieldContext) : object
-}
-IFieldResolver <|-- NameFieldResolver
-@enduml
