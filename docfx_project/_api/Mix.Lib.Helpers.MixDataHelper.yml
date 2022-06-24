@@ -1,0 +1,938 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Helpers.MixDataHelper
+  commentId: T:Mix.Lib.Helpers.MixDataHelper
+  id: MixDataHelper
+  parent: Mix.Lib.Helpers
+  children:
+  - Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync``1(UnitOfWorkInfo,MixDatabaseParentType,System.String,System.Nullable{Guid},System.Nullable{System.Int32},System.String)
+  - Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync(JObject,Guid,System.String,UnitOfWorkInfo,List{MixDatabaseColumn})
+  - Mix.Lib.Helpers.MixDataHelper.ParseData(Guid,UnitOfWorkInfo)
+  - Mix.Lib.Helpers.MixDataHelper.ToJProperty(MixDataContentValue)
+  - Mix.Lib.Helpers.MixDataHelper.ToModelValue(MixDataContentValueViewModel,JToken)
+  langs:
+  - csharp
+  - vb
+  name: MixDataHelper
+  nameWithType: MixDataHelper
+  fullName: Mix.Lib.Helpers.MixDataHelper
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Helpers/MixDataHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDataHelper
+    path: ../../mix.core/src/platform/mix.library/Helpers/MixDataHelper.cs
+    startLine: 7
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Helpers
+  syntax:
+    content: public static class MixDataHelper
+    content.vb: Public Module MixDataHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mix.Lib.Helpers.MixDataHelper.ParseData(Guid,UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Helpers.MixDataHelper.ParseData(Guid,UnitOfWorkInfo)
+  id: ParseData(Guid,UnitOfWorkInfo)
+  parent: Mix.Lib.Helpers.MixDataHelper
+  langs:
+  - csharp
+  - vb
+  name: ParseData(Guid, UnitOfWorkInfo)
+  nameWithType: MixDataHelper.ParseData(Guid, UnitOfWorkInfo)
+  fullName: Mix.Lib.Helpers.MixDataHelper.ParseData(Guid, UnitOfWorkInfo)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Helpers/MixDataHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ParseData
+    path: ../../mix.core/src/platform/mix.library/Helpers/MixDataHelper.cs
+    startLine: 9
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Helpers
+  syntax:
+    content: public static JObject ParseData(Guid dataContentId, UnitOfWorkInfo uowInfo)
+    parameters:
+    - id: dataContentId
+      type: Guid
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    return:
+      type: JObject
+    content.vb: Public Shared Function ParseData(dataContentId As Guid, uowInfo As UnitOfWorkInfo) As JObject
+  overload: Mix.Lib.Helpers.MixDataHelper.ParseData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Lib.Helpers.MixDataHelper.ToJProperty(MixDataContentValue)
+  commentId: M:Mix.Lib.Helpers.MixDataHelper.ToJProperty(MixDataContentValue)
+  id: ToJProperty(MixDataContentValue)
+  isExtensionMethod: true
+  parent: Mix.Lib.Helpers.MixDataHelper
+  langs:
+  - csharp
+  - vb
+  name: ToJProperty(MixDataContentValue)
+  nameWithType: MixDataHelper.ToJProperty(MixDataContentValue)
+  fullName: Mix.Lib.Helpers.MixDataHelper.ToJProperty(MixDataContentValue)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Helpers/MixDataHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ToJProperty
+    path: ../../mix.core/src/platform/mix.library/Helpers/MixDataHelper.cs
+    startLine: 26
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Helpers
+  syntax:
+    content: public static JProperty ToJProperty(this MixDataContentValue item)
+    parameters:
+    - id: item
+      type: MixDataContentValue
+    return:
+      type: JProperty
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToJProperty(item As MixDataContentValue) As JProperty
+  overload: Mix.Lib.Helpers.MixDataHelper.ToJProperty*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync(JObject,Guid,System.String,UnitOfWorkInfo,List{MixDatabaseColumn})
+  commentId: M:Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync(JObject,Guid,System.String,UnitOfWorkInfo,List{MixDatabaseColumn})
+  id: LoadAllReferenceDataAsync(JObject,Guid,System.String,UnitOfWorkInfo,List{MixDatabaseColumn})
+  isExtensionMethod: true
+  parent: Mix.Lib.Helpers.MixDataHelper
+  langs:
+  - csharp
+  - vb
+  name: LoadAllReferenceDataAsync(JObject, Guid, String, UnitOfWorkInfo, List<MixDatabaseColumn>)
+  nameWithType: MixDataHelper.LoadAllReferenceDataAsync(JObject, Guid, String, UnitOfWorkInfo, List<MixDatabaseColumn>)
+  fullName: Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync(JObject, Guid, System.String, UnitOfWorkInfo, List<MixDatabaseColumn>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Helpers/MixDataHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadAllReferenceDataAsync
+    path: ../../mix.core/src/platform/mix.library/Helpers/MixDataHelper.cs
+    startLine: 94
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Helpers
+  syntax:
+    content: public static Task LoadAllReferenceDataAsync(this JObject obj, Guid dataContentId, string mixDatabaseName, UnitOfWorkInfo uowInfo, List<MixDatabaseColumn> refColumns = null)
+    parameters:
+    - id: obj
+      type: JObject
+    - id: dataContentId
+      type: Guid
+    - id: mixDatabaseName
+      type: System.String
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    - id: refColumns
+      type: List{MixDatabaseColumn}
+    return:
+      type: Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function LoadAllReferenceDataAsync(obj As JObject, dataContentId As Guid, mixDatabaseName As String, uowInfo As UnitOfWorkInfo, refColumns As List(Of MixDatabaseColumn) = Nothing) As Task
+  overload: Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync*
+  nameWithType.vb: MixDataHelper.LoadAllReferenceDataAsync(JObject, Guid, String, UnitOfWorkInfo, List(Of MixDatabaseColumn))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync(JObject, Guid, System.String, UnitOfWorkInfo, List(Of MixDatabaseColumn))
+  name.vb: LoadAllReferenceDataAsync(JObject, Guid, String, UnitOfWorkInfo, List(Of MixDatabaseColumn))
+- uid: Mix.Lib.Helpers.MixDataHelper.ToModelValue(MixDataContentValueViewModel,JToken)
+  commentId: M:Mix.Lib.Helpers.MixDataHelper.ToModelValue(MixDataContentValueViewModel,JToken)
+  id: ToModelValue(MixDataContentValueViewModel,JToken)
+  isExtensionMethod: true
+  parent: Mix.Lib.Helpers.MixDataHelper
+  langs:
+  - csharp
+  - vb
+  name: ToModelValue(MixDataContentValueViewModel, JToken)
+  nameWithType: MixDataHelper.ToModelValue(MixDataContentValueViewModel, JToken)
+  fullName: Mix.Lib.Helpers.MixDataHelper.ToModelValue(MixDataContentValueViewModel, JToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Helpers/MixDataHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ToModelValue
+    path: ../../mix.core/src/platform/mix.library/Helpers/MixDataHelper.cs
+    startLine: 121
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Helpers
+  syntax:
+    content: public static void ToModelValue(this MixDataContentValueViewModel item, JToken property)
+    parameters:
+    - id: item
+      type: MixDataContentValueViewModel
+    - id: property
+      type: JToken
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ToModelValue(item As MixDataContentValueViewModel, property As JToken)
+  overload: Mix.Lib.Helpers.MixDataHelper.ToModelValue*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync``1(UnitOfWorkInfo,MixDatabaseParentType,System.String,System.Nullable{Guid},System.Nullable{System.Int32},System.String)
+  commentId: M:Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync``1(UnitOfWorkInfo,MixDatabaseParentType,System.String,System.Nullable{Guid},System.Nullable{System.Int32},System.String)
+  id: GetAdditionalDataAsync``1(UnitOfWorkInfo,MixDatabaseParentType,System.String,System.Nullable{Guid},System.Nullable{System.Int32},System.String)
+  parent: Mix.Lib.Helpers.MixDataHelper
+  langs:
+  - csharp
+  - vb
+  name: GetAdditionalDataAsync<T>(UnitOfWorkInfo, MixDatabaseParentType, String, Nullable<Guid>, Nullable<Int32>, String)
+  nameWithType: MixDataHelper.GetAdditionalDataAsync<T>(UnitOfWorkInfo, MixDatabaseParentType, String, Nullable<Guid>, Nullable<Int32>, String)
+  fullName: Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync<T>(UnitOfWorkInfo, MixDatabaseParentType, System.String, System.Nullable<Guid>, System.Nullable<System.Int32>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Helpers/MixDataHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetAdditionalDataAsync
+    path: ../../mix.core/src/platform/mix.library/Helpers/MixDataHelper.cs
+    startLine: 226
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Helpers
+  syntax:
+    content: >-
+      public static Task<T> GetAdditionalDataAsync<T>(UnitOfWorkInfo uow, MixDatabaseParentType parentType, string databaseName, Guid? guidParentId = default(Guid? ), int? intParentId = default(int? ), string specificulture = null)
+          where T : HaveParentContentViewModelBase<MixCmsContext, MixDataContent, Guid, T>
+    parameters:
+    - id: uow
+      type: UnitOfWorkInfo
+    - id: parentType
+      type: MixDatabaseParentType
+    - id: databaseName
+      type: System.String
+    - id: guidParentId
+      type: System.Nullable{Guid}
+    - id: intParentId
+      type: System.Nullable{System.Int32}
+    - id: specificulture
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: Task{{T}}
+    content.vb: Public Shared Function GetAdditionalDataAsync(Of T As HaveParentContentViewModelBase(Of MixCmsContext, MixDataContent, Guid, T))(uow As UnitOfWorkInfo, parentType As MixDatabaseParentType, databaseName As String, guidParentId As Guid? = Nothing, intParentId As Integer? = Nothing, specificulture As String = Nothing) As Task(Of T)
+  overload: Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync*
+  nameWithType.vb: MixDataHelper.GetAdditionalDataAsync(Of T)(UnitOfWorkInfo, MixDatabaseParentType, String, Nullable(Of Guid), Nullable(Of Int32), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync(Of T)(UnitOfWorkInfo, MixDatabaseParentType, System.String, System.Nullable(Of Guid), System.Nullable(Of System.Int32), System.String)
+  name.vb: GetAdditionalDataAsync(Of T)(UnitOfWorkInfo, MixDatabaseParentType, String, Nullable(Of Guid), Nullable(Of Int32), String)
+references:
+- uid: Mix.Lib.Helpers
+  commentId: N:Mix.Lib.Helpers
+  name: Mix.Lib.Helpers
+  nameWithType: Mix.Lib.Helpers
+  fullName: Mix.Lib.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Helpers.MixDataHelper.ParseData*
+  commentId: Overload:Mix.Lib.Helpers.MixDataHelper.ParseData
+  name: ParseData
+  nameWithType: MixDataHelper.ParseData
+  fullName: Mix.Lib.Helpers.MixDataHelper.ParseData
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: JObject
+  isExternal: true
+  name: JObject
+  nameWithType: JObject
+  fullName: JObject
+- uid: Mix.Lib.Helpers.MixDataHelper.ToJProperty*
+  commentId: Overload:Mix.Lib.Helpers.MixDataHelper.ToJProperty
+  name: ToJProperty
+  nameWithType: MixDataHelper.ToJProperty
+  fullName: Mix.Lib.Helpers.MixDataHelper.ToJProperty
+- uid: MixDataContentValue
+  isExternal: true
+  name: MixDataContentValue
+  nameWithType: MixDataContentValue
+  fullName: MixDataContentValue
+- uid: JProperty
+  isExternal: true
+  name: JProperty
+  nameWithType: JProperty
+  fullName: JProperty
+- uid: Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync*
+  commentId: Overload:Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync
+  name: LoadAllReferenceDataAsync
+  nameWithType: MixDataHelper.LoadAllReferenceDataAsync
+  fullName: Mix.Lib.Helpers.MixDataHelper.LoadAllReferenceDataAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: List{MixDatabaseColumn}
+  commentId: '!:List{MixDatabaseColumn}'
+  definition: List`1
+  name: List<MixDatabaseColumn>
+  nameWithType: List<MixDatabaseColumn>
+  fullName: List<MixDatabaseColumn>
+  nameWithType.vb: List(Of MixDatabaseColumn)
+  fullName.vb: List(Of MixDatabaseColumn)
+  name.vb: List(Of MixDatabaseColumn)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDatabaseColumn
+    name: MixDatabaseColumn
+    nameWithType: MixDatabaseColumn
+    fullName: MixDatabaseColumn
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDatabaseColumn
+    name: MixDatabaseColumn
+    nameWithType: MixDatabaseColumn
+    fullName: MixDatabaseColumn
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Helpers.MixDataHelper.ToModelValue*
+  commentId: Overload:Mix.Lib.Helpers.MixDataHelper.ToModelValue
+  name: ToModelValue
+  nameWithType: MixDataHelper.ToModelValue
+  fullName: Mix.Lib.Helpers.MixDataHelper.ToModelValue
+- uid: MixDataContentValueViewModel
+  commentId: '!:MixDataContentValueViewModel'
+  isExternal: true
+  name: MixDataContentValueViewModel
+  nameWithType: MixDataContentValueViewModel
+  fullName: MixDataContentValueViewModel
+- uid: JToken
+  isExternal: true
+  name: JToken
+  nameWithType: JToken
+  fullName: JToken
+- uid: Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync*
+  commentId: Overload:Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync
+  name: GetAdditionalDataAsync
+  nameWithType: MixDataHelper.GetAdditionalDataAsync
+  fullName: Mix.Lib.Helpers.MixDataHelper.GetAdditionalDataAsync
+- uid: MixDatabaseParentType
+  isExternal: true
+  name: MixDatabaseParentType
+  nameWithType: MixDatabaseParentType
+  fullName: MixDatabaseParentType
+- uid: System.Nullable{Guid}
+  commentId: T:System.Nullable{Guid}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Guid>
+  nameWithType: Nullable<Guid>
+  fullName: System.Nullable<Guid>
+  nameWithType.vb: Nullable(Of Guid)
+  fullName.vb: System.Nullable(Of Guid)
+  name.vb: Nullable(Of Guid)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{{T}}
+  commentId: '!:Task{``0}'
+  definition: Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

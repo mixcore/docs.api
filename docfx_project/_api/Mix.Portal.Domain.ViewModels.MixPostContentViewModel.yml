@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  commentId: T:Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  id: MixPostContentViewModel
+  parent: Mix.Portal.Domain.ViewModels
+  children:
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor(MixPostContent,UnitOfWorkInfo)
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor(UnitOfWorkInfo)
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ClassName
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.CreateParentAsync
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DeleteHandlerAsync
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DetailUrl
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ExpandView
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.LoadContributorsAsync(MixIdentityService)
+  - Mix.Portal.Domain.ViewModels.MixPostContentViewModel.UrlAliases
+  langs:
+  - csharp
+  - vb
+  name: MixPostContentViewModel
+  nameWithType: MixPostContentViewModel
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixPostContentViewModel
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 2
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: 'public class MixPostContentViewModel : ExtraColumnMultilingualSEOContentViewModelBase<MixCmsContext, MixPostContent, int, MixPostContentViewModel>'
+    content.vb: >-
+      Public Class MixPostContentViewModel
+          Inherits ExtraColumnMultilingualSEOContentViewModelBase(Of MixCmsContext, MixPostContent, Integer, MixPostContentViewModel)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor
+  commentId: M:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor
+  id: '#ctor'
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixPostContentViewModel()
+  nameWithType: MixPostContentViewModel.MixPostContentViewModel()
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.MixPostContentViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 7
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public MixPostContentViewModel()
+    content.vb: Public Sub New
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor(MixPostContent,UnitOfWorkInfo)
+  commentId: M:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor(MixPostContent,UnitOfWorkInfo)
+  id: '#ctor(MixPostContent,UnitOfWorkInfo)'
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixPostContentViewModel(MixPostContent, UnitOfWorkInfo)
+  nameWithType: MixPostContentViewModel.MixPostContentViewModel(MixPostContent, UnitOfWorkInfo)
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.MixPostContentViewModel(MixPostContent, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 11
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public MixPostContentViewModel(MixPostContent entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: MixPostContent
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(entity As MixPostContent, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixPostContentViewModel(UnitOfWorkInfo)
+  nameWithType: MixPostContentViewModel.MixPostContentViewModel(UnitOfWorkInfo)
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.MixPostContentViewModel(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 17
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public MixPostContentViewModel(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ClassName
+  commentId: P:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ClassName
+  id: ClassName
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: ClassName
+  nameWithType: MixPostContentViewModel.ClassName
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ClassName
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ClassName
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 23
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public string ClassName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClassName As String
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ClassName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DetailUrl
+  commentId: P:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DetailUrl
+  id: DetailUrl
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: DetailUrl
+  nameWithType: MixPostContentViewModel.DetailUrl
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DetailUrl
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DetailUrl
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 24
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public string DetailUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DetailUrl As String
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DetailUrl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.UrlAliases
+  commentId: P:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.UrlAliases
+  id: UrlAliases
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: UrlAliases
+  nameWithType: MixPostContentViewModel.UrlAliases
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.UrlAliases
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UrlAliases
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 26
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public List<MixUrlAliasViewModel> UrlAliases { get; set; }
+    parameters: []
+    return:
+      type: List{MixUrlAliasViewModel}
+    content.vb: Public Property UrlAliases As List(Of MixUrlAliasViewModel)
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.UrlAliases*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ExpandView
+  commentId: M:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ExpandView
+  id: ExpandView
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: ExpandView()
+  nameWithType: MixPostContentViewModel.ExpandView()
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ExpandView()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExpandView
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 32
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public override Task ExpandView()
+    return:
+      type: Task
+    content.vb: Public Overrides Function ExpandView As Task
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ExpandView*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.CreateParentAsync
+  commentId: M:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.CreateParentAsync
+  id: CreateParentAsync
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: CreateParentAsync()
+  nameWithType: MixPostContentViewModel.CreateParentAsync()
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.CreateParentAsync()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateParentAsync
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 39
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public override Task<int> CreateParentAsync()
+    return:
+      type: Task{System.Int32}
+    content.vb: Public Overrides Function CreateParentAsync As Task(Of Integer)
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.CreateParentAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DeleteHandlerAsync
+  commentId: M:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DeleteHandlerAsync
+  id: DeleteHandlerAsync
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: DeleteHandlerAsync()
+  nameWithType: MixPostContentViewModel.DeleteHandlerAsync()
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DeleteHandlerAsync()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DeleteHandlerAsync
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 51
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: protected override Task DeleteHandlerAsync()
+    return:
+      type: Task
+    content.vb: Protected Overrides Function DeleteHandlerAsync As Task
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DeleteHandlerAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.LoadContributorsAsync(MixIdentityService)
+  commentId: M:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.LoadContributorsAsync(MixIdentityService)
+  id: LoadContributorsAsync(MixIdentityService)
+  parent: Mix.Portal.Domain.ViewModels.MixPostContentViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoadContributorsAsync(MixIdentityService)
+  nameWithType: MixPostContentViewModel.LoadContributorsAsync(MixIdentityService)
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.LoadContributorsAsync(MixIdentityService)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadContributorsAsync
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixPostContentViewModel.cs
+    startLine: 69
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public Task LoadContributorsAsync(MixIdentityService identityService)
+    parameters:
+    - id: identityService
+      type: MixIdentityService
+    return:
+      type: Task
+    content.vb: Public Function LoadContributorsAsync(identityService As MixIdentityService) As Task
+  overload: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.LoadContributorsAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Portal.Domain.ViewModels
+  commentId: N:Mix.Portal.Domain.ViewModels
+  name: Mix.Portal.Domain.ViewModels
+  nameWithType: Mix.Portal.Domain.ViewModels
+  fullName: Mix.Portal.Domain.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.#ctor
+  name: MixPostContentViewModel
+  nameWithType: MixPostContentViewModel.MixPostContentViewModel
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.MixPostContentViewModel
+- uid: MixPostContent
+  isExternal: true
+  name: MixPostContent
+  nameWithType: MixPostContent
+  fullName: MixPostContent
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ClassName*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ClassName
+  name: ClassName
+  nameWithType: MixPostContentViewModel.ClassName
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ClassName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DetailUrl*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DetailUrl
+  name: DetailUrl
+  nameWithType: MixPostContentViewModel.DetailUrl
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DetailUrl
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.UrlAliases*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.UrlAliases
+  name: UrlAliases
+  nameWithType: MixPostContentViewModel.UrlAliases
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.UrlAliases
+- uid: List{MixUrlAliasViewModel}
+  commentId: '!:List{MixUrlAliasViewModel}'
+  definition: List`1
+  name: List<MixUrlAliasViewModel>
+  nameWithType: List<MixUrlAliasViewModel>
+  fullName: List<MixUrlAliasViewModel>
+  nameWithType.vb: List(Of MixUrlAliasViewModel)
+  fullName.vb: List(Of MixUrlAliasViewModel)
+  name.vb: List(Of MixUrlAliasViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixUrlAliasViewModel
+    name: MixUrlAliasViewModel
+    nameWithType: MixUrlAliasViewModel
+    fullName: MixUrlAliasViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixUrlAliasViewModel
+    name: MixUrlAliasViewModel
+    nameWithType: MixUrlAliasViewModel
+    fullName: MixUrlAliasViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ExpandView*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ExpandView
+  name: ExpandView
+  nameWithType: MixPostContentViewModel.ExpandView
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.ExpandView
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.CreateParentAsync*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.CreateParentAsync
+  name: CreateParentAsync
+  nameWithType: MixPostContentViewModel.CreateParentAsync
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.CreateParentAsync
+- uid: Task{System.Int32}
+  commentId: '!:Task{System.Int32}'
+  definition: Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DeleteHandlerAsync*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DeleteHandlerAsync
+  name: DeleteHandlerAsync
+  nameWithType: MixPostContentViewModel.DeleteHandlerAsync
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.DeleteHandlerAsync
+- uid: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.LoadContributorsAsync*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixPostContentViewModel.LoadContributorsAsync
+  name: LoadContributorsAsync
+  nameWithType: MixPostContentViewModel.LoadContributorsAsync
+  fullName: Mix.Portal.Domain.ViewModels.MixPostContentViewModel.LoadContributorsAsync
+- uid: MixIdentityService
+  isExternal: true
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: MixIdentityService

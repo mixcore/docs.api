@@ -1,0 +1,535 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4
+  commentId: T:Mix.Lib.Base.TenantDataViewModelBase`4
+  id: TenantDataViewModelBase`4
+  parent: Mix.Lib.Base
+  children:
+  - Mix.Lib.Base.TenantDataViewModelBase`4.#ctor
+  - Mix.Lib.Base.TenantDataViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  - Mix.Lib.Base.TenantDataViewModelBase`4.#ctor(UnitOfWorkInfo)
+  - Mix.Lib.Base.TenantDataViewModelBase`4.Description
+  - Mix.Lib.Base.TenantDataViewModelBase`4.DisplayName
+  - Mix.Lib.Base.TenantDataViewModelBase`4.Image
+  - Mix.Lib.Base.TenantDataViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.Lib.Base.TenantDataViewModelBase`4.MixTenantId
+  langs:
+  - csharp
+  - vb
+  name: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TenantDataViewModelBase
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 5
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: 'public abstract class TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> where TDbContext : DbContext where TEntity : class, IEntity<TPrimaryKey> where TPrimaryKey : IComparable where TView : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>'
+    typeParameters:
+    - id: TDbContext
+    - id: TEntity
+    - id: TPrimaryKey
+    - id: TView
+    content.vb: >-
+      Public MustInherit Class TenantDataViewModelBase(Of TDbContext As DbContext, TEntity As {Class, IEntity(Of TPrimaryKey)}, TPrimaryKey As IComparable, TView As ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView))
+          Inherits ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  inheritance:
+  - System.Object
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.#ctor
+  commentId: M:Mix.Lib.Base.TenantDataViewModelBase`4.#ctor
+  id: '#ctor'
+  parent: Mix.Lib.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: TenantDataViewModelBase()
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase()
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 13
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected TenantDataViewModelBase()
+    content.vb: Protected Sub New
+  overload: Mix.Lib.Base.TenantDataViewModelBase`4.#ctor*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase()
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Base.TenantDataViewModelBase`4.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Lib.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: TenantDataViewModelBase(UnitOfWorkInfo)
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase(UnitOfWorkInfo)
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 17
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected TenantDataViewModelBase(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Protected Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Lib.Base.TenantDataViewModelBase`4.#ctor*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase(UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase(UnitOfWorkInfo)
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Base.TenantDataViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  id: '#ctor(`1,UnitOfWorkInfo)'
+  parent: Mix.Lib.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: TenantDataViewModelBase(TEntity, UnitOfWorkInfo)
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase(TEntity, UnitOfWorkInfo)
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase(TEntity, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 21
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected TenantDataViewModelBase(TEntity entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Protected Sub New(entity As TEntity, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Lib.Base.TenantDataViewModelBase`4.#ctor*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase(TEntity, UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase(TEntity, UnitOfWorkInfo)
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.Description
+  commentId: P:Mix.Lib.Base.TenantDataViewModelBase`4.Description
+  id: Description
+  parent: Mix.Lib.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Description
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Description
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Description
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 30
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Mix.Lib.Base.TenantDataViewModelBase`4.Description*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Description
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Description
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.Image
+  commentId: P:Mix.Lib.Base.TenantDataViewModelBase`4.Image
+  id: Image
+  parent: Mix.Lib.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Image
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 32
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public virtual string Image { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Image As String
+  overload: Mix.Lib.Base.TenantDataViewModelBase`4.Image*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.DisplayName
+  commentId: P:Mix.Lib.Base.TenantDataViewModelBase`4.DisplayName
+  id: DisplayName
+  parent: Mix.Lib.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DisplayName
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DisplayName
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 33
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: >-
+      [Required]
+
+      public virtual string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Overridable Property DisplayName As String
+  overload: Mix.Lib.Base.TenantDataViewModelBase`4.DisplayName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DisplayName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DisplayName
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.MixTenantId
+  commentId: P:Mix.Lib.Base.TenantDataViewModelBase`4.MixTenantId
+  id: MixTenantId
+  parent: Mix.Lib.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: MixTenantId
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantId
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 35
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public int MixTenantId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MixTenantId As Integer
+  overload: Mix.Lib.Base.TenantDataViewModelBase`4.MixTenantId*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Lib.Base.TenantDataViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  id: InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.Lib.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitDefaultValues
+    path: ../../mix.core/src/platform/mix.library/Base/TenantDataViewModelBase.cs
+    startLine: 41
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public override void InitDefaultValues(string language = null, int? cultureId = default(int? ))
+    parameters:
+    - id: language
+      type: System.String
+    - id: cultureId
+      type: System.Nullable{System.Int32}
+    content.vb: Public Overrides Sub InitDefaultValues(language As String = Nothing, cultureId As Integer? = Nothing)
+  overload: Mix.Lib.Base.TenantDataViewModelBase`4.InitDefaultValues*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+references:
+- uid: Mix.Lib.Base
+  commentId: N:Mix.Lib.Base
+  name: Mix.Lib.Base
+  nameWithType: Mix.Lib.Base
+  fullName: Mix.Lib.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.#ctor*
+  commentId: Overload:Mix.Lib.Base.TenantDataViewModelBase`4.#ctor
+  name: TenantDataViewModelBase
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.Description*
+  commentId: Overload:Mix.Lib.Base.TenantDataViewModelBase`4.Description
+  name: Description
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Description
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Description
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Description
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.Image*
+  commentId: Overload:Mix.Lib.Base.TenantDataViewModelBase`4.Image
+  name: Image
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.DisplayName*
+  commentId: Overload:Mix.Lib.Base.TenantDataViewModelBase`4.DisplayName
+  name: DisplayName
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DisplayName
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DisplayName
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DisplayName
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DisplayName
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.MixTenantId*
+  commentId: Overload:Mix.Lib.Base.TenantDataViewModelBase`4.MixTenantId
+  name: MixTenantId
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.Lib.Base.TenantDataViewModelBase`4.InitDefaultValues*
+  commentId: Overload:Mix.Lib.Base.TenantDataViewModelBase`4.InitDefaultValues
+  name: InitDefaultValues
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  fullName: Mix.Lib.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  fullName.vb: Mix.Lib.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

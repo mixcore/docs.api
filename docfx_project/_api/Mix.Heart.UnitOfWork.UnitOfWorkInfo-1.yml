@@ -1,0 +1,751 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+  commentId: T:Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+  id: UnitOfWorkInfo`1
+  parent: Mix.Heart.UnitOfWork
+  children:
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.#ctor(`0)
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.DbContext
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWorkInfo<T>
+  nameWithType: UnitOfWorkInfo<T>
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo<T>
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Heart/UnitOfWork/GenericUnitOfWorkInfo.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: UnitOfWorkInfo
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/GenericUnitOfWorkInfo.cs
+    startLine: 4
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.UnitOfWork
+  syntax:
+    content: 'public class UnitOfWorkInfo<T> : UnitOfWorkInfo where T : DbContext'
+    typeParameters:
+    - id: T
+    content.vb: >-
+      Public Class UnitOfWorkInfo(Of T As DbContext)
+          Inherits UnitOfWorkInfo
+  inheritance:
+  - System.Object
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  inheritedMembers:
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveDbContext
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.Close
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.CloseAsync
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.Complete
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: UnitOfWorkInfo(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Mix.Heart.UnitOfWork.UnitOfWorkInfo(Of T)
+  name.vb: UnitOfWorkInfo(Of T)
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.DbContext
+  commentId: P:Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.DbContext
+  id: DbContext
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+  langs:
+  - csharp
+  - vb
+  name: DbContext
+  nameWithType: UnitOfWorkInfo<T>.DbContext
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo<T>.DbContext
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/UnitOfWork/GenericUnitOfWorkInfo.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: DbContext
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/GenericUnitOfWorkInfo.cs
+    startLine: 7
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.UnitOfWork
+  syntax:
+    content: public T DbContext { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property DbContext As T
+  overload: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.DbContext*
+  nameWithType.vb: UnitOfWorkInfo(Of T).DbContext
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: Mix.Heart.UnitOfWork.UnitOfWorkInfo(Of T).DbContext
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.#ctor(`0)
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWorkInfo(T)
+  nameWithType: UnitOfWorkInfo<T>.UnitOfWorkInfo(T)
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo<T>.UnitOfWorkInfo(T)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/UnitOfWork/GenericUnitOfWorkInfo.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/GenericUnitOfWorkInfo.cs
+    startLine: 8
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.UnitOfWork
+  syntax:
+    content: public UnitOfWorkInfo(T dbContext)
+    parameters:
+    - id: dbContext
+      type: '{T}'
+    content.vb: Public Sub New(dbContext As T)
+  overload: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.#ctor*
+  nameWithType.vb: UnitOfWorkInfo(Of T).UnitOfWorkInfo(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.UnitOfWork.UnitOfWorkInfo(Of T).UnitOfWorkInfo(T)
+references:
+- uid: Mix.Heart.UnitOfWork
+  commentId: N:Mix.Heart.UnitOfWork
+  name: Mix.Heart.UnitOfWork
+  nameWithType: Mix.Heart.UnitOfWork
+  fullName: Mix.Heart.UnitOfWork
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  commentId: T:Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  parent: Mix.Heart.UnitOfWork
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveDbContext
+  commentId: P:Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveDbContext
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: ActiveDbContext
+  nameWithType: UnitOfWorkInfo.ActiveDbContext
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveDbContext
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction
+  commentId: P:Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: ActiveTransaction
+  nameWithType: UnitOfWorkInfo.ActiveTransaction
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  isExternal: true
+  name: SetDbContext(DbContext)
+  nameWithType: UnitOfWorkInfo.SetDbContext(DbContext)
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
+    name: SetDbContext
+    nameWithType: UnitOfWorkInfo.SetDbContext
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.EntityFrameworkCore.DbContext
+    name: DbContext
+    nameWithType: DbContext
+    fullName: Microsoft.EntityFrameworkCore.DbContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
+    name: SetDbContext
+    nameWithType: UnitOfWorkInfo.SetDbContext
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.EntityFrameworkCore.DbContext
+    name: DbContext
+    nameWithType: DbContext
+    fullName: Microsoft.EntityFrameworkCore.DbContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  isExternal: true
+  name: SetTransaction(IDbContextTransaction)
+  nameWithType: UnitOfWorkInfo.SetTransaction(IDbContextTransaction)
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+    name: SetTransaction
+    nameWithType: UnitOfWorkInfo.SetTransaction
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+    name: IDbContextTransaction
+    nameWithType: IDbContextTransaction
+    fullName: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+    name: SetTransaction
+    nameWithType: UnitOfWorkInfo.SetTransaction
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+    name: IDbContextTransaction
+    nameWithType: IDbContextTransaction
+    fullName: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: Begin()
+  nameWithType: UnitOfWorkInfo.Begin()
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin()
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin
+    name: Begin
+    nameWithType: UnitOfWorkInfo.Begin
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin
+    name: Begin
+    nameWithType: UnitOfWorkInfo.Begin
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Close
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.Close
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: Close()
+  nameWithType: UnitOfWorkInfo.Close()
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Close()
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Close
+    name: Close
+    nameWithType: UnitOfWorkInfo.Close
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Close
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Close
+    name: Close
+    nameWithType: UnitOfWorkInfo.Close
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Close
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CloseAsync
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.CloseAsync
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: CloseAsync()
+  nameWithType: UnitOfWorkInfo.CloseAsync()
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CloseAsync()
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CloseAsync
+    name: CloseAsync
+    nameWithType: UnitOfWorkInfo.CloseAsync
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CloseAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CloseAsync
+    name: CloseAsync
+    nameWithType: UnitOfWorkInfo.CloseAsync
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CloseAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Complete
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.Complete
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: Complete()
+  nameWithType: UnitOfWorkInfo.Complete()
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Complete()
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Complete
+    name: Complete
+    nameWithType: UnitOfWorkInfo.Complete
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Complete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Complete
+    name: Complete
+    nameWithType: UnitOfWorkInfo.Complete
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Complete
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: Rollback()
+  nameWithType: UnitOfWorkInfo.Rollback()
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback()
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback
+    name: Rollback
+    nameWithType: UnitOfWorkInfo.Rollback
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback
+    name: Rollback
+    nameWithType: UnitOfWorkInfo.Rollback
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: CompleteAsync()
+  nameWithType: UnitOfWorkInfo.CompleteAsync()
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync()
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync
+    name: CompleteAsync
+    nameWithType: UnitOfWorkInfo.CompleteAsync
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync
+    name: CompleteAsync
+    nameWithType: UnitOfWorkInfo.CompleteAsync
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync
+  parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  name: RollbackAsync()
+  nameWithType: UnitOfWorkInfo.RollbackAsync()
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync()
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync
+    name: RollbackAsync
+    nameWithType: UnitOfWorkInfo.RollbackAsync
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync
+    name: RollbackAsync
+    nameWithType: UnitOfWorkInfo.RollbackAsync
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.DbContext*
+  commentId: Overload:Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.DbContext
+  name: DbContext
+  nameWithType: UnitOfWorkInfo<T>.DbContext
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo<T>.DbContext
+  nameWithType.vb: UnitOfWorkInfo(Of T).DbContext
+  fullName.vb: Mix.Heart.UnitOfWork.UnitOfWorkInfo(Of T).DbContext
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.#ctor*
+  commentId: Overload:Mix.Heart.UnitOfWork.UnitOfWorkInfo`1.#ctor
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo<T>.UnitOfWorkInfo
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo<T>.UnitOfWorkInfo
+  nameWithType.vb: UnitOfWorkInfo(Of T).UnitOfWorkInfo
+  fullName.vb: Mix.Heart.UnitOfWork.UnitOfWorkInfo(Of T).UnitOfWorkInfo

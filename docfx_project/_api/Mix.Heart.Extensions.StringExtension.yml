@@ -1,0 +1,986 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Heart.Extensions.StringExtension
+  commentId: T:Mix.Heart.Extensions.StringExtension
+  id: StringExtension
+  parent: Mix.Heart.Extensions
+  children:
+  - Mix.Heart.Extensions.StringExtension.Base64Decode(System.String)
+  - Mix.Heart.Extensions.StringExtension.Base64Encode(System.String)
+  - Mix.Heart.Extensions.StringExtension.ConvertToUnSign(System.String)
+  - Mix.Heart.Extensions.StringExtension.Decrypt(System.String,System.String)
+  - Mix.Heart.Extensions.StringExtension.DeleteSpecialCharaters(System.String)
+  - Mix.Heart.Extensions.StringExtension.Encrypt(System.String,System.String)
+  - Mix.Heart.Extensions.StringExtension.IsBase64(System.String)
+  - Mix.Heart.Extensions.StringExtension.ToCamelCase(System.String)
+  - Mix.Heart.Extensions.StringExtension.ToEnum``1(System.String)
+  - Mix.Heart.Extensions.StringExtension.ToHypenCase(System.String,System.Char,System.Boolean)
+  - Mix.Heart.Extensions.StringExtension.ToSEOString(System.String,System.Char)
+  - Mix.Heart.Extensions.StringExtension.ToTitleCase(System.String)
+  - Mix.Heart.Extensions.StringExtension.WhiteSpaceToHyphen(System.String,System.Char)
+  langs:
+  - csharp
+  - vb
+  name: StringExtension
+  nameWithType: StringExtension
+  fullName: Mix.Heart.Extensions.StringExtension
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: StringExtension
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 7
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static class StringExtension
+    content.vb: Public Module StringExtension
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mix.Heart.Extensions.StringExtension.ToEnum``1(System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.ToEnum``1(System.String)
+  id: ToEnum``1(System.String)
+  isExtensionMethod: true
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: ToEnum<T>(String)
+  nameWithType: StringExtension.ToEnum<T>(String)
+  fullName: Mix.Heart.Extensions.StringExtension.ToEnum<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ToEnum
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 9
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static T ToEnum<T>(this string str)
+    parameters:
+    - id: str
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToEnum(Of T)(str As String) As T
+  overload: Mix.Heart.Extensions.StringExtension.ToEnum*
+  nameWithType.vb: StringExtension.ToEnum(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Extensions.StringExtension.ToEnum(Of T)(System.String)
+  name.vb: ToEnum(Of T)(String)
+- uid: Mix.Heart.Extensions.StringExtension.ToHypenCase(System.String,System.Char,System.Boolean)
+  commentId: M:Mix.Heart.Extensions.StringExtension.ToHypenCase(System.String,System.Char,System.Boolean)
+  id: ToHypenCase(System.String,System.Char,System.Boolean)
+  isExtensionMethod: true
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: ToHypenCase(String, Char, Boolean)
+  nameWithType: StringExtension.ToHypenCase(String, Char, Boolean)
+  fullName: Mix.Heart.Extensions.StringExtension.ToHypenCase(System.String, System.Char, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ToHypenCase
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 14
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string ToHypenCase(this string source, char replaceChar = '-', bool isLower = true)
+    parameters:
+    - id: source
+      type: System.String
+    - id: replaceChar
+      type: System.Char
+    - id: isLower
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHypenCase(source As String, replaceChar As Char = "-"c, isLower As Boolean = True) As String
+  overload: Mix.Heart.Extensions.StringExtension.ToHypenCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.ToCamelCase(System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.ToCamelCase(System.String)
+  id: ToCamelCase(System.String)
+  isExtensionMethod: true
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: ToCamelCase(String)
+  nameWithType: StringExtension.ToCamelCase(String)
+  fullName: Mix.Heart.Extensions.StringExtension.ToCamelCase(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ToCamelCase
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 24
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string ToCamelCase(this string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCamelCase(str As String) As String
+  overload: Mix.Heart.Extensions.StringExtension.ToCamelCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.ToTitleCase(System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.ToTitleCase(System.String)
+  id: ToTitleCase(System.String)
+  isExtensionMethod: true
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: ToTitleCase(String)
+  nameWithType: StringExtension.ToTitleCase(String)
+  fullName: Mix.Heart.Extensions.StringExtension.ToTitleCase(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ToTitleCase
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 33
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string ToTitleCase(this string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToTitleCase(str As String) As String
+  overload: Mix.Heart.Extensions.StringExtension.ToTitleCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.ToSEOString(System.String,System.Char)
+  commentId: M:Mix.Heart.Extensions.StringExtension.ToSEOString(System.String,System.Char)
+  id: ToSEOString(System.String,System.Char)
+  isExtensionMethod: true
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: ToSEOString(String, Char)
+  nameWithType: StringExtension.ToSEOString(String, Char)
+  fullName: Mix.Heart.Extensions.StringExtension.ToSEOString(System.String, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ToSEOString
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 42
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string ToSEOString(this string str, char replaceChar = '-')
+    parameters:
+    - id: str
+      type: System.String
+    - id: replaceChar
+      type: System.Char
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToSEOString(str As String, replaceChar As Char = "-"c) As String
+  overload: Mix.Heart.Extensions.StringExtension.ToSEOString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.IsBase64(System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.IsBase64(System.String)
+  id: IsBase64(System.String)
+  isExtensionMethod: true
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: IsBase64(String)
+  nameWithType: StringExtension.IsBase64(String)
+  fullName: Mix.Heart.Extensions.StringExtension.IsBase64(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: IsBase64
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 49
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static bool IsBase64(this string base64String)
+    parameters:
+    - id: base64String
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsBase64(base64String As String) As Boolean
+  overload: Mix.Heart.Extensions.StringExtension.IsBase64*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.Base64Encode(System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.Base64Encode(System.String)
+  id: Base64Encode(System.String)
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: Base64Encode(String)
+  nameWithType: StringExtension.Base64Encode(String)
+  fullName: Mix.Heart.Extensions.StringExtension.Base64Encode(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Base64Encode
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 70
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string Base64Encode(string plainText)
+    parameters:
+    - id: plainText
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Base64Encode(plainText As String) As String
+  overload: Mix.Heart.Extensions.StringExtension.Base64Encode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.Base64Decode(System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.Base64Decode(System.String)
+  id: Base64Decode(System.String)
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: Base64Decode(String)
+  nameWithType: StringExtension.Base64Decode(String)
+  fullName: Mix.Heart.Extensions.StringExtension.Base64Decode(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Base64Decode
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 76
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string Base64Decode(string base64EncodedData)
+    parameters:
+    - id: base64EncodedData
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Base64Decode(base64EncodedData As String) As String
+  overload: Mix.Heart.Extensions.StringExtension.Base64Decode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.Encrypt(System.String,System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.Encrypt(System.String,System.String)
+  id: Encrypt(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: Encrypt(String, String)
+  nameWithType: StringExtension.Encrypt(String, String)
+  fullName: Mix.Heart.Extensions.StringExtension.Encrypt(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Encrypt
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 82
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string Encrypt(this string text, string key)
+    parameters:
+    - id: text
+      type: System.String
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Encrypt(text As String, key As String) As String
+  overload: Mix.Heart.Extensions.StringExtension.Encrypt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.Decrypt(System.String,System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.Decrypt(System.String,System.String)
+  id: Decrypt(System.String,System.String)
+  isExtensionMethod: true
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: Decrypt(String, String)
+  nameWithType: StringExtension.Decrypt(String, String)
+  fullName: Mix.Heart.Extensions.StringExtension.Decrypt(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Decrypt
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 87
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string Decrypt(this string cipherText, string key)
+    parameters:
+    - id: cipherText
+      type: System.String
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Decrypt(cipherText As String, key As String) As String
+  overload: Mix.Heart.Extensions.StringExtension.Decrypt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.WhiteSpaceToHyphen(System.String,System.Char)
+  commentId: M:Mix.Heart.Extensions.StringExtension.WhiteSpaceToHyphen(System.String,System.Char)
+  id: WhiteSpaceToHyphen(System.String,System.Char)
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: WhiteSpaceToHyphen(String, Char)
+  nameWithType: StringExtension.WhiteSpaceToHyphen(String, Char)
+  fullName: Mix.Heart.Extensions.StringExtension.WhiteSpaceToHyphen(System.String, System.Char)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: WhiteSpaceToHyphen
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 92
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string WhiteSpaceToHyphen(string str, char replaceChar = '-')
+    parameters:
+    - id: str
+      type: System.String
+    - id: replaceChar
+      type: System.Char
+    return:
+      type: System.String
+    content.vb: Public Shared Function WhiteSpaceToHyphen(str As String, replaceChar As Char = "-"c) As String
+  overload: Mix.Heart.Extensions.StringExtension.WhiteSpaceToHyphen*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.ConvertToUnSign(System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.ConvertToUnSign(System.String)
+  id: ConvertToUnSign(System.String)
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: ConvertToUnSign(String)
+  nameWithType: StringExtension.ConvertToUnSign(String)
+  fullName: Mix.Heart.Extensions.StringExtension.ConvertToUnSign(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ConvertToUnSign
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 115
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  summary: "\nConverts to un sign.\n"
+  example: []
+  syntax:
+    content: public static string ConvertToUnSign(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function ConvertToUnSign(text As String) As String
+  overload: Mix.Heart.Extensions.StringExtension.ConvertToUnSign*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Extensions.StringExtension.DeleteSpecialCharaters(System.String)
+  commentId: M:Mix.Heart.Extensions.StringExtension.DeleteSpecialCharaters(System.String)
+  id: DeleteSpecialCharaters(System.String)
+  parent: Mix.Heart.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: DeleteSpecialCharaters(String)
+  nameWithType: StringExtension.DeleteSpecialCharaters(String)
+  fullName: Mix.Heart.Extensions.StringExtension.DeleteSpecialCharaters(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Extensions/StringExtension.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: DeleteSpecialCharaters
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/StringExtension.cs
+    startLine: 151
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Extensions
+  syntax:
+    content: public static string DeleteSpecialCharaters(string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function DeleteSpecialCharaters(str As String) As String
+  overload: Mix.Heart.Extensions.StringExtension.DeleteSpecialCharaters*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Mix.Heart.Extensions
+  commentId: N:Mix.Heart.Extensions
+  name: Mix.Heart.Extensions
+  nameWithType: Mix.Heart.Extensions
+  fullName: Mix.Heart.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Heart.Extensions.StringExtension.ToEnum*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.ToEnum
+  name: ToEnum
+  nameWithType: StringExtension.ToEnum
+  fullName: Mix.Heart.Extensions.StringExtension.ToEnum
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Mix.Heart.Extensions.StringExtension.ToHypenCase*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.ToHypenCase
+  name: ToHypenCase
+  nameWithType: StringExtension.ToHypenCase
+  fullName: Mix.Heart.Extensions.StringExtension.ToHypenCase
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  name: Char
+  nameWithType: Char
+  fullName: System.Char
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Heart.Extensions.StringExtension.ToCamelCase*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.ToCamelCase
+  name: ToCamelCase
+  nameWithType: StringExtension.ToCamelCase
+  fullName: Mix.Heart.Extensions.StringExtension.ToCamelCase
+- uid: Mix.Heart.Extensions.StringExtension.ToTitleCase*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.ToTitleCase
+  name: ToTitleCase
+  nameWithType: StringExtension.ToTitleCase
+  fullName: Mix.Heart.Extensions.StringExtension.ToTitleCase
+- uid: Mix.Heart.Extensions.StringExtension.ToSEOString*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.ToSEOString
+  name: ToSEOString
+  nameWithType: StringExtension.ToSEOString
+  fullName: Mix.Heart.Extensions.StringExtension.ToSEOString
+- uid: Mix.Heart.Extensions.StringExtension.IsBase64*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.IsBase64
+  name: IsBase64
+  nameWithType: StringExtension.IsBase64
+  fullName: Mix.Heart.Extensions.StringExtension.IsBase64
+- uid: Mix.Heart.Extensions.StringExtension.Base64Encode*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.Base64Encode
+  name: Base64Encode
+  nameWithType: StringExtension.Base64Encode
+  fullName: Mix.Heart.Extensions.StringExtension.Base64Encode
+- uid: Mix.Heart.Extensions.StringExtension.Base64Decode*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.Base64Decode
+  name: Base64Decode
+  nameWithType: StringExtension.Base64Decode
+  fullName: Mix.Heart.Extensions.StringExtension.Base64Decode
+- uid: Mix.Heart.Extensions.StringExtension.Encrypt*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.Encrypt
+  name: Encrypt
+  nameWithType: StringExtension.Encrypt
+  fullName: Mix.Heart.Extensions.StringExtension.Encrypt
+- uid: Mix.Heart.Extensions.StringExtension.Decrypt*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.Decrypt
+  name: Decrypt
+  nameWithType: StringExtension.Decrypt
+  fullName: Mix.Heart.Extensions.StringExtension.Decrypt
+- uid: Mix.Heart.Extensions.StringExtension.WhiteSpaceToHyphen*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.WhiteSpaceToHyphen
+  name: WhiteSpaceToHyphen
+  nameWithType: StringExtension.WhiteSpaceToHyphen
+  fullName: Mix.Heart.Extensions.StringExtension.WhiteSpaceToHyphen
+- uid: Mix.Heart.Extensions.StringExtension.ConvertToUnSign*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.ConvertToUnSign
+  name: ConvertToUnSign
+  nameWithType: StringExtension.ConvertToUnSign
+  fullName: Mix.Heart.Extensions.StringExtension.ConvertToUnSign
+- uid: Mix.Heart.Extensions.StringExtension.DeleteSpecialCharaters*
+  commentId: Overload:Mix.Heart.Extensions.StringExtension.DeleteSpecialCharaters
+  name: DeleteSpecialCharaters
+  nameWithType: StringExtension.DeleteSpecialCharaters
+  fullName: Mix.Heart.Extensions.StringExtension.DeleteSpecialCharaters

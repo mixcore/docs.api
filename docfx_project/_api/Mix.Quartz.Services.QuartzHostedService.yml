@@ -1,0 +1,692 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Quartz.Services.QuartzHostedService
+  commentId: T:Mix.Quartz.Services.QuartzHostedService
+  id: QuartzHostedService
+  parent: Mix.Quartz.Services
+  children:
+  - Mix.Quartz.Services.QuartzHostedService.#ctor(System.Collections.Generic.IEnumerable{MixJobBase},Mix.Quartz.Services.QuartzService)
+  - Mix.Quartz.Services.QuartzHostedService.StartAsync(System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzHostedService.StopAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: QuartzHostedService
+  nameWithType: QuartzHostedService
+  fullName: Mix.Quartz.Services.QuartzHostedService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzHostedService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: QuartzHostedService
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzHostedService.cs
+    startLine: 8
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: 'public class QuartzHostedService : IHostedService'
+    content.vb: >-
+      Public Class QuartzHostedService
+          Implements IHostedService
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Quartz.Services.QuartzHostedService.#ctor(System.Collections.Generic.IEnumerable{MixJobBase},Mix.Quartz.Services.QuartzService)
+  commentId: M:Mix.Quartz.Services.QuartzHostedService.#ctor(System.Collections.Generic.IEnumerable{MixJobBase},Mix.Quartz.Services.QuartzService)
+  id: '#ctor(System.Collections.Generic.IEnumerable{MixJobBase},Mix.Quartz.Services.QuartzService)'
+  parent: Mix.Quartz.Services.QuartzHostedService
+  langs:
+  - csharp
+  - vb
+  name: QuartzHostedService(IEnumerable<MixJobBase>, QuartzService)
+  nameWithType: QuartzHostedService.QuartzHostedService(IEnumerable<MixJobBase>, QuartzService)
+  fullName: Mix.Quartz.Services.QuartzHostedService.QuartzHostedService(System.Collections.Generic.IEnumerable<MixJobBase>, Mix.Quartz.Services.QuartzService)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzHostedService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzHostedService.cs
+    startLine: 13
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public QuartzHostedService(IEnumerable<MixJobBase> jobSchedules, QuartzService scheduler)
+    parameters:
+    - id: jobSchedules
+      type: System.Collections.Generic.IEnumerable{MixJobBase}
+    - id: scheduler
+      type: Mix.Quartz.Services.QuartzService
+    content.vb: Public Sub New(jobSchedules As IEnumerable(Of MixJobBase), scheduler As QuartzService)
+  overload: Mix.Quartz.Services.QuartzHostedService.#ctor*
+  nameWithType.vb: QuartzHostedService.QuartzHostedService(IEnumerable(Of MixJobBase), QuartzService)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Quartz.Services.QuartzHostedService.QuartzHostedService(System.Collections.Generic.IEnumerable(Of MixJobBase), Mix.Quartz.Services.QuartzService)
+  name.vb: QuartzHostedService(IEnumerable(Of MixJobBase), QuartzService)
+- uid: Mix.Quartz.Services.QuartzHostedService.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzHostedService.StartAsync(System.Threading.CancellationToken)
+  id: StartAsync(System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzHostedService
+  langs:
+  - csharp
+  - vb
+  name: StartAsync(CancellationToken)
+  nameWithType: QuartzHostedService.StartAsync(CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzHostedService.StartAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzHostedService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: StartAsync
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzHostedService.cs
+    startLine: 21
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task StartAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartAsync(cancellationToken As CancellationToken) As Task
+  overload: Mix.Quartz.Services.QuartzHostedService.StartAsync*
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzHostedService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzHostedService.StopAsync(System.Threading.CancellationToken)
+  id: StopAsync(System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzHostedService
+  langs:
+  - csharp
+  - vb
+  name: StopAsync(CancellationToken)
+  nameWithType: QuartzHostedService.StopAsync(CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzHostedService.StopAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzHostedService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: StopAsync
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzHostedService.cs
+    startLine: 36
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task StopAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StopAsync(cancellationToken As CancellationToken) As Task
+  overload: Mix.Quartz.Services.QuartzHostedService.StopAsync*
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Quartz.Services
+  commentId: N:Mix.Quartz.Services
+  name: Mix.Quartz.Services
+  nameWithType: Mix.Quartz.Services
+  fullName: Mix.Quartz.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Extensions.Hosting.IHostedService
+  commentId: T:Microsoft.Extensions.Hosting.IHostedService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  name: IHostedService
+  nameWithType: IHostedService
+  fullName: Microsoft.Extensions.Hosting.IHostedService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+- uid: Mix.Quartz.Services.QuartzHostedService.#ctor*
+  commentId: Overload:Mix.Quartz.Services.QuartzHostedService.#ctor
+  name: QuartzHostedService
+  nameWithType: QuartzHostedService.QuartzHostedService
+  fullName: Mix.Quartz.Services.QuartzHostedService.QuartzHostedService
+- uid: System.Collections.Generic.IEnumerable{MixJobBase}
+  commentId: T:System.Collections.Generic.IEnumerable{MixJobBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<MixJobBase>
+  nameWithType: IEnumerable<MixJobBase>
+  fullName: System.Collections.Generic.IEnumerable<MixJobBase>
+  nameWithType.vb: IEnumerable(Of MixJobBase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of MixJobBase)
+  name.vb: IEnumerable(Of MixJobBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixJobBase
+    name: MixJobBase
+    nameWithType: MixJobBase
+    fullName: MixJobBase
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixJobBase
+    name: MixJobBase
+    nameWithType: MixJobBase
+    fullName: MixJobBase
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Quartz.Services.QuartzService
+  commentId: T:Mix.Quartz.Services.QuartzService
+  parent: Mix.Quartz.Services
+  name: QuartzService
+  nameWithType: QuartzService
+  fullName: Mix.Quartz.Services.QuartzService
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Mix.Quartz.Services.QuartzHostedService.StartAsync*
+  commentId: Overload:Mix.Quartz.Services.QuartzHostedService.StartAsync
+  name: StartAsync
+  nameWithType: QuartzHostedService.StartAsync
+  fullName: Mix.Quartz.Services.QuartzHostedService.StartAsync
+- uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.IHostedService
+  isExternal: true
+  name: StartAsync(CancellationToken)
+  nameWithType: IHostedService.StartAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    nameWithType: IHostedService.StartAsync
+    fullName: Microsoft.Extensions.Hosting.IHostedService.StartAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    nameWithType: IHostedService.StartAsync
+    fullName: Microsoft.Extensions.Hosting.IHostedService.StartAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.Quartz.Services.QuartzHostedService.StopAsync*
+  commentId: Overload:Mix.Quartz.Services.QuartzHostedService.StopAsync
+  name: StopAsync
+  nameWithType: QuartzHostedService.StopAsync
+  fullName: Mix.Quartz.Services.QuartzHostedService.StopAsync
+- uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.IHostedService
+  isExternal: true
+  name: StopAsync(CancellationToken)
+  nameWithType: IHostedService.StopAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    nameWithType: IHostedService.StopAsync
+    fullName: Microsoft.Extensions.Hosting.IHostedService.StopAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    nameWithType: IHostedService.StopAsync
+    fullName: Microsoft.Extensions.Hosting.IHostedService.StopAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

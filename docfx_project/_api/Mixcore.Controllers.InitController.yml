@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mixcore.Controllers.InitController
+  commentId: T:Mixcore.Controllers.InitController
+  id: InitController
+  parent: Mixcore.Controllers
+  children:
+  - Mixcore.Controllers.InitController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Shared.Services.IPSecurityConfigService)
+  - Mixcore.Controllers.InitController.Index(System.String)
+  langs:
+  - csharp
+  - vb
+  name: InitController
+  nameWithType: InitController
+  fullName: Mixcore.Controllers.InitController
+  type: Class
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitController
+    path: ../../mix.core/src/applications/Mixcore/Controllers/InitController.cs
+    startLine: 7
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: 'public class InitController : MixControllerBase'
+    content.vb: >-
+      Public Class InitController
+          Inherits MixControllerBase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mixcore.Controllers.InitController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Shared.Services.IPSecurityConfigService)
+  commentId: M:Mixcore.Controllers.InitController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Shared.Services.IPSecurityConfigService)
+  id: '#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Shared.Services.IPSecurityConfigService)'
+  parent: Mixcore.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: InitController(IHttpContextAccessor, MixService, IPSecurityConfigService)
+  nameWithType: InitController.InitController(IHttpContextAccessor, MixService, IPSecurityConfigService)
+  fullName: Mixcore.Controllers.InitController.InitController(IHttpContextAccessor, Mix.Lib.Services.MixService, Mix.Shared.Services.IPSecurityConfigService)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Controllers/InitController.cs
+    startLine: 9
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: public InitController(IHttpContextAccessor httpContextAccessor, MixService mixService, IPSecurityConfigService ipSecurityConfigService)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: ipSecurityConfigService
+      type: Mix.Shared.Services.IPSecurityConfigService
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, mixService As MixService, ipSecurityConfigService As IPSecurityConfigService)
+  overload: Mixcore.Controllers.InitController.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Controllers.InitController.Index(System.String)
+  commentId: M:Mixcore.Controllers.InitController.Index(System.String)
+  id: Index(System.String)
+  parent: Mixcore.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: Index(String)
+  nameWithType: InitController.Index(String)
+  fullName: Mixcore.Controllers.InitController.Index(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Index
+    path: ../../mix.core/src/applications/Mixcore/Controllers/InitController.cs
+    startLine: 17
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("init")]
+
+      [Route("init/{page}")]
+
+      public IActionResult Index(string page)
+    parameters:
+    - id: page
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("init")>
+
+      <Route("init/{page}")>
+
+      Public Function Index(page As String) As IActionResult
+  overload: Mixcore.Controllers.InitController.Index*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: init
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: init/{page}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mixcore.Controllers
+  commentId: N:Mixcore.Controllers
+  name: Mixcore.Controllers
+  nameWithType: Mixcore.Controllers
+  fullName: Mixcore.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mixcore.Controllers.InitController.#ctor*
+  commentId: Overload:Mixcore.Controllers.InitController.#ctor
+  name: InitController
+  nameWithType: InitController.InitController
+  fullName: Mixcore.Controllers.InitController.InitController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Shared.Services.IPSecurityConfigService
+  commentId: T:Mix.Shared.Services.IPSecurityConfigService
+  parent: Mix.Shared.Services
+  name: IPSecurityConfigService
+  nameWithType: IPSecurityConfigService
+  fullName: Mix.Shared.Services.IPSecurityConfigService
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: Mixcore.Controllers.InitController.Index*
+  commentId: Overload:Mixcore.Controllers.InitController.Index
+  name: Index
+  nameWithType: InitController.Index
+  fullName: Mixcore.Controllers.InitController.Index
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.AspNetCore.Mvc.IActionResult
+  commentId: T:Microsoft.AspNetCore.Mvc.IActionResult
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: IActionResult
+  nameWithType: IActionResult
+  fullName: Microsoft.AspNetCore.Mvc.IActionResult
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc

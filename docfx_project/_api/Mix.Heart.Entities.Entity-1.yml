@@ -1,0 +1,576 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Heart.Entities.Entity`1
+  commentId: T:Mix.Heart.Entities.Entity`1
+  id: Entity`1
+  parent: Mix.Heart.Entities
+  children:
+  - Mix.Heart.Entities.Entity`1.Id
+  langs:
+  - csharp
+  - vb
+  name: Entity<TPrimaryKey>
+  nameWithType: Entity<TPrimaryKey>
+  fullName: Mix.Heart.Entities.Entity<TPrimaryKey>
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Heart/Entities/Entity.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Entity
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Entities/Entity.cs
+    startLine: 8
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Entities
+  syntax:
+    content: 'public class Entity<TPrimaryKey> : IEntity<TPrimaryKey>, IHasPrimaryKey<TPrimaryKey> where TPrimaryKey : IComparable'
+    typeParameters:
+    - id: TPrimaryKey
+    content.vb: >-
+      Public Class Entity(Of TPrimaryKey As IComparable)
+          Implements IEntity(Of TPrimaryKey), IHasPrimaryKey(Of TPrimaryKey)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mix.Heart.Entities.Cache.MixCache
+  - Mix.Heart.Entities.Entity
+  implements:
+  - Mix.Heart.Entities.IEntity{{TPrimaryKey}}
+  - Mix.Heart.Entities.IHasPrimaryKey{{TPrimaryKey}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Entity(Of TPrimaryKey)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Mix.Heart.Entities.Entity(Of TPrimaryKey)
+  name.vb: Entity(Of TPrimaryKey)
+- uid: Mix.Heart.Entities.Entity`1.Id
+  commentId: P:Mix.Heart.Entities.Entity`1.Id
+  id: Id
+  parent: Mix.Heart.Entities.Entity`1
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Entity<TPrimaryKey>.Id
+  fullName: Mix.Heart.Entities.Entity<TPrimaryKey>.Id
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Entities/Entity.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Id
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Entities/Entity.cs
+    startLine: 10
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Entities
+  syntax:
+    content: public TPrimaryKey Id { get; set; }
+    parameters: []
+    return:
+      type: '{TPrimaryKey}'
+    content.vb: Public Property Id As TPrimaryKey
+  overload: Mix.Heart.Entities.Entity`1.Id*
+  implements:
+  - Mix.Heart.Entities.IHasPrimaryKey{{TPrimaryKey}}.Id
+  nameWithType.vb: Entity(Of TPrimaryKey).Id
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Entities.Entity(Of TPrimaryKey).Id
+references:
+- uid: Mix.Heart.Entities
+  commentId: N:Mix.Heart.Entities
+  name: Mix.Heart.Entities
+  nameWithType: Mix.Heart.Entities
+  fullName: Mix.Heart.Entities
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Heart.Entities.IEntity{{TPrimaryKey}}
+  commentId: T:Mix.Heart.Entities.IEntity{`0}
+  parent: Mix.Heart.Entities
+  definition: Mix.Heart.Entities.IEntity`1
+  name: IEntity<TPrimaryKey>
+  nameWithType: IEntity<TPrimaryKey>
+  fullName: Mix.Heart.Entities.IEntity<TPrimaryKey>
+  nameWithType.vb: IEntity(Of TPrimaryKey)
+  fullName.vb: Mix.Heart.Entities.IEntity(Of TPrimaryKey)
+  name.vb: IEntity(Of TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Heart.Entities.IEntity`1
+    name: IEntity
+    nameWithType: IEntity
+    fullName: Mix.Heart.Entities.IEntity
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Entities.IEntity`1
+    name: IEntity
+    nameWithType: IEntity
+    fullName: Mix.Heart.Entities.IEntity
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Entities.IHasPrimaryKey{{TPrimaryKey}}
+  commentId: T:Mix.Heart.Entities.IHasPrimaryKey{`0}
+  parent: Mix.Heart.Entities
+  definition: Mix.Heart.Entities.IHasPrimaryKey`1
+  name: IHasPrimaryKey<TPrimaryKey>
+  nameWithType: IHasPrimaryKey<TPrimaryKey>
+  fullName: Mix.Heart.Entities.IHasPrimaryKey<TPrimaryKey>
+  nameWithType.vb: IHasPrimaryKey(Of TPrimaryKey)
+  fullName.vb: Mix.Heart.Entities.IHasPrimaryKey(Of TPrimaryKey)
+  name.vb: IHasPrimaryKey(Of TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Heart.Entities.IHasPrimaryKey`1
+    name: IHasPrimaryKey
+    nameWithType: IHasPrimaryKey
+    fullName: Mix.Heart.Entities.IHasPrimaryKey
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Entities.IHasPrimaryKey`1
+    name: IHasPrimaryKey
+    nameWithType: IHasPrimaryKey
+    fullName: Mix.Heart.Entities.IHasPrimaryKey
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Heart.Entities.IEntity`1
+  commentId: T:Mix.Heart.Entities.IEntity`1
+  name: IEntity<TPrimaryKey>
+  nameWithType: IEntity<TPrimaryKey>
+  fullName: Mix.Heart.Entities.IEntity<TPrimaryKey>
+  nameWithType.vb: IEntity(Of TPrimaryKey)
+  fullName.vb: Mix.Heart.Entities.IEntity(Of TPrimaryKey)
+  name.vb: IEntity(Of TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Heart.Entities.IEntity`1
+    name: IEntity
+    nameWithType: IEntity
+    fullName: Mix.Heart.Entities.IEntity
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Entities.IEntity`1
+    name: IEntity
+    nameWithType: IEntity
+    fullName: Mix.Heart.Entities.IEntity
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Entities.IHasPrimaryKey`1
+  commentId: T:Mix.Heart.Entities.IHasPrimaryKey`1
+  name: IHasPrimaryKey<TPrimaryKey>
+  nameWithType: IHasPrimaryKey<TPrimaryKey>
+  fullName: Mix.Heart.Entities.IHasPrimaryKey<TPrimaryKey>
+  nameWithType.vb: IHasPrimaryKey(Of TPrimaryKey)
+  fullName.vb: Mix.Heart.Entities.IHasPrimaryKey(Of TPrimaryKey)
+  name.vb: IHasPrimaryKey(Of TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Heart.Entities.IHasPrimaryKey`1
+    name: IHasPrimaryKey
+    nameWithType: IHasPrimaryKey
+    fullName: Mix.Heart.Entities.IHasPrimaryKey
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Entities.IHasPrimaryKey`1
+    name: IHasPrimaryKey
+    nameWithType: IHasPrimaryKey
+    fullName: Mix.Heart.Entities.IHasPrimaryKey
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Entities.Entity`1.Id*
+  commentId: Overload:Mix.Heart.Entities.Entity`1.Id
+  name: Id
+  nameWithType: Entity<TPrimaryKey>.Id
+  fullName: Mix.Heart.Entities.Entity<TPrimaryKey>.Id
+  nameWithType.vb: Entity(Of TPrimaryKey).Id
+  fullName.vb: Mix.Heart.Entities.Entity(Of TPrimaryKey).Id
+- uid: Mix.Heart.Entities.IHasPrimaryKey{{TPrimaryKey}}.Id
+  commentId: P:Mix.Heart.Entities.IHasPrimaryKey{`0}.Id
+  parent: Mix.Heart.Entities.IHasPrimaryKey{{TPrimaryKey}}
+  definition: Mix.Heart.Entities.IHasPrimaryKey`1.Id
+  name: Id
+  nameWithType: IHasPrimaryKey<TPrimaryKey>.Id
+  fullName: Mix.Heart.Entities.IHasPrimaryKey<TPrimaryKey>.Id
+  nameWithType.vb: IHasPrimaryKey(Of TPrimaryKey).Id
+  fullName.vb: Mix.Heart.Entities.IHasPrimaryKey(Of TPrimaryKey).Id
+- uid: '{TPrimaryKey}'
+  commentId: '!:TPrimaryKey'
+  definition: TPrimaryKey
+  name: TPrimaryKey
+  nameWithType: TPrimaryKey
+  fullName: TPrimaryKey
+- uid: Mix.Heart.Entities.IHasPrimaryKey`1.Id
+  commentId: P:Mix.Heart.Entities.IHasPrimaryKey`1.Id
+  name: Id
+  nameWithType: IHasPrimaryKey<TPrimaryKey>.Id
+  fullName: Mix.Heart.Entities.IHasPrimaryKey<TPrimaryKey>.Id
+  nameWithType.vb: IHasPrimaryKey(Of TPrimaryKey).Id
+  fullName.vb: Mix.Heart.Entities.IHasPrimaryKey(Of TPrimaryKey).Id
+- uid: TPrimaryKey
+  name: TPrimaryKey
+  nameWithType: TPrimaryKey
+  fullName: TPrimaryKey

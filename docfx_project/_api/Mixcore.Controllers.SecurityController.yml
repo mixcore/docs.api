@@ -1,0 +1,736 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mixcore.Controllers.SecurityController
+  commentId: T:Mixcore.Controllers.SecurityController
+  id: SecurityController
+  parent: Mixcore.Controllers
+  children:
+  - Mixcore.Controllers.SecurityController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService,Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser},ILogger{Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel},Mix.Lib.Services.MixIdentityService,Mix.Lib.Services.TenantUserManager,MixCmsContext)
+  - Mixcore.Controllers.SecurityController.ExternalLogin(System.String,System.String)
+  - Mixcore.Controllers.SecurityController.ExternalLoginResultAsync(System.String,System.String)
+  - Mixcore.Controllers.SecurityController.Index(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SecurityController
+  nameWithType: SecurityController
+  fullName: Mixcore.Controllers.SecurityController
+  type: Class
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/SecurityController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SecurityController
+    path: ../../mix.core/src/applications/Mixcore/Controllers/SecurityController.cs
+    startLine: 12
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: 'public class SecurityController : MixControllerBase'
+    content.vb: >-
+      Public Class SecurityController
+          Inherits MixControllerBase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mixcore.Controllers.SecurityController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService,Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser},ILogger{Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel},Mix.Lib.Services.MixIdentityService,Mix.Lib.Services.TenantUserManager,MixCmsContext)
+  commentId: M:Mixcore.Controllers.SecurityController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService,Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser},ILogger{Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel},Mix.Lib.Services.MixIdentityService,Mix.Lib.Services.TenantUserManager,MixCmsContext)
+  id: '#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService,Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser},ILogger{Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel},Mix.Lib.Services.MixIdentityService,Mix.Lib.Services.TenantUserManager,MixCmsContext)'
+  parent: Mixcore.Controllers.SecurityController
+  langs:
+  - csharp
+  - vb
+  name: SecurityController(IHttpContextAccessor, MixService, IPSecurityConfigService, MixCacheService, SignInManager<MixUser>, ILogger<ExternalLoginModel>, MixIdentityService, TenantUserManager, MixCmsContext)
+  nameWithType: SecurityController.SecurityController(IHttpContextAccessor, MixService, IPSecurityConfigService, MixCacheService, SignInManager<MixUser>, ILogger<ExternalLoginModel>, MixIdentityService, TenantUserManager, MixCmsContext)
+  fullName: Mixcore.Controllers.SecurityController.SecurityController(IHttpContextAccessor, Mix.Lib.Services.MixService, Mix.Shared.Services.IPSecurityConfigService, MixCacheService, Microsoft.AspNetCore.Identity.SignInManager<Mix.Database.Entities.Account.MixUser>, ILogger<Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel>, Mix.Lib.Services.MixIdentityService, Mix.Lib.Services.TenantUserManager, MixCmsContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/SecurityController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Controllers/SecurityController.cs
+    startLine: 19
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: public SecurityController(IHttpContextAccessor httpContextAccessor, MixService mixService, IPSecurityConfigService ipSecurityConfigService, MixCacheService cacheService, SignInManager<MixUser> signInManager, ILogger<ExternalLoginModel> logger, MixIdentityService idService, TenantUserManager userManager, MixCmsContext cmsContext)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: ipSecurityConfigService
+      type: Mix.Shared.Services.IPSecurityConfigService
+    - id: cacheService
+      type: MixCacheService
+    - id: signInManager
+      type: Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser}
+    - id: logger
+      type: ILogger{Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel}
+    - id: idService
+      type: Mix.Lib.Services.MixIdentityService
+    - id: userManager
+      type: Mix.Lib.Services.TenantUserManager
+    - id: cmsContext
+      type: MixCmsContext
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, mixService As MixService, ipSecurityConfigService As IPSecurityConfigService, cacheService As MixCacheService, signInManager As SignInManager(Of MixUser), logger As ILogger(Of ExternalLoginModel), idService As MixIdentityService, userManager As TenantUserManager, cmsContext As MixCmsContext)
+  overload: Mixcore.Controllers.SecurityController.#ctor*
+  nameWithType.vb: SecurityController.SecurityController(IHttpContextAccessor, MixService, IPSecurityConfigService, MixCacheService, SignInManager(Of MixUser), ILogger(Of ExternalLoginModel), MixIdentityService, TenantUserManager, MixCmsContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mixcore.Controllers.SecurityController.SecurityController(IHttpContextAccessor, Mix.Lib.Services.MixService, Mix.Shared.Services.IPSecurityConfigService, MixCacheService, Microsoft.AspNetCore.Identity.SignInManager(Of Mix.Database.Entities.Account.MixUser), ILogger(Of Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel), Mix.Lib.Services.MixIdentityService, Mix.Lib.Services.TenantUserManager, MixCmsContext)
+  name.vb: SecurityController(IHttpContextAccessor, MixService, IPSecurityConfigService, MixCacheService, SignInManager(Of MixUser), ILogger(Of ExternalLoginModel), MixIdentityService, TenantUserManager, MixCmsContext)
+- uid: Mixcore.Controllers.SecurityController.Index(System.String)
+  commentId: M:Mixcore.Controllers.SecurityController.Index(System.String)
+  id: Index(System.String)
+  parent: Mixcore.Controllers.SecurityController
+  langs:
+  - csharp
+  - vb
+  name: Index(String)
+  nameWithType: SecurityController.Index(String)
+  fullName: Mixcore.Controllers.SecurityController.Index(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/SecurityController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Index
+    path: ../../mix.core/src/applications/Mixcore/Controllers/SecurityController.cs
+    startLine: 38
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("security/{page}")]
+
+      public IActionResult Index(string page)
+    parameters:
+    - id: page
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("security/{page}")>
+
+      Public Function Index(page As String) As IActionResult
+  overload: Mixcore.Controllers.SecurityController.Index*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: security/{page}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Controllers.SecurityController.ExternalLogin(System.String,System.String)
+  commentId: M:Mixcore.Controllers.SecurityController.ExternalLogin(System.String,System.String)
+  id: ExternalLogin(System.String,System.String)
+  parent: Mixcore.Controllers.SecurityController
+  langs:
+  - csharp
+  - vb
+  name: ExternalLogin(String, String)
+  nameWithType: SecurityController.ExternalLogin(String, String)
+  fullName: Mixcore.Controllers.SecurityController.ExternalLogin(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/SecurityController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExternalLogin
+    path: ../../mix.core/src/applications/Mixcore/Controllers/SecurityController.cs
+    startLine: 52
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: >-
+      [Route("security/external-login")]
+
+      [HttpPost]
+
+      [AllowAnonymous]
+
+      public ActionResult<JObject> ExternalLogin(string provider, string returnUrl = null)
+    parameters:
+    - id: provider
+      type: System.String
+    - id: returnUrl
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{JObject}
+    content.vb: >-
+      <Route("security/external-login")>
+
+      <HttpPost>
+
+      <AllowAnonymous>
+
+      Public Function ExternalLogin(provider As String, returnUrl As String = Nothing) As ActionResult(Of JObject)
+  overload: Mixcore.Controllers.SecurityController.ExternalLogin*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: security/external-login
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute
+    ctor: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Controllers.SecurityController.ExternalLoginResultAsync(System.String,System.String)
+  commentId: M:Mixcore.Controllers.SecurityController.ExternalLoginResultAsync(System.String,System.String)
+  id: ExternalLoginResultAsync(System.String,System.String)
+  parent: Mixcore.Controllers.SecurityController
+  langs:
+  - csharp
+  - vb
+  name: ExternalLoginResultAsync(String, String)
+  nameWithType: SecurityController.ExternalLoginResultAsync(String, String)
+  fullName: Mixcore.Controllers.SecurityController.ExternalLoginResultAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/SecurityController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExternalLoginResultAsync
+    path: ../../mix.core/src/applications/Mixcore/Controllers/SecurityController.cs
+    startLine: 64
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: >-
+      [Route("security/external-login-result")]
+
+      [HttpGet]
+
+      [AllowAnonymous]
+
+      public Task<ActionResult<JObject>> ExternalLoginResultAsync(string returnUrl = null, string remoteError = null)
+    parameters:
+    - id: returnUrl
+      type: System.String
+    - id: remoteError
+      type: System.String
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{JObject}}
+    content.vb: >-
+      <Route("security/external-login-result")>
+
+      <HttpGet>
+
+      <AllowAnonymous>
+
+      Public Function ExternalLoginResultAsync(returnUrl As String = Nothing, remoteError As String = Nothing) As Task(Of ActionResult(Of JObject))
+  overload: Mixcore.Controllers.SecurityController.ExternalLoginResultAsync*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: security/external-login-result
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute
+    ctor: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mixcore.Controllers
+  commentId: N:Mixcore.Controllers
+  name: Mixcore.Controllers
+  nameWithType: Mixcore.Controllers
+  fullName: Mixcore.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mixcore.Controllers.SecurityController.#ctor*
+  commentId: Overload:Mixcore.Controllers.SecurityController.#ctor
+  name: SecurityController
+  nameWithType: SecurityController.SecurityController
+  fullName: Mixcore.Controllers.SecurityController.SecurityController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Shared.Services.IPSecurityConfigService
+  commentId: T:Mix.Shared.Services.IPSecurityConfigService
+  parent: Mix.Shared.Services
+  name: IPSecurityConfigService
+  nameWithType: IPSecurityConfigService
+  fullName: Mix.Shared.Services.IPSecurityConfigService
+- uid: MixCacheService
+  isExternal: true
+  name: MixCacheService
+  nameWithType: MixCacheService
+  fullName: MixCacheService
+- uid: Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser}
+  commentId: T:Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.SignInManager`1
+  name: SignInManager<MixUser>
+  nameWithType: SignInManager<MixUser>
+  fullName: Microsoft.AspNetCore.Identity.SignInManager<Mix.Database.Entities.Account.MixUser>
+  nameWithType.vb: SignInManager(Of MixUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.SignInManager(Of Mix.Database.Entities.Account.MixUser)
+  name.vb: SignInManager(Of MixUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ILogger{Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel}
+  commentId: '!:ILogger{Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel}'
+  definition: ILogger`1
+  name: ILogger<ExternalLoginModel>
+  nameWithType: ILogger<ExternalLoginModel>
+  fullName: ILogger<Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel>
+  nameWithType.vb: ILogger(Of ExternalLoginModel)
+  fullName.vb: ILogger(Of Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel)
+  name.vb: ILogger(Of ExternalLoginModel)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel
+    name: ExternalLoginModel
+    nameWithType: ExternalLoginModel
+    fullName: Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel
+    name: ExternalLoginModel
+    nameWithType: ExternalLoginModel
+    fullName: Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.ExternalLoginModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService
+  commentId: T:Mix.Lib.Services.MixIdentityService
+  parent: Mix.Lib.Services
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService
+- uid: Mix.Lib.Services.TenantUserManager
+  commentId: T:Mix.Lib.Services.TenantUserManager
+  parent: Mix.Lib.Services
+  name: TenantUserManager
+  nameWithType: TenantUserManager
+  fullName: Mix.Lib.Services.TenantUserManager
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: Microsoft.AspNetCore.Identity.SignInManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.SignInManager`1
+  isExternal: true
+  name: SignInManager<TUser>
+  nameWithType: SignInManager<TUser>
+  fullName: Microsoft.AspNetCore.Identity.SignInManager<TUser>
+  nameWithType.vb: SignInManager(Of TUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.SignInManager(Of TUser)
+  name.vb: SignInManager(Of TUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Controllers.SecurityController.Index*
+  commentId: Overload:Mixcore.Controllers.SecurityController.Index
+  name: Index
+  nameWithType: SecurityController.Index
+  fullName: Mixcore.Controllers.SecurityController.Index
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.AspNetCore.Mvc.IActionResult
+  commentId: T:Microsoft.AspNetCore.Mvc.IActionResult
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: IActionResult
+  nameWithType: IActionResult
+  fullName: Microsoft.AspNetCore.Mvc.IActionResult
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: Mixcore.Controllers.SecurityController.ExternalLogin*
+  commentId: Overload:Mixcore.Controllers.SecurityController.ExternalLogin
+  name: ExternalLogin
+  nameWithType: SecurityController.ExternalLogin
+  fullName: Mixcore.Controllers.SecurityController.ExternalLogin
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{JObject}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{JObject}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<JObject>
+  nameWithType: ActionResult<JObject>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<JObject>
+  nameWithType.vb: ActionResult(Of JObject)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of JObject)
+  name.vb: ActionResult(Of JObject)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult`1
+  isExternal: true
+  name: ActionResult<TValue>
+  nameWithType: ActionResult<TValue>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<TValue>
+  nameWithType.vb: ActionResult(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of TValue)
+  name.vb: ActionResult(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Controllers.SecurityController.ExternalLoginResultAsync*
+  commentId: Overload:Mixcore.Controllers.SecurityController.ExternalLoginResultAsync
+  name: ExternalLoginResultAsync
+  nameWithType: SecurityController.ExternalLoginResultAsync
+  fullName: Mixcore.Controllers.SecurityController.ExternalLoginResultAsync
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{JObject}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{JObject}}'
+  definition: Task`1
+  name: Task<ActionResult<JObject>>
+  nameWithType: Task<ActionResult<JObject>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<JObject>>
+  nameWithType.vb: Task(Of ActionResult(Of JObject))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of JObject))
+  name.vb: Task(Of ActionResult(Of JObject))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

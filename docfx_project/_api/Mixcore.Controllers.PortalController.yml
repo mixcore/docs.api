@@ -1,0 +1,336 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mixcore.Controllers.PortalController
+  commentId: T:Mixcore.Controllers.PortalController
+  id: PortalController
+  parent: Mixcore.Controllers
+  children:
+  - Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.MixDatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
+  - Mixcore.Controllers.PortalController.Index
+  - Mixcore.Controllers.PortalController.ValidateRequest
+  langs:
+  - csharp
+  - vb
+  name: PortalController
+  nameWithType: PortalController
+  fullName: Mixcore.Controllers.PortalController
+  type: Class
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PortalController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PortalController
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PortalController.cs
+    startLine: 7
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: 'public class PortalController : MixControllerBase'
+    content.vb: >-
+      Public Class PortalController
+          Inherits MixControllerBase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.MixDatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
+  commentId: M:Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.MixDatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
+  id: '#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.MixDatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)'
+  parent: Mixcore.Controllers.PortalController
+  langs:
+  - csharp
+  - vb
+  name: PortalController(IHttpContextAccessor, MixService, MixDatabaseService, IPSecurityConfigService, MixCacheService)
+  nameWithType: PortalController.PortalController(IHttpContextAccessor, MixService, MixDatabaseService, IPSecurityConfigService, MixCacheService)
+  fullName: Mixcore.Controllers.PortalController.PortalController(IHttpContextAccessor, Mix.Lib.Services.MixService, Mix.Database.Services.MixDatabaseService, Mix.Shared.Services.IPSecurityConfigService, MixCacheService)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PortalController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PortalController.cs
+    startLine: 11
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: public PortalController(IHttpContextAccessor httpContextAccessor, MixService mixService, MixDatabaseService databaseService, IPSecurityConfigService ipSecurityConfigService, MixCacheService cacheService)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: databaseService
+      type: Mix.Database.Services.MixDatabaseService
+    - id: ipSecurityConfigService
+      type: Mix.Shared.Services.IPSecurityConfigService
+    - id: cacheService
+      type: MixCacheService
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, mixService As MixService, databaseService As MixDatabaseService, ipSecurityConfigService As IPSecurityConfigService, cacheService As MixCacheService)
+  overload: Mixcore.Controllers.PortalController.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Controllers.PortalController.Index
+  commentId: M:Mixcore.Controllers.PortalController.Index
+  id: Index
+  parent: Mixcore.Controllers.PortalController
+  langs:
+  - csharp
+  - vb
+  name: Index()
+  nameWithType: PortalController.Index()
+  fullName: Mixcore.Controllers.PortalController.Index()
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PortalController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Index
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PortalController.cs
+    startLine: 21
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("portal")]
+
+      [Route("portal/page/{type}")]
+
+      [Route("portal/post/{type}")]
+
+      [Route("portal/{pageName}")]
+
+      [Route("portal/{pageName}/{type}")]
+
+      [Route("portal/{pageName}/{type}/{param}")]
+
+      [Route("portal/{pageName}/{type}/{param}/{param1}")]
+
+      [Route("portal/{pageName}/{type}/{param}/{param1}/{param2}")]
+
+      [Route("portal/{pageName}/{type}/{param}/{param1}/{param2}/{param3}")]
+
+      [Route("portal/{pageName}/{type}/{param}/{param1}/{param2}/{param3}/{param4}")]
+
+      public IActionResult Index()
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("portal")>
+
+      <Route("portal/page/{type}")>
+
+      <Route("portal/post/{type}")>
+
+      <Route("portal/{pageName}")>
+
+      <Route("portal/{pageName}/{type}")>
+
+      <Route("portal/{pageName}/{type}/{param}")>
+
+      <Route("portal/{pageName}/{type}/{param}/{param1}")>
+
+      <Route("portal/{pageName}/{type}/{param}/{param1}/{param2}")>
+
+      <Route("portal/{pageName}/{type}/{param}/{param1}/{param2}/{param3}")>
+
+      <Route("portal/{pageName}/{type}/{param}/{param1}/{param2}/{param3}/{param4}")>
+
+      Public Function Index As IActionResult
+  overload: Mixcore.Controllers.PortalController.Index*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/page/{type}
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/post/{type}
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/{pageName}
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/{pageName}/{type}
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/{pageName}/{type}/{param}
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/{pageName}/{type}/{param}/{param1}
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/{pageName}/{type}/{param}/{param1}/{param2}
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/{pageName}/{type}/{param}/{param1}/{param2}/{param3}
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: portal/{pageName}/{type}/{param}/{param1}/{param2}/{param3}/{param4}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Controllers.PortalController.ValidateRequest
+  commentId: M:Mixcore.Controllers.PortalController.ValidateRequest
+  id: ValidateRequest
+  parent: Mixcore.Controllers.PortalController
+  langs:
+  - csharp
+  - vb
+  name: ValidateRequest()
+  nameWithType: PortalController.ValidateRequest()
+  fullName: Mixcore.Controllers.PortalController.ValidateRequest()
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PortalController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ValidateRequest
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PortalController.cs
+    startLine: 46
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: protected override void ValidateRequest()
+    content.vb: Protected Overrides Sub ValidateRequest
+  overload: Mixcore.Controllers.PortalController.ValidateRequest*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Mixcore.Controllers
+  commentId: N:Mixcore.Controllers
+  name: Mixcore.Controllers
+  nameWithType: Mixcore.Controllers
+  fullName: Mixcore.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mixcore.Controllers.PortalController.#ctor*
+  commentId: Overload:Mixcore.Controllers.PortalController.#ctor
+  name: PortalController
+  nameWithType: PortalController.PortalController
+  fullName: Mixcore.Controllers.PortalController.PortalController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Database.Services.MixDatabaseService
+  commentId: T:Mix.Database.Services.MixDatabaseService
+  parent: Mix.Database.Services
+  name: MixDatabaseService
+  nameWithType: MixDatabaseService
+  fullName: Mix.Database.Services.MixDatabaseService
+- uid: Mix.Shared.Services.IPSecurityConfigService
+  commentId: T:Mix.Shared.Services.IPSecurityConfigService
+  parent: Mix.Shared.Services
+  name: IPSecurityConfigService
+  nameWithType: IPSecurityConfigService
+  fullName: Mix.Shared.Services.IPSecurityConfigService
+- uid: MixCacheService
+  isExternal: true
+  name: MixCacheService
+  nameWithType: MixCacheService
+  fullName: MixCacheService
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: Mix.Database.Services
+  commentId: N:Mix.Database.Services
+  name: Mix.Database.Services
+  nameWithType: Mix.Database.Services
+  fullName: Mix.Database.Services
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: Mixcore.Controllers.PortalController.Index*
+  commentId: Overload:Mixcore.Controllers.PortalController.Index
+  name: Index
+  nameWithType: PortalController.Index
+  fullName: Mixcore.Controllers.PortalController.Index
+- uid: Microsoft.AspNetCore.Mvc.IActionResult
+  commentId: T:Microsoft.AspNetCore.Mvc.IActionResult
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: IActionResult
+  nameWithType: IActionResult
+  fullName: Microsoft.AspNetCore.Mvc.IActionResult
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: Mixcore.Controllers.PortalController.ValidateRequest*
+  commentId: Overload:Mixcore.Controllers.PortalController.ValidateRequest
+  name: ValidateRequest
+  nameWithType: PortalController.ValidateRequest
+  fullName: Mixcore.Controllers.PortalController.ValidateRequest

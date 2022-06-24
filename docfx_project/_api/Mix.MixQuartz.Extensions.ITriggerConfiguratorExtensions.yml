@@ -1,0 +1,929 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  commentId: T:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  id: ITriggerConfiguratorExtensions
+  parent: Mix.MixQuartz.Extensions
+  children:
+  - Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.EndAtIf(TriggerBuilder,JobSchedule)
+  - Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.ForJobIf(TriggerBuilder,System.Boolean,IJobDetail)
+  - Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue(TriggerBuilder,System.Boolean,System.Nullable{System.DateTime})
+  - Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartNowIf(TriggerBuilder,System.Boolean)
+  - Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf(TriggerBuilder,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})
+  - Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithCronScheduleIf(TriggerBuilder,System.Boolean,System.String)
+  - Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithMixSchedule(TriggerBuilder,JobSchedule)
+  langs:
+  - csharp
+  - vb
+  name: ITriggerConfiguratorExtensions
+  nameWithType: ITriggerConfiguratorExtensions
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ITriggerConfiguratorExtensions
+    path: ../../mix.core/src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+    startLine: 6
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Extensions
+  syntax:
+    content: public static class ITriggerConfiguratorExtensions
+    content.vb: Public Module ITriggerConfiguratorExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartNowIf(TriggerBuilder,System.Boolean)
+  commentId: M:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartNowIf(TriggerBuilder,System.Boolean)
+  id: StartNowIf(TriggerBuilder,System.Boolean)
+  isExtensionMethod: true
+  parent: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  langs:
+  - csharp
+  - vb
+  name: StartNowIf(TriggerBuilder, Boolean)
+  nameWithType: ITriggerConfiguratorExtensions.StartNowIf(TriggerBuilder, Boolean)
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartNowIf(TriggerBuilder, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: StartNowIf
+    path: ../../mix.core/src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+    startLine: 8
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Extensions
+  syntax:
+    content: public static TriggerBuilder StartNowIf(this TriggerBuilder trigger, bool condition)
+    parameters:
+    - id: trigger
+      type: TriggerBuilder
+    - id: condition
+      type: System.Boolean
+    return:
+      type: TriggerBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function StartNowIf(trigger As TriggerBuilder, condition As Boolean) As TriggerBuilder
+  overload: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartNowIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue(TriggerBuilder,System.Boolean,System.Nullable{System.DateTime})
+  commentId: M:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue(TriggerBuilder,System.Boolean,System.Nullable{System.DateTime})
+  id: StartAtIfHaveValue(TriggerBuilder,System.Boolean,System.Nullable{System.DateTime})
+  isExtensionMethod: true
+  parent: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  langs:
+  - csharp
+  - vb
+  name: StartAtIfHaveValue(TriggerBuilder, Boolean, Nullable<DateTime>)
+  nameWithType: ITriggerConfiguratorExtensions.StartAtIfHaveValue(TriggerBuilder, Boolean, Nullable<DateTime>)
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue(TriggerBuilder, System.Boolean, System.Nullable<System.DateTime>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: StartAtIfHaveValue
+    path: ../../mix.core/src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+    startLine: 13
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Extensions
+  syntax:
+    content: public static TriggerBuilder StartAtIfHaveValue(this TriggerBuilder trigger, bool condition, DateTime? startAt)
+    parameters:
+    - id: trigger
+      type: TriggerBuilder
+    - id: condition
+      type: System.Boolean
+    - id: startAt
+      type: System.Nullable{System.DateTime}
+    return:
+      type: TriggerBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function StartAtIfHaveValue(trigger As TriggerBuilder, condition As Boolean, startAt As Date?) As TriggerBuilder
+  overload: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue*
+  nameWithType.vb: ITriggerConfiguratorExtensions.StartAtIfHaveValue(TriggerBuilder, Boolean, Nullable(Of DateTime))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue(TriggerBuilder, System.Boolean, System.Nullable(Of System.DateTime))
+  name.vb: StartAtIfHaveValue(TriggerBuilder, Boolean, Nullable(Of DateTime))
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf(TriggerBuilder,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf(TriggerBuilder,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})
+  id: UsingJobDataIf(TriggerBuilder,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})
+  isExtensionMethod: true
+  parent: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  langs:
+  - csharp
+  - vb
+  name: UsingJobDataIf(TriggerBuilder, Boolean, IDictionary<String, Object>)
+  nameWithType: ITriggerConfiguratorExtensions.UsingJobDataIf(TriggerBuilder, Boolean, IDictionary<String, Object>)
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf(TriggerBuilder, System.Boolean, System.Collections.Generic.IDictionary<System.String, System.Object>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UsingJobDataIf
+    path: ../../mix.core/src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+    startLine: 18
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Extensions
+  syntax:
+    content: public static TriggerBuilder UsingJobDataIf(this TriggerBuilder trigger, bool condition, IDictionary<string, object> dicJobData)
+    parameters:
+    - id: trigger
+      type: TriggerBuilder
+    - id: condition
+      type: System.Boolean
+    - id: dicJobData
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    return:
+      type: TriggerBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UsingJobDataIf(trigger As TriggerBuilder, condition As Boolean, dicJobData As IDictionary(Of String, Object)) As TriggerBuilder
+  overload: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf*
+  nameWithType.vb: ITriggerConfiguratorExtensions.UsingJobDataIf(TriggerBuilder, Boolean, IDictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf(TriggerBuilder, System.Boolean, System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  name.vb: UsingJobDataIf(TriggerBuilder, Boolean, IDictionary(Of String, Object))
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.ForJobIf(TriggerBuilder,System.Boolean,IJobDetail)
+  commentId: M:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.ForJobIf(TriggerBuilder,System.Boolean,IJobDetail)
+  id: ForJobIf(TriggerBuilder,System.Boolean,IJobDetail)
+  isExtensionMethod: true
+  parent: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  langs:
+  - csharp
+  - vb
+  name: ForJobIf(TriggerBuilder, Boolean, IJobDetail)
+  nameWithType: ITriggerConfiguratorExtensions.ForJobIf(TriggerBuilder, Boolean, IJobDetail)
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.ForJobIf(TriggerBuilder, System.Boolean, IJobDetail)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ForJobIf
+    path: ../../mix.core/src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+    startLine: 33
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Extensions
+  syntax:
+    content: public static TriggerBuilder ForJobIf(this TriggerBuilder trigger, bool condition, IJobDetail job)
+    parameters:
+    - id: trigger
+      type: TriggerBuilder
+    - id: condition
+      type: System.Boolean
+    - id: job
+      type: IJobDetail
+    return:
+      type: TriggerBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ForJobIf(trigger As TriggerBuilder, condition As Boolean, job As IJobDetail) As TriggerBuilder
+  overload: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.ForJobIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithCronScheduleIf(TriggerBuilder,System.Boolean,System.String)
+  commentId: M:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithCronScheduleIf(TriggerBuilder,System.Boolean,System.String)
+  id: WithCronScheduleIf(TriggerBuilder,System.Boolean,System.String)
+  isExtensionMethod: true
+  parent: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithCronScheduleIf(TriggerBuilder, Boolean, String)
+  nameWithType: ITriggerConfiguratorExtensions.WithCronScheduleIf(TriggerBuilder, Boolean, String)
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithCronScheduleIf(TriggerBuilder, System.Boolean, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: WithCronScheduleIf
+    path: ../../mix.core/src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+    startLine: 38
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Extensions
+  syntax:
+    content: public static TriggerBuilder WithCronScheduleIf(this TriggerBuilder trigger, bool condition, string cron)
+    parameters:
+    - id: trigger
+      type: TriggerBuilder
+    - id: condition
+      type: System.Boolean
+    - id: cron
+      type: System.String
+    return:
+      type: TriggerBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WithCronScheduleIf(trigger As TriggerBuilder, condition As Boolean, cron As String) As TriggerBuilder
+  overload: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithCronScheduleIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.EndAtIf(TriggerBuilder,JobSchedule)
+  commentId: M:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.EndAtIf(TriggerBuilder,JobSchedule)
+  id: EndAtIf(TriggerBuilder,JobSchedule)
+  isExtensionMethod: true
+  parent: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  langs:
+  - csharp
+  - vb
+  name: EndAtIf(TriggerBuilder, JobSchedule)
+  nameWithType: ITriggerConfiguratorExtensions.EndAtIf(TriggerBuilder, JobSchedule)
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.EndAtIf(TriggerBuilder, JobSchedule)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: EndAtIf
+    path: ../../mix.core/src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+    startLine: 43
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Extensions
+  syntax:
+    content: public static TriggerBuilder EndAtIf(this TriggerBuilder trigger, JobSchedule schedule)
+    parameters:
+    - id: trigger
+      type: TriggerBuilder
+    - id: schedule
+      type: JobSchedule
+    return:
+      type: TriggerBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EndAtIf(trigger As TriggerBuilder, schedule As JobSchedule) As TriggerBuilder
+  overload: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.EndAtIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithMixSchedule(TriggerBuilder,JobSchedule)
+  commentId: M:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithMixSchedule(TriggerBuilder,JobSchedule)
+  id: WithMixSchedule(TriggerBuilder,JobSchedule)
+  isExtensionMethod: true
+  parent: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithMixSchedule(TriggerBuilder, JobSchedule)
+  nameWithType: ITriggerConfiguratorExtensions.WithMixSchedule(TriggerBuilder, JobSchedule)
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithMixSchedule(TriggerBuilder, JobSchedule)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: WithMixSchedule
+    path: ../../mix.core/src/platform/mix.quartz/Extensions/TriggerConfiguratorExtensions.cs
+    startLine: 52
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Extensions
+  syntax:
+    content: public static TriggerBuilder WithMixSchedule(this TriggerBuilder trigger, JobSchedule schedule)
+    parameters:
+    - id: trigger
+      type: TriggerBuilder
+    - id: schedule
+      type: JobSchedule
+    return:
+      type: TriggerBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WithMixSchedule(trigger As TriggerBuilder, schedule As JobSchedule) As TriggerBuilder
+  overload: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithMixSchedule*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Mix.MixQuartz.Extensions
+  commentId: N:Mix.MixQuartz.Extensions
+  name: Mix.MixQuartz.Extensions
+  nameWithType: Mix.MixQuartz.Extensions
+  fullName: Mix.MixQuartz.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartNowIf*
+  commentId: Overload:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartNowIf
+  name: StartNowIf
+  nameWithType: ITriggerConfiguratorExtensions.StartNowIf
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartNowIf
+- uid: TriggerBuilder
+  isExternal: true
+  name: TriggerBuilder
+  nameWithType: TriggerBuilder
+  fullName: TriggerBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue*
+  commentId: Overload:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue
+  name: StartAtIfHaveValue
+  nameWithType: ITriggerConfiguratorExtensions.StartAtIfHaveValue
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.StartAtIfHaveValue
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf*
+  commentId: Overload:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf
+  name: UsingJobDataIf
+  nameWithType: ITriggerConfiguratorExtensions.UsingJobDataIf
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.UsingJobDataIf
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.ForJobIf*
+  commentId: Overload:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.ForJobIf
+  name: ForJobIf
+  nameWithType: ITriggerConfiguratorExtensions.ForJobIf
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.ForJobIf
+- uid: IJobDetail
+  isExternal: true
+  name: IJobDetail
+  nameWithType: IJobDetail
+  fullName: IJobDetail
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithCronScheduleIf*
+  commentId: Overload:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithCronScheduleIf
+  name: WithCronScheduleIf
+  nameWithType: ITriggerConfiguratorExtensions.WithCronScheduleIf
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithCronScheduleIf
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.EndAtIf*
+  commentId: Overload:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.EndAtIf
+  name: EndAtIf
+  nameWithType: ITriggerConfiguratorExtensions.EndAtIf
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.EndAtIf
+- uid: JobSchedule
+  isExternal: true
+  name: JobSchedule
+  nameWithType: JobSchedule
+  fullName: JobSchedule
+- uid: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithMixSchedule*
+  commentId: Overload:Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithMixSchedule
+  name: WithMixSchedule
+  nameWithType: ITriggerConfiguratorExtensions.WithMixSchedule
+  fullName: Mix.MixQuartz.Extensions.ITriggerConfiguratorExtensions.WithMixSchedule

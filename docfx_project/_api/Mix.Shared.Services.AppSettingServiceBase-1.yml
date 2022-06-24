@@ -1,0 +1,754 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Shared.Services.AppSettingServiceBase`1
+  commentId: T:Mix.Shared.Services.AppSettingServiceBase`1
+  id: AppSettingServiceBase`1
+  parent: Mix.Shared.Services
+  children:
+  - Mix.Shared.Services.AppSettingServiceBase`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  - Mix.Shared.Services.AppSettingServiceBase`1._configuration
+  - Mix.Shared.Services.AppSettingServiceBase`1._sectionName
+  - Mix.Shared.Services.AppSettingServiceBase`1.AppSettings
+  - Mix.Shared.Services.AppSettingServiceBase`1.filePath
+  - Mix.Shared.Services.AppSettingServiceBase`1.FilePath
+  - Mix.Shared.Services.AppSettingServiceBase`1.LoadAppSettings
+  - Mix.Shared.Services.AppSettingServiceBase`1.SaveSettings
+  - Mix.Shared.Services.AppSettingServiceBase`1.watcher
+  langs:
+  - csharp
+  - vb
+  name: AppSettingServiceBase<T>
+  nameWithType: AppSettingServiceBase<T>
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AppSettingServiceBase
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 5
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public abstract class AppSettingServiceBase<T>
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class AppSettingServiceBase(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mix.Shared.Services.AuthConfigService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: AppSettingServiceBase(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T)
+  name.vb: AppSettingServiceBase(Of T)
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.filePath
+  commentId: F:Mix.Shared.Services.AppSettingServiceBase`1.filePath
+  id: filePath
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: filePath
+  nameWithType: AppSettingServiceBase<T>.filePath
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.filePath
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: filePath
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 7
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: protected string filePath
+    return:
+      type: System.String
+    content.vb: Protected filePath As String
+  nameWithType.vb: AppSettingServiceBase(Of T).filePath
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).filePath
+- uid: Mix.Shared.Services.AppSettingServiceBase`1._sectionName
+  commentId: F:Mix.Shared.Services.AppSettingServiceBase`1._sectionName
+  id: _sectionName
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: _sectionName
+  nameWithType: AppSettingServiceBase<T>._sectionName
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>._sectionName
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _sectionName
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 8
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: protected string _sectionName
+    return:
+      type: System.String
+    content.vb: Protected _sectionName As String
+  nameWithType.vb: AppSettingServiceBase(Of T)._sectionName
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T)._sectionName
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.AppSettings
+  commentId: P:Mix.Shared.Services.AppSettingServiceBase`1.AppSettings
+  id: AppSettings
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: AppSettings
+  nameWithType: AppSettingServiceBase<T>.AppSettings
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.AppSettings
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AppSettings
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 9
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public T AppSettings { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property AppSettings As T
+  overload: Mix.Shared.Services.AppSettingServiceBase`1.AppSettings*
+  nameWithType.vb: AppSettingServiceBase(Of T).AppSettings
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).AppSettings
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.FilePath
+  commentId: P:Mix.Shared.Services.AppSettingServiceBase`1.FilePath
+  id: FilePath
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: FilePath
+  nameWithType: AppSettingServiceBase<T>.FilePath
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.FilePath
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: FilePath
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 10
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: protected string FilePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected Property FilePath As String
+  overload: Mix.Shared.Services.AppSettingServiceBase`1.FilePath*
+  nameWithType.vb: AppSettingServiceBase(Of T).FilePath
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).FilePath
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.watcher
+  commentId: F:Mix.Shared.Services.AppSettingServiceBase`1.watcher
+  id: watcher
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: watcher
+  nameWithType: AppSettingServiceBase<T>.watcher
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.watcher
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: watcher
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 12
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: protected readonly FileSystemWatcher watcher
+    return:
+      type: FileSystemWatcher
+    content.vb: Protected ReadOnly watcher As FileSystemWatcher
+  nameWithType.vb: AppSettingServiceBase(Of T).watcher
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).watcher
+- uid: Mix.Shared.Services.AppSettingServiceBase`1._configuration
+  commentId: F:Mix.Shared.Services.AppSettingServiceBase`1._configuration
+  id: _configuration
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: _configuration
+  nameWithType: AppSettingServiceBase<T>._configuration
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>._configuration
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _configuration
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 13
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: protected readonly IConfiguration _configuration
+    return:
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Protected ReadOnly _configuration As IConfiguration
+  nameWithType.vb: AppSettingServiceBase(Of T)._configuration
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T)._configuration
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  commentId: M:Mix.Shared.Services.AppSettingServiceBase`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)'
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: AppSettingServiceBase(IConfiguration, String, String)
+  nameWithType: AppSettingServiceBase<T>.AppSettingServiceBase(IConfiguration, String, String)
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.AppSettingServiceBase(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 15
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public AppSettingServiceBase(IConfiguration configuration, string section, string filePath)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    - id: section
+      type: System.String
+    - id: filePath
+      type: System.String
+    content.vb: Public Sub New(configuration As IConfiguration, section As String, filePath As String)
+  overload: Mix.Shared.Services.AppSettingServiceBase`1.#ctor*
+  nameWithType.vb: AppSettingServiceBase(Of T).AppSettingServiceBase(IConfiguration, String, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).AppSettingServiceBase(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.SaveSettings
+  commentId: M:Mix.Shared.Services.AppSettingServiceBase`1.SaveSettings
+  id: SaveSettings
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: SaveSettings()
+  nameWithType: AppSettingServiceBase<T>.SaveSettings()
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.SaveSettings()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveSettings
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 23
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public bool SaveSettings()
+    return:
+      type: System.Boolean
+    content.vb: Public Function SaveSettings As Boolean
+  overload: Mix.Shared.Services.AppSettingServiceBase`1.SaveSettings*
+  nameWithType.vb: AppSettingServiceBase(Of T).SaveSettings()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).SaveSettings()
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.LoadAppSettings
+  commentId: M:Mix.Shared.Services.AppSettingServiceBase`1.LoadAppSettings
+  id: LoadAppSettings
+  parent: Mix.Shared.Services.AppSettingServiceBase`1
+  langs:
+  - csharp
+  - vb
+  name: LoadAppSettings()
+  nameWithType: AppSettingServiceBase<T>.LoadAppSettings()
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.LoadAppSettings()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/AppSettingServiceBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadAppSettings
+    path: ../../mix.core/src/platform/mix.shared/Services/AppSettingServiceBase.cs
+    startLine: 37
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: protected virtual void LoadAppSettings()
+    content.vb: Protected Overridable Sub LoadAppSettings
+  overload: Mix.Shared.Services.AppSettingServiceBase`1.LoadAppSettings*
+  nameWithType.vb: AppSettingServiceBase(Of T).LoadAppSettings()
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).LoadAppSettings()
+references:
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.AppSettings*
+  commentId: Overload:Mix.Shared.Services.AppSettingServiceBase`1.AppSettings
+  name: AppSettings
+  nameWithType: AppSettingServiceBase<T>.AppSettings
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.AppSettings
+  nameWithType.vb: AppSettingServiceBase(Of T).AppSettings
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).AppSettings
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.FilePath*
+  commentId: Overload:Mix.Shared.Services.AppSettingServiceBase`1.FilePath
+  name: FilePath
+  nameWithType: AppSettingServiceBase<T>.FilePath
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.FilePath
+  nameWithType.vb: AppSettingServiceBase(Of T).FilePath
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).FilePath
+- uid: FileSystemWatcher
+  isExternal: true
+  name: FileSystemWatcher
+  nameWithType: FileSystemWatcher
+  fullName: FileSystemWatcher
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.#ctor*
+  commentId: Overload:Mix.Shared.Services.AppSettingServiceBase`1.#ctor
+  name: AppSettingServiceBase
+  nameWithType: AppSettingServiceBase<T>.AppSettingServiceBase
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.AppSettingServiceBase
+  nameWithType.vb: AppSettingServiceBase(Of T).AppSettingServiceBase
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).AppSettingServiceBase
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.SaveSettings*
+  commentId: Overload:Mix.Shared.Services.AppSettingServiceBase`1.SaveSettings
+  name: SaveSettings
+  nameWithType: AppSettingServiceBase<T>.SaveSettings
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.SaveSettings
+  nameWithType.vb: AppSettingServiceBase(Of T).SaveSettings
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).SaveSettings
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Shared.Services.AppSettingServiceBase`1.LoadAppSettings*
+  commentId: Overload:Mix.Shared.Services.AppSettingServiceBase`1.LoadAppSettings
+  name: LoadAppSettings
+  nameWithType: AppSettingServiceBase<T>.LoadAppSettings
+  fullName: Mix.Shared.Services.AppSettingServiceBase<T>.LoadAppSettings
+  nameWithType.vb: AppSettingServiceBase(Of T).LoadAppSettings
+  fullName.vb: Mix.Shared.Services.AppSettingServiceBase(Of T).LoadAppSettings

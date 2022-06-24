@@ -1,0 +1,593 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MixDatabaseService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MixDatabaseService
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Database.Services.MixDatabaseService">
+  
+  
+  <h1 id="Mix_Database_Services_MixDatabaseService" data-uid="Mix.Database.Services.MixDatabaseService" class="text-break">Class MixDatabaseService
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html">ConfigurationServiceBase</a>&lt;<a class="xref" href="Mix.Shared.Models.DatabaseConfigurations.html">DatabaseConfigurations</a>&gt;</div>
+    <div class="level2"><span class="xref">MixDatabaseService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1__isEncrypt">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;._isEncrypt</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_AesKey">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.AesKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_AppSettings">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.AppSettings</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_FilePath">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.FilePath</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_watcher">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.watcher</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_GetConfig__1_System_String___0_">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.GetConfig&lt;TValue&gt;(String, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_GetConfig__1_System_String_System_String___0_">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.GetConfig&lt;TValue&gt;(String, String, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_GetEnumConfig__1_System_String_">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.GetEnumConfig&lt;TValue&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_SetConfig__1_System_String___0_">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.SetConfig&lt;TValue&gt;(String, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_SetConfig__1_System_String_System_String___0_">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.SetConfig&lt;TValue&gt;(String, String, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_SaveSettings">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.SaveSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.Services.ConfigurationServiceBase-1.html#Mix_Heart_Services_ConfigurationServiceBase_1_WatchFile">ConfigurationServiceBase&lt;DatabaseConfigurations&gt;.WatchFile()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Database.Services.html">Mix.Database.Services</a></h6>
+  <h6><strong>Assembly</strong>: mix.database.dll</h6>
+  <h5 id="Mix_Database_Services_MixDatabaseService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MixDatabaseService : ConfigurationServiceBase&lt;DatabaseConfigurations&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService__ctor.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L17">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService__ctor_" data-uid="Mix.Database.Services.MixDatabaseService.#ctor*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService__ctor" data-uid="Mix.Database.Services.MixDatabaseService.#ctor">MixDatabaseService()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixDatabaseService()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_DatabaseProvider.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.DatabaseProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L15">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_DatabaseProvider_" data-uid="Mix.Database.Services.MixDatabaseService.DatabaseProvider*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_DatabaseProvider" data-uid="Mix.Database.Services.MixDatabaseService.DatabaseProvider">DatabaseProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixDatabaseProvider DatabaseProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MixDatabaseProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_GetAccountDbContext.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.GetAccountDbContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L70">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_GetAccountDbContext_" data-uid="Mix.Database.Services.MixDatabaseService.GetAccountDbContext*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_GetAccountDbContext" data-uid="Mix.Database.Services.MixDatabaseService.GetAccountDbContext">GetAccountDbContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixCmsAccountContext GetAccountDbContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixCmsAccountContext.html">MixCmsAccountContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_GetCacheDbContext.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.GetCacheDbContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L94">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_GetCacheDbContext_" data-uid="Mix.Database.Services.MixDatabaseService.GetCacheDbContext*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_GetCacheDbContext" data-uid="Mix.Database.Services.MixDatabaseService.GetCacheDbContext">GetCacheDbContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixCacheDbContext GetCacheDbContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.Entities.Cache.MixCacheDbContext.html">MixCacheDbContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_GetConnectionString_System_String_.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.GetConnectionString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L29">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_GetConnectionString_" data-uid="Mix.Database.Services.MixDatabaseService.GetConnectionString*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_GetConnectionString_System_String_" data-uid="Mix.Database.Services.MixDatabaseService.GetConnectionString(System.String)">GetConnectionString(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetConnectionString(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_GetDbContext.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.GetDbContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L58">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_GetDbContext_" data-uid="Mix.Database.Services.MixDatabaseService.GetDbContext*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_GetDbContext" data-uid="Mix.Database.Services.MixDatabaseService.GetDbContext">GetDbContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixCmsContext GetDbContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MixCmsContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_GetQuartzDbContext.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.GetQuartzDbContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L82">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_GetQuartzDbContext_" data-uid="Mix.Database.Services.MixDatabaseService.GetQuartzDbContext*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_GetQuartzDbContext" data-uid="Mix.Database.Services.MixDatabaseService.GetQuartzDbContext">GetQuartzDbContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuartzDbContext GetQuartzDbContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Quartz.QuartzDbContext.html">QuartzDbContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_InitConnectionStrings_System_String_MixDatabaseProvider_System_String_.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.InitConnectionStrings(System.String%2CMixDatabaseProvider%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L106">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_InitConnectionStrings_" data-uid="Mix.Database.Services.MixDatabaseService.InitConnectionStrings*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_InitConnectionStrings_System_String_MixDatabaseProvider_System_String_" data-uid="Mix.Database.Services.MixDatabaseService.InitConnectionStrings(System.String,MixDatabaseProvider,System.String)">InitConnectionStrings(String, MixDatabaseProvider, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitConnectionStrings(string connectionString, MixDatabaseProvider databaseProvider, string defaultCulture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">MixDatabaseProvider</span></td>
+        <td><span class="parametername">databaseProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defaultCulture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_InitQuartzContextAsync.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.InitQuartzContextAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L153">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_InitQuartzContextAsync_" data-uid="Mix.Database.Services.MixDatabaseService.InitQuartzContextAsync*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_InitQuartzContextAsync" data-uid="Mix.Database.Services.MixDatabaseService.InitQuartzContextAsync">InitQuartzContextAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task InitQuartzContextAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_LoadAppSettings.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.LoadAppSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L23">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_LoadAppSettings_" data-uid="Mix.Database.Services.MixDatabaseService.LoadAppSettings*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_LoadAppSettings" data-uid="Mix.Database.Services.MixDatabaseService.LoadAppSettings">LoadAppSettings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void LoadAppSettings()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Heart.Services.ConfigurationServiceBase&lt;Mix.Shared.Models.DatabaseConfigurations&gt;.LoadAppSettings()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_SetConnectionString_System_String_System_String_.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.SetConnectionString(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L42">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_SetConnectionString_" data-uid="Mix.Database.Services.MixDatabaseService.SetConnectionString*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_SetConnectionString_System_String_System_String_" data-uid="Mix.Database.Services.MixDatabaseService.SetConnectionString(System.String,System.String)">SetConnectionString(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConnectionString(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService_UpdateMixCmsContextAsync.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService.UpdateMixCmsContextAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L129">View Source</a>
+  </span>
+  <a id="Mix_Database_Services_MixDatabaseService_UpdateMixCmsContextAsync_" data-uid="Mix.Database.Services.MixDatabaseService.UpdateMixCmsContextAsync*"></a>
+  <h4 id="Mix_Database_Services_MixDatabaseService_UpdateMixCmsContextAsync" data-uid="Mix.Database.Services.MixDatabaseService.UpdateMixCmsContextAsync">UpdateMixCmsContextAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateMixCmsContextAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Database_Services_MixDatabaseService.md&amp;value=---%0Auid%3A%20Mix.Database.Services.MixDatabaseService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.database/Services/MixDatabaseService.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,590 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.MixQuartz.Jobs.MixJobBase
+  commentId: T:Mix.MixQuartz.Jobs.MixJobBase
+  id: MixJobBase
+  parent: Mix.MixQuartz.Jobs
+  children:
+  - Mix.MixQuartz.Jobs.MixJobBase.#ctor(System.IServiceProvider,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},System.Boolean)
+  - Mix.MixQuartz.Jobs.MixJobBase._provider
+  - Mix.MixQuartz.Jobs.MixJobBase._queueService
+  - Mix.MixQuartz.Jobs.MixJobBase._singleton
+  - Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+  - Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+  - Mix.MixQuartz.Jobs.MixJobBase.Group
+  - Mix.MixQuartz.Jobs.MixJobBase.JobName
+  - Mix.MixQuartz.Jobs.MixJobBase.JobType
+  - Mix.MixQuartz.Jobs.MixJobBase.Schedule
+  langs:
+  - csharp
+  - vb
+  name: MixJobBase
+  nameWithType: MixJobBase
+  fullName: Mix.MixQuartz.Jobs.MixJobBase
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixJobBase
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 9
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: 'public abstract class MixJobBase : IJob'
+    content.vb: >-
+      Public MustInherit Class MixJobBase
+          Inherits IJob
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mix.MixQuartz.Jobs.KeepPoolAliveJob
+  - Mix.MixQuartz.Jobs.PublishScheduledPostsJob
+  - Mix.MixQuartz.Jobs.SendMessageQueueJob
+  - Mix.MixQuartz.Jobs.SendPortalMessageJob
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Mix.MixQuartz.Jobs.MixJobBase._provider
+  commentId: F:Mix.MixQuartz.Jobs.MixJobBase._provider
+  id: _provider
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: _provider
+  nameWithType: MixJobBase._provider
+  fullName: Mix.MixQuartz.Jobs.MixJobBase._provider
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _provider
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 11
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: protected readonly IServiceProvider _provider
+    return:
+      type: System.IServiceProvider
+    content.vb: Protected ReadOnly _provider As IServiceProvider
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.MixQuartz.Jobs.MixJobBase._singleton
+  commentId: F:Mix.MixQuartz.Jobs.MixJobBase._singleton
+  id: _singleton
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: _singleton
+  nameWithType: MixJobBase._singleton
+  fullName: Mix.MixQuartz.Jobs.MixJobBase._singleton
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _singleton
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 12
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: protected bool _singleton
+    return:
+      type: System.Boolean
+    content.vb: Protected _singleton As Boolean
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.MixQuartz.Jobs.MixJobBase._queueService
+  commentId: F:Mix.MixQuartz.Jobs.MixJobBase._queueService
+  id: _queueService
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: _queueService
+  nameWithType: MixJobBase._queueService
+  fullName: Mix.MixQuartz.Jobs.MixJobBase._queueService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _queueService
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 13
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: protected readonly IQueueService<MessageQueueModel> _queueService
+    return:
+      type: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+    content.vb: Protected ReadOnly _queueService As IQueueService(Of MessageQueueModel)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.MixQuartz.Jobs.MixJobBase.#ctor(System.IServiceProvider,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},System.Boolean)
+  commentId: M:Mix.MixQuartz.Jobs.MixJobBase.#ctor(System.IServiceProvider,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},System.Boolean)
+  id: '#ctor(System.IServiceProvider,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},System.Boolean)'
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: MixJobBase(IServiceProvider, IQueueService<MessageQueueModel>, Boolean)
+  nameWithType: MixJobBase.MixJobBase(IServiceProvider, IQueueService<MessageQueueModel>, Boolean)
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.MixJobBase(System.IServiceProvider, Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>, System.Boolean)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 14
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: protected MixJobBase(IServiceProvider provider, IQueueService<MessageQueueModel> queueService, bool singleton = false)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    - id: queueService
+      type: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+    - id: singleton
+      type: System.Boolean
+    content.vb: Protected Sub New(provider As IServiceProvider, queueService As IQueueService(Of MessageQueueModel), singleton As Boolean = False)
+  overload: Mix.MixQuartz.Jobs.MixJobBase.#ctor*
+  nameWithType.vb: MixJobBase.MixJobBase(IServiceProvider, IQueueService(Of MessageQueueModel), Boolean)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.MixQuartz.Jobs.MixJobBase.MixJobBase(System.IServiceProvider, Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel), System.Boolean)
+  name.vb: MixJobBase(IServiceProvider, IQueueService(Of MessageQueueModel), Boolean)
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+  commentId: M:Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+  id: Execute(IJobExecutionContext)
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: Execute(IJobExecutionContext)
+  nameWithType: MixJobBase.Execute(IJobExecutionContext)
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Execute
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 26
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: public Task Execute(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Execute(context As IJobExecutionContext) As Task
+  overload: Mix.MixQuartz.Jobs.MixJobBase.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.MixQuartz.Jobs.MixJobBase.JobName
+  commentId: P:Mix.MixQuartz.Jobs.MixJobBase.JobName
+  id: JobName
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: JobName
+  nameWithType: MixJobBase.JobName
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.JobName
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: JobName
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 63
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: public string JobName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property JobName As String
+  overload: Mix.MixQuartz.Jobs.MixJobBase.JobName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Group
+  commentId: P:Mix.MixQuartz.Jobs.MixJobBase.Group
+  id: Group
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: Group
+  nameWithType: MixJobBase.Group
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Group
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Group
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 64
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: public string Group { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Group As String
+  overload: Mix.MixQuartz.Jobs.MixJobBase.Group*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.MixQuartz.Jobs.MixJobBase.JobType
+  commentId: P:Mix.MixQuartz.Jobs.MixJobBase.JobType
+  id: JobType
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: JobType
+  nameWithType: MixJobBase.JobType
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.JobType
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: JobType
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 65
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: public Type JobType { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property JobType As Type
+  overload: Mix.MixQuartz.Jobs.MixJobBase.JobType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Schedule
+  commentId: P:Mix.MixQuartz.Jobs.MixJobBase.Schedule
+  id: Schedule
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: Schedule
+  nameWithType: MixJobBase.Schedule
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Schedule
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Schedule
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 66
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: public JobSchedule Schedule { get; set; }
+    parameters: []
+    return:
+      type: JobSchedule
+    content.vb: Public Property Schedule As JobSchedule
+  overload: Mix.MixQuartz.Jobs.MixJobBase.Schedule*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+  commentId: M:Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+  id: ExecuteHandler(IJobExecutionContext)
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  langs:
+  - csharp
+  - vb
+  name: ExecuteHandler(IJobExecutionContext)
+  nameWithType: MixJobBase.ExecuteHandler(IJobExecutionContext)
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/MixJobBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExecuteHandler
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/MixJobBase.cs
+    startLine: 68
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: public abstract Task ExecuteHandler(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public MustOverride Function ExecuteHandler(context As IJobExecutionContext) As Task
+  overload: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+references:
+- uid: Mix.MixQuartz.Jobs
+  commentId: N:Mix.MixQuartz.Jobs
+  name: Mix.MixQuartz.Jobs
+  nameWithType: Mix.MixQuartz.Jobs
+  fullName: Mix.MixQuartz.Jobs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  commentId: T:Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  parent: Mix.Queue.Interfaces
+  definition: Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces.IQueueService`1
+  commentId: T:Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<T>
+  nameWithType: IQueueService<T>
+  fullName: Mix.Queue.Interfaces.IQueueService<T>
+  nameWithType.vb: IQueueService(Of T)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T)
+  name.vb: IQueueService(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces
+  commentId: N:Mix.Queue.Interfaces
+  name: Mix.Queue.Interfaces
+  nameWithType: Mix.Queue.Interfaces
+  fullName: Mix.Queue.Interfaces
+- uid: Mix.MixQuartz.Jobs.MixJobBase.#ctor*
+  commentId: Overload:Mix.MixQuartz.Jobs.MixJobBase.#ctor
+  name: MixJobBase
+  nameWithType: MixJobBase.MixJobBase
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.MixJobBase
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Execute*
+  commentId: Overload:Mix.MixQuartz.Jobs.MixJobBase.Execute
+  name: Execute
+  nameWithType: MixJobBase.Execute
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Execute
+- uid: IJobExecutionContext
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: IJobExecutionContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.MixQuartz.Jobs.MixJobBase.JobName*
+  commentId: Overload:Mix.MixQuartz.Jobs.MixJobBase.JobName
+  name: JobName
+  nameWithType: MixJobBase.JobName
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.JobName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Group*
+  commentId: Overload:Mix.MixQuartz.Jobs.MixJobBase.Group
+  name: Group
+  nameWithType: MixJobBase.Group
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Group
+- uid: Mix.MixQuartz.Jobs.MixJobBase.JobType*
+  commentId: Overload:Mix.MixQuartz.Jobs.MixJobBase.JobType
+  name: JobType
+  nameWithType: MixJobBase.JobType
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.JobType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Schedule*
+  commentId: Overload:Mix.MixQuartz.Jobs.MixJobBase.Schedule
+  name: Schedule
+  nameWithType: MixJobBase.Schedule
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Schedule
+- uid: JobSchedule
+  isExternal: true
+  name: JobSchedule
+  nameWithType: JobSchedule
+  fullName: JobSchedule
+- uid: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler*
+  commentId: Overload:Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler
+  name: ExecuteHandler
+  nameWithType: MixJobBase.ExecuteHandler
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler

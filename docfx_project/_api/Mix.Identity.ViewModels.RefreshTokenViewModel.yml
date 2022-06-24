@@ -1,0 +1,527 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel
+  commentId: T:Mix.Identity.ViewModels.RefreshTokenViewModel
+  id: RefreshTokenViewModel
+  parent: Mix.Identity.ViewModels
+  children:
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor(Mix.Database.Entities.Account.RefreshTokens,UnitOfWorkInfo)
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor(UnitOfWorkInfo)
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.ClientId
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.Email
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.ExpiresUtc
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.IssuedUtc
+  - Mix.Identity.ViewModels.RefreshTokenViewModel.Username
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenViewModel
+  nameWithType: RefreshTokenViewModel
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: RefreshTokenViewModel
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 5
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: 'public class RefreshTokenViewModel : ViewModelBase<MixCmsAccountContext, RefreshTokens, Guid, RefreshTokenViewModel>'
+    content.vb: >-
+      Public Class RefreshTokenViewModel
+          Inherits ViewModelBase(Of MixCmsAccountContext, RefreshTokens, Guid, RefreshTokenViewModel)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor
+  commentId: M:Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor
+  id: '#ctor'
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenViewModel()
+  nameWithType: RefreshTokenViewModel.RefreshTokenViewModel()
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.RefreshTokenViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 8
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public RefreshTokenViewModel()
+    content.vb: Public Sub New
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenViewModel(UnitOfWorkInfo)
+  nameWithType: RefreshTokenViewModel.RefreshTokenViewModel(UnitOfWorkInfo)
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.RefreshTokenViewModel(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 13
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public RefreshTokenViewModel(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor(Mix.Database.Entities.Account.RefreshTokens,UnitOfWorkInfo)
+  commentId: M:Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor(Mix.Database.Entities.Account.RefreshTokens,UnitOfWorkInfo)
+  id: '#ctor(Mix.Database.Entities.Account.RefreshTokens,UnitOfWorkInfo)'
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: RefreshTokenViewModel(RefreshTokens, UnitOfWorkInfo)
+  nameWithType: RefreshTokenViewModel.RefreshTokenViewModel(RefreshTokens, UnitOfWorkInfo)
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.RefreshTokenViewModel(Mix.Database.Entities.Account.RefreshTokens, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 17
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public RefreshTokenViewModel(RefreshTokens entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: Mix.Database.Entities.Account.RefreshTokens
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(entity As RefreshTokens, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.ClientId
+  commentId: P:Mix.Identity.ViewModels.RefreshTokenViewModel.ClientId
+  id: ClientId
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: ClientId
+  nameWithType: RefreshTokenViewModel.ClientId
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.ClientId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ClientId
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 31
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public string ClientId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ClientId As String
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.ClientId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.Email
+  commentId: P:Mix.Identity.ViewModels.RefreshTokenViewModel.Email
+  id: Email
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: RefreshTokenViewModel.Email
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.Email
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Email
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 33
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Email As String
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.Email*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.Username
+  commentId: P:Mix.Identity.ViewModels.RefreshTokenViewModel.Username
+  id: Username
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: RefreshTokenViewModel.Username
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.Username
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Username
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 35
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public string Username { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Username As String
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.Username*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.ExpiresUtc
+  commentId: P:Mix.Identity.ViewModels.RefreshTokenViewModel.ExpiresUtc
+  id: ExpiresUtc
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: ExpiresUtc
+  nameWithType: RefreshTokenViewModel.ExpiresUtc
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.ExpiresUtc
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExpiresUtc
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 37
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public DateTime ExpiresUtc { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property ExpiresUtc As Date
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.ExpiresUtc*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.IssuedUtc
+  commentId: P:Mix.Identity.ViewModels.RefreshTokenViewModel.IssuedUtc
+  id: IssuedUtc
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: IssuedUtc
+  nameWithType: RefreshTokenViewModel.IssuedUtc
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.IssuedUtc
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IssuedUtc
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 39
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public DateTime IssuedUtc { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property IssuedUtc As Date
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.IssuedUtc*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  id: InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.Identity.ViewModels.RefreshTokenViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: RefreshTokenViewModel.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitDefaultValues
+    path: ../../mix.core/src/platform/mix.identity/ViewModels/RefreshTokenViewModel.cs
+    startLine: 47
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.ViewModels
+  syntax:
+    content: public override void InitDefaultValues(string language = null, int? cultureId = default(int? ))
+    parameters:
+    - id: language
+      type: System.String
+    - id: cultureId
+      type: System.Nullable{System.Int32}
+    content.vb: Public Overrides Sub InitDefaultValues(language As String = Nothing, cultureId As Integer? = Nothing)
+  overload: Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues*
+  nameWithType.vb: RefreshTokenViewModel.InitDefaultValues(String, Nullable(Of Int32))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+references:
+- uid: Mix.Identity.ViewModels
+  commentId: N:Mix.Identity.ViewModels
+  name: Mix.Identity.ViewModels
+  nameWithType: Mix.Identity.ViewModels
+  fullName: Mix.Identity.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor*
+  commentId: Overload:Mix.Identity.ViewModels.RefreshTokenViewModel.#ctor
+  name: RefreshTokenViewModel
+  nameWithType: RefreshTokenViewModel.RefreshTokenViewModel
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.RefreshTokenViewModel
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: Mix.Database.Entities.Account.RefreshTokens
+  commentId: T:Mix.Database.Entities.Account.RefreshTokens
+  parent: Mix.Database.Entities.Account
+  name: RefreshTokens
+  nameWithType: RefreshTokens
+  fullName: Mix.Database.Entities.Account.RefreshTokens
+- uid: Mix.Database.Entities.Account
+  commentId: N:Mix.Database.Entities.Account
+  name: Mix.Database.Entities.Account
+  nameWithType: Mix.Database.Entities.Account
+  fullName: Mix.Database.Entities.Account
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.ClientId*
+  commentId: Overload:Mix.Identity.ViewModels.RefreshTokenViewModel.ClientId
+  name: ClientId
+  nameWithType: RefreshTokenViewModel.ClientId
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.ClientId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.Email*
+  commentId: Overload:Mix.Identity.ViewModels.RefreshTokenViewModel.Email
+  name: Email
+  nameWithType: RefreshTokenViewModel.Email
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.Email
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.Username*
+  commentId: Overload:Mix.Identity.ViewModels.RefreshTokenViewModel.Username
+  name: Username
+  nameWithType: RefreshTokenViewModel.Username
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.Username
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.ExpiresUtc*
+  commentId: Overload:Mix.Identity.ViewModels.RefreshTokenViewModel.ExpiresUtc
+  name: ExpiresUtc
+  nameWithType: RefreshTokenViewModel.ExpiresUtc
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.ExpiresUtc
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.IssuedUtc*
+  commentId: Overload:Mix.Identity.ViewModels.RefreshTokenViewModel.IssuedUtc
+  name: IssuedUtc
+  nameWithType: RefreshTokenViewModel.IssuedUtc
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.IssuedUtc
+- uid: Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues*
+  commentId: Overload:Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues
+  name: InitDefaultValues
+  nameWithType: RefreshTokenViewModel.InitDefaultValues
+  fullName: Mix.Identity.ViewModels.RefreshTokenViewModel.InitDefaultValues
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

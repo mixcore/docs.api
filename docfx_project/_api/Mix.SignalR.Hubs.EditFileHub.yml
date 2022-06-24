@@ -1,0 +1,927 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.SignalR.Hubs.EditFileHub
+  commentId: T:Mix.SignalR.Hubs.EditFileHub
+  id: EditFileHub
+  parent: Mix.SignalR.Hubs
+  children:
+  - Mix.SignalR.Hubs.EditFileHub.#ctor(Mix.Lib.Services.AuditLogService)
+  langs:
+  - csharp
+  - vb
+  name: EditFileHub
+  nameWithType: EditFileHub
+  fullName: Mix.SignalR.Hubs.EditFileHub
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.signalr.hub/Hubs/EditFileHub.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: EditFileHub
+    path: ../../mix.core/src/platform/mix.signalr.hub/Hubs/EditFileHub.cs
+    startLine: 10
+  assemblies:
+  - mix.signalr.hub
+  namespace: Mix.SignalR.Hubs
+  syntax:
+    content: 'public class EditFileHub : BaseSignalRHub, IDisposable'
+    content.vb: >-
+      Public Class EditFileHub
+          Inherits BaseSignalRHub
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.SignalR.Hub
+  - Mix.SignalR.Hubs.BaseSignalRHub
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Mix.SignalR.Hubs.BaseSignalRHub._auditLogService
+  - Mix.SignalR.Hubs.BaseSignalRHub.Rooms
+  - Mix.SignalR.Hubs.BaseSignalRHub.JoinRoom(System.String)
+  - Mix.SignalR.Hubs.BaseSignalRHub.SendMessage(Mix.SignalR.Models.SignalRMessageModel)
+  - Mix.SignalR.Hubs.BaseSignalRHub.SendPrivateMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+  - Mix.SignalR.Hubs.BaseSignalRHub.SendMessageToCaller(Mix.SignalR.Models.SignalRMessageModel)
+  - Mix.SignalR.Hubs.BaseSignalRHub.SendGroupMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+  - Mix.SignalR.Hubs.BaseSignalRHub.OnConnectedAsync
+  - Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync(System.Nullable{Exception})
+  - Microsoft.AspNetCore.SignalR.Hub.OnDisconnectedAsync(System.Exception)
+  - Microsoft.AspNetCore.SignalR.Hub.Dispose(System.Boolean)
+  - Microsoft.AspNetCore.SignalR.Hub.Dispose
+  - Microsoft.AspNetCore.SignalR.Hub.Clients
+  - Microsoft.AspNetCore.SignalR.Hub.Context
+  - Microsoft.AspNetCore.SignalR.Hub.Groups
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.SignalR.Hubs.EditFileHub.#ctor(Mix.Lib.Services.AuditLogService)
+  commentId: M:Mix.SignalR.Hubs.EditFileHub.#ctor(Mix.Lib.Services.AuditLogService)
+  id: '#ctor(Mix.Lib.Services.AuditLogService)'
+  parent: Mix.SignalR.Hubs.EditFileHub
+  langs:
+  - csharp
+  - vb
+  name: EditFileHub(AuditLogService)
+  nameWithType: EditFileHub.EditFileHub(AuditLogService)
+  fullName: Mix.SignalR.Hubs.EditFileHub.EditFileHub(Mix.Lib.Services.AuditLogService)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.signalr.hub/Hubs/EditFileHub.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.signalr.hub/Hubs/EditFileHub.cs
+    startLine: 12
+  assemblies:
+  - mix.signalr.hub
+  namespace: Mix.SignalR.Hubs
+  syntax:
+    content: public EditFileHub(AuditLogService auditLogService)
+    parameters:
+    - id: auditLogService
+      type: Mix.Lib.Services.AuditLogService
+    content.vb: Public Sub New(auditLogService As AuditLogService)
+  overload: Mix.SignalR.Hubs.EditFileHub.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.SignalR.Hubs
+  commentId: N:Mix.SignalR.Hubs
+  name: Mix.SignalR.Hubs
+  nameWithType: Mix.SignalR.Hubs
+  fullName: Mix.SignalR.Hubs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.SignalR.Hub
+  commentId: T:Microsoft.AspNetCore.SignalR.Hub
+  parent: Microsoft.AspNetCore.SignalR
+  isExternal: true
+  name: Hub
+  nameWithType: Hub
+  fullName: Microsoft.AspNetCore.SignalR.Hub
+- uid: Mix.SignalR.Hubs.BaseSignalRHub
+  commentId: T:Mix.SignalR.Hubs.BaseSignalRHub
+  parent: Mix.SignalR.Hubs
+  name: BaseSignalRHub
+  nameWithType: BaseSignalRHub
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Mix.SignalR.Hubs.BaseSignalRHub._auditLogService
+  commentId: F:Mix.SignalR.Hubs.BaseSignalRHub._auditLogService
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  name: _auditLogService
+  nameWithType: BaseSignalRHub._auditLogService
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub._auditLogService
+- uid: Mix.SignalR.Hubs.BaseSignalRHub.Rooms
+  commentId: F:Mix.SignalR.Hubs.BaseSignalRHub.Rooms
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  name: Rooms
+  nameWithType: BaseSignalRHub.Rooms
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub.Rooms
+- uid: Mix.SignalR.Hubs.BaseSignalRHub.JoinRoom(System.String)
+  commentId: M:Mix.SignalR.Hubs.BaseSignalRHub.JoinRoom(System.String)
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  isExternal: true
+  name: JoinRoom(String)
+  nameWithType: BaseSignalRHub.JoinRoom(String)
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub.JoinRoom(System.String)
+  spec.csharp:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.JoinRoom(System.String)
+    name: JoinRoom
+    nameWithType: BaseSignalRHub.JoinRoom
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.JoinRoom
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.JoinRoom(System.String)
+    name: JoinRoom
+    nameWithType: BaseSignalRHub.JoinRoom
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.JoinRoom
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.SignalR.Hubs.BaseSignalRHub.SendMessage(Mix.SignalR.Models.SignalRMessageModel)
+  commentId: M:Mix.SignalR.Hubs.BaseSignalRHub.SendMessage(Mix.SignalR.Models.SignalRMessageModel)
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  name: SendMessage(SignalRMessageModel)
+  nameWithType: BaseSignalRHub.SendMessage(SignalRMessageModel)
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendMessage(Mix.SignalR.Models.SignalRMessageModel)
+  spec.csharp:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.SendMessage(Mix.SignalR.Models.SignalRMessageModel)
+    name: SendMessage
+    nameWithType: BaseSignalRHub.SendMessage
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.SignalR.Models.SignalRMessageModel
+    name: SignalRMessageModel
+    nameWithType: SignalRMessageModel
+    fullName: Mix.SignalR.Models.SignalRMessageModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.SendMessage(Mix.SignalR.Models.SignalRMessageModel)
+    name: SendMessage
+    nameWithType: BaseSignalRHub.SendMessage
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.SignalR.Models.SignalRMessageModel
+    name: SignalRMessageModel
+    nameWithType: SignalRMessageModel
+    fullName: Mix.SignalR.Models.SignalRMessageModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.SignalR.Hubs.BaseSignalRHub.SendPrivateMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+  commentId: M:Mix.SignalR.Hubs.BaseSignalRHub.SendPrivateMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  isExternal: true
+  name: SendPrivateMessage(SignalRMessageModel, String, Boolean)
+  nameWithType: BaseSignalRHub.SendPrivateMessage(SignalRMessageModel, String, Boolean)
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendPrivateMessage(Mix.SignalR.Models.SignalRMessageModel, System.String, System.Boolean)
+  spec.csharp:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.SendPrivateMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+    name: SendPrivateMessage
+    nameWithType: BaseSignalRHub.SendPrivateMessage
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendPrivateMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.SignalR.Models.SignalRMessageModel
+    name: SignalRMessageModel
+    nameWithType: SignalRMessageModel
+    fullName: Mix.SignalR.Models.SignalRMessageModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.SendPrivateMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+    name: SendPrivateMessage
+    nameWithType: BaseSignalRHub.SendPrivateMessage
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendPrivateMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.SignalR.Models.SignalRMessageModel
+    name: SignalRMessageModel
+    nameWithType: SignalRMessageModel
+    fullName: Mix.SignalR.Models.SignalRMessageModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.SignalR.Hubs.BaseSignalRHub.SendMessageToCaller(Mix.SignalR.Models.SignalRMessageModel)
+  commentId: M:Mix.SignalR.Hubs.BaseSignalRHub.SendMessageToCaller(Mix.SignalR.Models.SignalRMessageModel)
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  name: SendMessageToCaller(SignalRMessageModel)
+  nameWithType: BaseSignalRHub.SendMessageToCaller(SignalRMessageModel)
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendMessageToCaller(Mix.SignalR.Models.SignalRMessageModel)
+  spec.csharp:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.SendMessageToCaller(Mix.SignalR.Models.SignalRMessageModel)
+    name: SendMessageToCaller
+    nameWithType: BaseSignalRHub.SendMessageToCaller
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendMessageToCaller
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.SignalR.Models.SignalRMessageModel
+    name: SignalRMessageModel
+    nameWithType: SignalRMessageModel
+    fullName: Mix.SignalR.Models.SignalRMessageModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.SendMessageToCaller(Mix.SignalR.Models.SignalRMessageModel)
+    name: SendMessageToCaller
+    nameWithType: BaseSignalRHub.SendMessageToCaller
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendMessageToCaller
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.SignalR.Models.SignalRMessageModel
+    name: SignalRMessageModel
+    nameWithType: SignalRMessageModel
+    fullName: Mix.SignalR.Models.SignalRMessageModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.SignalR.Hubs.BaseSignalRHub.SendGroupMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+  commentId: M:Mix.SignalR.Hubs.BaseSignalRHub.SendGroupMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  isExternal: true
+  name: SendGroupMessage(SignalRMessageModel, String, Boolean)
+  nameWithType: BaseSignalRHub.SendGroupMessage(SignalRMessageModel, String, Boolean)
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendGroupMessage(Mix.SignalR.Models.SignalRMessageModel, System.String, System.Boolean)
+  spec.csharp:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.SendGroupMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+    name: SendGroupMessage
+    nameWithType: BaseSignalRHub.SendGroupMessage
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendGroupMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.SignalR.Models.SignalRMessageModel
+    name: SignalRMessageModel
+    nameWithType: SignalRMessageModel
+    fullName: Mix.SignalR.Models.SignalRMessageModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.SendGroupMessage(Mix.SignalR.Models.SignalRMessageModel,System.String,System.Boolean)
+    name: SendGroupMessage
+    nameWithType: BaseSignalRHub.SendGroupMessage
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.SendGroupMessage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.SignalR.Models.SignalRMessageModel
+    name: SignalRMessageModel
+    nameWithType: SignalRMessageModel
+    fullName: Mix.SignalR.Models.SignalRMessageModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.SignalR.Hubs.BaseSignalRHub.OnConnectedAsync
+  commentId: M:Mix.SignalR.Hubs.BaseSignalRHub.OnConnectedAsync
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  name: OnConnectedAsync()
+  nameWithType: BaseSignalRHub.OnConnectedAsync()
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub.OnConnectedAsync()
+  spec.csharp:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.OnConnectedAsync
+    name: OnConnectedAsync
+    nameWithType: BaseSignalRHub.OnConnectedAsync
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.OnConnectedAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.OnConnectedAsync
+    name: OnConnectedAsync
+    nameWithType: BaseSignalRHub.OnConnectedAsync
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.OnConnectedAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync(System.Nullable{Exception})
+  commentId: M:Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync(System.Nullable{Exception})
+  parent: Mix.SignalR.Hubs.BaseSignalRHub
+  isExternal: true
+  name: OnDisconnectedAsync(Nullable<Exception>)
+  nameWithType: BaseSignalRHub.OnDisconnectedAsync(Nullable<Exception>)
+  fullName: Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync(System.Nullable<Exception>)
+  nameWithType.vb: BaseSignalRHub.OnDisconnectedAsync(Nullable(Of Exception))
+  fullName.vb: Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync(System.Nullable(Of Exception))
+  name.vb: OnDisconnectedAsync(Nullable(Of Exception))
+  spec.csharp:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync(System.Nullable{Exception})
+    name: OnDisconnectedAsync
+    nameWithType: BaseSignalRHub.OnDisconnectedAsync
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync(System.Nullable{Exception})
+    name: OnDisconnectedAsync
+    nameWithType: BaseSignalRHub.OnDisconnectedAsync
+    fullName: Mix.SignalR.Hubs.BaseSignalRHub.OnDisconnectedAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.SignalR.Hub.OnDisconnectedAsync(System.Exception)
+  commentId: M:Microsoft.AspNetCore.SignalR.Hub.OnDisconnectedAsync(System.Exception)
+  parent: Microsoft.AspNetCore.SignalR.Hub
+  isExternal: true
+  name: OnDisconnectedAsync(Exception)
+  nameWithType: Hub.OnDisconnectedAsync(Exception)
+  fullName: Microsoft.AspNetCore.SignalR.Hub.OnDisconnectedAsync(System.Exception)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.Hub.OnDisconnectedAsync(System.Exception)
+    name: OnDisconnectedAsync
+    nameWithType: Hub.OnDisconnectedAsync
+    fullName: Microsoft.AspNetCore.SignalR.Hub.OnDisconnectedAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.Hub.OnDisconnectedAsync(System.Exception)
+    name: OnDisconnectedAsync
+    nameWithType: Hub.OnDisconnectedAsync
+    fullName: Microsoft.AspNetCore.SignalR.Hub.OnDisconnectedAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.SignalR.Hub.Dispose(System.Boolean)
+  commentId: M:Microsoft.AspNetCore.SignalR.Hub.Dispose(System.Boolean)
+  parent: Microsoft.AspNetCore.SignalR.Hub
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: Hub.Dispose(Boolean)
+  fullName: Microsoft.AspNetCore.SignalR.Hub.Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.Hub.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Hub.Dispose
+    fullName: Microsoft.AspNetCore.SignalR.Hub.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.Hub.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: Hub.Dispose
+    fullName: Microsoft.AspNetCore.SignalR.Hub.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.SignalR.Hub.Dispose
+  commentId: M:Microsoft.AspNetCore.SignalR.Hub.Dispose
+  parent: Microsoft.AspNetCore.SignalR.Hub
+  isExternal: true
+  name: Dispose()
+  nameWithType: Hub.Dispose()
+  fullName: Microsoft.AspNetCore.SignalR.Hub.Dispose()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.Hub.Dispose
+    name: Dispose
+    nameWithType: Hub.Dispose
+    fullName: Microsoft.AspNetCore.SignalR.Hub.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.Hub.Dispose
+    name: Dispose
+    nameWithType: Hub.Dispose
+    fullName: Microsoft.AspNetCore.SignalR.Hub.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.SignalR.Hub.Clients
+  commentId: P:Microsoft.AspNetCore.SignalR.Hub.Clients
+  parent: Microsoft.AspNetCore.SignalR.Hub
+  isExternal: true
+  name: Clients
+  nameWithType: Hub.Clients
+  fullName: Microsoft.AspNetCore.SignalR.Hub.Clients
+- uid: Microsoft.AspNetCore.SignalR.Hub.Context
+  commentId: P:Microsoft.AspNetCore.SignalR.Hub.Context
+  parent: Microsoft.AspNetCore.SignalR.Hub
+  isExternal: true
+  name: Context
+  nameWithType: Hub.Context
+  fullName: Microsoft.AspNetCore.SignalR.Hub.Context
+- uid: Microsoft.AspNetCore.SignalR.Hub.Groups
+  commentId: P:Microsoft.AspNetCore.SignalR.Hub.Groups
+  parent: Microsoft.AspNetCore.SignalR.Hub
+  isExternal: true
+  name: Groups
+  nameWithType: Hub.Groups
+  fullName: Microsoft.AspNetCore.SignalR.Hub.Groups
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.SignalR
+  commentId: N:Microsoft.AspNetCore.SignalR
+  isExternal: true
+  name: Microsoft.AspNetCore.SignalR
+  nameWithType: Microsoft.AspNetCore.SignalR
+  fullName: Microsoft.AspNetCore.SignalR
+- uid: Mix.SignalR.Hubs.EditFileHub.#ctor*
+  commentId: Overload:Mix.SignalR.Hubs.EditFileHub.#ctor
+  name: EditFileHub
+  nameWithType: EditFileHub.EditFileHub
+  fullName: Mix.SignalR.Hubs.EditFileHub.EditFileHub
+- uid: Mix.Lib.Services.AuditLogService
+  commentId: T:Mix.Lib.Services.AuditLogService
+  parent: Mix.Lib.Services
+  name: AuditLogService
+  nameWithType: AuditLogService
+  fullName: Mix.Lib.Services.AuditLogService
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services

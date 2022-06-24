@@ -1,0 +1,862 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Controllers.MixDatabaseColumnPortalController
+  commentId: T:Mix.Portal.Controllers.MixDatabaseColumnPortalController
+  id: MixDatabaseColumnPortalController
+  parent: Mix.Portal.Controllers
+  children:
+  - Mix.Portal.Controllers.MixDatabaseColumnPortalController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixDataService,MixIdentityService,Mix.Shared.Services.MixEndpointService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  - Mix.Portal.Controllers.MixDatabaseColumnPortalController.BuildSearchRequest(SearchRequestDto)
+  - Mix.Portal.Controllers.MixDatabaseColumnPortalController.Init(System.String)
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseColumnPortalController
+  nameWithType: MixDatabaseColumnPortalController
+  fullName: Mix.Portal.Controllers.MixDatabaseColumnPortalController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDatabaseColumnPortalController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDatabaseColumnPortalController
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseColumnPortalController.cs
+    startLine: 6
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [Route("api/v2/rest/mix-portal/mix-database-column")]
+
+      [ApiController]
+
+      public class MixDatabaseColumnPortalController : MixRestApiControllerBase<MixDatabaseColumnViewModel, MixCmsContext, MixDatabaseColumn, int>
+    content.vb: >-
+      <Route("api/v2/rest/mix-portal/mix-database-column")>
+
+      <ApiController>
+
+      Public Class MixDatabaseColumnPortalController
+          Inherits MixRestApiControllerBase(Of MixDatabaseColumnViewModel, MixCmsContext, MixDatabaseColumn, Integer)
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/mix-portal/mix-database-column
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Controllers.MixDatabaseColumnPortalController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixDataService,MixIdentityService,Mix.Shared.Services.MixEndpointService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  commentId: M:Mix.Portal.Controllers.MixDatabaseColumnPortalController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixDataService,MixIdentityService,Mix.Shared.Services.MixEndpointService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  id: '#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixDataService,MixIdentityService,Mix.Shared.Services.MixEndpointService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})'
+  parent: Mix.Portal.Controllers.MixDatabaseColumnPortalController
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseColumnPortalController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixDataService, MixIdentityService, MixEndpointService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  nameWithType: MixDatabaseColumnPortalController.MixDatabaseColumnPortalController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixDataService, MixIdentityService, MixEndpointService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  fullName: Mix.Portal.Controllers.MixDatabaseColumnPortalController.MixDatabaseColumnPortalController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, MixDataService, MixIdentityService, Mix.Shared.Services.MixEndpointService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDatabaseColumnPortalController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseColumnPortalController.cs
+    startLine: 15
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: public MixDatabaseColumnPortalController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixDataService mixDataService, MixIdentityService mixIdentityService, MixEndpointService endpointService, UnitOfWorkInfo<MixCacheDbContext> cacheUOW, UnitOfWorkInfo<MixCmsContext> cmsUOW, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: mixService
+      type: MixService
+    - id: translator
+      type: TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: mixDataService
+      type: MixDataService
+    - id: mixIdentityService
+      type: MixIdentityService
+    - id: endpointService
+      type: Mix.Shared.Services.MixEndpointService
+    - id: cacheUOW
+      type: UnitOfWorkInfo{MixCacheDbContext}
+    - id: cmsUOW
+      type: UnitOfWorkInfo{MixCmsContext}
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixDataService As MixDataService, mixIdentityService As MixIdentityService, endpointService As MixEndpointService, cacheUOW As UnitOfWorkInfo(Of MixCacheDbContext), cmsUOW As UnitOfWorkInfo(Of MixCmsContext), queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Portal.Controllers.MixDatabaseColumnPortalController.#ctor*
+  nameWithType.vb: MixDatabaseColumnPortalController.MixDatabaseColumnPortalController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixDataService, MixIdentityService, MixEndpointService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Portal.Controllers.MixDatabaseColumnPortalController.MixDatabaseColumnPortalController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), MixDataService, MixIdentityService, Mix.Shared.Services.MixEndpointService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  name.vb: MixDatabaseColumnPortalController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixDataService, MixIdentityService, MixEndpointService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+- uid: Mix.Portal.Controllers.MixDatabaseColumnPortalController.Init(System.String)
+  commentId: M:Mix.Portal.Controllers.MixDatabaseColumnPortalController.Init(System.String)
+  id: Init(System.String)
+  parent: Mix.Portal.Controllers.MixDatabaseColumnPortalController
+  langs:
+  - csharp
+  - vb
+  name: Init(String)
+  nameWithType: MixDatabaseColumnPortalController.Init(String)
+  fullName: Mix.Portal.Controllers.MixDatabaseColumnPortalController.Init(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDatabaseColumnPortalController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Init
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseColumnPortalController.cs
+    startLine: 33
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpGet("init/{mixDatabase}")]
+
+      public Task<ActionResult<List<MixDatabaseColumnViewModel>>> Init(string mixDatabase)
+    parameters:
+    - id: mixDatabase
+      type: System.String
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{List{MixDatabaseColumnViewModel}}}
+    content.vb: >-
+      <HttpGet("init/{mixDatabase}")>
+
+      Public Function Init(mixDatabase As String) As Task(Of ActionResult(Of List(Of MixDatabaseColumnViewModel)))
+  overload: Mix.Portal.Controllers.MixDatabaseColumnPortalController.Init*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: init/{mixDatabase}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixDatabaseColumnPortalController.BuildSearchRequest(SearchRequestDto)
+  commentId: M:Mix.Portal.Controllers.MixDatabaseColumnPortalController.BuildSearchRequest(SearchRequestDto)
+  id: BuildSearchRequest(SearchRequestDto)
+  parent: Mix.Portal.Controllers.MixDatabaseColumnPortalController
+  langs:
+  - csharp
+  - vb
+  name: BuildSearchRequest(SearchRequestDto)
+  nameWithType: MixDatabaseColumnPortalController.BuildSearchRequest(SearchRequestDto)
+  fullName: Mix.Portal.Controllers.MixDatabaseColumnPortalController.BuildSearchRequest(SearchRequestDto)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDatabaseColumnPortalController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: BuildSearchRequest
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseColumnPortalController.cs
+    startLine: 42
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: protected override SearchQueryModel<MixDatabaseColumn, int> BuildSearchRequest(SearchRequestDto req)
+    parameters:
+    - id: req
+      type: SearchRequestDto
+    return:
+      type: SearchQueryModel{MixDatabaseColumn,System.Int32}
+    content.vb: Protected Overrides Function BuildSearchRequest(req As SearchRequestDto) As SearchQueryModel(Of MixDatabaseColumn, Integer)
+  overload: Mix.Portal.Controllers.MixDatabaseColumnPortalController.BuildSearchRequest*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Mix.Portal.Controllers
+  commentId: N:Mix.Portal.Controllers
+  name: Mix.Portal.Controllers
+  nameWithType: Mix.Portal.Controllers
+  fullName: Mix.Portal.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Portal.Controllers.MixDatabaseColumnPortalController.#ctor*
+  commentId: Overload:Mix.Portal.Controllers.MixDatabaseColumnPortalController.#ctor
+  name: MixDatabaseColumnPortalController
+  nameWithType: MixDatabaseColumnPortalController.MixDatabaseColumnPortalController
+  fullName: Mix.Portal.Controllers.MixDatabaseColumnPortalController.MixDatabaseColumnPortalController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: MixService
+  isExternal: true
+  name: MixService
+  nameWithType: MixService
+  fullName: MixService
+- uid: TranslatorService
+  isExternal: true
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MixDataService
+  isExternal: true
+  name: MixDataService
+  nameWithType: MixDataService
+  fullName: MixDataService
+- uid: MixIdentityService
+  isExternal: true
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: MixIdentityService
+- uid: Mix.Shared.Services.MixEndpointService
+  commentId: T:Mix.Shared.Services.MixEndpointService
+  parent: Mix.Shared.Services
+  name: MixEndpointService
+  nameWithType: MixEndpointService
+  fullName: Mix.Shared.Services.MixEndpointService
+- uid: UnitOfWorkInfo{MixCacheDbContext}
+  commentId: '!:UnitOfWorkInfo{MixCacheDbContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType: UnitOfWorkInfo<MixCacheDbContext>
+  fullName: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  name.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixDatabaseColumnPortalController.Init*
+  commentId: Overload:Mix.Portal.Controllers.MixDatabaseColumnPortalController.Init
+  name: Init
+  nameWithType: MixDatabaseColumnPortalController.Init
+  fullName: Mix.Portal.Controllers.MixDatabaseColumnPortalController.Init
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{List{MixDatabaseColumnViewModel}}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{List{MixDatabaseColumnViewModel}}}'
+  definition: Task`1
+  name: Task<ActionResult<List<MixDatabaseColumnViewModel>>>
+  nameWithType: Task<ActionResult<List<MixDatabaseColumnViewModel>>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<List<MixDatabaseColumnViewModel>>>
+  nameWithType.vb: Task(Of ActionResult(Of List(Of MixDatabaseColumnViewModel)))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of List(Of MixDatabaseColumnViewModel)))
+  name.vb: Task(Of ActionResult(Of List(Of MixDatabaseColumnViewModel)))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDatabaseColumnViewModel
+    name: MixDatabaseColumnViewModel
+    nameWithType: MixDatabaseColumnViewModel
+    fullName: MixDatabaseColumnViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDatabaseColumnViewModel
+    name: MixDatabaseColumnViewModel
+    nameWithType: MixDatabaseColumnViewModel
+    fullName: MixDatabaseColumnViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixDatabaseColumnPortalController.BuildSearchRequest*
+  commentId: Overload:Mix.Portal.Controllers.MixDatabaseColumnPortalController.BuildSearchRequest
+  name: BuildSearchRequest
+  nameWithType: MixDatabaseColumnPortalController.BuildSearchRequest
+  fullName: Mix.Portal.Controllers.MixDatabaseColumnPortalController.BuildSearchRequest
+- uid: SearchRequestDto
+  isExternal: true
+  name: SearchRequestDto
+  nameWithType: SearchRequestDto
+  fullName: SearchRequestDto
+- uid: SearchQueryModel{MixDatabaseColumn,System.Int32}
+  commentId: '!:SearchQueryModel{MixDatabaseColumn,System.Int32}'
+  definition: SearchQueryModel`2
+  name: SearchQueryModel<MixDatabaseColumn, Int32>
+  nameWithType: SearchQueryModel<MixDatabaseColumn, Int32>
+  fullName: SearchQueryModel<MixDatabaseColumn, System.Int32>
+  nameWithType.vb: SearchQueryModel(Of MixDatabaseColumn, Int32)
+  fullName.vb: SearchQueryModel(Of MixDatabaseColumn, System.Int32)
+  name.vb: SearchQueryModel(Of MixDatabaseColumn, Int32)
+  spec.csharp:
+  - uid: SearchQueryModel`2
+    name: SearchQueryModel
+    nameWithType: SearchQueryModel
+    fullName: SearchQueryModel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDatabaseColumn
+    name: MixDatabaseColumn
+    nameWithType: MixDatabaseColumn
+    fullName: MixDatabaseColumn
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: SearchQueryModel`2
+    name: SearchQueryModel
+    nameWithType: SearchQueryModel
+    fullName: SearchQueryModel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDatabaseColumn
+    name: MixDatabaseColumn
+    nameWithType: MixDatabaseColumn
+    fullName: MixDatabaseColumn
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SearchQueryModel`2
+  isExternal: true
+  name: SearchQueryModel<, >
+  nameWithType: SearchQueryModel<, >
+  fullName: SearchQueryModel<, >
+  nameWithType.vb: SearchQueryModel(Of , )
+  fullName.vb: SearchQueryModel(Of , )
+  name.vb: SearchQueryModel(Of , )
+  spec.csharp:
+  - uid: SearchQueryModel`2
+    name: SearchQueryModel
+    nameWithType: SearchQueryModel
+    fullName: SearchQueryModel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: SearchQueryModel`2
+    name: SearchQueryModel
+    nameWithType: SearchQueryModel
+    fullName: SearchQueryModel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

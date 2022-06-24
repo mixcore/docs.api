@@ -1,0 +1,659 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4
+  commentId: T:Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4
+  id: MixAutoGenerateAuthorizedQueryApiController`4
+  parent: Mix.Lib.Controllers
+  children:
+  - Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{`1},IQueueService{MessageQueueModel})
+  langs:
+  - csharp
+  - vb
+  name: MixAutoGenerateAuthorizedQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  nameWithType: MixAutoGenerateAuthorizedQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  fullName: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Controllers/MixAutoGenerateAuthorizedQueryApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixAutoGenerateAuthorizedQueryApiController
+    path: ../../mix.core/src/platform/mix.library/Controllers/MixAutoGenerateAuthorizedQueryApiController.cs
+    startLine: 7
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Controllers
+  syntax:
+    content: 'public class MixAutoGenerateAuthorizedQueryApiController<TView, TDbContext, TEntity, TPrimaryKey> : MixAutoGenerateQueryApiController<TView, TDbContext, TEntity, TPrimaryKey> where TView : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> where TDbContext : DbContext where TEntity : EntityBase<TPrimaryKey> where TPrimaryKey : IComparable'
+    typeParameters:
+    - id: TView
+    - id: TDbContext
+    - id: TEntity
+    - id: TPrimaryKey
+    content.vb: >-
+      Public Class MixAutoGenerateAuthorizedQueryApiController(Of TView As ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView), TDbContext As DbContext, TEntity As EntityBase(Of TPrimaryKey), TPrimaryKey As IComparable)
+          Inherits MixAutoGenerateQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  inheritance:
+  - System.Object
+  - Mix.Lib.Controllers.MixAutoGenerateQueryApiController{{TView},{TDbContext},{TEntity},{TPrimaryKey}}
+  nameWithType.vb: MixAutoGenerateAuthorizedQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  name.vb: MixAutoGenerateAuthorizedQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+- uid: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{`1},IQueueService{MessageQueueModel})
+  commentId: M:Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{`1},IQueueService{MessageQueueModel})
+  id: '#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{`1},IQueueService{MessageQueueModel})'
+  parent: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4
+  langs:
+  - csharp
+  - vb
+  name: MixAutoGenerateAuthorizedQueryApiController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<TDbContext>, IQueueService<MessageQueueModel>)
+  nameWithType: MixAutoGenerateAuthorizedQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>.MixAutoGenerateAuthorizedQueryApiController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<TDbContext>, IQueueService<MessageQueueModel>)
+  fullName: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>.MixAutoGenerateAuthorizedQueryApiController(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.Extensions.Configuration.IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, Mix.Lib.Services.MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<TDbContext>, IQueueService<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Controllers/MixAutoGenerateAuthorizedQueryApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Controllers/MixAutoGenerateAuthorizedQueryApiController.cs
+    startLine: 15
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Controllers
+  syntax:
+    content: public MixAutoGenerateAuthorizedQueryApiController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, UnitOfWorkInfo<MixCacheDbContext> cacheUOW, UnitOfWorkInfo<TDbContext> uow, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: httpContextAccessor
+      type: Microsoft.AspNetCore.Http.IHttpContextAccessor
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: translator
+      type: Mix.Lib.Services.TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: mixIdentityService
+      type: Mix.Lib.Services.MixIdentityService
+    - id: cacheUOW
+      type: UnitOfWorkInfo{MixCacheDbContext}
+    - id: uow
+      type: UnitOfWorkInfo{{TDbContext}}
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, cacheUOW As UnitOfWorkInfo(Of MixCacheDbContext), uow As UnitOfWorkInfo(Of TDbContext), queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4.#ctor*
+  nameWithType.vb: MixAutoGenerateAuthorizedQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey).MixAutoGenerateAuthorizedQueryApiController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of TDbContext), IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey).MixAutoGenerateAuthorizedQueryApiController(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.Extensions.Configuration.IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), Mix.Lib.Services.MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of TDbContext), IQueueService(Of MessageQueueModel))
+  name.vb: MixAutoGenerateAuthorizedQueryApiController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of TDbContext), IQueueService(Of MessageQueueModel))
+references:
+- uid: Mix.Lib.Controllers
+  commentId: N:Mix.Lib.Controllers
+  name: Mix.Lib.Controllers
+  nameWithType: Mix.Lib.Controllers
+  fullName: Mix.Lib.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Lib.Controllers.MixAutoGenerateQueryApiController{{TView},{TDbContext},{TEntity},{TPrimaryKey}}
+  commentId: T:Mix.Lib.Controllers.MixAutoGenerateQueryApiController{`0,`1,`2,`3}
+  parent: Mix.Lib.Controllers
+  definition: Mix.Lib.Controllers.MixAutoGenerateQueryApiController`4
+  name: MixAutoGenerateQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  nameWithType: MixAutoGenerateQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  fullName: Mix.Lib.Controllers.MixAutoGenerateQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  nameWithType.vb: MixAutoGenerateQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  fullName.vb: Mix.Lib.Controllers.MixAutoGenerateQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  name.vb: MixAutoGenerateQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Lib.Controllers.MixAutoGenerateQueryApiController`4
+    name: MixAutoGenerateQueryApiController
+    nameWithType: MixAutoGenerateQueryApiController
+    fullName: Mix.Lib.Controllers.MixAutoGenerateQueryApiController
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Lib.Controllers.MixAutoGenerateQueryApiController`4
+    name: MixAutoGenerateQueryApiController
+    nameWithType: MixAutoGenerateQueryApiController
+    fullName: Mix.Lib.Controllers.MixAutoGenerateQueryApiController
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Controllers.MixAutoGenerateQueryApiController`4
+  commentId: T:Mix.Lib.Controllers.MixAutoGenerateQueryApiController`4
+  name: MixAutoGenerateQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  nameWithType: MixAutoGenerateQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  fullName: Mix.Lib.Controllers.MixAutoGenerateQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>
+  nameWithType.vb: MixAutoGenerateQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  fullName.vb: Mix.Lib.Controllers.MixAutoGenerateQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  name.vb: MixAutoGenerateQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Lib.Controllers.MixAutoGenerateQueryApiController`4
+    name: MixAutoGenerateQueryApiController
+    nameWithType: MixAutoGenerateQueryApiController
+    fullName: Mix.Lib.Controllers.MixAutoGenerateQueryApiController
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Lib.Controllers.MixAutoGenerateQueryApiController`4
+    name: MixAutoGenerateQueryApiController
+    nameWithType: MixAutoGenerateQueryApiController
+    fullName: Mix.Lib.Controllers.MixAutoGenerateQueryApiController
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4.#ctor*
+  commentId: Overload:Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController`4.#ctor
+  name: MixAutoGenerateAuthorizedQueryApiController
+  nameWithType: MixAutoGenerateAuthorizedQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>.MixAutoGenerateAuthorizedQueryApiController
+  fullName: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController<TView, TDbContext, TEntity, TPrimaryKey>.MixAutoGenerateAuthorizedQueryApiController
+  nameWithType.vb: MixAutoGenerateAuthorizedQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey).MixAutoGenerateAuthorizedQueryApiController
+  fullName.vb: Mix.Lib.Controllers.MixAutoGenerateAuthorizedQueryApiController(Of TView, TDbContext, TEntity, TPrimaryKey).MixAutoGenerateAuthorizedQueryApiController
+- uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
+  commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Lib.Services.TranslatorService
+  commentId: T:Mix.Lib.Services.TranslatorService
+  parent: Mix.Lib.Services
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: Mix.Lib.Services.TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService
+  commentId: T:Mix.Lib.Services.MixIdentityService
+  parent: Mix.Lib.Services
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService
+- uid: UnitOfWorkInfo{MixCacheDbContext}
+  commentId: '!:UnitOfWorkInfo{MixCacheDbContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType: UnitOfWorkInfo<MixCacheDbContext>
+  fullName: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  name.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{{TDbContext}}
+  commentId: '!:UnitOfWorkInfo{`1}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<TDbContext>
+  nameWithType: UnitOfWorkInfo<TDbContext>
+  fullName: UnitOfWorkInfo<TDbContext>
+  nameWithType.vb: UnitOfWorkInfo(Of TDbContext)
+  fullName.vb: UnitOfWorkInfo(Of TDbContext)
+  name.vb: UnitOfWorkInfo(Of TDbContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

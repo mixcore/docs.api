@@ -1,0 +1,1024 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Controllers.MixThemeController
+  commentId: T:Mix.Portal.Controllers.MixThemeController
+  id: MixThemeController
+  parent: Mix.Portal.Controllers
+  children:
+  - Mix.Portal.Controllers.MixThemeController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,MixThemeImportService,MixThemeExportService,UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  - Mix.Portal.Controllers.MixThemeController.ExportThemeAsync(ExportThemeDto)
+  - Mix.Portal.Controllers.MixThemeController.ImportThemeAsync(SiteDataViewModel)
+  - Mix.Portal.Controllers.MixThemeController.LoadTheme(IFormFile)
+  - Mix.Portal.Controllers.MixThemeController.Save(MixThemeViewModel)
+  langs:
+  - csharp
+  - vb
+  name: MixThemeController
+  nameWithType: MixThemeController
+  fullName: Mix.Portal.Controllers.MixThemeController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixThemeController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixThemeController
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixThemeController.cs
+    startLine: 6
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [Route("api/v2/rest/mix-portal/mix-theme")]
+
+      [ApiController]
+
+      public class MixThemeController : MixRestApiControllerBase<MixThemeViewModel, MixCmsContext, MixTheme, int>
+    content.vb: >-
+      <Route("api/v2/rest/mix-portal/mix-theme")>
+
+      <ApiController>
+
+      Public Class MixThemeController
+          Inherits MixRestApiControllerBase(Of MixThemeViewModel, MixCmsContext, MixTheme, Integer)
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/mix-portal/mix-theme
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Controllers.MixThemeController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,MixThemeImportService,MixThemeExportService,UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  commentId: M:Mix.Portal.Controllers.MixThemeController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,MixThemeImportService,MixThemeExportService,UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  id: '#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,MixThemeImportService,MixThemeExportService,UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})'
+  parent: Mix.Portal.Controllers.MixThemeController
+  langs:
+  - csharp
+  - vb
+  name: MixThemeController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, MixThemeImportService, MixThemeExportService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  nameWithType: MixThemeController.MixThemeController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, MixThemeImportService, MixThemeExportService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  fullName: Mix.Portal.Controllers.MixThemeController.MixThemeController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, MixIdentityService, MixThemeImportService, MixThemeExportService, UnitOfWorkInfo<Mix.Heart.Entities.Cache.MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixThemeController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixThemeController.cs
+    startLine: 15
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: public MixThemeController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, MixThemeImportService importService, MixThemeExportService exportService, UnitOfWorkInfo<MixCacheDbContext> cacheUOW, UnitOfWorkInfo<MixCmsContext> cmsUOW, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: mixService
+      type: MixService
+    - id: translator
+      type: TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: mixIdentityService
+      type: MixIdentityService
+    - id: importService
+      type: MixThemeImportService
+    - id: exportService
+      type: MixThemeExportService
+    - id: cacheUOW
+      type: UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext}
+    - id: cmsUOW
+      type: UnitOfWorkInfo{MixCmsContext}
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, importService As MixThemeImportService, exportService As MixThemeExportService, cacheUOW As UnitOfWorkInfo(Of MixCacheDbContext), cmsUOW As UnitOfWorkInfo(Of MixCmsContext), queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Portal.Controllers.MixThemeController.#ctor*
+  nameWithType.vb: MixThemeController.MixThemeController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, MixThemeImportService, MixThemeExportService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Portal.Controllers.MixThemeController.MixThemeController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), MixIdentityService, MixThemeImportService, MixThemeExportService, UnitOfWorkInfo(Of Mix.Heart.Entities.Cache.MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  name.vb: MixThemeController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, MixThemeImportService, MixThemeExportService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+- uid: Mix.Portal.Controllers.MixThemeController.Save(MixThemeViewModel)
+  commentId: M:Mix.Portal.Controllers.MixThemeController.Save(MixThemeViewModel)
+  id: Save(MixThemeViewModel)
+  parent: Mix.Portal.Controllers.MixThemeController
+  langs:
+  - csharp
+  - vb
+  name: Save(MixThemeViewModel)
+  nameWithType: MixThemeController.Save(MixThemeViewModel)
+  fullName: Mix.Portal.Controllers.MixThemeController.Save(MixThemeViewModel)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixThemeController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Save
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixThemeController.cs
+    startLine: 35
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("save")]
+
+      public Task<ActionResult<MixThemeViewModel>> Save(MixThemeViewModel data)
+    parameters:
+    - id: data
+      type: MixThemeViewModel
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{MixThemeViewModel}}
+    content.vb: >-
+      <HttpPost>
+
+      <Route("save")>
+
+      Public Function Save(data As MixThemeViewModel) As Task(Of ActionResult(Of MixThemeViewModel))
+  overload: Mix.Portal.Controllers.MixThemeController.Save*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: save
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixThemeController.ExportThemeAsync(ExportThemeDto)
+  commentId: M:Mix.Portal.Controllers.MixThemeController.ExportThemeAsync(ExportThemeDto)
+  id: ExportThemeAsync(ExportThemeDto)
+  parent: Mix.Portal.Controllers.MixThemeController
+  langs:
+  - csharp
+  - vb
+  name: ExportThemeAsync(ExportThemeDto)
+  nameWithType: MixThemeController.ExportThemeAsync(ExportThemeDto)
+  fullName: Mix.Portal.Controllers.MixThemeController.ExportThemeAsync(ExportThemeDto)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixThemeController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExportThemeAsync
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixThemeController.cs
+    startLine: 45
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpPost("export")]
+
+      public Task<ActionResult<SiteDataViewModel>> ExportThemeAsync([FromBody] ExportThemeDto dto)
+    parameters:
+    - id: dto
+      type: ExportThemeDto
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{SiteDataViewModel}}
+    content.vb: >-
+      <HttpPost("export")>
+
+      Public Function ExportThemeAsync(dto As ExportThemeDto) As Task(Of ActionResult(Of SiteDataViewModel))
+  overload: Mix.Portal.Controllers.MixThemeController.ExportThemeAsync*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: export
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixThemeController.LoadTheme(IFormFile)
+  commentId: M:Mix.Portal.Controllers.MixThemeController.LoadTheme(IFormFile)
+  id: LoadTheme(IFormFile)
+  parent: Mix.Portal.Controllers.MixThemeController
+  langs:
+  - csharp
+  - vb
+  name: LoadTheme(IFormFile)
+  nameWithType: MixThemeController.LoadTheme(IFormFile)
+  fullName: Mix.Portal.Controllers.MixThemeController.LoadTheme(IFormFile)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixThemeController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadTheme
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixThemeController.cs
+    startLine: 52
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpPost("load-theme")]
+
+      public ActionResult<SiteDataViewModel> LoadTheme([FromForm] IFormFile theme)
+    parameters:
+    - id: theme
+      type: IFormFile
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromFormAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromFormAttribute.#ctor
+        arguments: []
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{SiteDataViewModel}
+    content.vb: >-
+      <HttpPost("load-theme")>
+
+      Public Function LoadTheme(theme As IFormFile) As ActionResult(Of SiteDataViewModel)
+  overload: Mix.Portal.Controllers.MixThemeController.LoadTheme*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: load-theme
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixThemeController.ImportThemeAsync(SiteDataViewModel)
+  commentId: M:Mix.Portal.Controllers.MixThemeController.ImportThemeAsync(SiteDataViewModel)
+  id: ImportThemeAsync(SiteDataViewModel)
+  parent: Mix.Portal.Controllers.MixThemeController
+  langs:
+  - csharp
+  - vb
+  name: ImportThemeAsync(SiteDataViewModel)
+  nameWithType: MixThemeController.ImportThemeAsync(SiteDataViewModel)
+  fullName: Mix.Portal.Controllers.MixThemeController.ImportThemeAsync(SiteDataViewModel)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixThemeController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ImportThemeAsync
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixThemeController.cs
+    startLine: 60
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpPost("import-theme")]
+
+      public Task<ActionResult<SiteDataViewModel>> ImportThemeAsync([FromBody] SiteDataViewModel siteData)
+    parameters:
+    - id: siteData
+      type: SiteDataViewModel
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{SiteDataViewModel}}
+    content.vb: >-
+      <HttpPost("import-theme")>
+
+      Public Function ImportThemeAsync(siteData As SiteDataViewModel) As Task(Of ActionResult(Of SiteDataViewModel))
+  overload: Mix.Portal.Controllers.MixThemeController.ImportThemeAsync*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: import-theme
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Portal.Controllers
+  commentId: N:Mix.Portal.Controllers
+  name: Mix.Portal.Controllers
+  nameWithType: Mix.Portal.Controllers
+  fullName: Mix.Portal.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Portal.Controllers.MixThemeController.#ctor*
+  commentId: Overload:Mix.Portal.Controllers.MixThemeController.#ctor
+  name: MixThemeController
+  nameWithType: MixThemeController.MixThemeController
+  fullName: Mix.Portal.Controllers.MixThemeController.MixThemeController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: MixService
+  isExternal: true
+  name: MixService
+  nameWithType: MixService
+  fullName: MixService
+- uid: TranslatorService
+  isExternal: true
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MixIdentityService
+  isExternal: true
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: MixIdentityService
+- uid: MixThemeImportService
+  commentId: '!:MixThemeImportService'
+  isExternal: true
+  name: MixThemeImportService
+  nameWithType: MixThemeImportService
+  fullName: MixThemeImportService
+- uid: MixThemeExportService
+  commentId: '!:MixThemeExportService'
+  isExternal: true
+  name: MixThemeExportService
+  nameWithType: MixThemeExportService
+  fullName: MixThemeExportService
+- uid: UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext}
+  commentId: '!:UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType: UnitOfWorkInfo<MixCacheDbContext>
+  fullName: UnitOfWorkInfo<Mix.Heart.Entities.Cache.MixCacheDbContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  fullName.vb: UnitOfWorkInfo(Of Mix.Heart.Entities.Cache.MixCacheDbContext)
+  name.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Heart.Entities.Cache.MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: Mix.Heart.Entities.Cache.MixCacheDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Heart.Entities.Cache.MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: Mix.Heart.Entities.Cache.MixCacheDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixThemeController.Save*
+  commentId: Overload:Mix.Portal.Controllers.MixThemeController.Save
+  name: Save
+  nameWithType: MixThemeController.Save
+  fullName: Mix.Portal.Controllers.MixThemeController.Save
+- uid: MixThemeViewModel
+  commentId: '!:MixThemeViewModel'
+  isExternal: true
+  name: MixThemeViewModel
+  nameWithType: MixThemeViewModel
+  fullName: MixThemeViewModel
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{MixThemeViewModel}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{MixThemeViewModel}}'
+  definition: Task`1
+  name: Task<ActionResult<MixThemeViewModel>>
+  nameWithType: Task<ActionResult<MixThemeViewModel>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<MixThemeViewModel>>
+  nameWithType.vb: Task(Of ActionResult(Of MixThemeViewModel))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of MixThemeViewModel))
+  name.vb: Task(Of ActionResult(Of MixThemeViewModel))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixThemeViewModel
+    name: MixThemeViewModel
+    nameWithType: MixThemeViewModel
+    fullName: MixThemeViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixThemeViewModel
+    name: MixThemeViewModel
+    nameWithType: MixThemeViewModel
+    fullName: MixThemeViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixThemeController.ExportThemeAsync*
+  commentId: Overload:Mix.Portal.Controllers.MixThemeController.ExportThemeAsync
+  name: ExportThemeAsync
+  nameWithType: MixThemeController.ExportThemeAsync
+  fullName: Mix.Portal.Controllers.MixThemeController.ExportThemeAsync
+- uid: ExportThemeDto
+  commentId: '!:ExportThemeDto'
+  isExternal: true
+  name: ExportThemeDto
+  nameWithType: ExportThemeDto
+  fullName: ExportThemeDto
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{SiteDataViewModel}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{SiteDataViewModel}}'
+  definition: Task`1
+  name: Task<ActionResult<SiteDataViewModel>>
+  nameWithType: Task<ActionResult<SiteDataViewModel>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<SiteDataViewModel>>
+  nameWithType.vb: Task(Of ActionResult(Of SiteDataViewModel))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of SiteDataViewModel))
+  name.vb: Task(Of ActionResult(Of SiteDataViewModel))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SiteDataViewModel
+    name: SiteDataViewModel
+    nameWithType: SiteDataViewModel
+    fullName: SiteDataViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SiteDataViewModel
+    name: SiteDataViewModel
+    nameWithType: SiteDataViewModel
+    fullName: SiteDataViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixThemeController.LoadTheme*
+  commentId: Overload:Mix.Portal.Controllers.MixThemeController.LoadTheme
+  name: LoadTheme
+  nameWithType: MixThemeController.LoadTheme
+  fullName: Mix.Portal.Controllers.MixThemeController.LoadTheme
+- uid: IFormFile
+  isExternal: true
+  name: IFormFile
+  nameWithType: IFormFile
+  fullName: IFormFile
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{SiteDataViewModel}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{SiteDataViewModel}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<SiteDataViewModel>
+  nameWithType: ActionResult<SiteDataViewModel>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<SiteDataViewModel>
+  nameWithType.vb: ActionResult(Of SiteDataViewModel)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of SiteDataViewModel)
+  name.vb: ActionResult(Of SiteDataViewModel)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SiteDataViewModel
+    name: SiteDataViewModel
+    nameWithType: SiteDataViewModel
+    fullName: SiteDataViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SiteDataViewModel
+    name: SiteDataViewModel
+    nameWithType: SiteDataViewModel
+    fullName: SiteDataViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult`1
+  isExternal: true
+  name: ActionResult<TValue>
+  nameWithType: ActionResult<TValue>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<TValue>
+  nameWithType.vb: ActionResult(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of TValue)
+  name.vb: ActionResult(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: Mix.Portal.Controllers.MixThemeController.ImportThemeAsync*
+  commentId: Overload:Mix.Portal.Controllers.MixThemeController.ImportThemeAsync
+  name: ImportThemeAsync
+  nameWithType: MixThemeController.ImportThemeAsync
+  fullName: Mix.Portal.Controllers.MixThemeController.ImportThemeAsync
+- uid: SiteDataViewModel
+  isExternal: true
+  name: SiteDataViewModel
+  nameWithType: SiteDataViewModel
+  fullName: SiteDataViewModel

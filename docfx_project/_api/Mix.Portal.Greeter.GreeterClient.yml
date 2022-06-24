@@ -1,0 +1,1254 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Greeter.GreeterClient
+  commentId: T:Mix.Portal.Greeter.GreeterClient
+  id: Greeter.GreeterClient
+  parent: Mix.Portal
+  children:
+  - Mix.Portal.Greeter.GreeterClient.#ctor
+  - Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.CallInvoker)
+  - Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.ChannelBase)
+  - Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  - Mix.Portal.Greeter.GreeterClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  - Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest,Grpc.Core.CallOptions)
+  - Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  - Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest,Grpc.Core.CallOptions)
+  - Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: Greeter.GreeterClient
+  nameWithType: Greeter.GreeterClient
+  fullName: Mix.Portal.Greeter.GreeterClient
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GreeterClient
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 70
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: Client for Greeter
+  example: []
+  syntax:
+    content: 'public class GreeterClient : ClientBase<Greeter.GreeterClient>'
+    content.vb: >-
+      Public Class GreeterClient
+          Inherits ClientBase(Of Greeter.GreeterClient)
+  inheritance:
+  - System.Object
+  - Grpc.Core.ClientBase
+  - Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}
+  inheritedMembers:
+  - Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}.WithHost(System.String)
+  - Grpc.Core.ClientBase.CallInvoker
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.ChannelBase)
+  commentId: M:Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.ChannelBase)
+  id: '#ctor(Grpc.Core.ChannelBase)'
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: GreeterClient(ChannelBase)
+  nameWithType: Greeter.GreeterClient.GreeterClient(ChannelBase)
+  fullName: Mix.Portal.Greeter.GreeterClient.GreeterClient(Grpc.Core.ChannelBase)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 74
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: Creates a new client for Greeter
+  example: []
+  syntax:
+    content: public GreeterClient(ChannelBase channel)
+    parameters:
+    - id: channel
+      type: Grpc.Core.ChannelBase
+      description: The channel to use to make remote calls.
+    content.vb: Public Sub New(channel As ChannelBase)
+  overload: Mix.Portal.Greeter.GreeterClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.CallInvoker)
+  commentId: M:Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.CallInvoker)
+  id: '#ctor(Grpc.Core.CallInvoker)'
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: GreeterClient(CallInvoker)
+  nameWithType: Greeter.GreeterClient.GreeterClient(CallInvoker)
+  fullName: Mix.Portal.Greeter.GreeterClient.GreeterClient(Grpc.Core.CallInvoker)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 80
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: Creates a new client for Greeter that uses a custom <code>CallInvoker</code>.
+  example: []
+  syntax:
+    content: public GreeterClient(CallInvoker callInvoker)
+    parameters:
+    - id: callInvoker
+      type: Grpc.Core.CallInvoker
+      description: The callInvoker to use to make remote calls.
+    content.vb: Public Sub New(callInvoker As CallInvoker)
+  overload: Mix.Portal.Greeter.GreeterClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Greeter.GreeterClient.#ctor
+  commentId: M:Mix.Portal.Greeter.GreeterClient.#ctor
+  id: '#ctor'
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: GreeterClient()
+  nameWithType: Greeter.GreeterClient.GreeterClient()
+  fullName: Mix.Portal.Greeter.GreeterClient.GreeterClient()
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 85
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: Protected parameterless constructor to allow creation of test doubles.
+  example: []
+  syntax:
+    content: protected GreeterClient()
+    content.vb: Protected Sub New
+  overload: Mix.Portal.Greeter.GreeterClient.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  commentId: M:Mix.Portal.Greeter.GreeterClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  id: '#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)'
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: GreeterClient(ClientBase.ClientBaseConfiguration)
+  nameWithType: Greeter.GreeterClient.GreeterClient(ClientBase.ClientBaseConfiguration)
+  fullName: Mix.Portal.Greeter.GreeterClient.GreeterClient(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 91
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: Protected constructor to allow creation of configured clients.
+  example: []
+  syntax:
+    content: protected GreeterClient(ClientBase.ClientBaseConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Grpc.Core.ClientBase.ClientBaseConfiguration
+      description: The client configuration.
+    content.vb: Protected Sub New(configuration As ClientBase.ClientBaseConfiguration)
+  overload: Mix.Portal.Greeter.GreeterClient.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: SayHello(Mix.Portal.HelloRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: SayHello(HelloRequest, Metadata, Nullable<DateTime>, CancellationToken)
+  nameWithType: Greeter.GreeterClient.SayHello(HelloRequest, Metadata, Nullable<DateTime>, CancellationToken)
+  fullName: Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest, Grpc.Core.Metadata, System.Nullable<System.DateTime>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SayHello
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 104
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: "\nSends a greeting\n"
+  example: []
+  syntax:
+    content: public virtual HelloReply SayHello(HelloRequest request, Metadata headers = null, DateTime? deadline = default(DateTime? ), CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: request
+      type: Mix.Portal.HelloRequest
+      description: The request to send to the server.
+    - id: headers
+      type: Grpc.Core.Metadata
+      description: The initial metadata to send with the call. This parameter is optional.
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+      description: An optional deadline for the call. The call will be cancelled if deadline is hit.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: An optional token for canceling the call.
+    return:
+      type: Mix.Portal.HelloReply
+      description: The response received from the server.
+    content.vb: Public Overridable Function SayHello(request As HelloRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As HelloReply
+  overload: Mix.Portal.Greeter.GreeterClient.SayHello*
+  nameWithType.vb: Greeter.GreeterClient.SayHello(HelloRequest, Metadata, Nullable(Of DateTime), CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest, Grpc.Core.Metadata, System.Nullable(Of System.DateTime), System.Threading.CancellationToken)
+  name.vb: SayHello(HelloRequest, Metadata, Nullable(Of DateTime), CancellationToken)
+- uid: Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest,Grpc.Core.CallOptions)
+  commentId: M:Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest,Grpc.Core.CallOptions)
+  id: SayHello(Mix.Portal.HelloRequest,Grpc.Core.CallOptions)
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: SayHello(HelloRequest, CallOptions)
+  nameWithType: Greeter.GreeterClient.SayHello(HelloRequest, CallOptions)
+  fullName: Mix.Portal.Greeter.GreeterClient.SayHello(Mix.Portal.HelloRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SayHello
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 115
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: "\nSends a greeting\n"
+  example: []
+  syntax:
+    content: public virtual HelloReply SayHello(HelloRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Mix.Portal.HelloRequest
+      description: The request to send to the server.
+    - id: options
+      type: Grpc.Core.CallOptions
+      description: The options for the call.
+    return:
+      type: Mix.Portal.HelloReply
+      description: The response received from the server.
+    content.vb: Public Overridable Function SayHello(request As HelloRequest, options As CallOptions) As HelloReply
+  overload: Mix.Portal.Greeter.GreeterClient.SayHello*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  commentId: M:Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  id: SayHelloAsync(Mix.Portal.HelloRequest,Grpc.Core.Metadata,System.Nullable{System.DateTime},System.Threading.CancellationToken)
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: SayHelloAsync(HelloRequest, Metadata, Nullable<DateTime>, CancellationToken)
+  nameWithType: Greeter.GreeterClient.SayHelloAsync(HelloRequest, Metadata, Nullable<DateTime>, CancellationToken)
+  fullName: Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest, Grpc.Core.Metadata, System.Nullable<System.DateTime>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SayHelloAsync
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 128
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: "\nSends a greeting\n"
+  example: []
+  syntax:
+    content: public virtual AsyncUnaryCall<HelloReply> SayHelloAsync(HelloRequest request, Metadata headers = null, DateTime? deadline = default(DateTime? ), CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: request
+      type: Mix.Portal.HelloRequest
+      description: The request to send to the server.
+    - id: headers
+      type: Grpc.Core.Metadata
+      description: The initial metadata to send with the call. This parameter is optional.
+    - id: deadline
+      type: System.Nullable{System.DateTime}
+      description: An optional deadline for the call. The call will be cancelled if deadline is hit.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: An optional token for canceling the call.
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Mix.Portal.HelloReply}
+      description: The call object.
+    content.vb: Public Overridable Function SayHelloAsync(request As HelloRequest, headers As Metadata = Nothing, deadline As Date? = Nothing, cancellationToken As CancellationToken = Nothing) As AsyncUnaryCall(Of HelloReply)
+  overload: Mix.Portal.Greeter.GreeterClient.SayHelloAsync*
+  nameWithType.vb: Greeter.GreeterClient.SayHelloAsync(HelloRequest, Metadata, Nullable(Of DateTime), CancellationToken)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest, Grpc.Core.Metadata, System.Nullable(Of System.DateTime), System.Threading.CancellationToken)
+  name.vb: SayHelloAsync(HelloRequest, Metadata, Nullable(Of DateTime), CancellationToken)
+- uid: Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest,Grpc.Core.CallOptions)
+  commentId: M:Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest,Grpc.Core.CallOptions)
+  id: SayHelloAsync(Mix.Portal.HelloRequest,Grpc.Core.CallOptions)
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: SayHelloAsync(HelloRequest, CallOptions)
+  nameWithType: Greeter.GreeterClient.SayHelloAsync(HelloRequest, CallOptions)
+  fullName: Mix.Portal.Greeter.GreeterClient.SayHelloAsync(Mix.Portal.HelloRequest, Grpc.Core.CallOptions)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SayHelloAsync
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 139
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: "\nSends a greeting\n"
+  example: []
+  syntax:
+    content: public virtual AsyncUnaryCall<HelloReply> SayHelloAsync(HelloRequest request, CallOptions options)
+    parameters:
+    - id: request
+      type: Mix.Portal.HelloRequest
+      description: The request to send to the server.
+    - id: options
+      type: Grpc.Core.CallOptions
+      description: The options for the call.
+    return:
+      type: Grpc.Core.AsyncUnaryCall{Mix.Portal.HelloReply}
+      description: The call object.
+    content.vb: Public Overridable Function SayHelloAsync(request As HelloRequest, options As CallOptions) As AsyncUnaryCall(Of HelloReply)
+  overload: Mix.Portal.Greeter.GreeterClient.SayHelloAsync*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Mix.Portal.Greeter.GreeterClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  commentId: M:Mix.Portal.Greeter.GreeterClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  id: NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  parent: Mix.Portal.Greeter.GreeterClient
+  langs:
+  - csharp
+  - vb
+  name: NewInstance(ClientBase.ClientBaseConfiguration)
+  nameWithType: Greeter.GreeterClient.NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName: Mix.Portal.Greeter.GreeterClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: NewInstance
+    path: ../../mix.core/src/modules/mix.portal/obj/Release/net6.0/Domain/Protos/GreetGrpc.cs
+    startLine: 145
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal
+  summary: Creates a new instance of client from given <code>ClientBaseConfiguration</code>.
+  example: []
+  syntax:
+    content: protected override Greeter.GreeterClient NewInstance(ClientBase.ClientBaseConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Grpc.Core.ClientBase.ClientBaseConfiguration
+    return:
+      type: Mix.Portal.Greeter.GreeterClient
+    content.vb: Protected Overrides Function NewInstance(configuration As ClientBase.ClientBaseConfiguration) As Greeter.GreeterClient
+  overridden: Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  overload: Mix.Portal.Greeter.GreeterClient.NewInstance*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Mix.Portal
+  commentId: N:Mix.Portal
+  name: Mix.Portal
+  nameWithType: Mix.Portal
+  fullName: Mix.Portal
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Grpc.Core.ClientBase
+  commentId: T:Grpc.Core.ClientBase
+  parent: Grpc.Core
+  isExternal: true
+  name: ClientBase
+  nameWithType: ClientBase
+  fullName: Grpc.Core.ClientBase
+- uid: Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}
+  commentId: T:Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}
+  parent: Grpc.Core
+  definition: Grpc.Core.ClientBase`1
+  name: ClientBase<Greeter.GreeterClient>
+  nameWithType: ClientBase<Greeter.GreeterClient>
+  fullName: Grpc.Core.ClientBase<Mix.Portal.Greeter.GreeterClient>
+  nameWithType.vb: ClientBase(Of Greeter.GreeterClient)
+  fullName.vb: Grpc.Core.ClientBase(Of Mix.Portal.Greeter.GreeterClient)
+  name.vb: ClientBase(Of Greeter.GreeterClient)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1
+    name: ClientBase
+    nameWithType: ClientBase
+    fullName: Grpc.Core.ClientBase
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Portal.Greeter.GreeterClient
+    name: Greeter.GreeterClient
+    nameWithType: Greeter.GreeterClient
+    fullName: Mix.Portal.Greeter.GreeterClient
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1
+    name: ClientBase
+    nameWithType: ClientBase
+    fullName: Grpc.Core.ClientBase
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Portal.Greeter.GreeterClient
+    name: Greeter.GreeterClient
+    nameWithType: Greeter.GreeterClient
+    fullName: Mix.Portal.Greeter.GreeterClient
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}.WithHost(System.String)
+  commentId: M:Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}.WithHost(System.String)
+  parent: Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}
+  definition: Grpc.Core.ClientBase`1.WithHost(System.String)
+  name: WithHost(String)
+  nameWithType: ClientBase<Greeter.GreeterClient>.WithHost(String)
+  fullName: Grpc.Core.ClientBase<Mix.Portal.Greeter.GreeterClient>.WithHost(System.String)
+  nameWithType.vb: ClientBase(Of Greeter.GreeterClient).WithHost(String)
+  fullName.vb: Grpc.Core.ClientBase(Of Mix.Portal.Greeter.GreeterClient).WithHost(System.String)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1.WithHost(System.String)
+    name: WithHost
+    nameWithType: ClientBase<Greeter.GreeterClient>.WithHost
+    fullName: Grpc.Core.ClientBase<Mix.Portal.Greeter.GreeterClient>.WithHost
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1.WithHost(System.String)
+    name: WithHost
+    nameWithType: ClientBase(Of Greeter.GreeterClient).WithHost
+    fullName: Grpc.Core.ClientBase(Of Mix.Portal.Greeter.GreeterClient).WithHost
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Grpc.Core.ClientBase.CallInvoker
+  commentId: P:Grpc.Core.ClientBase.CallInvoker
+  parent: Grpc.Core.ClientBase
+  isExternal: true
+  name: CallInvoker
+  nameWithType: ClientBase.CallInvoker
+  fullName: Grpc.Core.ClientBase.CallInvoker
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Grpc.Core
+  commentId: N:Grpc.Core
+  isExternal: true
+  name: Grpc.Core
+  nameWithType: Grpc.Core
+  fullName: Grpc.Core
+- uid: Grpc.Core.ClientBase`1
+  commentId: T:Grpc.Core.ClientBase`1
+  isExternal: true
+  name: ClientBase<T>
+  nameWithType: ClientBase<T>
+  fullName: Grpc.Core.ClientBase<T>
+  nameWithType.vb: ClientBase(Of T)
+  fullName.vb: Grpc.Core.ClientBase(Of T)
+  name.vb: ClientBase(Of T)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1
+    name: ClientBase
+    nameWithType: ClientBase
+    fullName: Grpc.Core.ClientBase
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1
+    name: ClientBase
+    nameWithType: ClientBase
+    fullName: Grpc.Core.ClientBase
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Grpc.Core.ClientBase`1.WithHost(System.String)
+  commentId: M:Grpc.Core.ClientBase`1.WithHost(System.String)
+  isExternal: true
+  name: WithHost(String)
+  nameWithType: ClientBase<T>.WithHost(String)
+  fullName: Grpc.Core.ClientBase<T>.WithHost(System.String)
+  nameWithType.vb: ClientBase(Of T).WithHost(String)
+  fullName.vb: Grpc.Core.ClientBase(Of T).WithHost(System.String)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1.WithHost(System.String)
+    name: WithHost
+    nameWithType: ClientBase<T>.WithHost
+    fullName: Grpc.Core.ClientBase<T>.WithHost
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1.WithHost(System.String)
+    name: WithHost
+    nameWithType: ClientBase(Of T).WithHost
+    fullName: Grpc.Core.ClientBase(Of T).WithHost
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Greeter.GreeterClient.#ctor*
+  commentId: Overload:Mix.Portal.Greeter.GreeterClient.#ctor
+  name: GreeterClient
+  nameWithType: Greeter.GreeterClient.GreeterClient
+  fullName: Mix.Portal.Greeter.GreeterClient.GreeterClient
+- uid: Grpc.Core.ChannelBase
+  commentId: T:Grpc.Core.ChannelBase
+  parent: Grpc.Core
+  isExternal: true
+  name: ChannelBase
+  nameWithType: ChannelBase
+  fullName: Grpc.Core.ChannelBase
+- uid: Grpc.Core.CallInvoker
+  commentId: T:Grpc.Core.CallInvoker
+  parent: Grpc.Core
+  isExternal: true
+  name: CallInvoker
+  nameWithType: CallInvoker
+  fullName: Grpc.Core.CallInvoker
+- uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+  commentId: T:Grpc.Core.ClientBase.ClientBaseConfiguration
+  parent: Grpc.Core
+  isExternal: true
+  name: ClientBase.ClientBaseConfiguration
+  nameWithType: ClientBase.ClientBaseConfiguration
+  fullName: Grpc.Core.ClientBase.ClientBaseConfiguration
+- uid: Mix.Portal.Greeter.GreeterClient.SayHello*
+  commentId: Overload:Mix.Portal.Greeter.GreeterClient.SayHello
+  name: SayHello
+  nameWithType: Greeter.GreeterClient.SayHello
+  fullName: Mix.Portal.Greeter.GreeterClient.SayHello
+- uid: Mix.Portal.HelloRequest
+  commentId: T:Mix.Portal.HelloRequest
+  parent: Mix.Portal
+  name: HelloRequest
+  nameWithType: HelloRequest
+  fullName: Mix.Portal.HelloRequest
+- uid: Grpc.Core.Metadata
+  commentId: T:Grpc.Core.Metadata
+  parent: Grpc.Core
+  isExternal: true
+  name: Metadata
+  nameWithType: Metadata
+  fullName: Grpc.Core.Metadata
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Mix.Portal.HelloReply
+  commentId: T:Mix.Portal.HelloReply
+  parent: Mix.Portal
+  name: HelloReply
+  nameWithType: HelloReply
+  fullName: Mix.Portal.HelloReply
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: Grpc.Core.CallOptions
+  commentId: T:Grpc.Core.CallOptions
+  parent: Grpc.Core
+  isExternal: true
+  name: CallOptions
+  nameWithType: CallOptions
+  fullName: Grpc.Core.CallOptions
+- uid: Mix.Portal.Greeter.GreeterClient.SayHelloAsync*
+  commentId: Overload:Mix.Portal.Greeter.GreeterClient.SayHelloAsync
+  name: SayHelloAsync
+  nameWithType: Greeter.GreeterClient.SayHelloAsync
+  fullName: Mix.Portal.Greeter.GreeterClient.SayHelloAsync
+- uid: Grpc.Core.AsyncUnaryCall{Mix.Portal.HelloReply}
+  commentId: T:Grpc.Core.AsyncUnaryCall{Mix.Portal.HelloReply}
+  parent: Grpc.Core
+  definition: Grpc.Core.AsyncUnaryCall`1
+  name: AsyncUnaryCall<HelloReply>
+  nameWithType: AsyncUnaryCall<HelloReply>
+  fullName: Grpc.Core.AsyncUnaryCall<Mix.Portal.HelloReply>
+  nameWithType.vb: AsyncUnaryCall(Of HelloReply)
+  fullName.vb: Grpc.Core.AsyncUnaryCall(Of Mix.Portal.HelloReply)
+  name.vb: AsyncUnaryCall(Of HelloReply)
+  spec.csharp:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    nameWithType: AsyncUnaryCall
+    fullName: Grpc.Core.AsyncUnaryCall
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Portal.HelloReply
+    name: HelloReply
+    nameWithType: HelloReply
+    fullName: Mix.Portal.HelloReply
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    nameWithType: AsyncUnaryCall
+    fullName: Grpc.Core.AsyncUnaryCall
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Portal.HelloReply
+    name: HelloReply
+    nameWithType: HelloReply
+    fullName: Mix.Portal.HelloReply
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Grpc.Core.AsyncUnaryCall`1
+  commentId: T:Grpc.Core.AsyncUnaryCall`1
+  isExternal: true
+  name: AsyncUnaryCall<TResponse>
+  nameWithType: AsyncUnaryCall<TResponse>
+  fullName: Grpc.Core.AsyncUnaryCall<TResponse>
+  nameWithType.vb: AsyncUnaryCall(Of TResponse)
+  fullName.vb: Grpc.Core.AsyncUnaryCall(Of TResponse)
+  name.vb: AsyncUnaryCall(Of TResponse)
+  spec.csharp:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    nameWithType: AsyncUnaryCall
+    fullName: Grpc.Core.AsyncUnaryCall
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResponse
+    nameWithType: TResponse
+    fullName: TResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Grpc.Core.AsyncUnaryCall`1
+    name: AsyncUnaryCall
+    nameWithType: AsyncUnaryCall
+    fullName: Grpc.Core.AsyncUnaryCall
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResponse
+    nameWithType: TResponse
+    fullName: TResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  commentId: M:Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  parent: Grpc.Core.ClientBase{Mix.Portal.Greeter.GreeterClient}
+  definition: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  name: NewInstance(ClientBase.ClientBaseConfiguration)
+  nameWithType: ClientBase<Greeter.GreeterClient>.NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName: Grpc.Core.ClientBase<Mix.Portal.Greeter.GreeterClient>.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  nameWithType.vb: ClientBase(Of Greeter.GreeterClient).NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName.vb: Grpc.Core.ClientBase(Of Mix.Portal.Greeter.GreeterClient).NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+    name: NewInstance
+    nameWithType: ClientBase<Greeter.GreeterClient>.NewInstance
+    fullName: Grpc.Core.ClientBase<Mix.Portal.Greeter.GreeterClient>.NewInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBase.ClientBaseConfiguration
+    nameWithType: ClientBase.ClientBaseConfiguration
+    fullName: Grpc.Core.ClientBase.ClientBaseConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+    name: NewInstance
+    nameWithType: ClientBase(Of Greeter.GreeterClient).NewInstance
+    fullName: Grpc.Core.ClientBase(Of Mix.Portal.Greeter.GreeterClient).NewInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBase.ClientBaseConfiguration
+    nameWithType: ClientBase.ClientBaseConfiguration
+    fullName: Grpc.Core.ClientBase.ClientBaseConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Greeter.GreeterClient.NewInstance*
+  commentId: Overload:Mix.Portal.Greeter.GreeterClient.NewInstance
+  name: NewInstance
+  nameWithType: Greeter.GreeterClient.NewInstance
+  fullName: Mix.Portal.Greeter.GreeterClient.NewInstance
+- uid: Mix.Portal.Greeter.GreeterClient
+  commentId: T:Mix.Portal.Greeter.GreeterClient
+  parent: Mix.Portal
+  name: Greeter.GreeterClient
+  nameWithType: Greeter.GreeterClient
+  fullName: Mix.Portal.Greeter.GreeterClient
+- uid: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  commentId: M:Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  isExternal: true
+  name: NewInstance(ClientBase.ClientBaseConfiguration)
+  nameWithType: ClientBase<T>.NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName: Grpc.Core.ClientBase<T>.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  nameWithType.vb: ClientBase(Of T).NewInstance(ClientBase.ClientBaseConfiguration)
+  fullName.vb: Grpc.Core.ClientBase(Of T).NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+  spec.csharp:
+  - uid: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+    name: NewInstance
+    nameWithType: ClientBase<T>.NewInstance
+    fullName: Grpc.Core.ClientBase<T>.NewInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBase.ClientBaseConfiguration
+    nameWithType: ClientBase.ClientBaseConfiguration
+    fullName: Grpc.Core.ClientBase.ClientBaseConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Grpc.Core.ClientBase`1.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)
+    name: NewInstance
+    nameWithType: ClientBase(Of T).NewInstance
+    fullName: Grpc.Core.ClientBase(Of T).NewInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.ClientBase.ClientBaseConfiguration
+    name: ClientBase.ClientBaseConfiguration
+    nameWithType: ClientBase.ClientBaseConfiguration
+    fullName: Grpc.Core.ClientBase.ClientBaseConfiguration
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

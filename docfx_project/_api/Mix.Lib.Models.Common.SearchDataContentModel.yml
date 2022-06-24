@@ -1,0 +1,1439 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Models.Common.SearchDataContentModel
+  commentId: T:Mix.Lib.Models.Common.SearchDataContentModel
+  id: SearchDataContentModel
+  parent: Mix.Lib.Models.Common
+  children:
+  - Mix.Lib.Models.Common.SearchDataContentModel.#ctor(System.Int32)
+  - Mix.Lib.Models.Common.SearchDataContentModel.#ctor(System.Int32,SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  - Mix.Lib.Models.Common.SearchDataContentModel.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  - Mix.Lib.Models.Common.SearchDataContentModel.Fields
+  - Mix.Lib.Models.Common.SearchDataContentModel.GuidParentId
+  - Mix.Lib.Models.Common.SearchDataContentModel.IntParentId
+  - Mix.Lib.Models.Common.SearchDataContentModel.IsGroup
+  - Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseId
+  - Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseName
+  - Mix.Lib.Models.Common.SearchDataContentModel.ParentId
+  langs:
+  - csharp
+  - vb
+  name: SearchDataContentModel
+  nameWithType: SearchDataContentModel
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SearchDataContentModel
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 4
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: 'public class SearchDataContentModel : SearchQueryModel<MixDataContent, Guid>'
+    content.vb: >-
+      Public Class SearchDataContentModel
+          Inherits SearchQueryModel(Of MixDataContent, Guid)
+  inheritance:
+  - System.Object
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  inheritedMembers:
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Keyword
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Culture
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.FromDate
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.ToDate
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Status
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.SearchMethod
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Columns
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.SearchColumns
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.MixTenantId
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.PagingData
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Predicate
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.AndPredicate
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.OrPredicate
+  - Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.#ctor(System.Int32)
+  commentId: M:Mix.Lib.Models.Common.SearchDataContentModel.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: SearchDataContentModel(Int32)
+  nameWithType: SearchDataContentModel.SearchDataContentModel(Int32)
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.SearchDataContentModel(System.Int32)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 6
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public SearchDataContentModel(int tenantId)
+    parameters:
+    - id: tenantId
+      type: System.Int32
+    content.vb: Public Sub New(tenantId As Integer)
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.#ctor(System.Int32,SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Mix.Lib.Models.Common.SearchDataContentModel.#ctor(System.Int32,SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  id: '#ctor(System.Int32,SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)'
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: SearchDataContentModel(Int32, SearchRequestDto, HttpRequest)
+  nameWithType: SearchDataContentModel.SearchDataContentModel(Int32, SearchRequestDto, HttpRequest)
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.SearchDataContentModel(System.Int32, SearchRequestDto, Microsoft.AspNetCore.Http.HttpRequest)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 11
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public SearchDataContentModel(int tenantId, SearchRequestDto req, HttpRequest httpRequest)
+    parameters:
+    - id: tenantId
+      type: System.Int32
+    - id: req
+      type: SearchRequestDto
+    - id: httpRequest
+      type: Microsoft.AspNetCore.Http.HttpRequest
+    content.vb: Public Sub New(tenantId As Integer, req As SearchRequestDto, httpRequest As HttpRequest)
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.ParentId
+  commentId: P:Mix.Lib.Models.Common.SearchDataContentModel.ParentId
+  id: ParentId
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: ParentId
+  nameWithType: SearchDataContentModel.ParentId
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.ParentId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ParentId
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 33
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public string ParentId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ParentId As String
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.ParentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.IntParentId
+  commentId: P:Mix.Lib.Models.Common.SearchDataContentModel.IntParentId
+  id: IntParentId
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: IntParentId
+  nameWithType: SearchDataContentModel.IntParentId
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.IntParentId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IntParentId
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 34
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public int? IntParentId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property IntParentId As Integer?
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.IntParentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.GuidParentId
+  commentId: P:Mix.Lib.Models.Common.SearchDataContentModel.GuidParentId
+  id: GuidParentId
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: GuidParentId
+  nameWithType: SearchDataContentModel.GuidParentId
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.GuidParentId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GuidParentId
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 35
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public Guid? GuidParentId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Guid}
+    content.vb: Public Property GuidParentId As Guid?
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.GuidParentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseId
+  commentId: P:Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseId
+  id: MixDatabaseId
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseId
+  nameWithType: SearchDataContentModel.MixDatabaseId
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDatabaseId
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 36
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public int MixDatabaseId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MixDatabaseId As Integer
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseName
+  commentId: P:Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseName
+  id: MixDatabaseName
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseName
+  nameWithType: SearchDataContentModel.MixDatabaseName
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseName
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDatabaseName
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 37
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public string MixDatabaseName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MixDatabaseName As String
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.IsGroup
+  commentId: P:Mix.Lib.Models.Common.SearchDataContentModel.IsGroup
+  id: IsGroup
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: IsGroup
+  nameWithType: SearchDataContentModel.IsGroup
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.IsGroup
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IsGroup
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 38
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public bool IsGroup { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsGroup As Boolean
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.IsGroup*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.Fields
+  commentId: P:Mix.Lib.Models.Common.SearchDataContentModel.Fields
+  id: Fields
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: SearchDataContentModel.Fields
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.Fields
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Fields
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 39
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: public List<SearchContentValueModel> Fields { get; set; }
+    parameters: []
+    return:
+      type: List{Mix.Lib.Models.Common.SearchContentValueModel}
+    content.vb: Public Property Fields As List(Of SearchContentValueModel)
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.Fields*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Mix.Lib.Models.Common.SearchDataContentModel.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  id: BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Mix.Lib.Models.Common.SearchDataContentModel
+  langs:
+  - csharp
+  - vb
+  name: BuildAndPredicate(SearchRequestDto, HttpRequest)
+  nameWithType: SearchDataContentModel.BuildAndPredicate(SearchRequestDto, HttpRequest)
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.BuildAndPredicate(SearchRequestDto, Microsoft.AspNetCore.Http.HttpRequest)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: BuildAndPredicate
+    path: ../../mix.core/src/platform/mix.library/Models/Common/SearchDataContentModel.cs
+    startLine: 42
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Models.Common
+  syntax:
+    content: protected override void BuildAndPredicate(SearchRequestDto req, HttpRequest request)
+    parameters:
+    - id: req
+      type: SearchRequestDto
+    - id: request
+      type: Microsoft.AspNetCore.Http.HttpRequest
+    content.vb: Protected Overrides Sub BuildAndPredicate(req As SearchRequestDto, request As HttpRequest)
+  overridden: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  overload: Mix.Lib.Models.Common.SearchDataContentModel.BuildAndPredicate*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Mix.Lib.Models.Common
+  commentId: N:Mix.Lib.Models.Common
+  name: Mix.Lib.Models.Common
+  nameWithType: Mix.Lib.Models.Common
+  fullName: Mix.Lib.Models.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  commentId: T:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  parent: Mix.Lib.Models.Common
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2
+  name: SearchQueryModel<MixDataContent, Guid>
+  nameWithType: SearchQueryModel<MixDataContent, Guid>
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid)
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid)
+  name.vb: SearchQueryModel(Of MixDataContent, Guid)
+  spec.csharp:
+  - uid: Mix.Lib.Models.Common.SearchQueryModel`2
+    name: SearchQueryModel
+    nameWithType: SearchQueryModel
+    fullName: Mix.Lib.Models.Common.SearchQueryModel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDataContent
+    name: MixDataContent
+    nameWithType: MixDataContent
+    fullName: MixDataContent
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Lib.Models.Common.SearchQueryModel`2
+    name: SearchQueryModel
+    nameWithType: SearchQueryModel
+    fullName: Mix.Lib.Models.Common.SearchQueryModel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDataContent
+    name: MixDataContent
+    nameWithType: MixDataContent
+    fullName: MixDataContent
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Keyword
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Keyword
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.Keyword
+  name: Keyword
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.Keyword
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.Keyword
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).Keyword
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).Keyword
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Culture
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Culture
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.Culture
+  name: Culture
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.Culture
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.Culture
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).Culture
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).Culture
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.FromDate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.FromDate
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.FromDate
+  name: FromDate
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.FromDate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.FromDate
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).FromDate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).FromDate
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.ToDate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.ToDate
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.ToDate
+  name: ToDate
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.ToDate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.ToDate
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).ToDate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).ToDate
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Status
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Status
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.Status
+  name: Status
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.Status
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.Status
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).Status
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).Status
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.SearchMethod
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.SearchMethod
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.SearchMethod
+  name: SearchMethod
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.SearchMethod
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.SearchMethod
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).SearchMethod
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).SearchMethod
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Columns
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Columns
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.Columns
+  name: Columns
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.Columns
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.Columns
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).Columns
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).Columns
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.SearchColumns
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.SearchColumns
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.SearchColumns
+  name: SearchColumns
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.SearchColumns
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.SearchColumns
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).SearchColumns
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).SearchColumns
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.MixTenantId
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.MixTenantId
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.MixTenantId
+  name: MixTenantId
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.MixTenantId
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.MixTenantId
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).MixTenantId
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).MixTenantId
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.PagingData
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.PagingData
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.PagingData
+  name: PagingData
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.PagingData
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.PagingData
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).PagingData
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).PagingData
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Predicate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.Predicate
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.Predicate
+  name: Predicate
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.Predicate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.Predicate
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).Predicate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).Predicate
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.AndPredicate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.AndPredicate
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.AndPredicate
+  name: AndPredicate
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.AndPredicate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.AndPredicate
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).AndPredicate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).AndPredicate
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.OrPredicate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.OrPredicate
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.OrPredicate
+  name: OrPredicate
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.OrPredicate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.OrPredicate
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).OrPredicate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).OrPredicate
+- uid: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  parent: Mix.Lib.Models.Common.SearchQueryModel{MixDataContent,Guid}
+  definition: Mix.Lib.Models.Common.SearchQueryModel`2.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  name: BuildAndPredicate(SearchRequestDto, HttpRequest)
+  nameWithType: SearchQueryModel<MixDataContent, Guid>.BuildAndPredicate(SearchRequestDto, HttpRequest)
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.BuildAndPredicate(SearchRequestDto, Microsoft.AspNetCore.Http.HttpRequest)
+  nameWithType.vb: SearchQueryModel(Of MixDataContent, Guid).BuildAndPredicate(SearchRequestDto, HttpRequest)
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).BuildAndPredicate(SearchRequestDto, Microsoft.AspNetCore.Http.HttpRequest)
+  spec.csharp:
+  - uid: Mix.Lib.Models.Common.SearchQueryModel`2.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+    name: BuildAndPredicate
+    nameWithType: SearchQueryModel<MixDataContent, Guid>.BuildAndPredicate
+    fullName: Mix.Lib.Models.Common.SearchQueryModel<MixDataContent, Guid>.BuildAndPredicate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchRequestDto
+    name: SearchRequestDto
+    nameWithType: SearchRequestDto
+    fullName: SearchRequestDto
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Http.HttpRequest
+    name: HttpRequest
+    nameWithType: HttpRequest
+    fullName: Microsoft.AspNetCore.Http.HttpRequest
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Models.Common.SearchQueryModel`2.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+    name: BuildAndPredicate
+    nameWithType: SearchQueryModel(Of MixDataContent, Guid).BuildAndPredicate
+    fullName: Mix.Lib.Models.Common.SearchQueryModel(Of MixDataContent, Guid).BuildAndPredicate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchRequestDto
+    name: SearchRequestDto
+    nameWithType: SearchRequestDto
+    fullName: SearchRequestDto
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Http.HttpRequest
+    name: HttpRequest
+    nameWithType: HttpRequest
+    fullName: Microsoft.AspNetCore.Http.HttpRequest
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2
+  commentId: T:Mix.Lib.Models.Common.SearchQueryModel`2
+  name: SearchQueryModel<TEntity, TPrimaryKey>
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey)
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey)
+  name.vb: SearchQueryModel(Of TEntity, TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Lib.Models.Common.SearchQueryModel`2
+    name: SearchQueryModel
+    nameWithType: SearchQueryModel
+    fullName: Mix.Lib.Models.Common.SearchQueryModel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Lib.Models.Common.SearchQueryModel`2
+    name: SearchQueryModel
+    nameWithType: SearchQueryModel
+    fullName: Mix.Lib.Models.Common.SearchQueryModel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.Keyword
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.Keyword
+  name: Keyword
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.Keyword
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.Keyword
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).Keyword
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).Keyword
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.Culture
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.Culture
+  name: Culture
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.Culture
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.Culture
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).Culture
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).Culture
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.FromDate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.FromDate
+  name: FromDate
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.FromDate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.FromDate
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).FromDate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).FromDate
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.ToDate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.ToDate
+  name: ToDate
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.ToDate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.ToDate
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).ToDate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).ToDate
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.Status
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.Status
+  name: Status
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.Status
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.Status
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).Status
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).Status
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.SearchMethod
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.SearchMethod
+  name: SearchMethod
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.SearchMethod
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.SearchMethod
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).SearchMethod
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).SearchMethod
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.Columns
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.Columns
+  name: Columns
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.Columns
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.Columns
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).Columns
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).Columns
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.SearchColumns
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.SearchColumns
+  name: SearchColumns
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.SearchColumns
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.SearchColumns
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).SearchColumns
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).SearchColumns
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.MixTenantId
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.MixTenantId
+  name: MixTenantId
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.MixTenantId
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.MixTenantId
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).MixTenantId
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).MixTenantId
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.PagingData
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.PagingData
+  name: PagingData
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.PagingData
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.PagingData
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).PagingData
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).PagingData
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.Predicate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.Predicate
+  name: Predicate
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.Predicate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.Predicate
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).Predicate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).Predicate
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.AndPredicate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.AndPredicate
+  name: AndPredicate
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.AndPredicate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.AndPredicate
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).AndPredicate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).AndPredicate
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.OrPredicate
+  commentId: P:Mix.Lib.Models.Common.SearchQueryModel`2.OrPredicate
+  name: OrPredicate
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.OrPredicate
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.OrPredicate
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).OrPredicate
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).OrPredicate
+- uid: Mix.Lib.Models.Common.SearchQueryModel`2.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  commentId: M:Mix.Lib.Models.Common.SearchQueryModel`2.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+  isExternal: true
+  name: BuildAndPredicate(SearchRequestDto, HttpRequest)
+  nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.BuildAndPredicate(SearchRequestDto, HttpRequest)
+  fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.BuildAndPredicate(SearchRequestDto, Microsoft.AspNetCore.Http.HttpRequest)
+  nameWithType.vb: SearchQueryModel(Of TEntity, TPrimaryKey).BuildAndPredicate(SearchRequestDto, HttpRequest)
+  fullName.vb: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).BuildAndPredicate(SearchRequestDto, Microsoft.AspNetCore.Http.HttpRequest)
+  spec.csharp:
+  - uid: Mix.Lib.Models.Common.SearchQueryModel`2.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+    name: BuildAndPredicate
+    nameWithType: SearchQueryModel<TEntity, TPrimaryKey>.BuildAndPredicate
+    fullName: Mix.Lib.Models.Common.SearchQueryModel<TEntity, TPrimaryKey>.BuildAndPredicate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchRequestDto
+    name: SearchRequestDto
+    nameWithType: SearchRequestDto
+    fullName: SearchRequestDto
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Http.HttpRequest
+    name: HttpRequest
+    nameWithType: HttpRequest
+    fullName: Microsoft.AspNetCore.Http.HttpRequest
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Models.Common.SearchQueryModel`2.BuildAndPredicate(SearchRequestDto,Microsoft.AspNetCore.Http.HttpRequest)
+    name: BuildAndPredicate
+    nameWithType: SearchQueryModel(Of TEntity, TPrimaryKey).BuildAndPredicate
+    fullName: Mix.Lib.Models.Common.SearchQueryModel(Of TEntity, TPrimaryKey).BuildAndPredicate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchRequestDto
+    name: SearchRequestDto
+    nameWithType: SearchRequestDto
+    fullName: SearchRequestDto
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Http.HttpRequest
+    name: HttpRequest
+    nameWithType: HttpRequest
+    fullName: Microsoft.AspNetCore.Http.HttpRequest
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.#ctor*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.#ctor
+  name: SearchDataContentModel
+  nameWithType: SearchDataContentModel.SearchDataContentModel
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.SearchDataContentModel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SearchRequestDto
+  isExternal: true
+  name: SearchRequestDto
+  nameWithType: SearchRequestDto
+  fullName: SearchRequestDto
+- uid: Microsoft.AspNetCore.Http.HttpRequest
+  commentId: T:Microsoft.AspNetCore.Http.HttpRequest
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: HttpRequest
+  nameWithType: HttpRequest
+  fullName: Microsoft.AspNetCore.Http.HttpRequest
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.ParentId*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.ParentId
+  name: ParentId
+  nameWithType: SearchDataContentModel.ParentId
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.ParentId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.IntParentId*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.IntParentId
+  name: IntParentId
+  nameWithType: SearchDataContentModel.IntParentId
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.IntParentId
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.GuidParentId*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.GuidParentId
+  name: GuidParentId
+  nameWithType: SearchDataContentModel.GuidParentId
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.GuidParentId
+- uid: System.Nullable{Guid}
+  commentId: T:System.Nullable{Guid}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Guid>
+  nameWithType: Nullable<Guid>
+  fullName: System.Nullable<Guid>
+  nameWithType.vb: Nullable(Of Guid)
+  fullName.vb: System.Nullable(Of Guid)
+  name.vb: Nullable(Of Guid)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseId*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseId
+  name: MixDatabaseId
+  nameWithType: SearchDataContentModel.MixDatabaseId
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseId
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseName*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseName
+  name: MixDatabaseName
+  nameWithType: SearchDataContentModel.MixDatabaseName
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.MixDatabaseName
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.IsGroup*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.IsGroup
+  name: IsGroup
+  nameWithType: SearchDataContentModel.IsGroup
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.IsGroup
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.Fields*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.Fields
+  name: Fields
+  nameWithType: SearchDataContentModel.Fields
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.Fields
+- uid: List{Mix.Lib.Models.Common.SearchContentValueModel}
+  commentId: '!:List{Mix.Lib.Models.Common.SearchContentValueModel}'
+  definition: List`1
+  name: List<SearchContentValueModel>
+  nameWithType: List<SearchContentValueModel>
+  fullName: List<Mix.Lib.Models.Common.SearchContentValueModel>
+  nameWithType.vb: List(Of SearchContentValueModel)
+  fullName.vb: List(Of Mix.Lib.Models.Common.SearchContentValueModel)
+  name.vb: List(Of SearchContentValueModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Lib.Models.Common.SearchContentValueModel
+    name: SearchContentValueModel
+    nameWithType: SearchContentValueModel
+    fullName: Mix.Lib.Models.Common.SearchContentValueModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Lib.Models.Common.SearchContentValueModel
+    name: SearchContentValueModel
+    nameWithType: SearchContentValueModel
+    fullName: Mix.Lib.Models.Common.SearchContentValueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Models.Common.SearchDataContentModel.BuildAndPredicate*
+  commentId: Overload:Mix.Lib.Models.Common.SearchDataContentModel.BuildAndPredicate
+  name: BuildAndPredicate
+  nameWithType: SearchDataContentModel.BuildAndPredicate
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel.BuildAndPredicate

@@ -1,0 +1,409 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Services.CultureService
+  commentId: T:Mix.Lib.Services.CultureService
+  id: CultureService
+  parent: Mix.Lib.Services
+  children:
+  - Mix.Lib.Services.CultureService.#ctor(IServiceProvider)
+  - Mix.Lib.Services.CultureService.CheckValidCulture(System.String)
+  - Mix.Lib.Services.CultureService.Cultures
+  - Mix.Lib.Services.CultureService.DefaultCulture
+  - Mix.Lib.Services.CultureService.LoadCulture(System.String)
+  - Mix.Lib.Services.CultureService.LoadCultures(MixCmsContext)
+  langs:
+  - csharp
+  - vb
+  name: CultureService
+  nameWithType: CultureService
+  fullName: Mix.Lib.Services.CultureService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Services/CultureService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CultureService
+    path: ../../mix.core/src/platform/mix.library/Services/CultureService.cs
+    startLine: 5
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: 'public class CultureService : JsonConfigurationServiceBase'
+    content.vb: >-
+      Public Class CultureService
+          Inherits JsonConfigurationServiceBase
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Services.CultureService.#ctor(IServiceProvider)
+  commentId: M:Mix.Lib.Services.CultureService.#ctor(IServiceProvider)
+  id: '#ctor(IServiceProvider)'
+  parent: Mix.Lib.Services.CultureService
+  langs:
+  - csharp
+  - vb
+  name: CultureService(IServiceProvider)
+  nameWithType: CultureService.CultureService(IServiceProvider)
+  fullName: Mix.Lib.Services.CultureService.CultureService(IServiceProvider)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Services/CultureService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Services/CultureService.cs
+    startLine: 8
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public CultureService(IServiceProvider servicesProvider)
+    parameters:
+    - id: servicesProvider
+      type: IServiceProvider
+    content.vb: Public Sub New(servicesProvider As IServiceProvider)
+  overload: Mix.Lib.Services.CultureService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.CultureService.Cultures
+  commentId: P:Mix.Lib.Services.CultureService.Cultures
+  id: Cultures
+  parent: Mix.Lib.Services.CultureService
+  langs:
+  - csharp
+  - vb
+  name: Cultures
+  nameWithType: CultureService.Cultures
+  fullName: Mix.Lib.Services.CultureService.Cultures
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Services/CultureService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Cultures
+    path: ../../mix.core/src/platform/mix.library/Services/CultureService.cs
+    startLine: 19
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public List<MixCulture> Cultures { get; set; }
+    parameters: []
+    return:
+      type: List{MixCulture}
+    content.vb: Public Property Cultures As List(Of MixCulture)
+  overload: Mix.Lib.Services.CultureService.Cultures*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.CultureService.DefaultCulture
+  commentId: P:Mix.Lib.Services.CultureService.DefaultCulture
+  id: DefaultCulture
+  parent: Mix.Lib.Services.CultureService
+  langs:
+  - csharp
+  - vb
+  name: DefaultCulture
+  nameWithType: CultureService.DefaultCulture
+  fullName: Mix.Lib.Services.CultureService.DefaultCulture
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Services/CultureService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DefaultCulture
+    path: ../../mix.core/src/platform/mix.library/Services/CultureService.cs
+    startLine: 20
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public MixCulture DefaultCulture { get; }
+    parameters: []
+    return:
+      type: MixCulture
+    content.vb: Public ReadOnly Property DefaultCulture As MixCulture
+  overload: Mix.Lib.Services.CultureService.DefaultCulture*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.Lib.Services.CultureService.CheckValidCulture(System.String)
+  commentId: M:Mix.Lib.Services.CultureService.CheckValidCulture(System.String)
+  id: CheckValidCulture(System.String)
+  parent: Mix.Lib.Services.CultureService
+  langs:
+  - csharp
+  - vb
+  name: CheckValidCulture(String)
+  nameWithType: CultureService.CheckValidCulture(String)
+  fullName: Mix.Lib.Services.CultureService.CheckValidCulture(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/CultureService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CheckValidCulture
+    path: ../../mix.core/src/platform/mix.library/Services/CultureService.cs
+    startLine: 22
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public bool CheckValidCulture(string specificulture)
+    parameters:
+    - id: specificulture
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function CheckValidCulture(specificulture As String) As Boolean
+  overload: Mix.Lib.Services.CultureService.CheckValidCulture*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.CultureService.LoadCulture(System.String)
+  commentId: M:Mix.Lib.Services.CultureService.LoadCulture(System.String)
+  id: LoadCulture(System.String)
+  parent: Mix.Lib.Services.CultureService
+  langs:
+  - csharp
+  - vb
+  name: LoadCulture(String)
+  nameWithType: CultureService.LoadCulture(String)
+  fullName: Mix.Lib.Services.CultureService.LoadCulture(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/CultureService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadCulture
+    path: ../../mix.core/src/platform/mix.library/Services/CultureService.cs
+    startLine: 31
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public MixCulture LoadCulture(string specificulture)
+    parameters:
+    - id: specificulture
+      type: System.String
+    return:
+      type: MixCulture
+    content.vb: Public Function LoadCulture(specificulture As String) As MixCulture
+  overload: Mix.Lib.Services.CultureService.LoadCulture*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.CultureService.LoadCultures(MixCmsContext)
+  commentId: M:Mix.Lib.Services.CultureService.LoadCultures(MixCmsContext)
+  id: LoadCultures(MixCmsContext)
+  parent: Mix.Lib.Services.CultureService
+  langs:
+  - csharp
+  - vb
+  name: LoadCultures(MixCmsContext)
+  nameWithType: CultureService.LoadCultures(MixCmsContext)
+  fullName: Mix.Lib.Services.CultureService.LoadCultures(MixCmsContext)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/CultureService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadCultures
+    path: ../../mix.core/src/platform/mix.library/Services/CultureService.cs
+    startLine: 36
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public void LoadCultures(MixCmsContext ctx = null)
+    parameters:
+    - id: ctx
+      type: MixCmsContext
+    content.vb: Public Sub LoadCultures(ctx As MixCmsContext = Nothing)
+  overload: Mix.Lib.Services.CultureService.LoadCultures*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Services.CultureService.#ctor*
+  commentId: Overload:Mix.Lib.Services.CultureService.#ctor
+  name: CultureService
+  nameWithType: CultureService.CultureService
+  fullName: Mix.Lib.Services.CultureService.CultureService
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: Mix.Lib.Services.CultureService.Cultures*
+  commentId: Overload:Mix.Lib.Services.CultureService.Cultures
+  name: Cultures
+  nameWithType: CultureService.Cultures
+  fullName: Mix.Lib.Services.CultureService.Cultures
+- uid: List{MixCulture}
+  commentId: '!:List{MixCulture}'
+  definition: List`1
+  name: List<MixCulture>
+  nameWithType: List<MixCulture>
+  fullName: List<MixCulture>
+  nameWithType.vb: List(Of MixCulture)
+  fullName.vb: List(Of MixCulture)
+  name.vb: List(Of MixCulture)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.CultureService.DefaultCulture*
+  commentId: Overload:Mix.Lib.Services.CultureService.DefaultCulture
+  name: DefaultCulture
+  nameWithType: CultureService.DefaultCulture
+  fullName: Mix.Lib.Services.CultureService.DefaultCulture
+- uid: MixCulture
+  isExternal: true
+  name: MixCulture
+  nameWithType: MixCulture
+  fullName: MixCulture
+- uid: Mix.Lib.Services.CultureService.CheckValidCulture*
+  commentId: Overload:Mix.Lib.Services.CultureService.CheckValidCulture
+  name: CheckValidCulture
+  nameWithType: CultureService.CheckValidCulture
+  fullName: Mix.Lib.Services.CultureService.CheckValidCulture
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Lib.Services.CultureService.LoadCulture*
+  commentId: Overload:Mix.Lib.Services.CultureService.LoadCulture
+  name: LoadCulture
+  nameWithType: CultureService.LoadCulture
+  fullName: Mix.Lib.Services.CultureService.LoadCulture
+- uid: Mix.Lib.Services.CultureService.LoadCultures*
+  commentId: Overload:Mix.Lib.Services.CultureService.LoadCultures
+  name: LoadCultures
+  nameWithType: CultureService.LoadCultures
+  fullName: Mix.Lib.Services.CultureService.LoadCultures
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext

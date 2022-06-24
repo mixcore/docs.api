@@ -1,0 +1,3624 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Services.MixIdentityService
+  commentId: T:Mix.Lib.Services.MixIdentityService
+  id: MixIdentityService
+  parent: Mix.Lib.Services
+  children:
+  - Mix.Lib.Services.MixIdentityService.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser},Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},AuthConfigService,UnitOfWorkInfo{MixCmsContext},UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext},MixCacheService,Mix.Communicator.Services.FirebaseService,Mix.Lib.Services.MixDataService,Mix.Lib.Services.MixService)
+  - Mix.Lib.Services.MixIdentityService._accountUow
+  - Mix.Lib.Services.MixIdentityService._authConfigService
+  - Mix.Lib.Services.MixIdentityService._cacheService
+  - Mix.Lib.Services.MixIdentityService._cmsContext
+  - Mix.Lib.Services.MixIdentityService._cmsUow
+  - Mix.Lib.Services.MixIdentityService._firebaseService
+  - Mix.Lib.Services.MixIdentityService._mixDataService
+  - Mix.Lib.Services.MixIdentityService._mixService
+  - Mix.Lib.Services.MixIdentityService._refreshTokenRepo
+  - Mix.Lib.Services.MixIdentityService._roleManager
+  - Mix.Lib.Services.MixIdentityService._roleRepo
+  - Mix.Lib.Services.MixIdentityService._signInManager
+  - Mix.Lib.Services.MixIdentityService._userManager
+  - Mix.Lib.Services.MixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+  - Mix.Lib.Services.MixIdentityService.CreateClaim(System.String,System.String)
+  - Mix.Lib.Services.MixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  - Mix.Lib.Services.MixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+  - Mix.Lib.Services.MixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  - Mix.Lib.Services.MixIdentityService.GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+  - Mix.Lib.Services.MixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+  - Mix.Lib.Services.MixIdentityService.GetClaims(System.Security.Claims.ClaimsPrincipal,System.String)
+  - Mix.Lib.Services.MixIdentityService.GetPrincipalFromExpiredToken(System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  - Mix.Lib.Services.MixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  - Mix.Lib.Services.MixIdentityService.GetUserAsync(Guid)
+  - Mix.Lib.Services.MixIdentityService.GetValidationParameters(Mix.Shared.Models.MixAuthenticationConfigurations,System.Boolean)
+  - Mix.Lib.Services.MixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  - Mix.Lib.Services.MixIdentityService.MixTenantId
+  - Mix.Lib.Services.MixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+  - Mix.Lib.Services.MixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  - Mix.Lib.Services.MixIdentityService.Roles
+  - Mix.Lib.Services.MixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  langs:
+  - csharp
+  - vb
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixIdentityService
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 22
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: 'public class MixIdentityService : IMixIdentityService'
+    content.vb: >-
+      Public Class MixIdentityService
+          Implements IMixIdentityService
+  inheritance:
+  - System.Object
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Services.MixIdentityService._accountUow
+  commentId: F:Mix.Lib.Services.MixIdentityService._accountUow
+  id: _accountUow
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _accountUow
+  nameWithType: MixIdentityService._accountUow
+  fullName: Mix.Lib.Services.MixIdentityService._accountUow
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _accountUow
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 24
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly UnitOfWorkInfo _accountUow
+    return:
+      type: UnitOfWorkInfo
+    content.vb: Protected ReadOnly _accountUow As UnitOfWorkInfo
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._cmsUow
+  commentId: F:Mix.Lib.Services.MixIdentityService._cmsUow
+  id: _cmsUow
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _cmsUow
+  nameWithType: MixIdentityService._cmsUow
+  fullName: Mix.Lib.Services.MixIdentityService._cmsUow
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _cmsUow
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 25
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly UnitOfWorkInfo _cmsUow
+    return:
+      type: UnitOfWorkInfo
+    content.vb: Protected ReadOnly _cmsUow As UnitOfWorkInfo
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._cacheService
+  commentId: F:Mix.Lib.Services.MixIdentityService._cacheService
+  id: _cacheService
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _cacheService
+  nameWithType: MixIdentityService._cacheService
+  fullName: Mix.Lib.Services.MixIdentityService._cacheService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _cacheService
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 26
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly MixCacheService _cacheService
+    return:
+      type: MixCacheService
+    content.vb: Protected ReadOnly _cacheService As MixCacheService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._userManager
+  commentId: F:Mix.Lib.Services.MixIdentityService._userManager
+  id: _userManager
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _userManager
+  nameWithType: MixIdentityService._userManager
+  fullName: Mix.Lib.Services.MixIdentityService._userManager
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _userManager
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 27
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly TenantUserManager _userManager
+    return:
+      type: Mix.Lib.Services.TenantUserManager
+    content.vb: Protected ReadOnly _userManager As TenantUserManager
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._signInManager
+  commentId: F:Mix.Lib.Services.MixIdentityService._signInManager
+  id: _signInManager
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _signInManager
+  nameWithType: MixIdentityService._signInManager
+  fullName: Mix.Lib.Services.MixIdentityService._signInManager
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _signInManager
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 28
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly SignInManager<MixUser> _signInManager
+    return:
+      type: Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser}
+    content.vb: Protected ReadOnly _signInManager As SignInManager(Of MixUser)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._roleManager
+  commentId: F:Mix.Lib.Services.MixIdentityService._roleManager
+  id: _roleManager
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _roleManager
+  nameWithType: MixIdentityService._roleManager
+  fullName: Mix.Lib.Services.MixIdentityService._roleManager
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _roleManager
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 29
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly RoleManager<MixRole> _roleManager
+    return:
+      type: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+    content.vb: Protected ReadOnly _roleManager As RoleManager(Of MixRole)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._authConfigService
+  commentId: F:Mix.Lib.Services.MixIdentityService._authConfigService
+  id: _authConfigService
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _authConfigService
+  nameWithType: MixIdentityService._authConfigService
+  fullName: Mix.Lib.Services.MixIdentityService._authConfigService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _authConfigService
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 30
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly AuthConfigService _authConfigService
+    return:
+      type: AuthConfigService
+    content.vb: Protected ReadOnly _authConfigService As AuthConfigService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._firebaseService
+  commentId: F:Mix.Lib.Services.MixIdentityService._firebaseService
+  id: _firebaseService
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _firebaseService
+  nameWithType: MixIdentityService._firebaseService
+  fullName: Mix.Lib.Services.MixIdentityService._firebaseService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _firebaseService
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 31
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly FirebaseService _firebaseService
+    return:
+      type: Mix.Communicator.Services.FirebaseService
+    content.vb: Protected ReadOnly _firebaseService As FirebaseService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._mixService
+  commentId: F:Mix.Lib.Services.MixIdentityService._mixService
+  id: _mixService
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _mixService
+  nameWithType: MixIdentityService._mixService
+  fullName: Mix.Lib.Services.MixIdentityService._mixService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _mixService
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 32
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly MixService _mixService
+    return:
+      type: Mix.Lib.Services.MixService
+    content.vb: Protected ReadOnly _mixService As MixService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._mixDataService
+  commentId: F:Mix.Lib.Services.MixIdentityService._mixDataService
+  id: _mixDataService
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _mixDataService
+  nameWithType: MixIdentityService._mixDataService
+  fullName: Mix.Lib.Services.MixIdentityService._mixDataService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _mixDataService
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 33
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly MixDataService _mixDataService
+    return:
+      type: Mix.Lib.Services.MixDataService
+    content.vb: Protected ReadOnly _mixDataService As MixDataService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._cmsContext
+  commentId: F:Mix.Lib.Services.MixIdentityService._cmsContext
+  id: _cmsContext
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _cmsContext
+  nameWithType: MixIdentityService._cmsContext
+  fullName: Mix.Lib.Services.MixIdentityService._cmsContext
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _cmsContext
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 34
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly MixCmsContext _cmsContext
+    return:
+      type: MixCmsContext
+    content.vb: Protected ReadOnly _cmsContext As MixCmsContext
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._roleRepo
+  commentId: F:Mix.Lib.Services.MixIdentityService._roleRepo
+  id: _roleRepo
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _roleRepo
+  nameWithType: MixIdentityService._roleRepo
+  fullName: Mix.Lib.Services.MixIdentityService._roleRepo
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _roleRepo
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 35
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly Repository<MixCmsAccountContext, AspNetRoles, Guid, RoleViewModel> _roleRepo
+    return:
+      type: Repository{Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Database.Entities.Account.AspNetRoles,Guid,Mix.Identity.ViewModels.RoleViewModel}
+    content.vb: Protected ReadOnly _roleRepo As Repository(Of MixCmsAccountContext, AspNetRoles, Guid, RoleViewModel)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService._refreshTokenRepo
+  commentId: F:Mix.Lib.Services.MixIdentityService._refreshTokenRepo
+  id: _refreshTokenRepo
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: _refreshTokenRepo
+  nameWithType: MixIdentityService._refreshTokenRepo
+  fullName: Mix.Lib.Services.MixIdentityService._refreshTokenRepo
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _refreshTokenRepo
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 36
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly Repository<MixCmsAccountContext, RefreshTokens, Guid, RefreshTokenViewModel> _refreshTokenRepo
+    return:
+      type: Repository{Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Database.Entities.Account.RefreshTokens,Guid,Mix.Identity.ViewModels.RefreshTokenViewModel}
+    content.vb: Protected ReadOnly _refreshTokenRepo As Repository(Of MixCmsAccountContext, RefreshTokens, Guid, RefreshTokenViewModel)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.MixIdentityService.Roles
+  commentId: P:Mix.Lib.Services.MixIdentityService.Roles
+  id: Roles
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: MixIdentityService.Roles
+  fullName: Mix.Lib.Services.MixIdentityService.Roles
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Roles
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 37
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public List<RoleViewModel> Roles { get; set; }
+    parameters: []
+    return:
+      type: List{Mix.Identity.ViewModels.RoleViewModel}
+    content.vb: Public Property Roles As List(Of RoleViewModel)
+  overload: Mix.Lib.Services.MixIdentityService.Roles*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.Roles
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.MixTenantId
+  commentId: P:Mix.Lib.Services.MixIdentityService.MixTenantId
+  id: MixTenantId
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: MixTenantId
+  nameWithType: MixIdentityService.MixTenantId
+  fullName: Mix.Lib.Services.MixIdentityService.MixTenantId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantId
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 38
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected int MixTenantId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Protected Property MixTenantId As Integer
+  overload: Mix.Lib.Services.MixIdentityService.MixTenantId*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: Mix.Lib.Services.MixIdentityService.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser},Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},AuthConfigService,UnitOfWorkInfo{MixCmsContext},UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext},MixCacheService,Mix.Communicator.Services.FirebaseService,Mix.Lib.Services.MixDataService,Mix.Lib.Services.MixService)
+  commentId: M:Mix.Lib.Services.MixIdentityService.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser},Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},AuthConfigService,UnitOfWorkInfo{MixCmsContext},UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext},MixCacheService,Mix.Communicator.Services.FirebaseService,Mix.Lib.Services.MixDataService,Mix.Lib.Services.MixService)
+  id: '#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser},Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},AuthConfigService,UnitOfWorkInfo{MixCmsContext},UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext},MixCacheService,Mix.Communicator.Services.FirebaseService,Mix.Lib.Services.MixDataService,Mix.Lib.Services.MixService)'
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: MixIdentityService(IHttpContextAccessor, TenantUserManager, SignInManager<MixUser>, RoleManager<MixRole>, AuthConfigService, UnitOfWorkInfo<MixCmsContext>, UnitOfWorkInfo<MixCmsAccountContext>, MixCacheService, FirebaseService, MixDataService, MixService)
+  nameWithType: MixIdentityService.MixIdentityService(IHttpContextAccessor, TenantUserManager, SignInManager<MixUser>, RoleManager<MixRole>, AuthConfigService, UnitOfWorkInfo<MixCmsContext>, UnitOfWorkInfo<MixCmsAccountContext>, MixCacheService, FirebaseService, MixDataService, MixService)
+  fullName: Mix.Lib.Services.MixIdentityService.MixIdentityService(Microsoft.AspNetCore.Http.IHttpContextAccessor, Mix.Lib.Services.TenantUserManager, Microsoft.AspNetCore.Identity.SignInManager<Mix.Database.Entities.Account.MixUser>, Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>, AuthConfigService, UnitOfWorkInfo<MixCmsContext>, UnitOfWorkInfo<Mix.Database.Entities.Account.MixCmsAccountContext>, MixCacheService, Mix.Communicator.Services.FirebaseService, Mix.Lib.Services.MixDataService, Mix.Lib.Services.MixService)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 39
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public MixIdentityService(IHttpContextAccessor httpContextAccessor, TenantUserManager userManager, SignInManager<MixUser> signInManager, RoleManager<MixRole> roleManager, AuthConfigService authConfigService, UnitOfWorkInfo<MixCmsContext> cmsUOW, UnitOfWorkInfo<MixCmsAccountContext> accountUOW, MixCacheService cacheService, FirebaseService firebaseService, MixDataService mixDataService, MixService mixService)
+    parameters:
+    - id: httpContextAccessor
+      type: Microsoft.AspNetCore.Http.IHttpContextAccessor
+    - id: userManager
+      type: Mix.Lib.Services.TenantUserManager
+    - id: signInManager
+      type: Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser}
+    - id: roleManager
+      type: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+    - id: authConfigService
+      type: AuthConfigService
+    - id: cmsUOW
+      type: UnitOfWorkInfo{MixCmsContext}
+    - id: accountUOW
+      type: UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext}
+    - id: cacheService
+      type: MixCacheService
+    - id: firebaseService
+      type: Mix.Communicator.Services.FirebaseService
+    - id: mixDataService
+      type: Mix.Lib.Services.MixDataService
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, userManager As TenantUserManager, signInManager As SignInManager(Of MixUser), roleManager As RoleManager(Of MixRole), authConfigService As AuthConfigService, cmsUOW As UnitOfWorkInfo(Of MixCmsContext), accountUOW As UnitOfWorkInfo(Of MixCmsAccountContext), cacheService As MixCacheService, firebaseService As FirebaseService, mixDataService As MixDataService, mixService As MixService)
+  overload: Mix.Lib.Services.MixIdentityService.#ctor*
+  nameWithType.vb: MixIdentityService.MixIdentityService(IHttpContextAccessor, TenantUserManager, SignInManager(Of MixUser), RoleManager(Of MixRole), AuthConfigService, UnitOfWorkInfo(Of MixCmsContext), UnitOfWorkInfo(Of MixCmsAccountContext), MixCacheService, FirebaseService, MixDataService, MixService)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.MixIdentityService.MixIdentityService(Microsoft.AspNetCore.Http.IHttpContextAccessor, Mix.Lib.Services.TenantUserManager, Microsoft.AspNetCore.Identity.SignInManager(Of Mix.Database.Entities.Account.MixUser), Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole), AuthConfigService, UnitOfWorkInfo(Of MixCmsContext), UnitOfWorkInfo(Of Mix.Database.Entities.Account.MixCmsAccountContext), MixCacheService, Mix.Communicator.Services.FirebaseService, Mix.Lib.Services.MixDataService, Mix.Lib.Services.MixService)
+  name.vb: MixIdentityService(IHttpContextAccessor, TenantUserManager, SignInManager(Of MixUser), RoleManager(Of MixRole), AuthConfigService, UnitOfWorkInfo(Of MixCmsContext), UnitOfWorkInfo(Of MixCmsAccountContext), MixCacheService, FirebaseService, MixDataService, MixService)
+- uid: Mix.Lib.Services.MixIdentityService.GetUserAsync(Guid)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GetUserAsync(Guid)
+  id: GetUserAsync(Guid)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GetUserAsync(Guid)
+  nameWithType: MixIdentityService.GetUserAsync(Guid)
+  fullName: Mix.Lib.Services.MixIdentityService.GetUserAsync(Guid)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetUserAsync
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 71
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<MixUserViewModel> GetUserAsync(Guid userId)
+    parameters:
+    - id: userId
+      type: Guid
+    return:
+      type: Task{MixUserViewModel}
+    content.vb: Public Function GetUserAsync(userId As Guid) As Task(Of MixUserViewModel)
+  overload: Mix.Lib.Services.MixIdentityService.GetUserAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  commentId: M:Mix.Lib.Services.MixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  id: Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: Login(LoginViewModel)
+  nameWithType: MixIdentityService.Login(LoginViewModel)
+  fullName: Mix.Lib.Services.MixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Login
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 81
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<JObject> Login(LoginViewModel model)
+    parameters:
+    - id: model
+      type: Mix.Identity.Models.AccountViewModels.LoginViewModel
+    return:
+      type: Task{JObject}
+    content.vb: Public Function Login(model As LoginViewModel) As Task(Of JObject)
+  overload: Mix.Lib.Services.MixIdentityService.Login*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+  id: GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GetAuthData(MixCmsContext, MixUser, Boolean, Int32)
+  nameWithType: MixIdentityService.GetAuthData(MixCmsContext, MixUser, Boolean, Int32)
+  fullName: Mix.Lib.Services.MixIdentityService.GetAuthData(MixCmsContext, Mix.Database.Entities.Account.MixUser, System.Boolean, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetAuthData
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 123
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<JObject> GetAuthData(MixCmsContext context, MixUser user, bool rememberMe, int tenantId)
+    parameters:
+    - id: context
+      type: MixCmsContext
+    - id: user
+      type: Mix.Database.Entities.Account.MixUser
+    - id: rememberMe
+      type: System.Boolean
+    - id: tenantId
+      type: System.Int32
+    return:
+      type: Task{JObject}
+    content.vb: Public Function GetAuthData(context As MixCmsContext, user As MixUser, rememberMe As Boolean, tenantId As Integer) As Task(Of JObject)
+  overload: Mix.Lib.Services.MixIdentityService.GetAuthData*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  id: GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GetToken(GetTokenModel)
+  nameWithType: MixIdentityService.GetToken(GetTokenModel)
+  fullName: Mix.Lib.Services.MixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetToken
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 154
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<JObject> GetToken(GetTokenModel model)
+    parameters:
+    - id: model
+      type: Mix.Identity.Domain.Models.GetTokenModel
+    return:
+      type: Task{JObject}
+    content.vb: Public Function GetToken(model As GetTokenModel) As Task(Of JObject)
+  overload: Mix.Lib.Services.MixIdentityService.GetToken*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Services.MixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+  id: Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: Register(RegisterViewModel, Int32, UnitOfWorkInfo)
+  nameWithType: MixIdentityService.Register(RegisterViewModel, Int32, UnitOfWorkInfo)
+  fullName: Mix.Lib.Services.MixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel, System.Int32, UnitOfWorkInfo)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Register
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 173
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<JObject> Register(RegisterViewModel model, int tenantId, UnitOfWorkInfo _cmsUOW)
+    parameters:
+    - id: model
+      type: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+    - id: tenantId
+      type: System.Int32
+    - id: _cmsUOW
+      type: UnitOfWorkInfo
+    return:
+      type: Task{JObject}
+    content.vb: Public Function Register(model As RegisterViewModel, tenantId As Integer, _cmsUOW As UnitOfWorkInfo) As Task(Of JObject)
+  overload: Mix.Lib.Services.MixIdentityService.Register*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+  id: GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GenerateAccessTokenAsync(MixUser, MixUserViewModel, Boolean, String, String)
+  nameWithType: MixIdentityService.GenerateAccessTokenAsync(MixUser, MixUserViewModel, Boolean, String, String)
+  fullName: Mix.Lib.Services.MixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser, MixUserViewModel, System.Boolean, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GenerateAccessTokenAsync
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 213
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<AccessTokenViewModel> GenerateAccessTokenAsync(MixUser user, MixUserViewModel info, bool isRemember, string aesKey, string rsaPublicKey)
+    parameters:
+    - id: user
+      type: Mix.Database.Entities.Account.MixUser
+    - id: info
+      type: MixUserViewModel
+    - id: isRemember
+      type: System.Boolean
+    - id: aesKey
+      type: System.String
+    - id: rsaPublicKey
+      type: System.String
+    return:
+      type: Task{Mix.Lib.Models.AccessTokenViewModel}
+    content.vb: Public Function GenerateAccessTokenAsync(user As MixUser, info As MixUserViewModel, isRemember As Boolean, aesKey As String, rsaPublicKey As String) As Task(Of AccessTokenViewModel)
+  overload: Mix.Lib.Services.MixIdentityService.GenerateAccessTokenAsync*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  commentId: M:Mix.Lib.Services.MixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  id: ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: ExternalLogin(RegisterExternalBindingModel)
+  nameWithType: MixIdentityService.ExternalLogin(RegisterExternalBindingModel)
+  fullName: Mix.Lib.Services.MixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExternalLogin
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 266
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public virtual Task<JObject> ExternalLogin(RegisterExternalBindingModel model)
+    parameters:
+    - id: model
+      type: Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel
+    return:
+      type: Task{JObject}
+    content.vb: Public Overridable Function ExternalLogin(model As RegisterExternalBindingModel) As Task(Of JObject)
+  overload: Mix.Lib.Services.MixIdentityService.ExternalLogin*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Mix.Lib.Services.MixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  commentId: M:Mix.Lib.Services.MixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  id: RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: RenewTokenAsync(RenewTokenDto)
+  nameWithType: MixIdentityService.RenewTokenAsync(RenewTokenDto)
+  fullName: Mix.Lib.Services.MixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: RenewTokenAsync
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 307
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<JObject> RenewTokenAsync(RenewTokenDto refreshTokenDto)
+    parameters:
+    - id: refreshTokenDto
+      type: Mix.Identity.Dtos.RenewTokenDto
+    return:
+      type: Task{JObject}
+    content.vb: Public Function RenewTokenAsync(refreshTokenDto As RenewTokenDto) As Task(Of JObject)
+  overload: Mix.Lib.Services.MixIdentityService.RenewTokenAsync*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+  commentId: M:Mix.Lib.Services.MixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+  id: CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: CheckEndpointPermission(ClaimsPrincipal, PathString, String)
+  nameWithType: MixIdentityService.CheckEndpointPermission(ClaimsPrincipal, PathString, String)
+  fullName: Mix.Lib.Services.MixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Http.PathString, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CheckEndpointPermission
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 348
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public bool CheckEndpointPermission(ClaimsPrincipal user, PathString path, string method)
+    parameters:
+    - id: user
+      type: System.Security.Claims.ClaimsPrincipal
+    - id: path
+      type: Microsoft.AspNetCore.Http.PathString
+    - id: method
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function CheckEndpointPermission(user As ClaimsPrincipal, path As PathString, method As String) As Boolean
+  overload: Mix.Lib.Services.MixIdentityService.CheckEndpointPermission*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  commentId: M:Mix.Lib.Services.MixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  id: VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: VerifyExternalAccessToken(MixExternalLoginProviders, String, MixAuthenticationConfigurations)
+  nameWithType: MixIdentityService.VerifyExternalAccessToken(MixExternalLoginProviders, String, MixAuthenticationConfigurations)
+  fullName: Mix.Lib.Services.MixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders, System.String, Mix.Shared.Models.MixAuthenticationConfigurations)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: VerifyExternalAccessToken
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 359
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<ParsedExternalAccessToken> VerifyExternalAccessToken(MixExternalLoginProviders provider, string accessToken, MixAuthenticationConfigurations appConfigs)
+    parameters:
+    - id: provider
+      type: Mix.Identity.Constants.MixExternalLoginProviders
+    - id: accessToken
+      type: System.String
+    - id: appConfigs
+      type: Mix.Shared.Models.MixAuthenticationConfigurations
+    return:
+      type: Task{Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken}
+    content.vb: Public Function VerifyExternalAccessToken(provider As MixExternalLoginProviders, accessToken As String, appConfigs As MixAuthenticationConfigurations) As Task(Of ParsedExternalAccessToken)
+  overload: Mix.Lib.Services.MixIdentityService.VerifyExternalAccessToken*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  id: GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GenerateTokenAsync(MixUser, MixUserViewModel, DateTime, String, String, String, MixAuthenticationConfigurations)
+  nameWithType: MixIdentityService.GenerateTokenAsync(MixUser, MixUserViewModel, DateTime, String, String, String, MixAuthenticationConfigurations)
+  fullName: Mix.Lib.Services.MixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser, MixUserViewModel, DateTime, System.String, System.String, System.String, Mix.Shared.Models.MixAuthenticationConfigurations)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GenerateTokenAsync
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 431
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Task<string> GenerateTokenAsync(MixUser user, MixUserViewModel info, DateTime expires, string refreshToken, string aesKey, string rsaPublicKey, MixAuthenticationConfigurations appConfigs)
+    parameters:
+    - id: user
+      type: Mix.Database.Entities.Account.MixUser
+    - id: info
+      type: MixUserViewModel
+    - id: expires
+      type: DateTime
+    - id: refreshToken
+      type: System.String
+    - id: aesKey
+      type: System.String
+    - id: rsaPublicKey
+      type: System.String
+    - id: appConfigs
+      type: Mix.Shared.Models.MixAuthenticationConfigurations
+    return:
+      type: Task{System.String}
+    content.vb: Public Function GenerateTokenAsync(user As MixUser, info As MixUserViewModel, expires As DateTime, refreshToken As String, aesKey As String, rsaPublicKey As String, appConfigs As MixAuthenticationConfigurations) As Task(Of String)
+  overload: Mix.Lib.Services.MixIdentityService.GenerateTokenAsync*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.CreateClaim(System.String,System.String)
+  commentId: M:Mix.Lib.Services.MixIdentityService.CreateClaim(System.String,System.String)
+  id: CreateClaim(System.String,System.String)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: CreateClaim(String, String)
+  nameWithType: MixIdentityService.CreateClaim(String, String)
+  fullName: Mix.Lib.Services.MixIdentityService.CreateClaim(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateClaim
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 493
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public Claim CreateClaim(string type, string value)
+    parameters:
+    - id: type
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Security.Claims.Claim
+    content.vb: Public Function CreateClaim(type As String, value As String) As Claim
+  overload: Mix.Lib.Services.MixIdentityService.CreateClaim*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.CreateClaim(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+  id: GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GetClaim(ClaimsPrincipal, String)
+  nameWithType: MixIdentityService.GetClaim(ClaimsPrincipal, String)
+  fullName: Mix.Lib.Services.MixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetClaim
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 498
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public string GetClaim(ClaimsPrincipal User, string claimType)
+    parameters:
+    - id: User
+      type: System.Security.Claims.ClaimsPrincipal
+    - id: claimType
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetClaim(User As ClaimsPrincipal, claimType As String) As String
+  overload: Mix.Lib.Services.MixIdentityService.GetClaim*
+  implements:
+  - Mix.Lib.Interfaces.IMixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixIdentityService.GetClaims(System.Security.Claims.ClaimsPrincipal,System.String)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GetClaims(System.Security.Claims.ClaimsPrincipal,System.String)
+  id: GetClaims(System.Security.Claims.ClaimsPrincipal,System.String)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GetClaims(ClaimsPrincipal, String)
+  nameWithType: MixIdentityService.GetClaims(ClaimsPrincipal, String)
+  fullName: Mix.Lib.Services.MixIdentityService.GetClaims(System.Security.Claims.ClaimsPrincipal, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetClaims
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 503
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public static IEnumerable<string> GetClaims(ClaimsPrincipal User, string claimType)
+    parameters:
+    - id: User
+      type: System.Security.Claims.ClaimsPrincipal
+    - id: claimType
+      type: System.String
+    return:
+      type: IEnumerable{System.String}
+    content.vb: Public Shared Function GetClaims(User As ClaimsPrincipal, claimType As String) As IEnumerable(Of String)
+  overload: Mix.Lib.Services.MixIdentityService.GetClaims*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Lib.Services.MixIdentityService.GetPrincipalFromExpiredToken(System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GetPrincipalFromExpiredToken(System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  id: GetPrincipalFromExpiredToken(System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GetPrincipalFromExpiredToken(String, MixAuthenticationConfigurations)
+  nameWithType: MixIdentityService.GetPrincipalFromExpiredToken(String, MixAuthenticationConfigurations)
+  fullName: Mix.Lib.Services.MixIdentityService.GetPrincipalFromExpiredToken(System.String, Mix.Shared.Models.MixAuthenticationConfigurations)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetPrincipalFromExpiredToken
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 508
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public static ClaimsPrincipal GetPrincipalFromExpiredToken(string token, MixAuthenticationConfigurations appConfigs)
+    parameters:
+    - id: token
+      type: System.String
+    - id: appConfigs
+      type: Mix.Shared.Models.MixAuthenticationConfigurations
+    return:
+      type: System.Security.Claims.ClaimsPrincipal
+    content.vb: Public Shared Function GetPrincipalFromExpiredToken(token As String, appConfigs As MixAuthenticationConfigurations) As ClaimsPrincipal
+  overload: Mix.Lib.Services.MixIdentityService.GetPrincipalFromExpiredToken*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Lib.Services.MixIdentityService.GetValidationParameters(Mix.Shared.Models.MixAuthenticationConfigurations,System.Boolean)
+  commentId: M:Mix.Lib.Services.MixIdentityService.GetValidationParameters(Mix.Shared.Models.MixAuthenticationConfigurations,System.Boolean)
+  id: GetValidationParameters(Mix.Shared.Models.MixAuthenticationConfigurations,System.Boolean)
+  parent: Mix.Lib.Services.MixIdentityService
+  langs:
+  - csharp
+  - vb
+  name: GetValidationParameters(MixAuthenticationConfigurations, Boolean)
+  nameWithType: MixIdentityService.GetValidationParameters(MixAuthenticationConfigurations, Boolean)
+  fullName: Mix.Lib.Services.MixIdentityService.GetValidationParameters(Mix.Shared.Models.MixAuthenticationConfigurations, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixIdentityService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetValidationParameters
+    path: ../../mix.core/src/platform/mix.library/Services/MixIdentityService.cs
+    startLine: 519
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public static TokenValidationParameters GetValidationParameters(MixAuthenticationConfigurations appConfigs, bool validateLifetime)
+    parameters:
+    - id: appConfigs
+      type: Mix.Shared.Models.MixAuthenticationConfigurations
+    - id: validateLifetime
+      type: System.Boolean
+    return:
+      type: Microsoft.IdentityModel.Tokens.TokenValidationParameters
+    content.vb: Public Shared Function GetValidationParameters(appConfigs As MixAuthenticationConfigurations, validateLifetime As Boolean) As TokenValidationParameters
+  overload: Mix.Lib.Services.MixIdentityService.GetValidationParameters*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Lib.Interfaces.IMixIdentityService
+  commentId: T:Mix.Lib.Interfaces.IMixIdentityService
+  parent: Mix.Lib.Interfaces
+  name: IMixIdentityService
+  nameWithType: IMixIdentityService
+  fullName: Mix.Lib.Interfaces.IMixIdentityService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Interfaces
+  commentId: N:Mix.Lib.Interfaces
+  name: Mix.Lib.Interfaces
+  nameWithType: Mix.Lib.Interfaces
+  fullName: Mix.Lib.Interfaces
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: MixCacheService
+  isExternal: true
+  name: MixCacheService
+  nameWithType: MixCacheService
+  fullName: MixCacheService
+- uid: Mix.Lib.Services.TenantUserManager
+  commentId: T:Mix.Lib.Services.TenantUserManager
+  parent: Mix.Lib.Services
+  name: TenantUserManager
+  nameWithType: TenantUserManager
+  fullName: Mix.Lib.Services.TenantUserManager
+- uid: Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser}
+  commentId: T:Microsoft.AspNetCore.Identity.SignInManager{Mix.Database.Entities.Account.MixUser}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.SignInManager`1
+  name: SignInManager<MixUser>
+  nameWithType: SignInManager<MixUser>
+  fullName: Microsoft.AspNetCore.Identity.SignInManager<Mix.Database.Entities.Account.MixUser>
+  nameWithType.vb: SignInManager(Of MixUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.SignInManager(Of Mix.Database.Entities.Account.MixUser)
+  name.vb: SignInManager(Of MixUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.SignInManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.SignInManager`1
+  isExternal: true
+  name: SignInManager<TUser>
+  nameWithType: SignInManager<TUser>
+  fullName: Microsoft.AspNetCore.Identity.SignInManager<TUser>
+  nameWithType.vb: SignInManager(Of TUser)
+  fullName.vb: Microsoft.AspNetCore.Identity.SignInManager(Of TUser)
+  name.vb: SignInManager(Of TUser)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.SignInManager`1
+    name: SignInManager
+    nameWithType: SignInManager
+    fullName: Microsoft.AspNetCore.Identity.SignInManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TUser
+    nameWithType: TUser
+    fullName: TUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  commentId: T:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1
+  name: RoleManager<MixRole>
+  nameWithType: RoleManager<MixRole>
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>
+  nameWithType.vb: RoleManager(Of MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole)
+  name.vb: RoleManager(Of MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.RoleManager`1
+  isExternal: true
+  name: RoleManager<TRole>
+  nameWithType: RoleManager<TRole>
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>
+  nameWithType.vb: RoleManager(Of TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole)
+  name.vb: RoleManager(Of TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: AuthConfigService
+  isExternal: true
+  name: AuthConfigService
+  nameWithType: AuthConfigService
+  fullName: AuthConfigService
+- uid: Mix.Communicator.Services.FirebaseService
+  commentId: T:Mix.Communicator.Services.FirebaseService
+  parent: Mix.Communicator.Services
+  name: FirebaseService
+  nameWithType: FirebaseService
+  fullName: Mix.Communicator.Services.FirebaseService
+- uid: Mix.Communicator.Services
+  commentId: N:Mix.Communicator.Services
+  name: Mix.Communicator.Services
+  nameWithType: Mix.Communicator.Services
+  fullName: Mix.Communicator.Services
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Lib.Services.MixDataService
+  commentId: T:Mix.Lib.Services.MixDataService
+  parent: Mix.Lib.Services
+  name: MixDataService
+  nameWithType: MixDataService
+  fullName: Mix.Lib.Services.MixDataService
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: Repository{Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Database.Entities.Account.AspNetRoles,Guid,Mix.Identity.ViewModels.RoleViewModel}
+  commentId: '!:Repository{Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Database.Entities.Account.AspNetRoles,Guid,Mix.Identity.ViewModels.RoleViewModel}'
+  definition: Repository`4
+  name: Repository<MixCmsAccountContext, AspNetRoles, Guid, RoleViewModel>
+  nameWithType: Repository<MixCmsAccountContext, AspNetRoles, Guid, RoleViewModel>
+  fullName: Repository<Mix.Database.Entities.Account.MixCmsAccountContext, Mix.Database.Entities.Account.AspNetRoles, Guid, Mix.Identity.ViewModels.RoleViewModel>
+  nameWithType.vb: Repository(Of MixCmsAccountContext, AspNetRoles, Guid, RoleViewModel)
+  fullName.vb: Repository(Of Mix.Database.Entities.Account.MixCmsAccountContext, Mix.Database.Entities.Account.AspNetRoles, Guid, Mix.Identity.ViewModels.RoleViewModel)
+  name.vb: Repository(Of MixCmsAccountContext, AspNetRoles, Guid, RoleViewModel)
+  spec.csharp:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.AspNetRoles
+    name: AspNetRoles
+    nameWithType: AspNetRoles
+    fullName: Mix.Database.Entities.Account.AspNetRoles
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Identity.ViewModels.RoleViewModel
+    name: RoleViewModel
+    nameWithType: RoleViewModel
+    fullName: Mix.Identity.ViewModels.RoleViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.AspNetRoles
+    name: AspNetRoles
+    nameWithType: AspNetRoles
+    fullName: Mix.Database.Entities.Account.AspNetRoles
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Identity.ViewModels.RoleViewModel
+    name: RoleViewModel
+    nameWithType: RoleViewModel
+    fullName: Mix.Identity.ViewModels.RoleViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Repository`4
+  isExternal: true
+  name: Repository<, , , >
+  nameWithType: Repository<, , , >
+  fullName: Repository<, , , >
+  nameWithType.vb: Repository(Of , , , )
+  fullName.vb: Repository(Of , , , )
+  name.vb: Repository(Of , , , )
+  spec.csharp:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Repository{Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Database.Entities.Account.RefreshTokens,Guid,Mix.Identity.ViewModels.RefreshTokenViewModel}
+  commentId: '!:Repository{Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Database.Entities.Account.RefreshTokens,Guid,Mix.Identity.ViewModels.RefreshTokenViewModel}'
+  definition: Repository`4
+  name: Repository<MixCmsAccountContext, RefreshTokens, Guid, RefreshTokenViewModel>
+  nameWithType: Repository<MixCmsAccountContext, RefreshTokens, Guid, RefreshTokenViewModel>
+  fullName: Repository<Mix.Database.Entities.Account.MixCmsAccountContext, Mix.Database.Entities.Account.RefreshTokens, Guid, Mix.Identity.ViewModels.RefreshTokenViewModel>
+  nameWithType.vb: Repository(Of MixCmsAccountContext, RefreshTokens, Guid, RefreshTokenViewModel)
+  fullName.vb: Repository(Of Mix.Database.Entities.Account.MixCmsAccountContext, Mix.Database.Entities.Account.RefreshTokens, Guid, Mix.Identity.ViewModels.RefreshTokenViewModel)
+  name.vb: Repository(Of MixCmsAccountContext, RefreshTokens, Guid, RefreshTokenViewModel)
+  spec.csharp:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.RefreshTokens
+    name: RefreshTokens
+    nameWithType: RefreshTokens
+    fullName: Mix.Database.Entities.Account.RefreshTokens
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Identity.ViewModels.RefreshTokenViewModel
+    name: RefreshTokenViewModel
+    nameWithType: RefreshTokenViewModel
+    fullName: Mix.Identity.ViewModels.RefreshTokenViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.RefreshTokens
+    name: RefreshTokens
+    nameWithType: RefreshTokens
+    fullName: Mix.Database.Entities.Account.RefreshTokens
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Identity.ViewModels.RefreshTokenViewModel
+    name: RefreshTokenViewModel
+    nameWithType: RefreshTokenViewModel
+    fullName: Mix.Identity.ViewModels.RefreshTokenViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService.Roles*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.Roles
+  name: Roles
+  nameWithType: MixIdentityService.Roles
+  fullName: Mix.Lib.Services.MixIdentityService.Roles
+- uid: Mix.Lib.Interfaces.IMixIdentityService.Roles
+  commentId: P:Mix.Lib.Interfaces.IMixIdentityService.Roles
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  name: Roles
+  nameWithType: IMixIdentityService.Roles
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.Roles
+- uid: List{Mix.Identity.ViewModels.RoleViewModel}
+  commentId: '!:List{Mix.Identity.ViewModels.RoleViewModel}'
+  definition: List`1
+  name: List<RoleViewModel>
+  nameWithType: List<RoleViewModel>
+  fullName: List<Mix.Identity.ViewModels.RoleViewModel>
+  nameWithType.vb: List(Of RoleViewModel)
+  fullName.vb: List(Of Mix.Identity.ViewModels.RoleViewModel)
+  name.vb: List(Of RoleViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Identity.ViewModels.RoleViewModel
+    name: RoleViewModel
+    nameWithType: RoleViewModel
+    fullName: Mix.Identity.ViewModels.RoleViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Identity.ViewModels.RoleViewModel
+    name: RoleViewModel
+    nameWithType: RoleViewModel
+    fullName: Mix.Identity.ViewModels.RoleViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService.MixTenantId*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.MixTenantId
+  name: MixTenantId
+  nameWithType: MixIdentityService.MixTenantId
+  fullName: Mix.Lib.Services.MixIdentityService.MixTenantId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.Lib.Services.MixIdentityService.#ctor*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.#ctor
+  name: MixIdentityService
+  nameWithType: MixIdentityService.MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService.MixIdentityService
+- uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
+  commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext}
+  commentId: '!:UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsAccountContext>
+  nameWithType: UnitOfWorkInfo<MixCmsAccountContext>
+  fullName: UnitOfWorkInfo<Mix.Database.Entities.Account.MixCmsAccountContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsAccountContext)
+  fullName.vb: UnitOfWorkInfo(Of Mix.Database.Entities.Account.MixCmsAccountContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsAccountContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService.GetUserAsync*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GetUserAsync
+  name: GetUserAsync
+  nameWithType: MixIdentityService.GetUserAsync
+  fullName: Mix.Lib.Services.MixIdentityService.GetUserAsync
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: Task{MixUserViewModel}
+  commentId: '!:Task{MixUserViewModel}'
+  definition: Task`1
+  name: Task<MixUserViewModel>
+  nameWithType: Task<MixUserViewModel>
+  fullName: Task<MixUserViewModel>
+  nameWithType.vb: Task(Of MixUserViewModel)
+  fullName.vb: Task(Of MixUserViewModel)
+  name.vb: Task(Of MixUserViewModel)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixUserViewModel
+    name: MixUserViewModel
+    nameWithType: MixUserViewModel
+    fullName: MixUserViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixUserViewModel
+    name: MixUserViewModel
+    nameWithType: MixUserViewModel
+    fullName: MixUserViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService.Login*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.Login
+  name: Login
+  nameWithType: MixIdentityService.Login
+  fullName: Mix.Lib.Services.MixIdentityService.Login
+- uid: Mix.Lib.Interfaces.IMixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  name: Login(LoginViewModel)
+  nameWithType: IMixIdentityService.Login(LoginViewModel)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+    name: Login
+    nameWithType: IMixIdentityService.Login
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.Login
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Models.AccountViewModels.LoginViewModel
+    name: LoginViewModel
+    nameWithType: LoginViewModel
+    fullName: Mix.Identity.Models.AccountViewModels.LoginViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.Login(Mix.Identity.Models.AccountViewModels.LoginViewModel)
+    name: Login
+    nameWithType: IMixIdentityService.Login
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.Login
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Models.AccountViewModels.LoginViewModel
+    name: LoginViewModel
+    nameWithType: LoginViewModel
+    fullName: Mix.Identity.Models.AccountViewModels.LoginViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Models.AccountViewModels.LoginViewModel
+  commentId: T:Mix.Identity.Models.AccountViewModels.LoginViewModel
+  parent: Mix.Identity.Models.AccountViewModels
+  name: LoginViewModel
+  nameWithType: LoginViewModel
+  fullName: Mix.Identity.Models.AccountViewModels.LoginViewModel
+- uid: Task{JObject}
+  commentId: '!:Task{JObject}'
+  definition: Task`1
+  name: Task<JObject>
+  nameWithType: Task<JObject>
+  fullName: Task<JObject>
+  nameWithType.vb: Task(Of JObject)
+  fullName.vb: Task(Of JObject)
+  name.vb: Task(Of JObject)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Models.AccountViewModels
+  commentId: N:Mix.Identity.Models.AccountViewModels
+  name: Mix.Identity.Models.AccountViewModels
+  nameWithType: Mix.Identity.Models.AccountViewModels
+  fullName: Mix.Identity.Models.AccountViewModels
+- uid: Mix.Lib.Services.MixIdentityService.GetAuthData*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GetAuthData
+  name: GetAuthData
+  nameWithType: MixIdentityService.GetAuthData
+  fullName: Mix.Lib.Services.MixIdentityService.GetAuthData
+- uid: Mix.Lib.Interfaces.IMixIdentityService.GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  isExternal: true
+  name: GetAuthData(MixCmsContext, MixUser, Boolean, Int32)
+  nameWithType: IMixIdentityService.GetAuthData(MixCmsContext, MixUser, Boolean, Int32)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.GetAuthData(MixCmsContext, Mix.Database.Entities.Account.MixUser, System.Boolean, System.Int32)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+    name: GetAuthData
+    nameWithType: IMixIdentityService.GetAuthData
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GetAuthData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GetAuthData(MixCmsContext,Mix.Database.Entities.Account.MixUser,System.Boolean,System.Int32)
+    name: GetAuthData
+    nameWithType: IMixIdentityService.GetAuthData
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GetAuthData
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Entities.Account.MixUser
+  commentId: T:Mix.Database.Entities.Account.MixUser
+  parent: Mix.Database.Entities.Account
+  name: MixUser
+  nameWithType: MixUser
+  fullName: Mix.Database.Entities.Account.MixUser
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Database.Entities.Account
+  commentId: N:Mix.Database.Entities.Account
+  name: Mix.Database.Entities.Account
+  nameWithType: Mix.Database.Entities.Account
+  fullName: Mix.Database.Entities.Account
+- uid: Mix.Lib.Services.MixIdentityService.GetToken*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GetToken
+  name: GetToken
+  nameWithType: MixIdentityService.GetToken
+  fullName: Mix.Lib.Services.MixIdentityService.GetToken
+- uid: Mix.Lib.Interfaces.IMixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  name: GetToken(GetTokenModel)
+  nameWithType: IMixIdentityService.GetToken(GetTokenModel)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+    name: GetToken
+    nameWithType: IMixIdentityService.GetToken
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GetToken
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Domain.Models.GetTokenModel
+    name: GetTokenModel
+    nameWithType: GetTokenModel
+    fullName: Mix.Identity.Domain.Models.GetTokenModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GetToken(Mix.Identity.Domain.Models.GetTokenModel)
+    name: GetToken
+    nameWithType: IMixIdentityService.GetToken
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GetToken
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Domain.Models.GetTokenModel
+    name: GetTokenModel
+    nameWithType: GetTokenModel
+    fullName: Mix.Identity.Domain.Models.GetTokenModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Domain.Models.GetTokenModel
+  commentId: T:Mix.Identity.Domain.Models.GetTokenModel
+  parent: Mix.Identity.Domain.Models
+  name: GetTokenModel
+  nameWithType: GetTokenModel
+  fullName: Mix.Identity.Domain.Models.GetTokenModel
+- uid: Mix.Identity.Domain.Models
+  commentId: N:Mix.Identity.Domain.Models
+  name: Mix.Identity.Domain.Models
+  nameWithType: Mix.Identity.Domain.Models
+  fullName: Mix.Identity.Domain.Models
+- uid: Mix.Lib.Services.MixIdentityService.Register*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.Register
+  name: Register
+  nameWithType: MixIdentityService.Register
+  fullName: Mix.Lib.Services.MixIdentityService.Register
+- uid: Mix.Lib.Interfaces.IMixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  isExternal: true
+  name: Register(RegisterViewModel, Int32, UnitOfWorkInfo)
+  nameWithType: IMixIdentityService.Register(RegisterViewModel, Int32, UnitOfWorkInfo)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel, System.Int32, UnitOfWorkInfo)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+    name: Register
+    nameWithType: IMixIdentityService.Register
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.Register
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+    name: RegisterViewModel
+    nameWithType: RegisterViewModel
+    fullName: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.Register(Mix.Identity.Models.AccountViewModels.RegisterViewModel,System.Int32,UnitOfWorkInfo)
+    name: Register
+    nameWithType: IMixIdentityService.Register
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.Register
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+    name: RegisterViewModel
+    nameWithType: RegisterViewModel
+    fullName: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+  commentId: T:Mix.Identity.Models.AccountViewModels.RegisterViewModel
+  parent: Mix.Identity.Models.AccountViewModels
+  name: RegisterViewModel
+  nameWithType: RegisterViewModel
+  fullName: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+- uid: Mix.Lib.Services.MixIdentityService.GenerateAccessTokenAsync*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GenerateAccessTokenAsync
+  name: GenerateAccessTokenAsync
+  nameWithType: MixIdentityService.GenerateAccessTokenAsync
+  fullName: Mix.Lib.Services.MixIdentityService.GenerateAccessTokenAsync
+- uid: Mix.Lib.Interfaces.IMixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  isExternal: true
+  name: GenerateAccessTokenAsync(MixUser, MixUserViewModel, Boolean, String, String)
+  nameWithType: IMixIdentityService.GenerateAccessTokenAsync(MixUser, MixUserViewModel, Boolean, String, String)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser, MixUserViewModel, System.Boolean, System.String, System.String)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+    name: GenerateAccessTokenAsync
+    nameWithType: IMixIdentityService.GenerateAccessTokenAsync
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GenerateAccessTokenAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixUserViewModel
+    name: MixUserViewModel
+    nameWithType: MixUserViewModel
+    fullName: MixUserViewModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GenerateAccessTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,System.Boolean,System.String,System.String)
+    name: GenerateAccessTokenAsync
+    nameWithType: IMixIdentityService.GenerateAccessTokenAsync
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GenerateAccessTokenAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixUserViewModel
+    name: MixUserViewModel
+    nameWithType: MixUserViewModel
+    fullName: MixUserViewModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MixUserViewModel
+  isExternal: true
+  name: MixUserViewModel
+  nameWithType: MixUserViewModel
+  fullName: MixUserViewModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{Mix.Lib.Models.AccessTokenViewModel}
+  commentId: '!:Task{Mix.Lib.Models.AccessTokenViewModel}'
+  definition: Task`1
+  name: Task<AccessTokenViewModel>
+  nameWithType: Task<AccessTokenViewModel>
+  fullName: Task<Mix.Lib.Models.AccessTokenViewModel>
+  nameWithType.vb: Task(Of AccessTokenViewModel)
+  fullName.vb: Task(Of Mix.Lib.Models.AccessTokenViewModel)
+  name.vb: Task(Of AccessTokenViewModel)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Lib.Models.AccessTokenViewModel
+    name: AccessTokenViewModel
+    nameWithType: AccessTokenViewModel
+    fullName: Mix.Lib.Models.AccessTokenViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Lib.Models.AccessTokenViewModel
+    name: AccessTokenViewModel
+    nameWithType: AccessTokenViewModel
+    fullName: Mix.Lib.Models.AccessTokenViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService.ExternalLogin*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.ExternalLogin
+  name: ExternalLogin
+  nameWithType: MixIdentityService.ExternalLogin
+  fullName: Mix.Lib.Services.MixIdentityService.ExternalLogin
+- uid: Mix.Lib.Interfaces.IMixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  name: ExternalLogin(RegisterExternalBindingModel)
+  nameWithType: IMixIdentityService.ExternalLogin(RegisterExternalBindingModel)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+    name: ExternalLogin
+    nameWithType: IMixIdentityService.ExternalLogin
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.ExternalLogin
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel
+    name: RegisterExternalBindingModel
+    nameWithType: RegisterExternalBindingModel
+    fullName: Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.ExternalLogin(Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel)
+    name: ExternalLogin
+    nameWithType: IMixIdentityService.ExternalLogin
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.ExternalLogin
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel
+    name: RegisterExternalBindingModel
+    nameWithType: RegisterExternalBindingModel
+    fullName: Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel
+  commentId: T:Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel
+  parent: Mix.Identity.Models.AccountViewModels
+  name: RegisterExternalBindingModel
+  nameWithType: RegisterExternalBindingModel
+  fullName: Mix.Identity.Models.AccountViewModels.RegisterExternalBindingModel
+- uid: Mix.Lib.Services.MixIdentityService.RenewTokenAsync*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.RenewTokenAsync
+  name: RenewTokenAsync
+  nameWithType: MixIdentityService.RenewTokenAsync
+  fullName: Mix.Lib.Services.MixIdentityService.RenewTokenAsync
+- uid: Mix.Lib.Interfaces.IMixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  name: RenewTokenAsync(RenewTokenDto)
+  nameWithType: IMixIdentityService.RenewTokenAsync(RenewTokenDto)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+    name: RenewTokenAsync
+    nameWithType: IMixIdentityService.RenewTokenAsync
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.RenewTokenAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Dtos.RenewTokenDto
+    name: RenewTokenDto
+    nameWithType: RenewTokenDto
+    fullName: Mix.Identity.Dtos.RenewTokenDto
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.RenewTokenAsync(Mix.Identity.Dtos.RenewTokenDto)
+    name: RenewTokenAsync
+    nameWithType: IMixIdentityService.RenewTokenAsync
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.RenewTokenAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Dtos.RenewTokenDto
+    name: RenewTokenDto
+    nameWithType: RenewTokenDto
+    fullName: Mix.Identity.Dtos.RenewTokenDto
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Dtos.RenewTokenDto
+  commentId: T:Mix.Identity.Dtos.RenewTokenDto
+  parent: Mix.Identity.Dtos
+  name: RenewTokenDto
+  nameWithType: RenewTokenDto
+  fullName: Mix.Identity.Dtos.RenewTokenDto
+- uid: Mix.Identity.Dtos
+  commentId: N:Mix.Identity.Dtos
+  name: Mix.Identity.Dtos
+  nameWithType: Mix.Identity.Dtos
+  fullName: Mix.Identity.Dtos
+- uid: Mix.Lib.Services.MixIdentityService.CheckEndpointPermission*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.CheckEndpointPermission
+  name: CheckEndpointPermission
+  nameWithType: MixIdentityService.CheckEndpointPermission
+  fullName: Mix.Lib.Services.MixIdentityService.CheckEndpointPermission
+- uid: Mix.Lib.Interfaces.IMixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  isExternal: true
+  name: CheckEndpointPermission(ClaimsPrincipal, PathString, String)
+  nameWithType: IMixIdentityService.CheckEndpointPermission(ClaimsPrincipal, PathString, String)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal, Microsoft.AspNetCore.Http.PathString, System.String)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+    name: CheckEndpointPermission
+    nameWithType: IMixIdentityService.CheckEndpointPermission
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.CheckEndpointPermission
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Claims.ClaimsPrincipal
+    name: ClaimsPrincipal
+    nameWithType: ClaimsPrincipal
+    fullName: System.Security.Claims.ClaimsPrincipal
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Http.PathString
+    name: PathString
+    nameWithType: PathString
+    fullName: Microsoft.AspNetCore.Http.PathString
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.CheckEndpointPermission(System.Security.Claims.ClaimsPrincipal,Microsoft.AspNetCore.Http.PathString,System.String)
+    name: CheckEndpointPermission
+    nameWithType: IMixIdentityService.CheckEndpointPermission
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.CheckEndpointPermission
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Claims.ClaimsPrincipal
+    name: ClaimsPrincipal
+    nameWithType: ClaimsPrincipal
+    fullName: System.Security.Claims.ClaimsPrincipal
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Http.PathString
+    name: PathString
+    nameWithType: PathString
+    fullName: Microsoft.AspNetCore.Http.PathString
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: Microsoft.AspNetCore.Http.PathString
+  commentId: T:Microsoft.AspNetCore.Http.PathString
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: PathString
+  nameWithType: PathString
+  fullName: Microsoft.AspNetCore.Http.PathString
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+- uid: Mix.Lib.Services.MixIdentityService.VerifyExternalAccessToken*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.VerifyExternalAccessToken
+  name: VerifyExternalAccessToken
+  nameWithType: MixIdentityService.VerifyExternalAccessToken
+  fullName: Mix.Lib.Services.MixIdentityService.VerifyExternalAccessToken
+- uid: Mix.Lib.Interfaces.IMixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  isExternal: true
+  name: VerifyExternalAccessToken(MixExternalLoginProviders, String, MixAuthenticationConfigurations)
+  nameWithType: IMixIdentityService.VerifyExternalAccessToken(MixExternalLoginProviders, String, MixAuthenticationConfigurations)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders, System.String, Mix.Shared.Models.MixAuthenticationConfigurations)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+    name: VerifyExternalAccessToken
+    nameWithType: IMixIdentityService.VerifyExternalAccessToken
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.VerifyExternalAccessToken
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Constants.MixExternalLoginProviders
+    name: MixExternalLoginProviders
+    nameWithType: MixExternalLoginProviders
+    fullName: Mix.Identity.Constants.MixExternalLoginProviders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Shared.Models.MixAuthenticationConfigurations
+    name: MixAuthenticationConfigurations
+    nameWithType: MixAuthenticationConfigurations
+    fullName: Mix.Shared.Models.MixAuthenticationConfigurations
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.VerifyExternalAccessToken(Mix.Identity.Constants.MixExternalLoginProviders,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+    name: VerifyExternalAccessToken
+    nameWithType: IMixIdentityService.VerifyExternalAccessToken
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.VerifyExternalAccessToken
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Identity.Constants.MixExternalLoginProviders
+    name: MixExternalLoginProviders
+    nameWithType: MixExternalLoginProviders
+    fullName: Mix.Identity.Constants.MixExternalLoginProviders
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Shared.Models.MixAuthenticationConfigurations
+    name: MixAuthenticationConfigurations
+    nameWithType: MixAuthenticationConfigurations
+    fullName: Mix.Shared.Models.MixAuthenticationConfigurations
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Constants.MixExternalLoginProviders
+  commentId: T:Mix.Identity.Constants.MixExternalLoginProviders
+  parent: Mix.Identity.Constants
+  name: MixExternalLoginProviders
+  nameWithType: MixExternalLoginProviders
+  fullName: Mix.Identity.Constants.MixExternalLoginProviders
+- uid: Mix.Shared.Models.MixAuthenticationConfigurations
+  commentId: T:Mix.Shared.Models.MixAuthenticationConfigurations
+  parent: Mix.Shared.Models
+  name: MixAuthenticationConfigurations
+  nameWithType: MixAuthenticationConfigurations
+  fullName: Mix.Shared.Models.MixAuthenticationConfigurations
+- uid: Task{Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken}
+  commentId: '!:Task{Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken}'
+  definition: Task`1
+  name: Task<ParsedExternalAccessToken>
+  nameWithType: Task<ParsedExternalAccessToken>
+  fullName: Task<Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken>
+  nameWithType.vb: Task(Of ParsedExternalAccessToken)
+  fullName.vb: Task(Of Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken)
+  name.vb: Task(Of ParsedExternalAccessToken)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken
+    name: ParsedExternalAccessToken
+    nameWithType: ParsedExternalAccessToken
+    fullName: Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken
+    name: ParsedExternalAccessToken
+    nameWithType: ParsedExternalAccessToken
+    fullName: Mix.Identity.Models.AccountViewModels.ParsedExternalAccessToken
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Identity.Constants
+  commentId: N:Mix.Identity.Constants
+  name: Mix.Identity.Constants
+  nameWithType: Mix.Identity.Constants
+  fullName: Mix.Identity.Constants
+- uid: Mix.Shared.Models
+  commentId: N:Mix.Shared.Models
+  name: Mix.Shared.Models
+  nameWithType: Mix.Shared.Models
+  fullName: Mix.Shared.Models
+- uid: Mix.Lib.Services.MixIdentityService.GenerateTokenAsync*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GenerateTokenAsync
+  name: GenerateTokenAsync
+  nameWithType: MixIdentityService.GenerateTokenAsync
+  fullName: Mix.Lib.Services.MixIdentityService.GenerateTokenAsync
+- uid: Mix.Lib.Interfaces.IMixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  isExternal: true
+  name: GenerateTokenAsync(MixUser, MixUserViewModel, DateTime, String, String, String, MixAuthenticationConfigurations)
+  nameWithType: IMixIdentityService.GenerateTokenAsync(MixUser, MixUserViewModel, DateTime, String, String, String, MixAuthenticationConfigurations)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser, MixUserViewModel, DateTime, System.String, System.String, System.String, Mix.Shared.Models.MixAuthenticationConfigurations)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+    name: GenerateTokenAsync
+    nameWithType: IMixIdentityService.GenerateTokenAsync
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GenerateTokenAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixUserViewModel
+    name: MixUserViewModel
+    nameWithType: MixUserViewModel
+    fullName: MixUserViewModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Shared.Models.MixAuthenticationConfigurations
+    name: MixAuthenticationConfigurations
+    nameWithType: MixAuthenticationConfigurations
+    fullName: Mix.Shared.Models.MixAuthenticationConfigurations
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GenerateTokenAsync(Mix.Database.Entities.Account.MixUser,MixUserViewModel,DateTime,System.String,System.String,System.String,Mix.Shared.Models.MixAuthenticationConfigurations)
+    name: GenerateTokenAsync
+    nameWithType: IMixIdentityService.GenerateTokenAsync
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GenerateTokenAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixUser
+    name: MixUser
+    nameWithType: MixUser
+    fullName: Mix.Database.Entities.Account.MixUser
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixUserViewModel
+    name: MixUserViewModel
+    nameWithType: MixUserViewModel
+    fullName: MixUserViewModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: DateTime
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Shared.Models.MixAuthenticationConfigurations
+    name: MixAuthenticationConfigurations
+    nameWithType: MixAuthenticationConfigurations
+    fullName: Mix.Shared.Models.MixAuthenticationConfigurations
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService.CreateClaim*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.CreateClaim
+  name: CreateClaim
+  nameWithType: MixIdentityService.CreateClaim
+  fullName: Mix.Lib.Services.MixIdentityService.CreateClaim
+- uid: Mix.Lib.Interfaces.IMixIdentityService.CreateClaim(System.String,System.String)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.CreateClaim(System.String,System.String)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  isExternal: true
+  name: CreateClaim(String, String)
+  nameWithType: IMixIdentityService.CreateClaim(String, String)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.CreateClaim(System.String, System.String)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.CreateClaim(System.String,System.String)
+    name: CreateClaim
+    nameWithType: IMixIdentityService.CreateClaim
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.CreateClaim
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.CreateClaim(System.String,System.String)
+    name: CreateClaim
+    nameWithType: IMixIdentityService.CreateClaim
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.CreateClaim
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Security.Claims.Claim
+  commentId: T:System.Security.Claims.Claim
+  parent: System.Security.Claims
+  isExternal: true
+  name: Claim
+  nameWithType: Claim
+  fullName: System.Security.Claims.Claim
+- uid: Mix.Lib.Services.MixIdentityService.GetClaim*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GetClaim
+  name: GetClaim
+  nameWithType: MixIdentityService.GetClaim
+  fullName: Mix.Lib.Services.MixIdentityService.GetClaim
+- uid: Mix.Lib.Interfaces.IMixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+  commentId: M:Mix.Lib.Interfaces.IMixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+  parent: Mix.Lib.Interfaces.IMixIdentityService
+  isExternal: true
+  name: GetClaim(ClaimsPrincipal, String)
+  nameWithType: IMixIdentityService.GetClaim(ClaimsPrincipal, String)
+  fullName: Mix.Lib.Interfaces.IMixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal, System.String)
+  spec.csharp:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+    name: GetClaim
+    nameWithType: IMixIdentityService.GetClaim
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GetClaim
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Claims.ClaimsPrincipal
+    name: ClaimsPrincipal
+    nameWithType: ClaimsPrincipal
+    fullName: System.Security.Claims.ClaimsPrincipal
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Interfaces.IMixIdentityService.GetClaim(System.Security.Claims.ClaimsPrincipal,System.String)
+    name: GetClaim
+    nameWithType: IMixIdentityService.GetClaim
+    fullName: Mix.Lib.Interfaces.IMixIdentityService.GetClaim
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Security.Claims.ClaimsPrincipal
+    name: ClaimsPrincipal
+    nameWithType: ClaimsPrincipal
+    fullName: System.Security.Claims.ClaimsPrincipal
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService.GetClaims*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GetClaims
+  name: GetClaims
+  nameWithType: MixIdentityService.GetClaims
+  fullName: Mix.Lib.Services.MixIdentityService.GetClaims
+- uid: IEnumerable{System.String}
+  commentId: '!:IEnumerable{System.String}'
+  definition: IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService.GetPrincipalFromExpiredToken*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GetPrincipalFromExpiredToken
+  name: GetPrincipalFromExpiredToken
+  nameWithType: MixIdentityService.GetPrincipalFromExpiredToken
+  fullName: Mix.Lib.Services.MixIdentityService.GetPrincipalFromExpiredToken
+- uid: Mix.Lib.Services.MixIdentityService.GetValidationParameters*
+  commentId: Overload:Mix.Lib.Services.MixIdentityService.GetValidationParameters
+  name: GetValidationParameters
+  nameWithType: MixIdentityService.GetValidationParameters
+  fullName: Mix.Lib.Services.MixIdentityService.GetValidationParameters
+- uid: Microsoft.IdentityModel.Tokens.TokenValidationParameters
+  commentId: T:Microsoft.IdentityModel.Tokens.TokenValidationParameters
+  parent: Microsoft.IdentityModel.Tokens
+  isExternal: true
+  name: TokenValidationParameters
+  nameWithType: TokenValidationParameters
+  fullName: Microsoft.IdentityModel.Tokens.TokenValidationParameters
+- uid: Microsoft.IdentityModel.Tokens
+  commentId: N:Microsoft.IdentityModel.Tokens
+  isExternal: true
+  name: Microsoft.IdentityModel.Tokens
+  nameWithType: Microsoft.IdentityModel.Tokens
+  fullName: Microsoft.IdentityModel.Tokens

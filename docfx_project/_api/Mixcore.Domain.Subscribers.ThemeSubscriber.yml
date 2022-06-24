@@ -1,0 +1,711 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mixcore.Domain.Subscribers.ThemeSubscriber
+  commentId: T:Mixcore.Domain.Subscribers.ThemeSubscriber
+  id: ThemeSubscriber
+  parent: Mixcore.Domain.Subscribers
+  children:
+  - Mixcore.Domain.Subscribers.ThemeSubscriber.#ctor(IConfiguration,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{MessageQueueModel})
+  - Mixcore.Domain.Subscribers.ThemeSubscriber.Handler(MessageQueueModel)
+  langs:
+  - csharp
+  - vb
+  name: ThemeSubscriber
+  nameWithType: ThemeSubscriber
+  fullName: Mixcore.Domain.Subscribers.ThemeSubscriber
+  type: Class
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Subscribers/ThemeSubscriber.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ThemeSubscriber
+    path: ../../mix.core/src/applications/Mixcore/Domain/Subscribers/ThemeSubscriber.cs
+    startLine: 5
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Subscribers
+  syntax:
+    content: 'public class ThemeSubscriber : SubscriberBase, IHostedService'
+    content.vb: >-
+      Public Class ThemeSubscriber
+          Inherits SubscriberBase
+          Implements IHostedService
+  inheritance:
+  - System.Object
+  - Mix.Queue.Engines.SubscriberBase
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService
+  inheritedMembers:
+  - Mix.Queue.Engines.SubscriberBase.StartAsync(System.Threading.CancellationToken)
+  - Mix.Queue.Engines.SubscriberBase.StopAsync(System.Threading.CancellationToken)
+  - Mix.Queue.Engines.SubscriberBase.MesageHandler(Mix.Queue.Models.MessageQueueModel)
+  - Mix.Queue.Engines.SubscriberBase.Handler(Mix.Queue.Models.MessageQueueModel)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mixcore.Domain.Subscribers.ThemeSubscriber.#ctor(IConfiguration,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{MessageQueueModel})
+  commentId: M:Mixcore.Domain.Subscribers.ThemeSubscriber.#ctor(IConfiguration,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{MessageQueueModel})
+  id: '#ctor(IConfiguration,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{MessageQueueModel})'
+  parent: Mixcore.Domain.Subscribers.ThemeSubscriber
+  langs:
+  - csharp
+  - vb
+  name: ThemeSubscriber(IConfiguration, MixMemoryMessageQueue<MessageQueueModel>)
+  nameWithType: ThemeSubscriber.ThemeSubscriber(IConfiguration, MixMemoryMessageQueue<MessageQueueModel>)
+  fullName: Mixcore.Domain.Subscribers.ThemeSubscriber.ThemeSubscriber(IConfiguration, Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Subscribers/ThemeSubscriber.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Domain/Subscribers/ThemeSubscriber.cs
+    startLine: 8
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Subscribers
+  syntax:
+    content: public ThemeSubscriber(IConfiguration configuration, MixMemoryMessageQueue<MessageQueueModel> queueService)
+    parameters:
+    - id: configuration
+      type: IConfiguration
+    - id: queueService
+      type: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{MessageQueueModel}
+    content.vb: Public Sub New(configuration As IConfiguration, queueService As MixMemoryMessageQueue(Of MessageQueueModel))
+  overload: Mixcore.Domain.Subscribers.ThemeSubscriber.#ctor*
+  nameWithType.vb: ThemeSubscriber.ThemeSubscriber(IConfiguration, MixMemoryMessageQueue(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mixcore.Domain.Subscribers.ThemeSubscriber.ThemeSubscriber(IConfiguration, Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue(Of MessageQueueModel))
+  name.vb: ThemeSubscriber(IConfiguration, MixMemoryMessageQueue(Of MessageQueueModel))
+- uid: Mixcore.Domain.Subscribers.ThemeSubscriber.Handler(MessageQueueModel)
+  commentId: M:Mixcore.Domain.Subscribers.ThemeSubscriber.Handler(MessageQueueModel)
+  id: Handler(MessageQueueModel)
+  parent: Mixcore.Domain.Subscribers.ThemeSubscriber
+  langs:
+  - csharp
+  - vb
+  name: Handler(MessageQueueModel)
+  nameWithType: ThemeSubscriber.Handler(MessageQueueModel)
+  fullName: Mixcore.Domain.Subscribers.ThemeSubscriber.Handler(MessageQueueModel)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Subscribers/ThemeSubscriber.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Handler
+    path: ../../mix.core/src/applications/Mixcore/Domain/Subscribers/ThemeSubscriber.cs
+    startLine: 14
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Subscribers
+  syntax:
+    content: public override Task Handler(MessageQueueModel data)
+    parameters:
+    - id: data
+      type: MessageQueueModel
+    return:
+      type: Task
+    content.vb: Public Overrides Function Handler(data As MessageQueueModel) As Task
+  overload: Mixcore.Domain.Subscribers.ThemeSubscriber.Handler*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Mixcore.Domain.Subscribers
+  commentId: N:Mixcore.Domain.Subscribers
+  name: Mixcore.Domain.Subscribers
+  nameWithType: Mixcore.Domain.Subscribers
+  fullName: Mixcore.Domain.Subscribers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Queue.Engines.SubscriberBase
+  commentId: T:Mix.Queue.Engines.SubscriberBase
+  parent: Mix.Queue.Engines
+  name: SubscriberBase
+  nameWithType: SubscriberBase
+  fullName: Mix.Queue.Engines.SubscriberBase
+- uid: Microsoft.Extensions.Hosting.IHostedService
+  commentId: T:Microsoft.Extensions.Hosting.IHostedService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  name: IHostedService
+  nameWithType: IHostedService
+  fullName: Microsoft.Extensions.Hosting.IHostedService
+- uid: Mix.Queue.Engines.SubscriberBase.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Mix.Queue.Engines.SubscriberBase.StartAsync(System.Threading.CancellationToken)
+  parent: Mix.Queue.Engines.SubscriberBase
+  isExternal: true
+  name: StartAsync(CancellationToken)
+  nameWithType: SubscriberBase.StartAsync(CancellationToken)
+  fullName: Mix.Queue.Engines.SubscriberBase.StartAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.SubscriberBase.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    nameWithType: SubscriberBase.StartAsync
+    fullName: Mix.Queue.Engines.SubscriberBase.StartAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Queue.Engines.SubscriberBase.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    nameWithType: SubscriberBase.StartAsync
+    fullName: Mix.Queue.Engines.SubscriberBase.StartAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Engines.SubscriberBase.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Mix.Queue.Engines.SubscriberBase.StopAsync(System.Threading.CancellationToken)
+  parent: Mix.Queue.Engines.SubscriberBase
+  isExternal: true
+  name: StopAsync(CancellationToken)
+  nameWithType: SubscriberBase.StopAsync(CancellationToken)
+  fullName: Mix.Queue.Engines.SubscriberBase.StopAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.SubscriberBase.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    nameWithType: SubscriberBase.StopAsync
+    fullName: Mix.Queue.Engines.SubscriberBase.StopAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Queue.Engines.SubscriberBase.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    nameWithType: SubscriberBase.StopAsync
+    fullName: Mix.Queue.Engines.SubscriberBase.StopAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Engines.SubscriberBase.MesageHandler(Mix.Queue.Models.MessageQueueModel)
+  commentId: M:Mix.Queue.Engines.SubscriberBase.MesageHandler(Mix.Queue.Models.MessageQueueModel)
+  parent: Mix.Queue.Engines.SubscriberBase
+  name: MesageHandler(MessageQueueModel)
+  nameWithType: SubscriberBase.MesageHandler(MessageQueueModel)
+  fullName: Mix.Queue.Engines.SubscriberBase.MesageHandler(Mix.Queue.Models.MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.SubscriberBase.MesageHandler(Mix.Queue.Models.MessageQueueModel)
+    name: MesageHandler
+    nameWithType: SubscriberBase.MesageHandler
+    fullName: Mix.Queue.Engines.SubscriberBase.MesageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Queue.Engines.SubscriberBase.MesageHandler(Mix.Queue.Models.MessageQueueModel)
+    name: MesageHandler
+    nameWithType: SubscriberBase.MesageHandler
+    fullName: Mix.Queue.Engines.SubscriberBase.MesageHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Engines.SubscriberBase.Handler(Mix.Queue.Models.MessageQueueModel)
+  commentId: M:Mix.Queue.Engines.SubscriberBase.Handler(Mix.Queue.Models.MessageQueueModel)
+  parent: Mix.Queue.Engines.SubscriberBase
+  name: Handler(MessageQueueModel)
+  nameWithType: SubscriberBase.Handler(MessageQueueModel)
+  fullName: Mix.Queue.Engines.SubscriberBase.Handler(Mix.Queue.Models.MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.SubscriberBase.Handler(Mix.Queue.Models.MessageQueueModel)
+    name: Handler
+    nameWithType: SubscriberBase.Handler
+    fullName: Mix.Queue.Engines.SubscriberBase.Handler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Queue.Engines.SubscriberBase.Handler(Mix.Queue.Models.MessageQueueModel)
+    name: Handler
+    nameWithType: SubscriberBase.Handler
+    fullName: Mix.Queue.Engines.SubscriberBase.Handler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Queue.Engines
+  commentId: N:Mix.Queue.Engines
+  name: Mix.Queue.Engines
+  nameWithType: Mix.Queue.Engines
+  fullName: Mix.Queue.Engines
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+- uid: Mixcore.Domain.Subscribers.ThemeSubscriber.#ctor*
+  commentId: Overload:Mixcore.Domain.Subscribers.ThemeSubscriber.#ctor
+  name: ThemeSubscriber
+  nameWithType: ThemeSubscriber.ThemeSubscriber
+  fullName: Mixcore.Domain.Subscribers.ThemeSubscriber.ThemeSubscriber
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{MessageQueueModel}
+  commentId: T:Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{MessageQueueModel}
+  parent: Mix.Queue.Engines.MixQueue
+  definition: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+  name: MixMemoryMessageQueue<MessageQueueModel>
+  nameWithType: MixMemoryMessageQueue<MessageQueueModel>
+  fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue<MessageQueueModel>
+  nameWithType.vb: MixMemoryMessageQueue(Of MessageQueueModel)
+  fullName.vb: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue(Of MessageQueueModel)
+  name.vb: MixMemoryMessageQueue(Of MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+  commentId: T:Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+  name: MixMemoryMessageQueue<T>
+  nameWithType: MixMemoryMessageQueue<T>
+  fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue<T>
+  nameWithType.vb: MixMemoryMessageQueue(Of T)
+  fullName.vb: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue(Of T)
+  name.vb: MixMemoryMessageQueue(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Engines.MixQueue
+  commentId: N:Mix.Queue.Engines.MixQueue
+  name: Mix.Queue.Engines.MixQueue
+  nameWithType: Mix.Queue.Engines.MixQueue
+  fullName: Mix.Queue.Engines.MixQueue
+- uid: Mixcore.Domain.Subscribers.ThemeSubscriber.Handler*
+  commentId: Overload:Mixcore.Domain.Subscribers.ThemeSubscriber.Handler
+  name: Handler
+  nameWithType: ThemeSubscriber.Handler
+  fullName: Mixcore.Domain.Subscribers.ThemeSubscriber.Handler
+- uid: MessageQueueModel
+  isExternal: true
+  name: MessageQueueModel
+  nameWithType: MessageQueueModel
+  fullName: MessageQueueModel
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

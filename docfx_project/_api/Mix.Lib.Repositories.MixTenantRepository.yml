@@ -1,0 +1,605 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Repositories.MixTenantRepository
+  commentId: T:Mix.Lib.Repositories.MixTenantRepository
+  id: MixTenantRepository
+  parent: Mix.Lib.Repositories
+  children:
+  - Mix.Lib.Repositories.MixTenantRepository.AllTenants
+  - Mix.Lib.Repositories.MixTenantRepository.GetCurrentTenant(System.String)
+  - Mix.Lib.Repositories.MixTenantRepository.Instance
+  - Mix.Lib.Repositories.MixTenantRepository.syncRoot
+  langs:
+  - csharp
+  - vb
+  name: MixTenantRepository
+  nameWithType: MixTenantRepository
+  fullName: Mix.Lib.Repositories.MixTenantRepository
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Repositories/MixTenantRepository.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantRepository
+    path: ../../mix.core/src/platform/mix.library/Repositories/MixTenantRepository.cs
+    startLine: 2
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Repositories
+  syntax:
+    content: public class MixTenantRepository
+    content.vb: Public Class MixTenantRepository
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Repositories.MixTenantRepository.syncRoot
+  commentId: F:Mix.Lib.Repositories.MixTenantRepository.syncRoot
+  id: syncRoot
+  parent: Mix.Lib.Repositories.MixTenantRepository
+  langs:
+  - csharp
+  - vb
+  name: syncRoot
+  nameWithType: MixTenantRepository.syncRoot
+  fullName: Mix.Lib.Repositories.MixTenantRepository.syncRoot
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Repositories/MixTenantRepository.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: syncRoot
+    path: ../../mix.core/src/platform/mix.library/Repositories/MixTenantRepository.cs
+    startLine: 8
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Repositories
+  summary: "\nThe synchronize root\n"
+  example: []
+  syntax:
+    content: protected static readonly object syncRoot
+    return:
+      type: System.Object
+    content.vb: Protected Shared ReadOnly syncRoot As Object
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Mix.Lib.Repositories.MixTenantRepository.Instance
+  commentId: P:Mix.Lib.Repositories.MixTenantRepository.Instance
+  id: Instance
+  parent: Mix.Lib.Repositories.MixTenantRepository
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: MixTenantRepository.Instance
+  fullName: Mix.Lib.Repositories.MixTenantRepository.Instance
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Repositories/MixTenantRepository.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Instance
+    path: ../../mix.core/src/platform/mix.library/Repositories/MixTenantRepository.cs
+    startLine: 15
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Repositories
+  syntax:
+    content: public static MixTenantRepository Instance { get; }
+    parameters: []
+    return:
+      type: Mix.Lib.Repositories.MixTenantRepository
+    content.vb: Public Shared ReadOnly Property Instance As MixTenantRepository
+  overload: Mix.Lib.Repositories.MixTenantRepository.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Mix.Lib.Repositories.MixTenantRepository.AllTenants
+  commentId: P:Mix.Lib.Repositories.MixTenantRepository.AllTenants
+  id: AllTenants
+  parent: Mix.Lib.Repositories.MixTenantRepository
+  langs:
+  - csharp
+  - vb
+  name: AllTenants
+  nameWithType: MixTenantRepository.AllTenants
+  fullName: Mix.Lib.Repositories.MixTenantRepository.AllTenants
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Repositories/MixTenantRepository.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AllTenants
+    path: ../../mix.core/src/platform/mix.library/Repositories/MixTenantRepository.cs
+    startLine: 35
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Repositories
+  syntax:
+    content: public List<MixTenantSystemViewModel> AllTenants { get; set; }
+    parameters: []
+    return:
+      type: List{MixTenantSystemViewModel}
+    content.vb: Public Property AllTenants As List(Of MixTenantSystemViewModel)
+  overload: Mix.Lib.Repositories.MixTenantRepository.AllTenants*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Repositories.MixTenantRepository.GetCurrentTenant(System.String)
+  commentId: M:Mix.Lib.Repositories.MixTenantRepository.GetCurrentTenant(System.String)
+  id: GetCurrentTenant(System.String)
+  parent: Mix.Lib.Repositories.MixTenantRepository
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentTenant(String)
+  nameWithType: MixTenantRepository.GetCurrentTenant(String)
+  fullName: Mix.Lib.Repositories.MixTenantRepository.GetCurrentTenant(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Repositories/MixTenantRepository.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetCurrentTenant
+    path: ../../mix.core/src/platform/mix.library/Repositories/MixTenantRepository.cs
+    startLine: 37
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Repositories
+  syntax:
+    content: public MixTenantSystemViewModel GetCurrentTenant(string host)
+    parameters:
+    - id: host
+      type: System.String
+    return:
+      type: MixTenantSystemViewModel
+    content.vb: Public Function GetCurrentTenant(host As String) As MixTenantSystemViewModel
+  overload: Mix.Lib.Repositories.MixTenantRepository.GetCurrentTenant*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Lib.Repositories
+  commentId: N:Mix.Lib.Repositories
+  name: Mix.Lib.Repositories
+  nameWithType: Mix.Lib.Repositories
+  fullName: Mix.Lib.Repositories
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Repositories.MixTenantRepository.Instance*
+  commentId: Overload:Mix.Lib.Repositories.MixTenantRepository.Instance
+  name: Instance
+  nameWithType: MixTenantRepository.Instance
+  fullName: Mix.Lib.Repositories.MixTenantRepository.Instance
+- uid: Mix.Lib.Repositories.MixTenantRepository
+  commentId: T:Mix.Lib.Repositories.MixTenantRepository
+  parent: Mix.Lib.Repositories
+  name: MixTenantRepository
+  nameWithType: MixTenantRepository
+  fullName: Mix.Lib.Repositories.MixTenantRepository
+- uid: Mix.Lib.Repositories.MixTenantRepository.AllTenants*
+  commentId: Overload:Mix.Lib.Repositories.MixTenantRepository.AllTenants
+  name: AllTenants
+  nameWithType: MixTenantRepository.AllTenants
+  fullName: Mix.Lib.Repositories.MixTenantRepository.AllTenants
+- uid: List{MixTenantSystemViewModel}
+  commentId: '!:List{MixTenantSystemViewModel}'
+  definition: List`1
+  name: List<MixTenantSystemViewModel>
+  nameWithType: List<MixTenantSystemViewModel>
+  fullName: List<MixTenantSystemViewModel>
+  nameWithType.vb: List(Of MixTenantSystemViewModel)
+  fullName.vb: List(Of MixTenantSystemViewModel)
+  name.vb: List(Of MixTenantSystemViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixTenantSystemViewModel
+    name: MixTenantSystemViewModel
+    nameWithType: MixTenantSystemViewModel
+    fullName: MixTenantSystemViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixTenantSystemViewModel
+    name: MixTenantSystemViewModel
+    nameWithType: MixTenantSystemViewModel
+    fullName: MixTenantSystemViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Repositories.MixTenantRepository.GetCurrentTenant*
+  commentId: Overload:Mix.Lib.Repositories.MixTenantRepository.GetCurrentTenant
+  name: GetCurrentTenant
+  nameWithType: MixTenantRepository.GetCurrentTenant
+  fullName: Mix.Lib.Repositories.MixTenantRepository.GetCurrentTenant
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MixTenantSystemViewModel
+  commentId: '!:MixTenantSystemViewModel'
+  isExternal: true
+  name: MixTenantSystemViewModel
+  nameWithType: MixTenantSystemViewModel
+  fullName: MixTenantSystemViewModel

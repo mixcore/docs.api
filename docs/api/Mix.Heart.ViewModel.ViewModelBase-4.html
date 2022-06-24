@@ -1,0 +1,1557 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ViewModelBase&lt;TDbContext, TEntity, TPrimaryKey, TView&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ViewModelBase&lt;TDbContext, TEntity, TPrimaryKey, TView&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Heart.ViewModel.ViewModelBase`4">
+  
+  
+  <h1 id="Mix_Heart_ViewModel_ViewModelBase_4" data-uid="Mix.Heart.ViewModel.ViewModelBase`4" class="text-break">Class ViewModelBase&lt;TDbContext, TEntity, TPrimaryKey, TView&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ViewModelBase&lt;TDbContext, TEntity, TPrimaryKey, TView&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mix.Heart.ViewModel.IViewModel.html">IViewModel</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Heart.ViewModel.html">Mix.Heart.ViewModel</a></h6>
+  <h6><strong>Assembly</strong>: mix.heart.dll</h6>
+  <h5 id="Mix_Heart_ViewModel_ViewModelBase_4_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ViewModelBase&lt;TDbContext, TEntity, TPrimaryKey, TView&gt; : IViewModel where TDbContext : DbContext where TEntity : class, IEntity&lt;TPrimaryKey&gt; where TPrimaryKey : IComparable where TView : ViewModelBase&lt;TDbContext, TEntity, TPrimaryKey, TView&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDbContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TPrimaryKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4__ctor.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L49">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4__ctor_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.#ctor*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4__ctor" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.#ctor">ViewModelBase()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewModelBase()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4__ctor__0_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.%23ctor(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L54">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4__ctor_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.#ctor*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4__ctor__0_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.#ctor(`0)">ViewModelBase(TDbContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewModelBase(TDbContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4__ctor__1_Mix_Heart_UnitOfWork_UnitOfWorkInfo_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.%23ctor(%601%2CMix.Heart.UnitOfWork.UnitOfWorkInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L61">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4__ctor_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.#ctor*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4__ctor__1_Mix_Heart_UnitOfWork_UnitOfWorkInfo_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.#ctor(`1,Mix.Heart.UnitOfWork.UnitOfWorkInfo)">ViewModelBase(TEntity, UnitOfWorkInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewModelBase(TEntity entity, UnitOfWorkInfo uowInfo = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.UnitOfWork.UnitOfWorkInfo.html">UnitOfWorkInfo</a></td>
+        <td><span class="parametername">uowInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4__ctor_Mix_Heart_UnitOfWork_UnitOfWorkInfo_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.%23ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L67">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4__ctor_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.#ctor*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4__ctor_Mix_Heart_UnitOfWork_UnitOfWorkInfo_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)">ViewModelBase(UnitOfWorkInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewModelBase(UnitOfWorkInfo unitOfWorkInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.UnitOfWork.UnitOfWorkInfo.html">UnitOfWorkInfo</a></td>
+        <td><span class="parametername">unitOfWorkInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_Context.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.Context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L43">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_Context_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Context*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_Context" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TDbContext Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_CreatedBy.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.CreatedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L29">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_CreatedBy_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.CreatedBy*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_CreatedBy" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.CreatedBy">CreatedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreatedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_CreatedDateTime.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.CreatedDateTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L27">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_CreatedDateTime_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.CreatedDateTime*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_CreatedDateTime" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.CreatedDateTime">CreatedDateTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime CreatedDateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_Errors.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.Errors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L39">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_Errors_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Errors*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_Errors" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Errors">Errors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public List&lt;ValidationResult&gt; Errors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.ComponentModel.DataAnnotations.ValidationResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_Id.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L26">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_Id_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Id*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_Id" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TPrimaryKey Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TPrimaryKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_IsValid.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.IsValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L34">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_IsValid_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.IsValid*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_IsValid" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public bool IsValid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_LastModified.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.LastModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L28">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_LastModified_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.LastModified*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_LastModified" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.LastModified">LastModified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? LastModified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_ModifiedBy.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.ModifiedBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L30">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_ModifiedBy_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.ModifiedBy*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_ModifiedBy" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.ModifiedBy">ModifiedBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ModifiedBy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_Priority.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.Priority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L31">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_Priority_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Priority*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_Priority" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Priority">Priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Priority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_Repository.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.Repository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L41">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_Repository_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Repository*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_Repository" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Repository">Repository</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+protected Repository&lt;TDbContext, TEntity, TPrimaryKey, TView&gt; Repository { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.Repository.Repository-4.html">Repository</a>&lt;TDbContext, TEntity, TPrimaryKey, TView&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_Status.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L32">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_Status_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Status*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_Status" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixContentStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.Enums.MixContentStatus.html">MixContentStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_UowInfo.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.UowInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L37">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_UowInfo_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.UowInfo*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_UowInfo" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.UowInfo">UowInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+protected UnitOfWorkInfo UowInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.UnitOfWork.UnitOfWorkInfo.html">UnitOfWorkInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_BeginUow.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.BeginUow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Uow.cs/#L14">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_BeginUow_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.BeginUow*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_BeginUow" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.BeginUow">BeginUow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void BeginUow()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_CloseUowAsync.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.CloseUowAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Uow.cs/#L42">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_CloseUowAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_CloseUowAsync" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync">CloseUowAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task CloseUowAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_CompleteUowAsync.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.CompleteUowAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Uow.cs/#L50">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_CompleteUowAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_CompleteUowAsync" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync">CompleteUowAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task CompleteUowAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_DeleteAsync.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.DeleteAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Async.cs/#L16">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_DeleteAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_DeleteAsync" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync">DeleteAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_DeleteHandlerAsync.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.DeleteHandlerAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Async.cs/#L34">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_DeleteHandlerAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_DeleteHandlerAsync" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync">DeleteHandlerAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task DeleteHandlerAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_ExpandView.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.ExpandView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L84">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_ExpandView_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.ExpandView*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_ExpandView" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.ExpandView">ExpandView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task ExpandView()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_GetRepository_Mix_Heart_UnitOfWork_UnitOfWorkInfo_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L89">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_GetRepository_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.GetRepository*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_GetRepository_Mix_Heart_UnitOfWork_UnitOfWorkInfo_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)">GetRepository(UnitOfWorkInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Repository&lt;TDbContext, TEntity, TPrimaryKey, TView&gt; GetRepository(UnitOfWorkInfo uowInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.UnitOfWork.UnitOfWorkInfo.html">UnitOfWorkInfo</a></td>
+        <td><span class="parametername">uowInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.Repository.Repository-4.html">Repository</a>&lt;TDbContext, TEntity, TPrimaryKey, TView&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_GetRootRepository__0_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.GetRootRepository(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L94">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_GetRootRepository_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_GetRootRepository__0_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository(`0)">GetRootRepository(TDbContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Repository&lt;TDbContext, TEntity, TPrimaryKey, TView&gt; GetRootRepository(TDbContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.Repository.Repository-4.html">Repository</a>&lt;TDbContext, TEntity, TPrimaryKey, TView&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_HandleErrorsAsync.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.HandleErrorsAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L151">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_HandleErrorsAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_HandleErrorsAsync" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync">HandleErrorsAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task HandleErrorsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_HandleException_System_Exception_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.HandleException(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L161">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_HandleException_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.HandleException*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_HandleException_System_Exception_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.HandleException(System.Exception)">HandleException(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HandleException(Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_HandleExceptionAsync_System_Exception_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.HandleExceptionAsync(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L156">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_HandleExceptionAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_HandleExceptionAsync_System_Exception_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync(System.Exception)">HandleExceptionAsync(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleExceptionAsync(Exception ex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_InitDbContext.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.InitDbContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Uow.cs/#L61">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_InitDbContext_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_InitDbContext" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext">InitDbContext()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TDbContext InitDbContext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_InitDefaultValues_System_String_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.InitDefaultValues(System.String%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L76">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_InitDefaultValues_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_InitDefaultValues_System_String_System_Nullable_System_Int32__" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})">InitDefaultValues(String, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitDefaultValues(string language = null, int? cultureId = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">cultureId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_InitModel.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.InitModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L116">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_InitModel_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.InitModel*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_InitModel" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.InitModel">InitModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TEntity InitModel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_InitRootUow.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.InitRootUow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Uow.cs/#L36">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_InitRootUow_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_InitRootUow" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow">InitRootUow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void InitRootUow()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_IsDefaultId__2_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.IsDefaultId(%602)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L145">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_IsDefaultId_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_IsDefaultId__2_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId(`2)">IsDefaultId(TPrimaryKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDefaultId(TPrimaryKey id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TPrimaryKey</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_ParseEntity.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.ParseEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L124">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_ParseEntity_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_ParseEntity" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity">ParseEntity()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TEntity&gt; ParseEntity()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_ParseView__1___0_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.ParseView%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L137">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_ParseView_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.ParseView*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_ParseView__1___0_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.ParseView``1(``0)">ParseView&lt;TSource&gt;(TSource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ParseView&lt;TSource&gt;(TSource sourceObject)
+
+    where TSource : TEntity</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSource</span></td>
+        <td><span class="parametername">sourceObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_SaveAsync.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.SaveAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Async.cs/#L39">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_SaveAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_SaveAsync" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync">SaveAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TPrimaryKey&gt; SaveAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TPrimaryKey&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_SaveEntityRelationshipAsync__1_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.SaveEntityRelationshipAsync(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Async.cs/#L111">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_SaveEntityRelationshipAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_SaveEntityRelationshipAsync__1_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync(`1)">SaveEntityRelationshipAsync(TEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task SaveEntityRelationshipAsync(TEntity parentEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td><span class="parametername">parentEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_SaveFieldsAsync_System_Collections_Generic_IEnumerable_Mix_Heart_Models_EntityPropertyModel__.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.SaveFieldsAsync(System.Collections.Generic.IEnumerable%7BMix.Heart.Models.EntityPropertyModel%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Async.cs/#L64">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_SaveFieldsAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_SaveFieldsAsync_System_Collections_Generic_IEnumerable_Mix_Heart_Models_EntityPropertyModel__" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})">SaveFieldsAsync(IEnumerable&lt;EntityPropertyModel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TPrimaryKey&gt; SaveFieldsAsync(IEnumerable&lt;EntityPropertyModel&gt; properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Mix.Heart.Models.EntityPropertyModel.html">EntityPropertyModel</a>&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TPrimaryKey&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_SaveHandlerAsync.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.SaveHandlerAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Async.cs/#L102">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_SaveHandlerAsync_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_SaveHandlerAsync" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync">SaveHandlerAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;TEntity&gt; SaveHandlerAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_SetDbContext__0_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.SetDbContext(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L111">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_SetDbContext_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_SetDbContext__0_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext(`0)">SetDbContext(TDbContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDbContext(TDbContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TDbContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_SetUowInfo_Mix_Heart_UnitOfWork_UnitOfWorkInfo_.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Uow.cs/#L25">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_SetUowInfo_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_SetUowInfo_Mix_Heart_UnitOfWork_UnitOfWorkInfo_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)">SetUowInfo(UnitOfWorkInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUowInfo(UnitOfWorkInfo unitOfWorkInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.UnitOfWork.UnitOfWorkInfo.html">UnitOfWorkInfo</a></td>
+        <td><span class="parametername">unitOfWorkInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4_Validate.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604.Validate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.cs/#L99">View Source</a>
+  </span>
+  <a id="Mix_Heart_ViewModel_ViewModelBase_4_Validate_" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Validate*"></a>
+  <h4 id="Mix_Heart_ViewModel_ViewModelBase_4_Validate" data-uid="Mix.Heart.ViewModel.ViewModelBase`4.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task Validate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mix.Heart.ViewModel.IViewModel.html">IViewModel</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.heart/new/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/apiSpec/new?filename=Mix_Heart_ViewModel_ViewModelBase_4.md&amp;value=---%0Auid%3A%20Mix.Heart.ViewModel.ViewModelBase%604%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.heart/blob/f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436/src/Mix.Heart/ViewModel/ViewModelBase.Uow.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

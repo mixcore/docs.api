@@ -1,0 +1,744 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.SignalR.Services.BaseHubClientService
+  commentId: T:Mix.SignalR.Services.BaseHubClientService
+  id: BaseHubClientService
+  parent: Mix.SignalR.Services
+  children:
+  - Mix.SignalR.Services.BaseHubClientService.#ctor(System.String)
+  - Mix.SignalR.Services.BaseHubClientService._accessToken
+  - Mix.SignalR.Services.BaseHubClientService.connection
+  - Mix.SignalR.Services.BaseHubClientService.HandleMessage(Mix.SignalR.Models.SignalRMessageModel)
+  - Mix.SignalR.Services.BaseHubClientService.hubName
+  - Mix.SignalR.Services.BaseHubClientService.Init
+  - Mix.SignalR.Services.BaseHubClientService.IsStarted
+  - Mix.SignalR.Services.BaseHubClientService.SendMessageAsync(Mix.SignalR.Models.SignalRMessageModel)
+  - Mix.SignalR.Services.BaseHubClientService.SendMessageAsync(System.String,System.String,System.Object,Mix.SignalR.Enums.MessageType)
+  langs:
+  - csharp
+  - vb
+  name: BaseHubClientService
+  nameWithType: BaseHubClientService
+  fullName: Mix.SignalR.Services.BaseHubClientService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: BaseHubClientService
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 10
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: public abstract class BaseHubClientService
+    content.vb: Public MustInherit Class BaseHubClientService
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mix.SignalR.Services.PortalHubClientService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Mix.SignalR.Services.BaseHubClientService.connection
+  commentId: F:Mix.SignalR.Services.BaseHubClientService.connection
+  id: connection
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: connection
+  nameWithType: BaseHubClientService.connection
+  fullName: Mix.SignalR.Services.BaseHubClientService.connection
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: connection
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 12
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: protected HubConnection connection
+    return:
+      type: Microsoft.AspNetCore.SignalR.Client.HubConnection
+    content.vb: Protected connection As HubConnection
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.SignalR.Services.BaseHubClientService.hubName
+  commentId: F:Mix.SignalR.Services.BaseHubClientService.hubName
+  id: hubName
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: hubName
+  nameWithType: BaseHubClientService.hubName
+  fullName: Mix.SignalR.Services.BaseHubClientService.hubName
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: hubName
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 13
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: protected string hubName
+    return:
+      type: System.String
+    content.vb: Protected hubName As String
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.SignalR.Services.BaseHubClientService._accessToken
+  commentId: F:Mix.SignalR.Services.BaseHubClientService._accessToken
+  id: _accessToken
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: _accessToken
+  nameWithType: BaseHubClientService._accessToken
+  fullName: Mix.SignalR.Services.BaseHubClientService._accessToken
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _accessToken
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 14
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: protected string _accessToken
+    return:
+      type: System.String
+    content.vb: Protected _accessToken As String
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.SignalR.Services.BaseHubClientService.IsStarted
+  commentId: P:Mix.SignalR.Services.BaseHubClientService.IsStarted
+  id: IsStarted
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: IsStarted
+  nameWithType: BaseHubClientService.IsStarted
+  fullName: Mix.SignalR.Services.BaseHubClientService.IsStarted
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IsStarted
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 15
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: public bool IsStarted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsStarted As Boolean
+  overload: Mix.SignalR.Services.BaseHubClientService.IsStarted*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.SignalR.Services.BaseHubClientService.#ctor(System.String)
+  commentId: M:Mix.SignalR.Services.BaseHubClientService.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: BaseHubClientService(String)
+  nameWithType: BaseHubClientService.BaseHubClientService(String)
+  fullName: Mix.SignalR.Services.BaseHubClientService.BaseHubClientService(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 17
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: public BaseHubClientService(string hub)
+    parameters:
+    - id: hub
+      type: System.String
+    content.vb: Public Sub New(hub As String)
+  overload: Mix.SignalR.Services.BaseHubClientService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.SignalR.Services.BaseHubClientService.SendMessageAsync(System.String,System.String,System.Object,Mix.SignalR.Enums.MessageType)
+  commentId: M:Mix.SignalR.Services.BaseHubClientService.SendMessageAsync(System.String,System.String,System.Object,Mix.SignalR.Enums.MessageType)
+  id: SendMessageAsync(System.String,System.String,System.Object,Mix.SignalR.Enums.MessageType)
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: SendMessageAsync(String, String, Object, MessageType)
+  nameWithType: BaseHubClientService.SendMessageAsync(String, String, Object, MessageType)
+  fullName: Mix.SignalR.Services.BaseHubClientService.SendMessageAsync(System.String, System.String, System.Object, Mix.SignalR.Enums.MessageType)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendMessageAsync
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 22
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: public Task SendMessageAsync(string title, string description, object data, MessageType messageType = MessageType.Info)
+    parameters:
+    - id: title
+      type: System.String
+    - id: description
+      type: System.String
+    - id: data
+      type: System.Object
+    - id: messageType
+      type: Mix.SignalR.Enums.MessageType
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SendMessageAsync(title As String, description As String, data As Object, messageType As MessageType = MessageType.Info) As Task
+  overload: Mix.SignalR.Services.BaseHubClientService.SendMessageAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.SignalR.Services.BaseHubClientService.SendMessageAsync(Mix.SignalR.Models.SignalRMessageModel)
+  commentId: M:Mix.SignalR.Services.BaseHubClientService.SendMessageAsync(Mix.SignalR.Models.SignalRMessageModel)
+  id: SendMessageAsync(Mix.SignalR.Models.SignalRMessageModel)
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: SendMessageAsync(SignalRMessageModel)
+  nameWithType: BaseHubClientService.SendMessageAsync(SignalRMessageModel)
+  fullName: Mix.SignalR.Services.BaseHubClientService.SendMessageAsync(Mix.SignalR.Models.SignalRMessageModel)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendMessageAsync
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 33
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: public Task SendMessageAsync(SignalRMessageModel message)
+    parameters:
+    - id: message
+      type: Mix.SignalR.Models.SignalRMessageModel
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SendMessageAsync(message As SignalRMessageModel) As Task
+  overload: Mix.SignalR.Services.BaseHubClientService.SendMessageAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.SignalR.Services.BaseHubClientService.Init
+  commentId: M:Mix.SignalR.Services.BaseHubClientService.Init
+  id: Init
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: BaseHubClientService.Init()
+  fullName: Mix.SignalR.Services.BaseHubClientService.Init()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Init
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 54
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: public void Init()
+    content.vb: Public Sub Init
+  overload: Mix.SignalR.Services.BaseHubClientService.Init*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.SignalR.Services.BaseHubClientService.HandleMessage(Mix.SignalR.Models.SignalRMessageModel)
+  commentId: M:Mix.SignalR.Services.BaseHubClientService.HandleMessage(Mix.SignalR.Models.SignalRMessageModel)
+  id: HandleMessage(Mix.SignalR.Models.SignalRMessageModel)
+  parent: Mix.SignalR.Services.BaseHubClientService
+  langs:
+  - csharp
+  - vb
+  name: HandleMessage(SignalRMessageModel)
+  nameWithType: BaseHubClientService.HandleMessage(SignalRMessageModel)
+  fullName: Mix.SignalR.Services.BaseHubClientService.HandleMessage(Mix.SignalR.Models.SignalRMessageModel)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.signalr/Services/BaseHubClientService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: HandleMessage
+    path: ../../mix.core/src/platform/mix.signalr/Services/BaseHubClientService.cs
+    startLine: 87
+  assemblies:
+  - mix.signalr
+  namespace: Mix.SignalR.Services
+  syntax:
+    content: protected abstract void HandleMessage(SignalRMessageModel message)
+    parameters:
+    - id: message
+      type: Mix.SignalR.Models.SignalRMessageModel
+    content.vb: Protected MustOverride Sub HandleMessage(message As SignalRMessageModel)
+  overload: Mix.SignalR.Services.BaseHubClientService.HandleMessage*
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+references:
+- uid: Mix.SignalR.Services
+  commentId: N:Mix.SignalR.Services
+  name: Mix.SignalR.Services
+  nameWithType: Mix.SignalR.Services
+  fullName: Mix.SignalR.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.SignalR.Client.HubConnection
+  commentId: T:Microsoft.AspNetCore.SignalR.Client.HubConnection
+  parent: Microsoft.AspNetCore.SignalR.Client
+  isExternal: true
+  name: HubConnection
+  nameWithType: HubConnection
+  fullName: Microsoft.AspNetCore.SignalR.Client.HubConnection
+- uid: Microsoft.AspNetCore.SignalR.Client
+  commentId: N:Microsoft.AspNetCore.SignalR.Client
+  isExternal: true
+  name: Microsoft.AspNetCore.SignalR.Client
+  nameWithType: Microsoft.AspNetCore.SignalR.Client
+  fullName: Microsoft.AspNetCore.SignalR.Client
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.SignalR.Services.BaseHubClientService.IsStarted*
+  commentId: Overload:Mix.SignalR.Services.BaseHubClientService.IsStarted
+  name: IsStarted
+  nameWithType: BaseHubClientService.IsStarted
+  fullName: Mix.SignalR.Services.BaseHubClientService.IsStarted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.SignalR.Services.BaseHubClientService.#ctor*
+  commentId: Overload:Mix.SignalR.Services.BaseHubClientService.#ctor
+  name: BaseHubClientService
+  nameWithType: BaseHubClientService.BaseHubClientService
+  fullName: Mix.SignalR.Services.BaseHubClientService.BaseHubClientService
+- uid: Mix.SignalR.Services.BaseHubClientService.SendMessageAsync*
+  commentId: Overload:Mix.SignalR.Services.BaseHubClientService.SendMessageAsync
+  name: SendMessageAsync
+  nameWithType: BaseHubClientService.SendMessageAsync
+  fullName: Mix.SignalR.Services.BaseHubClientService.SendMessageAsync
+- uid: Mix.SignalR.Enums.MessageType
+  commentId: T:Mix.SignalR.Enums.MessageType
+  parent: Mix.SignalR.Enums
+  name: MessageType
+  nameWithType: MessageType
+  fullName: Mix.SignalR.Enums.MessageType
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Mix.SignalR.Enums
+  commentId: N:Mix.SignalR.Enums
+  name: Mix.SignalR.Enums
+  nameWithType: Mix.SignalR.Enums
+  fullName: Mix.SignalR.Enums
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.SignalR.Models.SignalRMessageModel
+  commentId: T:Mix.SignalR.Models.SignalRMessageModel
+  parent: Mix.SignalR.Models
+  name: SignalRMessageModel
+  nameWithType: SignalRMessageModel
+  fullName: Mix.SignalR.Models.SignalRMessageModel
+- uid: Mix.SignalR.Models
+  commentId: N:Mix.SignalR.Models
+  name: Mix.SignalR.Models
+  nameWithType: Mix.SignalR.Models
+  fullName: Mix.SignalR.Models
+- uid: Mix.SignalR.Services.BaseHubClientService.Init*
+  commentId: Overload:Mix.SignalR.Services.BaseHubClientService.Init
+  name: Init
+  nameWithType: BaseHubClientService.Init
+  fullName: Mix.SignalR.Services.BaseHubClientService.Init
+- uid: Mix.SignalR.Services.BaseHubClientService.HandleMessage*
+  commentId: Overload:Mix.SignalR.Services.BaseHubClientService.HandleMessage
+  name: HandleMessage
+  nameWithType: BaseHubClientService.HandleMessage
+  fullName: Mix.SignalR.Services.BaseHubClientService.HandleMessage

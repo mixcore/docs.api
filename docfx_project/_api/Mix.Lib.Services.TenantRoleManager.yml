@@ -1,0 +1,2631 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Services.TenantRoleManager
+  commentId: T:Mix.Lib.Services.TenantRoleManager
+  id: TenantRoleManager
+  parent: Mix.Lib.Services
+  children:
+  - Mix.Lib.Services.TenantRoleManager.#ctor(Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole},IEnumerable{Microsoft.AspNetCore.Identity.IRoleValidator{Mix.Database.Entities.Account.MixRole}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}})
+  - Mix.Lib.Services.TenantRoleManager.Context
+  langs:
+  - csharp
+  - vb
+  name: TenantRoleManager
+  nameWithType: TenantRoleManager
+  fullName: Mix.Lib.Services.TenantRoleManager
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Services/TenantRoleManager.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TenantRoleManager
+    path: ../../mix.core/src/platform/mix.library/Services/TenantRoleManager.cs
+    startLine: 6
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: 'public class TenantRoleManager : RoleManager<MixRole>, IDisposable'
+    content.vb: >-
+      Public Class TenantRoleManager
+          Inherits RoleManager(Of MixRole)
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.CreateAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.DeleteAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RoleExistsAsync(System.String)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.NormalizeKey(System.String)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.FindByIdAsync(System.String)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetRoleIdAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.FindByNameAsync(System.String)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.AddClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RemoveClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetClaimsAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Dispose
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Dispose(System.Boolean)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ValidateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ThrowIfDisposed
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.CancellationToken
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Store
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Logger
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RoleValidators
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ErrorDescriber
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.KeyNormalizer
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Roles
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SupportsQueryableRoles
+  - Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SupportsRoleClaims
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Services.TenantRoleManager.#ctor(Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole},IEnumerable{Microsoft.AspNetCore.Identity.IRoleValidator{Mix.Database.Entities.Account.MixRole}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}})
+  commentId: M:Mix.Lib.Services.TenantRoleManager.#ctor(Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole},IEnumerable{Microsoft.AspNetCore.Identity.IRoleValidator{Mix.Database.Entities.Account.MixRole}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}})
+  id: '#ctor(Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole},IEnumerable{Microsoft.AspNetCore.Identity.IRoleValidator{Mix.Database.Entities.Account.MixRole}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}})'
+  parent: Mix.Lib.Services.TenantRoleManager
+  langs:
+  - csharp
+  - vb
+  name: TenantRoleManager(MixCmsAccountContext, IRoleStore<MixRole>, IEnumerable<IRoleValidator<MixRole>>, ILookupNormalizer, IdentityErrorDescriber, ILogger<RoleManager<MixRole>>)
+  nameWithType: TenantRoleManager.TenantRoleManager(MixCmsAccountContext, IRoleStore<MixRole>, IEnumerable<IRoleValidator<MixRole>>, ILookupNormalizer, IdentityErrorDescriber, ILogger<RoleManager<MixRole>>)
+  fullName: Mix.Lib.Services.TenantRoleManager.TenantRoleManager(Mix.Database.Entities.Account.MixCmsAccountContext, Microsoft.AspNetCore.Identity.IRoleStore<Mix.Database.Entities.Account.MixRole>, IEnumerable<Microsoft.AspNetCore.Identity.IRoleValidator<Mix.Database.Entities.Account.MixRole>>, Microsoft.AspNetCore.Identity.ILookupNormalizer, Microsoft.AspNetCore.Identity.IdentityErrorDescriber, Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>>)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Services/TenantRoleManager.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Services/TenantRoleManager.cs
+    startLine: 8
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public TenantRoleManager(MixCmsAccountContext context, IRoleStore<MixRole> store, IEnumerable<IRoleValidator<MixRole>> roleValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, ILogger<RoleManager<MixRole>> logger)
+    parameters:
+    - id: context
+      type: Mix.Database.Entities.Account.MixCmsAccountContext
+    - id: store
+      type: Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole}
+    - id: roleValidators
+      type: IEnumerable{Microsoft.AspNetCore.Identity.IRoleValidator{Mix.Database.Entities.Account.MixRole}}
+    - id: keyNormalizer
+      type: Microsoft.AspNetCore.Identity.ILookupNormalizer
+    - id: errors
+      type: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}}
+    content.vb: Public Sub New(context As MixCmsAccountContext, store As IRoleStore(Of MixRole), roleValidators As IEnumerable(Of IRoleValidator(Of MixRole)), keyNormalizer As ILookupNormalizer, errors As IdentityErrorDescriber, logger As ILogger(Of RoleManager(Of MixRole)))
+  overload: Mix.Lib.Services.TenantRoleManager.#ctor*
+  nameWithType.vb: TenantRoleManager.TenantRoleManager(MixCmsAccountContext, IRoleStore(Of MixRole), IEnumerable(Of IRoleValidator(Of MixRole)), ILookupNormalizer, IdentityErrorDescriber, ILogger(Of RoleManager(Of MixRole)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.TenantRoleManager.TenantRoleManager(Mix.Database.Entities.Account.MixCmsAccountContext, Microsoft.AspNetCore.Identity.IRoleStore(Of Mix.Database.Entities.Account.MixRole), IEnumerable(Of Microsoft.AspNetCore.Identity.IRoleValidator(Of Mix.Database.Entities.Account.MixRole)), Microsoft.AspNetCore.Identity.ILookupNormalizer, Microsoft.AspNetCore.Identity.IdentityErrorDescriber, Microsoft.Extensions.Logging.ILogger(Of Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole)))
+  name.vb: TenantRoleManager(MixCmsAccountContext, IRoleStore(Of MixRole), IEnumerable(Of IRoleValidator(Of MixRole)), ILookupNormalizer, IdentityErrorDescriber, ILogger(Of RoleManager(Of MixRole)))
+- uid: Mix.Lib.Services.TenantRoleManager.Context
+  commentId: P:Mix.Lib.Services.TenantRoleManager.Context
+  id: Context
+  parent: Mix.Lib.Services.TenantRoleManager
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: TenantRoleManager.Context
+  fullName: Mix.Lib.Services.TenantRoleManager.Context
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Services/TenantRoleManager.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Context
+    path: ../../mix.core/src/platform/mix.library/Services/TenantRoleManager.cs
+    startLine: 19
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public MixCmsAccountContext Context { get; }
+    parameters: []
+    return:
+      type: Mix.Database.Entities.Account.MixCmsAccountContext
+    content.vb: Public ReadOnly Property Context As MixCmsAccountContext
+  overload: Mix.Lib.Services.TenantRoleManager.Context*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  commentId: T:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1
+  name: RoleManager<MixRole>
+  nameWithType: RoleManager<MixRole>
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>
+  nameWithType.vb: RoleManager(Of MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole)
+  name.vb: RoleManager(Of MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.CreateAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.CreateAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.CreateAsync(`0)
+  name: CreateAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.CreateAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.CreateAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).CreateAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).CreateAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: RoleManager<MixRole>.CreateAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.CreateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: RoleManager(Of MixRole).CreateAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).CreateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateNormalizedRoleNameAsync(`0)
+  name: UpdateNormalizedRoleNameAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.UpdateNormalizedRoleNameAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.UpdateNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).UpdateNormalizedRoleNameAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).UpdateNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateNormalizedRoleNameAsync(`0)
+    name: UpdateNormalizedRoleNameAsync
+    nameWithType: RoleManager<MixRole>.UpdateNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.UpdateNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateNormalizedRoleNameAsync(`0)
+    name: UpdateNormalizedRoleNameAsync
+    nameWithType: RoleManager(Of MixRole).UpdateNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).UpdateNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateAsync(`0)
+  name: UpdateAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.UpdateAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.UpdateAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).UpdateAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).UpdateAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: RoleManager<MixRole>.UpdateAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.UpdateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: RoleManager(Of MixRole).UpdateAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).UpdateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.DeleteAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.DeleteAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.DeleteAsync(`0)
+  name: DeleteAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.DeleteAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.DeleteAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).DeleteAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).DeleteAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.DeleteAsync(`0)
+    name: DeleteAsync
+    nameWithType: RoleManager<MixRole>.DeleteAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.DeleteAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.DeleteAsync(`0)
+    name: DeleteAsync
+    nameWithType: RoleManager(Of MixRole).DeleteAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).DeleteAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RoleExistsAsync(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RoleExistsAsync(System.String)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.RoleExistsAsync(System.String)
+  name: RoleExistsAsync(String)
+  nameWithType: RoleManager<MixRole>.RoleExistsAsync(String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.RoleExistsAsync(System.String)
+  nameWithType.vb: RoleManager(Of MixRole).RoleExistsAsync(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).RoleExistsAsync(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.RoleExistsAsync(System.String)
+    name: RoleExistsAsync
+    nameWithType: RoleManager<MixRole>.RoleExistsAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.RoleExistsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.RoleExistsAsync(System.String)
+    name: RoleExistsAsync
+    nameWithType: RoleManager(Of MixRole).RoleExistsAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).RoleExistsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.NormalizeKey(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.NormalizeKey(System.String)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.NormalizeKey(System.String)
+  name: NormalizeKey(String)
+  nameWithType: RoleManager<MixRole>.NormalizeKey(String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.NormalizeKey(System.String)
+  nameWithType.vb: RoleManager(Of MixRole).NormalizeKey(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).NormalizeKey(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.NormalizeKey(System.String)
+    name: NormalizeKey
+    nameWithType: RoleManager<MixRole>.NormalizeKey
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.NormalizeKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.NormalizeKey(System.String)
+    name: NormalizeKey
+    nameWithType: RoleManager(Of MixRole).NormalizeKey
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).NormalizeKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.FindByIdAsync(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.FindByIdAsync(System.String)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.FindByIdAsync(System.String)
+  name: FindByIdAsync(String)
+  nameWithType: RoleManager<MixRole>.FindByIdAsync(String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.FindByIdAsync(System.String)
+  nameWithType.vb: RoleManager(Of MixRole).FindByIdAsync(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).FindByIdAsync(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByIdAsync(System.String)
+    name: FindByIdAsync
+    nameWithType: RoleManager<MixRole>.FindByIdAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.FindByIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByIdAsync(System.String)
+    name: FindByIdAsync
+    nameWithType: RoleManager(Of MixRole).FindByIdAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).FindByIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleNameAsync(`0)
+  name: GetRoleNameAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.GetRoleNameAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.GetRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).GetRoleNameAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).GetRoleNameAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleNameAsync(`0)
+    name: GetRoleNameAsync
+    nameWithType: RoleManager<MixRole>.GetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.GetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleNameAsync(`0)
+    name: GetRoleNameAsync
+    nameWithType: RoleManager(Of MixRole).GetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).GetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.SetRoleNameAsync(`0,System.String)
+  name: SetRoleNameAsync(MixRole, String)
+  nameWithType: RoleManager<MixRole>.SetRoleNameAsync(MixRole, String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.SetRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.String)
+  nameWithType.vb: RoleManager(Of MixRole).SetRoleNameAsync(MixRole, String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).SetRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.SetRoleNameAsync(`0,System.String)
+    name: SetRoleNameAsync
+    nameWithType: RoleManager<MixRole>.SetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.SetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.SetRoleNameAsync(`0,System.String)
+    name: SetRoleNameAsync
+    nameWithType: RoleManager(Of MixRole).SetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).SetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetRoleIdAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetRoleIdAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleIdAsync(`0)
+  name: GetRoleIdAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.GetRoleIdAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.GetRoleIdAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).GetRoleIdAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).GetRoleIdAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleIdAsync(`0)
+    name: GetRoleIdAsync
+    nameWithType: RoleManager<MixRole>.GetRoleIdAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.GetRoleIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleIdAsync(`0)
+    name: GetRoleIdAsync
+    nameWithType: RoleManager(Of MixRole).GetRoleIdAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).GetRoleIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.FindByNameAsync(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.FindByNameAsync(System.String)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.FindByNameAsync(System.String)
+  name: FindByNameAsync(String)
+  nameWithType: RoleManager<MixRole>.FindByNameAsync(String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.FindByNameAsync(System.String)
+  nameWithType.vb: RoleManager(Of MixRole).FindByNameAsync(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).FindByNameAsync(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByNameAsync(System.String)
+    name: FindByNameAsync
+    nameWithType: RoleManager<MixRole>.FindByNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.FindByNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByNameAsync(System.String)
+    name: FindByNameAsync
+    nameWithType: RoleManager(Of MixRole).FindByNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).FindByNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.AddClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.AddClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.AddClaimAsync(`0,System.Security.Claims.Claim)
+  name: AddClaimAsync(MixRole, Claim)
+  nameWithType: RoleManager<MixRole>.AddClaimAsync(MixRole, Claim)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.AddClaimAsync(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim)
+  nameWithType.vb: RoleManager(Of MixRole).AddClaimAsync(MixRole, Claim)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).AddClaimAsync(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.AddClaimAsync(`0,System.Security.Claims.Claim)
+    name: AddClaimAsync
+    nameWithType: RoleManager<MixRole>.AddClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.AddClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.AddClaimAsync(`0,System.Security.Claims.Claim)
+    name: AddClaimAsync
+    nameWithType: RoleManager(Of MixRole).AddClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).AddClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RemoveClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RemoveClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.RemoveClaimAsync(`0,System.Security.Claims.Claim)
+  name: RemoveClaimAsync(MixRole, Claim)
+  nameWithType: RoleManager<MixRole>.RemoveClaimAsync(MixRole, Claim)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.RemoveClaimAsync(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim)
+  nameWithType.vb: RoleManager(Of MixRole).RemoveClaimAsync(MixRole, Claim)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).RemoveClaimAsync(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.RemoveClaimAsync(`0,System.Security.Claims.Claim)
+    name: RemoveClaimAsync
+    nameWithType: RoleManager<MixRole>.RemoveClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.RemoveClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.RemoveClaimAsync(`0,System.Security.Claims.Claim)
+    name: RemoveClaimAsync
+    nameWithType: RoleManager(Of MixRole).RemoveClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).RemoveClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetClaimsAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.GetClaimsAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.GetClaimsAsync(`0)
+  name: GetClaimsAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.GetClaimsAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.GetClaimsAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).GetClaimsAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).GetClaimsAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetClaimsAsync(`0)
+    name: GetClaimsAsync
+    nameWithType: RoleManager<MixRole>.GetClaimsAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.GetClaimsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetClaimsAsync(`0)
+    name: GetClaimsAsync
+    nameWithType: RoleManager(Of MixRole).GetClaimsAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).GetClaimsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Dispose
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Dispose
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose
+  name: Dispose()
+  nameWithType: RoleManager<MixRole>.Dispose()
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.Dispose()
+  nameWithType.vb: RoleManager(Of MixRole).Dispose()
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).Dispose()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose
+    name: Dispose
+    nameWithType: RoleManager<MixRole>.Dispose
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose
+    name: Dispose
+    nameWithType: RoleManager(Of MixRole).Dispose
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Dispose(System.Boolean)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Dispose(System.Boolean)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  nameWithType: RoleManager<MixRole>.Dispose(Boolean)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.Dispose(System.Boolean)
+  nameWithType.vb: RoleManager(Of MixRole).Dispose(Boolean)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: RoleManager<MixRole>.Dispose
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: RoleManager(Of MixRole).Dispose
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ValidateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ValidateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.ValidateRoleAsync(`0)
+  name: ValidateRoleAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.ValidateRoleAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.ValidateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).ValidateRoleAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).ValidateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.ValidateRoleAsync(`0)
+    name: ValidateRoleAsync
+    nameWithType: RoleManager<MixRole>.ValidateRoleAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.ValidateRoleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.ValidateRoleAsync(`0)
+    name: ValidateRoleAsync
+    nameWithType: RoleManager(Of MixRole).ValidateRoleAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).ValidateRoleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.UpdateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateRoleAsync(`0)
+  name: UpdateRoleAsync(MixRole)
+  nameWithType: RoleManager<MixRole>.UpdateRoleAsync(MixRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.UpdateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  nameWithType.vb: RoleManager(Of MixRole).UpdateRoleAsync(MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).UpdateRoleAsync(Mix.Database.Entities.Account.MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateRoleAsync(`0)
+    name: UpdateRoleAsync
+    nameWithType: RoleManager<MixRole>.UpdateRoleAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.UpdateRoleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateRoleAsync(`0)
+    name: UpdateRoleAsync
+    nameWithType: RoleManager(Of MixRole).UpdateRoleAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).UpdateRoleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ThrowIfDisposed
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ThrowIfDisposed
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.ThrowIfDisposed
+  name: ThrowIfDisposed()
+  nameWithType: RoleManager<MixRole>.ThrowIfDisposed()
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.ThrowIfDisposed()
+  nameWithType.vb: RoleManager(Of MixRole).ThrowIfDisposed()
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).ThrowIfDisposed()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.ThrowIfDisposed
+    name: ThrowIfDisposed
+    nameWithType: RoleManager<MixRole>.ThrowIfDisposed
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.ThrowIfDisposed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.ThrowIfDisposed
+    name: ThrowIfDisposed
+    nameWithType: RoleManager(Of MixRole).ThrowIfDisposed
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).ThrowIfDisposed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.CancellationToken
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.CancellationToken
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.CancellationToken
+  name: CancellationToken
+  nameWithType: RoleManager<MixRole>.CancellationToken
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.CancellationToken
+  nameWithType.vb: RoleManager(Of MixRole).CancellationToken
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).CancellationToken
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Store
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Store
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.Store
+  name: Store
+  nameWithType: RoleManager<MixRole>.Store
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.Store
+  nameWithType.vb: RoleManager(Of MixRole).Store
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).Store
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Logger
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Logger
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.Logger
+  name: Logger
+  nameWithType: RoleManager<MixRole>.Logger
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.Logger
+  nameWithType.vb: RoleManager(Of MixRole).Logger
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).Logger
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RoleValidators
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.RoleValidators
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.RoleValidators
+  name: RoleValidators
+  nameWithType: RoleManager<MixRole>.RoleValidators
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.RoleValidators
+  nameWithType.vb: RoleManager(Of MixRole).RoleValidators
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).RoleValidators
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ErrorDescriber
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.ErrorDescriber
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.ErrorDescriber
+  name: ErrorDescriber
+  nameWithType: RoleManager<MixRole>.ErrorDescriber
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.ErrorDescriber
+  nameWithType.vb: RoleManager(Of MixRole).ErrorDescriber
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).ErrorDescriber
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.KeyNormalizer
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.KeyNormalizer
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.KeyNormalizer
+  name: KeyNormalizer
+  nameWithType: RoleManager<MixRole>.KeyNormalizer
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.KeyNormalizer
+  nameWithType.vb: RoleManager(Of MixRole).KeyNormalizer
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).KeyNormalizer
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Roles
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.Roles
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.Roles
+  name: Roles
+  nameWithType: RoleManager<MixRole>.Roles
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.Roles
+  nameWithType.vb: RoleManager(Of MixRole).Roles
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).Roles
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SupportsQueryableRoles
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SupportsQueryableRoles
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.SupportsQueryableRoles
+  name: SupportsQueryableRoles
+  nameWithType: RoleManager<MixRole>.SupportsQueryableRoles
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.SupportsQueryableRoles
+  nameWithType.vb: RoleManager(Of MixRole).SupportsQueryableRoles
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).SupportsQueryableRoles
+- uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SupportsRoleClaims
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}.SupportsRoleClaims
+  parent: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
+  definition: Microsoft.AspNetCore.Identity.RoleManager`1.SupportsRoleClaims
+  name: SupportsRoleClaims
+  nameWithType: RoleManager<MixRole>.SupportsRoleClaims
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>.SupportsRoleClaims
+  nameWithType.vb: RoleManager(Of MixRole).SupportsRoleClaims
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole).SupportsRoleClaims
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1
+  commentId: T:Microsoft.AspNetCore.Identity.RoleManager`1
+  isExternal: true
+  name: RoleManager<TRole>
+  nameWithType: RoleManager<TRole>
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>
+  nameWithType.vb: RoleManager(Of TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole)
+  name.vb: RoleManager(Of TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.CreateAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.CreateAsync(`0)
+  isExternal: true
+  name: CreateAsync(TRole)
+  nameWithType: RoleManager<TRole>.CreateAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.CreateAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).CreateAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).CreateAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: RoleManager<TRole>.CreateAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.CreateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.CreateAsync(`0)
+    name: CreateAsync
+    nameWithType: RoleManager(Of TRole).CreateAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).CreateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateNormalizedRoleNameAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.UpdateNormalizedRoleNameAsync(`0)
+  isExternal: true
+  name: UpdateNormalizedRoleNameAsync(TRole)
+  nameWithType: RoleManager<TRole>.UpdateNormalizedRoleNameAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.UpdateNormalizedRoleNameAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).UpdateNormalizedRoleNameAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).UpdateNormalizedRoleNameAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateNormalizedRoleNameAsync(`0)
+    name: UpdateNormalizedRoleNameAsync
+    nameWithType: RoleManager<TRole>.UpdateNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.UpdateNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateNormalizedRoleNameAsync(`0)
+    name: UpdateNormalizedRoleNameAsync
+    nameWithType: RoleManager(Of TRole).UpdateNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).UpdateNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.UpdateAsync(`0)
+  isExternal: true
+  name: UpdateAsync(TRole)
+  nameWithType: RoleManager<TRole>.UpdateAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.UpdateAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).UpdateAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).UpdateAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: RoleManager<TRole>.UpdateAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.UpdateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateAsync(`0)
+    name: UpdateAsync
+    nameWithType: RoleManager(Of TRole).UpdateAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).UpdateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.DeleteAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.DeleteAsync(`0)
+  isExternal: true
+  name: DeleteAsync(TRole)
+  nameWithType: RoleManager<TRole>.DeleteAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.DeleteAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).DeleteAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).DeleteAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.DeleteAsync(`0)
+    name: DeleteAsync
+    nameWithType: RoleManager<TRole>.DeleteAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.DeleteAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.DeleteAsync(`0)
+    name: DeleteAsync
+    nameWithType: RoleManager(Of TRole).DeleteAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).DeleteAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.RoleExistsAsync(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.RoleExistsAsync(System.String)
+  isExternal: true
+  name: RoleExistsAsync(String)
+  nameWithType: RoleManager<TRole>.RoleExistsAsync(String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.RoleExistsAsync(System.String)
+  nameWithType.vb: RoleManager(Of TRole).RoleExistsAsync(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).RoleExistsAsync(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.RoleExistsAsync(System.String)
+    name: RoleExistsAsync
+    nameWithType: RoleManager<TRole>.RoleExistsAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.RoleExistsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.RoleExistsAsync(System.String)
+    name: RoleExistsAsync
+    nameWithType: RoleManager(Of TRole).RoleExistsAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).RoleExistsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.NormalizeKey(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.NormalizeKey(System.String)
+  isExternal: true
+  name: NormalizeKey(String)
+  nameWithType: RoleManager<TRole>.NormalizeKey(String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.NormalizeKey(System.String)
+  nameWithType.vb: RoleManager(Of TRole).NormalizeKey(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).NormalizeKey(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.NormalizeKey(System.String)
+    name: NormalizeKey
+    nameWithType: RoleManager<TRole>.NormalizeKey
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.NormalizeKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.NormalizeKey(System.String)
+    name: NormalizeKey
+    nameWithType: RoleManager(Of TRole).NormalizeKey
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).NormalizeKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByIdAsync(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.FindByIdAsync(System.String)
+  isExternal: true
+  name: FindByIdAsync(String)
+  nameWithType: RoleManager<TRole>.FindByIdAsync(String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.FindByIdAsync(System.String)
+  nameWithType.vb: RoleManager(Of TRole).FindByIdAsync(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).FindByIdAsync(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByIdAsync(System.String)
+    name: FindByIdAsync
+    nameWithType: RoleManager<TRole>.FindByIdAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.FindByIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByIdAsync(System.String)
+    name: FindByIdAsync
+    nameWithType: RoleManager(Of TRole).FindByIdAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).FindByIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleNameAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleNameAsync(`0)
+  isExternal: true
+  name: GetRoleNameAsync(TRole)
+  nameWithType: RoleManager<TRole>.GetRoleNameAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.GetRoleNameAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).GetRoleNameAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).GetRoleNameAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleNameAsync(`0)
+    name: GetRoleNameAsync
+    nameWithType: RoleManager<TRole>.GetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.GetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleNameAsync(`0)
+    name: GetRoleNameAsync
+    nameWithType: RoleManager(Of TRole).GetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).GetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.SetRoleNameAsync(`0,System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.SetRoleNameAsync(`0,System.String)
+  isExternal: true
+  name: SetRoleNameAsync(TRole, String)
+  nameWithType: RoleManager<TRole>.SetRoleNameAsync(TRole, String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.SetRoleNameAsync(TRole, System.String)
+  nameWithType.vb: RoleManager(Of TRole).SetRoleNameAsync(TRole, String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).SetRoleNameAsync(TRole, System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.SetRoleNameAsync(`0,System.String)
+    name: SetRoleNameAsync
+    nameWithType: RoleManager<TRole>.SetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.SetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.SetRoleNameAsync(`0,System.String)
+    name: SetRoleNameAsync
+    nameWithType: RoleManager(Of TRole).SetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).SetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleIdAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleIdAsync(`0)
+  isExternal: true
+  name: GetRoleIdAsync(TRole)
+  nameWithType: RoleManager<TRole>.GetRoleIdAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.GetRoleIdAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).GetRoleIdAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).GetRoleIdAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleIdAsync(`0)
+    name: GetRoleIdAsync
+    nameWithType: RoleManager<TRole>.GetRoleIdAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.GetRoleIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetRoleIdAsync(`0)
+    name: GetRoleIdAsync
+    nameWithType: RoleManager(Of TRole).GetRoleIdAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).GetRoleIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByNameAsync(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.FindByNameAsync(System.String)
+  isExternal: true
+  name: FindByNameAsync(String)
+  nameWithType: RoleManager<TRole>.FindByNameAsync(String)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.FindByNameAsync(System.String)
+  nameWithType.vb: RoleManager(Of TRole).FindByNameAsync(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).FindByNameAsync(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByNameAsync(System.String)
+    name: FindByNameAsync
+    nameWithType: RoleManager<TRole>.FindByNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.FindByNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.FindByNameAsync(System.String)
+    name: FindByNameAsync
+    nameWithType: RoleManager(Of TRole).FindByNameAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).FindByNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.AddClaimAsync(`0,System.Security.Claims.Claim)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.AddClaimAsync(`0,System.Security.Claims.Claim)
+  isExternal: true
+  name: AddClaimAsync(TRole, Claim)
+  nameWithType: RoleManager<TRole>.AddClaimAsync(TRole, Claim)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.AddClaimAsync(TRole, System.Security.Claims.Claim)
+  nameWithType.vb: RoleManager(Of TRole).AddClaimAsync(TRole, Claim)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).AddClaimAsync(TRole, System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.AddClaimAsync(`0,System.Security.Claims.Claim)
+    name: AddClaimAsync
+    nameWithType: RoleManager<TRole>.AddClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.AddClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.AddClaimAsync(`0,System.Security.Claims.Claim)
+    name: AddClaimAsync
+    nameWithType: RoleManager(Of TRole).AddClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).AddClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.RemoveClaimAsync(`0,System.Security.Claims.Claim)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.RemoveClaimAsync(`0,System.Security.Claims.Claim)
+  isExternal: true
+  name: RemoveClaimAsync(TRole, Claim)
+  nameWithType: RoleManager<TRole>.RemoveClaimAsync(TRole, Claim)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.RemoveClaimAsync(TRole, System.Security.Claims.Claim)
+  nameWithType.vb: RoleManager(Of TRole).RemoveClaimAsync(TRole, Claim)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).RemoveClaimAsync(TRole, System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.RemoveClaimAsync(`0,System.Security.Claims.Claim)
+    name: RemoveClaimAsync
+    nameWithType: RoleManager<TRole>.RemoveClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.RemoveClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.RemoveClaimAsync(`0,System.Security.Claims.Claim)
+    name: RemoveClaimAsync
+    nameWithType: RoleManager(Of TRole).RemoveClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).RemoveClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetClaimsAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.GetClaimsAsync(`0)
+  isExternal: true
+  name: GetClaimsAsync(TRole)
+  nameWithType: RoleManager<TRole>.GetClaimsAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.GetClaimsAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).GetClaimsAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).GetClaimsAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetClaimsAsync(`0)
+    name: GetClaimsAsync
+    nameWithType: RoleManager<TRole>.GetClaimsAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.GetClaimsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.GetClaimsAsync(`0)
+    name: GetClaimsAsync
+    nameWithType: RoleManager(Of TRole).GetClaimsAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).GetClaimsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.Dispose
+  isExternal: true
+  name: Dispose()
+  nameWithType: RoleManager<TRole>.Dispose()
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.Dispose()
+  nameWithType.vb: RoleManager(Of TRole).Dispose()
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).Dispose()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose
+    name: Dispose
+    nameWithType: RoleManager<TRole>.Dispose
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose
+    name: Dispose
+    nameWithType: RoleManager(Of TRole).Dispose
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose(System.Boolean)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.Dispose(System.Boolean)
+  isExternal: true
+  name: Dispose(Boolean)
+  nameWithType: RoleManager<TRole>.Dispose(Boolean)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.Dispose(System.Boolean)
+  nameWithType.vb: RoleManager(Of TRole).Dispose(Boolean)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).Dispose(System.Boolean)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: RoleManager<TRole>.Dispose
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.Dispose(System.Boolean)
+    name: Dispose
+    nameWithType: RoleManager(Of TRole).Dispose
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.ValidateRoleAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.ValidateRoleAsync(`0)
+  isExternal: true
+  name: ValidateRoleAsync(TRole)
+  nameWithType: RoleManager<TRole>.ValidateRoleAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.ValidateRoleAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).ValidateRoleAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).ValidateRoleAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.ValidateRoleAsync(`0)
+    name: ValidateRoleAsync
+    nameWithType: RoleManager<TRole>.ValidateRoleAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.ValidateRoleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.ValidateRoleAsync(`0)
+    name: ValidateRoleAsync
+    nameWithType: RoleManager(Of TRole).ValidateRoleAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).ValidateRoleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateRoleAsync(`0)
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.UpdateRoleAsync(`0)
+  isExternal: true
+  name: UpdateRoleAsync(TRole)
+  nameWithType: RoleManager<TRole>.UpdateRoleAsync(TRole)
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.UpdateRoleAsync(TRole)
+  nameWithType.vb: RoleManager(Of TRole).UpdateRoleAsync(TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).UpdateRoleAsync(TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateRoleAsync(`0)
+    name: UpdateRoleAsync
+    nameWithType: RoleManager<TRole>.UpdateRoleAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.UpdateRoleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.UpdateRoleAsync(`0)
+    name: UpdateRoleAsync
+    nameWithType: RoleManager(Of TRole).UpdateRoleAsync
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).UpdateRoleAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.ThrowIfDisposed
+  commentId: M:Microsoft.AspNetCore.Identity.RoleManager`1.ThrowIfDisposed
+  isExternal: true
+  name: ThrowIfDisposed()
+  nameWithType: RoleManager<TRole>.ThrowIfDisposed()
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.ThrowIfDisposed()
+  nameWithType.vb: RoleManager(Of TRole).ThrowIfDisposed()
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).ThrowIfDisposed()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.ThrowIfDisposed
+    name: ThrowIfDisposed
+    nameWithType: RoleManager<TRole>.ThrowIfDisposed
+    fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.ThrowIfDisposed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1.ThrowIfDisposed
+    name: ThrowIfDisposed
+    nameWithType: RoleManager(Of TRole).ThrowIfDisposed
+    fullName: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).ThrowIfDisposed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.CancellationToken
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: RoleManager<TRole>.CancellationToken
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.CancellationToken
+  nameWithType.vb: RoleManager(Of TRole).CancellationToken
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).CancellationToken
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.Store
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.Store
+  isExternal: true
+  name: Store
+  nameWithType: RoleManager<TRole>.Store
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.Store
+  nameWithType.vb: RoleManager(Of TRole).Store
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).Store
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.Logger
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.Logger
+  isExternal: true
+  name: Logger
+  nameWithType: RoleManager<TRole>.Logger
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.Logger
+  nameWithType.vb: RoleManager(Of TRole).Logger
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).Logger
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.RoleValidators
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.RoleValidators
+  isExternal: true
+  name: RoleValidators
+  nameWithType: RoleManager<TRole>.RoleValidators
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.RoleValidators
+  nameWithType.vb: RoleManager(Of TRole).RoleValidators
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).RoleValidators
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.ErrorDescriber
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.ErrorDescriber
+  isExternal: true
+  name: ErrorDescriber
+  nameWithType: RoleManager<TRole>.ErrorDescriber
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.ErrorDescriber
+  nameWithType.vb: RoleManager(Of TRole).ErrorDescriber
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).ErrorDescriber
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.KeyNormalizer
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.KeyNormalizer
+  isExternal: true
+  name: KeyNormalizer
+  nameWithType: RoleManager<TRole>.KeyNormalizer
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.KeyNormalizer
+  nameWithType.vb: RoleManager(Of TRole).KeyNormalizer
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).KeyNormalizer
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.Roles
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.Roles
+  isExternal: true
+  name: Roles
+  nameWithType: RoleManager<TRole>.Roles
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.Roles
+  nameWithType.vb: RoleManager(Of TRole).Roles
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).Roles
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.SupportsQueryableRoles
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.SupportsQueryableRoles
+  isExternal: true
+  name: SupportsQueryableRoles
+  nameWithType: RoleManager<TRole>.SupportsQueryableRoles
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.SupportsQueryableRoles
+  nameWithType.vb: RoleManager(Of TRole).SupportsQueryableRoles
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).SupportsQueryableRoles
+- uid: Microsoft.AspNetCore.Identity.RoleManager`1.SupportsRoleClaims
+  commentId: P:Microsoft.AspNetCore.Identity.RoleManager`1.SupportsRoleClaims
+  isExternal: true
+  name: SupportsRoleClaims
+  nameWithType: RoleManager<TRole>.SupportsRoleClaims
+  fullName: Microsoft.AspNetCore.Identity.RoleManager<TRole>.SupportsRoleClaims
+  nameWithType.vb: RoleManager(Of TRole).SupportsRoleClaims
+  fullName.vb: Microsoft.AspNetCore.Identity.RoleManager(Of TRole).SupportsRoleClaims
+- uid: Mix.Lib.Services.TenantRoleManager.#ctor*
+  commentId: Overload:Mix.Lib.Services.TenantRoleManager.#ctor
+  name: TenantRoleManager
+  nameWithType: TenantRoleManager.TenantRoleManager
+  fullName: Mix.Lib.Services.TenantRoleManager.TenantRoleManager
+- uid: Mix.Database.Entities.Account.MixCmsAccountContext
+  commentId: T:Mix.Database.Entities.Account.MixCmsAccountContext
+  parent: Mix.Database.Entities.Account
+  name: MixCmsAccountContext
+  nameWithType: MixCmsAccountContext
+  fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+- uid: Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole}
+  commentId: T:Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.IRoleStore`1
+  name: IRoleStore<MixRole>
+  nameWithType: IRoleStore<MixRole>
+  fullName: Microsoft.AspNetCore.Identity.IRoleStore<Mix.Database.Entities.Account.MixRole>
+  nameWithType.vb: IRoleStore(Of MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.IRoleStore(Of Mix.Database.Entities.Account.MixRole)
+  name.vb: IRoleStore(Of MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+    name: IRoleStore
+    nameWithType: IRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+    name: IRoleStore
+    nameWithType: IRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable{Microsoft.AspNetCore.Identity.IRoleValidator{Mix.Database.Entities.Account.MixRole}}
+  commentId: '!:IEnumerable{Microsoft.AspNetCore.Identity.IRoleValidator{Mix.Database.Entities.Account.MixRole}}'
+  definition: IEnumerable`1
+  name: IEnumerable<IRoleValidator<MixRole>>
+  nameWithType: IEnumerable<IRoleValidator<MixRole>>
+  fullName: IEnumerable<Microsoft.AspNetCore.Identity.IRoleValidator<Mix.Database.Entities.Account.MixRole>>
+  nameWithType.vb: IEnumerable(Of IRoleValidator(Of MixRole))
+  fullName.vb: IEnumerable(Of Microsoft.AspNetCore.Identity.IRoleValidator(Of Mix.Database.Entities.Account.MixRole))
+  name.vb: IEnumerable(Of IRoleValidator(Of MixRole))
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Identity.IRoleValidator`1
+    name: IRoleValidator
+    nameWithType: IRoleValidator
+    fullName: Microsoft.AspNetCore.Identity.IRoleValidator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Identity.IRoleValidator`1
+    name: IRoleValidator
+    nameWithType: IRoleValidator
+    fullName: Microsoft.AspNetCore.Identity.IRoleValidator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.ILookupNormalizer
+  commentId: T:Microsoft.AspNetCore.Identity.ILookupNormalizer
+  parent: Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: ILookupNormalizer
+  nameWithType: ILookupNormalizer
+  fullName: Microsoft.AspNetCore.Identity.ILookupNormalizer
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  parent: Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: IdentityErrorDescriber
+  nameWithType: IdentityErrorDescriber
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+- uid: Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  name: ILogger<RoleManager<MixRole>>
+  nameWithType: ILogger<RoleManager<MixRole>>
+  fullName: Microsoft.Extensions.Logging.ILogger<Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>>
+  nameWithType.vb: ILogger(Of RoleManager(Of MixRole))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole))
+  name.vb: ILogger(Of RoleManager(Of MixRole))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Identity.RoleManager`1
+    name: RoleManager
+    nameWithType: RoleManager
+    fullName: Microsoft.AspNetCore.Identity.RoleManager
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Entities.Account
+  commentId: N:Mix.Database.Entities.Account
+  name: Mix.Database.Entities.Account
+  nameWithType: Mix.Database.Entities.Account
+  fullName: Mix.Database.Entities.Account
+- uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+  commentId: T:Microsoft.AspNetCore.Identity.IRoleStore`1
+  isExternal: true
+  name: IRoleStore<TRole>
+  nameWithType: IRoleStore<TRole>
+  fullName: Microsoft.AspNetCore.Identity.IRoleStore<TRole>
+  nameWithType.vb: IRoleStore(Of TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.IRoleStore(Of TRole)
+  name.vb: IRoleStore(Of TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+    name: IRoleStore
+    nameWithType: IRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+    name: IRoleStore
+    nameWithType: IRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Mix.Lib.Services.TenantRoleManager.Context*
+  commentId: Overload:Mix.Lib.Services.TenantRoleManager.Context
+  name: Context
+  nameWithType: TenantRoleManager.Context
+  fullName: Mix.Lib.Services.TenantRoleManager.Context

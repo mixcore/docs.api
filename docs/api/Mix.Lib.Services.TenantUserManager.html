@@ -1,0 +1,1107 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TenantUserManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TenantUserManager
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Lib.Services.TenantUserManager">
+  
+  
+  <h1 id="Mix_Lib_Services_TenantUserManager" data-uid="Mix.Lib.Services.TenantUserManager" class="text-break">Class TenantUserManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.AspNetCore.Identity.UserManager</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div class="level2"><span class="xref">TenantUserManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ResetPasswordTokenPurpose</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ChangePhoneNumberTokenPurpose</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ConfirmEmailTokenPurpose</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetUserName(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetUserId(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetUserAsync(System.Security.Claims.ClaimsPrincipal)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GenerateConcurrencyStampAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.CreateAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.UpdateAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.DeleteAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.FindByIdAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.FindByNameAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.CreateAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.NormalizeName(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.NormalizeEmail(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.UpdateNormalizedUserNameAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetUserNameAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SetUserNameAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetUserIdAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.CheckPasswordAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.HasPasswordAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.AddPasswordAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ChangePasswordAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RemovePasswordAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.VerifyPasswordAsync(Microsoft.AspNetCore.Identity.IUserPasswordStore&lt;Mix.Database.Entities.Account.MixUser&gt;, Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetSecurityStampAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.UpdateSecurityStampAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GeneratePasswordResetTokenAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ResetPasswordAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.FindByLoginAsync(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RemoveLoginAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.AddLoginAsync(Mix.Database.Entities.Account.MixUser, Microsoft.AspNetCore.Identity.UserLoginInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetLoginsAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.AddClaimAsync(Mix.Database.Entities.Account.MixUser, System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.AddClaimsAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ReplaceClaimAsync(Mix.Database.Entities.Account.MixUser, System.Security.Claims.Claim, System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RemoveClaimAsync(Mix.Database.Entities.Account.MixUser, System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RemoveClaimsAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetClaimsAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.AddToRolesAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RemoveFromRoleAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RemoveFromRolesAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.String&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetEmailAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SetEmailAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.FindByEmailAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.UpdateNormalizedEmailAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GenerateEmailConfirmationTokenAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ConfirmEmailAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.IsEmailConfirmedAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GenerateChangeEmailTokenAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ChangeEmailAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetPhoneNumberAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SetPhoneNumberAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ChangePhoneNumberAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.IsPhoneNumberConfirmedAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GenerateChangePhoneNumberTokenAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.VerifyChangePhoneNumberTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.VerifyUserTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GenerateUserTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RegisterTokenProvider(System.String, Microsoft.AspNetCore.Identity.IUserTwoFactorTokenProvider&lt;Mix.Database.Entities.Account.MixUser&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetValidTwoFactorProvidersAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.VerifyTwoFactorTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GenerateTwoFactorTokenAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetTwoFactorEnabledAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SetTwoFactorEnabledAsync(Mix.Database.Entities.Account.MixUser, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.IsLockedOutAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SetLockoutEnabledAsync(Mix.Database.Entities.Account.MixUser, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetLockoutEnabledAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetLockoutEndDateAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SetLockoutEndDateAsync(Mix.Database.Entities.Account.MixUser, System.Nullable&lt;System.DateTimeOffset&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.AccessFailedAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ResetAccessFailedCountAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetAccessFailedCountAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetUsersForClaimAsync(System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetUsersInRoleAsync(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetAuthenticationTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SetAuthenticationTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RemoveAuthenticationTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetAuthenticatorKeyAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ResetAuthenticatorKeyAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GenerateNewAuthenticatorKey()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GenerateNewTwoFactorRecoveryCodesAsync(Mix.Database.Entities.Account.MixUser, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.CreateTwoFactorRecoveryCode()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.RedeemTwoFactorRecoveryCodeAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.CountRecoveryCodesAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.Dispose(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.CreateSecurityTokenAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.UpdatePasswordHash(Mix.Database.Entities.Account.MixUser, System.String, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetChangeEmailTokenPurpose(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ValidateUserAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ValidatePasswordAsync(Mix.Database.Entities.Account.MixUser, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.UpdateUserAsync(Mix.Database.Entities.Account.MixUser)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ThrowIfDisposed()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.CancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.Store</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.PasswordHasher</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.UserValidators</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.PasswordValidators</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.KeyNormalizer</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.ErrorDescriber</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.Options</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserAuthenticationTokens</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserAuthenticatorKey</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserTwoFactorRecoveryCodes</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserTwoFactor</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserPassword</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserSecurityStamp</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserRole</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserLogin</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserEmail</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserPhoneNumber</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserClaim</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsUserLockout</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.SupportsQueryableUsers</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.Users</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Lib.Services.html">Mix.Lib.Services</a></h6>
+  <h6><strong>Assembly</strong>: mix.library.dll</h6>
+  <h5 id="Mix_Lib_Services_TenantUserManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TenantUserManager : UserManager&lt;MixUser&gt;, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_Microsoft_AspNetCore_Identity_IUserStore_Mix_Database_Entities_Account_MixUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_Mix_Database_Entities_Account_MixUser__IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_Mix_Database_Entities_Account_MixUser___IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_Mix_Database_Entities_Account_MixUser___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Mix_Lib_Services_TenantUserManager__Mix_Database_Entities_Account_MixCmsAccountContext_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.%23ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor%2CMicrosoft.AspNetCore.Identity.IUserStore%7BMix.Database.Entities.Account.MixUser%7D%2CMicrosoft.Extensions.Options.IOptions%7BMicrosoft.AspNetCore.Identity.IdentityOptions%7D%2CMicrosoft.AspNetCore.Identity.IPasswordHasher%7BMix.Database.Entities.Account.MixUser%7D%2CIEnumerable%7BMicrosoft.AspNetCore.Identity.IUserValidator%7BMix.Database.Entities.Account.MixUser%7D%7D%2CIEnumerable%7BMicrosoft.AspNetCore.Identity.IPasswordValidator%7BMix.Database.Entities.Account.MixUser%7D%7D%2CMicrosoft.AspNetCore.Identity.ILookupNormalizer%2CMicrosoft.AspNetCore.Identity.IdentityErrorDescriber%2CIServiceProvider%2CMicrosoft.Extensions.Logging.ILogger%7BMix.Lib.Services.TenantUserManager%7D%2CMix.Database.Entities.Account.MixCmsAccountContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L13">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager__ctor_" data-uid="Mix.Lib.Services.TenantUserManager.#ctor*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_Microsoft_AspNetCore_Identity_IUserStore_Mix_Database_Entities_Account_MixUser__Microsoft_Extensions_Options_IOptions_Microsoft_AspNetCore_Identity_IdentityOptions__Microsoft_AspNetCore_Identity_IPasswordHasher_Mix_Database_Entities_Account_MixUser__IEnumerable_Microsoft_AspNetCore_Identity_IUserValidator_Mix_Database_Entities_Account_MixUser___IEnumerable_Microsoft_AspNetCore_Identity_IPasswordValidator_Mix_Database_Entities_Account_MixUser___Microsoft_AspNetCore_Identity_ILookupNormalizer_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_IServiceProvider_Microsoft_Extensions_Logging_ILogger_Mix_Lib_Services_TenantUserManager__Mix_Database_Entities_Account_MixCmsAccountContext_" data-uid="Mix.Lib.Services.TenantUserManager.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.IUserStore{Mix.Database.Entities.Account.MixUser},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Identity.IPasswordHasher{Mix.Database.Entities.Account.MixUser},IEnumerable{Microsoft.AspNetCore.Identity.IUserValidator{Mix.Database.Entities.Account.MixUser}},IEnumerable{Microsoft.AspNetCore.Identity.IPasswordValidator{Mix.Database.Entities.Account.MixUser}},Microsoft.AspNetCore.Identity.ILookupNormalizer,Microsoft.AspNetCore.Identity.IdentityErrorDescriber,IServiceProvider,Microsoft.Extensions.Logging.ILogger{Mix.Lib.Services.TenantUserManager},Mix.Database.Entities.Account.MixCmsAccountContext)">TenantUserManager(IHttpContextAccessor, IUserStore&lt;MixUser&gt;, IOptions&lt;IdentityOptions&gt;, IPasswordHasher&lt;MixUser&gt;, IEnumerable&lt;IUserValidator&lt;MixUser&gt;&gt;, IEnumerable&lt;IPasswordValidator&lt;MixUser&gt;&gt;, ILookupNormalizer, IdentityErrorDescriber, IServiceProvider, ILogger&lt;TenantUserManager&gt;, MixCmsAccountContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TenantUserManager(IHttpContextAccessor httpContextAccessor, IUserStore&lt;MixUser&gt; store, IOptions&lt;IdentityOptions&gt; optionsAccessor, IPasswordHasher&lt;MixUser&gt; passwordHasher, IEnumerable&lt;IUserValidator&lt;MixUser&gt;&gt; userValidators, IEnumerable&lt;IPasswordValidator&lt;MixUser&gt;&gt; passwordValidators, ILookupNormalizer keyNormalizer, IdentityErrorDescriber errors, IServiceProvider services, ILogger&lt;TenantUserManager&gt; logger, MixCmsAccountContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Http.IHttpContextAccessor</span></td>
+        <td><span class="parametername">httpContextAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IUserStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</td>
+        <td><span class="parametername">store</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityOptions</span>&gt;</td>
+        <td><span class="parametername">optionsAccessor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IPasswordHasher</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</td>
+        <td><span class="parametername">passwordHasher</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IUserValidator</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;&gt;</td>
+        <td><span class="parametername">userValidators</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IPasswordValidator</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;&gt;</td>
+        <td><span class="parametername">passwordValidators</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.ILookupNormalizer</span></td>
+        <td><span class="parametername">keyNormalizer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IdentityErrorDescriber</span></td>
+        <td><span class="parametername">errors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IServiceProvider</span></td>
+        <td><span class="parametername">services</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="Mix.Lib.Services.TenantUserManager.html">TenantUserManager</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixCmsAccountContext.html">MixCmsAccountContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_Context.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.Context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L31">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_Context_" data-uid="Mix.Lib.Services.TenantUserManager.Context*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_Context" data-uid="Mix.Lib.Services.TenantUserManager.Context">Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixCmsAccountContext Context { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixCmsAccountContext.html">MixCmsAccountContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_MixTenantId.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.MixTenantId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L12">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_MixTenantId_" data-uid="Mix.Lib.Services.TenantUserManager.MixTenantId*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_MixTenantId" data-uid="Mix.Lib.Services.TenantUserManager.MixTenantId">MixTenantId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int MixTenantId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_AddToRoleAsync_Mix_Database_Entities_Account_MixUser_System_String_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.AddToRoleAsync(Mix.Database.Entities.Account.MixUser%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L38">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_AddToRoleAsync_" data-uid="Mix.Lib.Services.TenantUserManager.AddToRoleAsync*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_AddToRoleAsync_Mix_Database_Entities_Account_MixUser_System_String_" data-uid="Mix.Lib.Services.TenantUserManager.AddToRoleAsync(Mix.Database.Entities.Account.MixUser,System.String)">AddToRoleAsync(MixUser, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IdentityResult&gt; AddToRoleAsync(MixUser user, string roleName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">roleName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Identity.IdentityResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.AddToRoleAsync(Mix.Database.Entities.Account.MixUser, System.String)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_AddToRoleAsync_Mix_Database_Entities_Account_MixUser_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.AddToRoleAsync(Mix.Database.Entities.Account.MixUser%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L55">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_AddToRoleAsync_" data-uid="Mix.Lib.Services.TenantUserManager.AddToRoleAsync*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_AddToRoleAsync_Mix_Database_Entities_Account_MixUser_System_String_System_Int32_" data-uid="Mix.Lib.Services.TenantUserManager.AddToRoleAsync(Mix.Database.Entities.Account.MixUser,System.String,System.Int32)">AddToRoleAsync(MixUser, String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddToRoleAsync(MixUser user, string roleName, int tenantId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">roleName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tenantId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_AddToTenant_Mix_Database_Entities_Account_MixUser_System_Int32_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.AddToTenant(Mix.Database.Entities.Account.MixUser%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L81">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_AddToTenant_" data-uid="Mix.Lib.Services.TenantUserManager.AddToTenant*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_AddToTenant_Mix_Database_Entities_Account_MixUser_System_Int32_" data-uid="Mix.Lib.Services.TenantUserManager.AddToTenant(Mix.Database.Entities.Account.MixUser,System.Int32)">AddToTenant(MixUser, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddToTenant(MixUser user, int tenantId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tenantId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_FindByPhoneNumberAsync_System_String_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.FindByPhoneNumberAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L33">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_FindByPhoneNumberAsync_" data-uid="Mix.Lib.Services.TenantUserManager.FindByPhoneNumberAsync*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_FindByPhoneNumberAsync_System_String_" data-uid="Mix.Lib.Services.TenantUserManager.FindByPhoneNumberAsync(System.String)">FindByPhoneNumberAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MixUser&gt; FindByPhoneNumberAsync(string phoneNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">phoneNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_GetRolesAsync_Mix_Database_Entities_Account_MixUser_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.GetRolesAsync(Mix.Database.Entities.Account.MixUser)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L100">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_GetRolesAsync_" data-uid="Mix.Lib.Services.TenantUserManager.GetRolesAsync*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_GetRolesAsync_Mix_Database_Entities_Account_MixUser_" data-uid="Mix.Lib.Services.TenantUserManager.GetRolesAsync(Mix.Database.Entities.Account.MixUser)">GetRolesAsync(MixUser)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;IList&lt;string&gt;&gt; GetRolesAsync(MixUser user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IList</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.GetRolesAsync(Mix.Database.Entities.Account.MixUser)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_GetUserRolesAsync_Mix_Database_Entities_Account_MixUser_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.GetUserRolesAsync(Mix.Database.Entities.Account.MixUser)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L110">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_GetUserRolesAsync_" data-uid="Mix.Lib.Services.TenantUserManager.GetUserRolesAsync*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_GetUserRolesAsync_Mix_Database_Entities_Account_MixUser_" data-uid="Mix.Lib.Services.TenantUserManager.GetUserRolesAsync(Mix.Database.Entities.Account.MixUser)">GetUserRolesAsync(MixUser)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IList&lt;MixRole&gt;&gt; GetUserRolesAsync(MixUser user)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IList</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixRole.html">MixRole</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_IsInRoleAsync_Mix_Database_Entities_Account_MixUser_System_String_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.IsInRoleAsync(Mix.Database.Entities.Account.MixUser%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L94">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_IsInRoleAsync_" data-uid="Mix.Lib.Services.TenantUserManager.IsInRoleAsync*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_IsInRoleAsync_Mix_Database_Entities_Account_MixUser_System_String_" data-uid="Mix.Lib.Services.TenantUserManager.IsInRoleAsync(Mix.Database.Entities.Account.MixUser,System.String)">IsInRoleAsync(MixUser, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; IsInRoleAsync(MixUser user, string roleName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">roleName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.AspNetCore.Identity.UserManager&lt;Mix.Database.Entities.Account.MixUser&gt;.IsInRoleAsync(Mix.Database.Entities.Account.MixUser, System.String)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager_RemoveFromRoleAsync_Mix_Database_Entities_Account_MixUser_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager.RemoveFromRoleAsync(Mix.Database.Entities.Account.MixUser%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L70">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserManager_RemoveFromRoleAsync_" data-uid="Mix.Lib.Services.TenantUserManager.RemoveFromRoleAsync*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserManager_RemoveFromRoleAsync_Mix_Database_Entities_Account_MixUser_System_String_System_Int32_" data-uid="Mix.Lib.Services.TenantUserManager.RemoveFromRoleAsync(Mix.Database.Entities.Account.MixUser,System.String,System.Int32)">RemoveFromRoleAsync(MixUser, String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveFromRoleAsync(MixUser user, string roleName, int tenantId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a></td>
+        <td><span class="parametername">user</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">roleName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tenantId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserManager.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserManager.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

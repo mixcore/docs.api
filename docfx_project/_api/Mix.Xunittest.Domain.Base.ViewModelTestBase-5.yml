@@ -1,0 +1,634 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  commentId: T:Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  id: ViewModelTestBase`5
+  parent: Mix.Xunittest.Domain.Base
+  children:
+  - Mix.Xunittest.Domain.Base.ViewModelTestBase`5.#ctor(`0)
+  - Mix.Xunittest.Domain.Base.ViewModelTestBase`5.CreateSampleValue
+  - Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Repository
+  - Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_1_Save
+  - Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_2_GetList
+  - Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_3_Delete
+  langs:
+  - csharp
+  - vb
+  name: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>
+  type: Class
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ViewModelTestBase
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+    startLine: 5
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: 'public abstract class ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey> : TestBase<TFixture, TDbContext> where TFixture : SharedDatabaseFixture<TDbContext> where TView : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> where TDbContext : DbContext where TEntity : class, IEntity<TPrimaryKey> where TPrimaryKey : IComparable'
+    typeParameters:
+    - id: TFixture
+    - id: TView
+    - id: TDbContext
+    - id: TEntity
+    - id: TPrimaryKey
+    content.vb: >-
+      Public MustInherit Class ViewModelTestBase(Of TFixture As SharedDatabaseFixture(Of TDbContext), TView As ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView), TDbContext As DbContext, TEntity As {Class, IEntity(Of TPrimaryKey)}, TPrimaryKey As IComparable)
+          Inherits TestBase(Of TFixture, TDbContext)
+  inheritance:
+  - System.Object
+  - Mix.Xunittest.Domain.Base.TestBase{{TFixture},{TDbContext}}
+  inheritedMembers:
+  - Mix.Xunittest.Domain.Base.TestBase{{TFixture},{TDbContext}}.DbFixture
+  - Mix.Xunittest.Domain.Base.TestBase{{TFixture},{TDbContext}}.UowInfo
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey)
+  name.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey)
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Repository
+  commentId: P:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Repository
+  id: Repository
+  parent: Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  langs:
+  - csharp
+  - vb
+  name: Repository
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Repository
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Repository
+  type: Property
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Repository
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+    startLine: 14
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: protected Repository<TDbContext, TEntity, TPrimaryKey, TView> Repository { get; set; }
+    parameters: []
+    return:
+      type: Repository{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+    content.vb: Protected Property Repository As Repository(Of TDbContext, TEntity, TPrimaryKey, TView)
+  overload: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Repository*
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Repository
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Repository
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.#ctor(`0)
+  commentId: M:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  langs:
+  - csharp
+  - vb
+  name: ViewModelTestBase(TFixture)
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.ViewModelTestBase(TFixture)
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.ViewModelTestBase(TFixture)
+  type: Constructor
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+    startLine: 16
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: public ViewModelTestBase(TFixture fixture)
+    parameters:
+    - id: fixture
+      type: '{TFixture}'
+    content.vb: Public Sub New(fixture As TFixture)
+  overload: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.#ctor*
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).ViewModelTestBase(TFixture)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).ViewModelTestBase(TFixture)
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.CreateSampleValue
+  commentId: M:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.CreateSampleValue
+  id: CreateSampleValue
+  parent: Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  langs:
+  - csharp
+  - vb
+  name: CreateSampleValue()
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.CreateSampleValue()
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.CreateSampleValue()
+  type: Method
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateSampleValue
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+    startLine: 25
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: protected abstract TView CreateSampleValue()
+    return:
+      type: '{TView}'
+    content.vb: Protected MustOverride Function CreateSampleValue As TView
+  overload: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.CreateSampleValue*
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).CreateSampleValue()
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).CreateSampleValue()
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_1_Save
+  commentId: M:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_1_Save
+  id: Step_1_Save
+  parent: Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  langs:
+  - csharp
+  - vb
+  name: Step_1_Save()
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_1_Save()
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_1_Save()
+  type: Method
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Step_1_Save
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+    startLine: 29
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: public Task Step_1_Save()
+    return:
+      type: Task
+    content.vb: Public Function Step_1_Save As Task
+  overload: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_1_Save*
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_1_Save()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_1_Save()
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_2_GetList
+  commentId: M:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_2_GetList
+  id: Step_2_GetList
+  parent: Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  langs:
+  - csharp
+  - vb
+  name: Step_2_GetList()
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_2_GetList()
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_2_GetList()
+  type: Method
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Step_2_GetList
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+    startLine: 39
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: public Task Step_2_GetList()
+    return:
+      type: Task
+    content.vb: Public Function Step_2_GetList As Task
+  overload: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_2_GetList*
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_2_GetList()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_2_GetList()
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_3_Delete
+  commentId: M:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_3_Delete
+  id: Step_3_Delete
+  parent: Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  langs:
+  - csharp
+  - vb
+  name: Step_3_Delete()
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_3_Delete()
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_3_Delete()
+  type: Method
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Step_3_Delete
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/ViewModelTestBase.cs
+    startLine: 46
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: public Task Step_3_Delete()
+    return:
+      type: Task
+    content.vb: Public Function Step_3_Delete As Task
+  overload: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_3_Delete*
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_3_Delete()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_3_Delete()
+references:
+- uid: Mix.Xunittest.Domain.Base
+  commentId: N:Mix.Xunittest.Domain.Base
+  name: Mix.Xunittest.Domain.Base
+  nameWithType: Mix.Xunittest.Domain.Base
+  fullName: Mix.Xunittest.Domain.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Xunittest.Domain.Base.TestBase{{TFixture},{TDbContext}}
+  commentId: T:Mix.Xunittest.Domain.Base.TestBase{`0,`2}
+  parent: Mix.Xunittest.Domain.Base
+  definition: Mix.Xunittest.Domain.Base.TestBase`2
+  name: TestBase<TFixture, TDbContext>
+  nameWithType: TestBase<TFixture, TDbContext>
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>
+  nameWithType.vb: TestBase(Of TFixture, TDbContext)
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext)
+  name.vb: TestBase(Of TFixture, TDbContext)
+  spec.csharp:
+  - uid: Mix.Xunittest.Domain.Base.TestBase`2
+    name: TestBase
+    nameWithType: TestBase
+    fullName: Mix.Xunittest.Domain.Base.TestBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TFixture
+    nameWithType: TFixture
+    fullName: TFixture
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Xunittest.Domain.Base.TestBase`2
+    name: TestBase
+    nameWithType: TestBase
+    fullName: Mix.Xunittest.Domain.Base.TestBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TFixture
+    nameWithType: TFixture
+    fullName: TFixture
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Xunittest.Domain.Base.TestBase{{TFixture},{TDbContext}}.DbFixture
+  commentId: P:Mix.Xunittest.Domain.Base.TestBase{`0,`2}.DbFixture
+  parent: Mix.Xunittest.Domain.Base.TestBase{{TFixture},{TDbContext}}
+  definition: Mix.Xunittest.Domain.Base.TestBase`2.DbFixture
+  name: DbFixture
+  nameWithType: TestBase<TFixture, TDbContext>.DbFixture
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.DbFixture
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).DbFixture
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).DbFixture
+- uid: Mix.Xunittest.Domain.Base.TestBase{{TFixture},{TDbContext}}.UowInfo
+  commentId: P:Mix.Xunittest.Domain.Base.TestBase{`0,`2}.UowInfo
+  parent: Mix.Xunittest.Domain.Base.TestBase{{TFixture},{TDbContext}}
+  definition: Mix.Xunittest.Domain.Base.TestBase`2.UowInfo
+  name: UowInfo
+  nameWithType: TestBase<TFixture, TDbContext>.UowInfo
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.UowInfo
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).UowInfo
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).UowInfo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Xunittest.Domain.Base.TestBase`2
+  commentId: T:Mix.Xunittest.Domain.Base.TestBase`2
+  name: TestBase<TFixture, TDbContext>
+  nameWithType: TestBase<TFixture, TDbContext>
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>
+  nameWithType.vb: TestBase(Of TFixture, TDbContext)
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext)
+  name.vb: TestBase(Of TFixture, TDbContext)
+  spec.csharp:
+  - uid: Mix.Xunittest.Domain.Base.TestBase`2
+    name: TestBase
+    nameWithType: TestBase
+    fullName: Mix.Xunittest.Domain.Base.TestBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TFixture
+    nameWithType: TFixture
+    fullName: TFixture
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Xunittest.Domain.Base.TestBase`2
+    name: TestBase
+    nameWithType: TestBase
+    fullName: Mix.Xunittest.Domain.Base.TestBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TFixture
+    nameWithType: TFixture
+    fullName: TFixture
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Xunittest.Domain.Base.TestBase`2.DbFixture
+  commentId: P:Mix.Xunittest.Domain.Base.TestBase`2.DbFixture
+  name: DbFixture
+  nameWithType: TestBase<TFixture, TDbContext>.DbFixture
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.DbFixture
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).DbFixture
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).DbFixture
+- uid: Mix.Xunittest.Domain.Base.TestBase`2.UowInfo
+  commentId: P:Mix.Xunittest.Domain.Base.TestBase`2.UowInfo
+  name: UowInfo
+  nameWithType: TestBase<TFixture, TDbContext>.UowInfo
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.UowInfo
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).UowInfo
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).UowInfo
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Repository*
+  commentId: Overload:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Repository
+  name: Repository
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Repository
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Repository
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Repository
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Repository
+- uid: Repository{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  commentId: '!:Repository{`1,`2,`3,`0}'
+  definition: Repository`4
+  name: Repository<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: Repository<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Repository<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType.vb: Repository(Of TDbContext, TEntity, TPrimaryKey, TView)
+  fullName.vb: Repository(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: Repository(Of TDbContext, TEntity, TPrimaryKey, TView)
+  spec.csharp:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Repository`4
+  isExternal: true
+  name: Repository<, , , >
+  nameWithType: Repository<, , , >
+  fullName: Repository<, , , >
+  nameWithType.vb: Repository(Of , , , )
+  fullName.vb: Repository(Of , , , )
+  name.vb: Repository(Of , , , )
+  spec.csharp:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Repository`4
+    name: Repository
+    nameWithType: Repository
+    fullName: Repository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.#ctor*
+  commentId: Overload:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.#ctor
+  name: ViewModelTestBase
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.ViewModelTestBase
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.ViewModelTestBase
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).ViewModelTestBase
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).ViewModelTestBase
+- uid: '{TFixture}'
+  commentId: '!:TFixture'
+  definition: TFixture
+  name: TFixture
+  nameWithType: TFixture
+  fullName: TFixture
+- uid: TFixture
+  name: TFixture
+  nameWithType: TFixture
+  fullName: TFixture
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.CreateSampleValue*
+  commentId: Overload:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.CreateSampleValue
+  name: CreateSampleValue
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.CreateSampleValue
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.CreateSampleValue
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).CreateSampleValue
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).CreateSampleValue
+- uid: '{TView}'
+  commentId: '!:TView'
+  definition: TView
+  name: TView
+  nameWithType: TView
+  fullName: TView
+- uid: TView
+  name: TView
+  nameWithType: TView
+  fullName: TView
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_1_Save*
+  commentId: Overload:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_1_Save
+  name: Step_1_Save
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_1_Save
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_1_Save
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_1_Save
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_1_Save
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_2_GetList*
+  commentId: Overload:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_2_GetList
+  name: Step_2_GetList
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_2_GetList
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_2_GetList
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_2_GetList
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_2_GetList
+- uid: Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_3_Delete*
+  commentId: Overload:Mix.Xunittest.Domain.Base.ViewModelTestBase`5.Step_3_Delete
+  name: Step_3_Delete
+  nameWithType: ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_3_Delete
+  fullName: Mix.Xunittest.Domain.Base.ViewModelTestBase<TFixture, TView, TDbContext, TEntity, TPrimaryKey>.Step_3_Delete
+  nameWithType.vb: ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_3_Delete
+  fullName.vb: Mix.Xunittest.Domain.Base.ViewModelTestBase(Of TFixture, TView, TDbContext, TEntity, TPrimaryKey).Step_3_Delete

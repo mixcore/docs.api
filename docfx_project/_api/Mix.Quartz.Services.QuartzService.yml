@@ -1,0 +1,1569 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Quartz.Services.QuartzService
+  commentId: T:Mix.Quartz.Services.QuartzService
+  id: QuartzService
+  parent: Mix.Quartz.Services
+  children:
+  - Mix.Quartz.Services.QuartzService.#ctor(IJobFactory)
+  - Mix.Quartz.Services.QuartzService.CheckExist(System.String)
+  - Mix.Quartz.Services.QuartzService.CreateJob(System.Type)
+  - Mix.Quartz.Services.QuartzService.CreateTrigger(JobSchedule,IJobDetail)
+  - Mix.Quartz.Services.QuartzService.DeleteJob(System.String,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.GetJob(System.String,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.GetJob``1(System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.GetJobTriggerKeys(System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.GetTrigger(System.String,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.LoadScheduler
+  - Mix.Quartz.Services.QuartzService.LogException(System.Exception,System.Nullable{Mix.Heart.Enums.MixErrorStatus},System.String)
+  - Mix.Quartz.Services.QuartzService.PauseTrigger(System.String,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.ResheduleJob(JobSchedule,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.ResumeTrigger(System.String,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.ScheduleJob(JobSchedule,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.ScheduleJob(MixJobBase,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.ScheduleJob``1(JobSchedule,System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.Scheduler
+  - Mix.Quartz.Services.QuartzService.Shutdown(System.Threading.CancellationToken)
+  - Mix.Quartz.Services.QuartzService.Start(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: QuartzService
+  nameWithType: QuartzService
+  fullName: Mix.Quartz.Services.QuartzService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: QuartzService
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 16
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public class QuartzService
+    content.vb: Public Class QuartzService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Quartz.Services.QuartzService.Scheduler
+  commentId: F:Mix.Quartz.Services.QuartzService.Scheduler
+  id: Scheduler
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: Scheduler
+  nameWithType: QuartzService.Scheduler
+  fullName: Mix.Quartz.Services.QuartzService.Scheduler
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Scheduler
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 18
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public IScheduler Scheduler
+    return:
+      type: IScheduler
+    content.vb: Public Scheduler As IScheduler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.#ctor(IJobFactory)
+  commentId: M:Mix.Quartz.Services.QuartzService.#ctor(IJobFactory)
+  id: '#ctor(IJobFactory)'
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: QuartzService(IJobFactory)
+  nameWithType: QuartzService.QuartzService(IJobFactory)
+  fullName: Mix.Quartz.Services.QuartzService.QuartzService(IJobFactory)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 20
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public QuartzService(IJobFactory jobFactory)
+    parameters:
+    - id: jobFactory
+      type: IJobFactory
+    content.vb: Public Sub New(jobFactory As IJobFactory)
+  overload: Mix.Quartz.Services.QuartzService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.LoadScheduler
+  commentId: M:Mix.Quartz.Services.QuartzService.LoadScheduler
+  id: LoadScheduler
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: LoadScheduler()
+  nameWithType: QuartzService.LoadScheduler()
+  fullName: Mix.Quartz.Services.QuartzService.LoadScheduler()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadScheduler
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 26
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task LoadScheduler()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LoadScheduler As Task
+  overload: Mix.Quartz.Services.QuartzService.LoadScheduler*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.CheckExist(System.String)
+  commentId: M:Mix.Quartz.Services.QuartzService.CheckExist(System.String)
+  id: CheckExist(System.String)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: CheckExist(String)
+  nameWithType: QuartzService.CheckExist(String)
+  fullName: Mix.Quartz.Services.QuartzService.CheckExist(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CheckExist
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 57
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task<bool> CheckExist(string triggerName)
+    parameters:
+    - id: triggerName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function CheckExist(triggerName As String) As Task(Of Boolean)
+  overload: Mix.Quartz.Services.QuartzService.CheckExist*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.PauseTrigger(System.String,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.PauseTrigger(System.String,System.Threading.CancellationToken)
+  id: PauseTrigger(System.String,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: PauseTrigger(String, CancellationToken)
+  nameWithType: QuartzService.PauseTrigger(String, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.PauseTrigger(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PauseTrigger
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 72
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task PauseTrigger(string id, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function PauseTrigger(id As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Mix.Quartz.Services.QuartzService.PauseTrigger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.ResumeTrigger(System.String,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.ResumeTrigger(System.String,System.Threading.CancellationToken)
+  id: ResumeTrigger(System.String,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: ResumeTrigger(String, CancellationToken)
+  nameWithType: QuartzService.ResumeTrigger(String, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.ResumeTrigger(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ResumeTrigger
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 78
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task ResumeTrigger(string id, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ResumeTrigger(id As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Mix.Quartz.Services.QuartzService.ResumeTrigger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.GetTrigger(System.String,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.GetTrigger(System.String,System.Threading.CancellationToken)
+  id: GetTrigger(System.String,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: GetTrigger(String, CancellationToken)
+  nameWithType: QuartzService.GetTrigger(String, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.GetTrigger(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetTrigger
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 84
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task<JobSchedule> GetTrigger(string id, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{JobSchedule}
+    content.vb: Public Function GetTrigger(id As String, cancellationToken As CancellationToken = Nothing) As Task(Of JobSchedule)
+  overload: Mix.Quartz.Services.QuartzService.GetTrigger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.DeleteJob(System.String,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.DeleteJob(System.String,System.Threading.CancellationToken)
+  id: DeleteJob(System.String,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: DeleteJob(String, CancellationToken)
+  nameWithType: QuartzService.DeleteJob(String, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.DeleteJob(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DeleteJob
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 96
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task<bool> DeleteJob(string jobName, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: jobName
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Function DeleteJob(jobName As String, cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Mix.Quartz.Services.QuartzService.DeleteJob*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.GetJob(System.String,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.GetJob(System.String,System.Threading.CancellationToken)
+  id: GetJob(System.String,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: GetJob(String, CancellationToken)
+  nameWithType: QuartzService.GetJob(String, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.GetJob(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetJob
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 103
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task<IJobDetail> GetJob(string id, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: id
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{IJobDetail}
+    content.vb: Public Function GetJob(id As String, cancellationToken As CancellationToken = Nothing) As Task(Of IJobDetail)
+  overload: Mix.Quartz.Services.QuartzService.GetJob*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.GetJob``1(System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.GetJob``1(System.Threading.CancellationToken)
+  id: GetJob``1(System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: GetJob<T>(CancellationToken)
+  nameWithType: QuartzService.GetJob<T>(CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.GetJob<T>(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetJob
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 109
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task<IJobDetail> GetJob<T>(CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{IJobDetail}
+    content.vb: Public Function GetJob(Of T)(cancellationToken As CancellationToken = Nothing) As Task(Of IJobDetail)
+  overload: Mix.Quartz.Services.QuartzService.GetJob*
+  nameWithType.vb: QuartzService.GetJob(Of T)(CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Quartz.Services.QuartzService.GetJob(Of T)(System.Threading.CancellationToken)
+  name.vb: GetJob(Of T)(CancellationToken)
+- uid: Mix.Quartz.Services.QuartzService.GetJobTriggerKeys(System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.GetJobTriggerKeys(System.Threading.CancellationToken)
+  id: GetJobTriggerKeys(System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: GetJobTriggerKeys(CancellationToken)
+  nameWithType: QuartzService.GetJobTriggerKeys(CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.GetJobTriggerKeys(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetJobTriggerKeys
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 115
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task<IEnumerable<TriggerKey>> GetJobTriggerKeys(CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{TriggerKey}}
+    content.vb: Public Function GetJobTriggerKeys(cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of TriggerKey))
+  overload: Mix.Quartz.Services.QuartzService.GetJobTriggerKeys*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.CreateJob(System.Type)
+  commentId: M:Mix.Quartz.Services.QuartzService.CreateJob(System.Type)
+  id: CreateJob(System.Type)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: CreateJob(Type)
+  nameWithType: QuartzService.CreateJob(Type)
+  fullName: Mix.Quartz.Services.QuartzService.CreateJob(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateJob
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 120
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public IJobDetail CreateJob(Type jobType)
+    parameters:
+    - id: jobType
+      type: System.Type
+    return:
+      type: IJobDetail
+    content.vb: Public Function CreateJob(jobType As Type) As IJobDetail
+  overload: Mix.Quartz.Services.QuartzService.CreateJob*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.CreateTrigger(JobSchedule,IJobDetail)
+  commentId: M:Mix.Quartz.Services.QuartzService.CreateTrigger(JobSchedule,IJobDetail)
+  id: CreateTrigger(JobSchedule,IJobDetail)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: CreateTrigger(JobSchedule, IJobDetail)
+  nameWithType: QuartzService.CreateTrigger(JobSchedule, IJobDetail)
+  fullName: Mix.Quartz.Services.QuartzService.CreateTrigger(JobSchedule, IJobDetail)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateTrigger
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 129
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public ITrigger CreateTrigger(JobSchedule schedule, IJobDetail job = null)
+    parameters:
+    - id: schedule
+      type: JobSchedule
+    - id: job
+      type: IJobDetail
+    return:
+      type: ITrigger
+    content.vb: Public Function CreateTrigger(schedule As JobSchedule, job As IJobDetail = Nothing) As ITrigger
+  overload: Mix.Quartz.Services.QuartzService.CreateTrigger*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.Start(System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.Start(System.Threading.CancellationToken)
+  id: Start(System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: Start(CancellationToken)
+  nameWithType: QuartzService.Start(CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.Start(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Start
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 146
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task Start(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Start(cancellationToken As CancellationToken) As Task
+  overload: Mix.Quartz.Services.QuartzService.Start*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.Shutdown(System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.Shutdown(System.Threading.CancellationToken)
+  id: Shutdown(System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: Shutdown(CancellationToken)
+  nameWithType: QuartzService.Shutdown(CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.Shutdown(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Shutdown
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 151
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task Shutdown(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Shutdown(cancellationToken As CancellationToken) As Task
+  overload: Mix.Quartz.Services.QuartzService.Shutdown*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.ScheduleJob(MixJobBase,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.ScheduleJob(MixJobBase,System.Threading.CancellationToken)
+  id: ScheduleJob(MixJobBase,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: ScheduleJob(MixJobBase, CancellationToken)
+  nameWithType: QuartzService.ScheduleJob(MixJobBase, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.ScheduleJob(MixJobBase, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ScheduleJob
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 156
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task ScheduleJob(MixJobBase jobSchedule, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: jobSchedule
+      type: MixJobBase
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ScheduleJob(jobSchedule As MixJobBase, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Mix.Quartz.Services.QuartzService.ScheduleJob*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.ScheduleJob``1(JobSchedule,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.ScheduleJob``1(JobSchedule,System.Threading.CancellationToken)
+  id: ScheduleJob``1(JobSchedule,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: ScheduleJob<T>(JobSchedule, CancellationToken)
+  nameWithType: QuartzService.ScheduleJob<T>(JobSchedule, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.ScheduleJob<T>(JobSchedule, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ScheduleJob
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 161
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: >-
+      public Task ScheduleJob<T>(JobSchedule schedule, CancellationToken cancellationToken = default(CancellationToken))
+          where T : MixJobBase
+    parameters:
+    - id: schedule
+      type: JobSchedule
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ScheduleJob(Of T As MixJobBase)(schedule As JobSchedule, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Mix.Quartz.Services.QuartzService.ScheduleJob*
+  nameWithType.vb: QuartzService.ScheduleJob(Of T)(JobSchedule, CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Quartz.Services.QuartzService.ScheduleJob(Of T)(JobSchedule, System.Threading.CancellationToken)
+  name.vb: ScheduleJob(Of T)(JobSchedule, CancellationToken)
+- uid: Mix.Quartz.Services.QuartzService.ScheduleJob(JobSchedule,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.ScheduleJob(JobSchedule,System.Threading.CancellationToken)
+  id: ScheduleJob(JobSchedule,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: ScheduleJob(JobSchedule, CancellationToken)
+  nameWithType: QuartzService.ScheduleJob(JobSchedule, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.ScheduleJob(JobSchedule, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ScheduleJob
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 172
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task ScheduleJob(JobSchedule schedule, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: schedule
+      type: JobSchedule
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ScheduleJob(schedule As JobSchedule, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Mix.Quartz.Services.QuartzService.ScheduleJob*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.ResheduleJob(JobSchedule,System.Threading.CancellationToken)
+  commentId: M:Mix.Quartz.Services.QuartzService.ResheduleJob(JobSchedule,System.Threading.CancellationToken)
+  id: ResheduleJob(JobSchedule,System.Threading.CancellationToken)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: ResheduleJob(JobSchedule, CancellationToken)
+  nameWithType: QuartzService.ResheduleJob(JobSchedule, CancellationToken)
+  fullName: Mix.Quartz.Services.QuartzService.ResheduleJob(JobSchedule, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ResheduleJob
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 209
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public Task ResheduleJob(JobSchedule schedule, CancellationToken cancellationToken = default(CancellationToken))
+    parameters:
+    - id: schedule
+      type: JobSchedule
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ResheduleJob(schedule As JobSchedule, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Mix.Quartz.Services.QuartzService.ResheduleJob*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Quartz.Services.QuartzService.LogException(System.Exception,System.Nullable{Mix.Heart.Enums.MixErrorStatus},System.String)
+  commentId: M:Mix.Quartz.Services.QuartzService.LogException(System.Exception,System.Nullable{Mix.Heart.Enums.MixErrorStatus},System.String)
+  id: LogException(System.Exception,System.Nullable{Mix.Heart.Enums.MixErrorStatus},System.String)
+  parent: Mix.Quartz.Services.QuartzService
+  langs:
+  - csharp
+  - vb
+  name: LogException(Exception, Nullable<MixErrorStatus>, String)
+  nameWithType: QuartzService.LogException(Exception, Nullable<MixErrorStatus>, String)
+  fullName: Mix.Quartz.Services.QuartzService.LogException(System.Exception, System.Nullable<Mix.Heart.Enums.MixErrorStatus>, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Services/QuartzService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LogException
+    path: ../../mix.core/src/platform/mix.quartz/Services/QuartzService.cs
+    startLine: 218
+  assemblies:
+  - mix.quartz
+  namespace: Mix.Quartz.Services
+  syntax:
+    content: public static void LogException(Exception ex = null, MixErrorStatus? status = default(MixErrorStatus? ), string message = null)
+    parameters:
+    - id: ex
+      type: System.Exception
+    - id: status
+      type: System.Nullable{Mix.Heart.Enums.MixErrorStatus}
+    - id: message
+      type: System.String
+    content.vb: Public Shared Sub LogException(ex As Exception = Nothing, status As MixErrorStatus? = Nothing, message As String = Nothing)
+  overload: Mix.Quartz.Services.QuartzService.LogException*
+  nameWithType.vb: QuartzService.LogException(Exception, Nullable(Of MixErrorStatus), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Quartz.Services.QuartzService.LogException(System.Exception, System.Nullable(Of Mix.Heart.Enums.MixErrorStatus), System.String)
+  name.vb: LogException(Exception, Nullable(Of MixErrorStatus), String)
+references:
+- uid: Mix.Quartz.Services
+  commentId: N:Mix.Quartz.Services
+  name: Mix.Quartz.Services
+  nameWithType: Mix.Quartz.Services
+  fullName: Mix.Quartz.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IScheduler
+  isExternal: true
+  name: IScheduler
+  nameWithType: IScheduler
+  fullName: IScheduler
+- uid: Mix.Quartz.Services.QuartzService.#ctor*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.#ctor
+  name: QuartzService
+  nameWithType: QuartzService.QuartzService
+  fullName: Mix.Quartz.Services.QuartzService.QuartzService
+- uid: IJobFactory
+  commentId: '!:IJobFactory'
+  isExternal: true
+  name: IJobFactory
+  nameWithType: IJobFactory
+  fullName: IJobFactory
+- uid: Mix.Quartz.Services.QuartzService.LoadScheduler*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.LoadScheduler
+  name: LoadScheduler
+  nameWithType: QuartzService.LoadScheduler
+  fullName: Mix.Quartz.Services.QuartzService.LoadScheduler
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.Quartz.Services.QuartzService.CheckExist*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.CheckExist
+  name: CheckExist
+  nameWithType: QuartzService.CheckExist
+  fullName: Mix.Quartz.Services.QuartzService.CheckExist
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Quartz.Services.QuartzService.PauseTrigger*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.PauseTrigger
+  name: PauseTrigger
+  nameWithType: QuartzService.PauseTrigger
+  fullName: Mix.Quartz.Services.QuartzService.PauseTrigger
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: Mix.Quartz.Services.QuartzService.ResumeTrigger*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.ResumeTrigger
+  name: ResumeTrigger
+  nameWithType: QuartzService.ResumeTrigger
+  fullName: Mix.Quartz.Services.QuartzService.ResumeTrigger
+- uid: Mix.Quartz.Services.QuartzService.GetTrigger*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.GetTrigger
+  name: GetTrigger
+  nameWithType: QuartzService.GetTrigger
+  fullName: Mix.Quartz.Services.QuartzService.GetTrigger
+- uid: System.Threading.Tasks.Task{JobSchedule}
+  commentId: T:System.Threading.Tasks.Task{JobSchedule}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<JobSchedule>
+  nameWithType: Task<JobSchedule>
+  fullName: System.Threading.Tasks.Task<JobSchedule>
+  nameWithType.vb: Task(Of JobSchedule)
+  fullName.vb: System.Threading.Tasks.Task(Of JobSchedule)
+  name.vb: Task(Of JobSchedule)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JobSchedule
+    name: JobSchedule
+    nameWithType: JobSchedule
+    fullName: JobSchedule
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JobSchedule
+    name: JobSchedule
+    nameWithType: JobSchedule
+    fullName: JobSchedule
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Quartz.Services.QuartzService.DeleteJob*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.DeleteJob
+  name: DeleteJob
+  nameWithType: QuartzService.DeleteJob
+  fullName: Mix.Quartz.Services.QuartzService.DeleteJob
+- uid: Mix.Quartz.Services.QuartzService.GetJob*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.GetJob
+  name: GetJob
+  nameWithType: QuartzService.GetJob
+  fullName: Mix.Quartz.Services.QuartzService.GetJob
+- uid: System.Threading.Tasks.Task{IJobDetail}
+  commentId: T:System.Threading.Tasks.Task{IJobDetail}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IJobDetail>
+  nameWithType: Task<IJobDetail>
+  fullName: System.Threading.Tasks.Task<IJobDetail>
+  nameWithType.vb: Task(Of IJobDetail)
+  fullName.vb: System.Threading.Tasks.Task(Of IJobDetail)
+  name.vb: Task(Of IJobDetail)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IJobDetail
+    name: IJobDetail
+    nameWithType: IJobDetail
+    fullName: IJobDetail
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IJobDetail
+    name: IJobDetail
+    nameWithType: IJobDetail
+    fullName: IJobDetail
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Quartz.Services.QuartzService.GetJobTriggerKeys*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.GetJobTriggerKeys
+  name: GetJobTriggerKeys
+  nameWithType: QuartzService.GetJobTriggerKeys
+  fullName: Mix.Quartz.Services.QuartzService.GetJobTriggerKeys
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{TriggerKey}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{TriggerKey}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<TriggerKey>>
+  nameWithType: Task<IEnumerable<TriggerKey>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TriggerKey>>
+  nameWithType.vb: Task(Of IEnumerable(Of TriggerKey))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TriggerKey))
+  name.vb: Task(Of IEnumerable(Of TriggerKey))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TriggerKey
+    name: TriggerKey
+    nameWithType: TriggerKey
+    fullName: TriggerKey
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TriggerKey
+    name: TriggerKey
+    nameWithType: TriggerKey
+    fullName: TriggerKey
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Quartz.Services.QuartzService.CreateJob*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.CreateJob
+  name: CreateJob
+  nameWithType: QuartzService.CreateJob
+  fullName: Mix.Quartz.Services.QuartzService.CreateJob
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: IJobDetail
+  isExternal: true
+  name: IJobDetail
+  nameWithType: IJobDetail
+  fullName: IJobDetail
+- uid: Mix.Quartz.Services.QuartzService.CreateTrigger*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.CreateTrigger
+  name: CreateTrigger
+  nameWithType: QuartzService.CreateTrigger
+  fullName: Mix.Quartz.Services.QuartzService.CreateTrigger
+- uid: JobSchedule
+  isExternal: true
+  name: JobSchedule
+  nameWithType: JobSchedule
+  fullName: JobSchedule
+- uid: ITrigger
+  isExternal: true
+  name: ITrigger
+  nameWithType: ITrigger
+  fullName: ITrigger
+- uid: Mix.Quartz.Services.QuartzService.Start*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.Start
+  name: Start
+  nameWithType: QuartzService.Start
+  fullName: Mix.Quartz.Services.QuartzService.Start
+- uid: Mix.Quartz.Services.QuartzService.Shutdown*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.Shutdown
+  name: Shutdown
+  nameWithType: QuartzService.Shutdown
+  fullName: Mix.Quartz.Services.QuartzService.Shutdown
+- uid: Mix.Quartz.Services.QuartzService.ScheduleJob*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.ScheduleJob
+  name: ScheduleJob
+  nameWithType: QuartzService.ScheduleJob
+  fullName: Mix.Quartz.Services.QuartzService.ScheduleJob
+- uid: MixJobBase
+  commentId: '!:MixJobBase'
+  isExternal: true
+  name: MixJobBase
+  nameWithType: MixJobBase
+  fullName: MixJobBase
+- uid: Mix.Quartz.Services.QuartzService.ResheduleJob*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.ResheduleJob
+  name: ResheduleJob
+  nameWithType: QuartzService.ResheduleJob
+  fullName: Mix.Quartz.Services.QuartzService.ResheduleJob
+- uid: Mix.Quartz.Services.QuartzService.LogException*
+  commentId: Overload:Mix.Quartz.Services.QuartzService.LogException
+  name: LogException
+  nameWithType: QuartzService.LogException
+  fullName: Mix.Quartz.Services.QuartzService.LogException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Nullable{Mix.Heart.Enums.MixErrorStatus}
+  commentId: T:System.Nullable{Mix.Heart.Enums.MixErrorStatus}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<MixErrorStatus>
+  nameWithType: Nullable<MixErrorStatus>
+  fullName: System.Nullable<Mix.Heart.Enums.MixErrorStatus>
+  nameWithType.vb: Nullable(Of MixErrorStatus)
+  fullName.vb: System.Nullable(Of Mix.Heart.Enums.MixErrorStatus)
+  name.vb: Nullable(Of MixErrorStatus)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Heart.Enums.MixErrorStatus
+    name: MixErrorStatus
+    nameWithType: MixErrorStatus
+    fullName: Mix.Heart.Enums.MixErrorStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Heart.Enums.MixErrorStatus
+    name: MixErrorStatus
+    nameWithType: MixErrorStatus
+    fullName: Mix.Heart.Enums.MixErrorStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

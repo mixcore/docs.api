@@ -1,0 +1,1025 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel
+  commentId: T:Mixcore.Domain.ViewModels.NavigationViewModel
+  id: NavigationViewModel
+  parent: Mixcore.Domain.ViewModels
+  children:
+  - Mixcore.Domain.ViewModels.NavigationViewModel.#ctor
+  - Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(MixDataContent)
+  - Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(MixDataContent,UnitOfWorkInfo)
+  - Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(UnitOfWorkInfo)
+  - Mixcore.Domain.ViewModels.NavigationViewModel.ChildData
+  - Mixcore.Domain.ViewModels.NavigationViewModel.Columns
+  - Mixcore.Domain.ViewModels.NavigationViewModel.ContentGuidParentId
+  - Mixcore.Domain.ViewModels.NavigationViewModel.ContentIntParentId
+  - Mixcore.Domain.ViewModels.NavigationViewModel.ContentParentType
+  - Mixcore.Domain.ViewModels.NavigationViewModel.Data
+  - Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseId
+  - Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseName
+  - Mixcore.Domain.ViewModels.NavigationViewModel.Nav
+  - Mixcore.Domain.ViewModels.NavigationViewModel.RelatedData
+  - Mixcore.Domain.ViewModels.NavigationViewModel.Values
+  langs:
+  - csharp
+  - vb
+  name: NavigationViewModel
+  nameWithType: NavigationViewModel
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel
+  type: Class
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: NavigationViewModel
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 2
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: 'public class NavigationViewModel : HaveParentContentViewModelBase<MixCmsContext, MixDataContent, Guid, NavigationViewModel>'
+    content.vb: >-
+      Public Class NavigationViewModel
+          Inherits HaveParentContentViewModelBase(Of MixCmsContext, MixDataContent, Guid, NavigationViewModel)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor
+  commentId: M:Mixcore.Domain.ViewModels.NavigationViewModel.#ctor
+  id: '#ctor'
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: NavigationViewModel()
+  nameWithType: NavigationViewModel.NavigationViewModel()
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.NavigationViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 7
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public NavigationViewModel()
+    content.vb: Public Sub New
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(MixDataContent)
+  commentId: M:Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(MixDataContent)
+  id: '#ctor(MixDataContent)'
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: NavigationViewModel(MixDataContent)
+  nameWithType: NavigationViewModel.NavigationViewModel(MixDataContent)
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.NavigationViewModel(MixDataContent)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 11
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public NavigationViewModel(MixDataContent entity)
+    parameters:
+    - id: entity
+      type: MixDataContent
+    content.vb: Public Sub New(entity As MixDataContent)
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(UnitOfWorkInfo)
+  commentId: M:Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: NavigationViewModel(UnitOfWorkInfo)
+  nameWithType: NavigationViewModel.NavigationViewModel(UnitOfWorkInfo)
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.NavigationViewModel(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 15
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public NavigationViewModel(UnitOfWorkInfo unitOfWorkInfo = null)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(unitOfWorkInfo As UnitOfWorkInfo = Nothing)
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(MixDataContent,UnitOfWorkInfo)
+  commentId: M:Mixcore.Domain.ViewModels.NavigationViewModel.#ctor(MixDataContent,UnitOfWorkInfo)
+  id: '#ctor(MixDataContent,UnitOfWorkInfo)'
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: NavigationViewModel(MixDataContent, UnitOfWorkInfo)
+  nameWithType: NavigationViewModel.NavigationViewModel(MixDataContent, UnitOfWorkInfo)
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.NavigationViewModel(MixDataContent, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 19
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public NavigationViewModel(MixDataContent entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: MixDataContent
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(entity As MixDataContent, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseId
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseId
+  id: MixDatabaseId
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseId
+  nameWithType: NavigationViewModel.MixDatabaseId
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseId
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDatabaseId
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 27
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public int MixDatabaseId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MixDatabaseId As Integer
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseName
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseName
+  id: MixDatabaseName
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseName
+  nameWithType: NavigationViewModel.MixDatabaseName
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseName
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDatabaseName
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 28
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public string MixDatabaseName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MixDatabaseName As String
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.Columns
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.Columns
+  id: Columns
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Columns
+  nameWithType: NavigationViewModel.Columns
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.Columns
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Columns
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 29
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public List<MixDatabaseColumnViewModel> Columns { get; set; }
+    parameters: []
+    return:
+      type: List{MixDatabaseColumnViewModel}
+    content.vb: Public Property Columns As List(Of MixDatabaseColumnViewModel)
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.Columns*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.Values
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.Values
+  id: Values
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: NavigationViewModel.Values
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.Values
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Values
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 30
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public List<MixDataContentValueViewModel> Values { get; set; }
+    parameters: []
+    return:
+      type: List{MixDataContentValueViewModel}
+    content.vb: Public Property Values As List(Of MixDataContentValueViewModel)
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.Values*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.Data
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.Data
+  id: Data
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: NavigationViewModel.Data
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.Data
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Data
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 31
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public JObject Data { get; set; }
+    parameters: []
+    return:
+      type: JObject
+    content.vb: Public Property Data As JObject
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.Data*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.ChildData
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.ChildData
+  id: ChildData
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChildData
+  nameWithType: NavigationViewModel.ChildData
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.ChildData
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ChildData
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 33
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public List<MixDataContentViewModel> ChildData { get; set; }
+    parameters: []
+    return:
+      type: List{MixDataContentViewModel}
+    content.vb: Public Property ChildData As List(Of MixDataContentViewModel)
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.ChildData*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.RelatedData
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.RelatedData
+  id: RelatedData
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: RelatedData
+  nameWithType: NavigationViewModel.RelatedData
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.RelatedData
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: RelatedData
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 34
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public List<MixDataContentAssociationViewModel> RelatedData { get; set; }
+    parameters: []
+    return:
+      type: List{MixDataContentAssociationViewModel}
+    content.vb: Public Property RelatedData As List(Of MixDataContentAssociationViewModel)
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.RelatedData*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.ContentGuidParentId
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.ContentGuidParentId
+  id: ContentGuidParentId
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: ContentGuidParentId
+  nameWithType: NavigationViewModel.ContentGuidParentId
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.ContentGuidParentId
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ContentGuidParentId
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 36
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public Guid? ContentGuidParentId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Guid}
+    content.vb: Public Property ContentGuidParentId As Guid?
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.ContentGuidParentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.ContentIntParentId
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.ContentIntParentId
+  id: ContentIntParentId
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: ContentIntParentId
+  nameWithType: NavigationViewModel.ContentIntParentId
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.ContentIntParentId
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ContentIntParentId
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 37
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public int? ContentIntParentId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property ContentIntParentId As Integer?
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.ContentIntParentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.ContentParentType
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.ContentParentType
+  id: ContentParentType
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: ContentParentType
+  nameWithType: NavigationViewModel.ContentParentType
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.ContentParentType
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ContentParentType
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 38
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public MixDatabaseParentType ContentParentType { get; set; }
+    parameters: []
+    return:
+      type: MixDatabaseParentType
+    content.vb: Public Property ContentParentType As MixDatabaseParentType
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.ContentParentType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.Nav
+  commentId: P:Mixcore.Domain.ViewModels.NavigationViewModel.Nav
+  id: Nav
+  parent: Mixcore.Domain.ViewModels.NavigationViewModel
+  langs:
+  - csharp
+  - vb
+  name: Nav
+  nameWithType: NavigationViewModel.Nav
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.Nav
+  type: Property
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Nav
+    path: ../../mix.core/src/applications/Mixcore/Domain/ViewModels/NavigationViewModel.cs
+    startLine: 41
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.ViewModels
+  syntax:
+    content: public MixNavigation Nav { get; }
+    parameters: []
+    return:
+      type: MixNavigation
+    content.vb: Public ReadOnly Property Nav As MixNavigation
+  overload: Mixcore.Domain.ViewModels.NavigationViewModel.Nav*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Mixcore.Domain.ViewModels
+  commentId: N:Mixcore.Domain.ViewModels
+  name: Mixcore.Domain.ViewModels
+  nameWithType: Mixcore.Domain.ViewModels
+  fullName: Mixcore.Domain.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.#ctor*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.#ctor
+  name: NavigationViewModel
+  nameWithType: NavigationViewModel.NavigationViewModel
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.NavigationViewModel
+- uid: MixDataContent
+  isExternal: true
+  name: MixDataContent
+  nameWithType: MixDataContent
+  fullName: MixDataContent
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseId*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseId
+  name: MixDatabaseId
+  nameWithType: NavigationViewModel.MixDatabaseId
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseName*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseName
+  name: MixDatabaseName
+  nameWithType: NavigationViewModel.MixDatabaseName
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.MixDatabaseName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.Columns*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.Columns
+  name: Columns
+  nameWithType: NavigationViewModel.Columns
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.Columns
+- uid: List{MixDatabaseColumnViewModel}
+  commentId: '!:List{MixDatabaseColumnViewModel}'
+  definition: List`1
+  name: List<MixDatabaseColumnViewModel>
+  nameWithType: List<MixDatabaseColumnViewModel>
+  fullName: List<MixDatabaseColumnViewModel>
+  nameWithType.vb: List(Of MixDatabaseColumnViewModel)
+  fullName.vb: List(Of MixDatabaseColumnViewModel)
+  name.vb: List(Of MixDatabaseColumnViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDatabaseColumnViewModel
+    name: MixDatabaseColumnViewModel
+    nameWithType: MixDatabaseColumnViewModel
+    fullName: MixDatabaseColumnViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDatabaseColumnViewModel
+    name: MixDatabaseColumnViewModel
+    nameWithType: MixDatabaseColumnViewModel
+    fullName: MixDatabaseColumnViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.Values*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.Values
+  name: Values
+  nameWithType: NavigationViewModel.Values
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.Values
+- uid: List{MixDataContentValueViewModel}
+  commentId: '!:List{MixDataContentValueViewModel}'
+  definition: List`1
+  name: List<MixDataContentValueViewModel>
+  nameWithType: List<MixDataContentValueViewModel>
+  fullName: List<MixDataContentValueViewModel>
+  nameWithType.vb: List(Of MixDataContentValueViewModel)
+  fullName.vb: List(Of MixDataContentValueViewModel)
+  name.vb: List(Of MixDataContentValueViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDataContentValueViewModel
+    name: MixDataContentValueViewModel
+    nameWithType: MixDataContentValueViewModel
+    fullName: MixDataContentValueViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDataContentValueViewModel
+    name: MixDataContentValueViewModel
+    nameWithType: MixDataContentValueViewModel
+    fullName: MixDataContentValueViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.Data*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.Data
+  name: Data
+  nameWithType: NavigationViewModel.Data
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.Data
+- uid: JObject
+  isExternal: true
+  name: JObject
+  nameWithType: JObject
+  fullName: JObject
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.ChildData*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.ChildData
+  name: ChildData
+  nameWithType: NavigationViewModel.ChildData
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.ChildData
+- uid: List{MixDataContentViewModel}
+  commentId: '!:List{MixDataContentViewModel}'
+  definition: List`1
+  name: List<MixDataContentViewModel>
+  nameWithType: List<MixDataContentViewModel>
+  fullName: List<MixDataContentViewModel>
+  nameWithType.vb: List(Of MixDataContentViewModel)
+  fullName.vb: List(Of MixDataContentViewModel)
+  name.vb: List(Of MixDataContentViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDataContentViewModel
+    name: MixDataContentViewModel
+    nameWithType: MixDataContentViewModel
+    fullName: MixDataContentViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDataContentViewModel
+    name: MixDataContentViewModel
+    nameWithType: MixDataContentViewModel
+    fullName: MixDataContentViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.RelatedData*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.RelatedData
+  name: RelatedData
+  nameWithType: NavigationViewModel.RelatedData
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.RelatedData
+- uid: List{MixDataContentAssociationViewModel}
+  commentId: '!:List{MixDataContentAssociationViewModel}'
+  definition: List`1
+  name: List<MixDataContentAssociationViewModel>
+  nameWithType: List<MixDataContentAssociationViewModel>
+  fullName: List<MixDataContentAssociationViewModel>
+  nameWithType.vb: List(Of MixDataContentAssociationViewModel)
+  fullName.vb: List(Of MixDataContentAssociationViewModel)
+  name.vb: List(Of MixDataContentAssociationViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDataContentAssociationViewModel
+    name: MixDataContentAssociationViewModel
+    nameWithType: MixDataContentAssociationViewModel
+    fullName: MixDataContentAssociationViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDataContentAssociationViewModel
+    name: MixDataContentAssociationViewModel
+    nameWithType: MixDataContentAssociationViewModel
+    fullName: MixDataContentAssociationViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.ContentGuidParentId*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.ContentGuidParentId
+  name: ContentGuidParentId
+  nameWithType: NavigationViewModel.ContentGuidParentId
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.ContentGuidParentId
+- uid: System.Nullable{Guid}
+  commentId: T:System.Nullable{Guid}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Guid>
+  nameWithType: Nullable<Guid>
+  fullName: System.Nullable<Guid>
+  nameWithType.vb: Nullable(Of Guid)
+  fullName.vb: System.Nullable(Of Guid)
+  name.vb: Nullable(Of Guid)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.ContentIntParentId*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.ContentIntParentId
+  name: ContentIntParentId
+  nameWithType: NavigationViewModel.ContentIntParentId
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.ContentIntParentId
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.ContentParentType*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.ContentParentType
+  name: ContentParentType
+  nameWithType: NavigationViewModel.ContentParentType
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.ContentParentType
+- uid: MixDatabaseParentType
+  isExternal: true
+  name: MixDatabaseParentType
+  nameWithType: MixDatabaseParentType
+  fullName: MixDatabaseParentType
+- uid: Mixcore.Domain.ViewModels.NavigationViewModel.Nav*
+  commentId: Overload:Mixcore.Domain.ViewModels.NavigationViewModel.Nav
+  name: Nav
+  nameWithType: NavigationViewModel.Nav
+  fullName: Mixcore.Domain.ViewModels.NavigationViewModel.Nav
+- uid: MixNavigation
+  commentId: '!:MixNavigation'
+  isExternal: true
+  name: MixNavigation
+  nameWithType: MixNavigation
+  fullName: MixNavigation

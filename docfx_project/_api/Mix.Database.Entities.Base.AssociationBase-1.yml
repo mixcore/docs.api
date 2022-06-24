@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Database.Entities.Base.AssociationBase`1
+  commentId: T:Mix.Database.Entities.Base.AssociationBase`1
+  id: AssociationBase`1
+  parent: Mix.Database.Entities.Base
+  children:
+  - Mix.Database.Entities.Base.AssociationBase`1.LeftId
+  - Mix.Database.Entities.Base.AssociationBase`1.MixTenantId
+  - Mix.Database.Entities.Base.AssociationBase`1.RightId
+  langs:
+  - csharp
+  - vb
+  name: AssociationBase<TPrimaryKey>
+  nameWithType: AssociationBase<TPrimaryKey>
+  fullName: Mix.Database.Entities.Base.AssociationBase<TPrimaryKey>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Base/AssociationBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AssociationBase
+    path: ../../mix.core/src/platform/mix.database/Entities/Base/AssociationBase.cs
+    startLine: 2
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Base
+  syntax:
+    content: 'public abstract class AssociationBase<TPrimaryKey> : EntityBase<TPrimaryKey> where TPrimaryKey : IComparable'
+    typeParameters:
+    - id: TPrimaryKey
+    content.vb: >-
+      Public MustInherit Class AssociationBase(Of TPrimaryKey As IComparable)
+          Inherits EntityBase(Of TPrimaryKey)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mix.Database.Entities.Cms.MixModulePostAssociation
+  - Mix.Database.Entities.Cms.MixPageModuleAssociation
+  - Mix.Database.Entities.Cms.MixPagePostAssociation
+  nameWithType.vb: AssociationBase(Of TPrimaryKey)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Database.Entities.Base.AssociationBase(Of TPrimaryKey)
+  name.vb: AssociationBase(Of TPrimaryKey)
+- uid: Mix.Database.Entities.Base.AssociationBase`1.MixTenantId
+  commentId: P:Mix.Database.Entities.Base.AssociationBase`1.MixTenantId
+  id: MixTenantId
+  parent: Mix.Database.Entities.Base.AssociationBase`1
+  langs:
+  - csharp
+  - vb
+  name: MixTenantId
+  nameWithType: AssociationBase<TPrimaryKey>.MixTenantId
+  fullName: Mix.Database.Entities.Base.AssociationBase<TPrimaryKey>.MixTenantId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Base/AssociationBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantId
+    path: ../../mix.core/src/platform/mix.database/Entities/Base/AssociationBase.cs
+    startLine: 5
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Base
+  syntax:
+    content: public int MixTenantId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MixTenantId As Integer
+  overload: Mix.Database.Entities.Base.AssociationBase`1.MixTenantId*
+  nameWithType.vb: AssociationBase(Of TPrimaryKey).MixTenantId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Database.Entities.Base.AssociationBase(Of TPrimaryKey).MixTenantId
+- uid: Mix.Database.Entities.Base.AssociationBase`1.LeftId
+  commentId: P:Mix.Database.Entities.Base.AssociationBase`1.LeftId
+  id: LeftId
+  parent: Mix.Database.Entities.Base.AssociationBase`1
+  langs:
+  - csharp
+  - vb
+  name: LeftId
+  nameWithType: AssociationBase<TPrimaryKey>.LeftId
+  fullName: Mix.Database.Entities.Base.AssociationBase<TPrimaryKey>.LeftId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Base/AssociationBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LeftId
+    path: ../../mix.core/src/platform/mix.database/Entities/Base/AssociationBase.cs
+    startLine: 6
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Base
+  syntax:
+    content: public TPrimaryKey LeftId { get; set; }
+    parameters: []
+    return:
+      type: '{TPrimaryKey}'
+    content.vb: Public Property LeftId As TPrimaryKey
+  overload: Mix.Database.Entities.Base.AssociationBase`1.LeftId*
+  nameWithType.vb: AssociationBase(Of TPrimaryKey).LeftId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Database.Entities.Base.AssociationBase(Of TPrimaryKey).LeftId
+- uid: Mix.Database.Entities.Base.AssociationBase`1.RightId
+  commentId: P:Mix.Database.Entities.Base.AssociationBase`1.RightId
+  id: RightId
+  parent: Mix.Database.Entities.Base.AssociationBase`1
+  langs:
+  - csharp
+  - vb
+  name: RightId
+  nameWithType: AssociationBase<TPrimaryKey>.RightId
+  fullName: Mix.Database.Entities.Base.AssociationBase<TPrimaryKey>.RightId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Base/AssociationBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: RightId
+    path: ../../mix.core/src/platform/mix.database/Entities/Base/AssociationBase.cs
+    startLine: 7
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Base
+  syntax:
+    content: public TPrimaryKey RightId { get; set; }
+    parameters: []
+    return:
+      type: '{TPrimaryKey}'
+    content.vb: Public Property RightId As TPrimaryKey
+  overload: Mix.Database.Entities.Base.AssociationBase`1.RightId*
+  nameWithType.vb: AssociationBase(Of TPrimaryKey).RightId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Database.Entities.Base.AssociationBase(Of TPrimaryKey).RightId
+references:
+- uid: Mix.Database.Entities.Base
+  commentId: N:Mix.Database.Entities.Base
+  name: Mix.Database.Entities.Base
+  nameWithType: Mix.Database.Entities.Base
+  fullName: Mix.Database.Entities.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Database.Entities.Base.AssociationBase`1.MixTenantId*
+  commentId: Overload:Mix.Database.Entities.Base.AssociationBase`1.MixTenantId
+  name: MixTenantId
+  nameWithType: AssociationBase<TPrimaryKey>.MixTenantId
+  fullName: Mix.Database.Entities.Base.AssociationBase<TPrimaryKey>.MixTenantId
+  nameWithType.vb: AssociationBase(Of TPrimaryKey).MixTenantId
+  fullName.vb: Mix.Database.Entities.Base.AssociationBase(Of TPrimaryKey).MixTenantId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.Database.Entities.Base.AssociationBase`1.LeftId*
+  commentId: Overload:Mix.Database.Entities.Base.AssociationBase`1.LeftId
+  name: LeftId
+  nameWithType: AssociationBase<TPrimaryKey>.LeftId
+  fullName: Mix.Database.Entities.Base.AssociationBase<TPrimaryKey>.LeftId
+  nameWithType.vb: AssociationBase(Of TPrimaryKey).LeftId
+  fullName.vb: Mix.Database.Entities.Base.AssociationBase(Of TPrimaryKey).LeftId
+- uid: '{TPrimaryKey}'
+  commentId: '!:TPrimaryKey'
+  definition: TPrimaryKey
+  name: TPrimaryKey
+  nameWithType: TPrimaryKey
+  fullName: TPrimaryKey
+- uid: TPrimaryKey
+  name: TPrimaryKey
+  nameWithType: TPrimaryKey
+  fullName: TPrimaryKey
+- uid: Mix.Database.Entities.Base.AssociationBase`1.RightId*
+  commentId: Overload:Mix.Database.Entities.Base.AssociationBase`1.RightId
+  name: RightId
+  nameWithType: AssociationBase<TPrimaryKey>.RightId
+  fullName: Mix.Database.Entities.Base.AssociationBase<TPrimaryKey>.RightId
+  nameWithType.vb: AssociationBase(Of TPrimaryKey).RightId
+  fullName.vb: Mix.Database.Entities.Base.AssociationBase(Of TPrimaryKey).RightId

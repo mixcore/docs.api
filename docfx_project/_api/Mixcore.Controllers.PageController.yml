@@ -1,0 +1,559 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mixcore.Controllers.PageController
+  commentId: T:Mixcore.Controllers.PageController
+  id: PageController
+  parent: Mixcore.Controllers
+  children:
+  - Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,MixCmsContext,MixCacheService)
+  - Mixcore.Controllers.PageController._context
+  - Mixcore.Controllers.PageController._uow
+  - Mixcore.Controllers.PageController.Index(System.Int32,System.String)
+  - Mixcore.Controllers.PageController.Page(System.Int32,System.String)
+  - Mixcore.Controllers.PageController.ValidateRequest
+  langs:
+  - csharp
+  - vb
+  name: PageController
+  nameWithType: PageController
+  fullName: Mixcore.Controllers.PageController
+  type: Class
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PageController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PageController
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PageController.cs
+    startLine: 7
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: >-
+      [Route("{controller}")]
+
+      public class PageController : MixControllerBase
+    content.vb: >-
+      <Route("{controller}")>
+
+      Public Class PageController
+          Inherits MixControllerBase
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{controller}'
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mixcore.Controllers.PageController._uow
+  commentId: F:Mixcore.Controllers.PageController._uow
+  id: _uow
+  parent: Mixcore.Controllers.PageController
+  langs:
+  - csharp
+  - vb
+  name: _uow
+  nameWithType: PageController._uow
+  fullName: Mixcore.Controllers.PageController._uow
+  type: Field
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PageController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _uow
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PageController.cs
+    startLine: 10
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: protected UnitOfWorkInfo _uow
+    return:
+      type: UnitOfWorkInfo
+    content.vb: Protected _uow As UnitOfWorkInfo
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mixcore.Controllers.PageController._context
+  commentId: F:Mixcore.Controllers.PageController._context
+  id: _context
+  parent: Mixcore.Controllers.PageController
+  langs:
+  - csharp
+  - vb
+  name: _context
+  nameWithType: PageController._context
+  fullName: Mixcore.Controllers.PageController._context
+  type: Field
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PageController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _context
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PageController.cs
+    startLine: 11
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: protected readonly MixCmsContext _context
+    return:
+      type: MixCmsContext
+    content.vb: Protected ReadOnly _context As MixCmsContext
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,MixCmsContext,MixCacheService)
+  commentId: M:Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,MixCmsContext,MixCacheService)
+  id: '#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,MixCmsContext,MixCacheService)'
+  parent: Mixcore.Controllers.PageController
+  langs:
+  - csharp
+  - vb
+  name: PageController(IHttpContextAccessor, ILogger<HomeController>, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, MixCmsContext, MixCacheService)
+  nameWithType: PageController.PageController(IHttpContextAccessor, ILogger<HomeController>, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, MixCmsContext, MixCacheService)
+  fullName: Mixcore.Controllers.PageController.PageController(IHttpContextAccessor, ILogger<Mixcore.Controllers.HomeController>, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.MixDatabaseService, MixCmsContext, MixCacheService)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PageController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PageController.cs
+    startLine: 15
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: public PageController(IHttpContextAccessor httpContextAccessor, ILogger<HomeController> logger, IPSecurityConfigService ipSecurityConfigService, MixService mixService, TranslatorService translator, MixDatabaseService databaseService, MixCmsContext context, MixCacheService cacheService)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: logger
+      type: ILogger{Mixcore.Controllers.HomeController}
+    - id: ipSecurityConfigService
+      type: Mix.Shared.Services.IPSecurityConfigService
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: translator
+      type: Mix.Lib.Services.TranslatorService
+    - id: databaseService
+      type: Mix.Database.Services.MixDatabaseService
+    - id: context
+      type: MixCmsContext
+    - id: cacheService
+      type: MixCacheService
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, logger As ILogger(Of HomeController), ipSecurityConfigService As IPSecurityConfigService, mixService As MixService, translator As TranslatorService, databaseService As MixDatabaseService, context As MixCmsContext, cacheService As MixCacheService)
+  overload: Mixcore.Controllers.PageController.#ctor*
+  nameWithType.vb: PageController.PageController(IHttpContextAccessor, ILogger(Of HomeController), IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, MixCmsContext, MixCacheService)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mixcore.Controllers.PageController.PageController(IHttpContextAccessor, ILogger(Of Mixcore.Controllers.HomeController), Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.MixDatabaseService, MixCmsContext, MixCacheService)
+  name.vb: PageController(IHttpContextAccessor, ILogger(Of HomeController), IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, MixCmsContext, MixCacheService)
+- uid: Mixcore.Controllers.PageController.ValidateRequest
+  commentId: M:Mixcore.Controllers.PageController.ValidateRequest
+  id: ValidateRequest
+  parent: Mixcore.Controllers.PageController
+  langs:
+  - csharp
+  - vb
+  name: ValidateRequest()
+  nameWithType: PageController.ValidateRequest()
+  fullName: Mixcore.Controllers.PageController.ValidateRequest()
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PageController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ValidateRequest
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PageController.cs
+    startLine: 34
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: protected override void ValidateRequest()
+    content.vb: Protected Overrides Sub ValidateRequest
+  overload: Mixcore.Controllers.PageController.ValidateRequest*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mixcore.Controllers.PageController.Index(System.Int32,System.String)
+  commentId: M:Mixcore.Controllers.PageController.Index(System.Int32,System.String)
+  id: Index(System.Int32,System.String)
+  parent: Mixcore.Controllers.PageController
+  langs:
+  - csharp
+  - vb
+  name: Index(Int32, String)
+  nameWithType: PageController.Index(Int32, String)
+  fullName: Mixcore.Controllers.PageController.Index(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PageController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Index
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PageController.cs
+    startLine: 55
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: >-
+      [Route("{id}")]
+
+      public Task<IActionResult> Index(int id, string keyword)
+    parameters:
+    - id: id
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <Route("{id}")>
+
+      Public Function Index(id As Integer, keyword As String) As Task(Of IActionResult)
+  overload: Mixcore.Controllers.PageController.Index*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id}'
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Controllers.PageController.Page(System.Int32,System.String)
+  commentId: M:Mixcore.Controllers.PageController.Page(System.Int32,System.String)
+  id: Page(System.Int32,System.String)
+  parent: Mixcore.Controllers.PageController
+  langs:
+  - csharp
+  - vb
+  name: Page(Int32, String)
+  nameWithType: PageController.Page(Int32, String)
+  fullName: Mixcore.Controllers.PageController.Page(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Controllers/PageController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Page
+    path: ../../mix.core/src/applications/Mixcore/Controllers/PageController.cs
+    startLine: 71
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Controllers
+  syntax:
+    content: protected Task<IActionResult> Page(int pageId, string keyword = null)
+    parameters:
+    - id: pageId
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: Protected Function Page(pageId As Integer, keyword As String = Nothing) As Task(Of IActionResult)
+  overload: Mixcore.Controllers.PageController.Page*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Mixcore.Controllers
+  commentId: N:Mixcore.Controllers
+  name: Mixcore.Controllers
+  nameWithType: Mixcore.Controllers
+  fullName: Mixcore.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: Mixcore.Controllers.PageController.#ctor*
+  commentId: Overload:Mixcore.Controllers.PageController.#ctor
+  name: PageController
+  nameWithType: PageController.PageController
+  fullName: Mixcore.Controllers.PageController.PageController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: ILogger{Mixcore.Controllers.HomeController}
+  commentId: '!:ILogger{Mixcore.Controllers.HomeController}'
+  definition: ILogger`1
+  name: ILogger<HomeController>
+  nameWithType: ILogger<HomeController>
+  fullName: ILogger<Mixcore.Controllers.HomeController>
+  nameWithType.vb: ILogger(Of HomeController)
+  fullName.vb: ILogger(Of Mixcore.Controllers.HomeController)
+  name.vb: ILogger(Of HomeController)
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mixcore.Controllers.HomeController
+    name: HomeController
+    nameWithType: HomeController
+    fullName: Mixcore.Controllers.HomeController
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mixcore.Controllers.HomeController
+    name: HomeController
+    nameWithType: HomeController
+    fullName: Mixcore.Controllers.HomeController
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.IPSecurityConfigService
+  commentId: T:Mix.Shared.Services.IPSecurityConfigService
+  parent: Mix.Shared.Services
+  name: IPSecurityConfigService
+  nameWithType: IPSecurityConfigService
+  fullName: Mix.Shared.Services.IPSecurityConfigService
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Lib.Services.TranslatorService
+  commentId: T:Mix.Lib.Services.TranslatorService
+  parent: Mix.Lib.Services
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: Mix.Lib.Services.TranslatorService
+- uid: Mix.Database.Services.MixDatabaseService
+  commentId: T:Mix.Database.Services.MixDatabaseService
+  parent: Mix.Database.Services
+  name: MixDatabaseService
+  nameWithType: MixDatabaseService
+  fullName: Mix.Database.Services.MixDatabaseService
+- uid: MixCacheService
+  isExternal: true
+  name: MixCacheService
+  nameWithType: MixCacheService
+  fullName: MixCacheService
+- uid: ILogger`1
+  isExternal: true
+  name: ILogger<>
+  nameWithType: ILogger<>
+  fullName: ILogger<>
+  nameWithType.vb: ILogger(Of )
+  fullName.vb: ILogger(Of )
+  name.vb: ILogger(Of )
+  spec.csharp:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: Mix.Database.Services
+  commentId: N:Mix.Database.Services
+  name: Mix.Database.Services
+  nameWithType: Mix.Database.Services
+  fullName: Mix.Database.Services
+- uid: Mixcore.Controllers.PageController.ValidateRequest*
+  commentId: Overload:Mixcore.Controllers.PageController.ValidateRequest
+  name: ValidateRequest
+  nameWithType: PageController.ValidateRequest
+  fullName: Mixcore.Controllers.PageController.ValidateRequest
+- uid: Mixcore.Controllers.PageController.Index*
+  commentId: Overload:Mixcore.Controllers.PageController.Index
+  name: Index
+  nameWithType: PageController.Index
+  fullName: Mixcore.Controllers.PageController.Index
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.IActionResult}'
+  definition: Task`1
+  name: Task<IActionResult>
+  nameWithType: Task<IActionResult>
+  fullName: Task<Microsoft.AspNetCore.Mvc.IActionResult>
+  nameWithType.vb: Task(Of IActionResult)
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.IActionResult)
+  name.vb: Task(Of IActionResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    nameWithType: IActionResult
+    fullName: Microsoft.AspNetCore.Mvc.IActionResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    nameWithType: IActionResult
+    fullName: Microsoft.AspNetCore.Mvc.IActionResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mixcore.Controllers.PageController.Page*
+  commentId: Overload:Mixcore.Controllers.PageController.Page
+  name: Page
+  nameWithType: PageController.Page
+  fullName: Mixcore.Controllers.PageController.Page

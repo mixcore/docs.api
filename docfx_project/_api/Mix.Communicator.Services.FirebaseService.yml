@@ -1,0 +1,1031 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Communicator.Services.FirebaseService
+  commentId: T:Mix.Communicator.Services.FirebaseService
+  id: FirebaseService
+  parent: Mix.Communicator.Services
+  children:
+  - Mix.Communicator.Services.FirebaseService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  - Mix.Communicator.Services.FirebaseService.SendAll
+  - Mix.Communicator.Services.FirebaseService.SendBatchMessages(System.String)
+  - Mix.Communicator.Services.FirebaseService.SendToDevice(System.String,FirebaseAdmin.Messaging.Notification,Dictionary{System.String,System.String})
+  - Mix.Communicator.Services.FirebaseService.SendToMultipleDevices(List{System.String},FirebaseAdmin.Messaging.Notification,Dictionary{System.String,System.String})
+  - Mix.Communicator.Services.FirebaseService.SendToTopics(System.String)
+  - Mix.Communicator.Services.FirebaseService.SendWithCondition(System.String)
+  - Mix.Communicator.Services.FirebaseService.VeriryTokenAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: FirebaseService
+  nameWithType: FirebaseService
+  fullName: Mix.Communicator.Services.FirebaseService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: FirebaseService
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 12
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public class FirebaseService
+    content.vb: Public Class FirebaseService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Communicator.Services.FirebaseService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:Mix.Communicator.Services.FirebaseService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration)'
+  parent: Mix.Communicator.Services.FirebaseService
+  langs:
+  - csharp
+  - vb
+  name: FirebaseService(IConfiguration)
+  nameWithType: FirebaseService.FirebaseService(IConfiguration)
+  fullName: Mix.Communicator.Services.FirebaseService.FirebaseService(Microsoft.Extensions.Configuration.IConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 16
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public FirebaseService(IConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Public Sub New(configuration As IConfiguration)
+  overload: Mix.Communicator.Services.FirebaseService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Communicator.Services.FirebaseService.VeriryTokenAsync(System.String)
+  commentId: M:Mix.Communicator.Services.FirebaseService.VeriryTokenAsync(System.String)
+  id: VeriryTokenAsync(System.String)
+  parent: Mix.Communicator.Services.FirebaseService
+  langs:
+  - csharp
+  - vb
+  name: VeriryTokenAsync(String)
+  nameWithType: FirebaseService.VeriryTokenAsync(String)
+  fullName: Mix.Communicator.Services.FirebaseService.VeriryTokenAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: VeriryTokenAsync
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 35
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public Task<FirebaseToken> VeriryTokenAsync(string idToken)
+    parameters:
+    - id: idToken
+      type: System.String
+    return:
+      type: Task{FirebaseAdmin.Auth.FirebaseToken}
+    content.vb: Public Function VeriryTokenAsync(idToken As String) As Task(Of FirebaseToken)
+  overload: Mix.Communicator.Services.FirebaseService.VeriryTokenAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Communicator.Services.FirebaseService.SendToDevice(System.String,FirebaseAdmin.Messaging.Notification,Dictionary{System.String,System.String})
+  commentId: M:Mix.Communicator.Services.FirebaseService.SendToDevice(System.String,FirebaseAdmin.Messaging.Notification,Dictionary{System.String,System.String})
+  id: SendToDevice(System.String,FirebaseAdmin.Messaging.Notification,Dictionary{System.String,System.String})
+  parent: Mix.Communicator.Services.FirebaseService
+  langs:
+  - csharp
+  - vb
+  name: SendToDevice(String, Notification, Dictionary<String, String>)
+  nameWithType: FirebaseService.SendToDevice(String, Notification, Dictionary<String, String>)
+  fullName: Mix.Communicator.Services.FirebaseService.SendToDevice(System.String, FirebaseAdmin.Messaging.Notification, Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendToDevice
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 41
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public Task<string> SendToDevice(string registrationToken, Notification notification, Dictionary<string, string> messages)
+    parameters:
+    - id: registrationToken
+      type: System.String
+    - id: notification
+      type: FirebaseAdmin.Messaging.Notification
+    - id: messages
+      type: Dictionary{System.String,System.String}
+    return:
+      type: Task{System.String}
+    content.vb: Public Function SendToDevice(registrationToken As String, notification As Notification, messages As Dictionary(Of String, String)) As Task(Of String)
+  overload: Mix.Communicator.Services.FirebaseService.SendToDevice*
+  nameWithType.vb: FirebaseService.SendToDevice(String, Notification, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Communicator.Services.FirebaseService.SendToDevice(System.String, FirebaseAdmin.Messaging.Notification, Dictionary(Of System.String, System.String))
+  name.vb: SendToDevice(String, Notification, Dictionary(Of String, String))
+- uid: Mix.Communicator.Services.FirebaseService.SendToMultipleDevices(List{System.String},FirebaseAdmin.Messaging.Notification,Dictionary{System.String,System.String})
+  commentId: M:Mix.Communicator.Services.FirebaseService.SendToMultipleDevices(List{System.String},FirebaseAdmin.Messaging.Notification,Dictionary{System.String,System.String})
+  id: SendToMultipleDevices(List{System.String},FirebaseAdmin.Messaging.Notification,Dictionary{System.String,System.String})
+  parent: Mix.Communicator.Services.FirebaseService
+  langs:
+  - csharp
+  - vb
+  name: SendToMultipleDevices(List<String>, Notification, Dictionary<String, String>)
+  nameWithType: FirebaseService.SendToMultipleDevices(List<String>, Notification, Dictionary<String, String>)
+  fullName: Mix.Communicator.Services.FirebaseService.SendToMultipleDevices(List<System.String>, FirebaseAdmin.Messaging.Notification, Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendToMultipleDevices
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 67
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public Task<string> SendToMultipleDevices(List<string> registrationTokens, Notification notification, Dictionary<string, string> data)
+    parameters:
+    - id: registrationTokens
+      type: List{System.String}
+    - id: notification
+      type: FirebaseAdmin.Messaging.Notification
+    - id: data
+      type: Dictionary{System.String,System.String}
+    return:
+      type: Task{System.String}
+    content.vb: Public Function SendToMultipleDevices(registrationTokens As List(Of String), notification As Notification, data As Dictionary(Of String, String)) As Task(Of String)
+  overload: Mix.Communicator.Services.FirebaseService.SendToMultipleDevices*
+  nameWithType.vb: FirebaseService.SendToMultipleDevices(List(Of String), Notification, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Communicator.Services.FirebaseService.SendToMultipleDevices(List(Of System.String), FirebaseAdmin.Messaging.Notification, Dictionary(Of System.String, System.String))
+  name.vb: SendToMultipleDevices(List(Of String), Notification, Dictionary(Of String, String))
+- uid: Mix.Communicator.Services.FirebaseService.SendAll
+  commentId: M:Mix.Communicator.Services.FirebaseService.SendAll
+  id: SendAll
+  parent: Mix.Communicator.Services.FirebaseService
+  langs:
+  - csharp
+  - vb
+  name: SendAll()
+  nameWithType: FirebaseService.SendAll()
+  fullName: Mix.Communicator.Services.FirebaseService.SendAll()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendAll
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 93
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public Task SendAll()
+    return:
+      type: Task
+    content.vb: Public Function SendAll As Task
+  overload: Mix.Communicator.Services.FirebaseService.SendAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Communicator.Services.FirebaseService.SendToTopics(System.String)
+  commentId: M:Mix.Communicator.Services.FirebaseService.SendToTopics(System.String)
+  id: SendToTopics(System.String)
+  parent: Mix.Communicator.Services.FirebaseService
+  langs:
+  - csharp
+  - vb
+  name: SendToTopics(String)
+  nameWithType: FirebaseService.SendToTopics(String)
+  fullName: Mix.Communicator.Services.FirebaseService.SendToTopics(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendToTopics
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 129
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public Task SendToTopics(string topic)
+    parameters:
+    - id: topic
+      type: System.String
+    return:
+      type: Task
+    content.vb: Public Function SendToTopics(topic As String) As Task
+  overload: Mix.Communicator.Services.FirebaseService.SendToTopics*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Communicator.Services.FirebaseService.SendWithCondition(System.String)
+  commentId: M:Mix.Communicator.Services.FirebaseService.SendWithCondition(System.String)
+  id: SendWithCondition(System.String)
+  parent: Mix.Communicator.Services.FirebaseService
+  langs:
+  - csharp
+  - vb
+  name: SendWithCondition(String)
+  nameWithType: FirebaseService.SendWithCondition(String)
+  fullName: Mix.Communicator.Services.FirebaseService.SendWithCondition(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendWithCondition
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 151
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public Task SendWithCondition(string condition)
+    parameters:
+    - id: condition
+      type: System.String
+    return:
+      type: Task
+    content.vb: Public Function SendWithCondition(condition As String) As Task
+  overload: Mix.Communicator.Services.FirebaseService.SendWithCondition*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Communicator.Services.FirebaseService.SendBatchMessages(System.String)
+  commentId: M:Mix.Communicator.Services.FirebaseService.SendBatchMessages(System.String)
+  id: SendBatchMessages(System.String)
+  parent: Mix.Communicator.Services.FirebaseService
+  langs:
+  - csharp
+  - vb
+  name: SendBatchMessages(String)
+  nameWithType: FirebaseService.SendBatchMessages(String)
+  fullName: Mix.Communicator.Services.FirebaseService.SendBatchMessages(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.communicator/Services/FirebaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendBatchMessages
+    path: ../../mix.core/src/platform/mix.communicator/Services/FirebaseService.cs
+    startLine: 175
+  assemblies:
+  - mix.communicator
+  namespace: Mix.Communicator.Services
+  syntax:
+    content: public Task SendBatchMessages(string registrationToken)
+    parameters:
+    - id: registrationToken
+      type: System.String
+    return:
+      type: Task
+    content.vb: Public Function SendBatchMessages(registrationToken As String) As Task
+  overload: Mix.Communicator.Services.FirebaseService.SendBatchMessages*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Communicator.Services
+  commentId: N:Mix.Communicator.Services
+  name: Mix.Communicator.Services
+  nameWithType: Mix.Communicator.Services
+  fullName: Mix.Communicator.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Communicator.Services.FirebaseService.#ctor*
+  commentId: Overload:Mix.Communicator.Services.FirebaseService.#ctor
+  name: FirebaseService
+  nameWithType: FirebaseService.FirebaseService
+  fullName: Mix.Communicator.Services.FirebaseService.FirebaseService
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: Mix.Communicator.Services.FirebaseService.VeriryTokenAsync*
+  commentId: Overload:Mix.Communicator.Services.FirebaseService.VeriryTokenAsync
+  name: VeriryTokenAsync
+  nameWithType: FirebaseService.VeriryTokenAsync
+  fullName: Mix.Communicator.Services.FirebaseService.VeriryTokenAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{FirebaseAdmin.Auth.FirebaseToken}
+  commentId: '!:Task{FirebaseAdmin.Auth.FirebaseToken}'
+  definition: Task`1
+  name: Task<FirebaseToken>
+  nameWithType: Task<FirebaseToken>
+  fullName: Task<FirebaseAdmin.Auth.FirebaseToken>
+  nameWithType.vb: Task(Of FirebaseToken)
+  fullName.vb: Task(Of FirebaseAdmin.Auth.FirebaseToken)
+  name.vb: Task(Of FirebaseToken)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: FirebaseAdmin.Auth.FirebaseToken
+    name: FirebaseToken
+    nameWithType: FirebaseToken
+    fullName: FirebaseAdmin.Auth.FirebaseToken
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: FirebaseAdmin.Auth.FirebaseToken
+    name: FirebaseToken
+    nameWithType: FirebaseToken
+    fullName: FirebaseAdmin.Auth.FirebaseToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Communicator.Services.FirebaseService.SendToDevice*
+  commentId: Overload:Mix.Communicator.Services.FirebaseService.SendToDevice
+  name: SendToDevice
+  nameWithType: FirebaseService.SendToDevice
+  fullName: Mix.Communicator.Services.FirebaseService.SendToDevice
+- uid: FirebaseAdmin.Messaging.Notification
+  commentId: T:FirebaseAdmin.Messaging.Notification
+  parent: FirebaseAdmin.Messaging
+  isExternal: true
+  name: Notification
+  nameWithType: Notification
+  fullName: FirebaseAdmin.Messaging.Notification
+- uid: Dictionary{System.String,System.String}
+  commentId: '!:Dictionary{System.String,System.String}'
+  definition: Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: FirebaseAdmin.Messaging
+  commentId: N:FirebaseAdmin.Messaging
+  isExternal: true
+  name: FirebaseAdmin.Messaging
+  nameWithType: FirebaseAdmin.Messaging
+  fullName: FirebaseAdmin.Messaging
+- uid: Dictionary`2
+  isExternal: true
+  name: Dictionary<, >
+  nameWithType: Dictionary<, >
+  fullName: Dictionary<, >
+  nameWithType.vb: Dictionary(Of , )
+  fullName.vb: Dictionary(Of , )
+  name.vb: Dictionary(Of , )
+  spec.csharp:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Communicator.Services.FirebaseService.SendToMultipleDevices*
+  commentId: Overload:Mix.Communicator.Services.FirebaseService.SendToMultipleDevices
+  name: SendToMultipleDevices
+  nameWithType: FirebaseService.SendToMultipleDevices
+  fullName: Mix.Communicator.Services.FirebaseService.SendToMultipleDevices
+- uid: List{System.String}
+  commentId: '!:List{System.String}'
+  definition: List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Communicator.Services.FirebaseService.SendAll*
+  commentId: Overload:Mix.Communicator.Services.FirebaseService.SendAll
+  name: SendAll
+  nameWithType: FirebaseService.SendAll
+  fullName: Mix.Communicator.Services.FirebaseService.SendAll
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Communicator.Services.FirebaseService.SendToTopics*
+  commentId: Overload:Mix.Communicator.Services.FirebaseService.SendToTopics
+  name: SendToTopics
+  nameWithType: FirebaseService.SendToTopics
+  fullName: Mix.Communicator.Services.FirebaseService.SendToTopics
+- uid: Mix.Communicator.Services.FirebaseService.SendWithCondition*
+  commentId: Overload:Mix.Communicator.Services.FirebaseService.SendWithCondition
+  name: SendWithCondition
+  nameWithType: FirebaseService.SendWithCondition
+  fullName: Mix.Communicator.Services.FirebaseService.SendWithCondition
+- uid: Mix.Communicator.Services.FirebaseService.SendBatchMessages*
+  commentId: Overload:Mix.Communicator.Services.FirebaseService.SendBatchMessages
+  name: SendBatchMessages
+  nameWithType: FirebaseService.SendBatchMessages
+  fullName: Mix.Communicator.Services.FirebaseService.SendBatchMessages

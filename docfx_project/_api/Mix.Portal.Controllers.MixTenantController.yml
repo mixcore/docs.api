@@ -1,0 +1,705 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Controllers.MixTenantController
+  commentId: T:Mix.Portal.Controllers.MixTenantController
+  id: MixTenantController
+  parent: Mix.Portal.Controllers
+  children:
+  - Mix.Portal.Controllers.MixTenantController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,TenantUserManager,Mix.Database.Entities.Account.MixCmsAccountContext,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  - Mix.Portal.Controllers.MixTenantController.CreateHandlerAsync(MixTenantViewModel)
+  - Mix.Portal.Controllers.MixTenantController.DeleteHandler(MixTenantViewModel)
+  langs:
+  - csharp
+  - vb
+  name: MixTenantController
+  nameWithType: MixTenantController
+  fullName: Mix.Portal.Controllers.MixTenantController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixTenantController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantController
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixTenantController.cs
+    startLine: 7
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [Route("api/v2/rest/mix-portal/mix-tenant")]
+
+      [Route(null)]
+
+      [ApiController]
+
+      public class MixTenantController : MixRestApiControllerBase<MixTenantViewModel, MixCmsContext, MixTenant, int>
+    content.vb: >-
+      <Route("api/v2/rest/mix-portal/mix-tenant")>
+
+      <Route(Nothing)>
+
+      <ApiController>
+
+      Public Class MixTenantController
+          Inherits MixRestApiControllerBase(Of MixTenantViewModel, MixCmsContext, MixTenant, Integer)
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/mix-portal/mix-tenant
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Controllers.MixTenantController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,TenantUserManager,Mix.Database.Entities.Account.MixCmsAccountContext,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  commentId: M:Mix.Portal.Controllers.MixTenantController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,TenantUserManager,Mix.Database.Entities.Account.MixCmsAccountContext,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  id: '#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,TenantUserManager,Mix.Database.Entities.Account.MixCmsAccountContext,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})'
+  parent: Mix.Portal.Controllers.MixTenantController
+  langs:
+  - csharp
+  - vb
+  name: MixTenantController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, TenantUserManager, MixCmsAccountContext, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  nameWithType: MixTenantController.MixTenantController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, TenantUserManager, MixCmsAccountContext, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  fullName: Mix.Portal.Controllers.MixTenantController.MixTenantController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, MixIdentityService, TenantUserManager, Mix.Database.Entities.Account.MixCmsAccountContext, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixTenantController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixTenantController.cs
+    startLine: 16
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: public MixTenantController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, TenantUserManager userManager, MixCmsAccountContext accContext, UnitOfWorkInfo<MixCacheDbContext> cacheUOW, UnitOfWorkInfo<MixCmsContext> cmsUOW, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: mixService
+      type: MixService
+    - id: translator
+      type: TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: mixIdentityService
+      type: MixIdentityService
+    - id: userManager
+      type: TenantUserManager
+    - id: accContext
+      type: Mix.Database.Entities.Account.MixCmsAccountContext
+    - id: cacheUOW
+      type: UnitOfWorkInfo{MixCacheDbContext}
+    - id: cmsUOW
+      type: UnitOfWorkInfo{MixCmsContext}
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, userManager As TenantUserManager, accContext As MixCmsAccountContext, cacheUOW As UnitOfWorkInfo(Of MixCacheDbContext), cmsUOW As UnitOfWorkInfo(Of MixCmsContext), queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Portal.Controllers.MixTenantController.#ctor*
+  nameWithType.vb: MixTenantController.MixTenantController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, TenantUserManager, MixCmsAccountContext, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Portal.Controllers.MixTenantController.MixTenantController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), MixIdentityService, TenantUserManager, Mix.Database.Entities.Account.MixCmsAccountContext, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  name.vb: MixTenantController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, TenantUserManager, MixCmsAccountContext, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+- uid: Mix.Portal.Controllers.MixTenantController.CreateHandlerAsync(MixTenantViewModel)
+  commentId: M:Mix.Portal.Controllers.MixTenantController.CreateHandlerAsync(MixTenantViewModel)
+  id: CreateHandlerAsync(MixTenantViewModel)
+  parent: Mix.Portal.Controllers.MixTenantController
+  langs:
+  - csharp
+  - vb
+  name: CreateHandlerAsync(MixTenantViewModel)
+  nameWithType: MixTenantController.CreateHandlerAsync(MixTenantViewModel)
+  fullName: Mix.Portal.Controllers.MixTenantController.CreateHandlerAsync(MixTenantViewModel)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixTenantController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateHandlerAsync
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixTenantController.cs
+    startLine: 35
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: protected override Task<int> CreateHandlerAsync(MixTenantViewModel data)
+    parameters:
+    - id: data
+      type: MixTenantViewModel
+    return:
+      type: Task{System.Int32}
+    content.vb: Protected Overrides Function CreateHandlerAsync(data As MixTenantViewModel) As Task(Of Integer)
+  overload: Mix.Portal.Controllers.MixTenantController.CreateHandlerAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Portal.Controllers.MixTenantController.DeleteHandler(MixTenantViewModel)
+  commentId: M:Mix.Portal.Controllers.MixTenantController.DeleteHandler(MixTenantViewModel)
+  id: DeleteHandler(MixTenantViewModel)
+  parent: Mix.Portal.Controllers.MixTenantController
+  langs:
+  - csharp
+  - vb
+  name: DeleteHandler(MixTenantViewModel)
+  nameWithType: MixTenantController.DeleteHandler(MixTenantViewModel)
+  fullName: Mix.Portal.Controllers.MixTenantController.DeleteHandler(MixTenantViewModel)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixTenantController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DeleteHandler
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixTenantController.cs
+    startLine: 48
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: protected override Task DeleteHandler(MixTenantViewModel data)
+    parameters:
+    - id: data
+      type: MixTenantViewModel
+    return:
+      type: Task
+    content.vb: Protected Overrides Function DeleteHandler(data As MixTenantViewModel) As Task
+  overload: Mix.Portal.Controllers.MixTenantController.DeleteHandler*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Mix.Portal.Controllers
+  commentId: N:Mix.Portal.Controllers
+  name: Mix.Portal.Controllers
+  nameWithType: Mix.Portal.Controllers
+  fullName: Mix.Portal.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Portal.Controllers.MixTenantController.#ctor*
+  commentId: Overload:Mix.Portal.Controllers.MixTenantController.#ctor
+  name: MixTenantController
+  nameWithType: MixTenantController.MixTenantController
+  fullName: Mix.Portal.Controllers.MixTenantController.MixTenantController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: MixService
+  isExternal: true
+  name: MixService
+  nameWithType: MixService
+  fullName: MixService
+- uid: TranslatorService
+  isExternal: true
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MixIdentityService
+  isExternal: true
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: MixIdentityService
+- uid: TenantUserManager
+  isExternal: true
+  name: TenantUserManager
+  nameWithType: TenantUserManager
+  fullName: TenantUserManager
+- uid: Mix.Database.Entities.Account.MixCmsAccountContext
+  commentId: T:Mix.Database.Entities.Account.MixCmsAccountContext
+  parent: Mix.Database.Entities.Account
+  name: MixCmsAccountContext
+  nameWithType: MixCmsAccountContext
+  fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+- uid: UnitOfWorkInfo{MixCacheDbContext}
+  commentId: '!:UnitOfWorkInfo{MixCacheDbContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType: UnitOfWorkInfo<MixCacheDbContext>
+  fullName: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  name.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Entities.Account
+  commentId: N:Mix.Database.Entities.Account
+  name: Mix.Database.Entities.Account
+  nameWithType: Mix.Database.Entities.Account
+  fullName: Mix.Database.Entities.Account
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixTenantController.CreateHandlerAsync*
+  commentId: Overload:Mix.Portal.Controllers.MixTenantController.CreateHandlerAsync
+  name: CreateHandlerAsync
+  nameWithType: MixTenantController.CreateHandlerAsync
+  fullName: Mix.Portal.Controllers.MixTenantController.CreateHandlerAsync
+- uid: MixTenantViewModel
+  isExternal: true
+  name: MixTenantViewModel
+  nameWithType: MixTenantViewModel
+  fullName: MixTenantViewModel
+- uid: Task{System.Int32}
+  commentId: '!:Task{System.Int32}'
+  definition: Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixTenantController.DeleteHandler*
+  commentId: Overload:Mix.Portal.Controllers.MixTenantController.DeleteHandler
+  name: DeleteHandler
+  nameWithType: MixTenantController.DeleteHandler
+  fullName: Mix.Portal.Controllers.MixTenantController.DeleteHandler
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

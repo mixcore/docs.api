@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Xunittest.Domain.Base.TestBase`2
+  commentId: T:Mix.Xunittest.Domain.Base.TestBase`2
+  id: TestBase`2
+  parent: Mix.Xunittest.Domain.Base
+  children:
+  - Mix.Xunittest.Domain.Base.TestBase`2.#ctor(`0)
+  - Mix.Xunittest.Domain.Base.TestBase`2.DbFixture
+  - Mix.Xunittest.Domain.Base.TestBase`2.UowInfo
+  langs:
+  - csharp
+  - vb
+  name: TestBase<TFixture, TDbContext>
+  nameWithType: TestBase<TFixture, TDbContext>
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>
+  type: Class
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/TestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TestBase
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/TestBase.cs
+    startLine: 10
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: 'public abstract class TestBase<TFixture, TDbContext> : IClassFixture<TFixture> where TFixture : SharedDatabaseFixture<TDbContext> where TDbContext : DbContext'
+    typeParameters:
+    - id: TFixture
+    - id: TDbContext
+    content.vb: >-
+      Public MustInherit Class TestBase(Of TFixture As SharedDatabaseFixture(Of TDbContext), TDbContext As DbContext)
+          Inherits IClassFixture(Of TFixture)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mix.Xunittest.Domain.Base.ViewModelTestBase`5
+  nameWithType.vb: TestBase(Of TFixture, TDbContext)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext)
+  name.vb: TestBase(Of TFixture, TDbContext)
+- uid: Mix.Xunittest.Domain.Base.TestBase`2.DbFixture
+  commentId: P:Mix.Xunittest.Domain.Base.TestBase`2.DbFixture
+  id: DbFixture
+  parent: Mix.Xunittest.Domain.Base.TestBase`2
+  langs:
+  - csharp
+  - vb
+  name: DbFixture
+  nameWithType: TestBase<TFixture, TDbContext>.DbFixture
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.DbFixture
+  type: Property
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/TestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DbFixture
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/TestBase.cs
+    startLine: 16
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: public static TFixture DbFixture { get; set; }
+    parameters: []
+    return:
+      type: '{TFixture}'
+    content.vb: Public Shared Property DbFixture As TFixture
+  overload: Mix.Xunittest.Domain.Base.TestBase`2.DbFixture*
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).DbFixture
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).DbFixture
+- uid: Mix.Xunittest.Domain.Base.TestBase`2.UowInfo
+  commentId: P:Mix.Xunittest.Domain.Base.TestBase`2.UowInfo
+  id: UowInfo
+  parent: Mix.Xunittest.Domain.Base.TestBase`2
+  langs:
+  - csharp
+  - vb
+  name: UowInfo
+  nameWithType: TestBase<TFixture, TDbContext>.UowInfo
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.UowInfo
+  type: Property
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/TestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UowInfo
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/TestBase.cs
+    startLine: 18
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: protected UnitOfWorkInfo UowInfo { get; set; }
+    parameters: []
+    return:
+      type: UnitOfWorkInfo
+    content.vb: Protected Property UowInfo As UnitOfWorkInfo
+  overload: Mix.Xunittest.Domain.Base.TestBase`2.UowInfo*
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).UowInfo
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).UowInfo
+- uid: Mix.Xunittest.Domain.Base.TestBase`2.#ctor(`0)
+  commentId: M:Mix.Xunittest.Domain.Base.TestBase`2.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Mix.Xunittest.Domain.Base.TestBase`2
+  langs:
+  - csharp
+  - vb
+  name: TestBase(TFixture)
+  nameWithType: TestBase<TFixture, TDbContext>.TestBase(TFixture)
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.TestBase(TFixture)
+  type: Constructor
+  source:
+    remote:
+      path: src/test/mix.xunittest/Domain/Base/TestBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/test/mix.xunittest/Domain/Base/TestBase.cs
+    startLine: 20
+  assemblies:
+  - mix.xunittest
+  namespace: Mix.Xunittest.Domain.Base
+  syntax:
+    content: public TestBase(TFixture fixture)
+    parameters:
+    - id: fixture
+      type: '{TFixture}'
+    content.vb: Public Sub New(fixture As TFixture)
+  overload: Mix.Xunittest.Domain.Base.TestBase`2.#ctor*
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).TestBase(TFixture)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).TestBase(TFixture)
+references:
+- uid: Mix.Xunittest.Domain.Base
+  commentId: N:Mix.Xunittest.Domain.Base
+  name: Mix.Xunittest.Domain.Base
+  nameWithType: Mix.Xunittest.Domain.Base
+  fullName: Mix.Xunittest.Domain.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Xunittest.Domain.Base.TestBase`2.DbFixture*
+  commentId: Overload:Mix.Xunittest.Domain.Base.TestBase`2.DbFixture
+  name: DbFixture
+  nameWithType: TestBase<TFixture, TDbContext>.DbFixture
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.DbFixture
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).DbFixture
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).DbFixture
+- uid: '{TFixture}'
+  commentId: '!:TFixture'
+  definition: TFixture
+  name: TFixture
+  nameWithType: TFixture
+  fullName: TFixture
+- uid: TFixture
+  name: TFixture
+  nameWithType: TFixture
+  fullName: TFixture
+- uid: Mix.Xunittest.Domain.Base.TestBase`2.UowInfo*
+  commentId: Overload:Mix.Xunittest.Domain.Base.TestBase`2.UowInfo
+  name: UowInfo
+  nameWithType: TestBase<TFixture, TDbContext>.UowInfo
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.UowInfo
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).UowInfo
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).UowInfo
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: Mix.Xunittest.Domain.Base.TestBase`2.#ctor*
+  commentId: Overload:Mix.Xunittest.Domain.Base.TestBase`2.#ctor
+  name: TestBase
+  nameWithType: TestBase<TFixture, TDbContext>.TestBase
+  fullName: Mix.Xunittest.Domain.Base.TestBase<TFixture, TDbContext>.TestBase
+  nameWithType.vb: TestBase(Of TFixture, TDbContext).TestBase
+  fullName.vb: Mix.Xunittest.Domain.Base.TestBase(Of TFixture, TDbContext).TestBase

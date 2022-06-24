@@ -1,0 +1,527 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel
+  commentId: T:Mix.Lib.ViewModels.MixDatabaseViewModel
+  id: MixDatabaseViewModel
+  parent: Mix.Lib.ViewModels
+  children:
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor(MixDatabase,UnitOfWorkInfo)
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor(UnitOfWorkInfo)
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.Columns
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.DeleteHandlerAsync
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.ExpandView
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync(MixDatabase)
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.SystemName
+  - Mix.Lib.ViewModels.MixDatabaseViewModel.Type
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseViewModel
+  nameWithType: MixDatabaseViewModel
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDatabaseViewModel
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 4
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: 'public class MixDatabaseViewModel : TenantDataViewModelBase<MixCmsContext, MixDatabase, int, MixDatabaseViewModel>'
+    content.vb: >-
+      Public Class MixDatabaseViewModel
+          Inherits TenantDataViewModelBase(Of MixCmsContext, MixDatabase, Integer, MixDatabaseViewModel)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.SystemName
+  commentId: P:Mix.Lib.ViewModels.MixDatabaseViewModel.SystemName
+  id: SystemName
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: SystemName
+  nameWithType: MixDatabaseViewModel.SystemName
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.SystemName
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SystemName
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 9
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: >-
+      [Required]
+
+      public virtual string SystemName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Overridable Property SystemName As String
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.SystemName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.Type
+  commentId: P:Mix.Lib.ViewModels.MixDatabaseViewModel.Type
+  id: Type
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: MixDatabaseViewModel.Type
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.Type
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Type
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 12
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: public MixDatabaseType Type { get; set; }
+    parameters: []
+    return:
+      type: MixDatabaseType
+    content.vb: Public Property Type As MixDatabaseType
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.Type*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.Columns
+  commentId: P:Mix.Lib.ViewModels.MixDatabaseViewModel.Columns
+  id: Columns
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: Columns
+  nameWithType: MixDatabaseViewModel.Columns
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.Columns
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Columns
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 14
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: public List<MixDatabaseColumnViewModel> Columns { get; set; }
+    parameters: []
+    return:
+      type: List{Mix.Lib.ViewModels.MixDatabaseColumnViewModel}
+    content.vb: Public Property Columns As List(Of MixDatabaseColumnViewModel)
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.Columns*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor
+  commentId: M:Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor
+  id: '#ctor'
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseViewModel()
+  nameWithType: MixDatabaseViewModel.MixDatabaseViewModel()
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.MixDatabaseViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 19
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: public MixDatabaseViewModel()
+    content.vb: Public Sub New
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseViewModel(UnitOfWorkInfo)
+  nameWithType: MixDatabaseViewModel.MixDatabaseViewModel(UnitOfWorkInfo)
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.MixDatabaseViewModel(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 24
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: public MixDatabaseViewModel(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor(MixDatabase,UnitOfWorkInfo)
+  commentId: M:Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor(MixDatabase,UnitOfWorkInfo)
+  id: '#ctor(MixDatabase,UnitOfWorkInfo)'
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseViewModel(MixDatabase, UnitOfWorkInfo)
+  nameWithType: MixDatabaseViewModel.MixDatabaseViewModel(MixDatabase, UnitOfWorkInfo)
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.MixDatabaseViewModel(MixDatabase, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 28
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: public MixDatabaseViewModel(MixDatabase entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: MixDatabase
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(entity As MixDatabase, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.ExpandView
+  commentId: M:Mix.Lib.ViewModels.MixDatabaseViewModel.ExpandView
+  id: ExpandView
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: ExpandView()
+  nameWithType: MixDatabaseViewModel.ExpandView()
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.ExpandView()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExpandView
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 36
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: public override Task ExpandView()
+    return:
+      type: Task
+    content.vb: Public Overrides Function ExpandView As Task
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.ExpandView*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync(MixDatabase)
+  commentId: M:Mix.Lib.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync(MixDatabase)
+  id: SaveEntityRelationshipAsync(MixDatabase)
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: SaveEntityRelationshipAsync(MixDatabase)
+  nameWithType: MixDatabaseViewModel.SaveEntityRelationshipAsync(MixDatabase)
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync(MixDatabase)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveEntityRelationshipAsync
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 42
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: protected override Task SaveEntityRelationshipAsync(MixDatabase parentEntity)
+    parameters:
+    - id: parentEntity
+      type: MixDatabase
+    return:
+      type: Task
+    content.vb: Protected Overrides Function SaveEntityRelationshipAsync(parentEntity As MixDatabase) As Task
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.DeleteHandlerAsync
+  commentId: M:Mix.Lib.ViewModels.MixDatabaseViewModel.DeleteHandlerAsync
+  id: DeleteHandlerAsync
+  parent: Mix.Lib.ViewModels.MixDatabaseViewModel
+  langs:
+  - csharp
+  - vb
+  name: DeleteHandlerAsync()
+  nameWithType: MixDatabaseViewModel.DeleteHandlerAsync()
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.DeleteHandlerAsync()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DeleteHandlerAsync
+    path: ../../mix.core/src/platform/mix.library/ViewModels/MixDatabaseViewModel.cs
+    startLine: 56
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.ViewModels
+  syntax:
+    content: protected override Task DeleteHandlerAsync()
+    return:
+      type: Task
+    content.vb: Protected Overrides Function DeleteHandlerAsync As Task
+  overload: Mix.Lib.ViewModels.MixDatabaseViewModel.DeleteHandlerAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Mix.Lib.ViewModels
+  commentId: N:Mix.Lib.ViewModels
+  name: Mix.Lib.ViewModels
+  nameWithType: Mix.Lib.ViewModels
+  fullName: Mix.Lib.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.SystemName*
+  commentId: Overload:Mix.Lib.ViewModels.MixDatabaseViewModel.SystemName
+  name: SystemName
+  nameWithType: MixDatabaseViewModel.SystemName
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.SystemName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.Type*
+  commentId: Overload:Mix.Lib.ViewModels.MixDatabaseViewModel.Type
+  name: Type
+  nameWithType: MixDatabaseViewModel.Type
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.Type
+- uid: MixDatabaseType
+  isExternal: true
+  name: MixDatabaseType
+  nameWithType: MixDatabaseType
+  fullName: MixDatabaseType
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.Columns*
+  commentId: Overload:Mix.Lib.ViewModels.MixDatabaseViewModel.Columns
+  name: Columns
+  nameWithType: MixDatabaseViewModel.Columns
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.Columns
+- uid: List{Mix.Lib.ViewModels.MixDatabaseColumnViewModel}
+  commentId: '!:List{Mix.Lib.ViewModels.MixDatabaseColumnViewModel}'
+  definition: List`1
+  name: List<MixDatabaseColumnViewModel>
+  nameWithType: List<MixDatabaseColumnViewModel>
+  fullName: List<Mix.Lib.ViewModels.MixDatabaseColumnViewModel>
+  nameWithType.vb: List(Of MixDatabaseColumnViewModel)
+  fullName.vb: List(Of Mix.Lib.ViewModels.MixDatabaseColumnViewModel)
+  name.vb: List(Of MixDatabaseColumnViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Lib.ViewModels.MixDatabaseColumnViewModel
+    name: MixDatabaseColumnViewModel
+    nameWithType: MixDatabaseColumnViewModel
+    fullName: Mix.Lib.ViewModels.MixDatabaseColumnViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Lib.ViewModels.MixDatabaseColumnViewModel
+    name: MixDatabaseColumnViewModel
+    nameWithType: MixDatabaseColumnViewModel
+    fullName: Mix.Lib.ViewModels.MixDatabaseColumnViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor*
+  commentId: Overload:Mix.Lib.ViewModels.MixDatabaseViewModel.#ctor
+  name: MixDatabaseViewModel
+  nameWithType: MixDatabaseViewModel.MixDatabaseViewModel
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.MixDatabaseViewModel
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: MixDatabase
+  isExternal: true
+  name: MixDatabase
+  nameWithType: MixDatabase
+  fullName: MixDatabase
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.ExpandView*
+  commentId: Overload:Mix.Lib.ViewModels.MixDatabaseViewModel.ExpandView
+  name: ExpandView
+  nameWithType: MixDatabaseViewModel.ExpandView
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.ExpandView
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync*
+  commentId: Overload:Mix.Lib.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync
+  name: SaveEntityRelationshipAsync
+  nameWithType: MixDatabaseViewModel.SaveEntityRelationshipAsync
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel.DeleteHandlerAsync*
+  commentId: Overload:Mix.Lib.ViewModels.MixDatabaseViewModel.DeleteHandlerAsync
+  name: DeleteHandlerAsync
+  nameWithType: MixDatabaseViewModel.DeleteHandlerAsync
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel.DeleteHandlerAsync

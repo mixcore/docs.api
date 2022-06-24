@@ -1,0 +1,624 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Attributes.AuthorizeActionFilter
+  commentId: T:Mix.Lib.Attributes.AuthorizeActionFilter
+  id: AuthorizeActionFilter
+  parent: Mix.Lib.Attributes
+  children:
+  - Mix.Lib.Attributes.AuthorizeActionFilter.#ctor(System.String,Mix.Lib.Services.MixIdentityService,Mix.Lib.Services.TenantUserManager)
+  - Mix.Lib.Attributes.AuthorizeActionFilter._idService
+  - Mix.Lib.Attributes.AuthorizeActionFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  - Mix.Lib.Attributes.AuthorizeActionFilter.Roles
+  langs:
+  - csharp
+  - vb
+  name: AuthorizeActionFilter
+  nameWithType: AuthorizeActionFilter
+  fullName: Mix.Lib.Attributes.AuthorizeActionFilter
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AuthorizeActionFilter
+    path: ../../mix.core/src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+    startLine: 17
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Attributes
+  syntax:
+    content: 'public class AuthorizeActionFilter : IAuthorizationFilter, IFilterMetadata'
+    content.vb: >-
+      Public Class AuthorizeActionFilter
+          Implements IAuthorizationFilter, IFilterMetadata
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter
+  - Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Attributes.AuthorizeActionFilter.Roles
+  commentId: P:Mix.Lib.Attributes.AuthorizeActionFilter.Roles
+  id: Roles
+  parent: Mix.Lib.Attributes.AuthorizeActionFilter
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: AuthorizeActionFilter.Roles
+  fullName: Mix.Lib.Attributes.AuthorizeActionFilter.Roles
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Roles
+    path: ../../mix.core/src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+    startLine: 19
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Attributes
+  syntax:
+    content: public string[] Roles { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property Roles As String()
+  overload: Mix.Lib.Attributes.AuthorizeActionFilter.Roles*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Attributes.AuthorizeActionFilter._idService
+  commentId: F:Mix.Lib.Attributes.AuthorizeActionFilter._idService
+  id: _idService
+  parent: Mix.Lib.Attributes.AuthorizeActionFilter
+  langs:
+  - csharp
+  - vb
+  name: _idService
+  nameWithType: AuthorizeActionFilter._idService
+  fullName: Mix.Lib.Attributes.AuthorizeActionFilter._idService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _idService
+    path: ../../mix.core/src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+    startLine: 20
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Attributes
+  syntax:
+    content: protected readonly MixIdentityService _idService
+    return:
+      type: Mix.Lib.Services.MixIdentityService
+    content.vb: Protected ReadOnly _idService As MixIdentityService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Attributes.AuthorizeActionFilter.#ctor(System.String,Mix.Lib.Services.MixIdentityService,Mix.Lib.Services.TenantUserManager)
+  commentId: M:Mix.Lib.Attributes.AuthorizeActionFilter.#ctor(System.String,Mix.Lib.Services.MixIdentityService,Mix.Lib.Services.TenantUserManager)
+  id: '#ctor(System.String,Mix.Lib.Services.MixIdentityService,Mix.Lib.Services.TenantUserManager)'
+  parent: Mix.Lib.Attributes.AuthorizeActionFilter
+  langs:
+  - csharp
+  - vb
+  name: AuthorizeActionFilter(String, MixIdentityService, TenantUserManager)
+  nameWithType: AuthorizeActionFilter.AuthorizeActionFilter(String, MixIdentityService, TenantUserManager)
+  fullName: Mix.Lib.Attributes.AuthorizeActionFilter.AuthorizeActionFilter(System.String, Mix.Lib.Services.MixIdentityService, Mix.Lib.Services.TenantUserManager)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+    startLine: 23
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Attributes
+  syntax:
+    content: public AuthorizeActionFilter(string roles, MixIdentityService idService, TenantUserManager userManager)
+    parameters:
+    - id: roles
+      type: System.String
+    - id: idService
+      type: Mix.Lib.Services.MixIdentityService
+    - id: userManager
+      type: Mix.Lib.Services.TenantUserManager
+    content.vb: Public Sub New(roles As String, idService As MixIdentityService, userManager As TenantUserManager)
+  overload: Mix.Lib.Attributes.AuthorizeActionFilter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Attributes.AuthorizeActionFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  commentId: M:Mix.Lib.Attributes.AuthorizeActionFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  id: OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  parent: Mix.Lib.Attributes.AuthorizeActionFilter
+  langs:
+  - csharp
+  - vb
+  name: OnAuthorization(AuthorizationFilterContext)
+  nameWithType: AuthorizeActionFilter.OnAuthorization(AuthorizationFilterContext)
+  fullName: Mix.Lib.Attributes.AuthorizeActionFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: OnAuthorization
+    path: ../../mix.core/src/platform/mix.library/Attributes/MixAuthorizeAttribute.cs
+    startLine: 33
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Attributes
+  syntax:
+    content: public void OnAuthorization(AuthorizationFilterContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext
+    content.vb: Public Sub OnAuthorization(context As AuthorizationFilterContext)
+  overload: Mix.Lib.Attributes.AuthorizeActionFilter.OnAuthorization*
+  implements:
+  - Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Lib.Attributes
+  commentId: N:Mix.Lib.Attributes
+  name: Mix.Lib.Attributes
+  nameWithType: Mix.Lib.Attributes
+  fullName: Mix.Lib.Attributes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  name: IAuthorizationFilter
+  nameWithType: IAuthorizationFilter
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter
+- uid: Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  name: IFilterMetadata
+  nameWithType: IFilterMetadata
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc.Filters
+  commentId: N:Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc.Filters
+  nameWithType: Microsoft.AspNetCore.Mvc.Filters
+  fullName: Microsoft.AspNetCore.Mvc.Filters
+- uid: Mix.Lib.Attributes.AuthorizeActionFilter.Roles*
+  commentId: Overload:Mix.Lib.Attributes.AuthorizeActionFilter.Roles
+  name: Roles
+  nameWithType: AuthorizeActionFilter.Roles
+  fullName: Mix.Lib.Attributes.AuthorizeActionFilter.Roles
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Mix.Lib.Services.MixIdentityService
+  commentId: T:Mix.Lib.Services.MixIdentityService
+  parent: Mix.Lib.Services
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: Mix.Lib.Attributes.AuthorizeActionFilter.#ctor*
+  commentId: Overload:Mix.Lib.Attributes.AuthorizeActionFilter.#ctor
+  name: AuthorizeActionFilter
+  nameWithType: AuthorizeActionFilter.AuthorizeActionFilter
+  fullName: Mix.Lib.Attributes.AuthorizeActionFilter.AuthorizeActionFilter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Lib.Services.TenantUserManager
+  commentId: T:Mix.Lib.Services.TenantUserManager
+  parent: Mix.Lib.Services
+  name: TenantUserManager
+  nameWithType: TenantUserManager
+  fullName: Mix.Lib.Services.TenantUserManager
+- uid: Mix.Lib.Attributes.AuthorizeActionFilter.OnAuthorization*
+  commentId: Overload:Mix.Lib.Attributes.AuthorizeActionFilter.OnAuthorization
+  name: OnAuthorization
+  nameWithType: AuthorizeActionFilter.OnAuthorization
+  fullName: Mix.Lib.Attributes.AuthorizeActionFilter.OnAuthorization
+- uid: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  commentId: M:Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  parent: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter
+  isExternal: true
+  name: OnAuthorization(AuthorizationFilterContext)
+  nameWithType: IAuthorizationFilter.OnAuthorization(AuthorizationFilterContext)
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+    name: OnAuthorization
+    nameWithType: IAuthorizationFilter.OnAuthorization
+    fullName: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter.OnAuthorization
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext
+    name: AuthorizationFilterContext
+    nameWithType: AuthorizationFilterContext
+    fullName: Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)
+    name: OnAuthorization
+    nameWithType: IAuthorizationFilter.OnAuthorization
+    fullName: Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter.OnAuthorization
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext
+    name: AuthorizationFilterContext
+    nameWithType: AuthorizationFilterContext
+    fullName: Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  name: AuthorizationFilterContext
+  nameWithType: AuthorizationFilterContext
+  fullName: Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext

@@ -1,0 +1,535 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Controllers.CommonController
+  commentId: T:Mix.Portal.Controllers.CommonController
+  id: CommonController
+  parent: Mix.Portal.Controllers
+  children:
+  - Mix.Portal.Controllers.CommonController.#ctor(IHttpContextAccessor,IConfiguration,MixCmsContext,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,IQueueService{MessageQueueModel})
+  - Mix.Portal.Controllers.CommonController.Dashboard(System.String)
+  langs:
+  - csharp
+  - vb
+  name: CommonController
+  nameWithType: CommonController
+  fullName: Mix.Portal.Controllers.CommonController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/CommonController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CommonController
+    path: ../../mix.core/src/modules/mix.portal/Controllers/CommonController.cs
+    startLine: 4
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [Route("api/v2/rest/mix-portal/common")]
+
+      [ApiController]
+
+      public class CommonController : MixApiControllerBase
+    content.vb: >-
+      <Route("api/v2/rest/mix-portal/common")>
+
+      <ApiController>
+
+      Public Class CommonController
+          Inherits MixApiControllerBase
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/mix-portal/common
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Controllers.CommonController.#ctor(IHttpContextAccessor,IConfiguration,MixCmsContext,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,IQueueService{MessageQueueModel})
+  commentId: M:Mix.Portal.Controllers.CommonController.#ctor(IHttpContextAccessor,IConfiguration,MixCmsContext,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,IQueueService{MessageQueueModel})
+  id: '#ctor(IHttpContextAccessor,IConfiguration,MixCmsContext,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,IQueueService{MessageQueueModel})'
+  parent: Mix.Portal.Controllers.CommonController
+  langs:
+  - csharp
+  - vb
+  name: CommonController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, IQueueService<MessageQueueModel>)
+  nameWithType: CommonController.CommonController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, IQueueService<MessageQueueModel>)
+  fullName: Mix.Portal.Controllers.CommonController.CommonController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, MixIdentityService, IQueueService<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/CommonController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Controllers/CommonController.cs
+    startLine: 9
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: public CommonController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixCmsContext context, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: context
+      type: MixCmsContext
+    - id: mixService
+      type: MixService
+    - id: translator
+      type: TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: mixIdentityService
+      type: MixIdentityService
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, context As MixCmsContext, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Portal.Controllers.CommonController.#ctor*
+  nameWithType.vb: CommonController.CommonController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Portal.Controllers.CommonController.CommonController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), MixIdentityService, IQueueService(Of MessageQueueModel))
+  name.vb: CommonController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, IQueueService(Of MessageQueueModel))
+- uid: Mix.Portal.Controllers.CommonController.Dashboard(System.String)
+  commentId: M:Mix.Portal.Controllers.CommonController.Dashboard(System.String)
+  id: Dashboard(System.String)
+  parent: Mix.Portal.Controllers.CommonController
+  langs:
+  - csharp
+  - vb
+  name: Dashboard(String)
+  nameWithType: CommonController.Dashboard(String)
+  fullName: Mix.Portal.Controllers.CommonController.Dashboard(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/CommonController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Dashboard
+    path: ../../mix.core/src/modules/mix.portal/Controllers/CommonController.cs
+    startLine: 23
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("{culture}/dashboard")]
+
+      public ActionResult<DashboardModel> Dashboard(string culture)
+    parameters:
+    - id: culture
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{DashboardModel}
+    content.vb: >-
+      <HttpGet>
+
+      <Route("{culture}/dashboard")>
+
+      Public Function Dashboard(culture As String) As ActionResult(Of DashboardModel)
+  overload: Mix.Portal.Controllers.CommonController.Dashboard*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{culture}/dashboard'
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Portal.Controllers
+  commentId: N:Mix.Portal.Controllers
+  name: Mix.Portal.Controllers
+  nameWithType: Mix.Portal.Controllers
+  fullName: Mix.Portal.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Portal.Controllers.CommonController.#ctor*
+  commentId: Overload:Mix.Portal.Controllers.CommonController.#ctor
+  name: CommonController
+  nameWithType: CommonController.CommonController
+  fullName: Mix.Portal.Controllers.CommonController.CommonController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: MixService
+  isExternal: true
+  name: MixService
+  nameWithType: MixService
+  fullName: MixService
+- uid: TranslatorService
+  isExternal: true
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MixIdentityService
+  isExternal: true
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: MixIdentityService
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.CommonController.Dashboard*
+  commentId: Overload:Mix.Portal.Controllers.CommonController.Dashboard
+  name: Dashboard
+  nameWithType: CommonController.Dashboard
+  fullName: Mix.Portal.Controllers.CommonController.Dashboard
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{DashboardModel}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{DashboardModel}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<DashboardModel>
+  nameWithType: ActionResult<DashboardModel>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<DashboardModel>
+  nameWithType.vb: ActionResult(Of DashboardModel)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of DashboardModel)
+  name.vb: ActionResult(Of DashboardModel)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: DashboardModel
+    name: DashboardModel
+    nameWithType: DashboardModel
+    fullName: DashboardModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: DashboardModel
+    name: DashboardModel
+    nameWithType: DashboardModel
+    fullName: DashboardModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult`1
+  isExternal: true
+  name: ActionResult<TValue>
+  nameWithType: ActionResult<TValue>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<TValue>
+  nameWithType.vb: ActionResult(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of TValue)
+  name.vb: ActionResult(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc

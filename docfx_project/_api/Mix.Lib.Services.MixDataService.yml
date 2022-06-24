@@ -1,0 +1,788 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Services.MixDataService
+  commentId: T:Mix.Lib.Services.MixDataService
+  id: MixDataService
+  parent: Mix.Lib.Services
+  children:
+  - Mix.Lib.Services.MixDataService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  - Mix.Lib.Services.MixDataService.Dispose
+  - Mix.Lib.Services.MixDataService.GetByAllParent``1(Mix.Lib.Models.Common.SearchDataContentModel,System.String)
+  - Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync``1(System.Int32,Guid)
+  - Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync``1(JObject,Guid,System.String,List{MixDatabaseColumn})
+  - Mix.Lib.Services.MixDataService.Search``1(Mix.Lib.Models.Common.SearchDataContentModel,System.String)
+  - Mix.Lib.Services.MixDataService.SetUnitOfWork(UnitOfWorkInfo)
+  langs:
+  - csharp
+  - vb
+  name: MixDataService
+  nameWithType: MixDataService
+  fullName: Mix.Lib.Services.MixDataService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixDataService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDataService
+    path: ../../mix.core/src/platform/mix.library/Services/MixDataService.cs
+    startLine: 6
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: 'public class MixDataService : IDisposable'
+    content.vb: >-
+      Public Class MixDataService
+          Inherits IDisposable
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Services.MixDataService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  commentId: M:Mix.Lib.Services.MixDataService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  id: '#ctor(UnitOfWorkInfo{MixCmsContext})'
+  parent: Mix.Lib.Services.MixDataService
+  langs:
+  - csharp
+  - vb
+  name: MixDataService(UnitOfWorkInfo<MixCmsContext>)
+  nameWithType: MixDataService.MixDataService(UnitOfWorkInfo<MixCmsContext>)
+  fullName: Mix.Lib.Services.MixDataService.MixDataService(UnitOfWorkInfo<MixCmsContext>)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixDataService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Services/MixDataService.cs
+    startLine: 10
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public MixDataService(UnitOfWorkInfo<MixCmsContext> uow)
+    parameters:
+    - id: uow
+      type: UnitOfWorkInfo{MixCmsContext}
+    content.vb: Public Sub New(uow As UnitOfWorkInfo(Of MixCmsContext))
+  overload: Mix.Lib.Services.MixDataService.#ctor*
+  nameWithType.vb: MixDataService.MixDataService(UnitOfWorkInfo(Of MixCmsContext))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.MixDataService.MixDataService(UnitOfWorkInfo(Of MixCmsContext))
+  name.vb: MixDataService(UnitOfWorkInfo(Of MixCmsContext))
+- uid: Mix.Lib.Services.MixDataService.SetUnitOfWork(UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Services.MixDataService.SetUnitOfWork(UnitOfWorkInfo)
+  id: SetUnitOfWork(UnitOfWorkInfo)
+  parent: Mix.Lib.Services.MixDataService
+  langs:
+  - csharp
+  - vb
+  name: SetUnitOfWork(UnitOfWorkInfo)
+  nameWithType: MixDataService.SetUnitOfWork(UnitOfWorkInfo)
+  fullName: Mix.Lib.Services.MixDataService.SetUnitOfWork(UnitOfWorkInfo)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixDataService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SetUnitOfWork
+    path: ../../mix.core/src/platform/mix.library/Services/MixDataService.cs
+    startLine: 16
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public void SetUnitOfWork(UnitOfWorkInfo uow)
+    parameters:
+    - id: uow
+      type: UnitOfWorkInfo
+    content.vb: Public Sub SetUnitOfWork(uow As UnitOfWorkInfo)
+  overload: Mix.Lib.Services.MixDataService.SetUnitOfWork*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixDataService.GetByAllParent``1(Mix.Lib.Models.Common.SearchDataContentModel,System.String)
+  commentId: M:Mix.Lib.Services.MixDataService.GetByAllParent``1(Mix.Lib.Models.Common.SearchDataContentModel,System.String)
+  id: GetByAllParent``1(Mix.Lib.Models.Common.SearchDataContentModel,System.String)
+  parent: Mix.Lib.Services.MixDataService
+  langs:
+  - csharp
+  - vb
+  name: GetByAllParent<TView>(SearchDataContentModel, String)
+  nameWithType: MixDataService.GetByAllParent<TView>(SearchDataContentModel, String)
+  fullName: Mix.Lib.Services.MixDataService.GetByAllParent<TView>(Mix.Lib.Models.Common.SearchDataContentModel, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixDataService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetByAllParent
+    path: ../../mix.core/src/platform/mix.library/Services/MixDataService.cs
+    startLine: 24
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: >-
+      public Task<List<TView>> GetByAllParent<TView>(SearchDataContentModel request, string culture = null)
+          where TView : ViewModelBase<MixCmsContext, MixDataContent, Guid, TView>
+    parameters:
+    - id: request
+      type: Mix.Lib.Models.Common.SearchDataContentModel
+    - id: culture
+      type: System.String
+    typeParameters:
+    - id: TView
+    return:
+      type: Task{List{{TView}}}
+    content.vb: Public Function GetByAllParent(Of TView As ViewModelBase(Of MixCmsContext, MixDataContent, Guid, TView))(request As SearchDataContentModel, culture As String = Nothing) As Task(Of List(Of TView))
+  overload: Mix.Lib.Services.MixDataService.GetByAllParent*
+  nameWithType.vb: MixDataService.GetByAllParent(Of TView)(SearchDataContentModel, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.MixDataService.GetByAllParent(Of TView)(Mix.Lib.Models.Common.SearchDataContentModel, System.String)
+  name.vb: GetByAllParent(Of TView)(SearchDataContentModel, String)
+- uid: Mix.Lib.Services.MixDataService.Search``1(Mix.Lib.Models.Common.SearchDataContentModel,System.String)
+  commentId: M:Mix.Lib.Services.MixDataService.Search``1(Mix.Lib.Models.Common.SearchDataContentModel,System.String)
+  id: Search``1(Mix.Lib.Models.Common.SearchDataContentModel,System.String)
+  parent: Mix.Lib.Services.MixDataService
+  langs:
+  - csharp
+  - vb
+  name: Search<TView>(SearchDataContentModel, String)
+  nameWithType: MixDataService.Search<TView>(SearchDataContentModel, String)
+  fullName: Mix.Lib.Services.MixDataService.Search<TView>(Mix.Lib.Models.Common.SearchDataContentModel, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixDataService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Search
+    path: ../../mix.core/src/platform/mix.library/Services/MixDataService.cs
+    startLine: 45
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: >-
+      public Task<PagingResponseModel<TView>> Search<TView>(SearchDataContentModel searchRequest, string culture = null)
+          where TView : ViewModelBase<MixCmsContext, MixDataContent, Guid, TView>
+    parameters:
+    - id: searchRequest
+      type: Mix.Lib.Models.Common.SearchDataContentModel
+    - id: culture
+      type: System.String
+    typeParameters:
+    - id: TView
+    return:
+      type: Task{PagingResponseModel{{TView}}}
+    content.vb: Public Function Search(Of TView As ViewModelBase(Of MixCmsContext, MixDataContent, Guid, TView))(searchRequest As SearchDataContentModel, culture As String = Nothing) As Task(Of PagingResponseModel(Of TView))
+  overload: Mix.Lib.Services.MixDataService.Search*
+  nameWithType.vb: MixDataService.Search(Of TView)(SearchDataContentModel, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.MixDataService.Search(Of TView)(Mix.Lib.Models.Common.SearchDataContentModel, System.String)
+  name.vb: Search(Of TView)(SearchDataContentModel, String)
+- uid: Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync``1(JObject,Guid,System.String,List{MixDatabaseColumn})
+  commentId: M:Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync``1(JObject,Guid,System.String,List{MixDatabaseColumn})
+  id: LoadAllReferenceDataAsync``1(JObject,Guid,System.String,List{MixDatabaseColumn})
+  parent: Mix.Lib.Services.MixDataService
+  langs:
+  - csharp
+  - vb
+  name: LoadAllReferenceDataAsync<TView>(JObject, Guid, String, List<MixDatabaseColumn>)
+  nameWithType: MixDataService.LoadAllReferenceDataAsync<TView>(JObject, Guid, String, List<MixDatabaseColumn>)
+  fullName: Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync<TView>(JObject, Guid, System.String, List<MixDatabaseColumn>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixDataService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadAllReferenceDataAsync
+    path: ../../mix.core/src/platform/mix.library/Services/MixDataService.cs
+    startLine: 130
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: >-
+      public Task LoadAllReferenceDataAsync<TView>(JObject obj, Guid dataContentId, string mixDatabaseName, List<MixDatabaseColumn> refColumns = null)
+          where TView : ViewModelBase<MixCmsContext, MixDataContentAssociation, Guid, TView>
+    parameters:
+    - id: obj
+      type: JObject
+    - id: dataContentId
+      type: Guid
+    - id: mixDatabaseName
+      type: System.String
+    - id: refColumns
+      type: List{MixDatabaseColumn}
+    typeParameters:
+    - id: TView
+    return:
+      type: Task
+    content.vb: Public Function LoadAllReferenceDataAsync(Of TView As ViewModelBase(Of MixCmsContext, MixDataContentAssociation, Guid, TView))(obj As JObject, dataContentId As Guid, mixDatabaseName As String, refColumns As List(Of MixDatabaseColumn) = Nothing) As Task
+  overload: Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync*
+  nameWithType.vb: MixDataService.LoadAllReferenceDataAsync(Of TView)(JObject, Guid, String, List(Of MixDatabaseColumn))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync(Of TView)(JObject, Guid, System.String, List(Of MixDatabaseColumn))
+  name.vb: LoadAllReferenceDataAsync(Of TView)(JObject, Guid, String, List(Of MixDatabaseColumn))
+- uid: Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync``1(System.Int32,Guid)
+  commentId: M:Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync``1(System.Int32,Guid)
+  id: GetRelatedDataContentAsync``1(System.Int32,Guid)
+  parent: Mix.Lib.Services.MixDataService
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedDataContentAsync<TView>(Int32, Guid)
+  nameWithType: MixDataService.GetRelatedDataContentAsync<TView>(Int32, Guid)
+  fullName: Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync<TView>(System.Int32, Guid)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixDataService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetRelatedDataContentAsync
+    path: ../../mix.core/src/platform/mix.library/Services/MixDataService.cs
+    startLine: 156
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: >-
+      public Task<JArray> GetRelatedDataContentAsync<TView>(int referenceId, Guid dataContentId)
+          where TView : ViewModelBase<MixCmsContext, MixDataContentAssociation, Guid, TView>
+    parameters:
+    - id: referenceId
+      type: System.Int32
+    - id: dataContentId
+      type: Guid
+    typeParameters:
+    - id: TView
+    return:
+      type: Task{JArray}
+    content.vb: Public Function GetRelatedDataContentAsync(Of TView As ViewModelBase(Of MixCmsContext, MixDataContentAssociation, Guid, TView))(referenceId As Integer, dataContentId As Guid) As Task(Of JArray)
+  overload: Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync*
+  nameWithType.vb: MixDataService.GetRelatedDataContentAsync(Of TView)(Int32, Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync(Of TView)(System.Int32, Guid)
+  name.vb: GetRelatedDataContentAsync(Of TView)(Int32, Guid)
+- uid: Mix.Lib.Services.MixDataService.Dispose
+  commentId: M:Mix.Lib.Services.MixDataService.Dispose
+  id: Dispose
+  parent: Mix.Lib.Services.MixDataService
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MixDataService.Dispose()
+  fullName: Mix.Lib.Services.MixDataService.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixDataService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Dispose
+    path: ../../mix.core/src/platform/mix.library/Services/MixDataService.cs
+    startLine: 291
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Mix.Lib.Services.MixDataService.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Services.MixDataService.#ctor*
+  commentId: Overload:Mix.Lib.Services.MixDataService.#ctor
+  name: MixDataService
+  nameWithType: MixDataService.MixDataService
+  fullName: Mix.Lib.Services.MixDataService.MixDataService
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixDataService.SetUnitOfWork*
+  commentId: Overload:Mix.Lib.Services.MixDataService.SetUnitOfWork
+  name: SetUnitOfWork
+  nameWithType: MixDataService.SetUnitOfWork
+  fullName: Mix.Lib.Services.MixDataService.SetUnitOfWork
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: Mix.Lib.Services.MixDataService.GetByAllParent*
+  commentId: Overload:Mix.Lib.Services.MixDataService.GetByAllParent
+  name: GetByAllParent
+  nameWithType: MixDataService.GetByAllParent
+  fullName: Mix.Lib.Services.MixDataService.GetByAllParent
+- uid: Mix.Lib.Models.Common.SearchDataContentModel
+  commentId: T:Mix.Lib.Models.Common.SearchDataContentModel
+  parent: Mix.Lib.Models.Common
+  name: SearchDataContentModel
+  nameWithType: SearchDataContentModel
+  fullName: Mix.Lib.Models.Common.SearchDataContentModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{List{{TView}}}
+  commentId: '!:Task{List{``0}}'
+  definition: Task`1
+  name: Task<List<TView>>
+  nameWithType: Task<List<TView>>
+  fullName: Task<List<TView>>
+  nameWithType.vb: Task(Of List(Of TView))
+  fullName.vb: Task(Of List(Of TView))
+  name.vb: Task(Of List(Of TView))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Models.Common
+  commentId: N:Mix.Lib.Models.Common
+  name: Mix.Lib.Models.Common
+  nameWithType: Mix.Lib.Models.Common
+  fullName: Mix.Lib.Models.Common
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixDataService.Search*
+  commentId: Overload:Mix.Lib.Services.MixDataService.Search
+  name: Search
+  nameWithType: MixDataService.Search
+  fullName: Mix.Lib.Services.MixDataService.Search
+- uid: Task{PagingResponseModel{{TView}}}
+  commentId: '!:Task{PagingResponseModel{`0}}'
+  definition: Task`1
+  name: Task<PagingResponseModel<TView>>
+  nameWithType: Task<PagingResponseModel<TView>>
+  fullName: Task<PagingResponseModel<TView>>
+  nameWithType.vb: Task(Of PagingResponseModel(Of TView))
+  fullName.vb: Task(Of PagingResponseModel(Of TView))
+  name.vb: Task(Of PagingResponseModel(Of TView))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PagingResponseModel`1
+    name: PagingResponseModel
+    nameWithType: PagingResponseModel
+    fullName: PagingResponseModel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PagingResponseModel`1
+    name: PagingResponseModel
+    nameWithType: PagingResponseModel
+    fullName: PagingResponseModel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync*
+  commentId: Overload:Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync
+  name: LoadAllReferenceDataAsync
+  nameWithType: MixDataService.LoadAllReferenceDataAsync
+  fullName: Mix.Lib.Services.MixDataService.LoadAllReferenceDataAsync
+- uid: JObject
+  isExternal: true
+  name: JObject
+  nameWithType: JObject
+  fullName: JObject
+- uid: Guid
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: Guid
+- uid: List{MixDatabaseColumn}
+  commentId: '!:List{MixDatabaseColumn}'
+  definition: List`1
+  name: List<MixDatabaseColumn>
+  nameWithType: List<MixDatabaseColumn>
+  fullName: List<MixDatabaseColumn>
+  nameWithType.vb: List(Of MixDatabaseColumn)
+  fullName.vb: List(Of MixDatabaseColumn)
+  name.vb: List(Of MixDatabaseColumn)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDatabaseColumn
+    name: MixDatabaseColumn
+    nameWithType: MixDatabaseColumn
+    fullName: MixDatabaseColumn
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDatabaseColumn
+    name: MixDatabaseColumn
+    nameWithType: MixDatabaseColumn
+    fullName: MixDatabaseColumn
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync*
+  commentId: Overload:Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync
+  name: GetRelatedDataContentAsync
+  nameWithType: MixDataService.GetRelatedDataContentAsync
+  fullName: Mix.Lib.Services.MixDataService.GetRelatedDataContentAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Task{JArray}
+  commentId: '!:Task{JArray}'
+  definition: Task`1
+  name: Task<JArray>
+  nameWithType: Task<JArray>
+  fullName: Task<JArray>
+  nameWithType.vb: Task(Of JArray)
+  fullName.vb: Task(Of JArray)
+  name.vb: Task(Of JArray)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JArray
+    name: JArray
+    nameWithType: JArray
+    fullName: JArray
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JArray
+    name: JArray
+    nameWithType: JArray
+    fullName: JArray
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixDataService.Dispose*
+  commentId: Overload:Mix.Lib.Services.MixDataService.Dispose
+  name: Dispose
+  nameWithType: MixDataService.Dispose
+  fullName: Mix.Lib.Services.MixDataService.Dispose

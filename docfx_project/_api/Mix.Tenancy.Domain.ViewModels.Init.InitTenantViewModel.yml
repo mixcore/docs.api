@@ -1,0 +1,822 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  commentId: T:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  id: InitTenantViewModel
+  parent: Mix.Tenancy.Domain.ViewModels.Init
+  children:
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixCmsContext)
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixCmsContext,Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixTenant,UnitOfWorkInfo)
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(UnitOfWorkInfo)
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Culture
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Description
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.DisplayName
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Domain
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.PrimaryDomain
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveHandlerAsync
+  - Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SystemName
+  langs:
+  - csharp
+  - vb
+  name: InitTenantViewModel
+  nameWithType: InitTenantViewModel
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitTenantViewModel
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 4
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: 'public class InitTenantViewModel : ViewModelBase<MixCmsContext, MixTenant, int, InitTenantViewModel>'
+    content.vb: >-
+      Public Class InitTenantViewModel
+          Inherits ViewModelBase(Of MixCmsContext, MixTenant, Integer, InitTenantViewModel)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.PrimaryDomain
+  commentId: P:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.PrimaryDomain
+  id: PrimaryDomain
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: PrimaryDomain
+  nameWithType: InitTenantViewModel.PrimaryDomain
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.PrimaryDomain
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PrimaryDomain
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 6
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public string PrimaryDomain { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PrimaryDomain As String
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.PrimaryDomain*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SystemName
+  commentId: P:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SystemName
+  id: SystemName
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: SystemName
+  nameWithType: InitTenantViewModel.SystemName
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SystemName
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SystemName
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 7
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public string SystemName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SystemName As String
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SystemName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.DisplayName
+  commentId: P:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.DisplayName
+  id: DisplayName
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: InitTenantViewModel.DisplayName
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DisplayName
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 8
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.DisplayName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Description
+  commentId: P:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Description
+  id: Description
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: InitTenantViewModel.Description
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Description
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Description
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 9
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Description*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Culture
+  commentId: P:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Culture
+  id: Culture
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: InitTenantViewModel.Culture
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Culture
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Culture
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 11
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public InitCultureViewModel Culture { get; set; }
+    parameters: []
+    return:
+      type: Mix.Tenancy.Domain.ViewModels.Init.InitCultureViewModel
+    content.vb: Public Property Culture As InitCultureViewModel
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Culture*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Domain
+  commentId: P:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Domain
+  id: Domain
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: Domain
+  nameWithType: InitTenantViewModel.Domain
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Domain
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Domain
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 12
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public InitDomainViewModel Domain { get; set; }
+    parameters: []
+    return:
+      type: Mix.Tenancy.Domain.ViewModels.Init.InitDomainViewModel
+    content.vb: Public Property Domain As InitDomainViewModel
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Domain*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor
+  commentId: M:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor
+  id: '#ctor'
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitTenantViewModel()
+  nameWithType: InitTenantViewModel.InitTenantViewModel()
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitTenantViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 14
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public InitTenantViewModel()
+    content.vb: Public Sub New
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixTenant,UnitOfWorkInfo)
+  commentId: M:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixTenant,UnitOfWorkInfo)
+  id: '#ctor(MixTenant,UnitOfWorkInfo)'
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitTenantViewModel(MixTenant, UnitOfWorkInfo)
+  nameWithType: InitTenantViewModel.InitTenantViewModel(MixTenant, UnitOfWorkInfo)
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitTenantViewModel(MixTenant, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 18
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public InitTenantViewModel(MixTenant entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: MixTenant
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(entity As MixTenant, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitTenantViewModel(UnitOfWorkInfo)
+  nameWithType: InitTenantViewModel.InitTenantViewModel(UnitOfWorkInfo)
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitTenantViewModel(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 25
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public InitTenantViewModel(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixCmsContext)
+  commentId: M:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixCmsContext)
+  id: '#ctor(MixCmsContext)'
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitTenantViewModel(MixCmsContext)
+  nameWithType: InitTenantViewModel.InitTenantViewModel(MixCmsContext)
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitTenantViewModel(MixCmsContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 29
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public InitTenantViewModel(MixCmsContext context)
+    parameters:
+    - id: context
+      type: MixCmsContext
+    content.vb: Public Sub New(context As MixCmsContext)
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixCmsContext,Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  commentId: M:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor(MixCmsContext,Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  id: '#ctor(MixCmsContext,Mix.Tenancy.Domain.Dtos.InitCmsDto)'
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitTenantViewModel(MixCmsContext, InitCmsDto)
+  nameWithType: InitTenantViewModel.InitTenantViewModel(MixCmsContext, InitCmsDto)
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitTenantViewModel(MixCmsContext, Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 33
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public InitTenantViewModel(MixCmsContext context, InitCmsDto model)
+    parameters:
+    - id: context
+      type: MixCmsContext
+    - id: model
+      type: Mix.Tenancy.Domain.Dtos.InitCmsDto
+    content.vb: Public Sub New(context As MixCmsContext, model As InitCmsDto)
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveHandlerAsync
+  commentId: M:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveHandlerAsync
+  id: SaveHandlerAsync
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: SaveHandlerAsync()
+  nameWithType: InitTenantViewModel.SaveHandlerAsync()
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveHandlerAsync()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveHandlerAsync
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 74
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: protected override Task<MixTenant> SaveHandlerAsync()
+    return:
+      type: Task{MixTenant}
+    content.vb: Protected Overrides Function SaveHandlerAsync As Task(Of MixTenant)
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveHandlerAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  commentId: M:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  id: SaveEntityRelationshipAsync(MixTenant)
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: SaveEntityRelationshipAsync(MixTenant)
+  nameWithType: InitTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveEntityRelationshipAsync
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 80
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: protected override Task SaveEntityRelationshipAsync(MixTenant parent)
+    parameters:
+    - id: parent
+      type: MixTenant
+    return:
+      type: Task
+    content.vb: Protected Overrides Function SaveEntityRelationshipAsync(parent As MixTenant) As Task
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveEntityRelationshipAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  id: InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: InitTenantViewModel.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitDefaultValues
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/ViewModels/Init/InitTenantViewModel.cs
+    startLine: 107
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.ViewModels.Init
+  syntax:
+    content: public override void InitDefaultValues(string language = null, int? cultureId = default(int? ))
+    parameters:
+    - id: language
+      type: System.String
+    - id: cultureId
+      type: System.Nullable{System.Int32}
+    content.vb: Public Overrides Sub InitDefaultValues(language As String = Nothing, cultureId As Integer? = Nothing)
+  overload: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues*
+  nameWithType.vb: InitTenantViewModel.InitDefaultValues(String, Nullable(Of Int32))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+references:
+- uid: Mix.Tenancy.Domain.ViewModels.Init
+  commentId: N:Mix.Tenancy.Domain.ViewModels.Init
+  name: Mix.Tenancy.Domain.ViewModels.Init
+  nameWithType: Mix.Tenancy.Domain.ViewModels.Init
+  fullName: Mix.Tenancy.Domain.ViewModels.Init
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.PrimaryDomain*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.PrimaryDomain
+  name: PrimaryDomain
+  nameWithType: InitTenantViewModel.PrimaryDomain
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.PrimaryDomain
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SystemName*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SystemName
+  name: SystemName
+  nameWithType: InitTenantViewModel.SystemName
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SystemName
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.DisplayName*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.DisplayName
+  name: DisplayName
+  nameWithType: InitTenantViewModel.DisplayName
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.DisplayName
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Description*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Description
+  name: Description
+  nameWithType: InitTenantViewModel.Description
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Description
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Culture*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Culture
+  name: Culture
+  nameWithType: InitTenantViewModel.Culture
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Culture
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitCultureViewModel
+  commentId: T:Mix.Tenancy.Domain.ViewModels.Init.InitCultureViewModel
+  parent: Mix.Tenancy.Domain.ViewModels.Init
+  name: InitCultureViewModel
+  nameWithType: InitCultureViewModel
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitCultureViewModel
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Domain*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Domain
+  name: Domain
+  nameWithType: InitTenantViewModel.Domain
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.Domain
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitDomainViewModel
+  commentId: T:Mix.Tenancy.Domain.ViewModels.Init.InitDomainViewModel
+  parent: Mix.Tenancy.Domain.ViewModels.Init
+  name: InitDomainViewModel
+  nameWithType: InitDomainViewModel
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitDomainViewModel
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.#ctor
+  name: InitTenantViewModel
+  nameWithType: InitTenantViewModel.InitTenantViewModel
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitTenantViewModel
+- uid: MixTenant
+  isExternal: true
+  name: MixTenant
+  nameWithType: MixTenant
+  fullName: MixTenant
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: Mix.Tenancy.Domain.Dtos.InitCmsDto
+  commentId: T:Mix.Tenancy.Domain.Dtos.InitCmsDto
+  parent: Mix.Tenancy.Domain.Dtos
+  name: InitCmsDto
+  nameWithType: InitCmsDto
+  fullName: Mix.Tenancy.Domain.Dtos.InitCmsDto
+- uid: Mix.Tenancy.Domain.Dtos
+  commentId: N:Mix.Tenancy.Domain.Dtos
+  name: Mix.Tenancy.Domain.Dtos
+  nameWithType: Mix.Tenancy.Domain.Dtos
+  fullName: Mix.Tenancy.Domain.Dtos
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveHandlerAsync*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveHandlerAsync
+  name: SaveHandlerAsync
+  nameWithType: InitTenantViewModel.SaveHandlerAsync
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveHandlerAsync
+- uid: Task{MixTenant}
+  commentId: '!:Task{MixTenant}'
+  definition: Task`1
+  name: Task<MixTenant>
+  nameWithType: Task<MixTenant>
+  fullName: Task<MixTenant>
+  nameWithType.vb: Task(Of MixTenant)
+  fullName.vb: Task(Of MixTenant)
+  name.vb: Task(Of MixTenant)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixTenant
+    name: MixTenant
+    nameWithType: MixTenant
+    fullName: MixTenant
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixTenant
+    name: MixTenant
+    nameWithType: MixTenant
+    fullName: MixTenant
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveEntityRelationshipAsync*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveEntityRelationshipAsync
+  name: SaveEntityRelationshipAsync
+  nameWithType: InitTenantViewModel.SaveEntityRelationshipAsync
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.SaveEntityRelationshipAsync
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues*
+  commentId: Overload:Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues
+  name: InitDefaultValues
+  nameWithType: InitTenantViewModel.InitDefaultValues
+  fullName: Mix.Tenancy.Domain.ViewModels.Init.InitTenantViewModel.InitDefaultValues
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

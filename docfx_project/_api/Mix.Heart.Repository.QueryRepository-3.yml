@@ -1,0 +1,2928 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Heart.Repository.QueryRepository`3
+  commentId: T:Mix.Heart.Repository.QueryRepository`3
+  id: QueryRepository`3
+  parent: Mix.Heart.Repository
+  children:
+  - Mix.Heart.Repository.QueryRepository`3.#ctor
+  - Mix.Heart.Repository.QueryRepository`3.#ctor(`0)
+  - Mix.Heart.Repository.QueryRepository`3.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  - Mix.Heart.Repository.QueryRepository`3.CacheFilename
+  - Mix.Heart.Repository.QueryRepository`3.CacheService
+  - Mix.Heart.Repository.QueryRepository`3.CheckIsExists(`1)
+  - Mix.Heart.Repository.QueryRepository`3.CheckIsExists(System.Func{`1,System.Boolean})
+  - Mix.Heart.Repository.QueryRepository`3.GetAllQuery
+  - Mix.Heart.Repository.QueryRepository`3.GetById(`2)
+  - Mix.Heart.Repository.QueryRepository`3.GetByIdAsync(`2)
+  - Mix.Heart.Repository.QueryRepository`3.GetFirst(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  - Mix.Heart.Repository.QueryRepository`3.GetFirstAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  - Mix.Heart.Repository.QueryRepository`3.GetLambda(System.String,System.Boolean)
+  - Mix.Heart.Repository.QueryRepository`3.GetListQuery(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  - Mix.Heart.Repository.QueryRepository`3.GetPagingEntitiesAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Heart.Models.PagingModel)
+  - Mix.Heart.Repository.QueryRepository`3.GetPagingQuery(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Heart.Models.PagingModel)
+  - Mix.Heart.Repository.QueryRepository`3.GetSingle(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  - Mix.Heart.Repository.QueryRepository`3.GetSingleAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  - Mix.Heart.Repository.QueryRepository`3.KeyMembers
+  - Mix.Heart.Repository.QueryRepository`3.Max(System.Func{`1,System.Int32})
+  - Mix.Heart.Repository.QueryRepository`3.MaxAsync(System.Func{`1,System.Int32})
+  - Mix.Heart.Repository.QueryRepository`3.SelectedMembers
+  - Mix.Heart.Repository.QueryRepository`3.Table
+  - Mix.Heart.Repository.QueryRepository`3.ToPagingEntityAsync(System.Linq.IQueryable{`1},Mix.Heart.Models.PagingModel)
+  langs:
+  - csharp
+  - vb
+  name: QueryRepository<TDbContext, TEntity, TPrimaryKey>
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: QueryRepository
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 14
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: 'public class QueryRepository<TDbContext, TEntity, TPrimaryKey> : RepositoryBase<TDbContext>, IRepositoryBase<TDbContext>, IDisposable where TDbContext : DbContext where TEntity : class, IEntity<TPrimaryKey> where TPrimaryKey : IComparable'
+    typeParameters:
+    - id: TDbContext
+    - id: TEntity
+    - id: TPrimaryKey
+    content.vb: >-
+      Public Class QueryRepository(Of TDbContext As DbContext, TEntity As {Class, IEntity(Of TPrimaryKey)}, TPrimaryKey As IComparable)
+          Inherits RepositoryBase(Of TDbContext)
+          Implements IRepositoryBase(Of TDbContext), IDisposable
+  inheritance:
+  - System.Object
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  derivedClasses:
+  - Mix.Heart.Repository.EntityRepository`3
+  implements:
+  - Mix.Heart.Repository.IRepositoryBase{{TDbContext}}
+  - System.IDisposable
+  inheritedMembers:
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.UowInfo
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.Context
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.BeginUow
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.CloseUowAsync
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.CompleteUowAsync
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.HandleExceptionAsync(System.Exception)
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.HandleException(System.Exception,System.String,System.String,System.Int32)
+  - Mix.Heart.Repository.RepositoryBase{{TDbContext}}.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey)
+  name.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey)
+- uid: Mix.Heart.Repository.QueryRepository`3.CacheService
+  commentId: P:Mix.Heart.Repository.QueryRepository`3.CacheService
+  id: CacheService
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: CacheService
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.CacheService
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.CacheService
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: CacheService
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 23
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: protected MixCacheService CacheService { get; set; }
+    parameters: []
+    return:
+      type: Mix.Heart.Services.MixCacheService
+    content.vb: Protected Property CacheService As MixCacheService
+  overload: Mix.Heart.Repository.QueryRepository`3.CacheService*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CacheService
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CacheService
+- uid: Mix.Heart.Repository.QueryRepository`3.CacheFilename
+  commentId: P:Mix.Heart.Repository.QueryRepository`3.CacheFilename
+  id: CacheFilename
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: CacheFilename
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.CacheFilename
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.CacheFilename
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: CacheFilename
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 25
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public string CacheFilename { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CacheFilename As String
+  overload: Mix.Heart.Repository.QueryRepository`3.CacheFilename*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CacheFilename
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CacheFilename
+- uid: Mix.Heart.Repository.QueryRepository`3.SelectedMembers
+  commentId: P:Mix.Heart.Repository.QueryRepository`3.SelectedMembers
+  id: SelectedMembers
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: SelectedMembers
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.SelectedMembers
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.SelectedMembers
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: SelectedMembers
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 27
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public string[] SelectedMembers { get; protected set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public Property SelectedMembers As String()
+  overload: Mix.Heart.Repository.QueryRepository`3.SelectedMembers*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).SelectedMembers
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).SelectedMembers
+- uid: Mix.Heart.Repository.QueryRepository`3.KeyMembers
+  commentId: P:Mix.Heart.Repository.QueryRepository`3.KeyMembers
+  id: KeyMembers
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: KeyMembers
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.KeyMembers
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.KeyMembers
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: KeyMembers
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 29
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: protected string[] KeyMembers { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Protected ReadOnly Property KeyMembers As String()
+  overload: Mix.Heart.Repository.QueryRepository`3.KeyMembers*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).KeyMembers
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).KeyMembers
+- uid: Mix.Heart.Repository.QueryRepository`3.Table
+  commentId: P:Mix.Heart.Repository.QueryRepository`3.Table
+  id: Table
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.Table
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.Table
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Table
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 31
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: protected DbSet<TEntity> Table { get; }
+    parameters: []
+    return:
+      type: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
+    content.vb: Protected ReadOnly Property Table As DbSet(Of TEntity)
+  overload: Mix.Heart.Repository.QueryRepository`3.Table*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).Table
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).Table
+- uid: Mix.Heart.Repository.QueryRepository`3.#ctor(`0)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: QueryRepository(TDbContext)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.QueryRepository(TDbContext)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.QueryRepository(TDbContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 35
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public QueryRepository(TDbContext dbContext)
+    parameters:
+    - id: dbContext
+      type: '{TDbContext}'
+    content.vb: Public Sub New(dbContext As TDbContext)
+  overload: Mix.Heart.Repository.QueryRepository`3.#ctor*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).QueryRepository(TDbContext)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).QueryRepository(TDbContext)
+- uid: Mix.Heart.Repository.QueryRepository`3.#ctor
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.#ctor
+  id: '#ctor'
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: QueryRepository()
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.QueryRepository()
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.QueryRepository()
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 37
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public QueryRepository()
+    content.vb: Public Sub New
+  overload: Mix.Heart.Repository.QueryRepository`3.#ctor*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).QueryRepository()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).QueryRepository()
+- uid: Mix.Heart.Repository.QueryRepository`3.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  id: '#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)'
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: QueryRepository(UnitOfWorkInfo)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.QueryRepository(UnitOfWorkInfo)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.QueryRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 42
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public QueryRepository(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    content.vb: Public Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Heart.Repository.QueryRepository`3.#ctor*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).QueryRepository(UnitOfWorkInfo)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).QueryRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+- uid: Mix.Heart.Repository.QueryRepository`3.GetAllQuery
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetAllQuery
+  id: GetAllQuery
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetAllQuery()
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetAllQuery()
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetAllQuery()
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetAllQuery
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 50
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public IQueryable<TEntity> GetAllQuery()
+    return:
+      type: System.Linq.IQueryable{{TEntity}}
+    content.vb: Public Function GetAllQuery As IQueryable(Of TEntity)
+  overload: Mix.Heart.Repository.QueryRepository`3.GetAllQuery*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetAllQuery()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetAllQuery()
+- uid: Mix.Heart.Repository.QueryRepository`3.GetListQuery(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetListQuery(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  id: GetListQuery(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetListQuery(Expression<Func<TEntity, Boolean>>)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetListQuery(Expression<Func<TEntity, Boolean>>)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetListQuery(System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetListQuery
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 55
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public IQueryable<TEntity> GetListQuery(Expression<Func<TEntity, bool>> predicate)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    return:
+      type: System.Linq.IQueryable{{TEntity}}
+    content.vb: Public Function GetListQuery(predicate As Expression(Of Func(Of TEntity, Boolean))) As IQueryable(Of TEntity)
+  overload: Mix.Heart.Repository.QueryRepository`3.GetListQuery*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetListQuery(Expression(Of Func(Of TEntity, Boolean)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetListQuery(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)))
+  name.vb: GetListQuery(Expression(Of Func(Of TEntity, Boolean)))
+- uid: Mix.Heart.Repository.QueryRepository`3.GetPagingQuery(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Heart.Models.PagingModel)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetPagingQuery(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Heart.Models.PagingModel)
+  id: GetPagingQuery(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Heart.Models.PagingModel)
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetPagingQuery(Expression<Func<TEntity, Boolean>>, PagingModel)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetPagingQuery(Expression<Func<TEntity, Boolean>>, PagingModel)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetPagingQuery(System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>, Mix.Heart.Models.PagingModel)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetPagingQuery
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 60
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public IQueryable<TEntity> GetPagingQuery(Expression<Func<TEntity, bool>> predicate, PagingModel paging)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    - id: paging
+      type: Mix.Heart.Models.PagingModel
+    return:
+      type: System.Linq.IQueryable{{TEntity}}
+    content.vb: Public Function GetPagingQuery(predicate As Expression(Of Func(Of TEntity, Boolean)), paging As PagingModel) As IQueryable(Of TEntity)
+  overload: Mix.Heart.Repository.QueryRepository`3.GetPagingQuery*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetPagingQuery(Expression(Of Func(Of TEntity, Boolean)), PagingModel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetPagingQuery(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)), Mix.Heart.Models.PagingModel)
+  name.vb: GetPagingQuery(Expression(Of Func(Of TEntity, Boolean)), PagingModel)
+- uid: Mix.Heart.Repository.QueryRepository`3.CheckIsExists(`1)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.CheckIsExists(`1)
+  id: CheckIsExists(`1)
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: CheckIsExists(TEntity)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.CheckIsExists(TEntity)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.CheckIsExists(TEntity)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: CheckIsExists
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 87
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public virtual bool CheckIsExists(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function CheckIsExists(entity As TEntity) As Boolean
+  overload: Mix.Heart.Repository.QueryRepository`3.CheckIsExists*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CheckIsExists(TEntity)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CheckIsExists(TEntity)
+- uid: Mix.Heart.Repository.QueryRepository`3.CheckIsExists(System.Func{`1,System.Boolean})
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.CheckIsExists(System.Func{`1,System.Boolean})
+  id: CheckIsExists(System.Func{`1,System.Boolean})
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: CheckIsExists(Func<TEntity, Boolean>)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.CheckIsExists(Func<TEntity, Boolean>)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.CheckIsExists(System.Func<TEntity, System.Boolean>)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: CheckIsExists
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 92
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public virtual bool CheckIsExists(Func<TEntity, bool> predicate)
+    parameters:
+    - id: predicate
+      type: System.Func{{TEntity},System.Boolean}
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable Function CheckIsExists(predicate As Func(Of TEntity, Boolean)) As Boolean
+  overload: Mix.Heart.Repository.QueryRepository`3.CheckIsExists*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CheckIsExists(Func(Of TEntity, Boolean))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CheckIsExists(System.Func(Of TEntity, System.Boolean))
+  name.vb: CheckIsExists(Func(Of TEntity, Boolean))
+- uid: Mix.Heart.Repository.QueryRepository`3.GetPagingEntitiesAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Heart.Models.PagingModel)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetPagingEntitiesAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Heart.Models.PagingModel)
+  id: GetPagingEntitiesAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}},Mix.Heart.Models.PagingModel)
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetPagingEntitiesAsync(Expression<Func<TEntity, Boolean>>, PagingModel)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetPagingEntitiesAsync(Expression<Func<TEntity, Boolean>>, PagingModel)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetPagingEntitiesAsync(System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>, Mix.Heart.Models.PagingModel)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetPagingEntitiesAsync
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 99
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public Task<PagingResponseModel<TEntity>> GetPagingEntitiesAsync(Expression<Func<TEntity, bool>> predicate, PagingModel paging)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    - id: paging
+      type: Mix.Heart.Models.PagingModel
+    return:
+      type: System.Threading.Tasks.Task{Mix.Heart.Models.PagingResponseModel{{TEntity}}}
+    content.vb: Public Function GetPagingEntitiesAsync(predicate As Expression(Of Func(Of TEntity, Boolean)), paging As PagingModel) As Task(Of PagingResponseModel(Of TEntity))
+  overload: Mix.Heart.Repository.QueryRepository`3.GetPagingEntitiesAsync*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetPagingEntitiesAsync(Expression(Of Func(Of TEntity, Boolean)), PagingModel)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetPagingEntitiesAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)), Mix.Heart.Models.PagingModel)
+  name.vb: GetPagingEntitiesAsync(Expression(Of Func(Of TEntity, Boolean)), PagingModel)
+- uid: Mix.Heart.Repository.QueryRepository`3.GetSingleAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetSingleAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  id: GetSingleAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetSingleAsync(Expression<Func<TEntity, Boolean>>)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetSingleAsync(Expression<Func<TEntity, Boolean>>)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetSingleAsync(System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetSingleAsync
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 106
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public Task<TEntity> GetSingleAsync(Expression<Func<TEntity, bool>> predicate)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Public Function GetSingleAsync(predicate As Expression(Of Func(Of TEntity, Boolean))) As Task(Of TEntity)
+  overload: Mix.Heart.Repository.QueryRepository`3.GetSingleAsync*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetSingleAsync(Expression(Of Func(Of TEntity, Boolean)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetSingleAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)))
+  name.vb: GetSingleAsync(Expression(Of Func(Of TEntity, Boolean)))
+- uid: Mix.Heart.Repository.QueryRepository`3.GetByIdAsync(`2)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetByIdAsync(`2)
+  id: GetByIdAsync(`2)
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(TPrimaryKey)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetByIdAsync(TPrimaryKey)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetByIdAsync(TPrimaryKey)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetByIdAsync
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 111
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public virtual Task<TEntity> GetByIdAsync(TPrimaryKey id)
+    parameters:
+    - id: id
+      type: '{TPrimaryKey}'
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Public Overridable Function GetByIdAsync(id As TPrimaryKey) As Task(Of TEntity)
+  overload: Mix.Heart.Repository.QueryRepository`3.GetByIdAsync*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetByIdAsync(TPrimaryKey)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetByIdAsync(TPrimaryKey)
+- uid: Mix.Heart.Repository.QueryRepository`3.MaxAsync(System.Func{`1,System.Int32})
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.MaxAsync(System.Func{`1,System.Int32})
+  id: MaxAsync(System.Func{`1,System.Int32})
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: MaxAsync(Func<TEntity, Int32>)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.MaxAsync(Func<TEntity, Int32>)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.MaxAsync(System.Func<TEntity, System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: MaxAsync
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 116
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public virtual int MaxAsync(Func<TEntity, int> predicate)
+    parameters:
+    - id: predicate
+      type: System.Func{{TEntity},System.Int32}
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function MaxAsync(predicate As Func(Of TEntity, Integer)) As Integer
+  overload: Mix.Heart.Repository.QueryRepository`3.MaxAsync*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).MaxAsync(Func(Of TEntity, Int32))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).MaxAsync(System.Func(Of TEntity, System.Int32))
+  name.vb: MaxAsync(Func(Of TEntity, Int32))
+- uid: Mix.Heart.Repository.QueryRepository`3.GetFirstAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetFirstAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  id: GetFirstAsync(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetFirstAsync(Expression<Func<TEntity, Boolean>>)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetFirstAsync(Expression<Func<TEntity, Boolean>>)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetFirstAsync(System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetFirstAsync
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 121
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public Task<TEntity> GetFirstAsync(Expression<Func<TEntity, bool>> predicate)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    return:
+      type: System.Threading.Tasks.Task{{TEntity}}
+    content.vb: Public Function GetFirstAsync(predicate As Expression(Of Func(Of TEntity, Boolean))) As Task(Of TEntity)
+  overload: Mix.Heart.Repository.QueryRepository`3.GetFirstAsync*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetFirstAsync(Expression(Of Func(Of TEntity, Boolean)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetFirstAsync(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)))
+  name.vb: GetFirstAsync(Expression(Of Func(Of TEntity, Boolean)))
+- uid: Mix.Heart.Repository.QueryRepository`3.GetSingle(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetSingle(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  id: GetSingle(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetSingle(Expression<Func<TEntity, Boolean>>)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetSingle(Expression<Func<TEntity, Boolean>>)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetSingle(System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetSingle
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 130
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public TEntity GetSingle(Expression<Func<TEntity, bool>> predicate)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    return:
+      type: '{TEntity}'
+    content.vb: Public Function GetSingle(predicate As Expression(Of Func(Of TEntity, Boolean))) As TEntity
+  overload: Mix.Heart.Repository.QueryRepository`3.GetSingle*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetSingle(Expression(Of Func(Of TEntity, Boolean)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetSingle(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)))
+  name.vb: GetSingle(Expression(Of Func(Of TEntity, Boolean)))
+- uid: Mix.Heart.Repository.QueryRepository`3.GetById(`2)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetById(`2)
+  id: GetById(`2)
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetById(TPrimaryKey)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetById(TPrimaryKey)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetById(TPrimaryKey)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetById
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 143
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public virtual TEntity GetById(TPrimaryKey id)
+    parameters:
+    - id: id
+      type: '{TPrimaryKey}'
+    return:
+      type: '{TEntity}'
+    content.vb: Public Overridable Function GetById(id As TPrimaryKey) As TEntity
+  overload: Mix.Heart.Repository.QueryRepository`3.GetById*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetById(TPrimaryKey)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetById(TPrimaryKey)
+- uid: Mix.Heart.Repository.QueryRepository`3.Max(System.Func{`1,System.Int32})
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.Max(System.Func{`1,System.Int32})
+  id: Max(System.Func{`1,System.Int32})
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: Max(Func<TEntity, Int32>)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.Max(Func<TEntity, Int32>)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.Max(System.Func<TEntity, System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Max
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 156
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public virtual int Max(Func<TEntity, int> predicate)
+    parameters:
+    - id: predicate
+      type: System.Func{{TEntity},System.Int32}
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function Max(predicate As Func(Of TEntity, Integer)) As Integer
+  overload: Mix.Heart.Repository.QueryRepository`3.Max*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).Max(Func(Of TEntity, Int32))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).Max(System.Func(Of TEntity, System.Int32))
+  name.vb: Max(Func(Of TEntity, Int32))
+- uid: Mix.Heart.Repository.QueryRepository`3.GetFirst(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetFirst(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  id: GetFirst(System.Linq.Expressions.Expression{System.Func{`1,System.Boolean}})
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetFirst(Expression<Func<TEntity, Boolean>>)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetFirst(Expression<Func<TEntity, Boolean>>)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetFirst(System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetFirst
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 169
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: public TEntity GetFirst(Expression<Func<TEntity, bool>> predicate)
+    parameters:
+    - id: predicate
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    return:
+      type: '{TEntity}'
+    content.vb: Public Function GetFirst(predicate As Expression(Of Func(Of TEntity, Boolean))) As TEntity
+  overload: Mix.Heart.Repository.QueryRepository`3.GetFirst*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetFirst(Expression(Of Func(Of TEntity, Boolean)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetFirst(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean)))
+  name.vb: GetFirst(Expression(Of Func(Of TEntity, Boolean)))
+- uid: Mix.Heart.Repository.QueryRepository`3.ToPagingEntityAsync(System.Linq.IQueryable{`1},Mix.Heart.Models.PagingModel)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.ToPagingEntityAsync(System.Linq.IQueryable{`1},Mix.Heart.Models.PagingModel)
+  id: ToPagingEntityAsync(System.Linq.IQueryable{`1},Mix.Heart.Models.PagingModel)
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: ToPagingEntityAsync(IQueryable<TEntity>, PagingModel)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.ToPagingEntityAsync(IQueryable<TEntity>, PagingModel)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.ToPagingEntityAsync(System.Linq.IQueryable<TEntity>, Mix.Heart.Models.PagingModel)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ToPagingEntityAsync
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 191
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: protected Task<PagingResponseModel<TEntity>> ToPagingEntityAsync(IQueryable<TEntity> source, PagingModel pagingData)
+    parameters:
+    - id: source
+      type: System.Linq.IQueryable{{TEntity}}
+    - id: pagingData
+      type: Mix.Heart.Models.PagingModel
+    return:
+      type: System.Threading.Tasks.Task{Mix.Heart.Models.PagingResponseModel{{TEntity}}}
+    content.vb: Protected Function ToPagingEntityAsync(source As IQueryable(Of TEntity), pagingData As PagingModel) As Task(Of PagingResponseModel(Of TEntity))
+  overload: Mix.Heart.Repository.QueryRepository`3.ToPagingEntityAsync*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).ToPagingEntityAsync(IQueryable(Of TEntity), PagingModel)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).ToPagingEntityAsync(System.Linq.IQueryable(Of TEntity), Mix.Heart.Models.PagingModel)
+  name.vb: ToPagingEntityAsync(IQueryable(Of TEntity), PagingModel)
+- uid: Mix.Heart.Repository.QueryRepository`3.GetLambda(System.String,System.Boolean)
+  commentId: M:Mix.Heart.Repository.QueryRepository`3.GetLambda(System.String,System.Boolean)
+  id: GetLambda(System.String,System.Boolean)
+  parent: Mix.Heart.Repository.QueryRepository`3
+  langs:
+  - csharp
+  - vb
+  name: GetLambda(String, Boolean)
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetLambda(String, Boolean)
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetLambda(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/QueryRepository.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetLambda
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/QueryRepository.cs
+    startLine: 206
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: protected LambdaExpression GetLambda(string propName, bool isGetDefault = true)
+    parameters:
+    - id: propName
+      type: System.String
+    - id: isGetDefault
+      type: System.Boolean
+    return:
+      type: System.Linq.Expressions.LambdaExpression
+    content.vb: Protected Function GetLambda(propName As String, isGetDefault As Boolean = True) As LambdaExpression
+  overload: Mix.Heart.Repository.QueryRepository`3.GetLambda*
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetLambda(String, Boolean)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetLambda(System.String, System.Boolean)
+references:
+- uid: Mix.Heart.Repository
+  commentId: N:Mix.Heart.Repository
+  name: Mix.Heart.Repository
+  nameWithType: Mix.Heart.Repository
+  fullName: Mix.Heart.Repository
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  commentId: T:Mix.Heart.Repository.RepositoryBase{`0}
+  parent: Mix.Heart.Repository
+  definition: Mix.Heart.Repository.RepositoryBase`1
+  name: RepositoryBase<TDbContext>
+  nameWithType: RepositoryBase<TDbContext>
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>
+  nameWithType.vb: RepositoryBase(Of TDbContext)
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext)
+  name.vb: RepositoryBase(Of TDbContext)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Mix.Heart.Repository.RepositoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Mix.Heart.Repository.RepositoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.IRepositoryBase{{TDbContext}}
+  commentId: T:Mix.Heart.Repository.IRepositoryBase{`0}
+  parent: Mix.Heart.Repository
+  definition: Mix.Heart.Repository.IRepositoryBase`1
+  name: IRepositoryBase<TDbContext>
+  nameWithType: IRepositoryBase<TDbContext>
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>
+  nameWithType.vb: IRepositoryBase(Of TDbContext)
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext)
+  name.vb: IRepositoryBase(Of TDbContext)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.IRepositoryBase`1
+    name: IRepositoryBase
+    nameWithType: IRepositoryBase
+    fullName: Mix.Heart.Repository.IRepositoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Repository.IRepositoryBase`1
+    name: IRepositoryBase
+    nameWithType: IRepositoryBase
+    fullName: Mix.Heart.Repository.IRepositoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.UowInfo
+  commentId: P:Mix.Heart.Repository.RepositoryBase{`0}.UowInfo
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.UowInfo
+  name: UowInfo
+  nameWithType: RepositoryBase<TDbContext>.UowInfo
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.UowInfo
+  nameWithType.vb: RepositoryBase(Of TDbContext).UowInfo
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).UowInfo
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.Context
+  commentId: P:Mix.Heart.Repository.RepositoryBase{`0}.Context
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.Context
+  name: Context
+  nameWithType: RepositoryBase<TDbContext>.Context
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.Context
+  nameWithType.vb: RepositoryBase(Of TDbContext).Context
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).Context
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.Heart.Repository.RepositoryBase{`0}.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  name: SetUowInfo(UnitOfWorkInfo)
+  nameWithType: RepositoryBase<TDbContext>.SetUowInfo(UnitOfWorkInfo)
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  nameWithType.vb: RepositoryBase(Of TDbContext).SetUowInfo(UnitOfWorkInfo)
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: SetUowInfo
+    nameWithType: RepositoryBase<TDbContext>.SetUowInfo
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.SetUowInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: SetUowInfo
+    nameWithType: RepositoryBase(Of TDbContext).SetUowInfo
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).SetUowInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.BeginUow
+  commentId: M:Mix.Heart.Repository.RepositoryBase{`0}.BeginUow
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.BeginUow
+  name: BeginUow()
+  nameWithType: RepositoryBase<TDbContext>.BeginUow()
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.BeginUow()
+  nameWithType.vb: RepositoryBase(Of TDbContext).BeginUow()
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).BeginUow()
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.BeginUow
+    name: BeginUow
+    nameWithType: RepositoryBase<TDbContext>.BeginUow
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.BeginUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.BeginUow
+    name: BeginUow
+    nameWithType: RepositoryBase(Of TDbContext).BeginUow
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).BeginUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.CloseUowAsync
+  commentId: M:Mix.Heart.Repository.RepositoryBase{`0}.CloseUowAsync
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.CloseUowAsync
+  name: CloseUowAsync()
+  nameWithType: RepositoryBase<TDbContext>.CloseUowAsync()
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.CloseUowAsync()
+  nameWithType.vb: RepositoryBase(Of TDbContext).CloseUowAsync()
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).CloseUowAsync()
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.CloseUowAsync
+    name: CloseUowAsync
+    nameWithType: RepositoryBase<TDbContext>.CloseUowAsync
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.CloseUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.CloseUowAsync
+    name: CloseUowAsync
+    nameWithType: RepositoryBase(Of TDbContext).CloseUowAsync
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).CloseUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.CompleteUowAsync
+  commentId: M:Mix.Heart.Repository.RepositoryBase{`0}.CompleteUowAsync
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.CompleteUowAsync
+  name: CompleteUowAsync()
+  nameWithType: RepositoryBase<TDbContext>.CompleteUowAsync()
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.CompleteUowAsync()
+  nameWithType.vb: RepositoryBase(Of TDbContext).CompleteUowAsync()
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).CompleteUowAsync()
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.CompleteUowAsync
+    name: CompleteUowAsync
+    nameWithType: RepositoryBase<TDbContext>.CompleteUowAsync
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.CompleteUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.CompleteUowAsync
+    name: CompleteUowAsync
+    nameWithType: RepositoryBase(Of TDbContext).CompleteUowAsync
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).CompleteUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.HandleExceptionAsync(System.Exception)
+  commentId: M:Mix.Heart.Repository.RepositoryBase{`0}.HandleExceptionAsync(System.Exception)
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.HandleExceptionAsync(System.Exception)
+  name: HandleExceptionAsync(Exception)
+  nameWithType: RepositoryBase<TDbContext>.HandleExceptionAsync(Exception)
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.HandleExceptionAsync(System.Exception)
+  nameWithType.vb: RepositoryBase(Of TDbContext).HandleExceptionAsync(Exception)
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).HandleExceptionAsync(System.Exception)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.HandleExceptionAsync(System.Exception)
+    name: HandleExceptionAsync
+    nameWithType: RepositoryBase<TDbContext>.HandleExceptionAsync
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.HandleExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.HandleExceptionAsync(System.Exception)
+    name: HandleExceptionAsync
+    nameWithType: RepositoryBase(Of TDbContext).HandleExceptionAsync
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).HandleExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.HandleException(System.Exception,System.String,System.String,System.Int32)
+  commentId: M:Mix.Heart.Repository.RepositoryBase{`0}.HandleException(System.Exception,System.String,System.String,System.Int32)
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.HandleException(System.Exception,System.String,System.String,System.Int32)
+  name: HandleException(Exception, String, String, Int32)
+  nameWithType: RepositoryBase<TDbContext>.HandleException(Exception, String, String, Int32)
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.HandleException(System.Exception, System.String, System.String, System.Int32)
+  nameWithType.vb: RepositoryBase(Of TDbContext).HandleException(Exception, String, String, Int32)
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).HandleException(System.Exception, System.String, System.String, System.Int32)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.HandleException(System.Exception,System.String,System.String,System.Int32)
+    name: HandleException
+    nameWithType: RepositoryBase<TDbContext>.HandleException
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.HandleException(System.Exception,System.String,System.String,System.Int32)
+    name: HandleException
+    nameWithType: RepositoryBase(Of TDbContext).HandleException
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase{{TDbContext}}.Dispose
+  commentId: M:Mix.Heart.Repository.RepositoryBase{`0}.Dispose
+  parent: Mix.Heart.Repository.RepositoryBase{{TDbContext}}
+  definition: Mix.Heart.Repository.RepositoryBase`1.Dispose
+  name: Dispose()
+  nameWithType: RepositoryBase<TDbContext>.Dispose()
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.Dispose()
+  nameWithType.vb: RepositoryBase(Of TDbContext).Dispose()
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).Dispose()
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.Dispose
+    name: Dispose
+    nameWithType: RepositoryBase<TDbContext>.Dispose
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.Dispose
+    name: Dispose
+    nameWithType: RepositoryBase(Of TDbContext).Dispose
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Heart.Repository.RepositoryBase`1
+  commentId: T:Mix.Heart.Repository.RepositoryBase`1
+  name: RepositoryBase<TDbContext>
+  nameWithType: RepositoryBase<TDbContext>
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>
+  nameWithType.vb: RepositoryBase(Of TDbContext)
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext)
+  name.vb: RepositoryBase(Of TDbContext)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Mix.Heart.Repository.RepositoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1
+    name: RepositoryBase
+    nameWithType: RepositoryBase
+    fullName: Mix.Heart.Repository.RepositoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.IRepositoryBase`1
+  commentId: T:Mix.Heart.Repository.IRepositoryBase`1
+  name: IRepositoryBase<TDbContext>
+  nameWithType: IRepositoryBase<TDbContext>
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>
+  nameWithType.vb: IRepositoryBase(Of TDbContext)
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext)
+  name.vb: IRepositoryBase(Of TDbContext)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.IRepositoryBase`1
+    name: IRepositoryBase
+    nameWithType: IRepositoryBase
+    fullName: Mix.Heart.Repository.IRepositoryBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Repository.IRepositoryBase`1
+    name: IRepositoryBase
+    nameWithType: IRepositoryBase
+    fullName: Mix.Heart.Repository.IRepositoryBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase`1.UowInfo
+  commentId: P:Mix.Heart.Repository.RepositoryBase`1.UowInfo
+  name: UowInfo
+  nameWithType: RepositoryBase<TDbContext>.UowInfo
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.UowInfo
+  nameWithType.vb: RepositoryBase(Of TDbContext).UowInfo
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).UowInfo
+- uid: Mix.Heart.Repository.RepositoryBase`1.Context
+  commentId: P:Mix.Heart.Repository.RepositoryBase`1.Context
+  name: Context
+  nameWithType: RepositoryBase<TDbContext>.Context
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.Context
+  nameWithType.vb: RepositoryBase(Of TDbContext).Context
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).Context
+- uid: Mix.Heart.Repository.RepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.Heart.Repository.RepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  name: SetUowInfo(UnitOfWorkInfo)
+  nameWithType: RepositoryBase<TDbContext>.SetUowInfo(UnitOfWorkInfo)
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  nameWithType.vb: RepositoryBase(Of TDbContext).SetUowInfo(UnitOfWorkInfo)
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: SetUowInfo
+    nameWithType: RepositoryBase<TDbContext>.SetUowInfo
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.SetUowInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: SetUowInfo
+    nameWithType: RepositoryBase(Of TDbContext).SetUowInfo
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).SetUowInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase`1.BeginUow
+  commentId: M:Mix.Heart.Repository.RepositoryBase`1.BeginUow
+  name: BeginUow()
+  nameWithType: RepositoryBase<TDbContext>.BeginUow()
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.BeginUow()
+  nameWithType.vb: RepositoryBase(Of TDbContext).BeginUow()
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).BeginUow()
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.BeginUow
+    name: BeginUow
+    nameWithType: RepositoryBase<TDbContext>.BeginUow
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.BeginUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.BeginUow
+    name: BeginUow
+    nameWithType: RepositoryBase(Of TDbContext).BeginUow
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).BeginUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase`1.CloseUowAsync
+  commentId: M:Mix.Heart.Repository.RepositoryBase`1.CloseUowAsync
+  name: CloseUowAsync()
+  nameWithType: RepositoryBase<TDbContext>.CloseUowAsync()
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.CloseUowAsync()
+  nameWithType.vb: RepositoryBase(Of TDbContext).CloseUowAsync()
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).CloseUowAsync()
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.CloseUowAsync
+    name: CloseUowAsync
+    nameWithType: RepositoryBase<TDbContext>.CloseUowAsync
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.CloseUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.CloseUowAsync
+    name: CloseUowAsync
+    nameWithType: RepositoryBase(Of TDbContext).CloseUowAsync
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).CloseUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase`1.CompleteUowAsync
+  commentId: M:Mix.Heart.Repository.RepositoryBase`1.CompleteUowAsync
+  name: CompleteUowAsync()
+  nameWithType: RepositoryBase<TDbContext>.CompleteUowAsync()
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.CompleteUowAsync()
+  nameWithType.vb: RepositoryBase(Of TDbContext).CompleteUowAsync()
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).CompleteUowAsync()
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.CompleteUowAsync
+    name: CompleteUowAsync
+    nameWithType: RepositoryBase<TDbContext>.CompleteUowAsync
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.CompleteUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.CompleteUowAsync
+    name: CompleteUowAsync
+    nameWithType: RepositoryBase(Of TDbContext).CompleteUowAsync
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).CompleteUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase`1.HandleExceptionAsync(System.Exception)
+  commentId: M:Mix.Heart.Repository.RepositoryBase`1.HandleExceptionAsync(System.Exception)
+  isExternal: true
+  name: HandleExceptionAsync(Exception)
+  nameWithType: RepositoryBase<TDbContext>.HandleExceptionAsync(Exception)
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.HandleExceptionAsync(System.Exception)
+  nameWithType.vb: RepositoryBase(Of TDbContext).HandleExceptionAsync(Exception)
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).HandleExceptionAsync(System.Exception)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.HandleExceptionAsync(System.Exception)
+    name: HandleExceptionAsync
+    nameWithType: RepositoryBase<TDbContext>.HandleExceptionAsync
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.HandleExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.HandleExceptionAsync(System.Exception)
+    name: HandleExceptionAsync
+    nameWithType: RepositoryBase(Of TDbContext).HandleExceptionAsync
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).HandleExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase`1.HandleException(System.Exception,System.String,System.String,System.Int32)
+  commentId: M:Mix.Heart.Repository.RepositoryBase`1.HandleException(System.Exception,System.String,System.String,System.Int32)
+  isExternal: true
+  name: HandleException(Exception, String, String, Int32)
+  nameWithType: RepositoryBase<TDbContext>.HandleException(Exception, String, String, Int32)
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.HandleException(System.Exception, System.String, System.String, System.Int32)
+  nameWithType.vb: RepositoryBase(Of TDbContext).HandleException(Exception, String, String, Int32)
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).HandleException(System.Exception, System.String, System.String, System.Int32)
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.HandleException(System.Exception,System.String,System.String,System.Int32)
+    name: HandleException
+    nameWithType: RepositoryBase<TDbContext>.HandleException
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.HandleException(System.Exception,System.String,System.String,System.Int32)
+    name: HandleException
+    nameWithType: RepositoryBase(Of TDbContext).HandleException
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.RepositoryBase`1.Dispose
+  commentId: M:Mix.Heart.Repository.RepositoryBase`1.Dispose
+  name: Dispose()
+  nameWithType: RepositoryBase<TDbContext>.Dispose()
+  fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.Dispose()
+  nameWithType.vb: RepositoryBase(Of TDbContext).Dispose()
+  fullName.vb: Mix.Heart.Repository.RepositoryBase(Of TDbContext).Dispose()
+  spec.csharp:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.Dispose
+    name: Dispose
+    nameWithType: RepositoryBase<TDbContext>.Dispose
+    fullName: Mix.Heart.Repository.RepositoryBase<TDbContext>.Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Repository.RepositoryBase`1.Dispose
+    name: Dispose
+    nameWithType: RepositoryBase(Of TDbContext).Dispose
+    fullName: Mix.Heart.Repository.RepositoryBase(Of TDbContext).Dispose
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.QueryRepository`3.CacheService*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.CacheService
+  name: CacheService
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.CacheService
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.CacheService
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CacheService
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CacheService
+- uid: Mix.Heart.Services.MixCacheService
+  commentId: T:Mix.Heart.Services.MixCacheService
+  parent: Mix.Heart.Services
+  name: MixCacheService
+  nameWithType: MixCacheService
+  fullName: Mix.Heart.Services.MixCacheService
+- uid: Mix.Heart.Services
+  commentId: N:Mix.Heart.Services
+  name: Mix.Heart.Services
+  nameWithType: Mix.Heart.Services
+  fullName: Mix.Heart.Services
+- uid: Mix.Heart.Repository.QueryRepository`3.CacheFilename*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.CacheFilename
+  name: CacheFilename
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.CacheFilename
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.CacheFilename
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CacheFilename
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CacheFilename
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Heart.Repository.QueryRepository`3.SelectedMembers*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.SelectedMembers
+  name: SelectedMembers
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.SelectedMembers
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.SelectedMembers
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).SelectedMembers
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).SelectedMembers
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Mix.Heart.Repository.QueryRepository`3.KeyMembers*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.KeyMembers
+  name: KeyMembers
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.KeyMembers
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.KeyMembers
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).KeyMembers
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).KeyMembers
+- uid: Mix.Heart.Repository.QueryRepository`3.Table*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.Table
+  name: Table
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.Table
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.Table
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).Table
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).Table
+- uid: Microsoft.EntityFrameworkCore.DbSet{{TEntity}}
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet{`1}
+  parent: Microsoft.EntityFrameworkCore
+  definition: Microsoft.EntityFrameworkCore.DbSet`1
+  name: DbSet<TEntity>
+  nameWithType: DbSet<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<TEntity>
+  nameWithType.vb: DbSet(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of TEntity)
+  name.vb: DbSet(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore.DbSet`1
+  commentId: T:Microsoft.EntityFrameworkCore.DbSet`1
+  isExternal: true
+  name: DbSet<TEntity>
+  nameWithType: DbSet<TEntity>
+  fullName: Microsoft.EntityFrameworkCore.DbSet<TEntity>
+  nameWithType.vb: DbSet(Of TEntity)
+  fullName.vb: Microsoft.EntityFrameworkCore.DbSet(Of TEntity)
+  name.vb: DbSet(Of TEntity)
+  spec.csharp:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.EntityFrameworkCore.DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: Microsoft.EntityFrameworkCore.DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.EntityFrameworkCore
+  commentId: N:Microsoft.EntityFrameworkCore
+  isExternal: true
+  name: Microsoft.EntityFrameworkCore
+  nameWithType: Microsoft.EntityFrameworkCore
+  fullName: Microsoft.EntityFrameworkCore
+- uid: Mix.Heart.Repository.QueryRepository`3.#ctor*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.#ctor
+  name: QueryRepository
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.QueryRepository
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.QueryRepository
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).QueryRepository
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).QueryRepository
+- uid: '{TDbContext}'
+  commentId: '!:TDbContext'
+  definition: TDbContext
+  name: TDbContext
+  nameWithType: TDbContext
+  fullName: TDbContext
+- uid: TDbContext
+  name: TDbContext
+  nameWithType: TDbContext
+  fullName: TDbContext
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  commentId: T:Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  parent: Mix.Heart.UnitOfWork
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+- uid: Mix.Heart.UnitOfWork
+  commentId: N:Mix.Heart.UnitOfWork
+  name: Mix.Heart.UnitOfWork
+  nameWithType: Mix.Heart.UnitOfWork
+  fullName: Mix.Heart.UnitOfWork
+- uid: Mix.Heart.Repository.QueryRepository`3.GetAllQuery*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetAllQuery
+  name: GetAllQuery
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetAllQuery
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetAllQuery
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetAllQuery
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetAllQuery
+- uid: System.Linq.IQueryable{{TEntity}}
+  commentId: T:System.Linq.IQueryable{``0}
+  parent: System.Linq
+  definition: System.Linq.IQueryable`1
+  name: IQueryable<TEntity>
+  nameWithType: IQueryable<TEntity>
+  fullName: System.Linq.IQueryable<TEntity>
+  nameWithType.vb: IQueryable(Of TEntity)
+  fullName.vb: System.Linq.IQueryable(Of TEntity)
+  name.vb: IQueryable(Of TEntity)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.IQueryable`1
+  commentId: T:System.Linq.IQueryable`1
+  isExternal: true
+  name: IQueryable<T>
+  nameWithType: IQueryable<T>
+  fullName: System.Linq.IQueryable<T>
+  nameWithType.vb: IQueryable(Of T)
+  fullName.vb: System.Linq.IQueryable(Of T)
+  name.vb: IQueryable(Of T)
+  spec.csharp:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.IQueryable`1
+    name: IQueryable
+    nameWithType: IQueryable
+    fullName: System.Linq.IQueryable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+- uid: Mix.Heart.Repository.QueryRepository`3.GetListQuery*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetListQuery
+  name: GetListQuery
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetListQuery
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetListQuery
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetListQuery
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetListQuery
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TEntity, Boolean>>
+  nameWithType: Expression<Func<TEntity, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: Mix.Heart.Repository.QueryRepository`3.GetPagingQuery*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetPagingQuery
+  name: GetPagingQuery
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetPagingQuery
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetPagingQuery
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetPagingQuery
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetPagingQuery
+- uid: Mix.Heart.Models.PagingModel
+  commentId: T:Mix.Heart.Models.PagingModel
+  parent: Mix.Heart.Models
+  name: PagingModel
+  nameWithType: PagingModel
+  fullName: Mix.Heart.Models.PagingModel
+- uid: Mix.Heart.Models
+  commentId: N:Mix.Heart.Models
+  name: Mix.Heart.Models
+  nameWithType: Mix.Heart.Models
+  fullName: Mix.Heart.Models
+- uid: Mix.Heart.Repository.QueryRepository`3.CheckIsExists*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.CheckIsExists
+  name: CheckIsExists
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.CheckIsExists
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.CheckIsExists
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CheckIsExists
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).CheckIsExists
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: System.Func{{TEntity},System.Boolean}
+  commentId: T:System.Func{`1,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<TEntity, Boolean>
+  nameWithType: Func<TEntity, Boolean>
+  fullName: System.Func<TEntity, System.Boolean>
+  nameWithType.vb: Func(Of TEntity, Boolean)
+  fullName.vb: System.Func(Of TEntity, System.Boolean)
+  name.vb: Func(Of TEntity, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.QueryRepository`3.GetPagingEntitiesAsync*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetPagingEntitiesAsync
+  name: GetPagingEntitiesAsync
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetPagingEntitiesAsync
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetPagingEntitiesAsync
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetPagingEntitiesAsync
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetPagingEntitiesAsync
+- uid: System.Threading.Tasks.Task{Mix.Heart.Models.PagingResponseModel{{TEntity}}}
+  commentId: T:System.Threading.Tasks.Task{Mix.Heart.Models.PagingResponseModel{`1}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PagingResponseModel<TEntity>>
+  nameWithType: Task<PagingResponseModel<TEntity>>
+  fullName: System.Threading.Tasks.Task<Mix.Heart.Models.PagingResponseModel<TEntity>>
+  nameWithType.vb: Task(Of PagingResponseModel(Of TEntity))
+  fullName.vb: System.Threading.Tasks.Task(Of Mix.Heart.Models.PagingResponseModel(Of TEntity))
+  name.vb: Task(Of PagingResponseModel(Of TEntity))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Heart.Models.PagingResponseModel`1
+    name: PagingResponseModel
+    nameWithType: PagingResponseModel
+    fullName: Mix.Heart.Models.PagingResponseModel
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Heart.Models.PagingResponseModel`1
+    name: PagingResponseModel
+    nameWithType: PagingResponseModel
+    fullName: Mix.Heart.Models.PagingResponseModel
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.Heart.Repository.QueryRepository`3.GetSingleAsync*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetSingleAsync
+  name: GetSingleAsync
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetSingleAsync
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetSingleAsync
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetSingleAsync
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetSingleAsync
+- uid: System.Threading.Tasks.Task{{TEntity}}
+  commentId: T:System.Threading.Tasks.Task{`1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: System.Threading.Tasks.Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: System.Threading.Tasks.Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Repository.QueryRepository`3.GetByIdAsync*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetByIdAsync
+  name: GetByIdAsync
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetByIdAsync
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetByIdAsync
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetByIdAsync
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetByIdAsync
+- uid: '{TPrimaryKey}'
+  commentId: '!:TPrimaryKey'
+  definition: TPrimaryKey
+  name: TPrimaryKey
+  nameWithType: TPrimaryKey
+  fullName: TPrimaryKey
+- uid: TPrimaryKey
+  name: TPrimaryKey
+  nameWithType: TPrimaryKey
+  fullName: TPrimaryKey
+- uid: Mix.Heart.Repository.QueryRepository`3.MaxAsync*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.MaxAsync
+  name: MaxAsync
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.MaxAsync
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.MaxAsync
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).MaxAsync
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).MaxAsync
+- uid: System.Func{{TEntity},System.Int32}
+  commentId: T:System.Func{`1,System.Int32}
+  parent: System
+  definition: System.Func`2
+  name: Func<TEntity, Int32>
+  nameWithType: Func<TEntity, Int32>
+  fullName: System.Func<TEntity, System.Int32>
+  nameWithType.vb: Func(Of TEntity, Int32)
+  fullName.vb: System.Func(Of TEntity, System.Int32)
+  name.vb: Func(Of TEntity, Int32)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.Heart.Repository.QueryRepository`3.GetFirstAsync*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetFirstAsync
+  name: GetFirstAsync
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetFirstAsync
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetFirstAsync
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetFirstAsync
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetFirstAsync
+- uid: Mix.Heart.Repository.QueryRepository`3.GetSingle*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetSingle
+  name: GetSingle
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetSingle
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetSingle
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetSingle
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetSingle
+- uid: Mix.Heart.Repository.QueryRepository`3.GetById*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetById
+  name: GetById
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetById
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetById
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetById
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetById
+- uid: Mix.Heart.Repository.QueryRepository`3.Max*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.Max
+  name: Max
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.Max
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.Max
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).Max
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).Max
+- uid: Mix.Heart.Repository.QueryRepository`3.GetFirst*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetFirst
+  name: GetFirst
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetFirst
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetFirst
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetFirst
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetFirst
+- uid: Mix.Heart.Repository.QueryRepository`3.ToPagingEntityAsync*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.ToPagingEntityAsync
+  name: ToPagingEntityAsync
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.ToPagingEntityAsync
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.ToPagingEntityAsync
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).ToPagingEntityAsync
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).ToPagingEntityAsync
+- uid: Mix.Heart.Repository.QueryRepository`3.GetLambda*
+  commentId: Overload:Mix.Heart.Repository.QueryRepository`3.GetLambda
+  name: GetLambda
+  nameWithType: QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetLambda
+  fullName: Mix.Heart.Repository.QueryRepository<TDbContext, TEntity, TPrimaryKey>.GetLambda
+  nameWithType.vb: QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetLambda
+  fullName.vb: Mix.Heart.Repository.QueryRepository(Of TDbContext, TEntity, TPrimaryKey).GetLambda
+- uid: System.Linq.Expressions.LambdaExpression
+  commentId: T:System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression

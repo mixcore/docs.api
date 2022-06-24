@@ -1,0 +1,1876 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Common.Controllers.SharedApiController
+  commentId: T:Mix.Common.Controllers.SharedApiController
+  id: SharedApiController
+  parent: Mix.Common.Controllers
+  children:
+  - Mix.Common.Controllers.SharedApiController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider,Mix.Lib.Services.MixIdentityService,Mix.Shared.Services.AuthConfigService,Mix.Lib.Services.CultureService,MixCmsContext,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  - Mix.Common.Controllers.SharedApiController._context
+  - Mix.Common.Controllers.SharedApiController._cultureService
+  - Mix.Common.Controllers.SharedApiController._uow
+  - Mix.Common.Controllers.SharedApiController.checkConfig(DateTime)
+  - Mix.Common.Controllers.SharedApiController.ClearCache
+  - Mix.Common.Controllers.SharedApiController.DecryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  - Mix.Common.Controllers.SharedApiController.EncryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  - Mix.Common.Controllers.SharedApiController.GetAllSettingsAsync
+  - Mix.Common.Controllers.SharedApiController.GetGlobalSettings
+  - Mix.Common.Controllers.SharedApiController.GetMixConfigurations(System.String)
+  - Mix.Common.Controllers.SharedApiController.GetMixTranslation(System.String)
+  - Mix.Common.Controllers.SharedApiController.GetRoutes
+  - Mix.Common.Controllers.SharedApiController.GetSettings(Mix.Shared.Models.GlobalConfigurations)
+  - Mix.Common.Controllers.SharedApiController.GetSettings(System.String)
+  - Mix.Common.Controllers.SharedApiController.GetSharedSettings
+  - Mix.Common.Controllers.SharedApiController.GetSharedSettingsAsync(System.String)
+  - Mix.Common.Controllers.SharedApiController.LoadData(System.String)
+  - Mix.Common.Controllers.SharedApiController.Ping
+  - Mix.Common.Controllers.SharedApiController.SaveSettings(System.String,JObject)
+  - Mix.Common.Controllers.SharedApiController.StopApplication
+  langs:
+  - csharp
+  - vb
+  name: SharedApiController
+  nameWithType: SharedApiController
+  fullName: Mix.Common.Controllers.SharedApiController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SharedApiController
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 19
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [Route("api/v2/rest/shared")]
+
+      [ApiController]
+
+      public class SharedApiController : MixApiControllerBase
+    content.vb: >-
+      <Route("api/v2/rest/shared")>
+
+      <ApiController>
+
+      Public Class SharedApiController
+          Inherits MixApiControllerBase
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/shared
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Common.Controllers.SharedApiController._uow
+  commentId: F:Mix.Common.Controllers.SharedApiController._uow
+  id: _uow
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: _uow
+  nameWithType: SharedApiController._uow
+  fullName: Mix.Common.Controllers.SharedApiController._uow
+  type: Field
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _uow
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 24
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: protected UnitOfWorkInfo _uow
+    return:
+      type: UnitOfWorkInfo
+    content.vb: Protected _uow As UnitOfWorkInfo
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.Common.Controllers.SharedApiController._context
+  commentId: F:Mix.Common.Controllers.SharedApiController._context
+  id: _context
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: _context
+  nameWithType: SharedApiController._context
+  fullName: Mix.Common.Controllers.SharedApiController._context
+  type: Field
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _context
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 25
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: protected readonly MixCmsContext _context
+    return:
+      type: MixCmsContext
+    content.vb: Protected ReadOnly _context As MixCmsContext
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Common.Controllers.SharedApiController._cultureService
+  commentId: F:Mix.Common.Controllers.SharedApiController._cultureService
+  id: _cultureService
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: _cultureService
+  nameWithType: SharedApiController._cultureService
+  fullName: Mix.Common.Controllers.SharedApiController._cultureService
+  type: Field
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _cultureService
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 28
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: protected readonly CultureService _cultureService
+    return:
+      type: Mix.Lib.Services.CultureService
+    content.vb: Protected ReadOnly _cultureService As CultureService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Common.Controllers.SharedApiController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider,Mix.Lib.Services.MixIdentityService,Mix.Shared.Services.AuthConfigService,Mix.Lib.Services.CultureService,MixCmsContext,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  commentId: M:Mix.Common.Controllers.SharedApiController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider,Mix.Lib.Services.MixIdentityService,Mix.Shared.Services.AuthConfigService,Mix.Lib.Services.CultureService,MixCmsContext,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  id: '#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider,Mix.Lib.Services.MixIdentityService,Mix.Shared.Services.AuthConfigService,Mix.Lib.Services.CultureService,MixCmsContext,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Microsoft.Extensions.Hosting.IHostApplicationLifetime)'
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: SharedApiController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, IActionDescriptorCollectionProvider, MixIdentityService, AuthConfigService, CultureService, MixCmsContext, IQueueService<MessageQueueModel>, IHostApplicationLifetime)
+  nameWithType: SharedApiController.SharedApiController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, IActionDescriptorCollectionProvider, MixIdentityService, AuthConfigService, CultureService, MixCmsContext, IQueueService<MessageQueueModel>, IHostApplicationLifetime)
+  fullName: Mix.Common.Controllers.SharedApiController.SharedApiController(IHttpContextAccessor, IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider, Mix.Lib.Services.MixIdentityService, Mix.Shared.Services.AuthConfigService, Mix.Lib.Services.CultureService, MixCmsContext, Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 32
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: public SharedApiController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, IActionDescriptorCollectionProvider routeProvider, MixIdentityService mixIdentityService, AuthConfigService authConfigService, CultureService cultureService, MixCmsContext context, IQueueService<MessageQueueModel> queueService, IHostApplicationLifetime applicationLifetime)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: translator
+      type: Mix.Lib.Services.TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: routeProvider
+      type: Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider
+    - id: mixIdentityService
+      type: Mix.Lib.Services.MixIdentityService
+    - id: authConfigService
+      type: Mix.Shared.Services.AuthConfigService
+    - id: cultureService
+      type: Mix.Lib.Services.CultureService
+    - id: context
+      type: MixCmsContext
+    - id: queueService
+      type: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+    - id: applicationLifetime
+      type: Microsoft.Extensions.Hosting.IHostApplicationLifetime
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), routeProvider As IActionDescriptorCollectionProvider, mixIdentityService As MixIdentityService, authConfigService As AuthConfigService, cultureService As CultureService, context As MixCmsContext, queueService As IQueueService(Of MessageQueueModel), applicationLifetime As IHostApplicationLifetime)
+  overload: Mix.Common.Controllers.SharedApiController.#ctor*
+  nameWithType.vb: SharedApiController.SharedApiController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), IActionDescriptorCollectionProvider, MixIdentityService, AuthConfigService, CultureService, MixCmsContext, IQueueService(Of MessageQueueModel), IHostApplicationLifetime)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Common.Controllers.SharedApiController.SharedApiController(IHttpContextAccessor, IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider, Mix.Lib.Services.MixIdentityService, Mix.Shared.Services.AuthConfigService, Mix.Lib.Services.CultureService, MixCmsContext, Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel), Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  name.vb: SharedApiController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), IActionDescriptorCollectionProvider, MixIdentityService, AuthConfigService, CultureService, MixCmsContext, IQueueService(Of MessageQueueModel), IHostApplicationLifetime)
+- uid: Mix.Common.Controllers.SharedApiController.EncryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  commentId: M:Mix.Common.Controllers.SharedApiController.EncryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  id: EncryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: EncryptMessage(CryptoMessageDto)
+  nameWithType: SharedApiController.EncryptMessage(CryptoMessageDto)
+  fullName: Mix.Common.Controllers.SharedApiController.EncryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: EncryptMessage
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 57
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("encrypt-message")]
+
+      public ActionResult<string> EncryptMessage(CryptoMessageDto encryptMessage)
+    parameters:
+    - id: encryptMessage
+      type: Mix.Common.Domain.Dtos.CryptoMessageDto
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{System.String}
+    content.vb: >-
+      <HttpPost>
+
+      <Route("encrypt-message")>
+
+      Public Function EncryptMessage(encryptMessage As CryptoMessageDto) As ActionResult(Of String)
+  overload: Mix.Common.Controllers.SharedApiController.EncryptMessage*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: encrypt-message
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.DecryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  commentId: M:Mix.Common.Controllers.SharedApiController.DecryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  id: DecryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: DecryptMessage(CryptoMessageDto)
+  nameWithType: SharedApiController.DecryptMessage(CryptoMessageDto)
+  fullName: Mix.Common.Controllers.SharedApiController.DecryptMessage(Mix.Common.Domain.Dtos.CryptoMessageDto)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DecryptMessage
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 70
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("decrypt-message")]
+
+      public ActionResult<string> DecryptMessage(CryptoMessageDto encryptMessage)
+    parameters:
+    - id: encryptMessage
+      type: Mix.Common.Domain.Dtos.CryptoMessageDto
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{System.String}
+    content.vb: >-
+      <HttpPost>
+
+      <Route("decrypt-message")>
+
+      Public Function DecryptMessage(encryptMessage As CryptoMessageDto) As ActionResult(Of String)
+  overload: Mix.Common.Controllers.SharedApiController.DecryptMessage*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: decrypt-message
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.StopApplication
+  commentId: M:Mix.Common.Controllers.SharedApiController.StopApplication
+  id: StopApplication
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: StopApplication()
+  nameWithType: SharedApiController.StopApplication()
+  fullName: Mix.Common.Controllers.SharedApiController.StopApplication()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: StopApplication
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 79
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("stop-application")]
+
+      public ActionResult StopApplication()
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("stop-application")>
+
+      Public Function StopApplication As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.StopApplication*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: stop-application
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetRoutes
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetRoutes
+  id: GetRoutes
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetRoutes()
+  nameWithType: SharedApiController.GetRoutes()
+  fullName: Mix.Common.Controllers.SharedApiController.GetRoutes()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetRoutes
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 87
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("routes")]
+
+      public ActionResult GetRoutes()
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("routes")>
+
+      Public Function GetRoutes As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.GetRoutes*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: routes
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.ClearCache
+  commentId: M:Mix.Common.Controllers.SharedApiController.ClearCache
+  id: ClearCache
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: ClearCache()
+  nameWithType: SharedApiController.ClearCache()
+  fullName: Mix.Common.Controllers.SharedApiController.ClearCache()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ClearCache
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 108
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("clear-cache")]
+
+      public ActionResult ClearCache()
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("clear-cache")>
+
+      Public Function ClearCache As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.ClearCache*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: clear-cache
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetMixConfigurations(System.String)
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetMixConfigurations(System.String)
+  id: GetMixConfigurations(System.String)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetMixConfigurations(String)
+  nameWithType: SharedApiController.GetMixConfigurations(String)
+  fullName: Mix.Common.Controllers.SharedApiController.GetMixConfigurations(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetMixConfigurations
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 117
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("mix-configuration/{lang}")]
+
+      public ActionResult GetMixConfigurations(string lang)
+    parameters:
+    - id: lang
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("mix-configuration/{lang}")>
+
+      Public Function GetMixConfigurations(lang As String) As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.GetMixConfigurations*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: mix-configuration/{lang}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetSettings(System.String)
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetSettings(System.String)
+  id: GetSettings(System.String)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetSettings(String)
+  nameWithType: SharedApiController.GetSettings(String)
+  fullName: Mix.Common.Controllers.SharedApiController.GetSettings(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetSettings
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 124
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("settings/{name}")]
+
+      public ActionResult GetSettings(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("settings/{name}")>
+
+      Public Function GetSettings(name As String) As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.GetSettings*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: settings/{name}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.SaveSettings(System.String,JObject)
+  commentId: M:Mix.Common.Controllers.SharedApiController.SaveSettings(System.String,JObject)
+  id: SaveSettings(System.String,JObject)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: SaveSettings(String, JObject)
+  nameWithType: SharedApiController.SaveSettings(String, JObject)
+  fullName: Mix.Common.Controllers.SharedApiController.SaveSettings(System.String, JObject)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveSettings
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 143
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("settings/{name}")]
+
+      public ActionResult SaveSettings(string name, [FromBody] JObject settings)
+    parameters:
+    - id: name
+      type: System.String
+    - id: settings
+      type: JObject
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpPost>
+
+      <Route("settings/{name}")>
+
+      Public Function SaveSettings(name As String, settings As JObject) As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.SaveSettings*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: settings/{name}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetGlobalSettings
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetGlobalSettings
+  id: GetGlobalSettings
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetGlobalSettings()
+  nameWithType: SharedApiController.GetGlobalSettings()
+  fullName: Mix.Common.Controllers.SharedApiController.GetGlobalSettings()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetGlobalSettings
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 166
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("global-settings")]
+
+      public ActionResult GetGlobalSettings()
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("global-settings")>
+
+      Public Function GetGlobalSettings As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.GetGlobalSettings*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: global-settings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetSettings(Mix.Shared.Models.GlobalConfigurations)
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetSettings(Mix.Shared.Models.GlobalConfigurations)
+  id: GetSettings(Mix.Shared.Models.GlobalConfigurations)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetSettings(GlobalConfigurations)
+  nameWithType: SharedApiController.GetSettings(GlobalConfigurations)
+  fullName: Mix.Common.Controllers.SharedApiController.GetSettings(Mix.Shared.Models.GlobalConfigurations)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetSettings
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 173
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("global-settings")]
+
+      public ActionResult GetSettings([FromBody] GlobalConfigurations settings)
+    parameters:
+    - id: settings
+      type: Mix.Shared.Models.GlobalConfigurations
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpPost>
+
+      <Route("global-settings")>
+
+      Public Function GetSettings(settings As GlobalConfigurations) As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.GetSettings*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: global-settings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetMixTranslation(System.String)
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetMixTranslation(System.String)
+  id: GetMixTranslation(System.String)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetMixTranslation(String)
+  nameWithType: SharedApiController.GetMixTranslation(String)
+  fullName: Mix.Common.Controllers.SharedApiController.GetMixTranslation(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetMixTranslation
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 182
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("mix-translation/{lang}")]
+
+      public ActionResult GetMixTranslation(string lang)
+    parameters:
+    - id: lang
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("mix-translation/{lang}")>
+
+      Public Function GetMixTranslation(lang As String) As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.GetMixTranslation*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: mix-translation/{lang}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.Ping
+  commentId: M:Mix.Common.Controllers.SharedApiController.Ping
+  id: Ping
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: Ping()
+  nameWithType: SharedApiController.Ping()
+  fullName: Mix.Common.Controllers.SharedApiController.Ping()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Ping
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 189
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("ping")]
+
+      public ActionResult Ping()
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult
+    content.vb: >-
+      <HttpGet>
+
+      <Route("ping")>
+
+      Public Function Ping As ActionResult
+  overload: Mix.Common.Controllers.SharedApiController.Ping*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ping
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetSharedSettings
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetSharedSettings
+  id: GetSharedSettings
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetSharedSettings()
+  nameWithType: SharedApiController.GetSharedSettings()
+  fullName: Mix.Common.Controllers.SharedApiController.GetSharedSettings()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetSharedSettings
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 196
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("get-global-settings")]
+
+      public ActionResult<GlobalSettings> GetSharedSettings()
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{Mix.Common.Models.GlobalSettings}
+    content.vb: >-
+      <HttpGet>
+
+      <Route("get-global-settings")>
+
+      Public Function GetSharedSettings As ActionResult(Of GlobalSettings)
+  overload: Mix.Common.Controllers.SharedApiController.GetSharedSettings*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: get-global-settings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetAllSettingsAsync
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetAllSettingsAsync
+  id: GetAllSettingsAsync
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetAllSettingsAsync()
+  nameWithType: SharedApiController.GetAllSettingsAsync()
+  fullName: Mix.Common.Controllers.SharedApiController.GetAllSettingsAsync()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetAllSettingsAsync
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 204
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("get-all-settings")]
+
+      public Task<ActionResult<AllSettingModel>> GetAllSettingsAsync()
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Common.Models.AllSettingModel}}
+    content.vb: >-
+      <HttpGet>
+
+      <Route("get-all-settings")>
+
+      Public Function GetAllSettingsAsync As Task(Of ActionResult(Of AllSettingModel))
+  overload: Mix.Common.Controllers.SharedApiController.GetAllSettingsAsync*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: get-all-settings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.GetSharedSettingsAsync(System.String)
+  commentId: M:Mix.Common.Controllers.SharedApiController.GetSharedSettingsAsync(System.String)
+  id: GetSharedSettingsAsync(System.String)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: GetSharedSettingsAsync(String)
+  nameWithType: SharedApiController.GetSharedSettingsAsync(String)
+  fullName: Mix.Common.Controllers.SharedApiController.GetSharedSettingsAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetSharedSettingsAsync
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 212
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("get-shared-settings/{culture}")]
+
+      public Task<ActionResult<AllSettingModel>> GetSharedSettingsAsync(string culture)
+    parameters:
+    - id: culture
+      type: System.String
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Common.Models.AllSettingModel}}
+    content.vb: >-
+      <HttpGet>
+
+      <Route("get-shared-settings/{culture}")>
+
+      Public Function GetSharedSettingsAsync(culture As String) As Task(Of ActionResult(Of AllSettingModel))
+  overload: Mix.Common.Controllers.SharedApiController.GetSharedSettingsAsync*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: get-shared-settings/{culture}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.checkConfig(DateTime)
+  commentId: M:Mix.Common.Controllers.SharedApiController.checkConfig(DateTime)
+  id: checkConfig(DateTime)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: checkConfig(DateTime)
+  nameWithType: SharedApiController.checkConfig(DateTime)
+  fullName: Mix.Common.Controllers.SharedApiController.checkConfig(DateTime)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: checkConfig
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 221
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("check-config/{lastSync}")]
+
+      public ActionResult<JObject> checkConfig(DateTime lastSync)
+    parameters:
+    - id: lastSync
+      type: DateTime
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{JObject}
+    content.vb: >-
+      <HttpGet>
+
+      <Route("check-config/{lastSync}")>
+
+      Public Function checkConfig(lastSync As DateTime) As ActionResult(Of JObject)
+  overload: Mix.Common.Controllers.SharedApiController.checkConfig*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: check-config/{lastSync}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Common.Controllers.SharedApiController.LoadData(System.String)
+  commentId: M:Mix.Common.Controllers.SharedApiController.LoadData(System.String)
+  id: LoadData(System.String)
+  parent: Mix.Common.Controllers.SharedApiController
+  langs:
+  - csharp
+  - vb
+  name: LoadData(String)
+  nameWithType: SharedApiController.LoadData(String)
+  fullName: Mix.Common.Controllers.SharedApiController.LoadData(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.common/Controllers/SharedApiController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadData
+    path: ../../mix.core/src/modules/mix.common/Controllers/SharedApiController.cs
+    startLine: 236
+  assemblies:
+  - mix.common
+  namespace: Mix.Common.Controllers
+  syntax:
+    content: >-
+      [AllowAnonymous]
+
+      [HttpGet]
+
+      [Route("json-data/{name}")]
+
+      public ActionResult<JObject> LoadData(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{JObject}
+    content.vb: >-
+      <AllowAnonymous>
+
+      <HttpGet>
+
+      <Route("json-data/{name}")>
+
+      Public Function LoadData(name As String) As ActionResult(Of JObject)
+  overload: Mix.Common.Controllers.SharedApiController.LoadData*
+  attributes:
+  - type: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute
+    ctor: Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: json-data/{name}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Common.Controllers
+  commentId: N:Mix.Common.Controllers
+  name: Mix.Common.Controllers
+  nameWithType: Mix.Common.Controllers
+  fullName: Mix.Common.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: Mix.Lib.Services.CultureService
+  commentId: T:Mix.Lib.Services.CultureService
+  parent: Mix.Lib.Services
+  name: CultureService
+  nameWithType: CultureService
+  fullName: Mix.Lib.Services.CultureService
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: Mix.Common.Controllers.SharedApiController.#ctor*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.#ctor
+  name: SharedApiController
+  nameWithType: SharedApiController.SharedApiController
+  fullName: Mix.Common.Controllers.SharedApiController.SharedApiController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Lib.Services.TranslatorService
+  commentId: T:Mix.Lib.Services.TranslatorService
+  parent: Mix.Lib.Services
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: Mix.Lib.Services.TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider
+  commentId: T:Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider
+  parent: Microsoft.AspNetCore.Mvc.Infrastructure
+  isExternal: true
+  name: IActionDescriptorCollectionProvider
+  nameWithType: IActionDescriptorCollectionProvider
+  fullName: Microsoft.AspNetCore.Mvc.Infrastructure.IActionDescriptorCollectionProvider
+- uid: Mix.Lib.Services.MixIdentityService
+  commentId: T:Mix.Lib.Services.MixIdentityService
+  parent: Mix.Lib.Services
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService
+- uid: Mix.Shared.Services.AuthConfigService
+  commentId: T:Mix.Shared.Services.AuthConfigService
+  parent: Mix.Shared.Services
+  name: AuthConfigService
+  nameWithType: AuthConfigService
+  fullName: Mix.Shared.Services.AuthConfigService
+- uid: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  commentId: T:Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  parent: Mix.Queue.Interfaces
+  definition: Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Hosting.IHostApplicationLifetime
+  commentId: T:Microsoft.Extensions.Hosting.IHostApplicationLifetime
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  name: IHostApplicationLifetime
+  nameWithType: IHostApplicationLifetime
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationLifetime
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.Infrastructure
+  commentId: N:Microsoft.AspNetCore.Mvc.Infrastructure
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc.Infrastructure
+  nameWithType: Microsoft.AspNetCore.Mvc.Infrastructure
+  fullName: Microsoft.AspNetCore.Mvc.Infrastructure
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: Mix.Queue.Interfaces.IQueueService`1
+  commentId: T:Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<T>
+  nameWithType: IQueueService<T>
+  fullName: Mix.Queue.Interfaces.IQueueService<T>
+  nameWithType.vb: IQueueService(Of T)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T)
+  name.vb: IQueueService(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces
+  commentId: N:Mix.Queue.Interfaces
+  name: Mix.Queue.Interfaces
+  nameWithType: Mix.Queue.Interfaces
+  fullName: Mix.Queue.Interfaces
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+- uid: Mix.Common.Controllers.SharedApiController.EncryptMessage*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.EncryptMessage
+  name: EncryptMessage
+  nameWithType: SharedApiController.EncryptMessage
+  fullName: Mix.Common.Controllers.SharedApiController.EncryptMessage
+- uid: Mix.Common.Domain.Dtos.CryptoMessageDto
+  commentId: T:Mix.Common.Domain.Dtos.CryptoMessageDto
+  parent: Mix.Common.Domain.Dtos
+  name: CryptoMessageDto
+  nameWithType: CryptoMessageDto
+  fullName: Mix.Common.Domain.Dtos.CryptoMessageDto
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{System.String}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{System.String}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<String>
+  nameWithType: ActionResult<String>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<System.String>
+  nameWithType.vb: ActionResult(Of String)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of System.String)
+  name.vb: ActionResult(Of String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Common.Domain.Dtos
+  commentId: N:Mix.Common.Domain.Dtos
+  name: Mix.Common.Domain.Dtos
+  nameWithType: Mix.Common.Domain.Dtos
+  fullName: Mix.Common.Domain.Dtos
+- uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult`1
+  isExternal: true
+  name: ActionResult<TValue>
+  nameWithType: ActionResult<TValue>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<TValue>
+  nameWithType.vb: ActionResult(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of TValue)
+  name.vb: ActionResult(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: Mix.Common.Controllers.SharedApiController.DecryptMessage*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.DecryptMessage
+  name: DecryptMessage
+  nameWithType: SharedApiController.DecryptMessage
+  fullName: Mix.Common.Controllers.SharedApiController.DecryptMessage
+- uid: Mix.Common.Controllers.SharedApiController.StopApplication*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.StopApplication
+  name: StopApplication
+  nameWithType: SharedApiController.StopApplication
+  fullName: Mix.Common.Controllers.SharedApiController.StopApplication
+- uid: Microsoft.AspNetCore.Mvc.ActionResult
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: ActionResult
+  nameWithType: ActionResult
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult
+- uid: Mix.Common.Controllers.SharedApiController.GetRoutes*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.GetRoutes
+  name: GetRoutes
+  nameWithType: SharedApiController.GetRoutes
+  fullName: Mix.Common.Controllers.SharedApiController.GetRoutes
+- uid: Mix.Common.Controllers.SharedApiController.ClearCache*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.ClearCache
+  name: ClearCache
+  nameWithType: SharedApiController.ClearCache
+  fullName: Mix.Common.Controllers.SharedApiController.ClearCache
+- uid: Mix.Common.Controllers.SharedApiController.GetMixConfigurations*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.GetMixConfigurations
+  name: GetMixConfigurations
+  nameWithType: SharedApiController.GetMixConfigurations
+  fullName: Mix.Common.Controllers.SharedApiController.GetMixConfigurations
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Common.Controllers.SharedApiController.GetSettings*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.GetSettings
+  name: GetSettings
+  nameWithType: SharedApiController.GetSettings
+  fullName: Mix.Common.Controllers.SharedApiController.GetSettings
+- uid: Mix.Common.Controllers.SharedApiController.SaveSettings*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.SaveSettings
+  name: SaveSettings
+  nameWithType: SharedApiController.SaveSettings
+  fullName: Mix.Common.Controllers.SharedApiController.SaveSettings
+- uid: JObject
+  isExternal: true
+  name: JObject
+  nameWithType: JObject
+  fullName: JObject
+- uid: Mix.Common.Controllers.SharedApiController.GetGlobalSettings*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.GetGlobalSettings
+  name: GetGlobalSettings
+  nameWithType: SharedApiController.GetGlobalSettings
+  fullName: Mix.Common.Controllers.SharedApiController.GetGlobalSettings
+- uid: Mix.Shared.Models.GlobalConfigurations
+  commentId: T:Mix.Shared.Models.GlobalConfigurations
+  parent: Mix.Shared.Models
+  name: GlobalConfigurations
+  nameWithType: GlobalConfigurations
+  fullName: Mix.Shared.Models.GlobalConfigurations
+- uid: Mix.Shared.Models
+  commentId: N:Mix.Shared.Models
+  name: Mix.Shared.Models
+  nameWithType: Mix.Shared.Models
+  fullName: Mix.Shared.Models
+- uid: Mix.Common.Controllers.SharedApiController.GetMixTranslation*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.GetMixTranslation
+  name: GetMixTranslation
+  nameWithType: SharedApiController.GetMixTranslation
+  fullName: Mix.Common.Controllers.SharedApiController.GetMixTranslation
+- uid: Mix.Common.Controllers.SharedApiController.Ping*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.Ping
+  name: Ping
+  nameWithType: SharedApiController.Ping
+  fullName: Mix.Common.Controllers.SharedApiController.Ping
+- uid: Mix.Common.Controllers.SharedApiController.GetSharedSettings*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.GetSharedSettings
+  name: GetSharedSettings
+  nameWithType: SharedApiController.GetSharedSettings
+  fullName: Mix.Common.Controllers.SharedApiController.GetSharedSettings
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{Mix.Common.Models.GlobalSettings}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{Mix.Common.Models.GlobalSettings}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<GlobalSettings>
+  nameWithType: ActionResult<GlobalSettings>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<Mix.Common.Models.GlobalSettings>
+  nameWithType.vb: ActionResult(Of GlobalSettings)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of Mix.Common.Models.GlobalSettings)
+  name.vb: ActionResult(Of GlobalSettings)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Common.Models.GlobalSettings
+    name: GlobalSettings
+    nameWithType: GlobalSettings
+    fullName: Mix.Common.Models.GlobalSettings
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Common.Models.GlobalSettings
+    name: GlobalSettings
+    nameWithType: GlobalSettings
+    fullName: Mix.Common.Models.GlobalSettings
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Common.Controllers.SharedApiController.GetAllSettingsAsync*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.GetAllSettingsAsync
+  name: GetAllSettingsAsync
+  nameWithType: SharedApiController.GetAllSettingsAsync
+  fullName: Mix.Common.Controllers.SharedApiController.GetAllSettingsAsync
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Common.Models.AllSettingModel}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Common.Models.AllSettingModel}}'
+  definition: Task`1
+  name: Task<ActionResult<AllSettingModel>>
+  nameWithType: Task<ActionResult<AllSettingModel>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<Mix.Common.Models.AllSettingModel>>
+  nameWithType.vb: Task(Of ActionResult(Of AllSettingModel))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of Mix.Common.Models.AllSettingModel))
+  name.vb: Task(Of ActionResult(Of AllSettingModel))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Common.Models.AllSettingModel
+    name: AllSettingModel
+    nameWithType: AllSettingModel
+    fullName: Mix.Common.Models.AllSettingModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Common.Models.AllSettingModel
+    name: AllSettingModel
+    nameWithType: AllSettingModel
+    fullName: Mix.Common.Models.AllSettingModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Common.Controllers.SharedApiController.GetSharedSettingsAsync*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.GetSharedSettingsAsync
+  name: GetSharedSettingsAsync
+  nameWithType: SharedApiController.GetSharedSettingsAsync
+  fullName: Mix.Common.Controllers.SharedApiController.GetSharedSettingsAsync
+- uid: Mix.Common.Controllers.SharedApiController.checkConfig*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.checkConfig
+  name: checkConfig
+  nameWithType: SharedApiController.checkConfig
+  fullName: Mix.Common.Controllers.SharedApiController.checkConfig
+- uid: DateTime
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: DateTime
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{JObject}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{JObject}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<JObject>
+  nameWithType: ActionResult<JObject>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<JObject>
+  nameWithType.vb: ActionResult(Of JObject)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of JObject)
+  name.vb: ActionResult(Of JObject)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Common.Controllers.SharedApiController.LoadData*
+  commentId: Overload:Mix.Common.Controllers.SharedApiController.LoadData
+  name: LoadData
+  nameWithType: SharedApiController.LoadData
+  fullName: Mix.Common.Controllers.SharedApiController.LoadData

@@ -1,0 +1,902 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Tenancy.Domain.Services.ImportSiteService
+  commentId: T:Mix.Tenancy.Domain.Services.ImportSiteService
+  id: ImportSiteService
+  parent: Mix.Tenancy.Domain.Services
+  children:
+  - Mix.Tenancy.Domain.Services.ImportSiteService.#ctor(MixCmsContext,EntityRepository{MixCmsContext,MixConfiguration,System.Int32},EntityRepository{MixCmsContext,MixLanguage,System.Int32},EntityRepository{MixCmsContext,MixPost,System.Int32},EntityRepository{MixCmsContext,MixPage,System.Int32},EntityRepository{MixCmsContext,MixModule,System.Int32})
+  - Mix.Tenancy.Domain.Services.ImportSiteService.ImportAsync(Mix.Tenancy.Domain.ViewModels.TenantDataViewModel,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ImportSiteService
+  nameWithType: ImportSiteService
+  fullName: Mix.Tenancy.Domain.Services.ImportSiteService
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/Services/ImportSiteService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ImportSiteService
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/Services/ImportSiteService.cs
+    startLine: 4
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.Services
+  syntax:
+    content: public class ImportSiteService
+    content.vb: Public Class ImportSiteService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Tenancy.Domain.Services.ImportSiteService.#ctor(MixCmsContext,EntityRepository{MixCmsContext,MixConfiguration,System.Int32},EntityRepository{MixCmsContext,MixLanguage,System.Int32},EntityRepository{MixCmsContext,MixPost,System.Int32},EntityRepository{MixCmsContext,MixPage,System.Int32},EntityRepository{MixCmsContext,MixModule,System.Int32})
+  commentId: M:Mix.Tenancy.Domain.Services.ImportSiteService.#ctor(MixCmsContext,EntityRepository{MixCmsContext,MixConfiguration,System.Int32},EntityRepository{MixCmsContext,MixLanguage,System.Int32},EntityRepository{MixCmsContext,MixPost,System.Int32},EntityRepository{MixCmsContext,MixPage,System.Int32},EntityRepository{MixCmsContext,MixModule,System.Int32})
+  id: '#ctor(MixCmsContext,EntityRepository{MixCmsContext,MixConfiguration,System.Int32},EntityRepository{MixCmsContext,MixLanguage,System.Int32},EntityRepository{MixCmsContext,MixPost,System.Int32},EntityRepository{MixCmsContext,MixPage,System.Int32},EntityRepository{MixCmsContext,MixModule,System.Int32})'
+  parent: Mix.Tenancy.Domain.Services.ImportSiteService
+  langs:
+  - csharp
+  - vb
+  name: ImportSiteService(MixCmsContext, EntityRepository<MixCmsContext, MixConfiguration, Int32>, EntityRepository<MixCmsContext, MixLanguage, Int32>, EntityRepository<MixCmsContext, MixPost, Int32>, EntityRepository<MixCmsContext, MixPage, Int32>, EntityRepository<MixCmsContext, MixModule, Int32>)
+  nameWithType: ImportSiteService.ImportSiteService(MixCmsContext, EntityRepository<MixCmsContext, MixConfiguration, Int32>, EntityRepository<MixCmsContext, MixLanguage, Int32>, EntityRepository<MixCmsContext, MixPost, Int32>, EntityRepository<MixCmsContext, MixPage, Int32>, EntityRepository<MixCmsContext, MixModule, Int32>)
+  fullName: Mix.Tenancy.Domain.Services.ImportSiteService.ImportSiteService(MixCmsContext, EntityRepository<MixCmsContext, MixConfiguration, System.Int32>, EntityRepository<MixCmsContext, MixLanguage, System.Int32>, EntityRepository<MixCmsContext, MixPost, System.Int32>, EntityRepository<MixCmsContext, MixPage, System.Int32>, EntityRepository<MixCmsContext, MixModule, System.Int32>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/Services/ImportSiteService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/Services/ImportSiteService.cs
+    startLine: 21
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.Services
+  syntax:
+    content: public ImportSiteService(MixCmsContext dbContext, EntityRepository<MixCmsContext, MixConfiguration, int> configRepo, EntityRepository<MixCmsContext, MixLanguage, int> languageRepo, EntityRepository<MixCmsContext, MixPost, int> postRepo, EntityRepository<MixCmsContext, MixPage, int> pageRepo, EntityRepository<MixCmsContext, MixModule, int> moduleRepo)
+    parameters:
+    - id: dbContext
+      type: MixCmsContext
+    - id: configRepo
+      type: EntityRepository{MixCmsContext,MixConfiguration,System.Int32}
+    - id: languageRepo
+      type: EntityRepository{MixCmsContext,MixLanguage,System.Int32}
+    - id: postRepo
+      type: EntityRepository{MixCmsContext,MixPost,System.Int32}
+    - id: pageRepo
+      type: EntityRepository{MixCmsContext,MixPage,System.Int32}
+    - id: moduleRepo
+      type: EntityRepository{MixCmsContext,MixModule,System.Int32}
+    content.vb: Public Sub New(dbContext As MixCmsContext, configRepo As EntityRepository(Of MixCmsContext, MixConfiguration, Integer), languageRepo As EntityRepository(Of MixCmsContext, MixLanguage, Integer), postRepo As EntityRepository(Of MixCmsContext, MixPost, Integer), pageRepo As EntityRepository(Of MixCmsContext, MixPage, Integer), moduleRepo As EntityRepository(Of MixCmsContext, MixModule, Integer))
+  overload: Mix.Tenancy.Domain.Services.ImportSiteService.#ctor*
+  nameWithType.vb: ImportSiteService.ImportSiteService(MixCmsContext, EntityRepository(Of MixCmsContext, MixConfiguration, Int32), EntityRepository(Of MixCmsContext, MixLanguage, Int32), EntityRepository(Of MixCmsContext, MixPost, Int32), EntityRepository(Of MixCmsContext, MixPage, Int32), EntityRepository(Of MixCmsContext, MixModule, Int32))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Tenancy.Domain.Services.ImportSiteService.ImportSiteService(MixCmsContext, EntityRepository(Of MixCmsContext, MixConfiguration, System.Int32), EntityRepository(Of MixCmsContext, MixLanguage, System.Int32), EntityRepository(Of MixCmsContext, MixPost, System.Int32), EntityRepository(Of MixCmsContext, MixPage, System.Int32), EntityRepository(Of MixCmsContext, MixModule, System.Int32))
+  name.vb: ImportSiteService(MixCmsContext, EntityRepository(Of MixCmsContext, MixConfiguration, Int32), EntityRepository(Of MixCmsContext, MixLanguage, Int32), EntityRepository(Of MixCmsContext, MixPost, Int32), EntityRepository(Of MixCmsContext, MixPage, Int32), EntityRepository(Of MixCmsContext, MixModule, Int32))
+- uid: Mix.Tenancy.Domain.Services.ImportSiteService.ImportAsync(Mix.Tenancy.Domain.ViewModels.TenantDataViewModel,System.String)
+  commentId: M:Mix.Tenancy.Domain.Services.ImportSiteService.ImportAsync(Mix.Tenancy.Domain.ViewModels.TenantDataViewModel,System.String)
+  id: ImportAsync(Mix.Tenancy.Domain.ViewModels.TenantDataViewModel,System.String)
+  parent: Mix.Tenancy.Domain.Services.ImportSiteService
+  langs:
+  - csharp
+  - vb
+  name: ImportAsync(TenantDataViewModel, String)
+  nameWithType: ImportSiteService.ImportAsync(TenantDataViewModel, String)
+  fullName: Mix.Tenancy.Domain.Services.ImportSiteService.ImportAsync(Mix.Tenancy.Domain.ViewModels.TenantDataViewModel, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Domain/Services/ImportSiteService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ImportAsync
+    path: ../../mix.core/src/modules/mix.tenancy/Domain/Services/ImportSiteService.cs
+    startLine: 44
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Domain.Services
+  syntax:
+    content: public Task ImportAsync(TenantDataViewModel data, string destCulture)
+    parameters:
+    - id: data
+      type: Mix.Tenancy.Domain.ViewModels.TenantDataViewModel
+    - id: destCulture
+      type: System.String
+    return:
+      type: Task
+    content.vb: Public Function ImportAsync(data As TenantDataViewModel, destCulture As String) As Task
+  overload: Mix.Tenancy.Domain.Services.ImportSiteService.ImportAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Tenancy.Domain.Services
+  commentId: N:Mix.Tenancy.Domain.Services
+  name: Mix.Tenancy.Domain.Services
+  nameWithType: Mix.Tenancy.Domain.Services
+  fullName: Mix.Tenancy.Domain.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Tenancy.Domain.Services.ImportSiteService.#ctor*
+  commentId: Overload:Mix.Tenancy.Domain.Services.ImportSiteService.#ctor
+  name: ImportSiteService
+  nameWithType: ImportSiteService.ImportSiteService
+  fullName: Mix.Tenancy.Domain.Services.ImportSiteService.ImportSiteService
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: EntityRepository{MixCmsContext,MixConfiguration,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixConfiguration,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixConfiguration, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixConfiguration, Int32>
+  fullName: EntityRepository<MixCmsContext, MixConfiguration, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixConfiguration, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixConfiguration, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixConfiguration, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixConfiguration
+    name: MixConfiguration
+    nameWithType: MixConfiguration
+    fullName: MixConfiguration
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixConfiguration
+    name: MixConfiguration
+    nameWithType: MixConfiguration
+    fullName: MixConfiguration
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository{MixCmsContext,MixLanguage,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixLanguage,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixLanguage, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixLanguage, Int32>
+  fullName: EntityRepository<MixCmsContext, MixLanguage, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixLanguage, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixLanguage, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixLanguage, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixLanguage
+    name: MixLanguage
+    nameWithType: MixLanguage
+    fullName: MixLanguage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixLanguage
+    name: MixLanguage
+    nameWithType: MixLanguage
+    fullName: MixLanguage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository{MixCmsContext,MixPost,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixPost,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixPost, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixPost, Int32>
+  fullName: EntityRepository<MixCmsContext, MixPost, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixPost, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixPost, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixPost, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixPost
+    name: MixPost
+    nameWithType: MixPost
+    fullName: MixPost
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixPost
+    name: MixPost
+    nameWithType: MixPost
+    fullName: MixPost
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository{MixCmsContext,MixPage,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixPage,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixPage, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixPage, Int32>
+  fullName: EntityRepository<MixCmsContext, MixPage, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixPage, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixPage, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixPage, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixPage
+    name: MixPage
+    nameWithType: MixPage
+    fullName: MixPage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixPage
+    name: MixPage
+    nameWithType: MixPage
+    fullName: MixPage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository{MixCmsContext,MixModule,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixModule,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixModule, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixModule, Int32>
+  fullName: EntityRepository<MixCmsContext, MixModule, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixModule, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixModule, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixModule, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixModule
+    name: MixModule
+    nameWithType: MixModule
+    fullName: MixModule
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixModule
+    name: MixModule
+    nameWithType: MixModule
+    fullName: MixModule
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Domain.Services.ImportSiteService.ImportAsync*
+  commentId: Overload:Mix.Tenancy.Domain.Services.ImportSiteService.ImportAsync
+  name: ImportAsync
+  nameWithType: ImportSiteService.ImportAsync
+  fullName: Mix.Tenancy.Domain.Services.ImportSiteService.ImportAsync
+- uid: Mix.Tenancy.Domain.ViewModels.TenantDataViewModel
+  commentId: T:Mix.Tenancy.Domain.ViewModels.TenantDataViewModel
+  parent: Mix.Tenancy.Domain.ViewModels
+  name: TenantDataViewModel
+  nameWithType: TenantDataViewModel
+  fullName: Mix.Tenancy.Domain.ViewModels.TenantDataViewModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Tenancy.Domain.ViewModels
+  commentId: N:Mix.Tenancy.Domain.ViewModels
+  name: Mix.Tenancy.Domain.ViewModels
+  nameWithType: Mix.Tenancy.Domain.ViewModels
+  fullName: Mix.Tenancy.Domain.ViewModels

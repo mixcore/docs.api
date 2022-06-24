@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Queue.Interfaces.IQueueService`1
+  commentId: T:Mix.Queue.Interfaces.IQueueService`1
+  id: IQueueService`1
+  parent: Mix.Queue.Interfaces
+  children:
+  - Mix.Queue.Interfaces.IQueueService`1.Any(System.String)
+  - Mix.Queue.Interfaces.IQueueService`1.ConsumeQueue(System.Int32,System.String)
+  - Mix.Queue.Interfaces.IQueueService`1.PushMessage``1(``0,System.String,System.Boolean)
+  - Mix.Queue.Interfaces.IQueueService`1.PushQueue(`0)
+  - Mix.Queue.Interfaces.IQueueService`1.PushQueue(System.String,System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IQueueService<T>
+  nameWithType: IQueueService<T>
+  fullName: Mix.Queue.Interfaces.IQueueService<T>
+  type: Interface
+  source:
+    remote:
+      path: src/platform/mix.queue/Interfaces/IQueueService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IQueueService
+    path: ../../mix.core/src/platform/mix.queue/Interfaces/IQueueService.cs
+    startLine: 4
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Interfaces
+  syntax:
+    content: public interface IQueueService<T>
+    typeParameters:
+    - id: T
+    content.vb: Public Interface IQueueService(Of T)
+  nameWithType.vb: IQueueService(Of T)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T)
+  name.vb: IQueueService(Of T)
+- uid: Mix.Queue.Interfaces.IQueueService`1.PushQueue(`0)
+  commentId: M:Mix.Queue.Interfaces.IQueueService`1.PushQueue(`0)
+  id: PushQueue(`0)
+  parent: Mix.Queue.Interfaces.IQueueService`1
+  langs:
+  - csharp
+  - vb
+  name: PushQueue(T)
+  nameWithType: IQueueService<T>.PushQueue(T)
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.PushQueue(T)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Interfaces/IQueueService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PushQueue
+    path: ../../mix.core/src/platform/mix.queue/Interfaces/IQueueService.cs
+    startLine: 6
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Interfaces
+  syntax:
+    content: void PushQueue(T model)
+    parameters:
+    - id: model
+      type: '{T}'
+    content.vb: Sub PushQueue(model As T)
+  overload: Mix.Queue.Interfaces.IQueueService`1.PushQueue*
+  nameWithType.vb: IQueueService(Of T).PushQueue(T)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).PushQueue(T)
+- uid: Mix.Queue.Interfaces.IQueueService`1.PushQueue(System.String,System.String,System.Object)
+  commentId: M:Mix.Queue.Interfaces.IQueueService`1.PushQueue(System.String,System.String,System.Object)
+  id: PushQueue(System.String,System.String,System.Object)
+  parent: Mix.Queue.Interfaces.IQueueService`1
+  langs:
+  - csharp
+  - vb
+  name: PushQueue(String, String, Object)
+  nameWithType: IQueueService<T>.PushQueue(String, String, Object)
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.PushQueue(System.String, System.String, System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Interfaces/IQueueService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PushQueue
+    path: ../../mix.core/src/platform/mix.queue/Interfaces/IQueueService.cs
+    startLine: 7
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Interfaces
+  syntax:
+    content: void PushQueue(string topicId, string action, object data)
+    parameters:
+    - id: topicId
+      type: System.String
+    - id: action
+      type: System.String
+    - id: data
+      type: System.Object
+    content.vb: Sub PushQueue(topicId As String, action As String, data As Object)
+  overload: Mix.Queue.Interfaces.IQueueService`1.PushQueue*
+  nameWithType.vb: IQueueService(Of T).PushQueue(String, String, Object)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).PushQueue(System.String, System.String, System.Object)
+- uid: Mix.Queue.Interfaces.IQueueService`1.ConsumeQueue(System.Int32,System.String)
+  commentId: M:Mix.Queue.Interfaces.IQueueService`1.ConsumeQueue(System.Int32,System.String)
+  id: ConsumeQueue(System.Int32,System.String)
+  parent: Mix.Queue.Interfaces.IQueueService`1
+  langs:
+  - csharp
+  - vb
+  name: ConsumeQueue(Int32, String)
+  nameWithType: IQueueService<T>.ConsumeQueue(Int32, String)
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.ConsumeQueue(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Interfaces/IQueueService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ConsumeQueue
+    path: ../../mix.core/src/platform/mix.queue/Interfaces/IQueueService.cs
+    startLine: 9
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Interfaces
+  syntax:
+    content: IList<T> ConsumeQueue(int lenght, string topicId)
+    parameters:
+    - id: lenght
+      type: System.Int32
+    - id: topicId
+      type: System.String
+    return:
+      type: System.Collections.Generic.IList{{T}}
+    content.vb: Function ConsumeQueue(lenght As Integer, topicId As String) As IList(Of T)
+  overload: Mix.Queue.Interfaces.IQueueService`1.ConsumeQueue*
+  nameWithType.vb: IQueueService(Of T).ConsumeQueue(Int32, String)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).ConsumeQueue(System.Int32, System.String)
+- uid: Mix.Queue.Interfaces.IQueueService`1.Any(System.String)
+  commentId: M:Mix.Queue.Interfaces.IQueueService`1.Any(System.String)
+  id: Any(System.String)
+  parent: Mix.Queue.Interfaces.IQueueService`1
+  langs:
+  - csharp
+  - vb
+  name: Any(String)
+  nameWithType: IQueueService<T>.Any(String)
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.Any(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Interfaces/IQueueService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Any
+    path: ../../mix.core/src/platform/mix.queue/Interfaces/IQueueService.cs
+    startLine: 11
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Interfaces
+  syntax:
+    content: bool Any(string topicId)
+    parameters:
+    - id: topicId
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Any(topicId As String) As Boolean
+  overload: Mix.Queue.Interfaces.IQueueService`1.Any*
+  nameWithType.vb: IQueueService(Of T).Any(String)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).Any(System.String)
+- uid: Mix.Queue.Interfaces.IQueueService`1.PushMessage``1(``0,System.String,System.Boolean)
+  commentId: M:Mix.Queue.Interfaces.IQueueService`1.PushMessage``1(``0,System.String,System.Boolean)
+  id: PushMessage``1(``0,System.String,System.Boolean)
+  parent: Mix.Queue.Interfaces.IQueueService`1
+  langs:
+  - csharp
+  - vb
+  name: PushMessage<TModel>(TModel, String, Boolean)
+  nameWithType: IQueueService<T>.PushMessage<TModel>(TModel, String, Boolean)
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.PushMessage<TModel>(TModel, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Interfaces/IQueueService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PushMessage
+    path: ../../mix.core/src/platform/mix.queue/Interfaces/IQueueService.cs
+    startLine: 13
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Interfaces
+  syntax:
+    content: void PushMessage<TModel>(TModel data, string action, bool status)
+    parameters:
+    - id: data
+      type: '{TModel}'
+    - id: action
+      type: System.String
+    - id: status
+      type: System.Boolean
+    typeParameters:
+    - id: TModel
+    content.vb: Sub PushMessage(Of TModel)(data As TModel, action As String, status As Boolean)
+  overload: Mix.Queue.Interfaces.IQueueService`1.PushMessage*
+  nameWithType.vb: IQueueService(Of T).PushMessage(Of TModel)(TModel, String, Boolean)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).PushMessage(Of TModel)(TModel, System.String, System.Boolean)
+  name.vb: PushMessage(Of TModel)(TModel, String, Boolean)
+references:
+- uid: Mix.Queue.Interfaces
+  commentId: N:Mix.Queue.Interfaces
+  name: Mix.Queue.Interfaces
+  nameWithType: Mix.Queue.Interfaces
+  fullName: Mix.Queue.Interfaces
+- uid: Mix.Queue.Interfaces.IQueueService`1.PushQueue*
+  commentId: Overload:Mix.Queue.Interfaces.IQueueService`1.PushQueue
+  name: PushQueue
+  nameWithType: IQueueService<T>.PushQueue
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.PushQueue
+  nameWithType.vb: IQueueService(Of T).PushQueue
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).PushQueue
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Queue.Interfaces.IQueueService`1.ConsumeQueue*
+  commentId: Overload:Mix.Queue.Interfaces.IQueueService`1.ConsumeQueue
+  name: ConsumeQueue
+  nameWithType: IQueueService<T>.ConsumeQueue
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.ConsumeQueue
+  nameWithType.vb: IQueueService(Of T).ConsumeQueue
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).ConsumeQueue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Mix.Queue.Interfaces.IQueueService`1.Any*
+  commentId: Overload:Mix.Queue.Interfaces.IQueueService`1.Any
+  name: Any
+  nameWithType: IQueueService<T>.Any
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.Any
+  nameWithType.vb: IQueueService(Of T).Any
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).Any
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Queue.Interfaces.IQueueService`1.PushMessage*
+  commentId: Overload:Mix.Queue.Interfaces.IQueueService`1.PushMessage
+  name: PushMessage
+  nameWithType: IQueueService<T>.PushMessage
+  fullName: Mix.Queue.Interfaces.IQueueService<T>.PushMessage
+  nameWithType.vb: IQueueService(Of T).PushMessage
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T).PushMessage
+- uid: '{TModel}'
+  commentId: '!:TModel'
+  definition: TModel
+  name: TModel
+  nameWithType: TModel
+  fullName: TModel
+- uid: TModel
+  commentId: '!:TModel'
+  name: TModel
+  nameWithType: TModel
+  fullName: TModel

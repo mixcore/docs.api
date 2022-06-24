@@ -1,0 +1,464 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions
+  id: AuthServiceCollectionExtensions
+  parent: Microsoft.Extensions.DependencyInjection
+  children:
+  - Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.UseMixAuthorize(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  langs:
+  - csharp
+  - vb
+  name: AuthServiceCollectionExtensions
+  nameWithType: AuthServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Startup/AuthServiceCollectionExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AuthServiceCollectionExtensions
+    path: ../../mix.core/src/platform/mix.library/Startup/AuthServiceCollectionExtensions.cs
+    startLine: 18
+  assemblies:
+  - mix.library
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: public static class AuthServiceCollectionExtensions
+    content.vb: Public Module AuthServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddMixAuthorize``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMixAuthorize<TDbContext>(IServiceCollection)
+  nameWithType: AuthServiceCollectionExtensions.AddMixAuthorize<TDbContext>(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize<TDbContext>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Startup/AuthServiceCollectionExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AddMixAuthorize
+    path: ../../mix.core/src/platform/mix.library/Startup/AuthServiceCollectionExtensions.cs
+    startLine: 20
+  assemblies:
+  - mix.library
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: >-
+      public static IServiceCollection AddMixAuthorize<TDbContext>(this IServiceCollection services)
+          where TDbContext : DbContext
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    typeParameters:
+    - id: TDbContext
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddMixAuthorize(Of TDbContext As DbContext)(services As IServiceCollection) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize*
+  nameWithType.vb: AuthServiceCollectionExtensions.AddMixAuthorize(Of TDbContext)(IServiceCollection)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize(Of TDbContext)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddMixAuthorize(Of TDbContext)(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.UseMixAuthorize(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  commentId: M:Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.UseMixAuthorize(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  id: UseMixAuthorize(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseMixAuthorize(IApplicationBuilder)
+  nameWithType: AuthServiceCollectionExtensions.UseMixAuthorize(IApplicationBuilder)
+  fullName: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.UseMixAuthorize(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Startup/AuthServiceCollectionExtensions.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UseMixAuthorize
+    path: ../../mix.core/src/platform/mix.library/Startup/AuthServiceCollectionExtensions.cs
+    startLine: 109
+  assemblies:
+  - mix.library
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: public static IApplicationBuilder UseMixAuthorize(this IApplicationBuilder app)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    return:
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseMixAuthorize(app As IApplicationBuilder) As IApplicationBuilder
+  overload: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.UseMixAuthorize*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize
+  name: AddMixAuthorize
+  nameWithType: AuthServiceCollectionExtensions.AddMixAuthorize
+  fullName: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.AddMixAuthorize
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.UseMixAuthorize*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.UseMixAuthorize
+  name: UseMixAuthorize
+  nameWithType: AuthServiceCollectionExtensions.UseMixAuthorize
+  fullName: Microsoft.Extensions.DependencyInjection.AuthServiceCollectionExtensions.UseMixAuthorize
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder

@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+  commentId: T:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+  id: EntityBaseConfiguration`3
+  parent: Mix.Database.EntityConfigurations.Base
+  children:
+  - Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config
+  - Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  langs:
+  - csharp
+  - vb
+  name: EntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.database/EntityConfigurations/Base/EntityBaseConfiguration.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: EntityBaseConfiguration
+    path: ../../mix.core/src/platform/mix.database/EntityConfigurations/Base/EntityBaseConfiguration.cs
+    startLine: 4
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.EntityConfigurations.Base
+  syntax:
+    content: 'public abstract class EntityBaseConfiguration<T, TPrimaryKey, TConfig> : IEntityTypeConfiguration<T> where T : EntityBase<TPrimaryKey> where TPrimaryKey : IComparable where TConfig : IDatabaseConstants'
+    typeParameters:
+    - id: T
+    - id: TPrimaryKey
+    - id: TConfig
+    content.vb: >-
+      Public MustInherit Class EntityBaseConfiguration(Of T As EntityBase(Of TPrimaryKey), TPrimaryKey As IComparable, TConfig As IDatabaseConstants)
+          Inherits IEntityTypeConfiguration(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mix.Database.EntityConfigurations.Base.AssociationBaseConfiguration`3
+  - Mix.Database.EntityConfigurations.Base.MultilingualContentBaseConfiguration`3
+  - Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3
+  - Mix.Database.EntityConfigurations.MYSQL.Base.MySqlAssociationBaseConfiguration`2
+  - Mix.Database.EntityConfigurations.MYSQL.Base.MySqlEntityBaseConfiguration`2
+  - Mix.Database.EntityConfigurations.POSTGRES.Base.PostgresAssociationBaseConfiguration`2
+  - Mix.Database.EntityConfigurations.POSTGRES.Base.PostgresEntityBaseConfiguration`2
+  - Mix.Database.EntityConfigurations.SQLITE.Base.SqliteAssociationBaseConfiguration`2
+  - Mix.Database.EntityConfigurations.SQLITE.Base.SqliteEntityBaseConfiguration`2
+  - Mix.Database.EntityConfigurations.SQLSERVER.Base.SqlServerAssociationBaseConfiguration`2
+  - Mix.Database.EntityConfigurations.SQLSERVER.Base.SqlServerEntityBaseConfiguration`2
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+  name.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config
+  commentId: P:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config
+  id: Config
+  parent: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Config
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Config
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.database/EntityConfigurations/Base/EntityBaseConfiguration.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Config
+    path: ../../mix.core/src/platform/mix.database/EntityConfigurations/Base/EntityBaseConfiguration.cs
+    startLine: 9
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.EntityConfigurations.Base
+  syntax:
+    content: protected virtual IDatabaseConstants Config { get; set; }
+    parameters: []
+    return:
+      type: Mix.Database.EntityConfigurations.IDatabaseConstants
+    content.vb: Protected Overridable Property Config As IDatabaseConstants
+  overload: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config*
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Config
+  modifiers.csharp:
+  - protected
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Config
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  commentId: M:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  id: Configure(EntityTypeBuilder{`0})
+  parent: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+  langs:
+  - csharp
+  - vb
+  name: Configure(EntityTypeBuilder<T>)
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure(EntityTypeBuilder<T>)
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure(EntityTypeBuilder<T>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/EntityConfigurations/Base/EntityBaseConfiguration.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Configure
+    path: ../../mix.core/src/platform/mix.database/EntityConfigurations/Base/EntityBaseConfiguration.cs
+    startLine: 11
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.EntityConfigurations.Base
+  syntax:
+    content: public virtual void Configure(EntityTypeBuilder<T> builder)
+    parameters:
+    - id: builder
+      type: EntityTypeBuilder{{T}}
+    content.vb: Public Overridable Sub Configure(builder As EntityTypeBuilder(Of T))
+  overload: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure*
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure(EntityTypeBuilder(Of T))
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure(EntityTypeBuilder(Of T))
+  name.vb: Configure(EntityTypeBuilder(Of T))
+references:
+- uid: Mix.Database.EntityConfigurations.Base
+  commentId: N:Mix.Database.EntityConfigurations.Base
+  name: Mix.Database.EntityConfigurations.Base
+  nameWithType: Mix.Database.EntityConfigurations.Base
+  fullName: Mix.Database.EntityConfigurations.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config*
+  commentId: Overload:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config
+  name: Config
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Config
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Config
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Config
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Config
+- uid: Mix.Database.EntityConfigurations.IDatabaseConstants
+  commentId: T:Mix.Database.EntityConfigurations.IDatabaseConstants
+  parent: Mix.Database.EntityConfigurations
+  name: IDatabaseConstants
+  nameWithType: IDatabaseConstants
+  fullName: Mix.Database.EntityConfigurations.IDatabaseConstants
+- uid: Mix.Database.EntityConfigurations
+  commentId: N:Mix.Database.EntityConfigurations
+  name: Mix.Database.EntityConfigurations
+  nameWithType: Mix.Database.EntityConfigurations
+  fullName: Mix.Database.EntityConfigurations
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure*
+  commentId: Overload:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure
+  name: Configure
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure
+- uid: EntityTypeBuilder{{T}}
+  commentId: '!:EntityTypeBuilder{`0}'
+  definition: EntityTypeBuilder`1
+  name: EntityTypeBuilder<T>
+  nameWithType: EntityTypeBuilder<T>
+  fullName: EntityTypeBuilder<T>
+  nameWithType.vb: EntityTypeBuilder(Of T)
+  fullName.vb: EntityTypeBuilder(Of T)
+  name.vb: EntityTypeBuilder(Of T)
+  spec.csharp:
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityTypeBuilder`1
+  isExternal: true
+  name: EntityTypeBuilder<>
+  nameWithType: EntityTypeBuilder<>
+  fullName: EntityTypeBuilder<>
+  nameWithType.vb: EntityTypeBuilder(Of )
+  fullName.vb: EntityTypeBuilder(Of )
+  name.vb: EntityTypeBuilder(Of )
+  spec.csharp:
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

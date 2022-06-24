@@ -1,0 +1,427 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Services.MixPostService
+  commentId: T:Mix.Lib.Services.MixPostService
+  id: MixPostService
+  parent: Mix.Lib.Services
+  children:
+  - Mix.Lib.Services.MixPostService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  - Mix.Lib.Services.MixPostService.Dispose
+  - Mix.Lib.Services.MixPostService.Search``1(Mix.Lib.Models.Common.SearchPostQueryModel,System.String)
+  - Mix.Lib.Services.MixPostService.SetUnitOfWork(UnitOfWorkInfo)
+  langs:
+  - csharp
+  - vb
+  name: MixPostService
+  nameWithType: MixPostService
+  fullName: Mix.Lib.Services.MixPostService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixPostService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixPostService
+    path: ../../mix.core/src/platform/mix.library/Services/MixPostService.cs
+    startLine: 6
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: 'public class MixPostService : IDisposable'
+    content.vb: >-
+      Public Class MixPostService
+          Inherits IDisposable
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Services.MixPostService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  commentId: M:Mix.Lib.Services.MixPostService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  id: '#ctor(UnitOfWorkInfo{MixCmsContext})'
+  parent: Mix.Lib.Services.MixPostService
+  langs:
+  - csharp
+  - vb
+  name: MixPostService(UnitOfWorkInfo<MixCmsContext>)
+  nameWithType: MixPostService.MixPostService(UnitOfWorkInfo<MixCmsContext>)
+  fullName: Mix.Lib.Services.MixPostService.MixPostService(UnitOfWorkInfo<MixCmsContext>)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixPostService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Services/MixPostService.cs
+    startLine: 9
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public MixPostService(UnitOfWorkInfo<MixCmsContext> cmsUOW)
+    parameters:
+    - id: cmsUOW
+      type: UnitOfWorkInfo{MixCmsContext}
+    content.vb: Public Sub New(cmsUOW As UnitOfWorkInfo(Of MixCmsContext))
+  overload: Mix.Lib.Services.MixPostService.#ctor*
+  nameWithType.vb: MixPostService.MixPostService(UnitOfWorkInfo(Of MixCmsContext))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.MixPostService.MixPostService(UnitOfWorkInfo(Of MixCmsContext))
+  name.vb: MixPostService(UnitOfWorkInfo(Of MixCmsContext))
+- uid: Mix.Lib.Services.MixPostService.SetUnitOfWork(UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Services.MixPostService.SetUnitOfWork(UnitOfWorkInfo)
+  id: SetUnitOfWork(UnitOfWorkInfo)
+  parent: Mix.Lib.Services.MixPostService
+  langs:
+  - csharp
+  - vb
+  name: SetUnitOfWork(UnitOfWorkInfo)
+  nameWithType: MixPostService.SetUnitOfWork(UnitOfWorkInfo)
+  fullName: Mix.Lib.Services.MixPostService.SetUnitOfWork(UnitOfWorkInfo)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixPostService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SetUnitOfWork
+    path: ../../mix.core/src/platform/mix.library/Services/MixPostService.cs
+    startLine: 14
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public void SetUnitOfWork(UnitOfWorkInfo uow)
+    parameters:
+    - id: uow
+      type: UnitOfWorkInfo
+    content.vb: Public Sub SetUnitOfWork(uow As UnitOfWorkInfo)
+  overload: Mix.Lib.Services.MixPostService.SetUnitOfWork*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.MixPostService.Search``1(Mix.Lib.Models.Common.SearchPostQueryModel,System.String)
+  commentId: M:Mix.Lib.Services.MixPostService.Search``1(Mix.Lib.Models.Common.SearchPostQueryModel,System.String)
+  id: Search``1(Mix.Lib.Models.Common.SearchPostQueryModel,System.String)
+  parent: Mix.Lib.Services.MixPostService
+  langs:
+  - csharp
+  - vb
+  name: Search<TView>(SearchPostQueryModel, String)
+  nameWithType: MixPostService.Search<TView>(SearchPostQueryModel, String)
+  fullName: Mix.Lib.Services.MixPostService.Search<TView>(Mix.Lib.Models.Common.SearchPostQueryModel, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixPostService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Search
+    path: ../../mix.core/src/platform/mix.library/Services/MixPostService.cs
+    startLine: 22
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: >-
+      public Task<PagingResponseModel<TView>> Search<TView>(SearchPostQueryModel searchRequest, string culture = null)
+          where TView : ViewModelBase<MixCmsContext, MixPostContent, int, TView>
+    parameters:
+    - id: searchRequest
+      type: Mix.Lib.Models.Common.SearchPostQueryModel
+    - id: culture
+      type: System.String
+    typeParameters:
+    - id: TView
+    return:
+      type: Task{PagingResponseModel{{TView}}}
+    content.vb: Public Function Search(Of TView As ViewModelBase(Of MixCmsContext, MixPostContent, Integer, TView))(searchRequest As SearchPostQueryModel, culture As String = Nothing) As Task(Of PagingResponseModel(Of TView))
+  overload: Mix.Lib.Services.MixPostService.Search*
+  nameWithType.vb: MixPostService.Search(Of TView)(SearchPostQueryModel, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.MixPostService.Search(Of TView)(Mix.Lib.Models.Common.SearchPostQueryModel, System.String)
+  name.vb: Search(Of TView)(SearchPostQueryModel, String)
+- uid: Mix.Lib.Services.MixPostService.Dispose
+  commentId: M:Mix.Lib.Services.MixPostService.Dispose
+  id: Dispose
+  parent: Mix.Lib.Services.MixPostService
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MixPostService.Dispose()
+  fullName: Mix.Lib.Services.MixPostService.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/MixPostService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Dispose
+    path: ../../mix.core/src/platform/mix.library/Services/MixPostService.cs
+    startLine: 82
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Mix.Lib.Services.MixPostService.Dispose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Services.MixPostService.#ctor*
+  commentId: Overload:Mix.Lib.Services.MixPostService.#ctor
+  name: MixPostService
+  nameWithType: MixPostService.MixPostService
+  fullName: Mix.Lib.Services.MixPostService.MixPostService
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixPostService.SetUnitOfWork*
+  commentId: Overload:Mix.Lib.Services.MixPostService.SetUnitOfWork
+  name: SetUnitOfWork
+  nameWithType: MixPostService.SetUnitOfWork
+  fullName: Mix.Lib.Services.MixPostService.SetUnitOfWork
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: Mix.Lib.Services.MixPostService.Search*
+  commentId: Overload:Mix.Lib.Services.MixPostService.Search
+  name: Search
+  nameWithType: MixPostService.Search
+  fullName: Mix.Lib.Services.MixPostService.Search
+- uid: Mix.Lib.Models.Common.SearchPostQueryModel
+  commentId: T:Mix.Lib.Models.Common.SearchPostQueryModel
+  parent: Mix.Lib.Models.Common
+  name: SearchPostQueryModel
+  nameWithType: SearchPostQueryModel
+  fullName: Mix.Lib.Models.Common.SearchPostQueryModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{PagingResponseModel{{TView}}}
+  commentId: '!:Task{PagingResponseModel{`0}}'
+  definition: Task`1
+  name: Task<PagingResponseModel<TView>>
+  nameWithType: Task<PagingResponseModel<TView>>
+  fullName: Task<PagingResponseModel<TView>>
+  nameWithType.vb: Task(Of PagingResponseModel(Of TView))
+  fullName.vb: Task(Of PagingResponseModel(Of TView))
+  name.vb: Task(Of PagingResponseModel(Of TView))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PagingResponseModel`1
+    name: PagingResponseModel
+    nameWithType: PagingResponseModel
+    fullName: PagingResponseModel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PagingResponseModel`1
+    name: PagingResponseModel
+    nameWithType: PagingResponseModel
+    fullName: PagingResponseModel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Models.Common
+  commentId: N:Mix.Lib.Models.Common
+  name: Mix.Lib.Models.Common
+  nameWithType: Mix.Lib.Models.Common
+  fullName: Mix.Lib.Models.Common
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixPostService.Dispose*
+  commentId: Overload:Mix.Lib.Services.MixPostService.Dispose
+  name: Dispose
+  nameWithType: MixPostService.Dispose
+  fullName: Mix.Lib.Services.MixPostService.Dispose

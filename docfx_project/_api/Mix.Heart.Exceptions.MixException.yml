@@ -1,0 +1,954 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Heart.Exceptions.MixException
+  commentId: T:Mix.Heart.Exceptions.MixException
+  id: MixException
+  parent: Mix.Heart.Exceptions
+  children:
+  - Mix.Heart.Exceptions.MixException.#ctor
+  - Mix.Heart.Exceptions.MixException.#ctor(Mix.Heart.Enums.MixErrorStatus,System.Exception)
+  - Mix.Heart.Exceptions.MixException.#ctor(Mix.Heart.Enums.MixErrorStatus,System.Object[])
+  - Mix.Heart.Exceptions.MixException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - Mix.Heart.Exceptions.MixException.#ctor(System.String)
+  - Mix.Heart.Exceptions.MixException.#ctor(System.String,System.Exception)
+  - Mix.Heart.Exceptions.MixException.Errors
+  - Mix.Heart.Exceptions.MixException.Status
+  - Mix.Heart.Exceptions.MixException.Value
+  langs:
+  - csharp
+  - vb
+  name: MixException
+  nameWithType: MixException
+  fullName: Mix.Heart.Exceptions.MixException
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: MixException
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 8
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: 'public class MixException : Exception, ISerializable'
+    content.vb: >-
+      Public Class MixException
+          Inherits Exception
+          Implements ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Exception.GetType
+  - System.Exception.ToString
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Heart.Exceptions.MixException.#ctor
+  commentId: M:Mix.Heart.Exceptions.MixException.#ctor
+  id: '#ctor'
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: MixException()
+  nameWithType: MixException.MixException()
+  fullName: Mix.Heart.Exceptions.MixException.MixException()
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 10
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: public MixException()
+    content.vb: Public Sub New
+  overload: Mix.Heart.Exceptions.MixException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Heart.Exceptions.MixException.#ctor(System.String)
+  commentId: M:Mix.Heart.Exceptions.MixException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: MixException(String)
+  nameWithType: MixException.MixException(String)
+  fullName: Mix.Heart.Exceptions.MixException.MixException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 14
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: public MixException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Mix.Heart.Exceptions.MixException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Heart.Exceptions.MixException.#ctor(System.String,System.Exception)
+  commentId: M:Mix.Heart.Exceptions.MixException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: MixException(String, Exception)
+  nameWithType: MixException.MixException(String, Exception)
+  fullName: Mix.Heart.Exceptions.MixException.MixException(System.String, System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 19
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: public MixException(string message, Exception innerException)
+    parameters:
+    - id: message
+      type: System.String
+    - id: innerException
+      type: System.Exception
+    content.vb: Public Sub New(message As String, innerException As Exception)
+  overload: Mix.Heart.Exceptions.MixException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Heart.Exceptions.MixException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Mix.Heart.Exceptions.MixException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: MixException(SerializationInfo, StreamingContext)
+  nameWithType: MixException.MixException(SerializationInfo, StreamingContext)
+  fullName: Mix.Heart.Exceptions.MixException.MixException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 24
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: protected MixException(SerializationInfo info, StreamingContext context)
+    parameters:
+    - id: info
+      type: System.Runtime.Serialization.SerializationInfo
+    - id: context
+      type: System.Runtime.Serialization.StreamingContext
+    content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
+  overload: Mix.Heart.Exceptions.MixException.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.Heart.Exceptions.MixException.#ctor(Mix.Heart.Enums.MixErrorStatus,System.Object[])
+  commentId: M:Mix.Heart.Exceptions.MixException.#ctor(Mix.Heart.Enums.MixErrorStatus,System.Object[])
+  id: '#ctor(Mix.Heart.Enums.MixErrorStatus,System.Object[])'
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: MixException(MixErrorStatus, Object[])
+  nameWithType: MixException.MixException(MixErrorStatus, Object[])
+  fullName: Mix.Heart.Exceptions.MixException.MixException(Mix.Heart.Enums.MixErrorStatus, System.Object[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 29
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: public MixException(MixErrorStatus status, params object[] messages)
+    parameters:
+    - id: status
+      type: Mix.Heart.Enums.MixErrorStatus
+    - id: messages
+      type: System.Object[]
+    content.vb: Public Sub New(status As MixErrorStatus, ParamArray messages As Object())
+  overload: Mix.Heart.Exceptions.MixException.#ctor*
+  nameWithType.vb: MixException.MixException(MixErrorStatus, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Heart.Exceptions.MixException.MixException(Mix.Heart.Enums.MixErrorStatus, System.Object())
+  name.vb: MixException(MixErrorStatus, Object())
+- uid: Mix.Heart.Exceptions.MixException.#ctor(Mix.Heart.Enums.MixErrorStatus,System.Exception)
+  commentId: M:Mix.Heart.Exceptions.MixException.#ctor(Mix.Heart.Enums.MixErrorStatus,System.Exception)
+  id: '#ctor(Mix.Heart.Enums.MixErrorStatus,System.Exception)'
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: MixException(MixErrorStatus, Exception)
+  nameWithType: MixException.MixException(MixErrorStatus, Exception)
+  fullName: Mix.Heart.Exceptions.MixException.MixException(Mix.Heart.Enums.MixErrorStatus, System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: .ctor
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 36
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: public MixException(MixErrorStatus status, Exception ex)
+    parameters:
+    - id: status
+      type: Mix.Heart.Enums.MixErrorStatus
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub New(status As MixErrorStatus, ex As Exception)
+  overload: Mix.Heart.Exceptions.MixException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Heart.Exceptions.MixException.Status
+  commentId: P:Mix.Heart.Exceptions.MixException.Status
+  id: Status
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: MixException.Status
+  fullName: Mix.Heart.Exceptions.MixException.Status
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Status
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 43
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: public MixErrorStatus Status { get; set; }
+    parameters: []
+    return:
+      type: Mix.Heart.Enums.MixErrorStatus
+    content.vb: Public Property Status As MixErrorStatus
+  overload: Mix.Heart.Exceptions.MixException.Status*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Heart.Exceptions.MixException.Value
+  commentId: P:Mix.Heart.Exceptions.MixException.Value
+  id: Value
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: MixException.Value
+  fullName: Mix.Heart.Exceptions.MixException.Value
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Value
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 45
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: public object Value { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property Value As Object
+  overload: Mix.Heart.Exceptions.MixException.Value*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Heart.Exceptions.MixException.Errors
+  commentId: P:Mix.Heart.Exceptions.MixException.Errors
+  id: Errors
+  parent: Mix.Heart.Exceptions.MixException
+  langs:
+  - csharp
+  - vb
+  name: Errors
+  nameWithType: MixException.Errors
+  fullName: Mix.Heart.Exceptions.MixException.Errors
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Exceptions/MixException.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Errors
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Exceptions/MixException.cs
+    startLine: 46
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Exceptions
+  syntax:
+    content: public string[] Errors { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property Errors As String()
+  overload: Mix.Heart.Exceptions.MixException.Errors*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Mix.Heart.Exceptions
+  commentId: N:Mix.Heart.Exceptions
+  name: Mix.Heart.Exceptions
+  nameWithType: Mix.Heart.Exceptions
+  fullName: Mix.Heart.Exceptions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    nameWithType: Exception.GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    nameWithType: Exception.GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    nameWithType: Exception.GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    nameWithType: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    nameWithType: Exception.GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    nameWithType: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    nameWithType: Exception.GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    nameWithType: Exception.GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    nameWithType: Exception.ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    nameWithType: Exception.ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+- uid: Mix.Heart.Exceptions.MixException.#ctor*
+  commentId: Overload:Mix.Heart.Exceptions.MixException.#ctor
+  name: MixException
+  nameWithType: MixException.MixException
+  fullName: Mix.Heart.Exceptions.MixException.MixException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: Mix.Heart.Enums.MixErrorStatus
+  commentId: T:Mix.Heart.Enums.MixErrorStatus
+  parent: Mix.Heart.Enums
+  name: MixErrorStatus
+  nameWithType: MixErrorStatus
+  fullName: Mix.Heart.Enums.MixErrorStatus
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Mix.Heart.Enums
+  commentId: N:Mix.Heart.Enums
+  name: Mix.Heart.Enums
+  nameWithType: Mix.Heart.Enums
+  fullName: Mix.Heart.Enums
+- uid: Mix.Heart.Exceptions.MixException.Status*
+  commentId: Overload:Mix.Heart.Exceptions.MixException.Status
+  name: Status
+  nameWithType: MixException.Status
+  fullName: Mix.Heart.Exceptions.MixException.Status
+- uid: Mix.Heart.Exceptions.MixException.Value*
+  commentId: Overload:Mix.Heart.Exceptions.MixException.Value
+  name: Value
+  nameWithType: MixException.Value
+  fullName: Mix.Heart.Exceptions.MixException.Value
+- uid: Mix.Heart.Exceptions.MixException.Errors*
+  commentId: Overload:Mix.Heart.Exceptions.MixException.Errors
+  name: Errors
+  nameWithType: MixException.Errors
+  fullName: Mix.Heart.Exceptions.MixException.Errors
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

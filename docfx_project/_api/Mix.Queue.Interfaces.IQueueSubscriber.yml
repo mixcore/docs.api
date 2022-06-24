@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Queue.Interfaces.IQueueSubscriber
+  commentId: T:Mix.Queue.Interfaces.IQueueSubscriber
+  id: IQueueSubscriber
+  parent: Mix.Queue.Interfaces
+  children:
+  - Mix.Queue.Interfaces.IQueueSubscriber.ProcessQueue(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IQueueSubscriber
+  nameWithType: IQueueSubscriber
+  fullName: Mix.Queue.Interfaces.IQueueSubscriber
+  type: Interface
+  source:
+    remote:
+      path: src/platform/mix.queue/Interfaces/IQueueSubscriber.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IQueueSubscriber
+    path: ../../mix.core/src/platform/mix.queue/Interfaces/IQueueSubscriber.cs
+    startLine: 5
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Interfaces
+  syntax:
+    content: public interface IQueueSubscriber
+    content.vb: Public Interface IQueueSubscriber
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Mix.Queue.Interfaces.IQueueSubscriber.ProcessQueue(System.Threading.CancellationToken)
+  commentId: M:Mix.Queue.Interfaces.IQueueSubscriber.ProcessQueue(System.Threading.CancellationToken)
+  id: ProcessQueue(System.Threading.CancellationToken)
+  parent: Mix.Queue.Interfaces.IQueueSubscriber
+  langs:
+  - csharp
+  - vb
+  name: ProcessQueue(CancellationToken)
+  nameWithType: IQueueSubscriber.ProcessQueue(CancellationToken)
+  fullName: Mix.Queue.Interfaces.IQueueSubscriber.ProcessQueue(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Interfaces/IQueueSubscriber.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ProcessQueue
+    path: ../../mix.core/src/platform/mix.queue/Interfaces/IQueueSubscriber.cs
+    startLine: 7
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Interfaces
+  syntax:
+    content: Task ProcessQueue(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ProcessQueue(cancellationToken As CancellationToken) As Task
+  overload: Mix.Queue.Interfaces.IQueueSubscriber.ProcessQueue*
+references:
+- uid: Mix.Queue.Interfaces
+  commentId: N:Mix.Queue.Interfaces
+  name: Mix.Queue.Interfaces
+  nameWithType: Mix.Queue.Interfaces
+  fullName: Mix.Queue.Interfaces
+- uid: Mix.Queue.Interfaces.IQueueSubscriber.ProcessQueue*
+  commentId: Overload:Mix.Queue.Interfaces.IQueueSubscriber.ProcessQueue
+  name: ProcessQueue
+  nameWithType: IQueueSubscriber.ProcessQueue
+  fullName: Mix.Queue.Interfaces.IQueueSubscriber.ProcessQueue
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

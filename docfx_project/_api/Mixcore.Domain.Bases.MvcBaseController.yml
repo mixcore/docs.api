@@ -1,0 +1,551 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mixcore.Domain.Bases.MvcBaseController
+  commentId: T:Mixcore.Domain.Bases.MvcBaseController
+  id: MvcBaseController
+  parent: Mixcore.Domain.Bases
+  children:
+  - Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,UnitOfWorkInfo{MixCmsContext})
+  - Mixcore.Domain.Bases.MvcBaseController._context
+  - Mixcore.Domain.Bases.MvcBaseController._databaseService
+  - Mixcore.Domain.Bases.MvcBaseController._translator
+  - Mixcore.Domain.Bases.MvcBaseController._uow
+  - Mixcore.Domain.Bases.MvcBaseController.Page(System.Int32,System.String)
+  - Mixcore.Domain.Bases.MvcBaseController.ValidateRequest
+  langs:
+  - csharp
+  - vb
+  name: MvcBaseController
+  nameWithType: MvcBaseController
+  fullName: Mixcore.Domain.Bases.MvcBaseController
+  type: Class
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MvcBaseController
+    path: ../../mix.core/src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+    startLine: 7
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Bases
+  syntax:
+    content: 'public class MvcBaseController : MixControllerBase'
+    content.vb: >-
+      Public Class MvcBaseController
+          Inherits MixControllerBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mixcore.Controllers.HomeController
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mixcore.Domain.Bases.MvcBaseController._uow
+  commentId: F:Mixcore.Domain.Bases.MvcBaseController._uow
+  id: _uow
+  parent: Mixcore.Domain.Bases.MvcBaseController
+  langs:
+  - csharp
+  - vb
+  name: _uow
+  nameWithType: MvcBaseController._uow
+  fullName: Mixcore.Domain.Bases.MvcBaseController._uow
+  type: Field
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _uow
+    path: ../../mix.core/src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+    startLine: 9
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Bases
+  syntax:
+    content: protected UnitOfWorkInfo<MixCmsContext> _uow
+    return:
+      type: UnitOfWorkInfo{MixCmsContext}
+    content.vb: Protected _uow As UnitOfWorkInfo(Of MixCmsContext)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mixcore.Domain.Bases.MvcBaseController._context
+  commentId: F:Mixcore.Domain.Bases.MvcBaseController._context
+  id: _context
+  parent: Mixcore.Domain.Bases.MvcBaseController
+  langs:
+  - csharp
+  - vb
+  name: _context
+  nameWithType: MvcBaseController._context
+  fullName: Mixcore.Domain.Bases.MvcBaseController._context
+  type: Field
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _context
+    path: ../../mix.core/src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+    startLine: 10
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Bases
+  syntax:
+    content: protected readonly MixCmsContext _context
+    return:
+      type: MixCmsContext
+    content.vb: Protected ReadOnly _context As MixCmsContext
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mixcore.Domain.Bases.MvcBaseController._translator
+  commentId: F:Mixcore.Domain.Bases.MvcBaseController._translator
+  id: _translator
+  parent: Mixcore.Domain.Bases.MvcBaseController
+  langs:
+  - csharp
+  - vb
+  name: _translator
+  nameWithType: MvcBaseController._translator
+  fullName: Mixcore.Domain.Bases.MvcBaseController._translator
+  type: Field
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _translator
+    path: ../../mix.core/src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+    startLine: 11
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Bases
+  syntax:
+    content: protected readonly TranslatorService _translator
+    return:
+      type: Mix.Lib.Services.TranslatorService
+    content.vb: Protected ReadOnly _translator As TranslatorService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mixcore.Domain.Bases.MvcBaseController._databaseService
+  commentId: F:Mixcore.Domain.Bases.MvcBaseController._databaseService
+  id: _databaseService
+  parent: Mixcore.Domain.Bases.MvcBaseController
+  langs:
+  - csharp
+  - vb
+  name: _databaseService
+  nameWithType: MvcBaseController._databaseService
+  fullName: Mixcore.Domain.Bases.MvcBaseController._databaseService
+  type: Field
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _databaseService
+    path: ../../mix.core/src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+    startLine: 12
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Bases
+  syntax:
+    content: protected readonly MixDatabaseService _databaseService
+    return:
+      type: Mix.Database.Services.MixDatabaseService
+    content.vb: Protected ReadOnly _databaseService As MixDatabaseService
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,UnitOfWorkInfo{MixCmsContext})
+  commentId: M:Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,UnitOfWorkInfo{MixCmsContext})
+  id: '#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,UnitOfWorkInfo{MixCmsContext})'
+  parent: Mixcore.Domain.Bases.MvcBaseController
+  langs:
+  - csharp
+  - vb
+  name: MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, UnitOfWorkInfo<MixCmsContext>)
+  nameWithType: MvcBaseController.MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, UnitOfWorkInfo<MixCmsContext>)
+  fullName: Mixcore.Domain.Bases.MvcBaseController.MvcBaseController(IHttpContextAccessor, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.MixDatabaseService, UnitOfWorkInfo<MixCmsContext>)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+    startLine: 13
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Bases
+  syntax:
+    content: public MvcBaseController(IHttpContextAccessor httpContextAccessor, IPSecurityConfigService ipSecurityConfigService, MixService mixService, TranslatorService translator, MixDatabaseService databaseService, UnitOfWorkInfo<MixCmsContext> uow)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: ipSecurityConfigService
+      type: Mix.Shared.Services.IPSecurityConfigService
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: translator
+      type: Mix.Lib.Services.TranslatorService
+    - id: databaseService
+      type: Mix.Database.Services.MixDatabaseService
+    - id: uow
+      type: UnitOfWorkInfo{MixCmsContext}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, ipSecurityConfigService As IPSecurityConfigService, mixService As MixService, translator As TranslatorService, databaseService As MixDatabaseService, uow As UnitOfWorkInfo(Of MixCmsContext))
+  overload: Mixcore.Domain.Bases.MvcBaseController.#ctor*
+  nameWithType.vb: MvcBaseController.MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, UnitOfWorkInfo(Of MixCmsContext))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mixcore.Domain.Bases.MvcBaseController.MvcBaseController(IHttpContextAccessor, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.MixDatabaseService, UnitOfWorkInfo(Of MixCmsContext))
+  name.vb: MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, UnitOfWorkInfo(Of MixCmsContext))
+- uid: Mixcore.Domain.Bases.MvcBaseController.ValidateRequest
+  commentId: M:Mixcore.Domain.Bases.MvcBaseController.ValidateRequest
+  id: ValidateRequest
+  parent: Mixcore.Domain.Bases.MvcBaseController
+  langs:
+  - csharp
+  - vb
+  name: ValidateRequest()
+  nameWithType: MvcBaseController.ValidateRequest()
+  fullName: Mixcore.Domain.Bases.MvcBaseController.ValidateRequest()
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ValidateRequest
+    path: ../../mix.core/src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+    startLine: 26
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Bases
+  syntax:
+    content: protected override void ValidateRequest()
+    content.vb: Protected Overrides Sub ValidateRequest
+  overload: Mixcore.Domain.Bases.MvcBaseController.ValidateRequest*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mixcore.Domain.Bases.MvcBaseController.Page(System.Int32,System.String)
+  commentId: M:Mixcore.Domain.Bases.MvcBaseController.Page(System.Int32,System.String)
+  id: Page(System.Int32,System.String)
+  parent: Mixcore.Domain.Bases.MvcBaseController
+  langs:
+  - csharp
+  - vb
+  name: Page(Int32, String)
+  nameWithType: MvcBaseController.Page(Int32, String)
+  fullName: Mixcore.Domain.Bases.MvcBaseController.Page(System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Page
+    path: ../../mix.core/src/applications/Mixcore/Domain/Bases/MvcBaseController.cs
+    startLine: 47
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Bases
+  syntax:
+    content: protected Task<IActionResult> Page(int pageId, string keyword = null)
+    parameters:
+    - id: pageId
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: Protected Function Page(pageId As Integer, keyword As String = Nothing) As Task(Of IActionResult)
+  overload: Mixcore.Domain.Bases.MvcBaseController.Page*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Mixcore.Domain.Bases
+  commentId: N:Mixcore.Domain.Bases
+  name: Mixcore.Domain.Bases
+  nameWithType: Mixcore.Domain.Bases
+  fullName: Mixcore.Domain.Bases
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: Mix.Lib.Services.TranslatorService
+  commentId: T:Mix.Lib.Services.TranslatorService
+  parent: Mix.Lib.Services
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: Mix.Lib.Services.TranslatorService
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: Mix.Database.Services.MixDatabaseService
+  commentId: T:Mix.Database.Services.MixDatabaseService
+  parent: Mix.Database.Services
+  name: MixDatabaseService
+  nameWithType: MixDatabaseService
+  fullName: Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services
+  commentId: N:Mix.Database.Services
+  name: Mix.Database.Services
+  nameWithType: Mix.Database.Services
+  fullName: Mix.Database.Services
+- uid: Mixcore.Domain.Bases.MvcBaseController.#ctor*
+  commentId: Overload:Mixcore.Domain.Bases.MvcBaseController.#ctor
+  name: MvcBaseController
+  nameWithType: MvcBaseController.MvcBaseController
+  fullName: Mixcore.Domain.Bases.MvcBaseController.MvcBaseController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: Mix.Shared.Services.IPSecurityConfigService
+  commentId: T:Mix.Shared.Services.IPSecurityConfigService
+  parent: Mix.Shared.Services
+  name: IPSecurityConfigService
+  nameWithType: IPSecurityConfigService
+  fullName: Mix.Shared.Services.IPSecurityConfigService
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: Mixcore.Domain.Bases.MvcBaseController.ValidateRequest*
+  commentId: Overload:Mixcore.Domain.Bases.MvcBaseController.ValidateRequest
+  name: ValidateRequest
+  nameWithType: MvcBaseController.ValidateRequest
+  fullName: Mixcore.Domain.Bases.MvcBaseController.ValidateRequest
+- uid: Mixcore.Domain.Bases.MvcBaseController.Page*
+  commentId: Overload:Mixcore.Domain.Bases.MvcBaseController.Page
+  name: Page
+  nameWithType: MvcBaseController.Page
+  fullName: Mixcore.Domain.Bases.MvcBaseController.Page
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.IActionResult}'
+  definition: Task`1
+  name: Task<IActionResult>
+  nameWithType: Task<IActionResult>
+  fullName: Task<Microsoft.AspNetCore.Mvc.IActionResult>
+  nameWithType.vb: Task(Of IActionResult)
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.IActionResult)
+  name.vb: Task(Of IActionResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    nameWithType: IActionResult
+    fullName: Microsoft.AspNetCore.Mvc.IActionResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    nameWithType: IActionResult
+    fullName: Microsoft.AspNetCore.Mvc.IActionResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

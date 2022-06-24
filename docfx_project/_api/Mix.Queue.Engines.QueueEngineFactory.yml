@@ -1,0 +1,790 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Queue.Engines.QueueEngineFactory
+  commentId: T:Mix.Queue.Engines.QueueEngineFactory
+  id: QueueEngineFactory
+  parent: Mix.Queue.Engines
+  children:
+  - Mix.Queue.Engines.QueueEngineFactory.CreatePublisher``1(MixQueueProvider,Mix.Queue.Models.QueueSetting.QueueSetting,System.String,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{``0})
+  - Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber(MixQueueProvider,Mix.Queue.Models.QueueSetting.QueueSetting,System.String,System.String,System.Func{Mix.Queue.Models.MessageQueueModel,System.Threading.Tasks.Task},Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{Mix.Queue.Models.MessageQueueModel})
+  langs:
+  - csharp
+  - vb
+  name: QueueEngineFactory
+  nameWithType: QueueEngineFactory
+  fullName: Mix.Queue.Engines.QueueEngineFactory
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.queue/Engines/QueueEngineFactory.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: QueueEngineFactory
+    path: ../../mix.core/src/platform/mix.queue/Engines/QueueEngineFactory.cs
+    startLine: 12
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Engines
+  syntax:
+    content: public class QueueEngineFactory
+    content.vb: Public Class QueueEngineFactory
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Queue.Engines.QueueEngineFactory.CreatePublisher``1(MixQueueProvider,Mix.Queue.Models.QueueSetting.QueueSetting,System.String,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{``0})
+  commentId: M:Mix.Queue.Engines.QueueEngineFactory.CreatePublisher``1(MixQueueProvider,Mix.Queue.Models.QueueSetting.QueueSetting,System.String,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{``0})
+  id: CreatePublisher``1(MixQueueProvider,Mix.Queue.Models.QueueSetting.QueueSetting,System.String,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{``0})
+  parent: Mix.Queue.Engines.QueueEngineFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePublisher<T>(MixQueueProvider, QueueSetting, String, MixMemoryMessageQueue<T>)
+  nameWithType: QueueEngineFactory.CreatePublisher<T>(MixQueueProvider, QueueSetting, String, MixMemoryMessageQueue<T>)
+  fullName: Mix.Queue.Engines.QueueEngineFactory.CreatePublisher<T>(MixQueueProvider, Mix.Queue.Models.QueueSetting.QueueSetting, System.String, Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue<T>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Engines/QueueEngineFactory.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreatePublisher
+    path: ../../mix.core/src/platform/mix.queue/Engines/QueueEngineFactory.cs
+    startLine: 14
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Engines
+  syntax:
+    content: >-
+      public static IQueuePublisher<T> CreatePublisher<T>(MixQueueProvider provider, QueueSetting queueSetting, string topicId, MixMemoryMessageQueue<T> queue = null)
+          where T : MessageQueueModel
+    parameters:
+    - id: provider
+      type: MixQueueProvider
+    - id: queueSetting
+      type: Mix.Queue.Models.QueueSetting.QueueSetting
+    - id: topicId
+      type: System.String
+    - id: queue
+      type: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: Mix.Queue.Interfaces.IQueuePublisher{{T}}
+    content.vb: Public Shared Function CreatePublisher(Of T As MessageQueueModel)(provider As MixQueueProvider, queueSetting As QueueSetting, topicId As String, queue As MixMemoryMessageQueue(Of T) = Nothing) As IQueuePublisher(Of T)
+  overload: Mix.Queue.Engines.QueueEngineFactory.CreatePublisher*
+  nameWithType.vb: QueueEngineFactory.CreatePublisher(Of T)(MixQueueProvider, QueueSetting, String, MixMemoryMessageQueue(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Queue.Engines.QueueEngineFactory.CreatePublisher(Of T)(MixQueueProvider, Mix.Queue.Models.QueueSetting.QueueSetting, System.String, Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue(Of T))
+  name.vb: CreatePublisher(Of T)(MixQueueProvider, QueueSetting, String, MixMemoryMessageQueue(Of T))
+- uid: Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber(MixQueueProvider,Mix.Queue.Models.QueueSetting.QueueSetting,System.String,System.String,System.Func{Mix.Queue.Models.MessageQueueModel,System.Threading.Tasks.Task},Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{Mix.Queue.Models.MessageQueueModel})
+  commentId: M:Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber(MixQueueProvider,Mix.Queue.Models.QueueSetting.QueueSetting,System.String,System.String,System.Func{Mix.Queue.Models.MessageQueueModel,System.Threading.Tasks.Task},Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{Mix.Queue.Models.MessageQueueModel})
+  id: CreateSubscriber(MixQueueProvider,Mix.Queue.Models.QueueSetting.QueueSetting,System.String,System.String,System.Func{Mix.Queue.Models.MessageQueueModel,System.Threading.Tasks.Task},Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{Mix.Queue.Models.MessageQueueModel})
+  parent: Mix.Queue.Engines.QueueEngineFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateSubscriber(MixQueueProvider, QueueSetting, String, String, Func<MessageQueueModel, Task>, MixMemoryMessageQueue<MessageQueueModel>)
+  nameWithType: QueueEngineFactory.CreateSubscriber(MixQueueProvider, QueueSetting, String, String, Func<MessageQueueModel, Task>, MixMemoryMessageQueue<MessageQueueModel>)
+  fullName: Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber(MixQueueProvider, Mix.Queue.Models.QueueSetting.QueueSetting, System.String, System.String, System.Func<Mix.Queue.Models.MessageQueueModel, System.Threading.Tasks.Task>, Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue<Mix.Queue.Models.MessageQueueModel>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Engines/QueueEngineFactory.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateSubscriber
+    path: ../../mix.core/src/platform/mix.queue/Engines/QueueEngineFactory.cs
+    startLine: 37
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Engines
+  syntax:
+    content: public static IQueueSubscriber CreateSubscriber(MixQueueProvider provider, QueueSetting queueSetting, string topicId, string subscriptionId, Func<MessageQueueModel, Task> handler, MixMemoryMessageQueue<MessageQueueModel> queueService)
+    parameters:
+    - id: provider
+      type: MixQueueProvider
+    - id: queueSetting
+      type: Mix.Queue.Models.QueueSetting.QueueSetting
+    - id: topicId
+      type: System.String
+    - id: subscriptionId
+      type: System.String
+    - id: handler
+      type: System.Func{Mix.Queue.Models.MessageQueueModel,System.Threading.Tasks.Task}
+    - id: queueService
+      type: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{Mix.Queue.Models.MessageQueueModel}
+    return:
+      type: Mix.Queue.Interfaces.IQueueSubscriber
+    content.vb: Public Shared Function CreateSubscriber(provider As MixQueueProvider, queueSetting As QueueSetting, topicId As String, subscriptionId As String, handler As Func(Of MessageQueueModel, Task), queueService As MixMemoryMessageQueue(Of MessageQueueModel)) As IQueueSubscriber
+  overload: Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber*
+  nameWithType.vb: QueueEngineFactory.CreateSubscriber(MixQueueProvider, QueueSetting, String, String, Func(Of MessageQueueModel, Task), MixMemoryMessageQueue(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber(MixQueueProvider, Mix.Queue.Models.QueueSetting.QueueSetting, System.String, System.String, System.Func(Of Mix.Queue.Models.MessageQueueModel, System.Threading.Tasks.Task), Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue(Of Mix.Queue.Models.MessageQueueModel))
+  name.vb: CreateSubscriber(MixQueueProvider, QueueSetting, String, String, Func(Of MessageQueueModel, Task), MixMemoryMessageQueue(Of MessageQueueModel))
+references:
+- uid: Mix.Queue.Engines
+  commentId: N:Mix.Queue.Engines
+  name: Mix.Queue.Engines
+  nameWithType: Mix.Queue.Engines
+  fullName: Mix.Queue.Engines
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Queue.Engines.QueueEngineFactory.CreatePublisher*
+  commentId: Overload:Mix.Queue.Engines.QueueEngineFactory.CreatePublisher
+  name: CreatePublisher
+  nameWithType: QueueEngineFactory.CreatePublisher
+  fullName: Mix.Queue.Engines.QueueEngineFactory.CreatePublisher
+- uid: MixQueueProvider
+  isExternal: true
+  name: MixQueueProvider
+  nameWithType: MixQueueProvider
+  fullName: MixQueueProvider
+- uid: Mix.Queue.Models.QueueSetting.QueueSetting
+  commentId: T:Mix.Queue.Models.QueueSetting.QueueSetting
+  parent: Mix.Queue.Models.QueueSetting
+  name: QueueSetting
+  nameWithType: QueueSetting
+  fullName: Mix.Queue.Models.QueueSetting.QueueSetting
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{{T}}
+  commentId: T:Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{``0}
+  parent: Mix.Queue.Engines.MixQueue
+  definition: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+  name: MixMemoryMessageQueue<T>
+  nameWithType: MixMemoryMessageQueue<T>
+  fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue<T>
+  nameWithType.vb: MixMemoryMessageQueue(Of T)
+  fullName.vb: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue(Of T)
+  name.vb: MixMemoryMessageQueue(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces.IQueuePublisher{{T}}
+  commentId: T:Mix.Queue.Interfaces.IQueuePublisher{``0}
+  parent: Mix.Queue.Interfaces
+  definition: Mix.Queue.Interfaces.IQueuePublisher`1
+  name: IQueuePublisher<T>
+  nameWithType: IQueuePublisher<T>
+  fullName: Mix.Queue.Interfaces.IQueuePublisher<T>
+  nameWithType.vb: IQueuePublisher(Of T)
+  fullName.vb: Mix.Queue.Interfaces.IQueuePublisher(Of T)
+  name.vb: IQueuePublisher(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueuePublisher`1
+    name: IQueuePublisher
+    nameWithType: IQueuePublisher
+    fullName: Mix.Queue.Interfaces.IQueuePublisher
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueuePublisher`1
+    name: IQueuePublisher
+    nameWithType: IQueuePublisher
+    fullName: Mix.Queue.Interfaces.IQueuePublisher
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Models.QueueSetting
+  commentId: N:Mix.Queue.Models.QueueSetting
+  name: Mix.Queue.Models.QueueSetting
+  nameWithType: Mix.Queue.Models.QueueSetting
+  fullName: Mix.Queue.Models.QueueSetting
+- uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+  commentId: T:Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+  name: MixMemoryMessageQueue<T>
+  nameWithType: MixMemoryMessageQueue<T>
+  fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue<T>
+  nameWithType.vb: MixMemoryMessageQueue(Of T)
+  fullName.vb: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue(Of T)
+  name.vb: MixMemoryMessageQueue(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Engines.MixQueue
+  commentId: N:Mix.Queue.Engines.MixQueue
+  name: Mix.Queue.Engines.MixQueue
+  nameWithType: Mix.Queue.Engines.MixQueue
+  fullName: Mix.Queue.Engines.MixQueue
+- uid: Mix.Queue.Interfaces.IQueuePublisher`1
+  commentId: T:Mix.Queue.Interfaces.IQueuePublisher`1
+  name: IQueuePublisher<T>
+  nameWithType: IQueuePublisher<T>
+  fullName: Mix.Queue.Interfaces.IQueuePublisher<T>
+  nameWithType.vb: IQueuePublisher(Of T)
+  fullName.vb: Mix.Queue.Interfaces.IQueuePublisher(Of T)
+  name.vb: IQueuePublisher(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueuePublisher`1
+    name: IQueuePublisher
+    nameWithType: IQueuePublisher
+    fullName: Mix.Queue.Interfaces.IQueuePublisher
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueuePublisher`1
+    name: IQueuePublisher
+    nameWithType: IQueuePublisher
+    fullName: Mix.Queue.Interfaces.IQueuePublisher
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces
+  commentId: N:Mix.Queue.Interfaces
+  name: Mix.Queue.Interfaces
+  nameWithType: Mix.Queue.Interfaces
+  fullName: Mix.Queue.Interfaces
+- uid: Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber*
+  commentId: Overload:Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber
+  name: CreateSubscriber
+  nameWithType: QueueEngineFactory.CreateSubscriber
+  fullName: Mix.Queue.Engines.QueueEngineFactory.CreateSubscriber
+- uid: System.Func{Mix.Queue.Models.MessageQueueModel,System.Threading.Tasks.Task}
+  commentId: T:System.Func{Mix.Queue.Models.MessageQueueModel,System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  name: Func<MessageQueueModel, Task>
+  nameWithType: Func<MessageQueueModel, Task>
+  fullName: System.Func<Mix.Queue.Models.MessageQueueModel, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of MessageQueueModel, Task)
+  fullName.vb: System.Func(Of Mix.Queue.Models.MessageQueueModel, System.Threading.Tasks.Task)
+  name.vb: Func(Of MessageQueueModel, Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{Mix.Queue.Models.MessageQueueModel}
+  commentId: T:Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{Mix.Queue.Models.MessageQueueModel}
+  parent: Mix.Queue.Engines.MixQueue
+  definition: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+  name: MixMemoryMessageQueue<MessageQueueModel>
+  nameWithType: MixMemoryMessageQueue<MessageQueueModel>
+  fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue<Mix.Queue.Models.MessageQueueModel>
+  nameWithType.vb: MixMemoryMessageQueue(Of MessageQueueModel)
+  fullName.vb: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue(Of Mix.Queue.Models.MessageQueueModel)
+  name.vb: MixMemoryMessageQueue(Of MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue`1
+    name: MixMemoryMessageQueue
+    nameWithType: MixMemoryMessageQueue
+    fullName: Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces.IQueueSubscriber
+  commentId: T:Mix.Queue.Interfaces.IQueueSubscriber
+  parent: Mix.Queue.Interfaces
+  name: IQueueSubscriber
+  nameWithType: IQueueSubscriber
+  fullName: Mix.Queue.Interfaces.IQueueSubscriber
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )

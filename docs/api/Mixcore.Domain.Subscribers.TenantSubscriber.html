@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TenantSubscriber
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TenantSubscriber
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mixcore.Domain.Subscribers.TenantSubscriber">
+  
+  
+  <h1 id="Mixcore_Domain_Subscribers_TenantSubscriber" data-uid="Mixcore.Domain.Subscribers.TenantSubscriber" class="text-break">Class TenantSubscriber
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mix.Queue.Engines.SubscriberBase.html">SubscriberBase</a></div>
+    <div class="level2"><span class="xref">TenantSubscriber</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.Extensions.Hosting.IHostedService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mix.Queue.Engines.SubscriberBase.html#Mix_Queue_Engines_SubscriberBase_StartAsync_System_Threading_CancellationToken_">SubscriberBase.StartAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Queue.Engines.SubscriberBase.html#Mix_Queue_Engines_SubscriberBase_StopAsync_System_Threading_CancellationToken_">SubscriberBase.StopAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Queue.Engines.SubscriberBase.html#Mix_Queue_Engines_SubscriberBase_MesageHandler_Mix_Queue_Models_MessageQueueModel_">SubscriberBase.MesageHandler(MessageQueueModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Queue.Engines.SubscriberBase.html#Mix_Queue_Engines_SubscriberBase_Handler_Mix_Queue_Models_MessageQueueModel_">SubscriberBase.Handler(MessageQueueModel)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mixcore.Domain.Subscribers.html">Mixcore.Domain.Subscribers</a></h6>
+  <h6><strong>Assembly</strong>: mixcore.dll</h6>
+  <h5 id="Mixcore_Domain_Subscribers_TenantSubscriber_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TenantSubscriber : SubscriberBase, IHostedService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mixcore_Domain_Subscribers_TenantSubscriber__ctor_IConfiguration_Mix_Queue_Engines_MixQueue_MixMemoryMessageQueue_MessageQueueModel__.md&amp;value=---%0Auid%3A%20Mixcore.Domain.Subscribers.TenantSubscriber.%23ctor(IConfiguration%2CMix.Queue.Engines.MixQueue.MixMemoryMessageQueue%7BMessageQueueModel%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/applications/Mixcore/Domain/Subscribers/TenantSubscriber.cs/#L11">View Source</a>
+  </span>
+  <a id="Mixcore_Domain_Subscribers_TenantSubscriber__ctor_" data-uid="Mixcore.Domain.Subscribers.TenantSubscriber.#ctor*"></a>
+  <h4 id="Mixcore_Domain_Subscribers_TenantSubscriber__ctor_IConfiguration_Mix_Queue_Engines_MixQueue_MixMemoryMessageQueue_MessageQueueModel__" data-uid="Mixcore.Domain.Subscribers.TenantSubscriber.#ctor(IConfiguration,Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue{MessageQueueModel})">TenantSubscriber(IConfiguration, MixMemoryMessageQueue&lt;MessageQueueModel&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TenantSubscriber(IConfiguration configuration, MixMemoryMessageQueue&lt;MessageQueueModel&gt; queueService)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Queue.Engines.MixQueue.MixMemoryMessageQueue-1.html">MixMemoryMessageQueue</a>&lt;<span class="xref">MessageQueueModel</span>&gt;</td>
+        <td><span class="parametername">queueService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mixcore_Domain_Subscribers_TenantSubscriber_Handler_MessageQueueModel_.md&amp;value=---%0Auid%3A%20Mixcore.Domain.Subscribers.TenantSubscriber.Handler(MessageQueueModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/applications/Mixcore/Domain/Subscribers/TenantSubscriber.cs/#L19">View Source</a>
+  </span>
+  <a id="Mixcore_Domain_Subscribers_TenantSubscriber_Handler_" data-uid="Mixcore.Domain.Subscribers.TenantSubscriber.Handler*"></a>
+  <h4 id="Mixcore_Domain_Subscribers_TenantSubscriber_Handler_MessageQueueModel_" data-uid="Mixcore.Domain.Subscribers.TenantSubscriber.Handler(MessageQueueModel)">Handler(MessageQueueModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task Handler(MessageQueueModel data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MessageQueueModel</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.Extensions.Hosting.IHostedService</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mixcore_Domain_Subscribers_TenantSubscriber.md&amp;value=---%0Auid%3A%20Mixcore.Domain.Subscribers.TenantSubscriber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/applications/Mixcore/Domain/Subscribers/TenantSubscriber.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

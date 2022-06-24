@@ -1,0 +1,340 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Database.Entities.Cms.MixPage
+  commentId: T:Mix.Database.Entities.Cms.MixPage
+  id: MixPage
+  parent: Mix.Database.Entities.Cms
+  children:
+  - Mix.Database.Entities.Cms.MixPage.MixPageContents
+  langs:
+  - csharp
+  - vb
+  name: MixPage
+  nameWithType: MixPage
+  fullName: Mix.Database.Entities.Cms.MixPage
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Cms/MixPage.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixPage
+    path: ../../mix.core/src/platform/mix.database/Entities/Cms/MixPage.cs
+    startLine: 5
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Cms
+  syntax:
+    content: 'public class MixPage : TenantEntityBase<int>'
+    content.vb: >-
+      Public Class MixPage
+          Inherits TenantEntityBase(Of Integer)
+  inheritance:
+  - System.Object
+  - Mix.Database.Entities.Base.TenantEntityBase{System.Int32}
+  inheritedMembers:
+  - Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.DisplayName
+  - Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.Description
+  - Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.MixTenantId
+  - Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.MixTenant
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Database.Entities.Cms.MixPage.MixPageContents
+  commentId: P:Mix.Database.Entities.Cms.MixPage.MixPageContents
+  id: MixPageContents
+  parent: Mix.Database.Entities.Cms.MixPage
+  langs:
+  - csharp
+  - vb
+  name: MixPageContents
+  nameWithType: MixPage.MixPageContents
+  fullName: Mix.Database.Entities.Cms.MixPage.MixPageContents
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Cms/MixPage.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixPageContents
+    path: ../../mix.core/src/platform/mix.database/Entities/Cms/MixPage.cs
+    startLine: 7
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Cms
+  syntax:
+    content: public virtual ICollection<MixPageContent> MixPageContents { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Mix.Database.Entities.Cms.MixPageContent}
+    content.vb: Public Overridable Property MixPageContents As ICollection(Of MixPageContent)
+  overload: Mix.Database.Entities.Cms.MixPage.MixPageContents*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Mix.Database.Entities.Cms
+  commentId: N:Mix.Database.Entities.Cms
+  name: Mix.Database.Entities.Cms
+  nameWithType: Mix.Database.Entities.Cms
+  fullName: Mix.Database.Entities.Cms
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}
+  commentId: T:Mix.Database.Entities.Base.TenantEntityBase{System.Int32}
+  parent: Mix.Database.Entities.Base
+  definition: Mix.Database.Entities.Base.TenantEntityBase`1
+  name: TenantEntityBase<Int32>
+  nameWithType: TenantEntityBase<Int32>
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<System.Int32>
+  nameWithType.vb: TenantEntityBase(Of Int32)
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of System.Int32)
+  name.vb: TenantEntityBase(Of Int32)
+  spec.csharp:
+  - uid: Mix.Database.Entities.Base.TenantEntityBase`1
+    name: TenantEntityBase
+    nameWithType: TenantEntityBase
+    fullName: Mix.Database.Entities.Base.TenantEntityBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Database.Entities.Base.TenantEntityBase`1
+    name: TenantEntityBase
+    nameWithType: TenantEntityBase
+    fullName: Mix.Database.Entities.Base.TenantEntityBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.DisplayName
+  commentId: P:Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.DisplayName
+  parent: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}
+  definition: Mix.Database.Entities.Base.TenantEntityBase`1.DisplayName
+  name: DisplayName
+  nameWithType: TenantEntityBase<Int32>.DisplayName
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<System.Int32>.DisplayName
+  nameWithType.vb: TenantEntityBase(Of Int32).DisplayName
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of System.Int32).DisplayName
+- uid: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.Description
+  commentId: P:Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.Description
+  parent: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}
+  definition: Mix.Database.Entities.Base.TenantEntityBase`1.Description
+  name: Description
+  nameWithType: TenantEntityBase<Int32>.Description
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<System.Int32>.Description
+  nameWithType.vb: TenantEntityBase(Of Int32).Description
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of System.Int32).Description
+- uid: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.MixTenantId
+  commentId: P:Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.MixTenantId
+  parent: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}
+  definition: Mix.Database.Entities.Base.TenantEntityBase`1.MixTenantId
+  name: MixTenantId
+  nameWithType: TenantEntityBase<Int32>.MixTenantId
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<System.Int32>.MixTenantId
+  nameWithType.vb: TenantEntityBase(Of Int32).MixTenantId
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of System.Int32).MixTenantId
+- uid: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.MixTenant
+  commentId: P:Mix.Database.Entities.Base.TenantEntityBase{System.Int32}.MixTenant
+  parent: Mix.Database.Entities.Base.TenantEntityBase{System.Int32}
+  definition: Mix.Database.Entities.Base.TenantEntityBase`1.MixTenant
+  name: MixTenant
+  nameWithType: TenantEntityBase<Int32>.MixTenant
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<System.Int32>.MixTenant
+  nameWithType.vb: TenantEntityBase(Of Int32).MixTenant
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of System.Int32).MixTenant
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Database.Entities.Base.TenantEntityBase`1
+  commentId: T:Mix.Database.Entities.Base.TenantEntityBase`1
+  name: TenantEntityBase<TPrimaryKey>
+  nameWithType: TenantEntityBase<TPrimaryKey>
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<TPrimaryKey>
+  nameWithType.vb: TenantEntityBase(Of TPrimaryKey)
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of TPrimaryKey)
+  name.vb: TenantEntityBase(Of TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Database.Entities.Base.TenantEntityBase`1
+    name: TenantEntityBase
+    nameWithType: TenantEntityBase
+    fullName: Mix.Database.Entities.Base.TenantEntityBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Database.Entities.Base.TenantEntityBase`1
+    name: TenantEntityBase
+    nameWithType: TenantEntityBase
+    fullName: Mix.Database.Entities.Base.TenantEntityBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Entities.Base
+  commentId: N:Mix.Database.Entities.Base
+  name: Mix.Database.Entities.Base
+  nameWithType: Mix.Database.Entities.Base
+  fullName: Mix.Database.Entities.Base
+- uid: Mix.Database.Entities.Base.TenantEntityBase`1.DisplayName
+  commentId: P:Mix.Database.Entities.Base.TenantEntityBase`1.DisplayName
+  name: DisplayName
+  nameWithType: TenantEntityBase<TPrimaryKey>.DisplayName
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<TPrimaryKey>.DisplayName
+  nameWithType.vb: TenantEntityBase(Of TPrimaryKey).DisplayName
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of TPrimaryKey).DisplayName
+- uid: Mix.Database.Entities.Base.TenantEntityBase`1.Description
+  commentId: P:Mix.Database.Entities.Base.TenantEntityBase`1.Description
+  name: Description
+  nameWithType: TenantEntityBase<TPrimaryKey>.Description
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<TPrimaryKey>.Description
+  nameWithType.vb: TenantEntityBase(Of TPrimaryKey).Description
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of TPrimaryKey).Description
+- uid: Mix.Database.Entities.Base.TenantEntityBase`1.MixTenantId
+  commentId: P:Mix.Database.Entities.Base.TenantEntityBase`1.MixTenantId
+  name: MixTenantId
+  nameWithType: TenantEntityBase<TPrimaryKey>.MixTenantId
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<TPrimaryKey>.MixTenantId
+  nameWithType.vb: TenantEntityBase(Of TPrimaryKey).MixTenantId
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of TPrimaryKey).MixTenantId
+- uid: Mix.Database.Entities.Base.TenantEntityBase`1.MixTenant
+  commentId: P:Mix.Database.Entities.Base.TenantEntityBase`1.MixTenant
+  name: MixTenant
+  nameWithType: TenantEntityBase<TPrimaryKey>.MixTenant
+  fullName: Mix.Database.Entities.Base.TenantEntityBase<TPrimaryKey>.MixTenant
+  nameWithType.vb: TenantEntityBase(Of TPrimaryKey).MixTenant
+  fullName.vb: Mix.Database.Entities.Base.TenantEntityBase(Of TPrimaryKey).MixTenant
+- uid: Mix.Database.Entities.Cms.MixPage.MixPageContents*
+  commentId: Overload:Mix.Database.Entities.Cms.MixPage.MixPageContents
+  name: MixPageContents
+  nameWithType: MixPage.MixPageContents
+  fullName: Mix.Database.Entities.Cms.MixPage.MixPageContents
+- uid: System.Collections.Generic.ICollection{Mix.Database.Entities.Cms.MixPageContent}
+  commentId: T:System.Collections.Generic.ICollection{Mix.Database.Entities.Cms.MixPageContent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<MixPageContent>
+  nameWithType: ICollection<MixPageContent>
+  fullName: System.Collections.Generic.ICollection<Mix.Database.Entities.Cms.MixPageContent>
+  nameWithType.vb: ICollection(Of MixPageContent)
+  fullName.vb: System.Collections.Generic.ICollection(Of Mix.Database.Entities.Cms.MixPageContent)
+  name.vb: ICollection(Of MixPageContent)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Cms.MixPageContent
+    name: MixPageContent
+    nameWithType: MixPageContent
+    fullName: Mix.Database.Entities.Cms.MixPageContent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Cms.MixPageContent
+    name: MixPageContent
+    nameWithType: MixPageContent
+    fullName: Mix.Database.Entities.Cms.MixPageContent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

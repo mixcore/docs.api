@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Services.AuditLogService
+  commentId: T:Mix.Lib.Services.AuditLogService
+  id: AuditLogService
+  parent: Mix.Lib.Services
+  children:
+  - Mix.Lib.Services.AuditLogService.#ctor(IServiceProvider,IQueueService{MessageQueueModel})
+  - Mix.Lib.Services.AuditLogService._queueService
+  - Mix.Lib.Services.AuditLogService.LogRequest(Microsoft.AspNetCore.Http.HttpContext)
+  - Mix.Lib.Services.AuditLogService.LogRequest(System.String,Mix.Shared.Models.ParsedRequestModel)
+  - Mix.Lib.Services.AuditLogService.SaveToDatabase(System.String,Mix.Shared.Models.ParsedRequestModel,System.Boolean,Exception)
+  langs:
+  - csharp
+  - vb
+  name: AuditLogService
+  nameWithType: AuditLogService
+  fullName: Mix.Lib.Services.AuditLogService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Services/AuditLogService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AuditLogService
+    path: ../../mix.core/src/platform/mix.library/Services/AuditLogService.cs
+    startLine: 9
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public class AuditLogService
+    content.vb: Public Class AuditLogService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Services.AuditLogService._queueService
+  commentId: F:Mix.Lib.Services.AuditLogService._queueService
+  id: _queueService
+  parent: Mix.Lib.Services.AuditLogService
+  langs:
+  - csharp
+  - vb
+  name: _queueService
+  nameWithType: AuditLogService._queueService
+  fullName: Mix.Lib.Services.AuditLogService._queueService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/AuditLogService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _queueService
+    path: ../../mix.core/src/platform/mix.library/Services/AuditLogService.cs
+    startLine: 13
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: protected readonly IQueueService<MessageQueueModel> _queueService
+    return:
+      type: IQueueService{MessageQueueModel}
+    content.vb: Protected ReadOnly _queueService As IQueueService(Of MessageQueueModel)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Services.AuditLogService.#ctor(IServiceProvider,IQueueService{MessageQueueModel})
+  commentId: M:Mix.Lib.Services.AuditLogService.#ctor(IServiceProvider,IQueueService{MessageQueueModel})
+  id: '#ctor(IServiceProvider,IQueueService{MessageQueueModel})'
+  parent: Mix.Lib.Services.AuditLogService
+  langs:
+  - csharp
+  - vb
+  name: AuditLogService(IServiceProvider, IQueueService<MessageQueueModel>)
+  nameWithType: AuditLogService.AuditLogService(IServiceProvider, IQueueService<MessageQueueModel>)
+  fullName: Mix.Lib.Services.AuditLogService.AuditLogService(IServiceProvider, IQueueService<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Services/AuditLogService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Services/AuditLogService.cs
+    startLine: 14
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public AuditLogService(IServiceProvider servicesProvider, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: servicesProvider
+      type: IServiceProvider
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    content.vb: Public Sub New(servicesProvider As IServiceProvider, queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Lib.Services.AuditLogService.#ctor*
+  nameWithType.vb: AuditLogService.AuditLogService(IServiceProvider, IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Services.AuditLogService.AuditLogService(IServiceProvider, IQueueService(Of MessageQueueModel))
+  name.vb: AuditLogService(IServiceProvider, IQueueService(Of MessageQueueModel))
+- uid: Mix.Lib.Services.AuditLogService.SaveToDatabase(System.String,Mix.Shared.Models.ParsedRequestModel,System.Boolean,Exception)
+  commentId: M:Mix.Lib.Services.AuditLogService.SaveToDatabase(System.String,Mix.Shared.Models.ParsedRequestModel,System.Boolean,Exception)
+  id: SaveToDatabase(System.String,Mix.Shared.Models.ParsedRequestModel,System.Boolean,Exception)
+  parent: Mix.Lib.Services.AuditLogService
+  langs:
+  - csharp
+  - vb
+  name: SaveToDatabase(String, ParsedRequestModel, Boolean, Exception)
+  nameWithType: AuditLogService.SaveToDatabase(String, ParsedRequestModel, Boolean, Exception)
+  fullName: Mix.Lib.Services.AuditLogService.SaveToDatabase(System.String, Mix.Shared.Models.ParsedRequestModel, System.Boolean, Exception)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/AuditLogService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveToDatabase
+    path: ../../mix.core/src/platform/mix.library/Services/AuditLogService.cs
+    startLine: 19
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public void SaveToDatabase(string createdBy, ParsedRequestModel request, bool isSucceed, Exception exception)
+    parameters:
+    - id: createdBy
+      type: System.String
+    - id: request
+      type: Mix.Shared.Models.ParsedRequestModel
+    - id: isSucceed
+      type: System.Boolean
+    - id: exception
+      type: Exception
+    content.vb: Public Sub SaveToDatabase(createdBy As String, request As ParsedRequestModel, isSucceed As Boolean, exception As Exception)
+  overload: Mix.Lib.Services.AuditLogService.SaveToDatabase*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.AuditLogService.LogRequest(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:Mix.Lib.Services.AuditLogService.LogRequest(Microsoft.AspNetCore.Http.HttpContext)
+  id: LogRequest(Microsoft.AspNetCore.Http.HttpContext)
+  parent: Mix.Lib.Services.AuditLogService
+  langs:
+  - csharp
+  - vb
+  name: LogRequest(HttpContext)
+  nameWithType: AuditLogService.LogRequest(HttpContext)
+  fullName: Mix.Lib.Services.AuditLogService.LogRequest(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/AuditLogService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LogRequest
+    path: ../../mix.core/src/platform/mix.library/Services/AuditLogService.cs
+    startLine: 56
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public void LogRequest(HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    content.vb: Public Sub LogRequest(context As HttpContext)
+  overload: Mix.Lib.Services.AuditLogService.LogRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Services.AuditLogService.LogRequest(System.String,Mix.Shared.Models.ParsedRequestModel)
+  commentId: M:Mix.Lib.Services.AuditLogService.LogRequest(System.String,Mix.Shared.Models.ParsedRequestModel)
+  id: LogRequest(System.String,Mix.Shared.Models.ParsedRequestModel)
+  parent: Mix.Lib.Services.AuditLogService
+  langs:
+  - csharp
+  - vb
+  name: LogRequest(String, ParsedRequestModel)
+  nameWithType: AuditLogService.LogRequest(String, ParsedRequestModel)
+  fullName: Mix.Lib.Services.AuditLogService.LogRequest(System.String, Mix.Shared.Models.ParsedRequestModel)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Services/AuditLogService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LogRequest
+    path: ../../mix.core/src/platform/mix.library/Services/AuditLogService.cs
+    startLine: 69
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public void LogRequest(string createdBy, ParsedRequestModel request)
+    parameters:
+    - id: createdBy
+      type: System.String
+    - id: request
+      type: Mix.Shared.Models.ParsedRequestModel
+    content.vb: Public Sub LogRequest(createdBy As String, request As ParsedRequestModel)
+  overload: Mix.Lib.Services.AuditLogService.LogRequest*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.AuditLogService.#ctor*
+  commentId: Overload:Mix.Lib.Services.AuditLogService.#ctor
+  name: AuditLogService
+  nameWithType: AuditLogService.AuditLogService
+  fullName: Mix.Lib.Services.AuditLogService.AuditLogService
+- uid: IServiceProvider
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: IServiceProvider
+- uid: Mix.Lib.Services.AuditLogService.SaveToDatabase*
+  commentId: Overload:Mix.Lib.Services.AuditLogService.SaveToDatabase
+  name: SaveToDatabase
+  nameWithType: AuditLogService.SaveToDatabase
+  fullName: Mix.Lib.Services.AuditLogService.SaveToDatabase
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Shared.Models.ParsedRequestModel
+  commentId: T:Mix.Shared.Models.ParsedRequestModel
+  parent: Mix.Shared.Models
+  name: ParsedRequestModel
+  nameWithType: ParsedRequestModel
+  fullName: Mix.Shared.Models.ParsedRequestModel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: Mix.Shared.Models
+  commentId: N:Mix.Shared.Models
+  name: Mix.Shared.Models
+  nameWithType: Mix.Shared.Models
+  fullName: Mix.Shared.Models
+- uid: Mix.Lib.Services.AuditLogService.LogRequest*
+  commentId: Overload:Mix.Lib.Services.AuditLogService.LogRequest
+  name: LogRequest
+  nameWithType: AuditLogService.LogRequest
+  fullName: Mix.Lib.Services.AuditLogService.LogRequest
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http

@@ -1,0 +1,613 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TenantUserStore
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TenantUserStore
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.Lib.Services.TenantUserStore">
+  
+  
+  <h1 id="Mix_Lib_Services_TenantUserStore" data-uid="Mix.Lib.Services.TenantUserStore" class="text-break">Class TenantUserStore
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>, <span class="xref">Guid</span>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserClaims.html">AspNetUserClaims</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserLogins.html">AspNetUserLogins</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserTokens.html">AspNetUserTokens</a>&gt;</div>
+    <div class="level2"><span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>, <a class="xref" href="Mix.Database.Entities.Account.MixRole.html">MixRole</a>, <span class="xref">Guid</span>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserClaims.html">AspNetUserClaims</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserRoles.html">AspNetUserRoles</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserLogins.html">AspNetUserLogins</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserTokens.html">AspNetUserTokens</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetRoleClaims.html">AspNetRoleClaims</a>&gt;</div>
+    <div class="level3"><span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>, <a class="xref" href="Mix.Database.Entities.Account.MixRole.html">MixRole</a>, <a class="xref" href="Mix.Database.Entities.Account.MixCmsAccountContext.html">MixCmsAccountContext</a>, <span class="xref">Guid</span>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserClaims.html">AspNetUserClaims</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserRoles.html">AspNetUserRoles</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserLogins.html">AspNetUserLogins</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetUserTokens.html">AspNetUserTokens</a>, <a class="xref" href="Mix.Database.Entities.Account.AspNetRoleClaims.html">AspNetRoleClaims</a>&gt;</div>
+    <div class="level4"><span class="xref">TenantUserStore</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserLoginStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserClaimStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserPasswordStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserSecurityStampStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserEmailStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserLockoutStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserPhoneNumberStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IQueryableUserStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticationTokenStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticatorKeyStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorRecoveryCodeStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserRoleStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IProtectedUserStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">Microsoft.AspNetCore.Identity.IUserStore</span>&lt;<a class="xref" href="Mix.Database.Entities.Account.MixUser.html">MixUser</a>&gt;</div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.SaveChanges(System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.CreateAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.UpdateAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.DeleteAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindByIdAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindByNameAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindRoleAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindUserRoleAsync(Guid, Guid, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindUserAsync(Guid, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindUserLoginAsync(Guid, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindUserLoginAsync(System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.AddToRoleAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.RemoveFromRoleAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.GetRolesAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.IsInRoleAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.GetClaimsAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.AddClaimsAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.ReplaceClaimAsync(Mix.Database.Entities.Account.MixUser, System.Security.Claims.Claim, System.Security.Claims.Claim, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.RemoveClaimsAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.AddLoginAsync(Mix.Database.Entities.Account.MixUser, Microsoft.AspNetCore.Identity.UserLoginInfo, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.RemoveLoginAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.GetLoginsAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindByLoginAsync(System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindByEmailAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.GetUsersForClaimAsync(System.Security.Claims.Claim, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.GetUsersInRoleAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.AddUserTokenAsync(Mix.Database.Entities.Account.AspNetUserTokens)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.RemoveUserTokenAsync(Mix.Database.Entities.Account.AspNetUserTokens)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.Context</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.AutoSaveChanges</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.Users</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.CreateUserRole(Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.GetUsersInRoleAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.AddToRoleAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.RemoveFromRoleAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.GetRolesAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.IsInRoleAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindRoleAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Mix.Database.Entities.Account.MixRole, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens, Mix.Database.Entities.Account.AspNetRoleClaims&gt;.FindUserRoleAsync(Guid, Guid, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.CreateUserClaim(Mix.Database.Entities.Account.MixUser, System.Security.Claims.Claim)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.CreateUserLogin(Mix.Database.Entities.Account.MixUser, Microsoft.AspNetCore.Identity.UserLoginInfo)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.CreateUserToken(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetUserIdAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetUserNameAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetUserNameAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetNormalizedUserNameAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetNormalizedUserNameAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.CreateAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.UpdateAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.DeleteAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.FindByIdAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.ConvertIdFromString(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.ConvertIdToString(Guid)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.FindByNameAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetPasswordHashAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetPasswordHashAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.HasPasswordAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.FindUserAsync(Guid, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.FindUserLoginAsync(Guid, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.FindUserLoginAsync(System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.ThrowIfDisposed()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetClaimsAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.AddClaimsAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.ReplaceClaimAsync(Mix.Database.Entities.Account.MixUser, System.Security.Claims.Claim, System.Security.Claims.Claim, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.RemoveClaimsAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.AddLoginAsync(Mix.Database.Entities.Account.MixUser, Microsoft.AspNetCore.Identity.UserLoginInfo, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.RemoveLoginAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetLoginsAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.FindByLoginAsync(System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetEmailConfirmedAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetEmailConfirmedAsync(Mix.Database.Entities.Account.MixUser, System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetEmailAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetEmailAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetNormalizedEmailAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetNormalizedEmailAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.FindByEmailAsync(System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetLockoutEndDateAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetLockoutEndDateAsync(Mix.Database.Entities.Account.MixUser, System.Nullable&lt;System.DateTimeOffset&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.IncrementAccessFailedCountAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.ResetAccessFailedCountAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetAccessFailedCountAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetLockoutEnabledAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetLockoutEnabledAsync(Mix.Database.Entities.Account.MixUser, System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetPhoneNumberAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetPhoneNumberAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetPhoneNumberConfirmedAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetPhoneNumberConfirmedAsync(Mix.Database.Entities.Account.MixUser, System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetSecurityStampAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetSecurityStampAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetTwoFactorEnabledAsync(Mix.Database.Entities.Account.MixUser, System.Boolean, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetTwoFactorEnabledAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetUsersForClaimAsync(System.Security.Claims.Claim, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.FindTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.AddUserTokenAsync(Mix.Database.Entities.Account.AspNetUserTokens)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.RemoveUserTokenAsync(Mix.Database.Entities.Account.AspNetUserTokens)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.RemoveTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetTokenAsync(Mix.Database.Entities.Account.MixUser, System.String, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.SetAuthenticatorKeyAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.GetAuthenticatorKeyAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.CountCodesAsync(Mix.Database.Entities.Account.MixUser, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.ReplaceCodesAsync(Mix.Database.Entities.Account.MixUser, System.Collections.Generic.IEnumerable&lt;System.String&gt;, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.RedeemCodeAsync(Mix.Database.Entities.Account.MixUser, System.String, System.Threading.CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.ErrorDescriber</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.UserStoreBase&lt;Mix.Database.Entities.Account.MixUser, Guid, Mix.Database.Entities.Account.AspNetUserClaims, Mix.Database.Entities.Account.AspNetUserLogins, Mix.Database.Entities.Account.AspNetUserTokens&gt;.Users</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Lib.Services.html">Mix.Lib.Services</a></h6>
+  <h6><strong>Assembly</strong>: mix.library.dll</h6>
+  <h5 id="Mix_Lib_Services_TenantUserStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TenantUserStore : UserStore&lt;MixUser, MixRole, MixCmsAccountContext, Guid, AspNetUserClaims, AspNetUserRoles, AspNetUserLogins, AspNetUserTokens, AspNetRoleClaims&gt;, IUserLoginStore&lt;MixUser&gt;, IUserClaimStore&lt;MixUser&gt;, IUserPasswordStore&lt;MixUser&gt;, IUserSecurityStampStore&lt;MixUser&gt;, IUserEmailStore&lt;MixUser&gt;, IUserLockoutStore&lt;MixUser&gt;, IUserPhoneNumberStore&lt;MixUser&gt;, IQueryableUserStore&lt;MixUser&gt;, IUserTwoFactorStore&lt;MixUser&gt;, IUserAuthenticationTokenStore&lt;MixUser&gt;, IUserAuthenticatorKeyStore&lt;MixUser&gt;, IUserTwoFactorRecoveryCodeStore&lt;MixUser&gt;, IUserRoleStore&lt;MixUser&gt;, IProtectedUserStore&lt;MixUser&gt;, IUserStore&lt;MixUser&gt;, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserStore__ctor_Mix_Database_Entities_Account_MixCmsAccountContext_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserStore.%23ctor(Mix.Database.Entities.Account.MixCmsAccountContext%2CMicrosoft.AspNetCore.Identity.IdentityErrorDescriber)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserStore.cs/#L10">View Source</a>
+  </span>
+  <a id="Mix_Lib_Services_TenantUserStore__ctor_" data-uid="Mix.Lib.Services.TenantUserStore.#ctor*"></a>
+  <h4 id="Mix_Lib_Services_TenantUserStore__ctor_Mix_Database_Entities_Account_MixCmsAccountContext_Microsoft_AspNetCore_Identity_IdentityErrorDescriber_" data-uid="Mix.Lib.Services.TenantUserStore.#ctor(Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IdentityErrorDescriber)">TenantUserStore(MixCmsAccountContext, IdentityErrorDescriber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TenantUserStore(MixCmsAccountContext context, IdentityErrorDescriber describer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Account.MixCmsAccountContext.html">MixCmsAccountContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Identity.IdentityErrorDescriber</span></td>
+        <td><span class="parametername">describer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserLoginStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserClaimStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserPasswordStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserSecurityStampStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserEmailStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserLockoutStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserPhoneNumberStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IQueryableUserStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticationTokenStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserAuthenticatorKeyStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserTwoFactorRecoveryCodeStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserRoleStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IProtectedUserStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Identity.IUserStore&lt;TUser&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_TenantUserStore.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.TenantUserStore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/TenantUserStore.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

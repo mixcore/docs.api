@@ -1,0 +1,1552 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Shared.Services.MixEndpointService
+  commentId: T:Mix.Shared.Services.MixEndpointService
+  id: MixEndpointService
+  parent: Mix.Shared.Services
+  children:
+  - Mix.Shared.Services.MixEndpointService.#ctor
+  - Mix.Shared.Services.MixEndpointService.Account
+  - Mix.Shared.Services.MixEndpointService.Common
+  - Mix.Shared.Services.MixEndpointService.Endpoints
+  - Mix.Shared.Services.MixEndpointService.Grpc
+  - Mix.Shared.Services.MixEndpointService.Instance
+  - Mix.Shared.Services.MixEndpointService.LoadAppSettings
+  - Mix.Shared.Services.MixEndpointService.Messenger
+  - Mix.Shared.Services.MixEndpointService.Mixcore
+  - Mix.Shared.Services.MixEndpointService.Portal
+  - Mix.Shared.Services.MixEndpointService.Scheduler
+  - Mix.Shared.Services.MixEndpointService.syncRoot
+  - Mix.Shared.Services.MixEndpointService.Theme
+  langs:
+  - csharp
+  - vb
+  name: MixEndpointService
+  nameWithType: MixEndpointService
+  fullName: Mix.Shared.Services.MixEndpointService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixEndpointService
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 4
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: 'public class MixEndpointService : JsonConfigurationServiceBase'
+    content.vb: >-
+      Public Class MixEndpointService
+          Inherits JsonConfigurationServiceBase
+  inheritance:
+  - System.Object
+  - Mix.Shared.Services.JsonConfigurationServiceBase
+  inheritedMembers:
+  - Mix.Shared.Services.JsonConfigurationServiceBase.AppSettings
+  - Mix.Shared.Services.JsonConfigurationServiceBase.FilePath
+  - Mix.Shared.Services.JsonConfigurationServiceBase.watcher
+  - Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,{T})
+  - Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,{T})
+  - Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig``1(System.String)
+  - Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,{T})
+  - Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,{T})
+  - Mix.Shared.Services.JsonConfigurationServiceBase.SaveSettings
+  - Mix.Shared.Services.JsonConfigurationServiceBase.WatchFile
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Shared.Services.MixEndpointService.syncRoot
+  commentId: F:Mix.Shared.Services.MixEndpointService.syncRoot
+  id: syncRoot
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: syncRoot
+  nameWithType: MixEndpointService.syncRoot
+  fullName: Mix.Shared.Services.MixEndpointService.syncRoot
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: syncRoot
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 10
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  summary: "\nThe synchronize root\n"
+  example: []
+  syntax:
+    content: protected static readonly object syncRoot
+    return:
+      type: System.Object
+    content.vb: Protected Shared ReadOnly syncRoot As Object
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Mix.Shared.Services.MixEndpointService.Instance
+  commentId: P:Mix.Shared.Services.MixEndpointService.Instance
+  id: Instance
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: MixEndpointService.Instance
+  fullName: Mix.Shared.Services.MixEndpointService.Instance
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Instance
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 17
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public static MixEndpointService Instance { get; }
+    parameters: []
+    return:
+      type: Mix.Shared.Services.MixEndpointService
+    content.vb: Public Shared ReadOnly Property Instance As MixEndpointService
+  overload: Mix.Shared.Services.MixEndpointService.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Mix.Shared.Services.MixEndpointService.#ctor
+  commentId: M:Mix.Shared.Services.MixEndpointService.#ctor
+  id: '#ctor'
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: MixEndpointService()
+  nameWithType: MixEndpointService.MixEndpointService()
+  fullName: Mix.Shared.Services.MixEndpointService.MixEndpointService()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 37
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public MixEndpointService()
+    content.vb: Public Sub New
+  overload: Mix.Shared.Services.MixEndpointService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.LoadAppSettings
+  commentId: M:Mix.Shared.Services.MixEndpointService.LoadAppSettings
+  id: LoadAppSettings
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: LoadAppSettings()
+  nameWithType: MixEndpointService.LoadAppSettings()
+  fullName: Mix.Shared.Services.MixEndpointService.LoadAppSettings()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadAppSettings
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 41
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: protected override void LoadAppSettings()
+    content.vb: Protected Overrides Sub LoadAppSettings
+  overridden: Mix.Shared.Services.JsonConfigurationServiceBase.LoadAppSettings
+  overload: Mix.Shared.Services.MixEndpointService.LoadAppSettings*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Shared.Services.MixEndpointService.Endpoints
+  commentId: F:Mix.Shared.Services.MixEndpointService.Endpoints
+  id: Endpoints
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Endpoints
+  nameWithType: MixEndpointService.Endpoints
+  fullName: Mix.Shared.Services.MixEndpointService.Endpoints
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Endpoints
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 47
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string[] Endpoints
+    return:
+      type: System.String[]
+    content.vb: Public Endpoints As String()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.Account
+  commentId: P:Mix.Shared.Services.MixEndpointService.Account
+  id: Account
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Account
+  nameWithType: MixEndpointService.Account
+  fullName: Mix.Shared.Services.MixEndpointService.Account
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Account
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 48
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Account { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Account As String
+  overload: Mix.Shared.Services.MixEndpointService.Account*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.Common
+  commentId: P:Mix.Shared.Services.MixEndpointService.Common
+  id: Common
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Common
+  nameWithType: MixEndpointService.Common
+  fullName: Mix.Shared.Services.MixEndpointService.Common
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Common
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 54
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Common { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Common As String
+  overload: Mix.Shared.Services.MixEndpointService.Common*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.Portal
+  commentId: P:Mix.Shared.Services.MixEndpointService.Portal
+  id: Portal
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Portal
+  nameWithType: MixEndpointService.Portal
+  fullName: Mix.Shared.Services.MixEndpointService.Portal
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Portal
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 60
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Portal { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Portal As String
+  overload: Mix.Shared.Services.MixEndpointService.Portal*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.Theme
+  commentId: P:Mix.Shared.Services.MixEndpointService.Theme
+  id: Theme
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Theme
+  nameWithType: MixEndpointService.Theme
+  fullName: Mix.Shared.Services.MixEndpointService.Theme
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Theme
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 66
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Theme { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Theme As String
+  overload: Mix.Shared.Services.MixEndpointService.Theme*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.Mixcore
+  commentId: P:Mix.Shared.Services.MixEndpointService.Mixcore
+  id: Mixcore
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Mixcore
+  nameWithType: MixEndpointService.Mixcore
+  fullName: Mix.Shared.Services.MixEndpointService.Mixcore
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Mixcore
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 72
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Mixcore { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Mixcore As String
+  overload: Mix.Shared.Services.MixEndpointService.Mixcore*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.Messenger
+  commentId: P:Mix.Shared.Services.MixEndpointService.Messenger
+  id: Messenger
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Messenger
+  nameWithType: MixEndpointService.Messenger
+  fullName: Mix.Shared.Services.MixEndpointService.Messenger
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Messenger
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 78
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Messenger { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Messenger As String
+  overload: Mix.Shared.Services.MixEndpointService.Messenger*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.Scheduler
+  commentId: P:Mix.Shared.Services.MixEndpointService.Scheduler
+  id: Scheduler
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Scheduler
+  nameWithType: MixEndpointService.Scheduler
+  fullName: Mix.Shared.Services.MixEndpointService.Scheduler
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Scheduler
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 84
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Scheduler { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Scheduler As String
+  overload: Mix.Shared.Services.MixEndpointService.Scheduler*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.MixEndpointService.Grpc
+  commentId: P:Mix.Shared.Services.MixEndpointService.Grpc
+  id: Grpc
+  parent: Mix.Shared.Services.MixEndpointService
+  langs:
+  - csharp
+  - vb
+  name: Grpc
+  nameWithType: MixEndpointService.Grpc
+  fullName: Mix.Shared.Services.MixEndpointService.Grpc
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/MixEndpointService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Grpc
+    path: ../../mix.core/src/platform/mix.shared/Services/MixEndpointService.cs
+    startLine: 90
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Grpc { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Grpc As String
+  overload: Mix.Shared.Services.MixEndpointService.Grpc*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase
+  commentId: T:Mix.Shared.Services.JsonConfigurationServiceBase
+  parent: Mix.Shared.Services
+  name: JsonConfigurationServiceBase
+  nameWithType: JsonConfigurationServiceBase
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.AppSettings
+  commentId: P:Mix.Shared.Services.JsonConfigurationServiceBase.AppSettings
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  name: AppSettings
+  nameWithType: JsonConfigurationServiceBase.AppSettings
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.AppSettings
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.FilePath
+  commentId: P:Mix.Shared.Services.JsonConfigurationServiceBase.FilePath
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  name: FilePath
+  nameWithType: JsonConfigurationServiceBase.FilePath
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.FilePath
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.watcher
+  commentId: F:Mix.Shared.Services.JsonConfigurationServiceBase.watcher
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  name: watcher
+  nameWithType: JsonConfigurationServiceBase.watcher
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.watcher
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,{T})
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,``0)
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  definition: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,``0)
+  name: GetConfig<T>(String, T)
+  nameWithType: JsonConfigurationServiceBase.GetConfig<T>(String, T)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig<T>(System.String, T)
+  nameWithType.vb: JsonConfigurationServiceBase.GetConfig(Of T)(String, T)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig(Of T)(System.String, T)
+  name.vb: GetConfig(Of T)(String, T)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,``0)
+    name: GetConfig<T>
+    nameWithType: JsonConfigurationServiceBase.GetConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,``0)
+    name: GetConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.GetConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,{T})
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,``0)
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  definition: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,``0)
+  name: GetConfig<T>(String, String, T)
+  nameWithType: JsonConfigurationServiceBase.GetConfig<T>(String, String, T)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig<T>(System.String, System.String, T)
+  nameWithType.vb: JsonConfigurationServiceBase.GetConfig(Of T)(String, String, T)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig(Of T)(System.String, System.String, T)
+  name.vb: GetConfig(Of T)(String, String, T)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,``0)
+    name: GetConfig<T>
+    nameWithType: JsonConfigurationServiceBase.GetConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,``0)
+    name: GetConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.GetConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig``1(System.String)
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig``1(System.String)
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  isExternal: true
+  name: GetEnumConfig<T>(String)
+  nameWithType: JsonConfigurationServiceBase.GetEnumConfig<T>(String)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig<T>(System.String)
+  nameWithType.vb: JsonConfigurationServiceBase.GetEnumConfig(Of T)(String)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig(Of T)(System.String)
+  name.vb: GetEnumConfig(Of T)(String)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig``1(System.String)
+    name: GetEnumConfig<T>
+    nameWithType: JsonConfigurationServiceBase.GetEnumConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig``1(System.String)
+    name: GetEnumConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.GetEnumConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetEnumConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,{T})
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,``0)
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  definition: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,``0)
+  name: SetConfig<T>(String, T)
+  nameWithType: JsonConfigurationServiceBase.SetConfig<T>(String, T)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig<T>(System.String, T)
+  nameWithType.vb: JsonConfigurationServiceBase.SetConfig(Of T)(String, T)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig(Of T)(System.String, T)
+  name.vb: SetConfig(Of T)(String, T)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,``0)
+    name: SetConfig<T>
+    nameWithType: JsonConfigurationServiceBase.SetConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,``0)
+    name: SetConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.SetConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,{T})
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,``0)
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  definition: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,``0)
+  name: SetConfig<T>(String, String, T)
+  nameWithType: JsonConfigurationServiceBase.SetConfig<T>(String, String, T)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig<T>(System.String, System.String, T)
+  nameWithType.vb: JsonConfigurationServiceBase.SetConfig(Of T)(String, String, T)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig(Of T)(System.String, System.String, T)
+  name.vb: SetConfig(Of T)(String, String, T)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,``0)
+    name: SetConfig<T>
+    nameWithType: JsonConfigurationServiceBase.SetConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,``0)
+    name: SetConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.SetConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.SaveSettings
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.SaveSettings
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  name: SaveSettings()
+  nameWithType: JsonConfigurationServiceBase.SaveSettings()
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SaveSettings()
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SaveSettings
+    name: SaveSettings
+    nameWithType: JsonConfigurationServiceBase.SaveSettings
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SaveSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SaveSettings
+    name: SaveSettings
+    nameWithType: JsonConfigurationServiceBase.SaveSettings
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SaveSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.WatchFile
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.WatchFile
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  name: WatchFile()
+  nameWithType: JsonConfigurationServiceBase.WatchFile()
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.WatchFile()
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.WatchFile
+    name: WatchFile
+    nameWithType: JsonConfigurationServiceBase.WatchFile
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.WatchFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.WatchFile
+    name: WatchFile
+    nameWithType: JsonConfigurationServiceBase.WatchFile
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.WatchFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,``0)
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,``0)
+  isExternal: true
+  name: GetConfig<T>(String, T)
+  nameWithType: JsonConfigurationServiceBase.GetConfig<T>(String, T)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig<T>(System.String, T)
+  nameWithType.vb: JsonConfigurationServiceBase.GetConfig(Of T)(String, T)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig(Of T)(System.String, T)
+  name.vb: GetConfig(Of T)(String, T)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,``0)
+    name: GetConfig<T>
+    nameWithType: JsonConfigurationServiceBase.GetConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,``0)
+    name: GetConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.GetConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,``0)
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,``0)
+  isExternal: true
+  name: GetConfig<T>(String, String, T)
+  nameWithType: JsonConfigurationServiceBase.GetConfig<T>(String, String, T)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig<T>(System.String, System.String, T)
+  nameWithType.vb: JsonConfigurationServiceBase.GetConfig(Of T)(String, String, T)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig(Of T)(System.String, System.String, T)
+  name.vb: GetConfig(Of T)(String, String, T)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,``0)
+    name: GetConfig<T>
+    nameWithType: JsonConfigurationServiceBase.GetConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig``1(System.String,System.String,``0)
+    name: GetConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.GetConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.GetConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,``0)
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,``0)
+  isExternal: true
+  name: SetConfig<T>(String, T)
+  nameWithType: JsonConfigurationServiceBase.SetConfig<T>(String, T)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig<T>(System.String, T)
+  nameWithType.vb: JsonConfigurationServiceBase.SetConfig(Of T)(String, T)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig(Of T)(System.String, T)
+  name.vb: SetConfig(Of T)(String, T)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,``0)
+    name: SetConfig<T>
+    nameWithType: JsonConfigurationServiceBase.SetConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,``0)
+    name: SetConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.SetConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,``0)
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,``0)
+  isExternal: true
+  name: SetConfig<T>(String, String, T)
+  nameWithType: JsonConfigurationServiceBase.SetConfig<T>(String, String, T)
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig<T>(System.String, System.String, T)
+  nameWithType.vb: JsonConfigurationServiceBase.SetConfig(Of T)(String, String, T)
+  fullName.vb: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig(Of T)(System.String, System.String, T)
+  name.vb: SetConfig(Of T)(String, String, T)
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,``0)
+    name: SetConfig<T>
+    nameWithType: JsonConfigurationServiceBase.SetConfig<T>
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig``1(System.String,System.String,``0)
+    name: SetConfig(Of T)
+    nameWithType: JsonConfigurationServiceBase.SetConfig(Of T)
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.SetConfig(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.MixEndpointService.Instance*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Instance
+  name: Instance
+  nameWithType: MixEndpointService.Instance
+  fullName: Mix.Shared.Services.MixEndpointService.Instance
+- uid: Mix.Shared.Services.MixEndpointService
+  commentId: T:Mix.Shared.Services.MixEndpointService
+  parent: Mix.Shared.Services
+  name: MixEndpointService
+  nameWithType: MixEndpointService
+  fullName: Mix.Shared.Services.MixEndpointService
+- uid: Mix.Shared.Services.MixEndpointService.#ctor*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.#ctor
+  name: MixEndpointService
+  nameWithType: MixEndpointService.MixEndpointService
+  fullName: Mix.Shared.Services.MixEndpointService.MixEndpointService
+- uid: Mix.Shared.Services.JsonConfigurationServiceBase.LoadAppSettings
+  commentId: M:Mix.Shared.Services.JsonConfigurationServiceBase.LoadAppSettings
+  parent: Mix.Shared.Services.JsonConfigurationServiceBase
+  name: LoadAppSettings()
+  nameWithType: JsonConfigurationServiceBase.LoadAppSettings()
+  fullName: Mix.Shared.Services.JsonConfigurationServiceBase.LoadAppSettings()
+  spec.csharp:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.LoadAppSettings
+    name: LoadAppSettings
+    nameWithType: JsonConfigurationServiceBase.LoadAppSettings
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.LoadAppSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Shared.Services.JsonConfigurationServiceBase.LoadAppSettings
+    name: LoadAppSettings
+    nameWithType: JsonConfigurationServiceBase.LoadAppSettings
+    fullName: Mix.Shared.Services.JsonConfigurationServiceBase.LoadAppSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Shared.Services.MixEndpointService.LoadAppSettings*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.LoadAppSettings
+  name: LoadAppSettings
+  nameWithType: MixEndpointService.LoadAppSettings
+  fullName: Mix.Shared.Services.MixEndpointService.LoadAppSettings
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Mix.Shared.Services.MixEndpointService.Account*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Account
+  name: Account
+  nameWithType: MixEndpointService.Account
+  fullName: Mix.Shared.Services.MixEndpointService.Account
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Shared.Services.MixEndpointService.Common*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Common
+  name: Common
+  nameWithType: MixEndpointService.Common
+  fullName: Mix.Shared.Services.MixEndpointService.Common
+- uid: Mix.Shared.Services.MixEndpointService.Portal*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Portal
+  name: Portal
+  nameWithType: MixEndpointService.Portal
+  fullName: Mix.Shared.Services.MixEndpointService.Portal
+- uid: Mix.Shared.Services.MixEndpointService.Theme*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Theme
+  name: Theme
+  nameWithType: MixEndpointService.Theme
+  fullName: Mix.Shared.Services.MixEndpointService.Theme
+- uid: Mix.Shared.Services.MixEndpointService.Mixcore*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Mixcore
+  name: Mixcore
+  nameWithType: MixEndpointService.Mixcore
+  fullName: Mix.Shared.Services.MixEndpointService.Mixcore
+- uid: Mix.Shared.Services.MixEndpointService.Messenger*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Messenger
+  name: Messenger
+  nameWithType: MixEndpointService.Messenger
+  fullName: Mix.Shared.Services.MixEndpointService.Messenger
+- uid: Mix.Shared.Services.MixEndpointService.Scheduler*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Scheduler
+  name: Scheduler
+  nameWithType: MixEndpointService.Scheduler
+  fullName: Mix.Shared.Services.MixEndpointService.Scheduler
+- uid: Mix.Shared.Services.MixEndpointService.Grpc*
+  commentId: Overload:Mix.Shared.Services.MixEndpointService.Grpc
+  name: Grpc
+  nameWithType: MixEndpointService.Grpc
+  fullName: Mix.Shared.Services.MixEndpointService.Grpc

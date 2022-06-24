@@ -1,0 +1,339 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext
+  commentId: T:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext
+  id: SQLiteQuartzDbContext
+  parent: Mix.Database.Entities.Quartz
+  children:
+  - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(System.String)
+  - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring(DbContextOptionsBuilder)
+  - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating(ModelBuilder)
+  langs:
+  - csharp
+  - vb
+  name: SQLiteQuartzDbContext
+  nameWithType: SQLiteQuartzDbContext
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SQLiteQuartzDbContext
+    path: ../../mix.core/src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+    startLine: 6
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Quartz
+  syntax:
+    content: 'public class SQLiteQuartzDbContext : QuartzDbContext'
+    content.vb: >-
+      Public Class SQLiteQuartzDbContext
+          Inherits QuartzDbContext
+  inheritance:
+  - System.Object
+  - Mix.Database.Entities.Quartz.QuartzDbContext
+  inheritedMembers:
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzBlobTriggers
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzCalendars
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzCronTriggers
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzFiredTriggers
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzJobDetails
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzLocks
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzPausedTriggerGrps
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSchedulerStates
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSimpleTriggers
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSimpropTriggers
+  - Mix.Database.Entities.Quartz.QuartzDbContext.QrtzTriggers
+  - Mix.Database.Entities.Quartz.QuartzDbContext.DbProvider
+  - Mix.Database.Entities.Quartz.QuartzDbContext.ConnectionString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  commentId: M:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  id: '#ctor(Mix.Database.Services.MixDatabaseService)'
+  parent: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext
+  langs:
+  - csharp
+  - vb
+  name: SQLiteQuartzDbContext(MixDatabaseService)
+  nameWithType: SQLiteQuartzDbContext.SQLiteQuartzDbContext(MixDatabaseService)
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.SQLiteQuartzDbContext(Mix.Database.Services.MixDatabaseService)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+    startLine: 8
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Quartz
+  syntax:
+    content: public SQLiteQuartzDbContext(MixDatabaseService databaseService)
+    parameters:
+    - id: databaseService
+      type: Mix.Database.Services.MixDatabaseService
+    content.vb: Public Sub New(databaseService As MixDatabaseService)
+  overload: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(System.String)
+  commentId: M:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext
+  langs:
+  - csharp
+  - vb
+  name: SQLiteQuartzDbContext(String)
+  nameWithType: SQLiteQuartzDbContext.SQLiteQuartzDbContext(String)
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.SQLiteQuartzDbContext(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+    startLine: 13
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Quartz
+  syntax:
+    content: public SQLiteQuartzDbContext(string connectionString)
+    parameters:
+    - id: connectionString
+      type: System.String
+    content.vb: Public Sub New(connectionString As String)
+  overload: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring(DbContextOptionsBuilder)
+  commentId: M:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring(DbContextOptionsBuilder)
+  id: OnConfiguring(DbContextOptionsBuilder)
+  parent: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext
+  langs:
+  - csharp
+  - vb
+  name: OnConfiguring(DbContextOptionsBuilder)
+  nameWithType: SQLiteQuartzDbContext.OnConfiguring(DbContextOptionsBuilder)
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring(DbContextOptionsBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: OnConfiguring
+    path: ../../mix.core/src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+    startLine: 20
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Quartz
+  syntax:
+    content: protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    parameters:
+    - id: optionsBuilder
+      type: DbContextOptionsBuilder
+    content.vb: Protected Overrides Sub OnConfiguring(optionsBuilder As DbContextOptionsBuilder)
+  overload: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating(ModelBuilder)
+  commentId: M:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating(ModelBuilder)
+  id: OnModelCreating(ModelBuilder)
+  parent: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext
+  langs:
+  - csharp
+  - vb
+  name: OnModelCreating(ModelBuilder)
+  nameWithType: SQLiteQuartzDbContext.OnModelCreating(ModelBuilder)
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating(ModelBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: OnModelCreating
+    path: ../../mix.core/src/platform/mix.database/Entities/Quartz/_SQliteQuartzDbContext.cs
+    startLine: 29
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Quartz
+  syntax:
+    content: protected override void OnModelCreating(ModelBuilder modelBuilder)
+    parameters:
+    - id: modelBuilder
+      type: ModelBuilder
+    content.vb: Protected Overrides Sub OnModelCreating(modelBuilder As ModelBuilder)
+  overload: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Mix.Database.Entities.Quartz
+  commentId: N:Mix.Database.Entities.Quartz
+  name: Mix.Database.Entities.Quartz
+  nameWithType: Mix.Database.Entities.Quartz
+  fullName: Mix.Database.Entities.Quartz
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext
+  commentId: T:Mix.Database.Entities.Quartz.QuartzDbContext
+  parent: Mix.Database.Entities.Quartz
+  name: QuartzDbContext
+  nameWithType: QuartzDbContext
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzBlobTriggers
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzBlobTriggers
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzBlobTriggers
+  nameWithType: QuartzDbContext.QrtzBlobTriggers
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzBlobTriggers
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzCalendars
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzCalendars
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzCalendars
+  nameWithType: QuartzDbContext.QrtzCalendars
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzCalendars
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzCronTriggers
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzCronTriggers
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzCronTriggers
+  nameWithType: QuartzDbContext.QrtzCronTriggers
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzCronTriggers
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzFiredTriggers
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzFiredTriggers
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzFiredTriggers
+  nameWithType: QuartzDbContext.QrtzFiredTriggers
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzFiredTriggers
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzJobDetails
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzJobDetails
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzJobDetails
+  nameWithType: QuartzDbContext.QrtzJobDetails
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzJobDetails
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzLocks
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzLocks
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzLocks
+  nameWithType: QuartzDbContext.QrtzLocks
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzLocks
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzPausedTriggerGrps
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzPausedTriggerGrps
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzPausedTriggerGrps
+  nameWithType: QuartzDbContext.QrtzPausedTriggerGrps
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzPausedTriggerGrps
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSchedulerStates
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSchedulerStates
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzSchedulerStates
+  nameWithType: QuartzDbContext.QrtzSchedulerStates
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSchedulerStates
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSimpleTriggers
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSimpleTriggers
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzSimpleTriggers
+  nameWithType: QuartzDbContext.QrtzSimpleTriggers
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSimpleTriggers
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSimpropTriggers
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSimpropTriggers
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzSimpropTriggers
+  nameWithType: QuartzDbContext.QrtzSimpropTriggers
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzSimpropTriggers
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzTriggers
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.QrtzTriggers
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: QrtzTriggers
+  nameWithType: QuartzDbContext.QrtzTriggers
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.QrtzTriggers
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.DbProvider
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.DbProvider
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: DbProvider
+  nameWithType: QuartzDbContext.DbProvider
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.DbProvider
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext.ConnectionString
+  commentId: P:Mix.Database.Entities.Quartz.QuartzDbContext.ConnectionString
+  parent: Mix.Database.Entities.Quartz.QuartzDbContext
+  name: ConnectionString
+  nameWithType: QuartzDbContext.ConnectionString
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext.ConnectionString
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor*
+  commentId: Overload:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor
+  name: SQLiteQuartzDbContext
+  nameWithType: SQLiteQuartzDbContext.SQLiteQuartzDbContext
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.SQLiteQuartzDbContext
+- uid: Mix.Database.Services.MixDatabaseService
+  commentId: T:Mix.Database.Services.MixDatabaseService
+  parent: Mix.Database.Services
+  name: MixDatabaseService
+  nameWithType: MixDatabaseService
+  fullName: Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services
+  commentId: N:Mix.Database.Services
+  name: Mix.Database.Services
+  nameWithType: Mix.Database.Services
+  fullName: Mix.Database.Services
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring*
+  commentId: Overload:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring
+  name: OnConfiguring
+  nameWithType: SQLiteQuartzDbContext.OnConfiguring
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring
+- uid: DbContextOptionsBuilder
+  isExternal: true
+  name: DbContextOptionsBuilder
+  nameWithType: DbContextOptionsBuilder
+  fullName: DbContextOptionsBuilder
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating*
+  commentId: Overload:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating
+  name: OnModelCreating
+  nameWithType: SQLiteQuartzDbContext.OnModelCreating
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating
+- uid: ModelBuilder
+  isExternal: true
+  name: ModelBuilder
+  nameWithType: ModelBuilder
+  fullName: ModelBuilder

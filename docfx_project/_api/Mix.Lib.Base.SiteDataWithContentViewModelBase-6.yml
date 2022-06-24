@@ -1,0 +1,791 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  commentId: T:Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  id: SiteDataWithContentViewModelBase`6
+  parent: Mix.Lib.Base
+  children:
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor(`1,UnitOfWorkInfo)
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor(UnitOfWorkInfo)
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Contents
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DeleteHandlerAsync
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Description
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DisplayName
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.ExpandView
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Image
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.MixTenantId
+  - Mix.Lib.Base.SiteDataWithContentViewModelBase`6.SaveEntityRelationshipAsync(`1)
+  langs:
+  - csharp
+  - vb
+  name: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SiteDataWithContentViewModelBase
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 5
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: 'public abstract class SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent> : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> where TDbContext : DbContext where TEntity : class, IEntity<TPrimaryKey> where TPrimaryKey : IComparable where TView : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> where TContentEntity : MultilingualContentBase<TPrimaryKey> where TContent : MultilingualContentViewModelBase<TDbContext, TContentEntity, TPrimaryKey, TContent>'
+    typeParameters:
+    - id: TDbContext
+    - id: TEntity
+    - id: TPrimaryKey
+    - id: TView
+    - id: TContentEntity
+    - id: TContent
+    content.vb: >-
+      Public MustInherit Class SiteDataWithContentViewModelBase(Of TDbContext As DbContext, TEntity As {Class, IEntity(Of TPrimaryKey)}, TPrimaryKey As IComparable, TView As ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView), TContentEntity As MultilingualContentBase(Of TPrimaryKey), TContent As MultilingualContentViewModelBase(Of TDbContext, TContentEntity, TPrimaryKey, TContent))
+          Inherits ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  inheritance:
+  - System.Object
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent)
+  name.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent)
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor
+  commentId: M:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor
+  id: '#ctor'
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: SiteDataWithContentViewModelBase()
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SiteDataWithContentViewModelBase()
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SiteDataWithContentViewModelBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 16
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected SiteDataWithContentViewModelBase()
+    content.vb: Protected Sub New
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SiteDataWithContentViewModelBase()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SiteDataWithContentViewModelBase()
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: SiteDataWithContentViewModelBase(UnitOfWorkInfo)
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SiteDataWithContentViewModelBase(UnitOfWorkInfo)
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SiteDataWithContentViewModelBase(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 20
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected SiteDataWithContentViewModelBase(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Protected Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SiteDataWithContentViewModelBase(UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SiteDataWithContentViewModelBase(UnitOfWorkInfo)
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor(`1,UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor(`1,UnitOfWorkInfo)
+  id: '#ctor(`1,UnitOfWorkInfo)'
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: SiteDataWithContentViewModelBase(TEntity, UnitOfWorkInfo)
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SiteDataWithContentViewModelBase(TEntity, UnitOfWorkInfo)
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SiteDataWithContentViewModelBase(TEntity, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 24
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected SiteDataWithContentViewModelBase(TEntity entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Protected Sub New(entity As TEntity, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SiteDataWithContentViewModelBase(TEntity, UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SiteDataWithContentViewModelBase(TEntity, UnitOfWorkInfo)
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DisplayName
+  commentId: P:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DisplayName
+  id: DisplayName
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.DisplayName
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DisplayName
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 35
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public virtual string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property DisplayName As String
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DisplayName*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).DisplayName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).DisplayName
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Description
+  commentId: P:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Description
+  id: Description
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Description
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Description
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Description
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 36
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public virtual string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Description As String
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Description*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Description
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Description
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Image
+  commentId: P:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Image
+  id: Image
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Image
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Image
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Image
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 38
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public virtual string Image { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Image As String
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Image*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Image
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Image
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.MixTenantId
+  commentId: P:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.MixTenantId
+  id: MixTenantId
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: MixTenantId
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.MixTenantId
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.MixTenantId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantId
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 40
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public int MixTenantId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MixTenantId As Integer
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.MixTenantId*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).MixTenantId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).MixTenantId
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Contents
+  commentId: P:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Contents
+  id: Contents
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: Contents
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Contents
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Contents
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Contents
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 42
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public List<TContent> Contents { get; set; }
+    parameters: []
+    return:
+      type: List{{TContent}}
+    content.vb: Public Property Contents As List(Of TContent)
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Contents*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Contents
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Contents
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.ExpandView
+  commentId: M:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.ExpandView
+  id: ExpandView
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: ExpandView()
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.ExpandView()
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.ExpandView()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExpandView
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 48
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public override Task ExpandView()
+    return:
+      type: Task
+    content.vb: Public Overrides Function ExpandView As Task
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.ExpandView*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).ExpandView()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).ExpandView()
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  id: InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitDefaultValues
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 56
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public override void InitDefaultValues(string language = null, int? cultureId = default(int? ))
+    parameters:
+    - id: language
+      type: System.String
+    - id: cultureId
+      type: System.Nullable{System.Int32}
+    content.vb: Public Overrides Sub InitDefaultValues(language As String = Nothing, cultureId As Integer? = Nothing)
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.InitDefaultValues*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).InitDefaultValues(String, Nullable(Of Int32))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.SaveEntityRelationshipAsync(`1)
+  commentId: M:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.SaveEntityRelationshipAsync(`1)
+  id: SaveEntityRelationshipAsync(`1)
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: SaveEntityRelationshipAsync(TEntity)
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SaveEntityRelationshipAsync(TEntity)
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SaveEntityRelationshipAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveEntityRelationshipAsync
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 61
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected override Task SaveEntityRelationshipAsync(TEntity parentEntity)
+    parameters:
+    - id: parentEntity
+      type: '{TEntity}'
+    return:
+      type: Task
+    content.vb: Protected Overrides Function SaveEntityRelationshipAsync(parentEntity As TEntity) As Task
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.SaveEntityRelationshipAsync*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SaveEntityRelationshipAsync(TEntity)
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SaveEntityRelationshipAsync(TEntity)
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DeleteHandlerAsync
+  commentId: M:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DeleteHandlerAsync
+  id: DeleteHandlerAsync
+  parent: Mix.Lib.Base.SiteDataWithContentViewModelBase`6
+  langs:
+  - csharp
+  - vb
+  name: DeleteHandlerAsync()
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.DeleteHandlerAsync()
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.DeleteHandlerAsync()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DeleteHandlerAsync
+    path: ../../mix.core/src/platform/mix.library/Base/SiteDataWithContentViewModelBase.cs
+    startLine: 74
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected override Task DeleteHandlerAsync()
+    return:
+      type: Task
+    content.vb: Protected Overrides Function DeleteHandlerAsync As Task
+  overload: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DeleteHandlerAsync*
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).DeleteHandlerAsync()
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).DeleteHandlerAsync()
+references:
+- uid: Mix.Lib.Base
+  commentId: N:Mix.Lib.Base
+  name: Mix.Lib.Base
+  nameWithType: Mix.Lib.Base
+  fullName: Mix.Lib.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.#ctor
+  name: SiteDataWithContentViewModelBase
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SiteDataWithContentViewModelBase
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SiteDataWithContentViewModelBase
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SiteDataWithContentViewModelBase
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SiteDataWithContentViewModelBase
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DisplayName*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DisplayName
+  name: DisplayName
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.DisplayName
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.DisplayName
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).DisplayName
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).DisplayName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Description*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Description
+  name: Description
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Description
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Description
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Description
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Description
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Image*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Image
+  name: Image
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Image
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Image
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Image
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Image
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.MixTenantId*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.MixTenantId
+  name: MixTenantId
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.MixTenantId
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.MixTenantId
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).MixTenantId
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).MixTenantId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Contents*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.Contents
+  name: Contents
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Contents
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.Contents
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Contents
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).Contents
+- uid: List{{TContent}}
+  commentId: '!:List{`5}'
+  definition: List`1
+  name: List<TContent>
+  nameWithType: List<TContent>
+  fullName: List<TContent>
+  nameWithType.vb: List(Of TContent)
+  fullName.vb: List(Of TContent)
+  name.vb: List(Of TContent)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TContent
+    nameWithType: TContent
+    fullName: TContent
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TContent
+    nameWithType: TContent
+    fullName: TContent
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.ExpandView*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.ExpandView
+  name: ExpandView
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.ExpandView
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.ExpandView
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).ExpandView
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).ExpandView
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.InitDefaultValues*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.InitDefaultValues
+  name: InitDefaultValues
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.InitDefaultValues
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.InitDefaultValues
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).InitDefaultValues
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).InitDefaultValues
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.SaveEntityRelationshipAsync*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.SaveEntityRelationshipAsync
+  name: SaveEntityRelationshipAsync
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SaveEntityRelationshipAsync
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.SaveEntityRelationshipAsync
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SaveEntityRelationshipAsync
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).SaveEntityRelationshipAsync
+- uid: Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DeleteHandlerAsync*
+  commentId: Overload:Mix.Lib.Base.SiteDataWithContentViewModelBase`6.DeleteHandlerAsync
+  name: DeleteHandlerAsync
+  nameWithType: SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.DeleteHandlerAsync
+  fullName: Mix.Lib.Base.SiteDataWithContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent>.DeleteHandlerAsync
+  nameWithType.vb: SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).DeleteHandlerAsync
+  fullName.vb: Mix.Lib.Base.SiteDataWithContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView, TContentEntity, TContent).DeleteHandlerAsync

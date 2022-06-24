@@ -1,0 +1,585 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Database.EntityConfigurations.POSTGRES.Base.PostgresTenantEntityBaseConfiguration`2
+  commentId: T:Mix.Database.EntityConfigurations.POSTGRES.Base.PostgresTenantEntityBaseConfiguration`2
+  id: PostgresTenantEntityBaseConfiguration`2
+  parent: Mix.Database.EntityConfigurations.POSTGRES.Base
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PostgresTenantEntityBaseConfiguration<T, TPrimaryKey>
+  nameWithType: PostgresTenantEntityBaseConfiguration<T, TPrimaryKey>
+  fullName: Mix.Database.EntityConfigurations.POSTGRES.Base.PostgresTenantEntityBaseConfiguration<T, TPrimaryKey>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.database/EntityConfigurations/POSTGRES/Base/PostgresTenantEntityBaseConfiguration.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PostgresTenantEntityBaseConfiguration
+    path: ../../mix.core/src/platform/mix.database/EntityConfigurations/POSTGRES/Base/PostgresTenantEntityBaseConfiguration.cs
+    startLine: 5
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.EntityConfigurations.POSTGRES.Base
+  syntax:
+    content: 'public abstract class PostgresTenantEntityBaseConfiguration<T, TPrimaryKey> : TenantEntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants> where T : TenantEntityBase<TPrimaryKey> where TPrimaryKey : IComparable'
+    typeParameters:
+    - id: T
+    - id: TPrimaryKey
+    content.vb: >-
+      Public MustInherit Class PostgresTenantEntityBaseConfiguration(Of T As TenantEntityBase(Of TPrimaryKey), TPrimaryKey As IComparable)
+          Inherits TenantEntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants)
+  inheritance:
+  - System.Object
+  - Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  - Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  derivedClasses:
+  - Mix.Database.EntityConfigurations.POSTGRES.MixCultureConfiguration
+  - Mix.Database.EntityConfigurations.POSTGRES.MixDomainConfiguration
+  - Mix.Database.EntityConfigurations.POSTGRES.MixMediaConfiguration
+  - Mix.Database.EntityConfigurations.POSTGRES.MixPageConfiguration
+  - Mix.Database.EntityConfigurations.POSTGRES.MixThemeConfiguration
+  - Mix.Database.EntityConfigurations.POSTGRES.MixUrlAliasConfiguration
+  inheritedMembers:
+  - Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Configure(EntityTypeBuilder{{T}})
+  - Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Config
+  - Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Configure(EntityTypeBuilder{{T}})
+  nameWithType.vb: PostgresTenantEntityBaseConfiguration(Of T, TPrimaryKey)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Database.EntityConfigurations.POSTGRES.Base.PostgresTenantEntityBaseConfiguration(Of T, TPrimaryKey)
+  name.vb: PostgresTenantEntityBaseConfiguration(Of T, TPrimaryKey)
+references:
+- uid: Mix.Database.EntityConfigurations.POSTGRES.Base
+  commentId: N:Mix.Database.EntityConfigurations.POSTGRES.Base
+  name: Mix.Database.EntityConfigurations.POSTGRES.Base
+  nameWithType: Mix.Database.EntityConfigurations.POSTGRES.Base
+  fullName: Mix.Database.EntityConfigurations.POSTGRES.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  commentId: T:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{`0,`1,Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  parent: Mix.Database.EntityConfigurations.Base
+  definition: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+  name: EntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants>
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants)
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants)
+  name.vb: EntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants)
+  spec.csharp:
+  - uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+    name: EntityBaseConfiguration
+    nameWithType: EntityBaseConfiguration
+    fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants
+    name: PostgresDatabaseConstants
+    nameWithType: PostgresDatabaseConstants
+    fullName: Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+    name: EntityBaseConfiguration
+    nameWithType: EntityBaseConfiguration
+    fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants
+    name: PostgresDatabaseConstants
+    nameWithType: PostgresDatabaseConstants
+    fullName: Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  commentId: T:Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration{`0,`1,Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  parent: Mix.Database.EntityConfigurations.Base
+  definition: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3
+  name: TenantEntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>
+  nameWithType: TenantEntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>
+  fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration<T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants>
+  nameWithType.vb: TenantEntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants)
+  fullName.vb: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration(Of T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants)
+  name.vb: TenantEntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants)
+  spec.csharp:
+  - uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3
+    name: TenantEntityBaseConfiguration
+    nameWithType: TenantEntityBaseConfiguration
+    fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants
+    name: PostgresDatabaseConstants
+    nameWithType: PostgresDatabaseConstants
+    fullName: Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3
+    name: TenantEntityBaseConfiguration
+    nameWithType: TenantEntityBaseConfiguration
+    fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants
+    name: PostgresDatabaseConstants
+    nameWithType: PostgresDatabaseConstants
+    fullName: Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Configure(EntityTypeBuilder{{T}})
+  commentId: M:Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration{`0,`1,Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Configure(EntityTypeBuilder{`0})
+  parent: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  definition: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  name: Configure(EntityTypeBuilder<T>)
+  nameWithType: TenantEntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>.Configure(EntityTypeBuilder<T>)
+  fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration<T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants>.Configure(EntityTypeBuilder<T>)
+  nameWithType.vb: TenantEntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants).Configure(EntityTypeBuilder(Of T))
+  fullName.vb: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration(Of T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants).Configure(EntityTypeBuilder(Of T))
+  name.vb: Configure(EntityTypeBuilder(Of T))
+  spec.csharp:
+  - uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: TenantEntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>.Configure
+    fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration<T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants>.Configure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: TenantEntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants).Configure
+    fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration(Of T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants).Configure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Config
+  commentId: P:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{`0,`1,Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Config
+  parent: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  definition: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config
+  name: Config
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>.Config
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants>.Config
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants).Config
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants).Config
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Configure(EntityTypeBuilder{{T}})
+  commentId: M:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{`0,`1,Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}.Configure(EntityTypeBuilder{`0})
+  parent: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration{{T},{TPrimaryKey},Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants}
+  definition: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  name: Configure(EntityTypeBuilder<T>)
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>.Configure(EntityTypeBuilder<T>)
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants>.Configure(EntityTypeBuilder<T>)
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants).Configure(EntityTypeBuilder(Of T))
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants).Configure(EntityTypeBuilder(Of T))
+  name.vb: Configure(EntityTypeBuilder(Of T))
+  spec.csharp:
+  - uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: EntityBaseConfiguration<T, TPrimaryKey, PostgresDatabaseConstants>.Configure
+    fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants>.Configure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: EntityBaseConfiguration(Of T, TPrimaryKey, PostgresDatabaseConstants).Configure
+    fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, Mix.Database.EntityConfigurations.POSTGRES.PostgresDatabaseConstants).Configure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+  commentId: T:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+  name: EntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+  name.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+  spec.csharp:
+  - uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+    name: EntityBaseConfiguration
+    nameWithType: EntityBaseConfiguration
+    fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TConfig
+    nameWithType: TConfig
+    fullName: TConfig
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3
+    name: EntityBaseConfiguration
+    nameWithType: EntityBaseConfiguration
+    fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TConfig
+    nameWithType: TConfig
+    fullName: TConfig
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.EntityConfigurations.Base
+  commentId: N:Mix.Database.EntityConfigurations.Base
+  name: Mix.Database.EntityConfigurations.Base
+  nameWithType: Mix.Database.EntityConfigurations.Base
+  fullName: Mix.Database.EntityConfigurations.Base
+- uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3
+  commentId: T:Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3
+  name: TenantEntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  nameWithType: TenantEntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration<T, TPrimaryKey, TConfig>
+  nameWithType.vb: TenantEntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+  fullName.vb: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+  name.vb: TenantEntityBaseConfiguration(Of T, TPrimaryKey, TConfig)
+  spec.csharp:
+  - uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3
+    name: TenantEntityBaseConfiguration
+    nameWithType: TenantEntityBaseConfiguration
+    fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TConfig
+    nameWithType: TConfig
+    fullName: TConfig
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3
+    name: TenantEntityBaseConfiguration
+    nameWithType: TenantEntityBaseConfiguration
+    fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TConfig
+    nameWithType: TConfig
+    fullName: TConfig
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  commentId: M:Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  isExternal: true
+  name: Configure(EntityTypeBuilder<T>)
+  nameWithType: TenantEntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure(EntityTypeBuilder<T>)
+  fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure(EntityTypeBuilder<T>)
+  nameWithType.vb: TenantEntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure(EntityTypeBuilder(Of T))
+  fullName.vb: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure(EntityTypeBuilder(Of T))
+  name.vb: Configure(EntityTypeBuilder(Of T))
+  spec.csharp:
+  - uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: TenantEntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure
+    fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: TenantEntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure
+    fullName: Mix.Database.EntityConfigurations.Base.TenantEntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config
+  commentId: P:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Config
+  name: Config
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Config
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Config
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Config
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Config
+- uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  commentId: M:Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+  isExternal: true
+  name: Configure(EntityTypeBuilder<T>)
+  nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure(EntityTypeBuilder<T>)
+  fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure(EntityTypeBuilder<T>)
+  nameWithType.vb: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure(EntityTypeBuilder(Of T))
+  fullName.vb: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure(EntityTypeBuilder(Of T))
+  name.vb: Configure(EntityTypeBuilder(Of T))
+  spec.csharp:
+  - uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure
+    fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration<T, TPrimaryKey, TConfig>.Configure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration`3.Configure(EntityTypeBuilder{`0})
+    name: Configure
+    nameWithType: EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure
+    fullName: Mix.Database.EntityConfigurations.Base.EntityBaseConfiguration(Of T, TPrimaryKey, TConfig).Configure
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: EntityTypeBuilder`1
+    name: EntityTypeBuilder
+    nameWithType: EntityTypeBuilder
+    fullName: EntityTypeBuilder
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

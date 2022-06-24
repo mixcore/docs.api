@@ -1,0 +1,1679 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Heart.Helpers.ReflectionHelper
+  commentId: T:Mix.Heart.Helpers.ReflectionHelper
+  id: ReflectionHelper
+  parent: Mix.Heart.Helpers
+  children:
+  - Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys``2(``0,``1)
+  - Mix.Heart.Helpers.ReflectionHelper.CamelCaseData(Newtonsoft.Json.Linq.JObject)
+  - Mix.Heart.Helpers.ReflectionHelper.ConverObjectToDictinary(System.Object)
+  - Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields``2
+  - Mix.Heart.Helpers.ReflectionHelper.FormattingData
+  - Mix.Heart.Helpers.ReflectionHelper.GetExpression``1(System.String,System.Object,Mix.Heart.Enums.ExpressionMethod,System.String)
+  - Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers``1(``0)
+  - Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers``1(``0,System.Type)
+  - Mix.Heart.Helpers.ReflectionHelper.GetLambda``1(System.String,System.Boolean)
+  - Mix.Heart.Helpers.ReflectionHelper.GetMembers``1(``0,System.String[])
+  - Mix.Heart.Helpers.ReflectionHelper.GetPropertyType(System.Type,System.String)
+  - Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue``1(``0,System.String)
+  - Mix.Heart.Helpers.ReflectionHelper.HasProperty(System.Type,System.String)
+  - Mix.Heart.Helpers.ReflectionHelper.InitModel``1
+  - Mix.Heart.Helpers.ReflectionHelper.MapObject``2(``0,``1)
+  - Mix.Heart.Helpers.ReflectionHelper.Mapping``2(``0,``1)
+  - Mix.Heart.Helpers.ReflectionHelper.ParseObject``1(``0)
+  - Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue``1(``0,Mix.Heart.Models.EntityPropertyModel)
+  langs:
+  - csharp
+  - vb
+  name: ReflectionHelper
+  nameWithType: ReflectionHelper
+  fullName: Mix.Heart.Helpers.ReflectionHelper
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ReflectionHelper
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 19
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public class ReflectionHelper
+    content.vb: Public Class ReflectionHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Heart.Helpers.ReflectionHelper.MapObject``2(``0,``1)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.MapObject``2(``0,``1)
+  id: MapObject``2(``0,``1)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: MapObject<TSource, TDest>(TSource, TDest)
+  nameWithType: ReflectionHelper.MapObject<TSource, TDest>(TSource, TDest)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.MapObject<TSource, TDest>(TSource, TDest)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: MapObject
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 33
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static void MapObject<TSource, TDest>(TSource source, TDest dest)
+    parameters:
+    - id: source
+      type: '{TSource}'
+    - id: dest
+      type: '{TDest}'
+    typeParameters:
+    - id: TSource
+    - id: TDest
+    content.vb: Public Shared Sub MapObject(Of TSource, TDest)(source As TSource, dest As TDest)
+  overload: Mix.Heart.Helpers.ReflectionHelper.MapObject*
+  nameWithType.vb: ReflectionHelper.MapObject(Of TSource, TDest)(TSource, TDest)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.MapObject(Of TSource, TDest)(TSource, TDest)
+  name.vb: MapObject(Of TSource, TDest)(TSource, TDest)
+- uid: Mix.Heart.Helpers.ReflectionHelper.ParseObject``1(``0)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.ParseObject``1(``0)
+  id: ParseObject``1(``0)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: ParseObject<T>(T)
+  nameWithType: ReflectionHelper.ParseObject<T>(T)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.ParseObject<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ParseObject
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 40
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static JObject ParseObject<T>(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: Newtonsoft.Json.Linq.JObject
+    content.vb: Public Shared Function ParseObject(Of T)(obj As T) As JObject
+  overload: Mix.Heart.Helpers.ReflectionHelper.ParseObject*
+  nameWithType.vb: ReflectionHelper.ParseObject(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.ParseObject(Of T)(T)
+  name.vb: ParseObject(Of T)(T)
+- uid: Mix.Heart.Helpers.ReflectionHelper.FormattingData
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.FormattingData
+  id: FormattingData
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: FormattingData()
+  nameWithType: ReflectionHelper.FormattingData()
+  fullName: Mix.Heart.Helpers.ReflectionHelper.FormattingData()
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: FormattingData
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 44
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static JsonSerializer FormattingData()
+    return:
+      type: Newtonsoft.Json.JsonSerializer
+    content.vb: Public Shared Function FormattingData As JsonSerializer
+  overload: Mix.Heart.Helpers.ReflectionHelper.FormattingData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Helpers.ReflectionHelper.CamelCaseData(Newtonsoft.Json.Linq.JObject)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.CamelCaseData(Newtonsoft.Json.Linq.JObject)
+  id: CamelCaseData(Newtonsoft.Json.Linq.JObject)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: CamelCaseData(JObject)
+  nameWithType: ReflectionHelper.CamelCaseData(JObject)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.CamelCaseData(Newtonsoft.Json.Linq.JObject)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: CamelCaseData
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 54
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static JObject CamelCaseData(JObject jObject)
+    parameters:
+    - id: jObject
+      type: Newtonsoft.Json.Linq.JObject
+    return:
+      type: Newtonsoft.Json.Linq.JObject
+    content.vb: Public Shared Function CamelCaseData(jObject As JObject) As JObject
+  overload: Mix.Heart.Helpers.ReflectionHelper.CamelCaseData*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Helpers.ReflectionHelper.ConverObjectToDictinary(System.Object)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.ConverObjectToDictinary(System.Object)
+  id: ConverObjectToDictinary(System.Object)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: ConverObjectToDictinary(Object)
+  nameWithType: ReflectionHelper.ConverObjectToDictinary(Object)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.ConverObjectToDictinary(System.Object)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ConverObjectToDictinary
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 61
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static Dictionary<string, string> ConverObjectToDictinary(object someObject)
+    parameters:
+    - id: someObject
+      type: System.Object
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Shared Function ConverObjectToDictinary(someObject As Object) As Dictionary(Of String, String)
+  overload: Mix.Heart.Helpers.ReflectionHelper.ConverObjectToDictinary*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Helpers.ReflectionHelper.Mapping``2(``0,``1)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.Mapping``2(``0,``1)
+  id: Mapping``2(``0,``1)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: Mapping<TSource, TDest>(TSource, TDest)
+  nameWithType: ReflectionHelper.Mapping<TSource, TDest>(TSource, TDest)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.Mapping<TSource, TDest>(TSource, TDest)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Mapping
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 68
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static void Mapping<TSource, TDest>(TSource sourceObject, TDest destObject)
+    parameters:
+    - id: sourceObject
+      type: '{TSource}'
+    - id: destObject
+      type: '{TDest}'
+    typeParameters:
+    - id: TSource
+    - id: TDest
+    content.vb: Public Shared Sub Mapping(Of TSource, TDest)(sourceObject As TSource, destObject As TDest)
+  overload: Mix.Heart.Helpers.ReflectionHelper.Mapping*
+  nameWithType.vb: ReflectionHelper.Mapping(Of TSource, TDest)(TSource, TDest)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.Mapping(Of TSource, TDest)(TSource, TDest)
+  name.vb: Mapping(Of TSource, TDest)(TSource, TDest)
+- uid: Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys``2(``0,``1)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys``2(``0,``1)
+  id: BuildExpressionByKeys``2(``0,``1)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: BuildExpressionByKeys<TEntity, TDbContext>(TEntity, TDbContext)
+  nameWithType: ReflectionHelper.BuildExpressionByKeys<TEntity, TDbContext>(TEntity, TDbContext)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys<TEntity, TDbContext>(TEntity, TDbContext)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: BuildExpressionByKeys
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 75
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: >-
+      public static Expression<Func<TEntity, bool>> BuildExpressionByKeys<TEntity, TDbContext>(TEntity model, TDbContext context)
+          where TDbContext : DbContext
+    parameters:
+    - id: model
+      type: '{TEntity}'
+    - id: context
+      type: '{TDbContext}'
+    typeParameters:
+    - id: TEntity
+    - id: TDbContext
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+    content.vb: Public Shared Function BuildExpressionByKeys(Of TEntity, TDbContext As DbContext)(model As TEntity, context As TDbContext) As Expression(Of Func(Of TEntity, Boolean))
+  overload: Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys*
+  nameWithType.vb: ReflectionHelper.BuildExpressionByKeys(Of TEntity, TDbContext)(TEntity, TDbContext)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys(Of TEntity, TDbContext)(TEntity, TDbContext)
+  name.vb: BuildExpressionByKeys(Of TEntity, TDbContext)(TEntity, TDbContext)
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers``1(``0)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers``1(``0)
+  id: GetKeyMembers``1(``0)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetKeyMembers<TEntity>(TEntity)
+  nameWithType: ReflectionHelper.GetKeyMembers<TEntity>(TEntity)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers<TEntity>(TEntity)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetKeyMembers
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 95
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: >-
+      public static string[] GetKeyMembers<TEntity>(TEntity model)
+          where TEntity : IModel
+    parameters:
+    - id: model
+      type: '{TEntity}'
+    typeParameters:
+    - id: TEntity
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetKeyMembers(Of TEntity As IModel)(model As TEntity) As String()
+  overload: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers*
+  nameWithType.vb: ReflectionHelper.GetKeyMembers(Of TEntity)(TEntity)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers(Of TEntity)(TEntity)
+  name.vb: GetKeyMembers(Of TEntity)(TEntity)
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetMembers``1(``0,System.String[])
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.GetMembers``1(``0,System.String[])
+  id: GetMembers``1(``0,System.String[])
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetMembers<TEntity>(TEntity, String[])
+  nameWithType: ReflectionHelper.GetMembers<TEntity>(TEntity, String[])
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetMembers<TEntity>(TEntity, System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetMembers
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 103
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: >-
+      public static object GetMembers<TEntity>(TEntity model, string[] selectMembers)
+          where TEntity : class
+    parameters:
+    - id: model
+      type: '{TEntity}'
+    - id: selectMembers
+      type: System.String[]
+    typeParameters:
+    - id: TEntity
+    return:
+      type: System.Object
+    content.vb: Public Shared Function GetMembers(Of TEntity As Class)(model As TEntity, selectMembers As String()) As Object
+  overload: Mix.Heart.Helpers.ReflectionHelper.GetMembers*
+  nameWithType.vb: ReflectionHelper.GetMembers(Of TEntity)(TEntity, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.GetMembers(Of TEntity)(TEntity, System.String())
+  name.vb: GetMembers(Of TEntity)(TEntity, String())
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetPropertyType(System.Type,System.String)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.GetPropertyType(System.Type,System.String)
+  id: GetPropertyType(System.Type,System.String)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyType(Type, String)
+  nameWithType: ReflectionHelper.GetPropertyType(Type, String)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetPropertyType(System.Type, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetPropertyType
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 112
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static Type GetPropertyType(Type type, string name)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: name
+      type: System.String
+    return:
+      type: System.Type
+    content.vb: Public Shared Function GetPropertyType(type As Type, name As String) As Type
+  overload: Mix.Heart.Helpers.ReflectionHelper.GetPropertyType*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Helpers.ReflectionHelper.HasProperty(System.Type,System.String)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.HasProperty(System.Type,System.String)
+  id: HasProperty(System.Type,System.String)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: HasProperty(Type, String)
+  nameWithType: ReflectionHelper.HasProperty(Type, String)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.HasProperty(System.Type, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: HasProperty
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 135
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static bool HasProperty(Type type, string propertyName)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: propertyName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function HasProperty(type As Type, propertyName As String) As Boolean
+  overload: Mix.Heart.Helpers.ReflectionHelper.HasProperty*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue``1(``0,System.String)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue``1(``0,System.String)
+  id: GetPropertyValue``1(``0,System.String)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyValue<T>(T, String)
+  nameWithType: ReflectionHelper.GetPropertyValue<T>(T, String)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue<T>(T, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetPropertyValue
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 140
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static object GetPropertyValue<T>(T data, string fieldName)
+    parameters:
+    - id: data
+      type: '{T}'
+    - id: fieldName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Object
+    content.vb: Public Shared Function GetPropertyValue(Of T)(data As T, fieldName As String) As Object
+  overload: Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue*
+  nameWithType.vb: ReflectionHelper.GetPropertyValue(Of T)(T, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue(Of T)(T, System.String)
+  name.vb: GetPropertyValue(Of T)(T, String)
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetLambda``1(System.String,System.Boolean)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.GetLambda``1(System.String,System.Boolean)
+  id: GetLambda``1(System.String,System.Boolean)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetLambda<TModel>(String, Boolean)
+  nameWithType: ReflectionHelper.GetLambda<TModel>(String, Boolean)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetLambda<TModel>(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetLambda
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 159
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  summary: "\nGets the lambda.\n"
+  example: []
+  syntax:
+    content: public static LambdaExpression GetLambda<TModel>(string propName, bool isGetDefault = true)
+    parameters:
+    - id: propName
+      type: System.String
+      description: Name of the property.
+    - id: isGetDefault
+      type: System.Boolean
+      description: >-
+        if set to <code>true</code> [is get
+
+        default].
+    typeParameters:
+    - id: TModel
+    return:
+      type: System.Linq.Expressions.LambdaExpression
+      description: ''
+    content.vb: Public Shared Function GetLambda(Of TModel)(propName As String, isGetDefault As Boolean = True) As LambdaExpression
+  overload: Mix.Heart.Helpers.ReflectionHelper.GetLambda*
+  nameWithType.vb: ReflectionHelper.GetLambda(Of TModel)(String, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.GetLambda(Of TModel)(System.String, System.Boolean)
+  name.vb: GetLambda(Of TModel)(String, Boolean)
+- uid: Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue``1(``0,Mix.Heart.Models.EntityPropertyModel)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue``1(``0,Mix.Heart.Models.EntityPropertyModel)
+  id: SetPropertyValue``1(``0,Mix.Heart.Models.EntityPropertyModel)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: SetPropertyValue<T>(T, EntityPropertyModel)
+  nameWithType: ReflectionHelper.SetPropertyValue<T>(T, EntityPropertyModel)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue<T>(T, Mix.Heart.Models.EntityPropertyModel)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: SetPropertyValue
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 172
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: >-
+      public static void SetPropertyValue<T>(T data, EntityPropertyModel propety)
+          where T : class
+    parameters:
+    - id: data
+      type: '{T}'
+    - id: propety
+      type: Mix.Heart.Models.EntityPropertyModel
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub SetPropertyValue(Of T As Class)(data As T, propety As EntityPropertyModel)
+  overload: Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue*
+  nameWithType.vb: ReflectionHelper.SetPropertyValue(Of T)(T, EntityPropertyModel)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue(Of T)(T, Mix.Heart.Models.EntityPropertyModel)
+  name.vb: SetPropertyValue(Of T)(T, EntityPropertyModel)
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetExpression``1(System.String,System.Object,Mix.Heart.Enums.ExpressionMethod,System.String)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.GetExpression``1(System.String,System.Object,Mix.Heart.Enums.ExpressionMethod,System.String)
+  id: GetExpression``1(System.String,System.Object,Mix.Heart.Enums.ExpressionMethod,System.String)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetExpression<T>(String, Object, ExpressionMethod, String)
+  nameWithType: ReflectionHelper.GetExpression<T>(String, Object, ExpressionMethod, String)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetExpression<T>(System.String, System.Object, Mix.Heart.Enums.ExpressionMethod, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetExpression
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 187
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static Expression<Func<T, bool>> GetExpression<T>(string propertyName, object propertyValue, ExpressionMethod kind, string name = "model")
+    parameters:
+    - id: propertyName
+      type: System.String
+    - id: propertyValue
+      type: System.Object
+    - id: kind
+      type: Mix.Heart.Enums.ExpressionMethod
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+    content.vb: Public Shared Function GetExpression(Of T)(propertyName As String, propertyValue As Object, kind As ExpressionMethod, name As String = "model") As Expression(Of Func(Of T, Boolean))
+  overload: Mix.Heart.Helpers.ReflectionHelper.GetExpression*
+  nameWithType.vb: ReflectionHelper.GetExpression(Of T)(String, Object, ExpressionMethod, String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.GetExpression(Of T)(System.String, System.Object, Mix.Heart.Enums.ExpressionMethod, System.String)
+  name.vb: GetExpression(Of T)(String, Object, ExpressionMethod, String)
+- uid: Mix.Heart.Helpers.ReflectionHelper.InitModel``1
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.InitModel``1
+  id: InitModel``1
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: InitModel<T>()
+  nameWithType: ReflectionHelper.InitModel<T>()
+  fullName: Mix.Heart.Helpers.ReflectionHelper.InitModel<T>()
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: InitModel
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 309
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static T InitModel<T>()
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function InitModel(Of T) As T
+  overload: Mix.Heart.Helpers.ReflectionHelper.InitModel*
+  nameWithType.vb: ReflectionHelper.InitModel(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.InitModel(Of T)()
+  name.vb: InitModel(Of T)()
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers``1(``0,System.Type)
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers``1(``0,System.Type)
+  id: GetKeyMembers``1(``0,System.Type)
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: GetKeyMembers<TDbContext>(TDbContext, Type)
+  nameWithType: ReflectionHelper.GetKeyMembers<TDbContext>(TDbContext, Type)
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers<TDbContext>(TDbContext, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetKeyMembers
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 317
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: >-
+      public static string[] GetKeyMembers<TDbContext>(TDbContext context, Type entityType)
+          where TDbContext : DbContext
+    parameters:
+    - id: context
+      type: '{TDbContext}'
+    - id: entityType
+      type: System.Type
+    typeParameters:
+    - id: TDbContext
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function GetKeyMembers(Of TDbContext As DbContext)(context As TDbContext, entityType As Type) As String()
+  overload: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers*
+  nameWithType.vb: ReflectionHelper.GetKeyMembers(Of TDbContext)(TDbContext, Type)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers(Of TDbContext)(TDbContext, System.Type)
+  name.vb: GetKeyMembers(Of TDbContext)(TDbContext, Type)
+- uid: Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields``2
+  commentId: M:Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields``2
+  id: FilterSelectedFields``2
+  parent: Mix.Heart.Helpers.ReflectionHelper
+  langs:
+  - csharp
+  - vb
+  name: FilterSelectedFields<TView, TEntity>()
+  nameWithType: ReflectionHelper.FilterSelectedFields<TView, TEntity>()
+  fullName: Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields<TView, TEntity>()
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Helpers/ReflectionHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: FilterSelectedFields
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Helpers/ReflectionHelper.cs
+    startLine: 326
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Helpers
+  syntax:
+    content: public static string[] FilterSelectedFields<TView, TEntity>()
+    typeParameters:
+    - id: TView
+    - id: TEntity
+    return:
+      type: System.String[]
+    content.vb: Public Shared Function FilterSelectedFields(Of TView, TEntity) As String()
+  overload: Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields*
+  nameWithType.vb: ReflectionHelper.FilterSelectedFields(Of TView, TEntity)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields(Of TView, TEntity)()
+  name.vb: FilterSelectedFields(Of TView, TEntity)()
+references:
+- uid: Mix.Heart.Helpers
+  commentId: N:Mix.Heart.Helpers
+  name: Mix.Heart.Helpers
+  nameWithType: Mix.Heart.Helpers
+  fullName: Mix.Heart.Helpers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Heart.Helpers.ReflectionHelper.MapObject*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.MapObject
+  name: MapObject
+  nameWithType: ReflectionHelper.MapObject
+  fullName: Mix.Heart.Helpers.ReflectionHelper.MapObject
+- uid: '{TSource}'
+  commentId: '!:TSource'
+  definition: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: '{TDest}'
+  commentId: '!:TDest'
+  definition: TDest
+  name: TDest
+  nameWithType: TDest
+  fullName: TDest
+- uid: TSource
+  name: TSource
+  nameWithType: TSource
+  fullName: TSource
+- uid: TDest
+  name: TDest
+  nameWithType: TDest
+  fullName: TDest
+- uid: Mix.Heart.Helpers.ReflectionHelper.ParseObject*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.ParseObject
+  name: ParseObject
+  nameWithType: ReflectionHelper.ParseObject
+  fullName: Mix.Heart.Helpers.ReflectionHelper.ParseObject
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Newtonsoft.Json.Linq.JObject
+  commentId: T:Newtonsoft.Json.Linq.JObject
+  parent: Newtonsoft.Json.Linq
+  isExternal: true
+  name: JObject
+  nameWithType: JObject
+  fullName: Newtonsoft.Json.Linq.JObject
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Newtonsoft.Json.Linq
+  commentId: N:Newtonsoft.Json.Linq
+  isExternal: true
+  name: Newtonsoft.Json.Linq
+  nameWithType: Newtonsoft.Json.Linq
+  fullName: Newtonsoft.Json.Linq
+- uid: Mix.Heart.Helpers.ReflectionHelper.FormattingData*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.FormattingData
+  name: FormattingData
+  nameWithType: ReflectionHelper.FormattingData
+  fullName: Mix.Heart.Helpers.ReflectionHelper.FormattingData
+- uid: Newtonsoft.Json.JsonSerializer
+  commentId: T:Newtonsoft.Json.JsonSerializer
+  parent: Newtonsoft.Json
+  isExternal: true
+  name: JsonSerializer
+  nameWithType: JsonSerializer
+  fullName: Newtonsoft.Json.JsonSerializer
+- uid: Newtonsoft.Json
+  commentId: N:Newtonsoft.Json
+  isExternal: true
+  name: Newtonsoft.Json
+  nameWithType: Newtonsoft.Json
+  fullName: Newtonsoft.Json
+- uid: Mix.Heart.Helpers.ReflectionHelper.CamelCaseData*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.CamelCaseData
+  name: CamelCaseData
+  nameWithType: ReflectionHelper.CamelCaseData
+  fullName: Mix.Heart.Helpers.ReflectionHelper.CamelCaseData
+- uid: Mix.Heart.Helpers.ReflectionHelper.ConverObjectToDictinary*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.ConverObjectToDictinary
+  name: ConverObjectToDictinary
+  nameWithType: ReflectionHelper.ConverObjectToDictinary
+  fullName: Mix.Heart.Helpers.ReflectionHelper.ConverObjectToDictinary
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Mix.Heart.Helpers.ReflectionHelper.Mapping*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.Mapping
+  name: Mapping
+  nameWithType: ReflectionHelper.Mapping
+  fullName: Mix.Heart.Helpers.ReflectionHelper.Mapping
+- uid: Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys
+  name: BuildExpressionByKeys
+  nameWithType: ReflectionHelper.BuildExpressionByKeys
+  fullName: Mix.Heart.Helpers.ReflectionHelper.BuildExpressionByKeys
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: '{TDbContext}'
+  commentId: '!:TDbContext'
+  definition: TDbContext
+  name: TDbContext
+  nameWithType: TDbContext
+  fullName: TDbContext
+- uid: System.Linq.Expressions.Expression{System.Func{{TEntity},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<TEntity, Boolean>>
+  nameWithType: Expression<Func<TEntity, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TEntity, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of TEntity, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Boolean))
+  name.vb: Expression(Of Func(Of TEntity, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TDbContext
+  name: TDbContext
+  nameWithType: TDbContext
+  fullName: TDbContext
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDelegate
+    nameWithType: TDelegate
+    fullName: TDelegate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers
+  name: GetKeyMembers
+  nameWithType: ReflectionHelper.GetKeyMembers
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetKeyMembers
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetMembers*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.GetMembers
+  name: GetMembers
+  nameWithType: ReflectionHelper.GetMembers
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetMembers
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetPropertyType*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.GetPropertyType
+  name: GetPropertyType
+  nameWithType: ReflectionHelper.GetPropertyType
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetPropertyType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Heart.Helpers.ReflectionHelper.HasProperty*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.HasProperty
+  name: HasProperty
+  nameWithType: ReflectionHelper.HasProperty
+  fullName: Mix.Heart.Helpers.ReflectionHelper.HasProperty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue
+  name: GetPropertyValue
+  nameWithType: ReflectionHelper.GetPropertyValue
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetPropertyValue
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetLambda*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.GetLambda
+  name: GetLambda
+  nameWithType: ReflectionHelper.GetLambda
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetLambda
+- uid: System.Linq.Expressions.LambdaExpression
+  commentId: T:System.Linq.Expressions.LambdaExpression
+  parent: System.Linq.Expressions
+  isExternal: true
+  name: LambdaExpression
+  nameWithType: LambdaExpression
+  fullName: System.Linq.Expressions.LambdaExpression
+- uid: Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue
+  name: SetPropertyValue
+  nameWithType: ReflectionHelper.SetPropertyValue
+  fullName: Mix.Heart.Helpers.ReflectionHelper.SetPropertyValue
+- uid: Mix.Heart.Models.EntityPropertyModel
+  commentId: T:Mix.Heart.Models.EntityPropertyModel
+  parent: Mix.Heart.Models
+  name: EntityPropertyModel
+  nameWithType: EntityPropertyModel
+  fullName: Mix.Heart.Models.EntityPropertyModel
+- uid: Mix.Heart.Models
+  commentId: N:Mix.Heart.Models
+  name: Mix.Heart.Models
+  nameWithType: Mix.Heart.Models
+  fullName: Mix.Heart.Models
+- uid: Mix.Heart.Helpers.ReflectionHelper.GetExpression*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.GetExpression
+  name: GetExpression
+  nameWithType: ReflectionHelper.GetExpression
+  fullName: Mix.Heart.Helpers.ReflectionHelper.GetExpression
+- uid: Mix.Heart.Enums.ExpressionMethod
+  commentId: T:Mix.Heart.Enums.ExpressionMethod
+  parent: Mix.Heart.Enums
+  name: ExpressionMethod
+  nameWithType: ExpressionMethod
+  fullName: Mix.Heart.Enums.ExpressionMethod
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  name: Expression<Func<T, Boolean>>
+  nameWithType: Expression<Func<T, Boolean>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    nameWithType: Expression
+    fullName: System.Linq.Expressions.Expression
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Enums
+  commentId: N:Mix.Heart.Enums
+  name: Mix.Heart.Enums
+  nameWithType: Mix.Heart.Enums
+  fullName: Mix.Heart.Enums
+- uid: Mix.Heart.Helpers.ReflectionHelper.InitModel*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.InitModel
+  name: InitModel
+  nameWithType: ReflectionHelper.InitModel
+  fullName: Mix.Heart.Helpers.ReflectionHelper.InitModel
+- uid: Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields*
+  commentId: Overload:Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields
+  name: FilterSelectedFields
+  nameWithType: ReflectionHelper.FilterSelectedFields
+  fullName: Mix.Heart.Helpers.ReflectionHelper.FilterSelectedFields

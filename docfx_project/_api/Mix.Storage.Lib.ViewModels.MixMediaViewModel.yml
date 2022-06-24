@@ -1,0 +1,639 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  commentId: T:Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  id: MixMediaViewModel
+  parent: Mix.Storage.Lib.ViewModels
+  children:
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor(MixMedia,UnitOfWorkInfo)
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor(UnitOfWorkInfo)
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.Extension
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileFolder
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileName
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileProperties
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileSize
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileType
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.FullPath
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.Source
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.Tags
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.TargetUrl
+  - Mix.Storage.Lib.ViewModels.MixMediaViewModel.Title
+  langs:
+  - csharp
+  - vb
+  name: MixMediaViewModel
+  nameWithType: MixMediaViewModel
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixMediaViewModel
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 2
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: 'public class MixMediaViewModel : TenantDataViewModelBase<MixCmsContext, MixMedia, Guid, MixMediaViewModel>'
+    content.vb: >-
+      Public Class MixMediaViewModel
+          Inherits TenantDataViewModelBase(Of MixCmsContext, MixMedia, Guid, MixMediaViewModel)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor
+  commentId: M:Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor
+  id: '#ctor'
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixMediaViewModel()
+  nameWithType: MixMediaViewModel.MixMediaViewModel()
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.MixMediaViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 6
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public MixMediaViewModel()
+    content.vb: Public Sub New
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixMediaViewModel(UnitOfWorkInfo)
+  nameWithType: MixMediaViewModel.MixMediaViewModel(UnitOfWorkInfo)
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.MixMediaViewModel(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 10
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public MixMediaViewModel(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor(MixMedia,UnitOfWorkInfo)
+  commentId: M:Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor(MixMedia,UnitOfWorkInfo)
+  id: '#ctor(MixMedia,UnitOfWorkInfo)'
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixMediaViewModel(MixMedia, UnitOfWorkInfo)
+  nameWithType: MixMediaViewModel.MixMediaViewModel(MixMedia, UnitOfWorkInfo)
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.MixMediaViewModel(MixMedia, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 14
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public MixMediaViewModel(MixMedia entity, UnitOfWorkInfo uowInfo)
+    parameters:
+    - id: entity
+      type: MixMedia
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(entity As MixMedia, uowInfo As UnitOfWorkInfo)
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Extension
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.Extension
+  id: Extension
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: Extension
+  nameWithType: MixMediaViewModel.Extension
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Extension
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Extension
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 20
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string Extension { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Extension As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Extension*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileFolder
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileFolder
+  id: FileFolder
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: FileFolder
+  nameWithType: MixMediaViewModel.FileFolder
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileFolder
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: FileFolder
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 21
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string FileFolder { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileFolder As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileFolder*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileName
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileName
+  id: FileName
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: MixMediaViewModel.FileName
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileName
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: FileName
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 22
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string FileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileName As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileProperties
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileProperties
+  id: FileProperties
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: FileProperties
+  nameWithType: MixMediaViewModel.FileProperties
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileProperties
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: FileProperties
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 23
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string FileProperties { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileProperties As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileProperties*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileSize
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileSize
+  id: FileSize
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: FileSize
+  nameWithType: MixMediaViewModel.FileSize
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileSize
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: FileSize
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 24
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public long FileSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property FileSize As Long
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileSize*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileType
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileType
+  id: FileType
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: FileType
+  nameWithType: MixMediaViewModel.FileType
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileType
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: FileType
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 25
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string FileType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileType As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Title
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.Title
+  id: Title
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: MixMediaViewModel.Title
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Title
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Title
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 26
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Title*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Tags
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.Tags
+  id: Tags
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: MixMediaViewModel.Tags
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Tags
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Tags
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 27
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string Tags { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Tags As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Tags*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Source
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.Source
+  id: Source
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: MixMediaViewModel.Source
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Source
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Source
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 28
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string Source { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Source As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Source*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.TargetUrl
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.TargetUrl
+  id: TargetUrl
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: TargetUrl
+  nameWithType: MixMediaViewModel.TargetUrl
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.TargetUrl
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TargetUrl
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 29
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string TargetUrl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TargetUrl As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.TargetUrl*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FullPath
+  commentId: P:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FullPath
+  id: FullPath
+  parent: Mix.Storage.Lib.ViewModels.MixMediaViewModel
+  langs:
+  - csharp
+  - vb
+  name: FullPath
+  nameWithType: MixMediaViewModel.FullPath
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FullPath
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: FullPath
+    path: ../../mix.core/src/platform/mix.storage.lib/ViewModels/MixMediaViewModel.cs
+    startLine: 31
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.ViewModels
+  syntax:
+    content: public string FullPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property FullPath As String
+  overload: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FullPath*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Mix.Storage.Lib.ViewModels
+  commentId: N:Mix.Storage.Lib.ViewModels
+  name: Mix.Storage.Lib.ViewModels
+  nameWithType: Mix.Storage.Lib.ViewModels
+  fullName: Mix.Storage.Lib.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.#ctor
+  name: MixMediaViewModel
+  nameWithType: MixMediaViewModel.MixMediaViewModel
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.MixMediaViewModel
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: MixMedia
+  commentId: '!:MixMedia'
+  isExternal: true
+  name: MixMedia
+  nameWithType: MixMedia
+  fullName: MixMedia
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Extension*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.Extension
+  name: Extension
+  nameWithType: MixMediaViewModel.Extension
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Extension
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileFolder*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileFolder
+  name: FileFolder
+  nameWithType: MixMediaViewModel.FileFolder
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileFolder
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileName*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileName
+  name: FileName
+  nameWithType: MixMediaViewModel.FileName
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileName
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileProperties*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileProperties
+  name: FileProperties
+  nameWithType: MixMediaViewModel.FileProperties
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileProperties
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileSize*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileSize
+  name: FileSize
+  nameWithType: MixMediaViewModel.FileSize
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileSize
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileType*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileType
+  name: FileType
+  nameWithType: MixMediaViewModel.FileType
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FileType
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Title*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.Title
+  name: Title
+  nameWithType: MixMediaViewModel.Title
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Title
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Tags*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.Tags
+  name: Tags
+  nameWithType: MixMediaViewModel.Tags
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Tags
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Source*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.Source
+  name: Source
+  nameWithType: MixMediaViewModel.Source
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.Source
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.TargetUrl*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.TargetUrl
+  name: TargetUrl
+  nameWithType: MixMediaViewModel.TargetUrl
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.TargetUrl
+- uid: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FullPath*
+  commentId: Overload:Mix.Storage.Lib.ViewModels.MixMediaViewModel.FullPath
+  name: FullPath
+  nameWithType: MixMediaViewModel.FullPath
+  fullName: Mix.Storage.Lib.ViewModels.MixMediaViewModel.FullPath

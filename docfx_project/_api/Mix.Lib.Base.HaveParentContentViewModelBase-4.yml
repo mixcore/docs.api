@@ -1,0 +1,1684 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4
+  commentId: T:Mix.Lib.Base.HaveParentContentViewModelBase`4
+  id: HaveParentContentViewModelBase`4
+  parent: Mix.Lib.Base
+  children:
+  - Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor
+  - Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  - Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor(UnitOfWorkInfo)
+  - Mix.Lib.Base.HaveParentContentViewModelBase`4.CreateParentAsync
+  - Mix.Lib.Base.HaveParentContentViewModelBase`4.SaveHandlerAsync
+  langs:
+  - csharp
+  - vb
+  name: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: HaveParentContentViewModelBase
+    path: ../../mix.core/src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+    startLine: 2
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: 'public abstract class HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> : MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> where TDbContext : MixCmsContext where TEntity : MultilingualContentBase<TPrimaryKey> where TPrimaryKey : IComparable where TView : HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>'
+    typeParameters:
+    - id: TDbContext
+    - id: TEntity
+    - id: TPrimaryKey
+    - id: TView
+    content.vb: >-
+      Public MustInherit Class HaveParentContentViewModelBase(Of TDbContext As MixCmsContext, TEntity As MultilingualContentBase(Of TPrimaryKey), TPrimaryKey As IComparable, TView As HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView))
+          Inherits MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  inheritance:
+  - System.Object
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  derivedClasses:
+  - Mix.Lib.Base.ExtraColumnMultilingualSEOContentViewModelBase`4
+  inheritedMembers:
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Title
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Excerpt
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Content
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.LayoutId
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.TemplateId
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Layout
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Template
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Image
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Source
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SeoDescription
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SeoKeywords
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SeoName
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SeoTitle
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.PublishedDateTime
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.IsClone
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParseEntity
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ExpandView
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.MixTenantId
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Icon
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.IsPublic
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Specificulture
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParentId
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.MixCultureId
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Contributors
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParseEntity
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor
+  commentId: M:Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor
+  id: '#ctor'
+  parent: Mix.Lib.Base.HaveParentContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: HaveParentContentViewModelBase()
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HaveParentContentViewModelBase()
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HaveParentContentViewModelBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+    startLine: 11
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public HaveParentContentViewModelBase()
+    content.vb: Public Sub New
+  overload: Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor*
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HaveParentContentViewModelBase()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HaveParentContentViewModelBase()
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Lib.Base.HaveParentContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: HaveParentContentViewModelBase(UnitOfWorkInfo)
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HaveParentContentViewModelBase(UnitOfWorkInfo)
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HaveParentContentViewModelBase(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+    startLine: 16
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected HaveParentContentViewModelBase(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Protected Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor*
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HaveParentContentViewModelBase(UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HaveParentContentViewModelBase(UnitOfWorkInfo)
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  id: '#ctor(`1,UnitOfWorkInfo)'
+  parent: Mix.Lib.Base.HaveParentContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: HaveParentContentViewModelBase(TEntity, UnitOfWorkInfo)
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HaveParentContentViewModelBase(TEntity, UnitOfWorkInfo)
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HaveParentContentViewModelBase(TEntity, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+    startLine: 20
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected HaveParentContentViewModelBase(TEntity entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Protected Sub New(entity As TEntity, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor*
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HaveParentContentViewModelBase(TEntity, UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HaveParentContentViewModelBase(TEntity, UnitOfWorkInfo)
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4.SaveHandlerAsync
+  commentId: M:Mix.Lib.Base.HaveParentContentViewModelBase`4.SaveHandlerAsync
+  id: SaveHandlerAsync
+  parent: Mix.Lib.Base.HaveParentContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: SaveHandlerAsync()
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync()
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveHandlerAsync
+    path: ../../mix.core/src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+    startLine: 29
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected override Task<TEntity> SaveHandlerAsync()
+    return:
+      type: Task{{TEntity}}
+    content.vb: Protected Overrides Function SaveHandlerAsync As Task(Of TEntity)
+  overload: Mix.Lib.Base.HaveParentContentViewModelBase`4.SaveHandlerAsync*
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync()
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync()
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4.CreateParentAsync
+  commentId: M:Mix.Lib.Base.HaveParentContentViewModelBase`4.CreateParentAsync
+  id: CreateParentAsync
+  parent: Mix.Lib.Base.HaveParentContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: CreateParentAsync()
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreateParentAsync()
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreateParentAsync()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateParentAsync
+    path: ../../mix.core/src/platform/mix.library/Base/HaveParentContentViewModelBase.cs
+    startLine: 40
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public virtual Task<TPrimaryKey> CreateParentAsync()
+    return:
+      type: Task{{TPrimaryKey}}
+    content.vb: Public Overridable Function CreateParentAsync As Task(Of TPrimaryKey)
+  overload: Mix.Lib.Base.HaveParentContentViewModelBase`4.CreateParentAsync*
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreateParentAsync()
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreateParentAsync()
+references:
+- uid: Mix.Lib.Base
+  commentId: N:Mix.Lib.Base
+  name: Mix.Lib.Base
+  nameWithType: Mix.Lib.Base
+  fullName: Mix.Lib.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  commentId: T:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}
+  parent: Mix.Lib.Base
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  name: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4
+    name: MultilingualContentViewModelBase
+    nameWithType: MultilingualContentViewModelBase
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4
+    name: MultilingualContentViewModelBase
+    nameWithType: MultilingualContentViewModelBase
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  commentId: T:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}
+  parent: Mix.Lib.Base
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4
+  name: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4
+    name: MultilingualSEOContentViewModelBase
+    nameWithType: MultilingualSEOContentViewModelBase
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4
+    name: MultilingualSEOContentViewModelBase
+    nameWithType: MultilingualSEOContentViewModelBase
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Title
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.Title
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Title
+  name: Title
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Title
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Title
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Title
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Title
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Excerpt
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.Excerpt
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Excerpt
+  name: Excerpt
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Excerpt
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Excerpt
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Excerpt
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Excerpt
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Content
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.Content
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Content
+  name: Content
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Content
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Content
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Content
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Content
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.LayoutId
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.LayoutId
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.LayoutId
+  name: LayoutId
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LayoutId
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LayoutId
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LayoutId
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LayoutId
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.TemplateId
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.TemplateId
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.TemplateId
+  name: TemplateId
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TemplateId
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TemplateId
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TemplateId
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TemplateId
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Layout
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.Layout
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Layout
+  name: Layout
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Layout
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Layout
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Layout
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Layout
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Template
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.Template
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Template
+  name: Template
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Template
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Template
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Template
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Template
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Image
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.Image
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Image
+  name: Image
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Source
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.Source
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Source
+  name: Source
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Source
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Source
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Source
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Source
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SeoDescription
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.SeoDescription
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoDescription
+  name: SeoDescription
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoDescription
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoDescription
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoDescription
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoDescription
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SeoKeywords
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.SeoKeywords
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoKeywords
+  name: SeoKeywords
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoKeywords
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoKeywords
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoKeywords
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoKeywords
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SeoName
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.SeoName
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoName
+  name: SeoName
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoName
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoName
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoName
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoName
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SeoTitle
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.SeoTitle
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoTitle
+  name: SeoTitle
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoTitle
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoTitle
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoTitle
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoTitle
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.PublishedDateTime
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.PublishedDateTime
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.PublishedDateTime
+  name: PublishedDateTime
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.PublishedDateTime
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.PublishedDateTime
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).PublishedDateTime
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).PublishedDateTime
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.IsClone
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.IsClone
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.IsClone
+  name: IsClone
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsClone
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsClone
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsClone
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsClone
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParseEntity
+  commentId: M:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.ParseEntity
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ParseEntity
+  name: ParseEntity()
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ExpandView
+  commentId: M:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.ExpandView
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ExpandView
+  name: ExpandView()
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView()
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView()
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView()
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView()
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ExpandView
+    name: ExpandView
+    nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ExpandView
+    name: ExpandView
+    nameWithType: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Lib.Base.MultilingualSEOContentViewModelBase{`0,`1,`2,`3}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.Lib.Base.MultilingualSEOContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.MixTenantId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.MixTenantId
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId
+  name: MixTenantId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Icon
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.Icon
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon
+  name: Icon
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Icon
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Icon
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Icon
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Icon
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.IsPublic
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.IsPublic
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic
+  name: IsPublic
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsPublic
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsPublic
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsPublic
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsPublic
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Specificulture
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.Specificulture
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture
+  name: Specificulture
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Specificulture
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Specificulture
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Specificulture
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Specificulture
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParentId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.ParentId
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId
+  name: ParentId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParentId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParentId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParentId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParentId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.MixCultureId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.MixCultureId
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId
+  name: MixCultureId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixCultureId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixCultureId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixCultureId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixCultureId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Contributors
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.Contributors
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors
+  name: Contributors
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Contributors
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Contributors
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Contributors
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Contributors
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParseEntity
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.ParseEntity
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+  name: ParseEntity()
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase{`0,`1,`2,`3}.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  name: LoadContributorsAsync(MixContentType, MixIdentityService)
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync(MixContentType, MixIdentityService)
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync(MixContentType, Mix.Lib.Services.MixIdentityService)
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync(MixContentType, MixIdentityService)
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync(MixContentType, Mix.Lib.Services.MixIdentityService)
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+    name: LoadContributorsAsync
+    nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MixContentType
+    name: MixContentType
+    nameWithType: MixContentType
+    fullName: MixContentType
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Lib.Services.MixIdentityService
+    name: MixIdentityService
+    nameWithType: MixIdentityService
+    fullName: Mix.Lib.Services.MixIdentityService
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+    name: LoadContributorsAsync
+    nameWithType: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MixContentType
+    name: MixContentType
+    nameWithType: MixContentType
+    fullName: MixContentType
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Lib.Services.MixIdentityService
+    name: MixIdentityService
+    nameWithType: MixIdentityService
+    fullName: Mix.Lib.Services.MixIdentityService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  commentId: T:Mix.Lib.Base.MultilingualContentViewModelBase`4
+  name: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4
+    name: MultilingualContentViewModelBase
+    nameWithType: MultilingualContentViewModelBase
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4
+    name: MultilingualContentViewModelBase
+    nameWithType: MultilingualContentViewModelBase
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4
+  commentId: T:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4
+  name: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4
+    name: MultilingualSEOContentViewModelBase
+    nameWithType: MultilingualSEOContentViewModelBase
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4
+    name: MultilingualSEOContentViewModelBase
+    nameWithType: MultilingualSEOContentViewModelBase
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Title
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Title
+  name: Title
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Title
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Title
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Title
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Title
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Excerpt
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Excerpt
+  name: Excerpt
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Excerpt
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Excerpt
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Excerpt
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Excerpt
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Content
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Content
+  name: Content
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Content
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Content
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Content
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Content
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.LayoutId
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.LayoutId
+  name: LayoutId
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LayoutId
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LayoutId
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LayoutId
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LayoutId
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.TemplateId
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.TemplateId
+  name: TemplateId
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TemplateId
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TemplateId
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TemplateId
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TemplateId
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Layout
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Layout
+  name: Layout
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Layout
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Layout
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Layout
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Layout
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Template
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Template
+  name: Template
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Template
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Template
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Template
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Template
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Image
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Image
+  name: Image
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Source
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.Source
+  name: Source
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Source
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Source
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Source
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Source
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoDescription
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoDescription
+  name: SeoDescription
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoDescription
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoDescription
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoDescription
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoDescription
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoKeywords
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoKeywords
+  name: SeoKeywords
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoKeywords
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoKeywords
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoKeywords
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoKeywords
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoName
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoName
+  name: SeoName
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoName
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoName
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoName
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoName
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoTitle
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.SeoTitle
+  name: SeoTitle
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoTitle
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SeoTitle
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoTitle
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SeoTitle
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.PublishedDateTime
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.PublishedDateTime
+  name: PublishedDateTime
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.PublishedDateTime
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.PublishedDateTime
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).PublishedDateTime
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).PublishedDateTime
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.IsClone
+  commentId: P:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.IsClone
+  name: IsClone
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsClone
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsClone
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsClone
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsClone
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ParseEntity
+  commentId: M:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ParseEntity
+  name: ParseEntity()
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ExpandView
+  commentId: M:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ExpandView
+  name: ExpandView()
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView()
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView()
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView()
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView()
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ExpandView
+    name: ExpandView
+    nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.ExpandView
+    name: ExpandView
+    nameWithType: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  isExternal: true
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  nameWithType.vb: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  fullName.vb: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualSEOContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+    fullName: Mix.Lib.Base.MultilingualSEOContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId
+  name: MixTenantId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon
+  name: Icon
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Icon
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Icon
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Icon
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Icon
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic
+  name: IsPublic
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsPublic
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsPublic
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsPublic
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsPublic
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture
+  name: Specificulture
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Specificulture
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Specificulture
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Specificulture
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Specificulture
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId
+  name: ParentId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParentId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParentId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParentId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParentId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId
+  name: MixCultureId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixCultureId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixCultureId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixCultureId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixCultureId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors
+  name: Contributors
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Contributors
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Contributors
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Contributors
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Contributors
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+  name: ParseEntity()
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  isExternal: true
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  isExternal: true
+  name: LoadContributorsAsync(MixContentType, MixIdentityService)
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync(MixContentType, MixIdentityService)
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync(MixContentType, Mix.Lib.Services.MixIdentityService)
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync(MixContentType, MixIdentityService)
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync(MixContentType, Mix.Lib.Services.MixIdentityService)
+  spec.csharp:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+    name: LoadContributorsAsync
+    nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MixContentType
+    name: MixContentType
+    nameWithType: MixContentType
+    fullName: MixContentType
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Lib.Services.MixIdentityService
+    name: MixIdentityService
+    nameWithType: MixIdentityService
+    fullName: Mix.Lib.Services.MixIdentityService
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+    name: LoadContributorsAsync
+    nameWithType: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync
+    fullName: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MixContentType
+    name: MixContentType
+    nameWithType: MixContentType
+    fullName: MixContentType
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Lib.Services.MixIdentityService
+    name: MixIdentityService
+    nameWithType: MixIdentityService
+    fullName: Mix.Lib.Services.MixIdentityService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor*
+  commentId: Overload:Mix.Lib.Base.HaveParentContentViewModelBase`4.#ctor
+  name: HaveParentContentViewModelBase
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HaveParentContentViewModelBase
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HaveParentContentViewModelBase
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HaveParentContentViewModelBase
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HaveParentContentViewModelBase
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4.SaveHandlerAsync*
+  commentId: Overload:Mix.Lib.Base.HaveParentContentViewModelBase`4.SaveHandlerAsync
+  name: SaveHandlerAsync
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync
+- uid: Task{{TEntity}}
+  commentId: '!:Task{`1}'
+  definition: Task`1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.HaveParentContentViewModelBase`4.CreateParentAsync*
+  commentId: Overload:Mix.Lib.Base.HaveParentContentViewModelBase`4.CreateParentAsync
+  name: CreateParentAsync
+  nameWithType: HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreateParentAsync
+  fullName: Mix.Lib.Base.HaveParentContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreateParentAsync
+  nameWithType.vb: HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreateParentAsync
+  fullName.vb: Mix.Lib.Base.HaveParentContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreateParentAsync
+- uid: Task{{TPrimaryKey}}
+  commentId: '!:Task{`2}'
+  definition: Task`1
+  name: Task<TPrimaryKey>
+  nameWithType: Task<TPrimaryKey>
+  fullName: Task<TPrimaryKey>
+  nameWithType.vb: Task(Of TPrimaryKey)
+  fullName.vb: Task(Of TPrimaryKey)
+  name.vb: Task(Of TPrimaryKey)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )

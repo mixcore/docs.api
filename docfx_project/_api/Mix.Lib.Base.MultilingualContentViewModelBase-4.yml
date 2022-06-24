@@ -1,0 +1,946 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  commentId: T:Mix.Lib.Base.MultilingualContentViewModelBase`4
+  id: MultilingualContentViewModelBase`4
+  parent: Mix.Lib.Base
+  children:
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor(UnitOfWorkInfo)
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+  - Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture
+  langs:
+  - csharp
+  - vb
+  name: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MultilingualContentViewModelBase
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 8
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: 'public abstract class MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> where TDbContext : DbContext where TEntity : MultilingualContentBase<TPrimaryKey> where TPrimaryKey : IComparable where TView : MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>'
+    typeParameters:
+    - id: TDbContext
+    - id: TEntity
+    - id: TPrimaryKey
+    - id: TView
+    content.vb: >-
+      Public MustInherit Class MultilingualContentViewModelBase(Of TDbContext As DbContext, TEntity As MultilingualContentBase(Of TPrimaryKey), TPrimaryKey As IComparable, TView As MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView))
+          Inherits ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Mix.Lib.Base.MultilingualSEOContentViewModelBase`4
+  - Mix.Lib.Base.MultilingualUniqueNameContentViewModelBase`4
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor
+  id: '#ctor'
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: MultilingualContentViewModelBase()
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MultilingualContentViewModelBase()
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MultilingualContentViewModelBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 17
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public MultilingualContentViewModelBase()
+    content.vb: Public Sub New
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MultilingualContentViewModelBase()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MultilingualContentViewModelBase()
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: MultilingualContentViewModelBase(UnitOfWorkInfo)
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MultilingualContentViewModelBase(UnitOfWorkInfo)
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MultilingualContentViewModelBase(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 22
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected MultilingualContentViewModelBase(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Protected Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MultilingualContentViewModelBase(UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MultilingualContentViewModelBase(UnitOfWorkInfo)
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor(`1,UnitOfWorkInfo)
+  id: '#ctor(`1,UnitOfWorkInfo)'
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: MultilingualContentViewModelBase(TEntity, UnitOfWorkInfo)
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MultilingualContentViewModelBase(TEntity, UnitOfWorkInfo)
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MultilingualContentViewModelBase(TEntity, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 26
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: protected MultilingualContentViewModelBase(TEntity entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Protected Sub New(entity As TEntity, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MultilingualContentViewModelBase(TEntity, UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MultilingualContentViewModelBase(TEntity, UnitOfWorkInfo)
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId
+  id: MixTenantId
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: MixTenantId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantId
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 34
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public int MixTenantId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MixTenantId As Integer
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon
+  id: Icon
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: Icon
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Icon
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Icon
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Icon
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 35
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public string Icon { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Icon As String
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Icon
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Icon
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic
+  id: IsPublic
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: IsPublic
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsPublic
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsPublic
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IsPublic
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 36
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public bool IsPublic { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsPublic As Boolean
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsPublic
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsPublic
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture
+  id: Specificulture
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: Specificulture
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Specificulture
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Specificulture
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Specificulture
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 37
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public string Specificulture { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Specificulture As String
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Specificulture
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Specificulture
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId
+  id: ParentId
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: ParentId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParentId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParentId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ParentId
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 39
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public TPrimaryKey ParentId { get; set; }
+    parameters: []
+    return:
+      type: '{TPrimaryKey}'
+    content.vb: Public Property ParentId As TPrimaryKey
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParentId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParentId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId
+  id: MixCultureId
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: MixCultureId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixCultureId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixCultureId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixCultureId
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 40
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public int MixCultureId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MixCultureId As Integer
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixCultureId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixCultureId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors
+  commentId: P:Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors
+  id: Contributors
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: Contributors
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Contributors
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Contributors
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Contributors
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 42
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public List<MixContributorViewModel> Contributors { get; set; }
+    parameters: []
+    return:
+      type: List{MixContributorViewModel}
+    content.vb: Public Property Contributors As List(Of MixContributorViewModel)
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Contributors
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Contributors
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+  id: ParseEntity
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: ParseEntity()
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ParseEntity
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 46
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public override Task<TEntity> ParseEntity()
+    return:
+      type: Task{{TEntity}}
+    content.vb: Public Overrides Function ParseEntity As Task(Of TEntity)
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  id: InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitDefaultValues
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 52
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public override void InitDefaultValues(string language = null, int? cultureId = default(int? ))
+    parameters:
+    - id: language
+      type: System.String
+    - id: cultureId
+      type: System.Nullable{System.Int32}
+    content.vb: Public Overrides Sub InitDefaultValues(language As String = Nothing, cultureId As Integer? = Nothing)
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  commentId: M:Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  id: LoadContributorsAsync(MixContentType,Mix.Lib.Services.MixIdentityService)
+  parent: Mix.Lib.Base.MultilingualContentViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: LoadContributorsAsync(MixContentType, MixIdentityService)
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync(MixContentType, MixIdentityService)
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync(MixContentType, Mix.Lib.Services.MixIdentityService)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadContributorsAsync
+    path: ../../mix.core/src/platform/mix.library/Base/MultilingualContentViewModelBase.cs
+    startLine: 63
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Base
+  syntax:
+    content: public Task LoadContributorsAsync(MixContentType contentType, MixIdentityService identityService)
+    parameters:
+    - id: contentType
+      type: MixContentType
+    - id: identityService
+      type: Mix.Lib.Services.MixIdentityService
+    return:
+      type: Task
+    content.vb: Public Function LoadContributorsAsync(contentType As MixContentType, identityService As MixIdentityService) As Task
+  overload: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync*
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync(MixContentType, MixIdentityService)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync(MixContentType, Mix.Lib.Services.MixIdentityService)
+references:
+- uid: Mix.Lib.Base
+  commentId: N:Mix.Lib.Base
+  name: Mix.Lib.Base
+  nameWithType: Mix.Lib.Base
+  fullName: Mix.Lib.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.#ctor
+  name: MultilingualContentViewModelBase
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MultilingualContentViewModelBase
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MultilingualContentViewModelBase
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MultilingualContentViewModelBase
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MultilingualContentViewModelBase
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.MixTenantId
+  name: MixTenantId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.Icon
+  name: Icon
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Icon
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Icon
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Icon
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Icon
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.IsPublic
+  name: IsPublic
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsPublic
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsPublic
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsPublic
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsPublic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.Specificulture
+  name: Specificulture
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Specificulture
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Specificulture
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Specificulture
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Specificulture
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.ParentId
+  name: ParentId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParentId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParentId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParentId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParentId
+- uid: '{TPrimaryKey}'
+  commentId: '!:TPrimaryKey'
+  definition: TPrimaryKey
+  name: TPrimaryKey
+  nameWithType: TPrimaryKey
+  fullName: TPrimaryKey
+- uid: TPrimaryKey
+  name: TPrimaryKey
+  nameWithType: TPrimaryKey
+  fullName: TPrimaryKey
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.MixCultureId
+  name: MixCultureId
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixCultureId
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixCultureId
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixCultureId
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixCultureId
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.Contributors
+  name: Contributors
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Contributors
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Contributors
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Contributors
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Contributors
+- uid: List{MixContributorViewModel}
+  commentId: '!:List{MixContributorViewModel}'
+  definition: List`1
+  name: List<MixContributorViewModel>
+  nameWithType: List<MixContributorViewModel>
+  fullName: List<MixContributorViewModel>
+  nameWithType.vb: List(Of MixContributorViewModel)
+  fullName.vb: List(Of MixContributorViewModel)
+  name.vb: List(Of MixContributorViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixContributorViewModel
+    name: MixContributorViewModel
+    nameWithType: MixContributorViewModel
+    fullName: MixContributorViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixContributorViewModel
+    name: MixContributorViewModel
+    nameWithType: MixContributorViewModel
+    fullName: MixContributorViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.ParseEntity
+  name: ParseEntity
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+- uid: Task{{TEntity}}
+  commentId: '!:Task{`1}'
+  definition: Task`1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.InitDefaultValues
+  name: InitDefaultValues
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync*
+  commentId: Overload:Mix.Lib.Base.MultilingualContentViewModelBase`4.LoadContributorsAsync
+  name: LoadContributorsAsync
+  nameWithType: MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync
+  fullName: Mix.Lib.Base.MultilingualContentViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LoadContributorsAsync
+  nameWithType.vb: MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync
+  fullName.vb: Mix.Lib.Base.MultilingualContentViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LoadContributorsAsync
+- uid: MixContentType
+  isExternal: true
+  name: MixContentType
+  nameWithType: MixContentType
+  fullName: MixContentType
+- uid: Mix.Lib.Services.MixIdentityService
+  commentId: T:Mix.Lib.Services.MixIdentityService
+  parent: Mix.Lib.Services
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services

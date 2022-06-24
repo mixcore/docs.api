@@ -1,0 +1,2995 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Services.TenantRoleStore
+  commentId: T:Mix.Lib.Services.TenantRoleStore
+  id: TenantRoleStore
+  parent: Mix.Lib.Services
+  children:
+  - Mix.Lib.Services.TenantRoleStore.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
+  - Mix.Lib.Services.TenantRoleStore.tenantId
+  langs:
+  - csharp
+  - vb
+  name: TenantRoleStore
+  nameWithType: TenantRoleStore
+  fullName: Mix.Lib.Services.TenantRoleStore
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Services/TenantRoleStore.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TenantRoleStore
+    path: ../../mix.core/src/platform/mix.library/Services/TenantRoleStore.cs
+    startLine: 7
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: 'public class TenantRoleStore : RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>, IQueryableRoleStore<MixRole>, IRoleClaimStore<MixRole>, IRoleStore<MixRole>, IDisposable'
+    content.vb: >-
+      Public Class TenantRoleStore
+          Inherits RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims)
+          Implements IQueryableRoleStore(Of MixRole), IRoleClaimStore(Of MixRole), IRoleStore(Of MixRole), IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  implements:
+  - Microsoft.AspNetCore.Identity.IQueryableRoleStore{Mix.Database.Entities.Account.MixRole}
+  - Microsoft.AspNetCore.Identity.IRoleClaimStore{Mix.Database.Entities.Account.MixRole}
+  - Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole}
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.CreateAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.UpdateAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.DeleteAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetRoleIdAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.SetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ConvertIdFromString(System.String)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ConvertIdToString(Guid)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.FindByIdAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.FindByNameAsync(System.String,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.SetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ThrowIfDisposed
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Dispose
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetClaimsAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.AddClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.RemoveClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.CreateRoleClaim(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Context
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ErrorDescriber
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.AutoSaveChanges
+  - Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Roles
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Services.TenantRoleStore.tenantId
+  commentId: F:Mix.Lib.Services.TenantRoleStore.tenantId
+  id: tenantId
+  parent: Mix.Lib.Services.TenantRoleStore
+  langs:
+  - csharp
+  - vb
+  name: tenantId
+  nameWithType: TenantRoleStore.tenantId
+  fullName: Mix.Lib.Services.TenantRoleStore.tenantId
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Services/TenantRoleStore.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: tenantId
+    path: ../../mix.core/src/platform/mix.library/Services/TenantRoleStore.cs
+    startLine: 9
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public readonly int tenantId
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly tenantId As Integer
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.Lib.Services.TenantRoleStore.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
+  commentId: M:Mix.Lib.Services.TenantRoleStore.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
+  id: '#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Entities.Account.MixCmsAccountContext,Microsoft.AspNetCore.Identity.IdentityErrorDescriber)'
+  parent: Mix.Lib.Services.TenantRoleStore
+  langs:
+  - csharp
+  - vb
+  name: TenantRoleStore(IHttpContextAccessor, MixCmsAccountContext, IdentityErrorDescriber)
+  nameWithType: TenantRoleStore.TenantRoleStore(IHttpContextAccessor, MixCmsAccountContext, IdentityErrorDescriber)
+  fullName: Mix.Lib.Services.TenantRoleStore.TenantRoleStore(Microsoft.AspNetCore.Http.IHttpContextAccessor, Mix.Database.Entities.Account.MixCmsAccountContext, Microsoft.AspNetCore.Identity.IdentityErrorDescriber)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Services/TenantRoleStore.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Services/TenantRoleStore.cs
+    startLine: 10
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Services
+  syntax:
+    content: public TenantRoleStore(IHttpContextAccessor httpContext, MixCmsAccountContext accContext, IdentityErrorDescriber describer = null)
+    parameters:
+    - id: httpContext
+      type: Microsoft.AspNetCore.Http.IHttpContextAccessor
+    - id: accContext
+      type: Mix.Database.Entities.Account.MixCmsAccountContext
+    - id: describer
+      type: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+    content.vb: Public Sub New(httpContext As IHttpContextAccessor, accContext As MixCmsAccountContext, describer As IdentityErrorDescriber = Nothing)
+  overload: Mix.Lib.Services.TenantRoleStore.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5
+  name: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims)
+  name.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5
+    name: RoleStore
+    nameWithType: RoleStore
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.AspNetUserRoles
+    name: AspNetUserRoles
+    nameWithType: AspNetUserRoles
+    fullName: Mix.Database.Entities.Account.AspNetUserRoles
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.AspNetRoleClaims
+    name: AspNetRoleClaims
+    nameWithType: AspNetRoleClaims
+    fullName: Mix.Database.Entities.Account.AspNetRoleClaims
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5
+    name: RoleStore
+    nameWithType: RoleStore
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.AspNetUserRoles
+    name: AspNetUserRoles
+    nameWithType: AspNetUserRoles
+    fullName: Mix.Database.Entities.Account.AspNetUserRoles
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Mix.Database.Entities.Account.AspNetRoleClaims
+    name: AspNetRoleClaims
+    nameWithType: AspNetRoleClaims
+    fullName: Mix.Database.Entities.Account.AspNetRoleClaims
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.IQueryableRoleStore{Mix.Database.Entities.Account.MixRole}
+  commentId: T:Microsoft.AspNetCore.Identity.IQueryableRoleStore{Mix.Database.Entities.Account.MixRole}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.IQueryableRoleStore`1
+  name: IQueryableRoleStore<MixRole>
+  nameWithType: IQueryableRoleStore<MixRole>
+  fullName: Microsoft.AspNetCore.Identity.IQueryableRoleStore<Mix.Database.Entities.Account.MixRole>
+  nameWithType.vb: IQueryableRoleStore(Of MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.IQueryableRoleStore(Of Mix.Database.Entities.Account.MixRole)
+  name.vb: IQueryableRoleStore(Of MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IQueryableRoleStore`1
+    name: IQueryableRoleStore
+    nameWithType: IQueryableRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IQueryableRoleStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IQueryableRoleStore`1
+    name: IQueryableRoleStore
+    nameWithType: IQueryableRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IQueryableRoleStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.IRoleClaimStore{Mix.Database.Entities.Account.MixRole}
+  commentId: T:Microsoft.AspNetCore.Identity.IRoleClaimStore{Mix.Database.Entities.Account.MixRole}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.IRoleClaimStore`1
+  name: IRoleClaimStore<MixRole>
+  nameWithType: IRoleClaimStore<MixRole>
+  fullName: Microsoft.AspNetCore.Identity.IRoleClaimStore<Mix.Database.Entities.Account.MixRole>
+  nameWithType.vb: IRoleClaimStore(Of MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.IRoleClaimStore(Of Mix.Database.Entities.Account.MixRole)
+  name.vb: IRoleClaimStore(Of MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IRoleClaimStore`1
+    name: IRoleClaimStore
+    nameWithType: IRoleClaimStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleClaimStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IRoleClaimStore`1
+    name: IRoleClaimStore
+    nameWithType: IRoleClaimStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleClaimStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole}
+  commentId: T:Microsoft.AspNetCore.Identity.IRoleStore{Mix.Database.Entities.Account.MixRole}
+  parent: Microsoft.AspNetCore.Identity
+  definition: Microsoft.AspNetCore.Identity.IRoleStore`1
+  name: IRoleStore<MixRole>
+  nameWithType: IRoleStore<MixRole>
+  fullName: Microsoft.AspNetCore.Identity.IRoleStore<Mix.Database.Entities.Account.MixRole>
+  nameWithType.vb: IRoleStore(Of MixRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.IRoleStore(Of Mix.Database.Entities.Account.MixRole)
+  name.vb: IRoleStore(Of MixRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+    name: IRoleStore
+    nameWithType: IRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+    name: IRoleStore
+    nameWithType: IRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.CreateAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.CreateAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateAsync(`0,System.Threading.CancellationToken)
+  name: CreateAsync(MixRole, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.CreateAsync(MixRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.CreateAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).CreateAsync(MixRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).CreateAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateAsync(`0,System.Threading.CancellationToken)
+    name: CreateAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.CreateAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.CreateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateAsync(`0,System.Threading.CancellationToken)
+    name: CreateAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).CreateAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).CreateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.UpdateAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.UpdateAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.UpdateAsync(`0,System.Threading.CancellationToken)
+  name: UpdateAsync(MixRole, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.UpdateAsync(MixRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.UpdateAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).UpdateAsync(MixRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).UpdateAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.UpdateAsync(`0,System.Threading.CancellationToken)
+    name: UpdateAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.UpdateAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.UpdateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.UpdateAsync(`0,System.Threading.CancellationToken)
+    name: UpdateAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).UpdateAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).UpdateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.DeleteAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.DeleteAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(`0,System.Threading.CancellationToken)
+  name: DeleteAsync(MixRole, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.DeleteAsync(MixRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.DeleteAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).DeleteAsync(MixRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).DeleteAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(`0,System.Threading.CancellationToken)
+    name: DeleteAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.DeleteAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.DeleteAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(`0,System.Threading.CancellationToken)
+    name: DeleteAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).DeleteAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).DeleteAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetRoleIdAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetRoleIdAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleIdAsync(`0,System.Threading.CancellationToken)
+  name: GetRoleIdAsync(MixRole, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.GetRoleIdAsync(MixRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.GetRoleIdAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).GetRoleIdAsync(MixRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).GetRoleIdAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleIdAsync(`0,System.Threading.CancellationToken)
+    name: GetRoleIdAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.GetRoleIdAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.GetRoleIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleIdAsync(`0,System.Threading.CancellationToken)
+    name: GetRoleIdAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).GetRoleIdAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).GetRoleIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleNameAsync(`0,System.Threading.CancellationToken)
+  name: GetRoleNameAsync(MixRole, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.GetRoleNameAsync(MixRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.GetRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).GetRoleNameAsync(MixRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).GetRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleNameAsync(`0,System.Threading.CancellationToken)
+    name: GetRoleNameAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.GetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.GetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleNameAsync(`0,System.Threading.CancellationToken)
+    name: GetRoleNameAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).GetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).GetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.SetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.SetRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+  name: SetRoleNameAsync(MixRole, String, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.SetRoleNameAsync(MixRole, String, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.SetRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.String, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).SetRoleNameAsync(MixRole, String, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).SetRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+    name: SetRoleNameAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.SetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.SetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+    name: SetRoleNameAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).SetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).SetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ConvertIdFromString(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ConvertIdFromString(System.String)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdFromString(System.String)
+  name: ConvertIdFromString(String)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.ConvertIdFromString(String)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.ConvertIdFromString(System.String)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).ConvertIdFromString(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).ConvertIdFromString(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdFromString(System.String)
+    name: ConvertIdFromString
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.ConvertIdFromString
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.ConvertIdFromString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdFromString(System.String)
+    name: ConvertIdFromString
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).ConvertIdFromString
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).ConvertIdFromString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ConvertIdToString(Guid)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ConvertIdToString(Guid)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdToString(`2)
+  name: ConvertIdToString(Guid)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.ConvertIdToString(Guid)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.ConvertIdToString(Guid)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).ConvertIdToString(Guid)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).ConvertIdToString(Guid)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdToString(`2)
+    name: ConvertIdToString
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.ConvertIdToString
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.ConvertIdToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdToString(`2)
+    name: ConvertIdToString
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).ConvertIdToString
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).ConvertIdToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.FindByIdAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.FindByIdAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByIdAsync(System.String,System.Threading.CancellationToken)
+  name: FindByIdAsync(String, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.FindByIdAsync(String, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.FindByIdAsync(System.String, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).FindByIdAsync(String, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).FindByIdAsync(System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByIdAsync(System.String,System.Threading.CancellationToken)
+    name: FindByIdAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.FindByIdAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.FindByIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByIdAsync(System.String,System.Threading.CancellationToken)
+    name: FindByIdAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).FindByIdAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).FindByIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.FindByNameAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.FindByNameAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByNameAsync(System.String,System.Threading.CancellationToken)
+  name: FindByNameAsync(String, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.FindByNameAsync(String, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.FindByNameAsync(System.String, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).FindByNameAsync(String, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).FindByNameAsync(System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByNameAsync(System.String,System.Threading.CancellationToken)
+    name: FindByNameAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.FindByNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.FindByNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByNameAsync(System.String,System.Threading.CancellationToken)
+    name: FindByNameAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).FindByNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).FindByNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetNormalizedRoleNameAsync(`0,System.Threading.CancellationToken)
+  name: GetNormalizedRoleNameAsync(MixRole, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.GetNormalizedRoleNameAsync(MixRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.GetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).GetNormalizedRoleNameAsync(MixRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).GetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetNormalizedRoleNameAsync(`0,System.Threading.CancellationToken)
+    name: GetNormalizedRoleNameAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.GetNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.GetNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetNormalizedRoleNameAsync(`0,System.Threading.CancellationToken)
+    name: GetNormalizedRoleNameAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).GetNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).GetNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.SetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.SetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole,System.String,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetNormalizedRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+  name: SetNormalizedRoleNameAsync(MixRole, String, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.SetNormalizedRoleNameAsync(MixRole, String, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.SetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.String, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).SetNormalizedRoleNameAsync(MixRole, String, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).SetNormalizedRoleNameAsync(Mix.Database.Entities.Account.MixRole, System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetNormalizedRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+    name: SetNormalizedRoleNameAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.SetNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.SetNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetNormalizedRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+    name: SetNormalizedRoleNameAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).SetNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).SetNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ThrowIfDisposed
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ThrowIfDisposed
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ThrowIfDisposed
+  name: ThrowIfDisposed()
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.ThrowIfDisposed()
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.ThrowIfDisposed()
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).ThrowIfDisposed()
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).ThrowIfDisposed()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ThrowIfDisposed
+    name: ThrowIfDisposed
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.ThrowIfDisposed
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.ThrowIfDisposed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ThrowIfDisposed
+    name: ThrowIfDisposed
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).ThrowIfDisposed
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).ThrowIfDisposed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Dispose
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Dispose
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Dispose
+  name: Dispose()
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.Dispose()
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.Dispose()
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).Dispose()
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).Dispose()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Dispose
+    name: Dispose
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.Dispose
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Dispose
+    name: Dispose
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).Dispose
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetClaimsAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.GetClaimsAsync(Mix.Database.Entities.Account.MixRole,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetClaimsAsync(`0,System.Threading.CancellationToken)
+  name: GetClaimsAsync(MixRole, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.GetClaimsAsync(MixRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.GetClaimsAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).GetClaimsAsync(MixRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).GetClaimsAsync(Mix.Database.Entities.Account.MixRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetClaimsAsync(`0,System.Threading.CancellationToken)
+    name: GetClaimsAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.GetClaimsAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.GetClaimsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetClaimsAsync(`0,System.Threading.CancellationToken)
+    name: GetClaimsAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).GetClaimsAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).GetClaimsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.AddClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.AddClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AddClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  name: AddClaimAsync(MixRole, Claim, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.AddClaimAsync(MixRole, Claim, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.AddClaimAsync(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).AddClaimAsync(MixRole, Claim, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).AddClaimAsync(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AddClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+    name: AddClaimAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.AddClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.AddClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AddClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+    name: AddClaimAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).AddClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).AddClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.RemoveClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.RemoveClaimAsync(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.RemoveClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  name: RemoveClaimAsync(MixRole, Claim, CancellationToken)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.RemoveClaimAsync(MixRole, Claim, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.RemoveClaimAsync(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).RemoveClaimAsync(MixRole, Claim, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).RemoveClaimAsync(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.RemoveClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+    name: RemoveClaimAsync
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.RemoveClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.RemoveClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.RemoveClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+    name: RemoveClaimAsync
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).RemoveClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).RemoveClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.CreateRoleClaim(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.CreateRoleClaim(Mix.Database.Entities.Account.MixRole,System.Security.Claims.Claim)
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateRoleClaim(`0,System.Security.Claims.Claim)
+  name: CreateRoleClaim(MixRole, Claim)
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.CreateRoleClaim(MixRole, Claim)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.CreateRoleClaim(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim)
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).CreateRoleClaim(MixRole, Claim)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).CreateRoleClaim(Mix.Database.Entities.Account.MixRole, System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateRoleClaim(`0,System.Security.Claims.Claim)
+    name: CreateRoleClaim
+    nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.CreateRoleClaim
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.CreateRoleClaim
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateRoleClaim(`0,System.Security.Claims.Claim)
+    name: CreateRoleClaim
+    nameWithType: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).CreateRoleClaim
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).CreateRoleClaim
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Database.Entities.Account.MixRole
+    name: MixRole
+    nameWithType: MixRole
+    fullName: Mix.Database.Entities.Account.MixRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Context
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Context
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Context
+  name: Context
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.Context
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.Context
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).Context
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).Context
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ErrorDescriber
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.ErrorDescriber
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ErrorDescriber
+  name: ErrorDescriber
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.ErrorDescriber
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.ErrorDescriber
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).ErrorDescriber
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).ErrorDescriber
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.AutoSaveChanges
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.AutoSaveChanges
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AutoSaveChanges
+  name: AutoSaveChanges
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.AutoSaveChanges
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.AutoSaveChanges
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).AutoSaveChanges
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).AutoSaveChanges
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Roles
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}.Roles
+  parent: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore{Mix.Database.Entities.Account.MixRole,Mix.Database.Entities.Account.MixCmsAccountContext,Guid,Mix.Database.Entities.Account.AspNetUserRoles,Mix.Database.Entities.Account.AspNetRoleClaims}
+  definition: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Roles
+  name: Roles
+  nameWithType: RoleStore<MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims>.Roles
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims>.Roles
+  nameWithType.vb: RoleStore(Of MixRole, MixCmsAccountContext, Guid, AspNetUserRoles, AspNetRoleClaims).Roles
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of Mix.Database.Entities.Account.MixRole, Mix.Database.Entities.Account.MixCmsAccountContext, Guid, Mix.Database.Entities.Account.AspNetUserRoles, Mix.Database.Entities.Account.AspNetRoleClaims).Roles
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5
+  commentId: T:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5
+  isExternal: true
+  name: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim)
+  name.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5
+    name: RoleStore
+    nameWithType: RoleStore
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TContext
+    nameWithType: TContext
+    fullName: TContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRole
+    nameWithType: TUserRole
+    fullName: TUserRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleClaim
+    nameWithType: TRoleClaim
+    fullName: TRoleClaim
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5
+    name: RoleStore
+    nameWithType: RoleStore
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TContext
+    nameWithType: TContext
+    fullName: TContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TUserRole
+    nameWithType: TUserRole
+    fullName: TUserRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TRoleClaim
+    nameWithType: TRoleClaim
+    fullName: TRoleClaim
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore
+  commentId: N:Microsoft.AspNetCore.Identity.EntityFrameworkCore
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity.EntityFrameworkCore
+  nameWithType: Microsoft.AspNetCore.Identity.EntityFrameworkCore
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore
+- uid: Microsoft.AspNetCore.Identity.IQueryableRoleStore`1
+  commentId: T:Microsoft.AspNetCore.Identity.IQueryableRoleStore`1
+  isExternal: true
+  name: IQueryableRoleStore<TRole>
+  nameWithType: IQueryableRoleStore<TRole>
+  fullName: Microsoft.AspNetCore.Identity.IQueryableRoleStore<TRole>
+  nameWithType.vb: IQueryableRoleStore(Of TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.IQueryableRoleStore(Of TRole)
+  name.vb: IQueryableRoleStore(Of TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IQueryableRoleStore`1
+    name: IQueryableRoleStore
+    nameWithType: IQueryableRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IQueryableRoleStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IQueryableRoleStore`1
+    name: IQueryableRoleStore
+    nameWithType: IQueryableRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IQueryableRoleStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+- uid: Microsoft.AspNetCore.Identity.IRoleClaimStore`1
+  commentId: T:Microsoft.AspNetCore.Identity.IRoleClaimStore`1
+  isExternal: true
+  name: IRoleClaimStore<TRole>
+  nameWithType: IRoleClaimStore<TRole>
+  fullName: Microsoft.AspNetCore.Identity.IRoleClaimStore<TRole>
+  nameWithType.vb: IRoleClaimStore(Of TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.IRoleClaimStore(Of TRole)
+  name.vb: IRoleClaimStore(Of TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IRoleClaimStore`1
+    name: IRoleClaimStore
+    nameWithType: IRoleClaimStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleClaimStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IRoleClaimStore`1
+    name: IRoleClaimStore
+    nameWithType: IRoleClaimStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleClaimStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+  commentId: T:Microsoft.AspNetCore.Identity.IRoleStore`1
+  isExternal: true
+  name: IRoleStore<TRole>
+  nameWithType: IRoleStore<TRole>
+  fullName: Microsoft.AspNetCore.Identity.IRoleStore<TRole>
+  nameWithType.vb: IRoleStore(Of TRole)
+  fullName.vb: Microsoft.AspNetCore.Identity.IRoleStore(Of TRole)
+  name.vb: IRoleStore(Of TRole)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+    name: IRoleStore
+    nameWithType: IRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleStore
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IRoleStore`1
+    name: IRoleStore
+    nameWithType: IRoleStore
+    fullName: Microsoft.AspNetCore.Identity.IRoleStore
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: CreateAsync(TRole, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.CreateAsync(TRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.CreateAsync(TRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).CreateAsync(TRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).CreateAsync(TRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateAsync(`0,System.Threading.CancellationToken)
+    name: CreateAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.CreateAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.CreateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateAsync(`0,System.Threading.CancellationToken)
+    name: CreateAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).CreateAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).CreateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.UpdateAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.UpdateAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: UpdateAsync(TRole, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.UpdateAsync(TRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.UpdateAsync(TRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).UpdateAsync(TRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).UpdateAsync(TRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.UpdateAsync(`0,System.Threading.CancellationToken)
+    name: UpdateAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.UpdateAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.UpdateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.UpdateAsync(`0,System.Threading.CancellationToken)
+    name: UpdateAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).UpdateAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).UpdateAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: DeleteAsync(TRole, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.DeleteAsync(TRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.DeleteAsync(TRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).DeleteAsync(TRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).DeleteAsync(TRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(`0,System.Threading.CancellationToken)
+    name: DeleteAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.DeleteAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.DeleteAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.DeleteAsync(`0,System.Threading.CancellationToken)
+    name: DeleteAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).DeleteAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).DeleteAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleIdAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleIdAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: GetRoleIdAsync(TRole, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetRoleIdAsync(TRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetRoleIdAsync(TRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetRoleIdAsync(TRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetRoleIdAsync(TRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleIdAsync(`0,System.Threading.CancellationToken)
+    name: GetRoleIdAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetRoleIdAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetRoleIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleIdAsync(`0,System.Threading.CancellationToken)
+    name: GetRoleIdAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetRoleIdAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetRoleIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleNameAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleNameAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: GetRoleNameAsync(TRole, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetRoleNameAsync(TRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetRoleNameAsync(TRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetRoleNameAsync(TRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetRoleNameAsync(TRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleNameAsync(`0,System.Threading.CancellationToken)
+    name: GetRoleNameAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetRoleNameAsync(`0,System.Threading.CancellationToken)
+    name: GetRoleNameAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+  isExternal: true
+  name: SetRoleNameAsync(TRole, String, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.SetRoleNameAsync(TRole, String, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.SetRoleNameAsync(TRole, System.String, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).SetRoleNameAsync(TRole, String, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).SetRoleNameAsync(TRole, System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+    name: SetRoleNameAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.SetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.SetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+    name: SetRoleNameAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).SetRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).SetRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdFromString(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdFromString(System.String)
+  isExternal: true
+  name: ConvertIdFromString(String)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ConvertIdFromString(String)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ConvertIdFromString(System.String)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ConvertIdFromString(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ConvertIdFromString(System.String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdFromString(System.String)
+    name: ConvertIdFromString
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ConvertIdFromString
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ConvertIdFromString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdFromString(System.String)
+    name: ConvertIdFromString
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ConvertIdFromString
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ConvertIdFromString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdToString(`2)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdToString(`2)
+  isExternal: true
+  name: ConvertIdToString(TKey)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ConvertIdToString(TKey)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ConvertIdToString(TKey)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ConvertIdToString(TKey)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ConvertIdToString(TKey)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdToString(`2)
+    name: ConvertIdToString
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ConvertIdToString
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ConvertIdToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ConvertIdToString(`2)
+    name: ConvertIdToString
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ConvertIdToString
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ConvertIdToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByIdAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByIdAsync(System.String,System.Threading.CancellationToken)
+  isExternal: true
+  name: FindByIdAsync(String, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.FindByIdAsync(String, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.FindByIdAsync(System.String, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).FindByIdAsync(String, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).FindByIdAsync(System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByIdAsync(System.String,System.Threading.CancellationToken)
+    name: FindByIdAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.FindByIdAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.FindByIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByIdAsync(System.String,System.Threading.CancellationToken)
+    name: FindByIdAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).FindByIdAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).FindByIdAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByNameAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByNameAsync(System.String,System.Threading.CancellationToken)
+  isExternal: true
+  name: FindByNameAsync(String, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.FindByNameAsync(String, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.FindByNameAsync(System.String, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).FindByNameAsync(String, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).FindByNameAsync(System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByNameAsync(System.String,System.Threading.CancellationToken)
+    name: FindByNameAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.FindByNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.FindByNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.FindByNameAsync(System.String,System.Threading.CancellationToken)
+    name: FindByNameAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).FindByNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).FindByNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetNormalizedRoleNameAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetNormalizedRoleNameAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: GetNormalizedRoleNameAsync(TRole, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetNormalizedRoleNameAsync(TRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetNormalizedRoleNameAsync(TRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetNormalizedRoleNameAsync(TRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetNormalizedRoleNameAsync(TRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetNormalizedRoleNameAsync(`0,System.Threading.CancellationToken)
+    name: GetNormalizedRoleNameAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetNormalizedRoleNameAsync(`0,System.Threading.CancellationToken)
+    name: GetNormalizedRoleNameAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetNormalizedRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetNormalizedRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+  isExternal: true
+  name: SetNormalizedRoleNameAsync(TRole, String, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.SetNormalizedRoleNameAsync(TRole, String, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.SetNormalizedRoleNameAsync(TRole, System.String, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).SetNormalizedRoleNameAsync(TRole, String, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).SetNormalizedRoleNameAsync(TRole, System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetNormalizedRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+    name: SetNormalizedRoleNameAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.SetNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.SetNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.SetNormalizedRoleNameAsync(`0,System.String,System.Threading.CancellationToken)
+    name: SetNormalizedRoleNameAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).SetNormalizedRoleNameAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).SetNormalizedRoleNameAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ThrowIfDisposed
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ThrowIfDisposed
+  isExternal: true
+  name: ThrowIfDisposed()
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ThrowIfDisposed()
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ThrowIfDisposed()
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ThrowIfDisposed()
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ThrowIfDisposed()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ThrowIfDisposed
+    name: ThrowIfDisposed
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ThrowIfDisposed
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ThrowIfDisposed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ThrowIfDisposed
+    name: ThrowIfDisposed
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ThrowIfDisposed
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ThrowIfDisposed
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Dispose
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Dispose
+  isExternal: true
+  name: Dispose()
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.Dispose()
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.Dispose()
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).Dispose()
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).Dispose()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Dispose
+    name: Dispose
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.Dispose
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Dispose
+    name: Dispose
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).Dispose
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetClaimsAsync(`0,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetClaimsAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  name: GetClaimsAsync(TRole, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetClaimsAsync(TRole, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetClaimsAsync(TRole, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetClaimsAsync(TRole, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetClaimsAsync(TRole, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetClaimsAsync(`0,System.Threading.CancellationToken)
+    name: GetClaimsAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetClaimsAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.GetClaimsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.GetClaimsAsync(`0,System.Threading.CancellationToken)
+    name: GetClaimsAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetClaimsAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).GetClaimsAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AddClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AddClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  isExternal: true
+  name: AddClaimAsync(TRole, Claim, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.AddClaimAsync(TRole, Claim, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.AddClaimAsync(TRole, System.Security.Claims.Claim, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).AddClaimAsync(TRole, Claim, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).AddClaimAsync(TRole, System.Security.Claims.Claim, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AddClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+    name: AddClaimAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.AddClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.AddClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AddClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+    name: AddClaimAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).AddClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).AddClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.RemoveClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.RemoveClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+  isExternal: true
+  name: RemoveClaimAsync(TRole, Claim, CancellationToken)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.RemoveClaimAsync(TRole, Claim, CancellationToken)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.RemoveClaimAsync(TRole, System.Security.Claims.Claim, System.Threading.CancellationToken)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).RemoveClaimAsync(TRole, Claim, CancellationToken)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).RemoveClaimAsync(TRole, System.Security.Claims.Claim, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.RemoveClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+    name: RemoveClaimAsync
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.RemoveClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.RemoveClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.RemoveClaimAsync(`0,System.Security.Claims.Claim,System.Threading.CancellationToken)
+    name: RemoveClaimAsync
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).RemoveClaimAsync
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).RemoveClaimAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateRoleClaim(`0,System.Security.Claims.Claim)
+  commentId: M:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateRoleClaim(`0,System.Security.Claims.Claim)
+  isExternal: true
+  name: CreateRoleClaim(TRole, Claim)
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.CreateRoleClaim(TRole, Claim)
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.CreateRoleClaim(TRole, System.Security.Claims.Claim)
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).CreateRoleClaim(TRole, Claim)
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).CreateRoleClaim(TRole, System.Security.Claims.Claim)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateRoleClaim(`0,System.Security.Claims.Claim)
+    name: CreateRoleClaim
+    nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.CreateRoleClaim
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.CreateRoleClaim
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.CreateRoleClaim(`0,System.Security.Claims.Claim)
+    name: CreateRoleClaim
+    nameWithType: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).CreateRoleClaim
+    fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).CreateRoleClaim
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TRole
+    nameWithType: TRole
+    fullName: TRole
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Security.Claims.Claim
+    name: Claim
+    nameWithType: Claim
+    fullName: System.Security.Claims.Claim
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Context
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Context
+  isExternal: true
+  name: Context
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.Context
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.Context
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).Context
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).Context
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ErrorDescriber
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.ErrorDescriber
+  isExternal: true
+  name: ErrorDescriber
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ErrorDescriber
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.ErrorDescriber
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ErrorDescriber
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).ErrorDescriber
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AutoSaveChanges
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.AutoSaveChanges
+  isExternal: true
+  name: AutoSaveChanges
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.AutoSaveChanges
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.AutoSaveChanges
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).AutoSaveChanges
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).AutoSaveChanges
+- uid: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Roles
+  commentId: P:Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore`5.Roles
+  isExternal: true
+  name: Roles
+  nameWithType: RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.Roles
+  fullName: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore<TRole, TContext, TKey, TUserRole, TRoleClaim>.Roles
+  nameWithType.vb: RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).Roles
+  fullName.vb: Microsoft.AspNetCore.Identity.EntityFrameworkCore.RoleStore(Of TRole, TContext, TKey, TUserRole, TRoleClaim).Roles
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.Lib.Services.TenantRoleStore.#ctor*
+  commentId: Overload:Mix.Lib.Services.TenantRoleStore.#ctor
+  name: TenantRoleStore
+  nameWithType: TenantRoleStore.TenantRoleStore
+  fullName: Mix.Lib.Services.TenantRoleStore.TenantRoleStore
+- uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
+  commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
+- uid: Mix.Database.Entities.Account.MixCmsAccountContext
+  commentId: T:Mix.Database.Entities.Account.MixCmsAccountContext
+  parent: Mix.Database.Entities.Account
+  name: MixCmsAccountContext
+  nameWithType: MixCmsAccountContext
+  fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  parent: Microsoft.AspNetCore.Identity
+  isExternal: true
+  name: IdentityErrorDescriber
+  nameWithType: IdentityErrorDescriber
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Mix.Database.Entities.Account
+  commentId: N:Mix.Database.Entities.Account
+  name: Mix.Database.Entities.Account
+  nameWithType: Mix.Database.Entities.Account
+  fullName: Mix.Database.Entities.Account

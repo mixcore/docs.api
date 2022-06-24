@@ -1,0 +1,432 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.MixQuartz.Jobs.SendPortalMessageJob
+  commentId: T:Mix.MixQuartz.Jobs.SendPortalMessageJob
+  id: SendPortalMessageJob
+  parent: Mix.MixQuartz.Jobs
+  children:
+  - Mix.MixQuartz.Jobs.SendPortalMessageJob.#ctor(System.IServiceProvider,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Mix.SignalR.Services.PortalHubClientService)
+  - Mix.MixQuartz.Jobs.SendPortalMessageJob._portalHub
+  - Mix.MixQuartz.Jobs.SendPortalMessageJob.ExecuteHandler(IJobExecutionContext)
+  langs:
+  - csharp
+  - vb
+  name: SendPortalMessageJob
+  nameWithType: SendPortalMessageJob
+  fullName: Mix.MixQuartz.Jobs.SendPortalMessageJob
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/SendPortalMessageJob.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendPortalMessageJob
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/SendPortalMessageJob.cs
+    startLine: 11
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: 'public class SendPortalMessageJob : MixJobBase'
+    content.vb: >-
+      Public Class SendPortalMessageJob
+          Inherits MixJobBase
+  inheritance:
+  - System.Object
+  - Mix.MixQuartz.Jobs.MixJobBase
+  inheritedMembers:
+  - Mix.MixQuartz.Jobs.MixJobBase._provider
+  - Mix.MixQuartz.Jobs.MixJobBase._singleton
+  - Mix.MixQuartz.Jobs.MixJobBase._queueService
+  - Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+  - Mix.MixQuartz.Jobs.MixJobBase.JobName
+  - Mix.MixQuartz.Jobs.MixJobBase.Group
+  - Mix.MixQuartz.Jobs.MixJobBase.JobType
+  - Mix.MixQuartz.Jobs.MixJobBase.Schedule
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.MixQuartz.Jobs.SendPortalMessageJob._portalHub
+  commentId: F:Mix.MixQuartz.Jobs.SendPortalMessageJob._portalHub
+  id: _portalHub
+  parent: Mix.MixQuartz.Jobs.SendPortalMessageJob
+  langs:
+  - csharp
+  - vb
+  name: _portalHub
+  nameWithType: SendPortalMessageJob._portalHub
+  fullName: Mix.MixQuartz.Jobs.SendPortalMessageJob._portalHub
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/SendPortalMessageJob.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _portalHub
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/SendPortalMessageJob.cs
+    startLine: 13
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: protected PortalHubClientService _portalHub
+    return:
+      type: Mix.SignalR.Services.PortalHubClientService
+    content.vb: Protected _portalHub As PortalHubClientService
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Mix.MixQuartz.Jobs.SendPortalMessageJob.#ctor(System.IServiceProvider,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Mix.SignalR.Services.PortalHubClientService)
+  commentId: M:Mix.MixQuartz.Jobs.SendPortalMessageJob.#ctor(System.IServiceProvider,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Mix.SignalR.Services.PortalHubClientService)
+  id: '#ctor(System.IServiceProvider,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Mix.SignalR.Services.PortalHubClientService)'
+  parent: Mix.MixQuartz.Jobs.SendPortalMessageJob
+  langs:
+  - csharp
+  - vb
+  name: SendPortalMessageJob(IServiceProvider, IQueueService<MessageQueueModel>, PortalHubClientService)
+  nameWithType: SendPortalMessageJob.SendPortalMessageJob(IServiceProvider, IQueueService<MessageQueueModel>, PortalHubClientService)
+  fullName: Mix.MixQuartz.Jobs.SendPortalMessageJob.SendPortalMessageJob(System.IServiceProvider, Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>, Mix.SignalR.Services.PortalHubClientService)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/SendPortalMessageJob.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/SendPortalMessageJob.cs
+    startLine: 14
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: public SendPortalMessageJob(IServiceProvider provider, IQueueService<MessageQueueModel> queueService, PortalHubClientService portalHub)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+    - id: queueService
+      type: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+    - id: portalHub
+      type: Mix.SignalR.Services.PortalHubClientService
+    content.vb: Public Sub New(provider As IServiceProvider, queueService As IQueueService(Of MessageQueueModel), portalHub As PortalHubClientService)
+  overload: Mix.MixQuartz.Jobs.SendPortalMessageJob.#ctor*
+  nameWithType.vb: SendPortalMessageJob.SendPortalMessageJob(IServiceProvider, IQueueService(Of MessageQueueModel), PortalHubClientService)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.MixQuartz.Jobs.SendPortalMessageJob.SendPortalMessageJob(System.IServiceProvider, Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel), Mix.SignalR.Services.PortalHubClientService)
+  name.vb: SendPortalMessageJob(IServiceProvider, IQueueService(Of MessageQueueModel), PortalHubClientService)
+- uid: Mix.MixQuartz.Jobs.SendPortalMessageJob.ExecuteHandler(IJobExecutionContext)
+  commentId: M:Mix.MixQuartz.Jobs.SendPortalMessageJob.ExecuteHandler(IJobExecutionContext)
+  id: ExecuteHandler(IJobExecutionContext)
+  parent: Mix.MixQuartz.Jobs.SendPortalMessageJob
+  langs:
+  - csharp
+  - vb
+  name: ExecuteHandler(IJobExecutionContext)
+  nameWithType: SendPortalMessageJob.ExecuteHandler(IJobExecutionContext)
+  fullName: Mix.MixQuartz.Jobs.SendPortalMessageJob.ExecuteHandler(IJobExecutionContext)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.quartz/Jobs/SendPortalMessageJob.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExecuteHandler
+    path: ../../mix.core/src/platform/mix.quartz/Jobs/SendPortalMessageJob.cs
+    startLine: 23
+  assemblies:
+  - mix.quartz
+  namespace: Mix.MixQuartz.Jobs
+  syntax:
+    content: public override Task ExecuteHandler(IJobExecutionContext context)
+    parameters:
+    - id: context
+      type: IJobExecutionContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function ExecuteHandler(context As IJobExecutionContext) As Task
+  overridden: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+  overload: Mix.MixQuartz.Jobs.SendPortalMessageJob.ExecuteHandler*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Mix.MixQuartz.Jobs
+  commentId: N:Mix.MixQuartz.Jobs
+  name: Mix.MixQuartz.Jobs
+  nameWithType: Mix.MixQuartz.Jobs
+  fullName: Mix.MixQuartz.Jobs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.MixQuartz.Jobs.MixJobBase
+  commentId: T:Mix.MixQuartz.Jobs.MixJobBase
+  parent: Mix.MixQuartz.Jobs
+  name: MixJobBase
+  nameWithType: MixJobBase
+  fullName: Mix.MixQuartz.Jobs.MixJobBase
+- uid: Mix.MixQuartz.Jobs.MixJobBase._provider
+  commentId: F:Mix.MixQuartz.Jobs.MixJobBase._provider
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  name: _provider
+  nameWithType: MixJobBase._provider
+  fullName: Mix.MixQuartz.Jobs.MixJobBase._provider
+- uid: Mix.MixQuartz.Jobs.MixJobBase._singleton
+  commentId: F:Mix.MixQuartz.Jobs.MixJobBase._singleton
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  name: _singleton
+  nameWithType: MixJobBase._singleton
+  fullName: Mix.MixQuartz.Jobs.MixJobBase._singleton
+- uid: Mix.MixQuartz.Jobs.MixJobBase._queueService
+  commentId: F:Mix.MixQuartz.Jobs.MixJobBase._queueService
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  name: _queueService
+  nameWithType: MixJobBase._queueService
+  fullName: Mix.MixQuartz.Jobs.MixJobBase._queueService
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+  commentId: M:Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  isExternal: true
+  name: Execute(IJobExecutionContext)
+  nameWithType: MixJobBase.Execute(IJobExecutionContext)
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+  spec.csharp:
+  - uid: Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+    name: Execute
+    nameWithType: MixJobBase.Execute
+    fullName: Mix.MixQuartz.Jobs.MixJobBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: IJobExecutionContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.MixQuartz.Jobs.MixJobBase.Execute(IJobExecutionContext)
+    name: Execute
+    nameWithType: MixJobBase.Execute
+    fullName: Mix.MixQuartz.Jobs.MixJobBase.Execute
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: IJobExecutionContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.MixQuartz.Jobs.MixJobBase.JobName
+  commentId: P:Mix.MixQuartz.Jobs.MixJobBase.JobName
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  name: JobName
+  nameWithType: MixJobBase.JobName
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.JobName
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Group
+  commentId: P:Mix.MixQuartz.Jobs.MixJobBase.Group
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  name: Group
+  nameWithType: MixJobBase.Group
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Group
+- uid: Mix.MixQuartz.Jobs.MixJobBase.JobType
+  commentId: P:Mix.MixQuartz.Jobs.MixJobBase.JobType
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  name: JobType
+  nameWithType: MixJobBase.JobType
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.JobType
+- uid: Mix.MixQuartz.Jobs.MixJobBase.Schedule
+  commentId: P:Mix.MixQuartz.Jobs.MixJobBase.Schedule
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  name: Schedule
+  nameWithType: MixJobBase.Schedule
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.Schedule
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.SignalR.Services.PortalHubClientService
+  commentId: T:Mix.SignalR.Services.PortalHubClientService
+  parent: Mix.SignalR.Services
+  name: PortalHubClientService
+  nameWithType: PortalHubClientService
+  fullName: Mix.SignalR.Services.PortalHubClientService
+- uid: Mix.SignalR.Services
+  commentId: N:Mix.SignalR.Services
+  name: Mix.SignalR.Services
+  nameWithType: Mix.SignalR.Services
+  fullName: Mix.SignalR.Services
+- uid: Mix.MixQuartz.Jobs.SendPortalMessageJob.#ctor*
+  commentId: Overload:Mix.MixQuartz.Jobs.SendPortalMessageJob.#ctor
+  name: SendPortalMessageJob
+  nameWithType: SendPortalMessageJob.SendPortalMessageJob
+  fullName: Mix.MixQuartz.Jobs.SendPortalMessageJob.SendPortalMessageJob
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  commentId: T:Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  parent: Mix.Queue.Interfaces
+  definition: Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces.IQueueService`1
+  commentId: T:Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<T>
+  nameWithType: IQueueService<T>
+  fullName: Mix.Queue.Interfaces.IQueueService<T>
+  nameWithType.vb: IQueueService(Of T)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T)
+  name.vb: IQueueService(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces
+  commentId: N:Mix.Queue.Interfaces
+  name: Mix.Queue.Interfaces
+  nameWithType: Mix.Queue.Interfaces
+  fullName: Mix.Queue.Interfaces
+- uid: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+  commentId: M:Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+  parent: Mix.MixQuartz.Jobs.MixJobBase
+  isExternal: true
+  name: ExecuteHandler(IJobExecutionContext)
+  nameWithType: MixJobBase.ExecuteHandler(IJobExecutionContext)
+  fullName: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+  spec.csharp:
+  - uid: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+    name: ExecuteHandler
+    nameWithType: MixJobBase.ExecuteHandler
+    fullName: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: IJobExecutionContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler(IJobExecutionContext)
+    name: ExecuteHandler
+    nameWithType: MixJobBase.ExecuteHandler
+    fullName: Mix.MixQuartz.Jobs.MixJobBase.ExecuteHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: IJobExecutionContext
+    name: IJobExecutionContext
+    nameWithType: IJobExecutionContext
+    fullName: IJobExecutionContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.MixQuartz.Jobs.SendPortalMessageJob.ExecuteHandler*
+  commentId: Overload:Mix.MixQuartz.Jobs.SendPortalMessageJob.ExecuteHandler
+  name: ExecuteHandler
+  nameWithType: SendPortalMessageJob.ExecuteHandler
+  fullName: Mix.MixQuartz.Jobs.SendPortalMessageJob.ExecuteHandler
+- uid: IJobExecutionContext
+  isExternal: true
+  name: IJobExecutionContext
+  nameWithType: IJobExecutionContext
+  fullName: IJobExecutionContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

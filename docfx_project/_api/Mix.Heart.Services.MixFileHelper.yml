@@ -1,0 +1,1170 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Heart.Services.MixFileHelper
+  commentId: T:Mix.Heart.Services.MixFileHelper
+  id: MixFileHelper
+  parent: Mix.Heart.Services
+  children:
+  - Mix.Heart.Services.MixFileHelper.CopyFolder(System.String,System.String)
+  - Mix.Heart.Services.MixFileHelper.CreateFolderIfNotExist(System.String)
+  - Mix.Heart.Services.MixFileHelper.CurrentDirectory
+  - Mix.Heart.Services.MixFileHelper.DeleteFile(System.String)
+  - Mix.Heart.Services.MixFileHelper.DeleteFolder(System.String)
+  - Mix.Heart.Services.MixFileHelper.EmptyFolder(System.String)
+  - Mix.Heart.Services.MixFileHelper.GetFile(System.String,System.String,System.String,System.Boolean,System.String)
+  - Mix.Heart.Services.MixFileHelper.GetFileByFullName(System.String,System.Boolean,System.String)
+  - Mix.Heart.Services.MixFileHelper.GetTopDirectories(System.String)
+  - Mix.Heart.Services.MixFileHelper.GetTopFiles(System.String)
+  - Mix.Heart.Services.MixFileHelper.GetTopFolders(System.String)
+  - Mix.Heart.Services.MixFileHelper.SaveFile(Microsoft.AspNetCore.Http.IFormFile,System.String)
+  - Mix.Heart.Services.MixFileHelper.SaveFile(Mix.Heart.Models.FileModel)
+  - Mix.Heart.Services.MixFileHelper.UnZipFile(System.String,System.String)
+  - Mix.Heart.Services.MixFileHelper.ZipFolder(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MixFileHelper
+  nameWithType: MixFileHelper
+  fullName: Mix.Heart.Services.MixFileHelper
+  type: Class
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: MixFileHelper
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 10
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static class MixFileHelper
+    content.vb: Public Module MixFileHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mix.Heart.Services.MixFileHelper.CurrentDirectory
+  commentId: P:Mix.Heart.Services.MixFileHelper.CurrentDirectory
+  id: CurrentDirectory
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: CurrentDirectory
+  nameWithType: MixFileHelper.CurrentDirectory
+  fullName: Mix.Heart.Services.MixFileHelper.CurrentDirectory
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: CurrentDirectory
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 12
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static string CurrentDirectory { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared Property CurrentDirectory As String
+  overload: Mix.Heart.Services.MixFileHelper.CurrentDirectory*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.GetFile(System.String,System.String,System.String,System.Boolean,System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.GetFile(System.String,System.String,System.String,System.Boolean,System.String)
+  id: GetFile(System.String,System.String,System.String,System.Boolean,System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFile(String, String, String, Boolean, String)
+  nameWithType: MixFileHelper.GetFile(String, String, String, Boolean, String)
+  fullName: Mix.Heart.Services.MixFileHelper.GetFile(System.String, System.String, System.String, System.Boolean, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetFile
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 23
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static FileModel GetFile(string name, string ext, string FileFolder, bool isCreate = false, string defaultContent = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: ext
+      type: System.String
+    - id: FileFolder
+      type: System.String
+    - id: isCreate
+      type: System.Boolean
+    - id: defaultContent
+      type: System.String
+    return:
+      type: Mix.Heart.Models.FileModel
+    content.vb: Public Shared Function GetFile(name As String, ext As String, FileFolder As String, isCreate As Boolean = False, defaultContent As String = Nothing) As FileModel
+  overload: Mix.Heart.Services.MixFileHelper.GetFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.GetFileByFullName(System.String,System.Boolean,System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.GetFileByFullName(System.String,System.Boolean,System.String)
+  id: GetFileByFullName(System.String,System.Boolean,System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFileByFullName(String, Boolean, String)
+  nameWithType: MixFileHelper.GetFileByFullName(String, Boolean, String)
+  fullName: Mix.Heart.Services.MixFileHelper.GetFileByFullName(System.String, System.Boolean, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetFileByFullName
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 76
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static FileModel GetFileByFullName(string fullName, bool isCreate = false, string defaultContent = null)
+    parameters:
+    - id: fullName
+      type: System.String
+    - id: isCreate
+      type: System.Boolean
+    - id: defaultContent
+      type: System.String
+    return:
+      type: Mix.Heart.Models.FileModel
+    content.vb: Public Shared Function GetFileByFullName(fullName As String, isCreate As Boolean = False, defaultContent As String = Nothing) As FileModel
+  overload: Mix.Heart.Services.MixFileHelper.GetFileByFullName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.SaveFile(Mix.Heart.Models.FileModel)
+  commentId: M:Mix.Heart.Services.MixFileHelper.SaveFile(Mix.Heart.Models.FileModel)
+  id: SaveFile(Mix.Heart.Models.FileModel)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: SaveFile(FileModel)
+  nameWithType: MixFileHelper.SaveFile(FileModel)
+  fullName: Mix.Heart.Services.MixFileHelper.SaveFile(Mix.Heart.Models.FileModel)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: SaveFile
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 135
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static bool SaveFile(FileModel file)
+    parameters:
+    - id: file
+      type: Mix.Heart.Models.FileModel
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function SaveFile(file As FileModel) As Boolean
+  overload: Mix.Heart.Services.MixFileHelper.SaveFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.SaveFile(Microsoft.AspNetCore.Http.IFormFile,System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.SaveFile(Microsoft.AspNetCore.Http.IFormFile,System.String)
+  id: SaveFile(Microsoft.AspNetCore.Http.IFormFile,System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: SaveFile(IFormFile, String)
+  nameWithType: MixFileHelper.SaveFile(IFormFile, String)
+  fullName: Mix.Heart.Services.MixFileHelper.SaveFile(Microsoft.AspNetCore.Http.IFormFile, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: SaveFile
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 188
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static string SaveFile(IFormFile file, string fullPath)
+    parameters:
+    - id: file
+      type: Microsoft.AspNetCore.Http.IFormFile
+    - id: fullPath
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function SaveFile(file As IFormFile, fullPath As String) As String
+  overload: Mix.Heart.Services.MixFileHelper.SaveFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.DeleteFile(System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.DeleteFile(System.String)
+  id: DeleteFile(System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: DeleteFile(String)
+  nameWithType: MixFileHelper.DeleteFile(String)
+  fullName: Mix.Heart.Services.MixFileHelper.DeleteFile(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: DeleteFile
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 218
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static bool DeleteFile(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function DeleteFile(filePath As String) As Boolean
+  overload: Mix.Heart.Services.MixFileHelper.DeleteFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.GetTopFiles(System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.GetTopFiles(System.String)
+  id: GetTopFiles(System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTopFiles(String)
+  nameWithType: MixFileHelper.GetTopFiles(String)
+  fullName: Mix.Heart.Services.MixFileHelper.GetTopFiles(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetTopFiles
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 230
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static List<FileModel> GetTopFiles(string folder)
+    parameters:
+    - id: folder
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{Mix.Heart.Models.FileModel}
+    content.vb: Public Shared Function GetTopFiles(folder As String) As List(Of FileModel)
+  overload: Mix.Heart.Services.MixFileHelper.GetTopFiles*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.GetTopDirectories(System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.GetTopDirectories(System.String)
+  id: GetTopDirectories(System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTopDirectories(String)
+  nameWithType: MixFileHelper.GetTopDirectories(String)
+  fullName: Mix.Heart.Services.MixFileHelper.GetTopDirectories(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetTopDirectories
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 257
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static List<string> GetTopDirectories(string folder)
+    parameters:
+    - id: folder
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function GetTopDirectories(folder As String) As List(Of String)
+  overload: Mix.Heart.Services.MixFileHelper.GetTopDirectories*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.CopyFolder(System.String,System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.CopyFolder(System.String,System.String)
+  id: CopyFolder(System.String,System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: CopyFolder(String, String)
+  nameWithType: MixFileHelper.CopyFolder(String, String)
+  fullName: Mix.Heart.Services.MixFileHelper.CopyFolder(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: CopyFolder
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 271
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static bool CopyFolder(string srcPath, string desPath)
+    parameters:
+    - id: srcPath
+      type: System.String
+    - id: desPath
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CopyFolder(srcPath As String, desPath As String) As Boolean
+  overload: Mix.Heart.Services.MixFileHelper.CopyFolder*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.DeleteFolder(System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.DeleteFolder(System.String)
+  id: DeleteFolder(System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: DeleteFolder(String)
+  nameWithType: MixFileHelper.DeleteFolder(String)
+  fullName: Mix.Heart.Services.MixFileHelper.DeleteFolder(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: DeleteFolder
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 292
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static bool DeleteFolder(string folderPath)
+    parameters:
+    - id: folderPath
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function DeleteFolder(folderPath As String) As Boolean
+  overload: Mix.Heart.Services.MixFileHelper.DeleteFolder*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.EmptyFolder(System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.EmptyFolder(System.String)
+  id: EmptyFolder(System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: EmptyFolder(String)
+  nameWithType: MixFileHelper.EmptyFolder(String)
+  fullName: Mix.Heart.Services.MixFileHelper.EmptyFolder(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: EmptyFolder
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 302
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static bool EmptyFolder(string folderPath)
+    parameters:
+    - id: folderPath
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function EmptyFolder(folderPath As String) As Boolean
+  overload: Mix.Heart.Services.MixFileHelper.EmptyFolder*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.CreateFolderIfNotExist(System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.CreateFolderIfNotExist(System.String)
+  id: CreateFolderIfNotExist(System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: CreateFolderIfNotExist(String)
+  nameWithType: MixFileHelper.CreateFolderIfNotExist(String)
+  fullName: Mix.Heart.Services.MixFileHelper.CreateFolderIfNotExist(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: CreateFolderIfNotExist
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 309
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static void CreateFolderIfNotExist(string fullPath)
+    parameters:
+    - id: fullPath
+      type: System.String
+    content.vb: Public Shared Sub CreateFolderIfNotExist(fullPath As String)
+  overload: Mix.Heart.Services.MixFileHelper.CreateFolderIfNotExist*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.GetTopFolders(System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.GetTopFolders(System.String)
+  id: GetTopFolders(System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTopFolders(String)
+  nameWithType: MixFileHelper.GetTopFolders(String)
+  fullName: Mix.Heart.Services.MixFileHelper.GetTopFolders(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GetTopFolders
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 317
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static List<string> GetTopFolders(string folder)
+    parameters:
+    - id: folder
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function GetTopFolders(folder As String) As List(Of String)
+  overload: Mix.Heart.Services.MixFileHelper.GetTopFolders*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.ZipFolder(System.String,System.String,System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.ZipFolder(System.String,System.String,System.String)
+  id: ZipFolder(System.String,System.String,System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ZipFolder(String, String, String)
+  nameWithType: MixFileHelper.ZipFolder(String, String, String)
+  fullName: Mix.Heart.Services.MixFileHelper.ZipFolder(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: ZipFolder
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 332
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static string ZipFolder(string tmpPath, string outputPath, string fileName)
+    parameters:
+    - id: tmpPath
+      type: System.String
+    - id: outputPath
+      type: System.String
+    - id: fileName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ZipFolder(tmpPath As String, outputPath As String, fileName As String) As String
+  overload: Mix.Heart.Services.MixFileHelper.ZipFolder*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Heart.Services.MixFileHelper.UnZipFile(System.String,System.String)
+  commentId: M:Mix.Heart.Services.MixFileHelper.UnZipFile(System.String,System.String)
+  id: UnZipFile(System.String,System.String)
+  parent: Mix.Heart.Services.MixFileHelper
+  langs:
+  - csharp
+  - vb
+  name: UnZipFile(String, String)
+  nameWithType: MixFileHelper.UnZipFile(String, String)
+  fullName: Mix.Heart.Services.MixFileHelper.UnZipFile(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Services/MixFileHelper.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: UnZipFile
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixFileHelper.cs
+    startLine: 362
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Services
+  syntax:
+    content: public static void UnZipFile(string filePath, string webFolder)
+    parameters:
+    - id: filePath
+      type: System.String
+    - id: webFolder
+      type: System.String
+    content.vb: Public Shared Sub UnZipFile(filePath As String, webFolder As String)
+  overload: Mix.Heart.Services.MixFileHelper.UnZipFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Mix.Heart.Services
+  commentId: N:Mix.Heart.Services
+  name: Mix.Heart.Services
+  nameWithType: Mix.Heart.Services
+  fullName: Mix.Heart.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Heart.Services.MixFileHelper.CurrentDirectory*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.CurrentDirectory
+  name: CurrentDirectory
+  nameWithType: MixFileHelper.CurrentDirectory
+  fullName: Mix.Heart.Services.MixFileHelper.CurrentDirectory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Heart.Services.MixFileHelper.GetFile*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.GetFile
+  name: GetFile
+  nameWithType: MixFileHelper.GetFile
+  fullName: Mix.Heart.Services.MixFileHelper.GetFile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Heart.Models.FileModel
+  commentId: T:Mix.Heart.Models.FileModel
+  parent: Mix.Heart.Models
+  name: FileModel
+  nameWithType: FileModel
+  fullName: Mix.Heart.Models.FileModel
+- uid: Mix.Heart.Models
+  commentId: N:Mix.Heart.Models
+  name: Mix.Heart.Models
+  nameWithType: Mix.Heart.Models
+  fullName: Mix.Heart.Models
+- uid: Mix.Heart.Services.MixFileHelper.GetFileByFullName*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.GetFileByFullName
+  name: GetFileByFullName
+  nameWithType: MixFileHelper.GetFileByFullName
+  fullName: Mix.Heart.Services.MixFileHelper.GetFileByFullName
+- uid: Mix.Heart.Services.MixFileHelper.SaveFile*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.SaveFile
+  name: SaveFile
+  nameWithType: MixFileHelper.SaveFile
+  fullName: Mix.Heart.Services.MixFileHelper.SaveFile
+- uid: Microsoft.AspNetCore.Http.IFormFile
+  commentId: T:Microsoft.AspNetCore.Http.IFormFile
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: IFormFile
+  nameWithType: IFormFile
+  fullName: Microsoft.AspNetCore.Http.IFormFile
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Mix.Heart.Services.MixFileHelper.DeleteFile*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.DeleteFile
+  name: DeleteFile
+  nameWithType: MixFileHelper.DeleteFile
+  fullName: Mix.Heart.Services.MixFileHelper.DeleteFile
+- uid: Mix.Heart.Services.MixFileHelper.GetTopFiles*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.GetTopFiles
+  name: GetTopFiles
+  nameWithType: MixFileHelper.GetTopFiles
+  fullName: Mix.Heart.Services.MixFileHelper.GetTopFiles
+- uid: System.Collections.Generic.List{Mix.Heart.Models.FileModel}
+  commentId: T:System.Collections.Generic.List{Mix.Heart.Models.FileModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<FileModel>
+  nameWithType: List<FileModel>
+  fullName: System.Collections.Generic.List<Mix.Heart.Models.FileModel>
+  nameWithType.vb: List(Of FileModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Heart.Models.FileModel)
+  name.vb: List(Of FileModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Heart.Models.FileModel
+    name: FileModel
+    nameWithType: FileModel
+    fullName: Mix.Heart.Models.FileModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Heart.Models.FileModel
+    name: FileModel
+    nameWithType: FileModel
+    fullName: Mix.Heart.Models.FileModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Mix.Heart.Services.MixFileHelper.GetTopDirectories*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.GetTopDirectories
+  name: GetTopDirectories
+  nameWithType: MixFileHelper.GetTopDirectories
+  fullName: Mix.Heart.Services.MixFileHelper.GetTopDirectories
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.MixFileHelper.CopyFolder*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.CopyFolder
+  name: CopyFolder
+  nameWithType: MixFileHelper.CopyFolder
+  fullName: Mix.Heart.Services.MixFileHelper.CopyFolder
+- uid: Mix.Heart.Services.MixFileHelper.DeleteFolder*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.DeleteFolder
+  name: DeleteFolder
+  nameWithType: MixFileHelper.DeleteFolder
+  fullName: Mix.Heart.Services.MixFileHelper.DeleteFolder
+- uid: Mix.Heart.Services.MixFileHelper.EmptyFolder*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.EmptyFolder
+  name: EmptyFolder
+  nameWithType: MixFileHelper.EmptyFolder
+  fullName: Mix.Heart.Services.MixFileHelper.EmptyFolder
+- uid: Mix.Heart.Services.MixFileHelper.CreateFolderIfNotExist*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.CreateFolderIfNotExist
+  name: CreateFolderIfNotExist
+  nameWithType: MixFileHelper.CreateFolderIfNotExist
+  fullName: Mix.Heart.Services.MixFileHelper.CreateFolderIfNotExist
+- uid: Mix.Heart.Services.MixFileHelper.GetTopFolders*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.GetTopFolders
+  name: GetTopFolders
+  nameWithType: MixFileHelper.GetTopFolders
+  fullName: Mix.Heart.Services.MixFileHelper.GetTopFolders
+- uid: Mix.Heart.Services.MixFileHelper.ZipFolder*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.ZipFolder
+  name: ZipFolder
+  nameWithType: MixFileHelper.ZipFolder
+  fullName: Mix.Heart.Services.MixFileHelper.ZipFolder
+- uid: Mix.Heart.Services.MixFileHelper.UnZipFile*
+  commentId: Overload:Mix.Heart.Services.MixFileHelper.UnZipFile
+  name: UnZipFile
+  nameWithType: MixFileHelper.UnZipFile
+  fullName: Mix.Heart.Services.MixFileHelper.UnZipFile

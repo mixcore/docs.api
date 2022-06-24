@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Shared.Services.GlobalConfigService
+  commentId: T:Mix.Shared.Services.GlobalConfigService
+  id: GlobalConfigService
+  parent: Mix.Shared.Services
+  children:
+  - Mix.Shared.Services.GlobalConfigService.#ctor
+  - Mix.Shared.Services.GlobalConfigService.AesKey
+  - Mix.Shared.Services.GlobalConfigService.DefaultCulture
+  - Mix.Shared.Services.GlobalConfigService.Domain
+  - Mix.Shared.Services.GlobalConfigService.InitStatus
+  - Mix.Shared.Services.GlobalConfigService.Instance
+  - Mix.Shared.Services.GlobalConfigService.IsEncryptApi
+  - Mix.Shared.Services.GlobalConfigService.IsInit
+  - Mix.Shared.Services.GlobalConfigService.syncRoot
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfigService
+  nameWithType: GlobalConfigService
+  fullName: Mix.Shared.Services.GlobalConfigService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GlobalConfigService
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 6
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: 'public class GlobalConfigService : ConfigurationServiceBase<GlobalConfigurations>'
+    content.vb: >-
+      Public Class GlobalConfigService
+          Inherits ConfigurationServiceBase(Of GlobalConfigurations)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Shared.Services.GlobalConfigService.syncRoot
+  commentId: F:Mix.Shared.Services.GlobalConfigService.syncRoot
+  id: syncRoot
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: syncRoot
+  nameWithType: GlobalConfigService.syncRoot
+  fullName: Mix.Shared.Services.GlobalConfigService.syncRoot
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: syncRoot
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 13
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  summary: "\nThe synchronize root\n"
+  example: []
+  syntax:
+    content: protected static readonly object syncRoot
+    return:
+      type: System.Object
+    content.vb: Protected Shared ReadOnly syncRoot As Object
+  modifiers.csharp:
+  - protected
+  - static
+  - readonly
+  modifiers.vb:
+  - Protected
+  - Shared
+  - ReadOnly
+- uid: Mix.Shared.Services.GlobalConfigService.Instance
+  commentId: P:Mix.Shared.Services.GlobalConfigService.Instance
+  id: Instance
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: GlobalConfigService.Instance
+  fullName: Mix.Shared.Services.GlobalConfigService.Instance
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Instance
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 20
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public static GlobalConfigService Instance { get; }
+    parameters: []
+    return:
+      type: Mix.Shared.Services.GlobalConfigService
+    content.vb: Public Shared ReadOnly Property Instance As GlobalConfigService
+  overload: Mix.Shared.Services.GlobalConfigService.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Mix.Shared.Services.GlobalConfigService.#ctor
+  commentId: M:Mix.Shared.Services.GlobalConfigService.#ctor
+  id: '#ctor'
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: GlobalConfigService()
+  nameWithType: GlobalConfigService.GlobalConfigService()
+  fullName: Mix.Shared.Services.GlobalConfigService.GlobalConfigService()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 40
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public GlobalConfigService()
+    content.vb: Public Sub New
+  overload: Mix.Shared.Services.GlobalConfigService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.GlobalConfigService.AesKey
+  commentId: P:Mix.Shared.Services.GlobalConfigService.AesKey
+  id: AesKey
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: AesKey
+  nameWithType: GlobalConfigService.AesKey
+  fullName: Mix.Shared.Services.GlobalConfigService.AesKey
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AesKey
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 45
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string AesKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AesKey As String
+  overload: Mix.Shared.Services.GlobalConfigService.AesKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Shared.Services.GlobalConfigService.IsInit
+  commentId: P:Mix.Shared.Services.GlobalConfigService.IsInit
+  id: IsInit
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: IsInit
+  nameWithType: GlobalConfigService.IsInit
+  fullName: Mix.Shared.Services.GlobalConfigService.IsInit
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IsInit
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 52
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public bool IsInit { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInit As Boolean
+  overload: Mix.Shared.Services.GlobalConfigService.IsInit*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.Shared.Services.GlobalConfigService.IsEncryptApi
+  commentId: P:Mix.Shared.Services.GlobalConfigService.IsEncryptApi
+  id: IsEncryptApi
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: IsEncryptApi
+  nameWithType: GlobalConfigService.IsEncryptApi
+  fullName: Mix.Shared.Services.GlobalConfigService.IsEncryptApi
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IsEncryptApi
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 53
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public bool IsEncryptApi { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEncryptApi As Boolean
+  overload: Mix.Shared.Services.GlobalConfigService.IsEncryptApi*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.Shared.Services.GlobalConfigService.DefaultCulture
+  commentId: P:Mix.Shared.Services.GlobalConfigService.DefaultCulture
+  id: DefaultCulture
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: DefaultCulture
+  nameWithType: GlobalConfigService.DefaultCulture
+  fullName: Mix.Shared.Services.GlobalConfigService.DefaultCulture
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DefaultCulture
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 54
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string DefaultCulture { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DefaultCulture As String
+  overload: Mix.Shared.Services.GlobalConfigService.DefaultCulture*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.Shared.Services.GlobalConfigService.Domain
+  commentId: P:Mix.Shared.Services.GlobalConfigService.Domain
+  id: Domain
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: Domain
+  nameWithType: GlobalConfigService.Domain
+  fullName: Mix.Shared.Services.GlobalConfigService.Domain
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Domain
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 55
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public string Domain { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Domain As String
+  overload: Mix.Shared.Services.GlobalConfigService.Domain*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.Shared.Services.GlobalConfigService.InitStatus
+  commentId: P:Mix.Shared.Services.GlobalConfigService.InitStatus
+  id: InitStatus
+  parent: Mix.Shared.Services.GlobalConfigService
+  langs:
+  - csharp
+  - vb
+  name: InitStatus
+  nameWithType: GlobalConfigService.InitStatus
+  fullName: Mix.Shared.Services.GlobalConfigService.InitStatus
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Services/GlobalConfigService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitStatus
+    path: ../../mix.core/src/platform/mix.shared/Services/GlobalConfigService.cs
+    startLine: 56
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Services
+  syntax:
+    content: public InitStep InitStatus { get; }
+    parameters: []
+    return:
+      type: InitStep
+    content.vb: Public ReadOnly Property InitStatus As InitStep
+  overload: Mix.Shared.Services.GlobalConfigService.InitStatus*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Mix.Shared.Services
+  commentId: N:Mix.Shared.Services
+  name: Mix.Shared.Services
+  nameWithType: Mix.Shared.Services
+  fullName: Mix.Shared.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Shared.Services.GlobalConfigService.Instance*
+  commentId: Overload:Mix.Shared.Services.GlobalConfigService.Instance
+  name: Instance
+  nameWithType: GlobalConfigService.Instance
+  fullName: Mix.Shared.Services.GlobalConfigService.Instance
+- uid: Mix.Shared.Services.GlobalConfigService
+  commentId: T:Mix.Shared.Services.GlobalConfigService
+  parent: Mix.Shared.Services
+  name: GlobalConfigService
+  nameWithType: GlobalConfigService
+  fullName: Mix.Shared.Services.GlobalConfigService
+- uid: Mix.Shared.Services.GlobalConfigService.#ctor*
+  commentId: Overload:Mix.Shared.Services.GlobalConfigService.#ctor
+  name: GlobalConfigService
+  nameWithType: GlobalConfigService.GlobalConfigService
+  fullName: Mix.Shared.Services.GlobalConfigService.GlobalConfigService
+- uid: Mix.Shared.Services.GlobalConfigService.AesKey*
+  commentId: Overload:Mix.Shared.Services.GlobalConfigService.AesKey
+  name: AesKey
+  nameWithType: GlobalConfigService.AesKey
+  fullName: Mix.Shared.Services.GlobalConfigService.AesKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Shared.Services.GlobalConfigService.IsInit*
+  commentId: Overload:Mix.Shared.Services.GlobalConfigService.IsInit
+  name: IsInit
+  nameWithType: GlobalConfigService.IsInit
+  fullName: Mix.Shared.Services.GlobalConfigService.IsInit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Shared.Services.GlobalConfigService.IsEncryptApi*
+  commentId: Overload:Mix.Shared.Services.GlobalConfigService.IsEncryptApi
+  name: IsEncryptApi
+  nameWithType: GlobalConfigService.IsEncryptApi
+  fullName: Mix.Shared.Services.GlobalConfigService.IsEncryptApi
+- uid: Mix.Shared.Services.GlobalConfigService.DefaultCulture*
+  commentId: Overload:Mix.Shared.Services.GlobalConfigService.DefaultCulture
+  name: DefaultCulture
+  nameWithType: GlobalConfigService.DefaultCulture
+  fullName: Mix.Shared.Services.GlobalConfigService.DefaultCulture
+- uid: Mix.Shared.Services.GlobalConfigService.Domain*
+  commentId: Overload:Mix.Shared.Services.GlobalConfigService.Domain
+  name: Domain
+  nameWithType: GlobalConfigService.Domain
+  fullName: Mix.Shared.Services.GlobalConfigService.Domain
+- uid: Mix.Shared.Services.GlobalConfigService.InitStatus*
+  commentId: Overload:Mix.Shared.Services.GlobalConfigService.InitStatus
+  name: InitStatus
+  nameWithType: GlobalConfigService.InitStatus
+  fullName: Mix.Shared.Services.GlobalConfigService.InitStatus
+- uid: InitStep
+  isExternal: true
+  name: InitStep
+  nameWithType: InitStep
+  fullName: InitStep

@@ -1,0 +1,1588 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Tenancy.Controllers.InitController
+  commentId: T:Mix.Tenancy.Controllers.InitController
+  id: InitController
+  parent: Mix.Tenancy.Controllers
+  children:
+  - Mix.Tenancy.Controllers.InitController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Tenancy.Domain.Services.InitCmsService,Mix.Lib.Services.MixIdentityService,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Mix.Lib.Services.MixThemeImportService,IHostApplicationLifetime,Mix.Quartz.Services.QuartzService,HttpService,Microsoft.AspNetCore.SignalR.IHubContext{Mix.SignalR.Hubs.MixThemeHub})
+  - Mix.Tenancy.Controllers.InitController._hubContext
+  - Mix.Tenancy.Controllers.InitController.AlertAsync``1(Microsoft.AspNetCore.SignalR.IClientProxy,System.String,System.Int32,``0)
+  - Mix.Tenancy.Controllers.InitController.ExtractThemeAsync(IFormFile)
+  - Mix.Tenancy.Controllers.InitController.GetInitStatus
+  - Mix.Tenancy.Controllers.InitController.ImportThemeAsync(Mix.Lib.ViewModels.SiteDataViewModel)
+  - Mix.Tenancy.Controllers.InitController.InitAccount(Mix.Identity.Models.AccountViewModels.RegisterViewModel)
+  - Mix.Tenancy.Controllers.InitController.InitFullTenant(Mix.Tenancy.Domain.Dtos.InitFullSiteDto)
+  - Mix.Tenancy.Controllers.InitController.InitTenant(Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  - Mix.Tenancy.Controllers.InitController.InstallTheme(Newtonsoft.Json.Linq.JObject)
+  - Mix.Tenancy.Controllers.InitController.LoadThemeAsync
+  langs:
+  - csharp
+  - vb
+  name: InitController
+  nameWithType: InitController
+  fullName: Mix.Tenancy.Controllers.InitController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitController
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 19
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  syntax:
+    content: >-
+      [Route("api/v2/rest/mix-tenancy/setup")]
+
+      [ApiController]
+
+      public class InitController : MixApiControllerBase
+    content.vb: >-
+      <Route("api/v2/rest/mix-tenancy/setup")>
+
+      <ApiController>
+
+      Public Class InitController
+          Inherits MixApiControllerBase
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/mix-tenancy/setup
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Tenancy.Controllers.InitController._hubContext
+  commentId: F:Mix.Tenancy.Controllers.InitController._hubContext
+  id: _hubContext
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: _hubContext
+  nameWithType: InitController._hubContext
+  fullName: Mix.Tenancy.Controllers.InitController._hubContext
+  type: Field
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _hubContext
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 27
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  syntax:
+    content: protected readonly IHubContext<MixThemeHub> _hubContext
+    return:
+      type: Microsoft.AspNetCore.SignalR.IHubContext{Mix.SignalR.Hubs.MixThemeHub}
+    content.vb: Protected ReadOnly _hubContext As IHubContext(Of MixThemeHub)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Tenancy.Controllers.InitController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Tenancy.Domain.Services.InitCmsService,Mix.Lib.Services.MixIdentityService,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Mix.Lib.Services.MixThemeImportService,IHostApplicationLifetime,Mix.Quartz.Services.QuartzService,HttpService,Microsoft.AspNetCore.SignalR.IHubContext{Mix.SignalR.Hubs.MixThemeHub})
+  commentId: M:Mix.Tenancy.Controllers.InitController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Tenancy.Domain.Services.InitCmsService,Mix.Lib.Services.MixIdentityService,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Mix.Lib.Services.MixThemeImportService,IHostApplicationLifetime,Mix.Quartz.Services.QuartzService,HttpService,Microsoft.AspNetCore.SignalR.IHubContext{Mix.SignalR.Hubs.MixThemeHub})
+  id: '#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Tenancy.Domain.Services.InitCmsService,Mix.Lib.Services.MixIdentityService,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel},Mix.Lib.Services.MixThemeImportService,IHostApplicationLifetime,Mix.Quartz.Services.QuartzService,HttpService,Microsoft.AspNetCore.SignalR.IHubContext{Mix.SignalR.Hubs.MixThemeHub})'
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: InitController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, InitCmsService, MixIdentityService, IQueueService<MessageQueueModel>, MixThemeImportService, IHostApplicationLifetime, QuartzService, HttpService, IHubContext<MixThemeHub>)
+  nameWithType: InitController.InitController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, InitCmsService, MixIdentityService, IQueueService<MessageQueueModel>, MixThemeImportService, IHostApplicationLifetime, QuartzService, HttpService, IHubContext<MixThemeHub>)
+  fullName: Mix.Tenancy.Controllers.InitController.InitController(IHttpContextAccessor, IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, Mix.Tenancy.Domain.Services.InitCmsService, Mix.Lib.Services.MixIdentityService, Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>, Mix.Lib.Services.MixThemeImportService, IHostApplicationLifetime, Mix.Quartz.Services.QuartzService, HttpService, Microsoft.AspNetCore.SignalR.IHubContext<Mix.SignalR.Hubs.MixThemeHub>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 29
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  syntax:
+    content: public InitController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, InitCmsService initCmsService, MixIdentityService mixIdentityService, IQueueService<MessageQueueModel> queueService, MixThemeImportService importService, IHostApplicationLifetime appLifetime, QuartzService quartzService, HttpService httpService, IHubContext<MixThemeHub> hubContext = null)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: translator
+      type: Mix.Lib.Services.TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: initCmsService
+      type: Mix.Tenancy.Domain.Services.InitCmsService
+    - id: mixIdentityService
+      type: Mix.Lib.Services.MixIdentityService
+    - id: queueService
+      type: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+    - id: importService
+      type: Mix.Lib.Services.MixThemeImportService
+    - id: appLifetime
+      type: IHostApplicationLifetime
+    - id: quartzService
+      type: Mix.Quartz.Services.QuartzService
+    - id: httpService
+      type: HttpService
+    - id: hubContext
+      type: Microsoft.AspNetCore.SignalR.IHubContext{Mix.SignalR.Hubs.MixThemeHub}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), initCmsService As InitCmsService, mixIdentityService As MixIdentityService, queueService As IQueueService(Of MessageQueueModel), importService As MixThemeImportService, appLifetime As IHostApplicationLifetime, quartzService As QuartzService, httpService As HttpService, hubContext As IHubContext(Of MixThemeHub) = Nothing)
+  overload: Mix.Tenancy.Controllers.InitController.#ctor*
+  nameWithType.vb: InitController.InitController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), InitCmsService, MixIdentityService, IQueueService(Of MessageQueueModel), MixThemeImportService, IHostApplicationLifetime, QuartzService, HttpService, IHubContext(Of MixThemeHub))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Tenancy.Controllers.InitController.InitController(IHttpContextAccessor, IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), Mix.Tenancy.Domain.Services.InitCmsService, Mix.Lib.Services.MixIdentityService, Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel), Mix.Lib.Services.MixThemeImportService, IHostApplicationLifetime, Mix.Quartz.Services.QuartzService, HttpService, Microsoft.AspNetCore.SignalR.IHubContext(Of Mix.SignalR.Hubs.MixThemeHub))
+  name.vb: InitController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), InitCmsService, MixIdentityService, IQueueService(Of MessageQueueModel), MixThemeImportService, IHostApplicationLifetime, QuartzService, HttpService, IHubContext(Of MixThemeHub))
+- uid: Mix.Tenancy.Controllers.InitController.InitTenant(Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  commentId: M:Mix.Tenancy.Controllers.InitController.InitTenant(Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  id: InitTenant(Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: InitTenant(InitCmsDto)
+  nameWithType: InitController.InitTenant(InitCmsDto)
+  fullName: Mix.Tenancy.Controllers.InitController.InitTenant(Mix.Tenancy.Domain.Dtos.InitCmsDto)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitTenant
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 65
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  summary: "\nWhen status = Blank\n- Init Cms Database\n- Init Cms Site\n- Init Selected Culture as default\n"
+  example: []
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("init-tenant")]
+
+      public Task<ActionResult<bool>> InitTenant([FromBody] InitCmsDto model)
+    parameters:
+    - id: model
+      type: Mix.Tenancy.Domain.Dtos.InitCmsDto
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Boolean}}
+      description: ''
+    content.vb: >-
+      <HttpPost>
+
+      <Route("init-tenant")>
+
+      Public Function InitTenant(model As InitCmsDto) As Task(Of ActionResult(Of Boolean))
+  overload: Mix.Tenancy.Controllers.InitController.InitTenant*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: init-tenant
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Controllers.InitController.InitAccount(Mix.Identity.Models.AccountViewModels.RegisterViewModel)
+  commentId: M:Mix.Tenancy.Controllers.InitController.InitAccount(Mix.Identity.Models.AccountViewModels.RegisterViewModel)
+  id: InitAccount(Mix.Identity.Models.AccountViewModels.RegisterViewModel)
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: InitAccount(RegisterViewModel)
+  nameWithType: InitController.InitAccount(RegisterViewModel)
+  fullName: Mix.Tenancy.Controllers.InitController.InitAccount(Mix.Identity.Models.AccountViewModels.RegisterViewModel)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitAccount
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 95
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  summary: "\nWhen status = InitTenant\n- Init Account Database\n- Init Owner Account\n"
+  example: []
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("init-account")]
+
+      public Task<ActionResult<bool>> InitAccount([FromBody] RegisterViewModel model)
+    parameters:
+    - id: model
+      type: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Boolean}}
+      description: ''
+    content.vb: >-
+      <HttpPost>
+
+      <Route("init-account")>
+
+      Public Function InitAccount(model As RegisterViewModel) As Task(Of ActionResult(Of Boolean))
+  overload: Mix.Tenancy.Controllers.InitController.InitAccount*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: init-account
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Controllers.InitController.InstallTheme(Newtonsoft.Json.Linq.JObject)
+  commentId: M:Mix.Tenancy.Controllers.InitController.InstallTheme(Newtonsoft.Json.Linq.JObject)
+  id: InstallTheme(Newtonsoft.Json.Linq.JObject)
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: InstallTheme(JObject)
+  nameWithType: InitController.InstallTheme(JObject)
+  fullName: Mix.Tenancy.Controllers.InitController.InstallTheme(Newtonsoft.Json.Linq.JObject)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InstallTheme
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 108
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("install")]
+
+      public Task<ActionResult<bool>> InstallTheme([FromBody] JObject theme)
+    parameters:
+    - id: theme
+      type: Newtonsoft.Json.Linq.JObject
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Boolean}}
+    content.vb: >-
+      <HttpPost>
+
+      <Route("install")>
+
+      Public Function InstallTheme(theme As JObject) As Task(Of ActionResult(Of Boolean))
+  overload: Mix.Tenancy.Controllers.InitController.InstallTheme*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: install
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Controllers.InitController.ExtractThemeAsync(IFormFile)
+  commentId: M:Mix.Tenancy.Controllers.InitController.ExtractThemeAsync(IFormFile)
+  id: ExtractThemeAsync(IFormFile)
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: ExtractThemeAsync(IFormFile)
+  nameWithType: InitController.ExtractThemeAsync(IFormFile)
+  fullName: Mix.Tenancy.Controllers.InitController.ExtractThemeAsync(IFormFile)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExtractThemeAsync
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 138
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  summary: "\nWhen status = InitAcccount\n- Upload or load default theme zip file\n"
+  example: []
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("extract-theme")]
+
+      public ActionResult<bool> ExtractThemeAsync([FromForm] IFormFile theme = null)
+    parameters:
+    - id: theme
+      type: IFormFile
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromFormAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromFormAttribute.#ctor
+        arguments: []
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{System.Boolean}
+      description: ''
+    content.vb: >-
+      <HttpPost>
+
+      <Route("extract-theme")>
+
+      Public Function ExtractThemeAsync(theme As IFormFile = Nothing) As ActionResult(Of Boolean)
+  overload: Mix.Tenancy.Controllers.InitController.ExtractThemeAsync*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: extract-theme
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Controllers.InitController.LoadThemeAsync
+  commentId: M:Mix.Tenancy.Controllers.InitController.LoadThemeAsync
+  id: LoadThemeAsync
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: LoadThemeAsync()
+  nameWithType: InitController.LoadThemeAsync()
+  fullName: Mix.Tenancy.Controllers.InitController.LoadThemeAsync()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadThemeAsync
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 154
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  summary: "\nWhen status = SelectTheme\n- Load selected theme and show items will be installed\n"
+  example: []
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("load-theme")]
+
+      public ActionResult<SiteDataViewModel> LoadThemeAsync()
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.SiteDataViewModel}
+      description: ''
+    content.vb: >-
+      <HttpGet>
+
+      <Route("load-theme")>
+
+      Public Function LoadThemeAsync As ActionResult(Of SiteDataViewModel)
+  overload: Mix.Tenancy.Controllers.InitController.LoadThemeAsync*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: load-theme
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Controllers.InitController.ImportThemeAsync(Mix.Lib.ViewModels.SiteDataViewModel)
+  commentId: M:Mix.Tenancy.Controllers.InitController.ImportThemeAsync(Mix.Lib.ViewModels.SiteDataViewModel)
+  id: ImportThemeAsync(Mix.Lib.ViewModels.SiteDataViewModel)
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: ImportThemeAsync(SiteDataViewModel)
+  nameWithType: InitController.ImportThemeAsync(SiteDataViewModel)
+  fullName: Mix.Tenancy.Controllers.InitController.ImportThemeAsync(Mix.Lib.ViewModels.SiteDataViewModel)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ImportThemeAsync
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 162
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  syntax:
+    content: >-
+      [HttpPost("import-theme")]
+
+      public Task<ActionResult<SiteDataViewModel>> ImportThemeAsync([FromBody] SiteDataViewModel siteData)
+    parameters:
+    - id: siteData
+      type: Mix.Lib.ViewModels.SiteDataViewModel
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.SiteDataViewModel}}
+    content.vb: >-
+      <HttpPost("import-theme")>
+
+      Public Function ImportThemeAsync(siteData As SiteDataViewModel) As Task(Of ActionResult(Of SiteDataViewModel))
+  overload: Mix.Tenancy.Controllers.InitController.ImportThemeAsync*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: import-theme
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Controllers.InitController.GetInitStatus
+  commentId: M:Mix.Tenancy.Controllers.InitController.GetInitStatus
+  id: GetInitStatus
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: GetInitStatus()
+  nameWithType: InitController.GetInitStatus()
+  fullName: Mix.Tenancy.Controllers.InitController.GetInitStatus()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetInitStatus
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 181
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      [Route("get-init-status")]
+
+      public ActionResult<InitStep> GetInitStatus()
+    return:
+      type: Microsoft.AspNetCore.Mvc.ActionResult{InitStep}
+    content.vb: >-
+      <HttpGet>
+
+      <Route("get-init-status")>
+
+      Public Function GetInitStatus As ActionResult(Of InitStep)
+  overload: Mix.Tenancy.Controllers.InitController.GetInitStatus*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: get-init-status
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Controllers.InitController.InitFullTenant(Mix.Tenancy.Domain.Dtos.InitFullSiteDto)
+  commentId: M:Mix.Tenancy.Controllers.InitController.InitFullTenant(Mix.Tenancy.Domain.Dtos.InitFullSiteDto)
+  id: InitFullTenant(Mix.Tenancy.Domain.Dtos.InitFullSiteDto)
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: InitFullTenant(InitFullSiteDto)
+  nameWithType: InitController.InitFullTenant(InitFullSiteDto)
+  fullName: Mix.Tenancy.Controllers.InitController.InitFullTenant(Mix.Tenancy.Domain.Dtos.InitFullSiteDto)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitFullTenant
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 189
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  syntax:
+    content: >-
+      [HttpPost]
+
+      [Route("init-full-tenant")]
+
+      public Task<ActionResult> InitFullTenant([FromBody] InitFullSiteDto dto)
+    parameters:
+    - id: dto
+      type: Mix.Tenancy.Domain.Dtos.InitFullSiteDto
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult}
+    content.vb: >-
+      <HttpPost>
+
+      <Route("init-full-tenant")>
+
+      Public Function InitFullTenant(dto As InitFullSiteDto) As Task(Of ActionResult)
+  overload: Mix.Tenancy.Controllers.InitController.InitFullTenant*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: init-full-tenant
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Tenancy.Controllers.InitController.AlertAsync``1(Microsoft.AspNetCore.SignalR.IClientProxy,System.String,System.Int32,``0)
+  commentId: M:Mix.Tenancy.Controllers.InitController.AlertAsync``1(Microsoft.AspNetCore.SignalR.IClientProxy,System.String,System.Int32,``0)
+  id: AlertAsync``1(Microsoft.AspNetCore.SignalR.IClientProxy,System.String,System.Int32,``0)
+  parent: Mix.Tenancy.Controllers.InitController
+  langs:
+  - csharp
+  - vb
+  name: AlertAsync<T>(IClientProxy, String, Int32, T)
+  nameWithType: InitController.AlertAsync<T>(IClientProxy, String, Int32, T)
+  fullName: Mix.Tenancy.Controllers.InitController.AlertAsync<T>(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Int32, T)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.tenancy/Controllers/InitController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AlertAsync
+    path: ../../mix.core/src/modules/mix.tenancy/Controllers/InitController.cs
+    startLine: 213
+  assemblies:
+  - mix.tenancy
+  namespace: Mix.Tenancy.Controllers
+  syntax:
+    content: public virtual Task AlertAsync<T>(IClientProxy clients, string action, int status, T message)
+    parameters:
+    - id: clients
+      type: Microsoft.AspNetCore.SignalR.IClientProxy
+    - id: action
+      type: System.String
+    - id: status
+      type: System.Int32
+    - id: message
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: Task
+    content.vb: Public Overridable Function AlertAsync(Of T)(clients As IClientProxy, action As String, status As Integer, message As T) As Task
+  overload: Mix.Tenancy.Controllers.InitController.AlertAsync*
+  nameWithType.vb: InitController.AlertAsync(Of T)(IClientProxy, String, Int32, T)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.Tenancy.Controllers.InitController.AlertAsync(Of T)(Microsoft.AspNetCore.SignalR.IClientProxy, System.String, System.Int32, T)
+  name.vb: AlertAsync(Of T)(IClientProxy, String, Int32, T)
+references:
+- uid: Mix.Tenancy.Controllers
+  commentId: N:Mix.Tenancy.Controllers
+  name: Mix.Tenancy.Controllers
+  nameWithType: Mix.Tenancy.Controllers
+  fullName: Mix.Tenancy.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.SignalR.IHubContext{Mix.SignalR.Hubs.MixThemeHub}
+  commentId: T:Microsoft.AspNetCore.SignalR.IHubContext{Mix.SignalR.Hubs.MixThemeHub}
+  parent: Microsoft.AspNetCore.SignalR
+  definition: Microsoft.AspNetCore.SignalR.IHubContext`1
+  name: IHubContext<MixThemeHub>
+  nameWithType: IHubContext<MixThemeHub>
+  fullName: Microsoft.AspNetCore.SignalR.IHubContext<Mix.SignalR.Hubs.MixThemeHub>
+  nameWithType.vb: IHubContext(Of MixThemeHub)
+  fullName.vb: Microsoft.AspNetCore.SignalR.IHubContext(Of Mix.SignalR.Hubs.MixThemeHub)
+  name.vb: IHubContext(Of MixThemeHub)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+    name: IHubContext
+    nameWithType: IHubContext
+    fullName: Microsoft.AspNetCore.SignalR.IHubContext
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.SignalR.Hubs.MixThemeHub
+    name: MixThemeHub
+    nameWithType: MixThemeHub
+    fullName: Mix.SignalR.Hubs.MixThemeHub
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+    name: IHubContext
+    nameWithType: IHubContext
+    fullName: Microsoft.AspNetCore.SignalR.IHubContext
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.SignalR.Hubs.MixThemeHub
+    name: MixThemeHub
+    nameWithType: MixThemeHub
+    fullName: Mix.SignalR.Hubs.MixThemeHub
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+  commentId: T:Microsoft.AspNetCore.SignalR.IHubContext`1
+  isExternal: true
+  name: IHubContext<THub>
+  nameWithType: IHubContext<THub>
+  fullName: Microsoft.AspNetCore.SignalR.IHubContext<THub>
+  nameWithType.vb: IHubContext(Of THub)
+  fullName.vb: Microsoft.AspNetCore.SignalR.IHubContext(Of THub)
+  name.vb: IHubContext(Of THub)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+    name: IHubContext
+    nameWithType: IHubContext
+    fullName: Microsoft.AspNetCore.SignalR.IHubContext
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: THub
+    nameWithType: THub
+    fullName: THub
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.SignalR.IHubContext`1
+    name: IHubContext
+    nameWithType: IHubContext
+    fullName: Microsoft.AspNetCore.SignalR.IHubContext
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: THub
+    nameWithType: THub
+    fullName: THub
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.SignalR
+  commentId: N:Microsoft.AspNetCore.SignalR
+  isExternal: true
+  name: Microsoft.AspNetCore.SignalR
+  nameWithType: Microsoft.AspNetCore.SignalR
+  fullName: Microsoft.AspNetCore.SignalR
+- uid: Mix.Tenancy.Controllers.InitController.#ctor*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.#ctor
+  name: InitController
+  nameWithType: InitController.InitController
+  fullName: Mix.Tenancy.Controllers.InitController.InitController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Lib.Services.TranslatorService
+  commentId: T:Mix.Lib.Services.TranslatorService
+  parent: Mix.Lib.Services
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: Mix.Lib.Services.TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Domain.Services.InitCmsService
+  commentId: T:Mix.Tenancy.Domain.Services.InitCmsService
+  parent: Mix.Tenancy.Domain.Services
+  name: InitCmsService
+  nameWithType: InitCmsService
+  fullName: Mix.Tenancy.Domain.Services.InitCmsService
+- uid: Mix.Lib.Services.MixIdentityService
+  commentId: T:Mix.Lib.Services.MixIdentityService
+  parent: Mix.Lib.Services
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService
+- uid: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  commentId: T:Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  parent: Mix.Queue.Interfaces
+  definition: Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixThemeImportService
+  commentId: T:Mix.Lib.Services.MixThemeImportService
+  parent: Mix.Lib.Services
+  name: MixThemeImportService
+  nameWithType: MixThemeImportService
+  fullName: Mix.Lib.Services.MixThemeImportService
+- uid: IHostApplicationLifetime
+  commentId: '!:IHostApplicationLifetime'
+  isExternal: true
+  name: IHostApplicationLifetime
+  nameWithType: IHostApplicationLifetime
+  fullName: IHostApplicationLifetime
+- uid: Mix.Quartz.Services.QuartzService
+  commentId: T:Mix.Quartz.Services.QuartzService
+  parent: Mix.Quartz.Services
+  name: QuartzService
+  nameWithType: QuartzService
+  fullName: Mix.Quartz.Services.QuartzService
+- uid: HttpService
+  isExternal: true
+  name: HttpService
+  nameWithType: HttpService
+  fullName: HttpService
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Domain.Services
+  commentId: N:Mix.Tenancy.Domain.Services
+  name: Mix.Tenancy.Domain.Services
+  nameWithType: Mix.Tenancy.Domain.Services
+  fullName: Mix.Tenancy.Domain.Services
+- uid: Mix.Queue.Interfaces.IQueueService`1
+  commentId: T:Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<T>
+  nameWithType: IQueueService<T>
+  fullName: Mix.Queue.Interfaces.IQueueService<T>
+  nameWithType.vb: IQueueService(Of T)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T)
+  name.vb: IQueueService(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces
+  commentId: N:Mix.Queue.Interfaces
+  name: Mix.Queue.Interfaces
+  nameWithType: Mix.Queue.Interfaces
+  fullName: Mix.Queue.Interfaces
+- uid: Mix.Quartz.Services
+  commentId: N:Mix.Quartz.Services
+  name: Mix.Quartz.Services
+  nameWithType: Mix.Quartz.Services
+  fullName: Mix.Quartz.Services
+- uid: Mix.Tenancy.Controllers.InitController.InitTenant*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.InitTenant
+  name: InitTenant
+  nameWithType: InitController.InitTenant
+  fullName: Mix.Tenancy.Controllers.InitController.InitTenant
+- uid: Mix.Tenancy.Domain.Dtos.InitCmsDto
+  commentId: T:Mix.Tenancy.Domain.Dtos.InitCmsDto
+  parent: Mix.Tenancy.Domain.Dtos
+  name: InitCmsDto
+  nameWithType: InitCmsDto
+  fullName: Mix.Tenancy.Domain.Dtos.InitCmsDto
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Boolean}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Boolean}}'
+  definition: Task`1
+  name: Task<ActionResult<Boolean>>
+  nameWithType: Task<ActionResult<Boolean>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<System.Boolean>>
+  nameWithType.vb: Task(Of ActionResult(Of Boolean))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of System.Boolean))
+  name.vb: Task(Of ActionResult(Of Boolean))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Domain.Dtos
+  commentId: N:Mix.Tenancy.Domain.Dtos
+  name: Mix.Tenancy.Domain.Dtos
+  nameWithType: Mix.Tenancy.Domain.Dtos
+  fullName: Mix.Tenancy.Domain.Dtos
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Controllers.InitController.InitAccount*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.InitAccount
+  name: InitAccount
+  nameWithType: InitController.InitAccount
+  fullName: Mix.Tenancy.Controllers.InitController.InitAccount
+- uid: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+  commentId: T:Mix.Identity.Models.AccountViewModels.RegisterViewModel
+  parent: Mix.Identity.Models.AccountViewModels
+  name: RegisterViewModel
+  nameWithType: RegisterViewModel
+  fullName: Mix.Identity.Models.AccountViewModels.RegisterViewModel
+- uid: Mix.Identity.Models.AccountViewModels
+  commentId: N:Mix.Identity.Models.AccountViewModels
+  name: Mix.Identity.Models.AccountViewModels
+  nameWithType: Mix.Identity.Models.AccountViewModels
+  fullName: Mix.Identity.Models.AccountViewModels
+- uid: Mix.Tenancy.Controllers.InitController.InstallTheme*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.InstallTheme
+  name: InstallTheme
+  nameWithType: InitController.InstallTheme
+  fullName: Mix.Tenancy.Controllers.InitController.InstallTheme
+- uid: Newtonsoft.Json.Linq.JObject
+  commentId: T:Newtonsoft.Json.Linq.JObject
+  parent: Newtonsoft.Json.Linq
+  isExternal: true
+  name: JObject
+  nameWithType: JObject
+  fullName: Newtonsoft.Json.Linq.JObject
+- uid: Newtonsoft.Json.Linq
+  commentId: N:Newtonsoft.Json.Linq
+  isExternal: true
+  name: Newtonsoft.Json.Linq
+  nameWithType: Newtonsoft.Json.Linq
+  fullName: Newtonsoft.Json.Linq
+- uid: Mix.Tenancy.Controllers.InitController.ExtractThemeAsync*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.ExtractThemeAsync
+  name: ExtractThemeAsync
+  nameWithType: InitController.ExtractThemeAsync
+  fullName: Mix.Tenancy.Controllers.InitController.ExtractThemeAsync
+- uid: IFormFile
+  isExternal: true
+  name: IFormFile
+  nameWithType: IFormFile
+  fullName: IFormFile
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{System.Boolean}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{System.Boolean}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<Boolean>
+  nameWithType: ActionResult<Boolean>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<System.Boolean>
+  nameWithType.vb: ActionResult(Of Boolean)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of System.Boolean)
+  name.vb: ActionResult(Of Boolean)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult`1
+  isExternal: true
+  name: ActionResult<TValue>
+  nameWithType: ActionResult<TValue>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<TValue>
+  nameWithType.vb: ActionResult(Of TValue)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of TValue)
+  name.vb: ActionResult(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+- uid: Mix.Tenancy.Controllers.InitController.LoadThemeAsync*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.LoadThemeAsync
+  name: LoadThemeAsync
+  nameWithType: InitController.LoadThemeAsync
+  fullName: Mix.Tenancy.Controllers.InitController.LoadThemeAsync
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.SiteDataViewModel}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.SiteDataViewModel}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<SiteDataViewModel>
+  nameWithType: ActionResult<SiteDataViewModel>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<Mix.Lib.ViewModels.SiteDataViewModel>
+  nameWithType.vb: ActionResult(Of SiteDataViewModel)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of Mix.Lib.ViewModels.SiteDataViewModel)
+  name.vb: ActionResult(Of SiteDataViewModel)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Lib.ViewModels.SiteDataViewModel
+    name: SiteDataViewModel
+    nameWithType: SiteDataViewModel
+    fullName: Mix.Lib.ViewModels.SiteDataViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Lib.ViewModels.SiteDataViewModel
+    name: SiteDataViewModel
+    nameWithType: SiteDataViewModel
+    fullName: Mix.Lib.ViewModels.SiteDataViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Controllers.InitController.ImportThemeAsync*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.ImportThemeAsync
+  name: ImportThemeAsync
+  nameWithType: InitController.ImportThemeAsync
+  fullName: Mix.Tenancy.Controllers.InitController.ImportThemeAsync
+- uid: Mix.Lib.ViewModels.SiteDataViewModel
+  commentId: T:Mix.Lib.ViewModels.SiteDataViewModel
+  parent: Mix.Lib.ViewModels
+  name: SiteDataViewModel
+  nameWithType: SiteDataViewModel
+  fullName: Mix.Lib.ViewModels.SiteDataViewModel
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.SiteDataViewModel}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.SiteDataViewModel}}'
+  definition: Task`1
+  name: Task<ActionResult<SiteDataViewModel>>
+  nameWithType: Task<ActionResult<SiteDataViewModel>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<Mix.Lib.ViewModels.SiteDataViewModel>>
+  nameWithType.vb: Task(Of ActionResult(Of SiteDataViewModel))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of Mix.Lib.ViewModels.SiteDataViewModel))
+  name.vb: Task(Of ActionResult(Of SiteDataViewModel))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Lib.ViewModels.SiteDataViewModel
+    name: SiteDataViewModel
+    nameWithType: SiteDataViewModel
+    fullName: Mix.Lib.ViewModels.SiteDataViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Lib.ViewModels.SiteDataViewModel
+    name: SiteDataViewModel
+    nameWithType: SiteDataViewModel
+    fullName: Mix.Lib.ViewModels.SiteDataViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.ViewModels
+  commentId: N:Mix.Lib.ViewModels
+  name: Mix.Lib.ViewModels
+  nameWithType: Mix.Lib.ViewModels
+  fullName: Mix.Lib.ViewModels
+- uid: Mix.Tenancy.Controllers.InitController.GetInitStatus*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.GetInitStatus
+  name: GetInitStatus
+  nameWithType: InitController.GetInitStatus
+  fullName: Mix.Tenancy.Controllers.InitController.GetInitStatus
+- uid: Microsoft.AspNetCore.Mvc.ActionResult{InitStep}
+  commentId: T:Microsoft.AspNetCore.Mvc.ActionResult{InitStep}
+  parent: Microsoft.AspNetCore.Mvc
+  definition: Microsoft.AspNetCore.Mvc.ActionResult`1
+  name: ActionResult<InitStep>
+  nameWithType: ActionResult<InitStep>
+  fullName: Microsoft.AspNetCore.Mvc.ActionResult<InitStep>
+  nameWithType.vb: ActionResult(Of InitStep)
+  fullName.vb: Microsoft.AspNetCore.Mvc.ActionResult(Of InitStep)
+  name.vb: ActionResult(Of InitStep)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: InitStep
+    name: InitStep
+    nameWithType: InitStep
+    fullName: InitStep
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: InitStep
+    name: InitStep
+    nameWithType: InitStep
+    fullName: InitStep
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Controllers.InitController.InitFullTenant*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.InitFullTenant
+  name: InitFullTenant
+  nameWithType: InitController.InitFullTenant
+  fullName: Mix.Tenancy.Controllers.InitController.InitFullTenant
+- uid: Mix.Tenancy.Domain.Dtos.InitFullSiteDto
+  commentId: T:Mix.Tenancy.Domain.Dtos.InitFullSiteDto
+  parent: Mix.Tenancy.Domain.Dtos
+  name: InitFullSiteDto
+  nameWithType: InitFullSiteDto
+  fullName: Mix.Tenancy.Domain.Dtos.InitFullSiteDto
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult}'
+  definition: Task`1
+  name: Task<ActionResult>
+  nameWithType: Task<ActionResult>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult>
+  nameWithType.vb: Task(Of ActionResult)
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult)
+  name.vb: Task(Of ActionResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Tenancy.Controllers.InitController.AlertAsync*
+  commentId: Overload:Mix.Tenancy.Controllers.InitController.AlertAsync
+  name: AlertAsync
+  nameWithType: InitController.AlertAsync
+  fullName: Mix.Tenancy.Controllers.InitController.AlertAsync
+- uid: Microsoft.AspNetCore.SignalR.IClientProxy
+  commentId: T:Microsoft.AspNetCore.SignalR.IClientProxy
+  parent: Microsoft.AspNetCore.SignalR
+  isExternal: true
+  name: IClientProxy
+  nameWithType: IClientProxy
+  fullName: Microsoft.AspNetCore.SignalR.IClientProxy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

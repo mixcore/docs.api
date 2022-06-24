@@ -1,0 +1,827 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Queue.Models.MixTopicModel
+  commentId: T:Mix.Queue.Models.MixTopicModel
+  id: MixTopicModel
+  parent: Mix.Queue.Models
+  children:
+  - Mix.Queue.Models.MixTopicModel.Any
+  - Mix.Queue.Models.MixTopicModel.ConsumeQueue(System.String,System.Int32)
+  - Mix.Queue.Models.MixTopicModel.CreateSubscription(System.String)
+  - Mix.Queue.Models.MixTopicModel.GetSubscription(System.String)
+  - Mix.Queue.Models.MixTopicModel.Id
+  - Mix.Queue.Models.MixTopicModel.PushQueue(Mix.Queue.Models.MessageQueueModel)
+  - Mix.Queue.Models.MixTopicModel.Subscriptions
+  langs:
+  - csharp
+  - vb
+  name: MixTopicModel
+  nameWithType: MixTopicModel
+  fullName: Mix.Queue.Models.MixTopicModel
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.queue/Models/MixTopicModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTopicModel
+    path: ../../mix.core/src/platform/mix.queue/Models/MixTopicModel.cs
+    startLine: 7
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Models
+  syntax:
+    content: public class MixTopicModel
+    content.vb: Public Class MixTopicModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Queue.Models.MixTopicModel.Id
+  commentId: P:Mix.Queue.Models.MixTopicModel.Id
+  id: Id
+  parent: Mix.Queue.Models.MixTopicModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: MixTopicModel.Id
+  fullName: Mix.Queue.Models.MixTopicModel.Id
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.queue/Models/MixTopicModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Id
+    path: ../../mix.core/src/platform/mix.queue/Models/MixTopicModel.cs
+    startLine: 9
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Models
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: Mix.Queue.Models.MixTopicModel.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Queue.Models.MixTopicModel.Subscriptions
+  commentId: P:Mix.Queue.Models.MixTopicModel.Subscriptions
+  id: Subscriptions
+  parent: Mix.Queue.Models.MixTopicModel
+  langs:
+  - csharp
+  - vb
+  name: Subscriptions
+  nameWithType: MixTopicModel.Subscriptions
+  fullName: Mix.Queue.Models.MixTopicModel.Subscriptions
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.queue/Models/MixTopicModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Subscriptions
+    path: ../../mix.core/src/platform/mix.queue/Models/MixTopicModel.cs
+    startLine: 10
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Models
+  syntax:
+    content: public List<MixSubscribtionModel> Subscriptions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Mix.Queue.Models.MixSubscribtionModel}
+    content.vb: Public Property Subscriptions As List(Of MixSubscribtionModel)
+  overload: Mix.Queue.Models.MixTopicModel.Subscriptions*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Queue.Models.MixTopicModel.CreateSubscription(System.String)
+  commentId: M:Mix.Queue.Models.MixTopicModel.CreateSubscription(System.String)
+  id: CreateSubscription(System.String)
+  parent: Mix.Queue.Models.MixTopicModel
+  langs:
+  - csharp
+  - vb
+  name: CreateSubscription(String)
+  nameWithType: MixTopicModel.CreateSubscription(String)
+  fullName: Mix.Queue.Models.MixTopicModel.CreateSubscription(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Models/MixTopicModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateSubscription
+    path: ../../mix.core/src/platform/mix.queue/Models/MixTopicModel.cs
+    startLine: 13
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Models
+  syntax:
+    content: public MixSubscribtionModel CreateSubscription(string subscriptionId)
+    parameters:
+    - id: subscriptionId
+      type: System.String
+    return:
+      type: Mix.Queue.Models.MixSubscribtionModel
+    content.vb: Public Function CreateSubscription(subscriptionId As String) As MixSubscribtionModel
+  overload: Mix.Queue.Models.MixTopicModel.CreateSubscription*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Queue.Models.MixTopicModel.GetSubscription(System.String)
+  commentId: M:Mix.Queue.Models.MixTopicModel.GetSubscription(System.String)
+  id: GetSubscription(System.String)
+  parent: Mix.Queue.Models.MixTopicModel
+  langs:
+  - csharp
+  - vb
+  name: GetSubscription(String)
+  nameWithType: MixTopicModel.GetSubscription(String)
+  fullName: Mix.Queue.Models.MixTopicModel.GetSubscription(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Models/MixTopicModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetSubscription
+    path: ../../mix.core/src/platform/mix.queue/Models/MixTopicModel.cs
+    startLine: 29
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Models
+  syntax:
+    content: public MixSubscribtionModel GetSubscription(string subscriptionId)
+    parameters:
+    - id: subscriptionId
+      type: System.String
+    return:
+      type: Mix.Queue.Models.MixSubscribtionModel
+    content.vb: Public Function GetSubscription(subscriptionId As String) As MixSubscribtionModel
+  overload: Mix.Queue.Models.MixTopicModel.GetSubscription*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Queue.Models.MixTopicModel.Any
+  commentId: M:Mix.Queue.Models.MixTopicModel.Any
+  id: Any
+  parent: Mix.Queue.Models.MixTopicModel
+  langs:
+  - csharp
+  - vb
+  name: Any()
+  nameWithType: MixTopicModel.Any()
+  fullName: Mix.Queue.Models.MixTopicModel.Any()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Models/MixTopicModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Any
+    path: ../../mix.core/src/platform/mix.queue/Models/MixTopicModel.cs
+    startLine: 34
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Models
+  syntax:
+    content: public bool Any()
+    return:
+      type: System.Boolean
+    content.vb: Public Function Any As Boolean
+  overload: Mix.Queue.Models.MixTopicModel.Any*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Queue.Models.MixTopicModel.ConsumeQueue(System.String,System.Int32)
+  commentId: M:Mix.Queue.Models.MixTopicModel.ConsumeQueue(System.String,System.Int32)
+  id: ConsumeQueue(System.String,System.Int32)
+  parent: Mix.Queue.Models.MixTopicModel
+  langs:
+  - csharp
+  - vb
+  name: ConsumeQueue(String, Int32)
+  nameWithType: MixTopicModel.ConsumeQueue(String, Int32)
+  fullName: Mix.Queue.Models.MixTopicModel.ConsumeQueue(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Models/MixTopicModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ConsumeQueue
+    path: ../../mix.core/src/platform/mix.queue/Models/MixTopicModel.cs
+    startLine: 39
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Models
+  syntax:
+    content: public IList<MessageQueueModel> ConsumeQueue(string subscriptionId, int lenght)
+    parameters:
+    - id: subscriptionId
+      type: System.String
+    - id: lenght
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IList{Mix.Queue.Models.MessageQueueModel}
+    content.vb: Public Function ConsumeQueue(subscriptionId As String, lenght As Integer) As IList(Of MessageQueueModel)
+  overload: Mix.Queue.Models.MixTopicModel.ConsumeQueue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Queue.Models.MixTopicModel.PushQueue(Mix.Queue.Models.MessageQueueModel)
+  commentId: M:Mix.Queue.Models.MixTopicModel.PushQueue(Mix.Queue.Models.MessageQueueModel)
+  id: PushQueue(Mix.Queue.Models.MessageQueueModel)
+  parent: Mix.Queue.Models.MixTopicModel
+  langs:
+  - csharp
+  - vb
+  name: PushQueue(MessageQueueModel)
+  nameWithType: MixTopicModel.PushQueue(MessageQueueModel)
+  fullName: Mix.Queue.Models.MixTopicModel.PushQueue(Mix.Queue.Models.MessageQueueModel)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.queue/Models/MixTopicModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PushQueue
+    path: ../../mix.core/src/platform/mix.queue/Models/MixTopicModel.cs
+    startLine: 72
+  assemblies:
+  - mix.queue
+  namespace: Mix.Queue.Models
+  syntax:
+    content: public void PushQueue(MessageQueueModel model)
+    parameters:
+    - id: model
+      type: Mix.Queue.Models.MessageQueueModel
+    content.vb: Public Sub PushQueue(model As MessageQueueModel)
+  overload: Mix.Queue.Models.MixTopicModel.PushQueue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Queue.Models
+  commentId: N:Mix.Queue.Models
+  name: Mix.Queue.Models
+  nameWithType: Mix.Queue.Models
+  fullName: Mix.Queue.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Queue.Models.MixTopicModel.Id*
+  commentId: Overload:Mix.Queue.Models.MixTopicModel.Id
+  name: Id
+  nameWithType: MixTopicModel.Id
+  fullName: Mix.Queue.Models.MixTopicModel.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Queue.Models.MixTopicModel.Subscriptions*
+  commentId: Overload:Mix.Queue.Models.MixTopicModel.Subscriptions
+  name: Subscriptions
+  nameWithType: MixTopicModel.Subscriptions
+  fullName: Mix.Queue.Models.MixTopicModel.Subscriptions
+- uid: System.Collections.Generic.List{Mix.Queue.Models.MixSubscribtionModel}
+  commentId: T:System.Collections.Generic.List{Mix.Queue.Models.MixSubscribtionModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MixSubscribtionModel>
+  nameWithType: List<MixSubscribtionModel>
+  fullName: System.Collections.Generic.List<Mix.Queue.Models.MixSubscribtionModel>
+  nameWithType.vb: List(Of MixSubscribtionModel)
+  fullName.vb: System.Collections.Generic.List(Of Mix.Queue.Models.MixSubscribtionModel)
+  name.vb: List(Of MixSubscribtionModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MixSubscribtionModel
+    name: MixSubscribtionModel
+    nameWithType: MixSubscribtionModel
+    fullName: Mix.Queue.Models.MixSubscribtionModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MixSubscribtionModel
+    name: MixSubscribtionModel
+    nameWithType: MixSubscribtionModel
+    fullName: Mix.Queue.Models.MixSubscribtionModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Mix.Queue.Models.MixTopicModel.CreateSubscription*
+  commentId: Overload:Mix.Queue.Models.MixTopicModel.CreateSubscription
+  name: CreateSubscription
+  nameWithType: MixTopicModel.CreateSubscription
+  fullName: Mix.Queue.Models.MixTopicModel.CreateSubscription
+- uid: Mix.Queue.Models.MixSubscribtionModel
+  commentId: T:Mix.Queue.Models.MixSubscribtionModel
+  parent: Mix.Queue.Models
+  name: MixSubscribtionModel
+  nameWithType: MixSubscribtionModel
+  fullName: Mix.Queue.Models.MixSubscribtionModel
+- uid: Mix.Queue.Models.MixTopicModel.GetSubscription*
+  commentId: Overload:Mix.Queue.Models.MixTopicModel.GetSubscription
+  name: GetSubscription
+  nameWithType: MixTopicModel.GetSubscription
+  fullName: Mix.Queue.Models.MixTopicModel.GetSubscription
+- uid: Mix.Queue.Models.MixTopicModel.Any*
+  commentId: Overload:Mix.Queue.Models.MixTopicModel.Any
+  name: Any
+  nameWithType: MixTopicModel.Any
+  fullName: Mix.Queue.Models.MixTopicModel.Any
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Queue.Models.MixTopicModel.ConsumeQueue*
+  commentId: Overload:Mix.Queue.Models.MixTopicModel.ConsumeQueue
+  name: ConsumeQueue
+  nameWithType: MixTopicModel.ConsumeQueue
+  fullName: Mix.Queue.Models.MixTopicModel.ConsumeQueue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.IList{Mix.Queue.Models.MessageQueueModel}
+  commentId: T:System.Collections.Generic.IList{Mix.Queue.Models.MessageQueueModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<MessageQueueModel>
+  nameWithType: IList<MessageQueueModel>
+  fullName: System.Collections.Generic.IList<Mix.Queue.Models.MessageQueueModel>
+  nameWithType.vb: IList(Of MessageQueueModel)
+  fullName.vb: System.Collections.Generic.IList(Of Mix.Queue.Models.MessageQueueModel)
+  name.vb: IList(Of MessageQueueModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Models.MixTopicModel.PushQueue*
+  commentId: Overload:Mix.Queue.Models.MixTopicModel.PushQueue
+  name: PushQueue
+  nameWithType: MixTopicModel.PushQueue
+  fullName: Mix.Queue.Models.MixTopicModel.PushQueue
+- uid: Mix.Queue.Models.MessageQueueModel
+  commentId: T:Mix.Queue.Models.MessageQueueModel
+  parent: Mix.Queue.Models
+  name: MessageQueueModel
+  nameWithType: MessageQueueModel
+  fullName: Mix.Queue.Models.MessageQueueModel

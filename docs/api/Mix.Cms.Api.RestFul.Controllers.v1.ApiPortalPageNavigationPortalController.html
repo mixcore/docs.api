@@ -37,10 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="//docs.mixcore.org/img/logo.png" alt="" style="
-                  margin-top: 0.5rem;
-                  height: 80%;
-              ">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -93,72 +90,6 @@
     <div><span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
-  
-  <!-- inheritance -->
-  
-  <h5 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Produces(&quot;application/json&quot;, new string[]{})]
-[Route(&quot;api/v1/rest/portal-page-navigation&quot;)]
-public class ApiPortalPageNavigationPortalController : BaseAuthorizedRestApiController&lt;MixCmsContext, MixPortalPageNavigation, UpdateViewModel, ReadViewModel&gt;, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
-  </div>
-  <h5 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_puml">UML Diagram</h5>
-  <div class="puml">
-  <script>
-  var src="src/Mix.Cms.Api.RestFul/Controllers/v1/PortalPageNavigation/ApiPortalPageNavigationPortalController.cs";
-  document.write("<img src=\"/puml/"+src.slice(0, -3)+".png\"/>");
-  </script>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_Get.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.RestFul.Controllers.v1.ApiPortalPageNavigationPortalController.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api.RestFul/Controllers/v1/PortalPageNavigation/ApiPortalPageNavigationPortalController.cs/#L26">View Source</a>
-  </span>
-  <a id="Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_Get_" data-uid="Mix.Cms.Api.RestFul.Controllers.v1.ApiPortalPageNavigationPortalController.Get*"></a>
-  <h4 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_Get" data-uid="Mix.Cms.Api.RestFul.Controllers.v1.ApiPortalPageNavigationPortalController.Get">Get()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpGet]
-public override Task&lt;ActionResult&lt;PaginationModel&lt;ReadViewModel&gt;&gt;&gt; Get()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ActionResult</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.PaginationModel-1.html">PaginationModel</a>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPortalPagePortalPages.ReadViewModel.html">ReadViewModel</a>&gt;&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">Mix.Cms.Lib.Controllers.BaseAuthorizedRestApiController&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPortalPageNavigation, Mix.Cms.Lib.ViewModels.MixPortalPagePortalPages.UpdateViewModel, Mix.Cms.Lib.ViewModels.MixPortalPagePortalPages.ReadViewModel&gt;.Get()</span></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IActionFilter</span>
-  </div>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter</span>
-  </div>
-  <div>
-      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span>
-  </div>
-  <div>
-      <span class="xref">System.IDisposable</span>
-  </div>
-  
-
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -856,7 +787,62 @@ public override Task&lt;ActionResult&lt;PaginationModel&lt;ReadViewModel&gt;&gt;
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Mix.Cms.Api.RestFul.Controllers.v1.html">Mix.Cms.Api.RestFul.Controllers.v1</a></h6>
-  <h6><strong>Assembly</strong>: Mix.Cms.Api.RestFul.dll</h6></article>
+  <h6><strong>Assembly</strong>: Mix.Cms.Api.RestFul.dll</h6>
+  <h5 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Produces(&quot;application/json&quot;, new string[]{})]
+[Route(&quot;api/v1/rest/portal-page-navigation&quot;)]
+public class ApiPortalPageNavigationPortalController : BaseAuthorizedRestApiController&lt;MixCmsContext, MixPortalPageNavigation, UpdateViewModel, ReadViewModel&gt;, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_Get.md&amp;value=---%0Auid%3A%20Mix.Cms.Api.RestFul.Controllers.v1.ApiPortalPageNavigationPortalController.Get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/Mix.Cms.Api.RestFul/Controllers/v1/PortalPageNavigation/ApiPortalPageNavigationPortalController.cs/#L26">View Source</a>
+  </span>
+  <a id="Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_Get_" data-uid="Mix.Cms.Api.RestFul.Controllers.v1.ApiPortalPageNavigationPortalController.Get*"></a>
+  <h4 id="Mix_Cms_Api_RestFul_Controllers_v1_ApiPortalPageNavigationPortalController_Get" data-uid="Mix.Cms.Api.RestFul.Controllers.v1.ApiPortalPageNavigationPortalController.Get">Get()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HttpGet]
+public override Task&lt;ActionResult&lt;PaginationModel&lt;ReadViewModel&gt;&gt;&gt; Get()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Mvc.ActionResult</span>&lt;<a class="xref" href="Mix.Domain.Core.ViewModels.PaginationModel-1.html">PaginationModel</a>&lt;<a class="xref" href="Mix.Cms.Lib.ViewModels.MixPortalPagePortalPages.ReadViewModel.html">ReadViewModel</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Cms.Lib.Controllers.BaseAuthorizedRestApiController&lt;Mix.Cms.Lib.Models.Cms.MixCmsContext, Mix.Cms.Lib.Models.Cms.MixPortalPageNavigation, Mix.Cms.Lib.ViewModels.MixPortalPagePortalPages.UpdateViewModel, Mix.Cms.Lib.ViewModels.MixPortalPagePortalPages.ReadViewModel&gt;.Get()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IAsyncActionFilter</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -888,7 +874,7 @@ public override Task&lt;ActionResult&lt;PaginationModel&lt;ReadViewModel&gt;&gt;
               <a href="#top">Back to top</a>
             </span>
             
-            <span>From <strong>Mixcore</strong></span>
+            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

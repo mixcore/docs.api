@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Middlewares.TenantSecurityMiddleware
+  commentId: T:Mix.Lib.Middlewares.TenantSecurityMiddleware
+  id: TenantSecurityMiddleware
+  parent: Mix.Lib.Middlewares
+  children:
+  - Mix.Lib.Middlewares.TenantSecurityMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,IQueueService{MessageQueueModel})
+  - Mix.Lib.Middlewares.TenantSecurityMiddleware._queueService
+  - Mix.Lib.Middlewares.TenantSecurityMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,MixCmsContext)
+  langs:
+  - csharp
+  - vb
+  name: TenantSecurityMiddleware
+  nameWithType: TenantSecurityMiddleware
+  fullName: Mix.Lib.Middlewares.TenantSecurityMiddleware
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Middlewares/TenantSecurityMiddleware.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TenantSecurityMiddleware
+    path: ../../mix.core/src/platform/mix.library/Middlewares/TenantSecurityMiddleware.cs
+    startLine: 5
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Middlewares
+  syntax:
+    content: public class TenantSecurityMiddleware
+    content.vb: Public Class TenantSecurityMiddleware
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Middlewares.TenantSecurityMiddleware._queueService
+  commentId: F:Mix.Lib.Middlewares.TenantSecurityMiddleware._queueService
+  id: _queueService
+  parent: Mix.Lib.Middlewares.TenantSecurityMiddleware
+  langs:
+  - csharp
+  - vb
+  name: _queueService
+  nameWithType: TenantSecurityMiddleware._queueService
+  fullName: Mix.Lib.Middlewares.TenantSecurityMiddleware._queueService
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.library/Middlewares/TenantSecurityMiddleware.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: _queueService
+    path: ../../mix.core/src/platform/mix.library/Middlewares/TenantSecurityMiddleware.cs
+    startLine: 8
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Middlewares
+  syntax:
+    content: protected readonly IQueueService<MessageQueueModel> _queueService
+    return:
+      type: IQueueService{MessageQueueModel}
+    content.vb: Protected ReadOnly _queueService As IQueueService(Of MessageQueueModel)
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Mix.Lib.Middlewares.TenantSecurityMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,IQueueService{MessageQueueModel})
+  commentId: M:Mix.Lib.Middlewares.TenantSecurityMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,IQueueService{MessageQueueModel})
+  id: '#ctor(Microsoft.AspNetCore.Http.RequestDelegate,IQueueService{MessageQueueModel})'
+  parent: Mix.Lib.Middlewares.TenantSecurityMiddleware
+  langs:
+  - csharp
+  - vb
+  name: TenantSecurityMiddleware(RequestDelegate, IQueueService<MessageQueueModel>)
+  nameWithType: TenantSecurityMiddleware.TenantSecurityMiddleware(RequestDelegate, IQueueService<MessageQueueModel>)
+  fullName: Mix.Lib.Middlewares.TenantSecurityMiddleware.TenantSecurityMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, IQueueService<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Middlewares/TenantSecurityMiddleware.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Middlewares/TenantSecurityMiddleware.cs
+    startLine: 9
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Middlewares
+  syntax:
+    content: public TenantSecurityMiddleware(RequestDelegate next, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: next
+      type: Microsoft.AspNetCore.Http.RequestDelegate
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    content.vb: Public Sub New(next As RequestDelegate, queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Lib.Middlewares.TenantSecurityMiddleware.#ctor*
+  nameWithType.vb: TenantSecurityMiddleware.TenantSecurityMiddleware(RequestDelegate, IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Middlewares.TenantSecurityMiddleware.TenantSecurityMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, IQueueService(Of MessageQueueModel))
+  name.vb: TenantSecurityMiddleware(RequestDelegate, IQueueService(Of MessageQueueModel))
+- uid: Mix.Lib.Middlewares.TenantSecurityMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,MixCmsContext)
+  commentId: M:Mix.Lib.Middlewares.TenantSecurityMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,MixCmsContext)
+  id: Invoke(Microsoft.AspNetCore.Http.HttpContext,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,MixCmsContext)
+  parent: Mix.Lib.Middlewares.TenantSecurityMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Invoke(HttpContext, IConfiguration, IHttpContextAccessor, MixCmsContext)
+  nameWithType: TenantSecurityMiddleware.Invoke(HttpContext, IConfiguration, IHttpContextAccessor, MixCmsContext)
+  fullName: Mix.Lib.Middlewares.TenantSecurityMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.AspNetCore.Http.IHttpContextAccessor, MixCmsContext)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Middlewares/TenantSecurityMiddleware.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Invoke
+    path: ../../mix.core/src/platform/mix.library/Middlewares/TenantSecurityMiddleware.cs
+    startLine: 15
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Middlewares
+  syntax:
+    content: public Task Invoke(HttpContext context, IConfiguration configuration, IHttpContextAccessor httpContextAccessor, MixCmsContext cmsContext)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    - id: httpContextAccessor
+      type: Microsoft.AspNetCore.Http.IHttpContextAccessor
+    - id: cmsContext
+      type: MixCmsContext
+    return:
+      type: Task
+    content.vb: Public Function Invoke(context As HttpContext, configuration As IConfiguration, httpContextAccessor As IHttpContextAccessor, cmsContext As MixCmsContext) As Task
+  overload: Mix.Lib.Middlewares.TenantSecurityMiddleware.Invoke*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Lib.Middlewares
+  commentId: N:Mix.Lib.Middlewares
+  name: Mix.Lib.Middlewares
+  nameWithType: Mix.Lib.Middlewares
+  fullName: Mix.Lib.Middlewares
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Middlewares.TenantSecurityMiddleware.#ctor*
+  commentId: Overload:Mix.Lib.Middlewares.TenantSecurityMiddleware.#ctor
+  name: TenantSecurityMiddleware
+  nameWithType: TenantSecurityMiddleware.TenantSecurityMiddleware
+  fullName: Mix.Lib.Middlewares.TenantSecurityMiddleware.TenantSecurityMiddleware
+- uid: Microsoft.AspNetCore.Http.RequestDelegate
+  commentId: T:Microsoft.AspNetCore.Http.RequestDelegate
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: RequestDelegate
+  nameWithType: RequestDelegate
+  fullName: Microsoft.AspNetCore.Http.RequestDelegate
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Mix.Lib.Middlewares.TenantSecurityMiddleware.Invoke*
+  commentId: Overload:Mix.Lib.Middlewares.TenantSecurityMiddleware.Invoke
+  name: Invoke
+  nameWithType: TenantSecurityMiddleware.Invoke
+  fullName: Mix.Lib.Middlewares.TenantSecurityMiddleware.Invoke
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
+  commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration

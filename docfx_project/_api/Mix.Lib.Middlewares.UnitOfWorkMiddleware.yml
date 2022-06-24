@@ -1,0 +1,633 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Lib.Middlewares.UnitOfWorkMiddleware
+  commentId: T:Mix.Lib.Middlewares.UnitOfWorkMiddleware
+  id: UnitOfWorkMiddleware
+  parent: Mix.Lib.Middlewares
+  children:
+  - Mix.Lib.Middlewares.UnitOfWorkMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  - Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,UnitOfWorkInfo{MixCmsContext},UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext},UnitOfWorkInfo{MixCacheDbContext})
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWorkMiddleware
+  nameWithType: UnitOfWorkMiddleware
+  fullName: Mix.Lib.Middlewares.UnitOfWorkMiddleware
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.library/Middlewares/UnitOfWorkMiddleware.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UnitOfWorkMiddleware
+    path: ../../mix.core/src/platform/mix.library/Middlewares/UnitOfWorkMiddleware.cs
+    startLine: 6
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Middlewares
+  syntax:
+    content: public class UnitOfWorkMiddleware
+    content.vb: Public Class UnitOfWorkMiddleware
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Lib.Middlewares.UnitOfWorkMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  commentId: M:Mix.Lib.Middlewares.UnitOfWorkMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  id: '#ctor(Microsoft.AspNetCore.Http.RequestDelegate)'
+  parent: Mix.Lib.Middlewares.UnitOfWorkMiddleware
+  langs:
+  - csharp
+  - vb
+  name: UnitOfWorkMiddleware(RequestDelegate)
+  nameWithType: UnitOfWorkMiddleware.UnitOfWorkMiddleware(RequestDelegate)
+  fullName: Mix.Lib.Middlewares.UnitOfWorkMiddleware.UnitOfWorkMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.library/Middlewares/UnitOfWorkMiddleware.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.library/Middlewares/UnitOfWorkMiddleware.cs
+    startLine: 9
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Middlewares
+  syntax:
+    content: public UnitOfWorkMiddleware(RequestDelegate next)
+    parameters:
+    - id: next
+      type: Microsoft.AspNetCore.Http.RequestDelegate
+    content.vb: Public Sub New(next As RequestDelegate)
+  overload: Mix.Lib.Middlewares.UnitOfWorkMiddleware.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,UnitOfWorkInfo{MixCmsContext},UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext},UnitOfWorkInfo{MixCacheDbContext})
+  commentId: M:Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,UnitOfWorkInfo{MixCmsContext},UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext},UnitOfWorkInfo{MixCacheDbContext})
+  id: Invoke(Microsoft.AspNetCore.Http.HttpContext,UnitOfWorkInfo{MixCmsContext},UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext},UnitOfWorkInfo{MixCacheDbContext})
+  parent: Mix.Lib.Middlewares.UnitOfWorkMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Invoke(HttpContext, UnitOfWorkInfo<MixCmsContext>, UnitOfWorkInfo<MixCmsAccountContext>, UnitOfWorkInfo<MixCacheDbContext>)
+  nameWithType: UnitOfWorkMiddleware.Invoke(HttpContext, UnitOfWorkInfo<MixCmsContext>, UnitOfWorkInfo<MixCmsAccountContext>, UnitOfWorkInfo<MixCacheDbContext>)
+  fullName: Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext, UnitOfWorkInfo<MixCmsContext>, UnitOfWorkInfo<Mix.Database.Entities.Account.MixCmsAccountContext>, UnitOfWorkInfo<MixCacheDbContext>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Middlewares/UnitOfWorkMiddleware.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Invoke
+    path: ../../mix.core/src/platform/mix.library/Middlewares/UnitOfWorkMiddleware.cs
+    startLine: 14
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Middlewares
+  syntax:
+    content: public Task Invoke(HttpContext context, [FromServices] UnitOfWorkInfo<MixCmsContext> cmsUOW, [FromServices] UnitOfWorkInfo<MixCmsAccountContext> accountUOW, [FromServices] UnitOfWorkInfo<MixCacheDbContext> cacheUOW)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    - id: cmsUOW
+      type: UnitOfWorkInfo{MixCmsContext}
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromServicesAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromServicesAttribute.#ctor
+        arguments: []
+    - id: accountUOW
+      type: UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext}
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromServicesAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromServicesAttribute.#ctor
+        arguments: []
+    - id: cacheUOW
+      type: UnitOfWorkInfo{MixCacheDbContext}
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromServicesAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromServicesAttribute.#ctor
+        arguments: []
+    return:
+      type: Task
+    content.vb: Public Function Invoke(context As HttpContext, cmsUOW As UnitOfWorkInfo(Of MixCmsContext), accountUOW As UnitOfWorkInfo(Of MixCmsAccountContext), cacheUOW As UnitOfWorkInfo(Of MixCacheDbContext)) As Task
+  overload: Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke*
+  nameWithType.vb: UnitOfWorkMiddleware.Invoke(HttpContext, UnitOfWorkInfo(Of MixCmsContext), UnitOfWorkInfo(Of MixCmsAccountContext), UnitOfWorkInfo(Of MixCacheDbContext))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext, UnitOfWorkInfo(Of MixCmsContext), UnitOfWorkInfo(Of Mix.Database.Entities.Account.MixCmsAccountContext), UnitOfWorkInfo(Of MixCacheDbContext))
+  name.vb: Invoke(HttpContext, UnitOfWorkInfo(Of MixCmsContext), UnitOfWorkInfo(Of MixCmsAccountContext), UnitOfWorkInfo(Of MixCacheDbContext))
+references:
+- uid: Mix.Lib.Middlewares
+  commentId: N:Mix.Lib.Middlewares
+  name: Mix.Lib.Middlewares
+  nameWithType: Mix.Lib.Middlewares
+  fullName: Mix.Lib.Middlewares
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Lib.Middlewares.UnitOfWorkMiddleware.#ctor*
+  commentId: Overload:Mix.Lib.Middlewares.UnitOfWorkMiddleware.#ctor
+  name: UnitOfWorkMiddleware
+  nameWithType: UnitOfWorkMiddleware.UnitOfWorkMiddleware
+  fullName: Mix.Lib.Middlewares.UnitOfWorkMiddleware.UnitOfWorkMiddleware
+- uid: Microsoft.AspNetCore.Http.RequestDelegate
+  commentId: T:Microsoft.AspNetCore.Http.RequestDelegate
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: RequestDelegate
+  nameWithType: RequestDelegate
+  fullName: Microsoft.AspNetCore.Http.RequestDelegate
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke*
+  commentId: Overload:Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke
+  name: Invoke
+  nameWithType: UnitOfWorkMiddleware.Invoke
+  fullName: Mix.Lib.Middlewares.UnitOfWorkMiddleware.Invoke
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext}
+  commentId: '!:UnitOfWorkInfo{Mix.Database.Entities.Account.MixCmsAccountContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsAccountContext>
+  nameWithType: UnitOfWorkInfo<MixCmsAccountContext>
+  fullName: UnitOfWorkInfo<Mix.Database.Entities.Account.MixCmsAccountContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsAccountContext)
+  fullName.vb: UnitOfWorkInfo(Of Mix.Database.Entities.Account.MixCmsAccountContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsAccountContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Account.MixCmsAccountContext
+    name: MixCmsAccountContext
+    nameWithType: MixCmsAccountContext
+    fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{MixCacheDbContext}
+  commentId: '!:UnitOfWorkInfo{MixCacheDbContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType: UnitOfWorkInfo<MixCacheDbContext>
+  fullName: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  name.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

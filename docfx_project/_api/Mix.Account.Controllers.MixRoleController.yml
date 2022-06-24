@@ -1,0 +1,420 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Account.Controllers.MixRoleController
+  commentId: T:Mix.Account.Controllers.MixRoleController
+  id: MixRoleController
+  parent: Mix.Account.Controllers
+  children:
+  - Mix.Account.Controllers.MixRoleController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,Mix.Heart.Entities.Cache.MixCacheDbContext,Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel})
+  langs:
+  - csharp
+  - vb
+  name: MixRoleController
+  nameWithType: MixRoleController
+  fullName: Mix.Account.Controllers.MixRoleController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.account/Controllers/MixRoleController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixRoleController
+    path: ../../mix.core/src/modules/mix.account/Controllers/MixRoleController.cs
+    startLine: 11
+  assemblies:
+  - mix.account
+  namespace: Mix.Account.Controllers
+  syntax:
+    content: >-
+      [Authorize(AuthenticationSchemes = "Bearer", Roles = "SuperAdmin, Owner")]
+
+      [Route("api/v2/rest/mix-account/role")]
+
+      [ApiController]
+
+      public class MixRoleController : MixRestEntityApiControllerBase<MixCmsAccountContext, MixRole, Guid>
+    content.vb: >-
+      <Authorize(AuthenticationSchemes:="Bearer", Roles:="SuperAdmin, Owner")>
+
+      <Route("api/v2/rest/mix-account/role")>
+
+      <ApiController>
+
+      Public Class MixRoleController
+          Inherits MixRestEntityApiControllerBase(Of MixCmsAccountContext, MixRole, Guid)
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Authorization.AuthorizeAttribute
+    ctor: Microsoft.AspNetCore.Authorization.AuthorizeAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: AuthenticationSchemes
+      type: System.String
+      value: Bearer
+    - name: Roles
+      type: System.String
+      value: SuperAdmin, Owner
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/mix-account/role
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Account.Controllers.MixRoleController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,Mix.Heart.Entities.Cache.MixCacheDbContext,Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel})
+  commentId: M:Mix.Account.Controllers.MixRoleController.#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,Mix.Heart.Entities.Cache.MixCacheDbContext,Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel})
+  id: '#ctor(IHttpContextAccessor,IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,Mix.Heart.Entities.Cache.MixCacheDbContext,Mix.Database.Entities.Account.MixCmsAccountContext,Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel})'
+  parent: Mix.Account.Controllers.MixRoleController
+  langs:
+  - csharp
+  - vb
+  name: MixRoleController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, MixCacheDbContext, MixCmsAccountContext, IQueueService<MessageQueueModel>)
+  nameWithType: MixRoleController.MixRoleController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, MixCacheDbContext, MixCmsAccountContext, IQueueService<MessageQueueModel>)
+  fullName: Mix.Account.Controllers.MixRoleController.MixRoleController(IHttpContextAccessor, IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, Mix.Lib.Services.MixIdentityService, Mix.Heart.Entities.Cache.MixCacheDbContext, Mix.Database.Entities.Account.MixCmsAccountContext, Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.account/Controllers/MixRoleController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.account/Controllers/MixRoleController.cs
+    startLine: 16
+  assemblies:
+  - mix.account
+  namespace: Mix.Account.Controllers
+  syntax:
+    content: public MixRoleController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, MixCacheDbContext cacheDbContext, MixCmsAccountContext context, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: mixService
+      type: Mix.Lib.Services.MixService
+    - id: translator
+      type: Mix.Lib.Services.TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: mixIdentityService
+      type: Mix.Lib.Services.MixIdentityService
+    - id: cacheDbContext
+      type: Mix.Heart.Entities.Cache.MixCacheDbContext
+    - id: context
+      type: Mix.Database.Entities.Account.MixCmsAccountContext
+    - id: queueService
+      type: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, cacheDbContext As MixCacheDbContext, context As MixCmsAccountContext, queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Account.Controllers.MixRoleController.#ctor*
+  nameWithType.vb: MixRoleController.MixRoleController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, MixCacheDbContext, MixCmsAccountContext, IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Account.Controllers.MixRoleController.MixRoleController(IHttpContextAccessor, IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), Mix.Lib.Services.MixIdentityService, Mix.Heart.Entities.Cache.MixCacheDbContext, Mix.Database.Entities.Account.MixCmsAccountContext, Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel))
+  name.vb: MixRoleController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, MixCacheDbContext, MixCmsAccountContext, IQueueService(Of MessageQueueModel))
+references:
+- uid: Mix.Account.Controllers
+  commentId: N:Mix.Account.Controllers
+  name: Mix.Account.Controllers
+  nameWithType: Mix.Account.Controllers
+  fullName: Mix.Account.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Account.Controllers.MixRoleController.#ctor*
+  commentId: Overload:Mix.Account.Controllers.MixRoleController.#ctor
+  name: MixRoleController
+  nameWithType: MixRoleController.MixRoleController
+  fullName: Mix.Account.Controllers.MixRoleController.MixRoleController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Mix.Lib.Services.MixService
+  commentId: T:Mix.Lib.Services.MixService
+  parent: Mix.Lib.Services
+  name: MixService
+  nameWithType: MixService
+  fullName: Mix.Lib.Services.MixService
+- uid: Mix.Lib.Services.TranslatorService
+  commentId: T:Mix.Lib.Services.TranslatorService
+  parent: Mix.Lib.Services
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: Mix.Lib.Services.TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services.MixIdentityService
+  commentId: T:Mix.Lib.Services.MixIdentityService
+  parent: Mix.Lib.Services
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: Mix.Lib.Services.MixIdentityService
+- uid: Mix.Heart.Entities.Cache.MixCacheDbContext
+  commentId: T:Mix.Heart.Entities.Cache.MixCacheDbContext
+  parent: Mix.Heart.Entities.Cache
+  name: MixCacheDbContext
+  nameWithType: MixCacheDbContext
+  fullName: Mix.Heart.Entities.Cache.MixCacheDbContext
+- uid: Mix.Database.Entities.Account.MixCmsAccountContext
+  commentId: T:Mix.Database.Entities.Account.MixCmsAccountContext
+  parent: Mix.Database.Entities.Account
+  name: MixCmsAccountContext
+  nameWithType: MixCmsAccountContext
+  fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+- uid: Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  commentId: T:Mix.Queue.Interfaces.IQueueService{Mix.Queue.Models.MessageQueueModel}
+  parent: Mix.Queue.Interfaces
+  definition: Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: Mix.Queue.Interfaces.IQueueService<Mix.Queue.Models.MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of Mix.Queue.Models.MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Queue.Models.MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: Mix.Queue.Models.MessageQueueModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Entities.Cache
+  commentId: N:Mix.Heart.Entities.Cache
+  name: Mix.Heart.Entities.Cache
+  nameWithType: Mix.Heart.Entities.Cache
+  fullName: Mix.Heart.Entities.Cache
+- uid: Mix.Database.Entities.Account
+  commentId: N:Mix.Database.Entities.Account
+  name: Mix.Database.Entities.Account
+  nameWithType: Mix.Database.Entities.Account
+  fullName: Mix.Database.Entities.Account
+- uid: Mix.Queue.Interfaces.IQueueService`1
+  commentId: T:Mix.Queue.Interfaces.IQueueService`1
+  name: IQueueService<T>
+  nameWithType: IQueueService<T>
+  fullName: Mix.Queue.Interfaces.IQueueService<T>
+  nameWithType.vb: IQueueService(Of T)
+  fullName.vb: Mix.Queue.Interfaces.IQueueService(Of T)
+  name.vb: IQueueService(Of T)
+  spec.csharp:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Queue.Interfaces.IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: Mix.Queue.Interfaces.IQueueService
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Queue.Interfaces
+  commentId: N:Mix.Queue.Interfaces
+  name: Mix.Queue.Interfaces
+  nameWithType: Mix.Queue.Interfaces
+  fullName: Mix.Queue.Interfaces

@@ -1,0 +1,1635 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Grpc.MixGrpcService
+  commentId: T:Mix.Grpc.MixGrpcService
+  id: MixGrpcService
+  parent: Mix.Grpc
+  children:
+  - Mix.Grpc.MixGrpcService.#ctor(Microsoft.Extensions.Logging.ILogger{Mix.Grpc.MixGrpcService})
+  - Mix.Grpc.MixGrpcService.GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  - Mix.Grpc.MixGrpcService.Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  - Mix.Grpc.MixGrpcService.SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  - Mix.Grpc.MixGrpcService.SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  langs:
+  - csharp
+  - vb
+  name: MixGrpcService
+  nameWithType: MixGrpcService
+  fullName: Mix.Grpc.MixGrpcService
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.grpc/Services/MixGrpcService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixGrpcService
+    path: ../../mix.core/src/modules/mix.grpc/Services/MixGrpcService.cs
+    startLine: 9
+  assemblies:
+  - mix.grpc
+  namespace: Mix.Grpc
+  syntax:
+    content: 'public class MixGrpcService : MixGrpc.MixGrpcBase'
+    content.vb: >-
+      Public Class MixGrpcService
+          Inherits MixGrpc.MixGrpcBase
+  inheritance:
+  - System.Object
+  - Mix.Grpc.MixGrpc.MixGrpcBase
+  inheritedMembers:
+  - Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  - Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  - Mix.Grpc.MixGrpc.MixGrpcBase.StartStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  - Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Grpc.MixGrpcService.#ctor(Microsoft.Extensions.Logging.ILogger{Mix.Grpc.MixGrpcService})
+  commentId: M:Mix.Grpc.MixGrpcService.#ctor(Microsoft.Extensions.Logging.ILogger{Mix.Grpc.MixGrpcService})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Mix.Grpc.MixGrpcService})'
+  parent: Mix.Grpc.MixGrpcService
+  langs:
+  - csharp
+  - vb
+  name: MixGrpcService(ILogger<MixGrpcService>)
+  nameWithType: MixGrpcService.MixGrpcService(ILogger<MixGrpcService>)
+  fullName: Mix.Grpc.MixGrpcService.MixGrpcService(Microsoft.Extensions.Logging.ILogger<Mix.Grpc.MixGrpcService>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.grpc/Services/MixGrpcService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.grpc/Services/MixGrpcService.cs
+    startLine: 12
+  assemblies:
+  - mix.grpc
+  namespace: Mix.Grpc
+  syntax:
+    content: public MixGrpcService(ILogger<MixGrpcService> logger)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Mix.Grpc.MixGrpcService}
+    content.vb: Public Sub New(logger As ILogger(Of MixGrpcService))
+  overload: Mix.Grpc.MixGrpcService.#ctor*
+  nameWithType.vb: MixGrpcService.MixGrpcService(ILogger(Of MixGrpcService))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Grpc.MixGrpcService.MixGrpcService(Microsoft.Extensions.Logging.ILogger(Of Mix.Grpc.MixGrpcService))
+  name.vb: MixGrpcService(ILogger(Of MixGrpcService))
+- uid: Mix.Grpc.MixGrpcService.Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpcService.Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  id: Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpcService
+  langs:
+  - csharp
+  - vb
+  name: Send(MixGrpcRequest, ServerCallContext)
+  nameWithType: MixGrpcService.Send(MixGrpcRequest, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpcService.Send(Mix.Grpc.MixGrpcRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.grpc/Services/MixGrpcService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Send
+    path: ../../mix.core/src/modules/mix.grpc/Services/MixGrpcService.cs
+    startLine: 17
+  assemblies:
+  - mix.grpc
+  namespace: Mix.Grpc
+  syntax:
+    content: public override Task<MixGrpcReply> Send(MixGrpcRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Mix.Grpc.MixGrpcRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Mix.Grpc.MixGrpcReply}
+    content.vb: Public Overrides Function Send(request As MixGrpcRequest, context As ServerCallContext) As Task(Of MixGrpcReply)
+  overridden: Mix.Grpc.MixGrpc.MixGrpcBase.Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  overload: Mix.Grpc.MixGrpcService.Send*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Mix.Grpc.MixGrpcService.SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpcService.SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  id: SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpcService
+  langs:
+  - csharp
+  - vb
+  name: SendAuthorized(MixGrpcRequest, ServerCallContext)
+  nameWithType: MixGrpcService.SendAuthorized(MixGrpcRequest, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpcService.SendAuthorized(Mix.Grpc.MixGrpcRequest, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.grpc/Services/MixGrpcService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendAuthorized
+    path: ../../mix.core/src/modules/mix.grpc/Services/MixGrpcService.cs
+    startLine: 27
+  assemblies:
+  - mix.grpc
+  namespace: Mix.Grpc
+  syntax:
+    content: >-
+      [Authorize]
+
+      public override Task<MixGrpcReply> SendAuthorized(MixGrpcRequest request, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Mix.Grpc.MixGrpcRequest
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Mix.Grpc.MixGrpcReply}
+    content.vb: >-
+      <Authorize>
+
+      Public Overrides Function SendAuthorized(request As MixGrpcRequest, context As ServerCallContext) As Task(Of MixGrpcReply)
+  overridden: Mix.Grpc.MixGrpc.MixGrpcBase.SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  overload: Mix.Grpc.MixGrpcService.SendAuthorized*
+  attributes:
+  - type: Microsoft.AspNetCore.Authorization.AuthorizeAttribute
+    ctor: Microsoft.AspNetCore.Authorization.AuthorizeAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Mix.Grpc.MixGrpcService.SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpcService.SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  id: SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpcService
+  langs:
+  - csharp
+  - vb
+  name: SendStream(IAsyncStreamReader<MixGrpcRequest>, ServerCallContext)
+  nameWithType: MixGrpcService.SendStream(IAsyncStreamReader<MixGrpcRequest>, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpcService.SendStream(Grpc.Core.IAsyncStreamReader<Mix.Grpc.MixGrpcRequest>, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.grpc/Services/MixGrpcService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SendStream
+    path: ../../mix.core/src/modules/mix.grpc/Services/MixGrpcService.cs
+    startLine: 38
+  assemblies:
+  - mix.grpc
+  namespace: Mix.Grpc
+  syntax:
+    content: public override Task<MixGrpcReply> SendStream(IAsyncStreamReader<MixGrpcRequest> requestStream, ServerCallContext context)
+    parameters:
+    - id: requestStream
+      type: Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest}
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task{Mix.Grpc.MixGrpcReply}
+    content.vb: Public Overrides Function SendStream(requestStream As IAsyncStreamReader(Of MixGrpcRequest), context As ServerCallContext) As Task(Of MixGrpcReply)
+  overridden: Mix.Grpc.MixGrpc.MixGrpcBase.SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  overload: Mix.Grpc.MixGrpcService.SendStream*
+  nameWithType.vb: MixGrpcService.SendStream(IAsyncStreamReader(Of MixGrpcRequest), ServerCallContext)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Grpc.MixGrpcService.SendStream(Grpc.Core.IAsyncStreamReader(Of Mix.Grpc.MixGrpcRequest), Grpc.Core.ServerCallContext)
+  name.vb: SendStream(IAsyncStreamReader(Of MixGrpcRequest), ServerCallContext)
+- uid: Mix.Grpc.MixGrpcService.GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpcService.GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  id: GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpcService
+  langs:
+  - csharp
+  - vb
+  name: GetStream(MixGrpcRequest, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  nameWithType: MixGrpcService.GetStream(MixGrpcRequest, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpcService.GetStream(Mix.Grpc.MixGrpcRequest, Grpc.Core.IServerStreamWriter<Mix.Grpc.MixGrpcReply>, Grpc.Core.ServerCallContext)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.grpc/Services/MixGrpcService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetStream
+    path: ../../mix.core/src/modules/mix.grpc/Services/MixGrpcService.cs
+    startLine: 43
+  assemblies:
+  - mix.grpc
+  namespace: Mix.Grpc
+  syntax:
+    content: public override Task GetStream(MixGrpcRequest request, IServerStreamWriter<MixGrpcReply> responseStream, ServerCallContext context)
+    parameters:
+    - id: request
+      type: Mix.Grpc.MixGrpcRequest
+    - id: responseStream
+      type: Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply}
+    - id: context
+      type: Grpc.Core.ServerCallContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function GetStream(request As MixGrpcRequest, responseStream As IServerStreamWriter(Of MixGrpcReply), context As ServerCallContext) As Task
+  overridden: Mix.Grpc.MixGrpc.MixGrpcBase.GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  overload: Mix.Grpc.MixGrpcService.GetStream*
+  nameWithType.vb: MixGrpcService.GetStream(MixGrpcRequest, IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.Grpc.MixGrpcService.GetStream(Mix.Grpc.MixGrpcRequest, Grpc.Core.IServerStreamWriter(Of Mix.Grpc.MixGrpcReply), Grpc.Core.ServerCallContext)
+  name.vb: GetStream(MixGrpcRequest, IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+references:
+- uid: Mix.Grpc
+  commentId: N:Mix.Grpc
+  name: Mix.Grpc
+  nameWithType: Mix.Grpc
+  fullName: Mix.Grpc
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase
+  commentId: T:Mix.Grpc.MixGrpc.MixGrpcBase
+  parent: Mix.Grpc
+  name: MixGrpc.MixGrpcBase
+  nameWithType: MixGrpc.MixGrpcBase
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpc.MixGrpcBase
+  isExternal: true
+  name: SendSteamAuthorized(IAsyncStreamReader<MixGrpcRequest>, ServerCallContext)
+  nameWithType: MixGrpc.MixGrpcBase.SendSteamAuthorized(IAsyncStreamReader<MixGrpcRequest>, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized(Grpc.Core.IAsyncStreamReader<Mix.Grpc.MixGrpcRequest>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: MixGrpc.MixGrpcBase.SendSteamAuthorized(IAsyncStreamReader(Of MixGrpcRequest), ServerCallContext)
+  fullName.vb: Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized(Grpc.Core.IAsyncStreamReader(Of Mix.Grpc.MixGrpcRequest), Grpc.Core.ServerCallContext)
+  name.vb: SendSteamAuthorized(IAsyncStreamReader(Of MixGrpcRequest), ServerCallContext)
+  spec.csharp:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+    name: SendSteamAuthorized
+    nameWithType: MixGrpc.MixGrpcBase.SendSteamAuthorized
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+    name: SendSteamAuthorized
+    nameWithType: MixGrpc.MixGrpcBase.SendSteamAuthorized
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendSteamAuthorized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpc.MixGrpcBase
+  isExternal: true
+  name: GetStreamAuthorized(MixGrpcRequest, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  nameWithType: MixGrpc.MixGrpcBase.GetStreamAuthorized(MixGrpcRequest, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized(Mix.Grpc.MixGrpcRequest, Grpc.Core.IServerStreamWriter<Mix.Grpc.MixGrpcReply>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: MixGrpc.MixGrpcBase.GetStreamAuthorized(MixGrpcRequest, IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  fullName.vb: Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized(Mix.Grpc.MixGrpcRequest, Grpc.Core.IServerStreamWriter(Of Mix.Grpc.MixGrpcReply), Grpc.Core.ServerCallContext)
+  name.vb: GetStreamAuthorized(MixGrpcRequest, IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  spec.csharp:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+    name: GetStreamAuthorized
+    nameWithType: MixGrpc.MixGrpcBase.GetStreamAuthorized
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+    name: GetStreamAuthorized
+    nameWithType: MixGrpc.MixGrpcBase.GetStreamAuthorized
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.GetStreamAuthorized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase.StartStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpc.MixGrpcBase.StartStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpc.MixGrpcBase
+  isExternal: true
+  name: StartStream(IAsyncStreamReader<MixGrpcRequest>, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  nameWithType: MixGrpc.MixGrpcBase.StartStream(IAsyncStreamReader<MixGrpcRequest>, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase.StartStream(Grpc.Core.IAsyncStreamReader<Mix.Grpc.MixGrpcRequest>, Grpc.Core.IServerStreamWriter<Mix.Grpc.MixGrpcReply>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: MixGrpc.MixGrpcBase.StartStream(IAsyncStreamReader(Of MixGrpcRequest), IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  fullName.vb: Mix.Grpc.MixGrpc.MixGrpcBase.StartStream(Grpc.Core.IAsyncStreamReader(Of Mix.Grpc.MixGrpcRequest), Grpc.Core.IServerStreamWriter(Of Mix.Grpc.MixGrpcReply), Grpc.Core.ServerCallContext)
+  name.vb: StartStream(IAsyncStreamReader(Of MixGrpcRequest), IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  spec.csharp:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.StartStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+    name: StartStream
+    nameWithType: MixGrpc.MixGrpcBase.StartStream
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.StartStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.StartStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+    name: StartStream
+    nameWithType: MixGrpc.MixGrpcBase.StartStream
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.StartStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpc.MixGrpcBase
+  isExternal: true
+  name: StartStreamAuthorized(IAsyncStreamReader<MixGrpcRequest>, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  nameWithType: MixGrpc.MixGrpcBase.StartStreamAuthorized(IAsyncStreamReader<MixGrpcRequest>, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized(Grpc.Core.IAsyncStreamReader<Mix.Grpc.MixGrpcRequest>, Grpc.Core.IServerStreamWriter<Mix.Grpc.MixGrpcReply>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: MixGrpc.MixGrpcBase.StartStreamAuthorized(IAsyncStreamReader(Of MixGrpcRequest), IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  fullName.vb: Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized(Grpc.Core.IAsyncStreamReader(Of Mix.Grpc.MixGrpcRequest), Grpc.Core.IServerStreamWriter(Of Mix.Grpc.MixGrpcReply), Grpc.Core.ServerCallContext)
+  name.vb: StartStreamAuthorized(IAsyncStreamReader(Of MixGrpcRequest), IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  spec.csharp:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+    name: StartStreamAuthorized
+    nameWithType: MixGrpc.MixGrpcBase.StartStreamAuthorized
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+    name: StartStreamAuthorized
+    nameWithType: MixGrpc.MixGrpcBase.StartStreamAuthorized
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.StartStreamAuthorized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Grpc.MixGrpcService.#ctor*
+  commentId: Overload:Mix.Grpc.MixGrpcService.#ctor
+  name: MixGrpcService
+  nameWithType: MixGrpcService.MixGrpcService
+  fullName: Mix.Grpc.MixGrpcService.MixGrpcService
+- uid: Microsoft.Extensions.Logging.ILogger{Mix.Grpc.MixGrpcService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Mix.Grpc.MixGrpcService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  name: ILogger<MixGrpcService>
+  nameWithType: ILogger<MixGrpcService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Mix.Grpc.MixGrpcService>
+  nameWithType.vb: ILogger(Of MixGrpcService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Mix.Grpc.MixGrpcService)
+  name.vb: ILogger(Of MixGrpcService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcService
+    name: MixGrpcService
+    nameWithType: MixGrpcService
+    fullName: Mix.Grpc.MixGrpcService
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcService
+    name: MixGrpcService
+    nameWithType: MixGrpcService
+    fullName: Mix.Grpc.MixGrpcService
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    nameWithType: ILogger
+    fullName: Microsoft.Extensions.Logging.ILogger
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TCategoryName
+    nameWithType: TCategoryName
+    fullName: TCategoryName
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase.Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpc.MixGrpcBase.Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpc.MixGrpcBase
+  isExternal: true
+  name: Send(MixGrpcRequest, ServerCallContext)
+  nameWithType: MixGrpc.MixGrpcBase.Send(MixGrpcRequest, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase.Send(Mix.Grpc.MixGrpcRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+    name: Send
+    nameWithType: MixGrpc.MixGrpcBase.Send
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.Send(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+    name: Send
+    nameWithType: MixGrpc.MixGrpcBase.Send
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.Send
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Grpc.MixGrpcService.Send*
+  commentId: Overload:Mix.Grpc.MixGrpcService.Send
+  name: Send
+  nameWithType: MixGrpcService.Send
+  fullName: Mix.Grpc.MixGrpcService.Send
+- uid: Mix.Grpc.MixGrpcRequest
+  commentId: T:Mix.Grpc.MixGrpcRequest
+  parent: Mix.Grpc
+  name: MixGrpcRequest
+  nameWithType: MixGrpcRequest
+  fullName: Mix.Grpc.MixGrpcRequest
+- uid: Grpc.Core.ServerCallContext
+  commentId: T:Grpc.Core.ServerCallContext
+  parent: Grpc.Core
+  isExternal: true
+  name: ServerCallContext
+  nameWithType: ServerCallContext
+  fullName: Grpc.Core.ServerCallContext
+- uid: System.Threading.Tasks.Task{Mix.Grpc.MixGrpcReply}
+  commentId: T:System.Threading.Tasks.Task{Mix.Grpc.MixGrpcReply}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<MixGrpcReply>
+  nameWithType: Task<MixGrpcReply>
+  fullName: System.Threading.Tasks.Task<Mix.Grpc.MixGrpcReply>
+  nameWithType.vb: Task(Of MixGrpcReply)
+  fullName.vb: System.Threading.Tasks.Task(Of Mix.Grpc.MixGrpcReply)
+  name.vb: Task(Of MixGrpcReply)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Grpc.Core
+  commentId: N:Grpc.Core
+  isExternal: true
+  name: Grpc.Core
+  nameWithType: Grpc.Core
+  fullName: Grpc.Core
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpc.MixGrpcBase.SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpc.MixGrpcBase
+  isExternal: true
+  name: SendAuthorized(MixGrpcRequest, ServerCallContext)
+  nameWithType: MixGrpc.MixGrpcBase.SendAuthorized(MixGrpcRequest, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendAuthorized(Mix.Grpc.MixGrpcRequest, Grpc.Core.ServerCallContext)
+  spec.csharp:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+    name: SendAuthorized
+    nameWithType: MixGrpc.MixGrpcBase.SendAuthorized
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendAuthorized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendAuthorized(Mix.Grpc.MixGrpcRequest,Grpc.Core.ServerCallContext)
+    name: SendAuthorized
+    nameWithType: MixGrpc.MixGrpcBase.SendAuthorized
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendAuthorized
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Grpc.MixGrpcService.SendAuthorized*
+  commentId: Overload:Mix.Grpc.MixGrpcService.SendAuthorized
+  name: SendAuthorized
+  nameWithType: MixGrpcService.SendAuthorized
+  fullName: Mix.Grpc.MixGrpcService.SendAuthorized
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpc.MixGrpcBase.SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpc.MixGrpcBase
+  isExternal: true
+  name: SendStream(IAsyncStreamReader<MixGrpcRequest>, ServerCallContext)
+  nameWithType: MixGrpc.MixGrpcBase.SendStream(IAsyncStreamReader<MixGrpcRequest>, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendStream(Grpc.Core.IAsyncStreamReader<Mix.Grpc.MixGrpcRequest>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: MixGrpc.MixGrpcBase.SendStream(IAsyncStreamReader(Of MixGrpcRequest), ServerCallContext)
+  fullName.vb: Mix.Grpc.MixGrpc.MixGrpcBase.SendStream(Grpc.Core.IAsyncStreamReader(Of Mix.Grpc.MixGrpcRequest), Grpc.Core.ServerCallContext)
+  name.vb: SendStream(IAsyncStreamReader(Of MixGrpcRequest), ServerCallContext)
+  spec.csharp:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+    name: SendStream
+    nameWithType: MixGrpc.MixGrpcBase.SendStream
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.SendStream(Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest},Grpc.Core.ServerCallContext)
+    name: SendStream
+    nameWithType: MixGrpc.MixGrpcBase.SendStream
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.SendStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Grpc.MixGrpcService.SendStream*
+  commentId: Overload:Mix.Grpc.MixGrpcService.SendStream
+  name: SendStream
+  nameWithType: MixGrpcService.SendStream
+  fullName: Mix.Grpc.MixGrpcService.SendStream
+- uid: Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest}
+  commentId: T:Grpc.Core.IAsyncStreamReader{Mix.Grpc.MixGrpcRequest}
+  parent: Grpc.Core
+  definition: Grpc.Core.IAsyncStreamReader`1
+  name: IAsyncStreamReader<MixGrpcRequest>
+  nameWithType: IAsyncStreamReader<MixGrpcRequest>
+  fullName: Grpc.Core.IAsyncStreamReader<Mix.Grpc.MixGrpcRequest>
+  nameWithType.vb: IAsyncStreamReader(Of MixGrpcRequest)
+  fullName.vb: Grpc.Core.IAsyncStreamReader(Of Mix.Grpc.MixGrpcRequest)
+  name.vb: IAsyncStreamReader(Of MixGrpcRequest)
+  spec.csharp:
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Grpc.Core.IAsyncStreamReader`1
+  commentId: T:Grpc.Core.IAsyncStreamReader`1
+  isExternal: true
+  name: IAsyncStreamReader<T>
+  nameWithType: IAsyncStreamReader<T>
+  fullName: Grpc.Core.IAsyncStreamReader<T>
+  nameWithType.vb: IAsyncStreamReader(Of T)
+  fullName.vb: Grpc.Core.IAsyncStreamReader(Of T)
+  name.vb: IAsyncStreamReader(Of T)
+  spec.csharp:
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Grpc.Core.IAsyncStreamReader`1
+    name: IAsyncStreamReader
+    nameWithType: IAsyncStreamReader
+    fullName: Grpc.Core.IAsyncStreamReader
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Grpc.MixGrpc.MixGrpcBase.GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  commentId: M:Mix.Grpc.MixGrpc.MixGrpcBase.GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+  parent: Mix.Grpc.MixGrpc.MixGrpcBase
+  isExternal: true
+  name: GetStream(MixGrpcRequest, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  nameWithType: MixGrpc.MixGrpcBase.GetStream(MixGrpcRequest, IServerStreamWriter<MixGrpcReply>, ServerCallContext)
+  fullName: Mix.Grpc.MixGrpc.MixGrpcBase.GetStream(Mix.Grpc.MixGrpcRequest, Grpc.Core.IServerStreamWriter<Mix.Grpc.MixGrpcReply>, Grpc.Core.ServerCallContext)
+  nameWithType.vb: MixGrpc.MixGrpcBase.GetStream(MixGrpcRequest, IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  fullName.vb: Mix.Grpc.MixGrpc.MixGrpcBase.GetStream(Mix.Grpc.MixGrpcRequest, Grpc.Core.IServerStreamWriter(Of Mix.Grpc.MixGrpcReply), Grpc.Core.ServerCallContext)
+  name.vb: GetStream(MixGrpcRequest, IServerStreamWriter(Of MixGrpcReply), ServerCallContext)
+  spec.csharp:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+    name: GetStream
+    nameWithType: MixGrpc.MixGrpcBase.GetStream
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.GetStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Grpc.MixGrpc.MixGrpcBase.GetStream(Mix.Grpc.MixGrpcRequest,Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply},Grpc.Core.ServerCallContext)
+    name: GetStream
+    nameWithType: MixGrpc.MixGrpcBase.GetStream
+    fullName: Mix.Grpc.MixGrpc.MixGrpcBase.GetStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Grpc.MixGrpcRequest
+    name: MixGrpcRequest
+    nameWithType: MixGrpcRequest
+    fullName: Mix.Grpc.MixGrpcRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Grpc.Core.ServerCallContext
+    name: ServerCallContext
+    nameWithType: ServerCallContext
+    fullName: Grpc.Core.ServerCallContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Grpc.MixGrpcService.GetStream*
+  commentId: Overload:Mix.Grpc.MixGrpcService.GetStream
+  name: GetStream
+  nameWithType: MixGrpcService.GetStream
+  fullName: Mix.Grpc.MixGrpcService.GetStream
+- uid: Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply}
+  commentId: T:Grpc.Core.IServerStreamWriter{Mix.Grpc.MixGrpcReply}
+  parent: Grpc.Core
+  definition: Grpc.Core.IServerStreamWriter`1
+  name: IServerStreamWriter<MixGrpcReply>
+  nameWithType: IServerStreamWriter<MixGrpcReply>
+  fullName: Grpc.Core.IServerStreamWriter<Mix.Grpc.MixGrpcReply>
+  nameWithType.vb: IServerStreamWriter(Of MixGrpcReply)
+  fullName.vb: Grpc.Core.IServerStreamWriter(Of Mix.Grpc.MixGrpcReply)
+  name.vb: IServerStreamWriter(Of MixGrpcReply)
+  spec.csharp:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Grpc.MixGrpcReply
+    name: MixGrpcReply
+    nameWithType: MixGrpcReply
+    fullName: Mix.Grpc.MixGrpcReply
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Grpc.Core.IServerStreamWriter`1
+  commentId: T:Grpc.Core.IServerStreamWriter`1
+  isExternal: true
+  name: IServerStreamWriter<T>
+  nameWithType: IServerStreamWriter<T>
+  fullName: Grpc.Core.IServerStreamWriter<T>
+  nameWithType.vb: IServerStreamWriter(Of T)
+  fullName.vb: Grpc.Core.IServerStreamWriter(Of T)
+  name.vb: IServerStreamWriter(Of T)
+  spec.csharp:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Grpc.Core.IServerStreamWriter`1
+    name: IServerStreamWriter
+    nameWithType: IServerStreamWriter
+    fullName: Grpc.Core.IServerStreamWriter
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

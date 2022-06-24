@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Shared.Interfaces.IStartupService
+  commentId: T:Mix.Shared.Interfaces.IStartupService
+  id: IStartupService
+  parent: Mix.Shared.Interfaces
+  children:
+  - Mix.Shared.Interfaces.IStartupService.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  - Mix.Shared.Interfaces.IStartupService.UseApps(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IStartupService
+  nameWithType: IStartupService
+  fullName: Mix.Shared.Interfaces.IStartupService
+  type: Interface
+  source:
+    remote:
+      path: src/platform/mix.shared/Interfaces/IStartupService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IStartupService
+    path: ../../mix.core/src/platform/mix.shared/Interfaces/IStartupService.cs
+    startLine: 6
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Interfaces
+  syntax:
+    content: public interface IStartupService
+    content.vb: Public Interface IStartupService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Mix.Shared.Interfaces.IStartupService.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:Mix.Shared.Interfaces.IStartupService.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  id: AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  parent: Mix.Shared.Interfaces.IStartupService
+  langs:
+  - csharp
+  - vb
+  name: AddServices(IServiceCollection, IConfiguration)
+  nameWithType: IStartupService.AddServices(IServiceCollection, IConfiguration)
+  fullName: Mix.Shared.Interfaces.IStartupService.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.shared/Interfaces/IStartupService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AddServices
+    path: ../../mix.core/src/platform/mix.shared/Interfaces/IStartupService.cs
+    startLine: 8
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Interfaces
+  syntax:
+    content: void AddServices(IServiceCollection services, IConfiguration configuration)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Sub AddServices(services As IServiceCollection, configuration As IConfiguration)
+  overload: Mix.Shared.Interfaces.IStartupService.AddServices*
+- uid: Mix.Shared.Interfaces.IStartupService.UseApps(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean)
+  commentId: M:Mix.Shared.Interfaces.IStartupService.UseApps(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean)
+  id: UseApps(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.Boolean)
+  parent: Mix.Shared.Interfaces.IStartupService
+  langs:
+  - csharp
+  - vb
+  name: UseApps(IApplicationBuilder, IConfiguration, Boolean)
+  nameWithType: IStartupService.UseApps(IApplicationBuilder, IConfiguration, Boolean)
+  fullName: Mix.Shared.Interfaces.IStartupService.UseApps(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.Extensions.Configuration.IConfiguration, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.shared/Interfaces/IStartupService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UseApps
+    path: ../../mix.core/src/platform/mix.shared/Interfaces/IStartupService.cs
+    startLine: 9
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Interfaces
+  syntax:
+    content: void UseApps(IApplicationBuilder app, IConfiguration configuration, bool isDevelop)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    - id: isDevelop
+      type: System.Boolean
+    content.vb: Sub UseApps(app As IApplicationBuilder, configuration As IConfiguration, isDevelop As Boolean)
+  overload: Mix.Shared.Interfaces.IStartupService.UseApps*
+references:
+- uid: Mix.Shared.Interfaces
+  commentId: N:Mix.Shared.Interfaces
+  name: Mix.Shared.Interfaces
+  nameWithType: Mix.Shared.Interfaces
+  fullName: Mix.Shared.Interfaces
+- uid: Mix.Shared.Interfaces.IStartupService.AddServices*
+  commentId: Overload:Mix.Shared.Interfaces.IStartupService.AddServices
+  name: AddServices
+  nameWithType: IStartupService.AddServices
+  fullName: Mix.Shared.Interfaces.IStartupService.AddServices
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+- uid: Mix.Shared.Interfaces.IStartupService.UseApps*
+  commentId: Overload:Mix.Shared.Interfaces.IStartupService.UseApps
+  name: UseApps
+  nameWithType: IStartupService.UseApps
+  fullName: Mix.Shared.Interfaces.IStartupService.UseApps
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Heart.Repository.IRepositoryBase`1
+  commentId: T:Mix.Heart.Repository.IRepositoryBase`1
+  id: IRepositoryBase`1
+  parent: Mix.Heart.Repository
+  children:
+  - Mix.Heart.Repository.IRepositoryBase`1.Context
+  - Mix.Heart.Repository.IRepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  - Mix.Heart.Repository.IRepositoryBase`1.UowInfo
+  langs:
+  - csharp
+  - vb
+  name: IRepositoryBase<TDbContext>
+  nameWithType: IRepositoryBase<TDbContext>
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>
+  type: Interface
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/IRepositoryBase.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: IRepositoryBase
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/IRepositoryBase.cs
+    startLine: 5
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: >-
+      public interface IRepositoryBase<TDbContext>
+          where TDbContext : DbContext
+    typeParameters:
+    - id: TDbContext
+    content.vb: Public Interface IRepositoryBase(Of TDbContext As DbContext)
+  nameWithType.vb: IRepositoryBase(Of TDbContext)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext)
+  name.vb: IRepositoryBase(Of TDbContext)
+- uid: Mix.Heart.Repository.IRepositoryBase`1.UowInfo
+  commentId: P:Mix.Heart.Repository.IRepositoryBase`1.UowInfo
+  id: UowInfo
+  parent: Mix.Heart.Repository.IRepositoryBase`1
+  langs:
+  - csharp
+  - vb
+  name: UowInfo
+  nameWithType: IRepositoryBase<TDbContext>.UowInfo
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>.UowInfo
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/IRepositoryBase.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: UowInfo
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/IRepositoryBase.cs
+    startLine: 7
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: UnitOfWorkInfo UowInfo { get; set; }
+    parameters: []
+    return:
+      type: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    content.vb: Property UowInfo As UnitOfWorkInfo
+  overload: Mix.Heart.Repository.IRepositoryBase`1.UowInfo*
+  nameWithType.vb: IRepositoryBase(Of TDbContext).UowInfo
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext).UowInfo
+- uid: Mix.Heart.Repository.IRepositoryBase`1.Context
+  commentId: P:Mix.Heart.Repository.IRepositoryBase`1.Context
+  id: Context
+  parent: Mix.Heart.Repository.IRepositoryBase`1
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: IRepositoryBase<TDbContext>.Context
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>.Context
+  type: Property
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/IRepositoryBase.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: Context
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/IRepositoryBase.cs
+    startLine: 8
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: TDbContext Context { get; }
+    parameters: []
+    return:
+      type: '{TDbContext}'
+    content.vb: ReadOnly Property Context As TDbContext
+  overload: Mix.Heart.Repository.IRepositoryBase`1.Context*
+  nameWithType.vb: IRepositoryBase(Of TDbContext).Context
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext).Context
+- uid: Mix.Heart.Repository.IRepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.Heart.Repository.IRepositoryBase`1.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  id: SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  parent: Mix.Heart.Repository.IRepositoryBase`1
+  langs:
+  - csharp
+  - vb
+  name: SetUowInfo(UnitOfWorkInfo)
+  nameWithType: IRepositoryBase<TDbContext>.SetUowInfo(UnitOfWorkInfo)
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  type: Method
+  source:
+    remote:
+      path: src/Mix.Heart/Repository/IRepositoryBase.cs
+      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      repo: https://github.com/mixcore/mix.heart.git
+    id: SetUowInfo
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Repository/IRepositoryBase.cs
+    startLine: 10
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Repository
+  syntax:
+    content: void SetUowInfo(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    content.vb: Sub SetUowInfo(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Heart.Repository.IRepositoryBase`1.SetUowInfo*
+  nameWithType.vb: IRepositoryBase(Of TDbContext).SetUowInfo(UnitOfWorkInfo)
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext).SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+references:
+- uid: Mix.Heart.Repository
+  commentId: N:Mix.Heart.Repository
+  name: Mix.Heart.Repository
+  nameWithType: Mix.Heart.Repository
+  fullName: Mix.Heart.Repository
+- uid: Mix.Heart.Repository.IRepositoryBase`1.UowInfo*
+  commentId: Overload:Mix.Heart.Repository.IRepositoryBase`1.UowInfo
+  name: UowInfo
+  nameWithType: IRepositoryBase<TDbContext>.UowInfo
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>.UowInfo
+  nameWithType.vb: IRepositoryBase(Of TDbContext).UowInfo
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext).UowInfo
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  commentId: T:Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  parent: Mix.Heart.UnitOfWork
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+- uid: Mix.Heart.UnitOfWork
+  commentId: N:Mix.Heart.UnitOfWork
+  name: Mix.Heart.UnitOfWork
+  nameWithType: Mix.Heart.UnitOfWork
+  fullName: Mix.Heart.UnitOfWork
+- uid: Mix.Heart.Repository.IRepositoryBase`1.Context*
+  commentId: Overload:Mix.Heart.Repository.IRepositoryBase`1.Context
+  name: Context
+  nameWithType: IRepositoryBase<TDbContext>.Context
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>.Context
+  nameWithType.vb: IRepositoryBase(Of TDbContext).Context
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext).Context
+- uid: '{TDbContext}'
+  commentId: '!:TDbContext'
+  definition: TDbContext
+  name: TDbContext
+  nameWithType: TDbContext
+  fullName: TDbContext
+- uid: TDbContext
+  name: TDbContext
+  nameWithType: TDbContext
+  fullName: TDbContext
+- uid: Mix.Heart.Repository.IRepositoryBase`1.SetUowInfo*
+  commentId: Overload:Mix.Heart.Repository.IRepositoryBase`1.SetUowInfo
+  name: SetUowInfo
+  nameWithType: IRepositoryBase<TDbContext>.SetUowInfo
+  fullName: Mix.Heart.Repository.IRepositoryBase<TDbContext>.SetUowInfo
+  nameWithType.vb: IRepositoryBase(Of TDbContext).SetUowInfo
+  fullName.vb: Mix.Heart.Repository.IRepositoryBase(Of TDbContext).SetUowInfo

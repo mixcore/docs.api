@@ -1,0 +1,672 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Storage.Lib.Services.MixStorageService
+  commentId: T:Mix.Storage.Lib.Services.MixStorageService
+  id: MixStorageService
+  parent: Mix.Storage.Lib.Services
+  children:
+  - Mix.Storage.Lib.Services.MixStorageService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  - Mix.Storage.Lib.Services.MixStorageService.CreateMedia(System.String,System.String,System.Int32,System.String)
+  - Mix.Storage.Lib.Services.MixStorageService.UploadFile(System.String,Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: MixStorageService
+  nameWithType: MixStorageService
+  fullName: Mix.Storage.Lib.Services.MixStorageService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/Services/MixStorageService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixStorageService
+    path: ../../mix.core/src/platform/mix.storage.lib/Services/MixStorageService.cs
+    startLine: 5
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.Services
+  syntax:
+    content: public class MixStorageService
+    content.vb: Public Class MixStorageService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Storage.Lib.Services.MixStorageService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  commentId: M:Mix.Storage.Lib.Services.MixStorageService.#ctor(UnitOfWorkInfo{MixCmsContext})
+  id: '#ctor(UnitOfWorkInfo{MixCmsContext})'
+  parent: Mix.Storage.Lib.Services.MixStorageService
+  langs:
+  - csharp
+  - vb
+  name: MixStorageService(UnitOfWorkInfo<MixCmsContext>)
+  nameWithType: MixStorageService.MixStorageService(UnitOfWorkInfo<MixCmsContext>)
+  fullName: Mix.Storage.Lib.Services.MixStorageService.MixStorageService(UnitOfWorkInfo<MixCmsContext>)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/Services/MixStorageService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.storage.lib/Services/MixStorageService.cs
+    startLine: 8
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.Services
+  syntax:
+    content: public MixStorageService(UnitOfWorkInfo<MixCmsContext> cmsUOW)
+    parameters:
+    - id: cmsUOW
+      type: UnitOfWorkInfo{MixCmsContext}
+    content.vb: Public Sub New(cmsUOW As UnitOfWorkInfo(Of MixCmsContext))
+  overload: Mix.Storage.Lib.Services.MixStorageService.#ctor*
+  nameWithType.vb: MixStorageService.MixStorageService(UnitOfWorkInfo(Of MixCmsContext))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Storage.Lib.Services.MixStorageService.MixStorageService(UnitOfWorkInfo(Of MixCmsContext))
+  name.vb: MixStorageService(UnitOfWorkInfo(Of MixCmsContext))
+- uid: Mix.Storage.Lib.Services.MixStorageService.UploadFile(System.String,Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.String)
+  commentId: M:Mix.Storage.Lib.Services.MixStorageService.UploadFile(System.String,Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.String)
+  id: UploadFile(System.String,Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.String)
+  parent: Mix.Storage.Lib.Services.MixStorageService
+  langs:
+  - csharp
+  - vb
+  name: UploadFile(String, IFormFile, Int32, String)
+  nameWithType: MixStorageService.UploadFile(String, IFormFile, Int32, String)
+  fullName: Mix.Storage.Lib.Services.MixStorageService.UploadFile(System.String, Microsoft.AspNetCore.Http.IFormFile, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/Services/MixStorageService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UploadFile
+    path: ../../mix.core/src/platform/mix.storage.lib/Services/MixStorageService.cs
+    startLine: 14
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.Services
+  syntax:
+    content: public Task<string> UploadFile(string folder, IFormFile file, int tenantId, string createdBy)
+    parameters:
+    - id: folder
+      type: System.String
+    - id: file
+      type: Microsoft.AspNetCore.Http.IFormFile
+    - id: tenantId
+      type: System.Int32
+    - id: createdBy
+      type: System.String
+    return:
+      type: Task{System.String}
+    content.vb: Public Function UploadFile(folder As String, file As IFormFile, tenantId As Integer, createdBy As String) As Task(Of String)
+  overload: Mix.Storage.Lib.Services.MixStorageService.UploadFile*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Storage.Lib.Services.MixStorageService.CreateMedia(System.String,System.String,System.Int32,System.String)
+  commentId: M:Mix.Storage.Lib.Services.MixStorageService.CreateMedia(System.String,System.String,System.Int32,System.String)
+  id: CreateMedia(System.String,System.String,System.Int32,System.String)
+  parent: Mix.Storage.Lib.Services.MixStorageService
+  langs:
+  - csharp
+  - vb
+  name: CreateMedia(String, String, Int32, String)
+  nameWithType: MixStorageService.CreateMedia(String, String, Int32, String)
+  fullName: Mix.Storage.Lib.Services.MixStorageService.CreateMedia(System.String, System.String, System.Int32, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.storage.lib/Services/MixStorageService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateMedia
+    path: ../../mix.core/src/platform/mix.storage.lib/Services/MixStorageService.cs
+    startLine: 28
+  assemblies:
+  - mix.storage.lib
+  namespace: Mix.Storage.Lib.Services
+  syntax:
+    content: public Task CreateMedia(string folder, string result, int tenantId, string createdBy)
+    parameters:
+    - id: folder
+      type: System.String
+    - id: result
+      type: System.String
+    - id: tenantId
+      type: System.Int32
+    - id: createdBy
+      type: System.String
+    return:
+      type: Task
+    content.vb: Public Function CreateMedia(folder As String, result As String, tenantId As Integer, createdBy As String) As Task
+  overload: Mix.Storage.Lib.Services.MixStorageService.CreateMedia*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Storage.Lib.Services
+  commentId: N:Mix.Storage.Lib.Services
+  name: Mix.Storage.Lib.Services
+  nameWithType: Mix.Storage.Lib.Services
+  fullName: Mix.Storage.Lib.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Storage.Lib.Services.MixStorageService.#ctor*
+  commentId: Overload:Mix.Storage.Lib.Services.MixStorageService.#ctor
+  name: MixStorageService
+  nameWithType: MixStorageService.MixStorageService
+  fullName: Mix.Storage.Lib.Services.MixStorageService.MixStorageService
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Storage.Lib.Services.MixStorageService.UploadFile*
+  commentId: Overload:Mix.Storage.Lib.Services.MixStorageService.UploadFile
+  name: UploadFile
+  nameWithType: MixStorageService.UploadFile
+  fullName: Mix.Storage.Lib.Services.MixStorageService.UploadFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.AspNetCore.Http.IFormFile
+  commentId: T:Microsoft.AspNetCore.Http.IFormFile
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  name: IFormFile
+  nameWithType: IFormFile
+  fullName: Microsoft.AspNetCore.Http.IFormFile
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Task{System.String}
+  commentId: '!:Task{System.String}'
+  definition: Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Storage.Lib.Services.MixStorageService.CreateMedia*
+  commentId: Overload:Mix.Storage.Lib.Services.MixStorageService.CreateMedia
+  name: CreateMedia
+  nameWithType: MixStorageService.CreateMedia
+  fullName: Mix.Storage.Lib.Services.MixStorageService.CreateMedia
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task

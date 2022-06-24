@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions
+  commentId: T:Mix.Identity.Extensions.AuthenticationBuilderExtensions
+  id: AuthenticationBuilderExtensions
+  parent: Mix.Identity.Extensions
+  children:
+  - Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddFacebookIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  - Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddGoogleIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  - Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddMicrosoftAccountIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  - Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddTwitterIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationBuilderExtensions
+  nameWithType: AuthenticationBuilderExtensions
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AuthenticationBuilderExtensions
+    path: ../../mix.core/src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+    startLine: 6
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.Extensions
+  syntax:
+    content: public static class AuthenticationBuilderExtensions
+    content.vb: Public Module AuthenticationBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddFacebookIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  commentId: M:Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddFacebookIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  id: AddFacebookIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  isExtensionMethod: true
+  parent: Mix.Identity.Extensions.AuthenticationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddFacebookIf(AuthenticationBuilder, Boolean, ExternalLogin, String)
+  nameWithType: AuthenticationBuilderExtensions.AddFacebookIf(AuthenticationBuilder, Boolean, ExternalLogin, String)
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddFacebookIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder, System.Boolean, Mix.Shared.Models.ExternalLogin, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AddFacebookIf
+    path: ../../mix.core/src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+    startLine: 8
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.Extensions
+  syntax:
+    content: public static AuthenticationBuilder AddFacebookIf(this AuthenticationBuilder builder, bool condition, ExternalLogin config, string accessDeniedPath)
+    parameters:
+    - id: builder
+      type: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+    - id: condition
+      type: System.Boolean
+    - id: config
+      type: Mix.Shared.Models.ExternalLogin
+    - id: accessDeniedPath
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddFacebookIf(builder As AuthenticationBuilder, condition As Boolean, config As ExternalLogin, accessDeniedPath As String) As AuthenticationBuilder
+  overload: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddFacebookIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddGoogleIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  commentId: M:Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddGoogleIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  id: AddGoogleIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  isExtensionMethod: true
+  parent: Mix.Identity.Extensions.AuthenticationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddGoogleIf(AuthenticationBuilder, Boolean, ExternalLogin, String)
+  nameWithType: AuthenticationBuilderExtensions.AddGoogleIf(AuthenticationBuilder, Boolean, ExternalLogin, String)
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddGoogleIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder, System.Boolean, Mix.Shared.Models.ExternalLogin, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AddGoogleIf
+    path: ../../mix.core/src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+    startLine: 22
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.Extensions
+  syntax:
+    content: public static AuthenticationBuilder AddGoogleIf(this AuthenticationBuilder builder, bool condition, ExternalLogin config, string accessDeniedPath)
+    parameters:
+    - id: builder
+      type: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+    - id: condition
+      type: System.Boolean
+    - id: config
+      type: Mix.Shared.Models.ExternalLogin
+    - id: accessDeniedPath
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddGoogleIf(builder As AuthenticationBuilder, condition As Boolean, config As ExternalLogin, accessDeniedPath As String) As AuthenticationBuilder
+  overload: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddGoogleIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddTwitterIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  commentId: M:Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddTwitterIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  id: AddTwitterIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  isExtensionMethod: true
+  parent: Mix.Identity.Extensions.AuthenticationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddTwitterIf(AuthenticationBuilder, Boolean, ExternalLogin, String)
+  nameWithType: AuthenticationBuilderExtensions.AddTwitterIf(AuthenticationBuilder, Boolean, ExternalLogin, String)
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddTwitterIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder, System.Boolean, Mix.Shared.Models.ExternalLogin, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AddTwitterIf
+    path: ../../mix.core/src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+    startLine: 36
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.Extensions
+  syntax:
+    content: public static AuthenticationBuilder AddTwitterIf(this AuthenticationBuilder builder, bool condition, ExternalLogin config, string accessDeniedPath)
+    parameters:
+    - id: builder
+      type: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+    - id: condition
+      type: System.Boolean
+    - id: config
+      type: Mix.Shared.Models.ExternalLogin
+    - id: accessDeniedPath
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddTwitterIf(builder As AuthenticationBuilder, condition As Boolean, config As ExternalLogin, accessDeniedPath As String) As AuthenticationBuilder
+  overload: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddTwitterIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddMicrosoftAccountIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  commentId: M:Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddMicrosoftAccountIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  id: AddMicrosoftAccountIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Boolean,Mix.Shared.Models.ExternalLogin,System.String)
+  isExtensionMethod: true
+  parent: Mix.Identity.Extensions.AuthenticationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMicrosoftAccountIf(AuthenticationBuilder, Boolean, ExternalLogin, String)
+  nameWithType: AuthenticationBuilderExtensions.AddMicrosoftAccountIf(AuthenticationBuilder, Boolean, ExternalLogin, String)
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddMicrosoftAccountIf(Microsoft.AspNetCore.Authentication.AuthenticationBuilder, System.Boolean, Mix.Shared.Models.ExternalLogin, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: AddMicrosoftAccountIf
+    path: ../../mix.core/src/platform/mix.identity/Extensions/AuthenticationBuilder.cs
+    startLine: 51
+  assemblies:
+  - mix.identity
+  namespace: Mix.Identity.Extensions
+  syntax:
+    content: public static AuthenticationBuilder AddMicrosoftAccountIf(this AuthenticationBuilder builder, bool condition, ExternalLogin config, string accessDeniedPath)
+    parameters:
+    - id: builder
+      type: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+    - id: condition
+      type: System.Boolean
+    - id: config
+      type: Mix.Shared.Models.ExternalLogin
+    - id: accessDeniedPath
+      type: System.String
+    return:
+      type: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AddMicrosoftAccountIf(builder As AuthenticationBuilder, condition As Boolean, config As ExternalLogin, accessDeniedPath As String) As AuthenticationBuilder
+  overload: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddMicrosoftAccountIf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Mix.Identity.Extensions
+  commentId: N:Mix.Identity.Extensions
+  name: Mix.Identity.Extensions
+  nameWithType: Mix.Identity.Extensions
+  fullName: Mix.Identity.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddFacebookIf*
+  commentId: Overload:Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddFacebookIf
+  name: AddFacebookIf
+  nameWithType: AuthenticationBuilderExtensions.AddFacebookIf
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddFacebookIf
+- uid: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+  commentId: T:Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+  parent: Microsoft.AspNetCore.Authentication
+  isExternal: true
+  name: AuthenticationBuilder
+  nameWithType: AuthenticationBuilder
+  fullName: Microsoft.AspNetCore.Authentication.AuthenticationBuilder
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Mix.Shared.Models.ExternalLogin
+  commentId: T:Mix.Shared.Models.ExternalLogin
+  parent: Mix.Shared.Models
+  name: ExternalLogin
+  nameWithType: ExternalLogin
+  fullName: Mix.Shared.Models.ExternalLogin
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.AspNetCore.Authentication
+  commentId: N:Microsoft.AspNetCore.Authentication
+  isExternal: true
+  name: Microsoft.AspNetCore.Authentication
+  nameWithType: Microsoft.AspNetCore.Authentication
+  fullName: Microsoft.AspNetCore.Authentication
+- uid: Mix.Shared.Models
+  commentId: N:Mix.Shared.Models
+  name: Mix.Shared.Models
+  nameWithType: Mix.Shared.Models
+  fullName: Mix.Shared.Models
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddGoogleIf*
+  commentId: Overload:Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddGoogleIf
+  name: AddGoogleIf
+  nameWithType: AuthenticationBuilderExtensions.AddGoogleIf
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddGoogleIf
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddTwitterIf*
+  commentId: Overload:Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddTwitterIf
+  name: AddTwitterIf
+  nameWithType: AuthenticationBuilderExtensions.AddTwitterIf
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddTwitterIf
+- uid: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddMicrosoftAccountIf*
+  commentId: Overload:Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddMicrosoftAccountIf
+  name: AddMicrosoftAccountIf
+  nameWithType: AuthenticationBuilderExtensions.AddMicrosoftAccountIf
+  fullName: Mix.Identity.Extensions.AuthenticationBuilderExtensions.AddMicrosoftAccountIf

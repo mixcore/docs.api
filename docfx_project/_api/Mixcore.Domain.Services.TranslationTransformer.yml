@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mixcore.Domain.Services.TranslationTransformer
+  commentId: T:Mixcore.Domain.Services.TranslationTransformer
+  id: TranslationTransformer
+  parent: Mixcore.Domain.Services
+  children:
+  - Mixcore.Domain.Services.TranslationTransformer.#ctor(IConfiguration,Mix.Lib.Services.CultureService)
+  - Mixcore.Domain.Services.TranslationTransformer.TransformAsync(HttpContext,RouteValueDictionary)
+  langs:
+  - csharp
+  - vb
+  name: TranslationTransformer
+  nameWithType: TranslationTransformer
+  fullName: Mixcore.Domain.Services.TranslationTransformer
+  type: Class
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Services/TranslationTransformer.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TranslationTransformer
+    path: ../../mix.core/src/applications/Mixcore/Domain/Services/TranslationTransformer.cs
+    startLine: 8
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Services
+  syntax:
+    content: 'public class TranslationTransformer : DynamicRouteValueTransformer'
+    content.vb: >-
+      Public Class TranslationTransformer
+          Inherits DynamicRouteValueTransformer
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer
+  inheritedMembers:
+  - Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.TransformAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary)
+  - Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.Http.Endpoint})
+  - Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.State
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mixcore.Domain.Services.TranslationTransformer.#ctor(IConfiguration,Mix.Lib.Services.CultureService)
+  commentId: M:Mixcore.Domain.Services.TranslationTransformer.#ctor(IConfiguration,Mix.Lib.Services.CultureService)
+  id: '#ctor(IConfiguration,Mix.Lib.Services.CultureService)'
+  parent: Mixcore.Domain.Services.TranslationTransformer
+  langs:
+  - csharp
+  - vb
+  name: TranslationTransformer(IConfiguration, CultureService)
+  nameWithType: TranslationTransformer.TranslationTransformer(IConfiguration, CultureService)
+  fullName: Mixcore.Domain.Services.TranslationTransformer.TranslationTransformer(IConfiguration, Mix.Lib.Services.CultureService)
+  type: Constructor
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Services/TranslationTransformer.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/applications/Mixcore/Domain/Services/TranslationTransformer.cs
+    startLine: 13
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Services
+  syntax:
+    content: public TranslationTransformer(IConfiguration configuration, CultureService cultureService)
+    parameters:
+    - id: configuration
+      type: IConfiguration
+    - id: cultureService
+      type: Mix.Lib.Services.CultureService
+    content.vb: Public Sub New(configuration As IConfiguration, cultureService As CultureService)
+  overload: Mixcore.Domain.Services.TranslationTransformer.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mixcore.Domain.Services.TranslationTransformer.TransformAsync(HttpContext,RouteValueDictionary)
+  commentId: M:Mixcore.Domain.Services.TranslationTransformer.TransformAsync(HttpContext,RouteValueDictionary)
+  id: TransformAsync(HttpContext,RouteValueDictionary)
+  parent: Mixcore.Domain.Services.TranslationTransformer
+  langs:
+  - csharp
+  - vb
+  name: TransformAsync(HttpContext, RouteValueDictionary)
+  nameWithType: TranslationTransformer.TransformAsync(HttpContext, RouteValueDictionary)
+  fullName: Mixcore.Domain.Services.TranslationTransformer.TransformAsync(HttpContext, RouteValueDictionary)
+  type: Method
+  source:
+    remote:
+      path: src/applications/Mixcore/Domain/Services/TranslationTransformer.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TransformAsync
+    path: ../../mix.core/src/applications/Mixcore/Domain/Services/TranslationTransformer.cs
+    startLine: 20
+  assemblies:
+  - mixcore
+  namespace: Mixcore.Domain.Services
+  syntax:
+    content: public override ValueTask<RouteValueDictionary> TransformAsync(HttpContext httpContext, RouteValueDictionary values)
+    parameters:
+    - id: httpContext
+      type: HttpContext
+    - id: values
+      type: RouteValueDictionary
+    return:
+      type: ValueTask{RouteValueDictionary}
+    content.vb: Public Overrides Function TransformAsync(httpContext As HttpContext, values As RouteValueDictionary) As ValueTask(Of RouteValueDictionary)
+  overload: Mixcore.Domain.Services.TranslationTransformer.TransformAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Mixcore.Domain.Services
+  commentId: N:Mixcore.Domain.Services
+  name: Mixcore.Domain.Services
+  nameWithType: Mixcore.Domain.Services
+  fullName: Mixcore.Domain.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer
+  commentId: T:Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer
+  parent: Microsoft.AspNetCore.Mvc.Routing
+  isExternal: true
+  name: DynamicRouteValueTransformer
+  nameWithType: DynamicRouteValueTransformer
+  fullName: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer
+- uid: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.TransformAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary)
+  commentId: M:Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.TransformAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary)
+  parent: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer
+  isExternal: true
+  name: TransformAsync(HttpContext, RouteValueDictionary)
+  nameWithType: DynamicRouteValueTransformer.TransformAsync(HttpContext, RouteValueDictionary)
+  fullName: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.TransformAsync(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Routing.RouteValueDictionary)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.TransformAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary)
+    name: TransformAsync
+    nameWithType: DynamicRouteValueTransformer.TransformAsync
+    fullName: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.TransformAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    nameWithType: HttpContext
+    fullName: Microsoft.AspNetCore.Http.HttpContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Routing.RouteValueDictionary
+    name: RouteValueDictionary
+    nameWithType: RouteValueDictionary
+    fullName: Microsoft.AspNetCore.Routing.RouteValueDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.TransformAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary)
+    name: TransformAsync
+    nameWithType: DynamicRouteValueTransformer.TransformAsync
+    fullName: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.TransformAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    nameWithType: HttpContext
+    fullName: Microsoft.AspNetCore.Http.HttpContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Routing.RouteValueDictionary
+    name: RouteValueDictionary
+    nameWithType: RouteValueDictionary
+    fullName: Microsoft.AspNetCore.Routing.RouteValueDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.Http.Endpoint})
+  commentId: M:Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.Http.Endpoint})
+  parent: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer
+  isExternal: true
+  name: FilterAsync(HttpContext, RouteValueDictionary, IReadOnlyList<Endpoint>)
+  nameWithType: DynamicRouteValueTransformer.FilterAsync(HttpContext, RouteValueDictionary, IReadOnlyList<Endpoint>)
+  fullName: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Routing.RouteValueDictionary, System.Collections.Generic.IReadOnlyList<Microsoft.AspNetCore.Http.Endpoint>)
+  nameWithType.vb: DynamicRouteValueTransformer.FilterAsync(HttpContext, RouteValueDictionary, IReadOnlyList(Of Endpoint))
+  fullName.vb: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync(Microsoft.AspNetCore.Http.HttpContext, Microsoft.AspNetCore.Routing.RouteValueDictionary, System.Collections.Generic.IReadOnlyList(Of Microsoft.AspNetCore.Http.Endpoint))
+  name.vb: FilterAsync(HttpContext, RouteValueDictionary, IReadOnlyList(Of Endpoint))
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.Http.Endpoint})
+    name: FilterAsync
+    nameWithType: DynamicRouteValueTransformer.FilterAsync
+    fullName: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    nameWithType: HttpContext
+    fullName: Microsoft.AspNetCore.Http.HttpContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Routing.RouteValueDictionary
+    name: RouteValueDictionary
+    nameWithType: RouteValueDictionary
+    fullName: Microsoft.AspNetCore.Routing.RouteValueDictionary
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Http.Endpoint
+    name: Endpoint
+    nameWithType: Endpoint
+    fullName: Microsoft.AspNetCore.Http.Endpoint
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync(Microsoft.AspNetCore.Http.HttpContext,Microsoft.AspNetCore.Routing.RouteValueDictionary,System.Collections.Generic.IReadOnlyList{Microsoft.AspNetCore.Http.Endpoint})
+    name: FilterAsync
+    nameWithType: DynamicRouteValueTransformer.FilterAsync
+    fullName: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.FilterAsync
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    nameWithType: HttpContext
+    fullName: Microsoft.AspNetCore.Http.HttpContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Microsoft.AspNetCore.Routing.RouteValueDictionary
+    name: RouteValueDictionary
+    nameWithType: RouteValueDictionary
+    fullName: Microsoft.AspNetCore.Routing.RouteValueDictionary
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Http.Endpoint
+    name: Endpoint
+    nameWithType: Endpoint
+    fullName: Microsoft.AspNetCore.Http.Endpoint
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.State
+  commentId: P:Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.State
+  parent: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer
+  isExternal: true
+  name: State
+  nameWithType: DynamicRouteValueTransformer.State
+  fullName: Microsoft.AspNetCore.Mvc.Routing.DynamicRouteValueTransformer.State
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc.Routing
+  commentId: N:Microsoft.AspNetCore.Mvc.Routing
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc.Routing
+  nameWithType: Microsoft.AspNetCore.Mvc.Routing
+  fullName: Microsoft.AspNetCore.Mvc.Routing
+- uid: Mixcore.Domain.Services.TranslationTransformer.#ctor*
+  commentId: Overload:Mixcore.Domain.Services.TranslationTransformer.#ctor
+  name: TranslationTransformer
+  nameWithType: TranslationTransformer.TranslationTransformer
+  fullName: Mixcore.Domain.Services.TranslationTransformer.TranslationTransformer
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: Mix.Lib.Services.CultureService
+  commentId: T:Mix.Lib.Services.CultureService
+  parent: Mix.Lib.Services
+  name: CultureService
+  nameWithType: CultureService
+  fullName: Mix.Lib.Services.CultureService
+- uid: Mix.Lib.Services
+  commentId: N:Mix.Lib.Services
+  name: Mix.Lib.Services
+  nameWithType: Mix.Lib.Services
+  fullName: Mix.Lib.Services
+- uid: Mixcore.Domain.Services.TranslationTransformer.TransformAsync*
+  commentId: Overload:Mixcore.Domain.Services.TranslationTransformer.TransformAsync
+  name: TransformAsync
+  nameWithType: TranslationTransformer.TransformAsync
+  fullName: Mixcore.Domain.Services.TranslationTransformer.TransformAsync
+- uid: HttpContext
+  commentId: '!:HttpContext'
+  isExternal: true
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: HttpContext
+- uid: RouteValueDictionary
+  commentId: '!:RouteValueDictionary'
+  isExternal: true
+  name: RouteValueDictionary
+  nameWithType: RouteValueDictionary
+  fullName: RouteValueDictionary
+- uid: ValueTask{RouteValueDictionary}
+  commentId: '!:ValueTask{RouteValueDictionary}'
+  definition: ValueTask`1
+  name: ValueTask<RouteValueDictionary>
+  nameWithType: ValueTask<RouteValueDictionary>
+  fullName: ValueTask<RouteValueDictionary>
+  nameWithType.vb: ValueTask(Of RouteValueDictionary)
+  fullName.vb: ValueTask(Of RouteValueDictionary)
+  name.vb: ValueTask(Of RouteValueDictionary)
+  spec.csharp:
+  - uid: ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: ValueTask
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RouteValueDictionary
+    name: RouteValueDictionary
+    nameWithType: RouteValueDictionary
+    fullName: RouteValueDictionary
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: ValueTask
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RouteValueDictionary
+    name: RouteValueDictionary
+    nameWithType: RouteValueDictionary
+    fullName: RouteValueDictionary
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ValueTask`1
+  commentId: '!:ValueTask`1'
+  isExternal: true
+  name: ValueTask<>
+  nameWithType: ValueTask<>
+  fullName: ValueTask<>
+  nameWithType.vb: ValueTask(Of )
+  fullName.vb: ValueTask(Of )
+  name.vb: ValueTask(Of )
+  spec.csharp:
+  - uid: ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: ValueTask
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ValueTask`1
+    name: ValueTask
+    nameWithType: ValueTask
+    fullName: ValueTask
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

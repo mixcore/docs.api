@@ -1,0 +1,999 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Controllers.MixPostContentController
+  commentId: T:Mix.Portal.Controllers.MixPostContentController
+  id: MixPostContentController
+  parent: Mix.Portal.Controllers
+  children:
+  - Mix.Portal.Controllers.MixPostContentController.#ctor(MixIdentityService,TenantUserManager,IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  langs:
+  - csharp
+  - vb
+  name: MixPostContentController
+  nameWithType: MixPostContentController
+  fullName: Mix.Portal.Controllers.MixPostContentController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixPostContentController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixPostContentController
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixPostContentController.cs
+    startLine: 4
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [Route("api/v2/rest/mix-portal/mix-post-content")]
+
+      [ApiController]
+
+      public class MixPostContentController : MixBaseContentController<MixPostContentViewModel, MixPostContent, int>
+    content.vb: >-
+      <Route("api/v2/rest/mix-portal/mix-post-content")>
+
+      <ApiController>
+
+      Public Class MixPostContentController
+          Inherits MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Integer)
+  inheritance:
+  - System.Object
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  inheritedMembers:
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._identityService
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._contentType
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._userManager
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._currentUser
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._cmsUOW
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.SearchHandler(SearchRequestDto)
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.CreateHandlerAsync(MixPostContentViewModel)
+  - Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.UpdateHandler(System.String,MixPostContentViewModel)
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/mix-portal/mix-post-content
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Controllers.MixPostContentController.#ctor(MixIdentityService,TenantUserManager,IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  commentId: M:Mix.Portal.Controllers.MixPostContentController.#ctor(MixIdentityService,TenantUserManager,IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
+  id: '#ctor(MixIdentityService,TenantUserManager,IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})'
+  parent: Mix.Portal.Controllers.MixPostContentController
+  langs:
+  - csharp
+  - vb
+  name: MixPostContentController(MixIdentityService, TenantUserManager, IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  nameWithType: MixPostContentController.MixPostContentController(MixIdentityService, TenantUserManager, IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  fullName: Mix.Portal.Controllers.MixPostContentController.MixPostContentController(MixIdentityService, TenantUserManager, IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixPostContentController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixPostContentController.cs
+    startLine: 10
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: public MixPostContentController(MixIdentityService identityService, TenantUserManager userManager, IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, UnitOfWorkInfo<MixCacheDbContext> cacheUOW, UnitOfWorkInfo<MixCmsContext> cmsUOW, IQueueService<MessageQueueModel> queueService)
+    parameters:
+    - id: identityService
+      type: MixIdentityService
+    - id: userManager
+      type: TenantUserManager
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: mixService
+      type: MixService
+    - id: translator
+      type: TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: mixIdentityService
+      type: MixIdentityService
+    - id: cacheUOW
+      type: UnitOfWorkInfo{MixCacheDbContext}
+    - id: cmsUOW
+      type: UnitOfWorkInfo{MixCmsContext}
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    content.vb: Public Sub New(identityService As MixIdentityService, userManager As TenantUserManager, httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, cacheUOW As UnitOfWorkInfo(Of MixCacheDbContext), cmsUOW As UnitOfWorkInfo(Of MixCmsContext), queueService As IQueueService(Of MessageQueueModel))
+  overload: Mix.Portal.Controllers.MixPostContentController.#ctor*
+  nameWithType.vb: MixPostContentController.MixPostContentController(MixIdentityService, TenantUserManager, IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Portal.Controllers.MixPostContentController.MixPostContentController(MixIdentityService, TenantUserManager, IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  name.vb: MixPostContentController(MixIdentityService, TenantUserManager, IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+references:
+- uid: Mix.Portal.Controllers
+  commentId: N:Mix.Portal.Controllers
+  name: Mix.Portal.Controllers
+  nameWithType: Mix.Portal.Controllers
+  fullName: Mix.Portal.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  commentId: T:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  parent: Mix.Portal.Controllers
+  definition: Mix.Portal.Controllers.MixBaseContentController`3
+  name: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32)
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32)
+  name.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32)
+  spec.csharp:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3
+    name: MixBaseContentController
+    nameWithType: MixBaseContentController
+    fullName: Mix.Portal.Controllers.MixBaseContentController
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixPostContentViewModel
+    name: MixPostContentViewModel
+    nameWithType: MixPostContentViewModel
+    fullName: MixPostContentViewModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixPostContent
+    name: MixPostContent
+    nameWithType: MixPostContent
+    fullName: MixPostContent
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3
+    name: MixBaseContentController
+    nameWithType: MixBaseContentController
+    fullName: Mix.Portal.Controllers.MixBaseContentController
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixPostContentViewModel
+    name: MixPostContentViewModel
+    nameWithType: MixPostContentViewModel
+    fullName: MixPostContentViewModel
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixPostContent
+    name: MixPostContent
+    nameWithType: MixPostContent
+    fullName: MixPostContent
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._identityService
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._identityService
+  parent: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  definition: Mix.Portal.Controllers.MixBaseContentController`3._identityService
+  name: _identityService
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>._identityService
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>._identityService
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32)._identityService
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32)._identityService
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._contentType
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._contentType
+  parent: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  definition: Mix.Portal.Controllers.MixBaseContentController`3._contentType
+  name: _contentType
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>._contentType
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>._contentType
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32)._contentType
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32)._contentType
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._userManager
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._userManager
+  parent: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  definition: Mix.Portal.Controllers.MixBaseContentController`3._userManager
+  name: _userManager
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>._userManager
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>._userManager
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32)._userManager
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32)._userManager
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._currentUser
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._currentUser
+  parent: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  definition: Mix.Portal.Controllers.MixBaseContentController`3._currentUser
+  name: _currentUser
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>._currentUser
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>._currentUser
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32)._currentUser
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32)._currentUser
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._cmsUOW
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}._cmsUOW
+  parent: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  definition: Mix.Portal.Controllers.MixBaseContentController`3._cmsUOW
+  name: _cmsUOW
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>._cmsUOW
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>._cmsUOW
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32)._cmsUOW
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32)._cmsUOW
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.SearchHandler(SearchRequestDto)
+  commentId: M:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.SearchHandler(SearchRequestDto)
+  parent: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  definition: Mix.Portal.Controllers.MixBaseContentController`3.SearchHandler(SearchRequestDto)
+  name: SearchHandler(SearchRequestDto)
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>.SearchHandler(SearchRequestDto)
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>.SearchHandler(SearchRequestDto)
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32).SearchHandler(SearchRequestDto)
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32).SearchHandler(SearchRequestDto)
+  spec.csharp:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.SearchHandler(SearchRequestDto)
+    name: SearchHandler
+    nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>.SearchHandler
+    fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>.SearchHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchRequestDto
+    name: SearchRequestDto
+    nameWithType: SearchRequestDto
+    fullName: SearchRequestDto
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.SearchHandler(SearchRequestDto)
+    name: SearchHandler
+    nameWithType: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32).SearchHandler
+    fullName: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32).SearchHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchRequestDto
+    name: SearchRequestDto
+    nameWithType: SearchRequestDto
+    fullName: SearchRequestDto
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.CreateHandlerAsync(MixPostContentViewModel)
+  commentId: M:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.CreateHandlerAsync(MixPostContentViewModel)
+  parent: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  definition: Mix.Portal.Controllers.MixBaseContentController`3.CreateHandlerAsync(`0)
+  name: CreateHandlerAsync(MixPostContentViewModel)
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>.CreateHandlerAsync(MixPostContentViewModel)
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>.CreateHandlerAsync(MixPostContentViewModel)
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32).CreateHandlerAsync(MixPostContentViewModel)
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32).CreateHandlerAsync(MixPostContentViewModel)
+  spec.csharp:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.CreateHandlerAsync(`0)
+    name: CreateHandlerAsync
+    nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>.CreateHandlerAsync
+    fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>.CreateHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MixPostContentViewModel
+    name: MixPostContentViewModel
+    nameWithType: MixPostContentViewModel
+    fullName: MixPostContentViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.CreateHandlerAsync(`0)
+    name: CreateHandlerAsync
+    nameWithType: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32).CreateHandlerAsync
+    fullName: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32).CreateHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: MixPostContentViewModel
+    name: MixPostContentViewModel
+    nameWithType: MixPostContentViewModel
+    fullName: MixPostContentViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.UpdateHandler(System.String,MixPostContentViewModel)
+  commentId: M:Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}.UpdateHandler(System.String,MixPostContentViewModel)
+  parent: Mix.Portal.Controllers.MixBaseContentController{MixPostContentViewModel,MixPostContent,System.Int32}
+  definition: Mix.Portal.Controllers.MixBaseContentController`3.UpdateHandler(System.String,`0)
+  name: UpdateHandler(String, MixPostContentViewModel)
+  nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>.UpdateHandler(String, MixPostContentViewModel)
+  fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>.UpdateHandler(System.String, MixPostContentViewModel)
+  nameWithType.vb: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32).UpdateHandler(String, MixPostContentViewModel)
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32).UpdateHandler(System.String, MixPostContentViewModel)
+  spec.csharp:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.UpdateHandler(System.String,`0)
+    name: UpdateHandler
+    nameWithType: MixBaseContentController<MixPostContentViewModel, MixPostContent, Int32>.UpdateHandler
+    fullName: Mix.Portal.Controllers.MixBaseContentController<MixPostContentViewModel, MixPostContent, System.Int32>.UpdateHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixPostContentViewModel
+    name: MixPostContentViewModel
+    nameWithType: MixPostContentViewModel
+    fullName: MixPostContentViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.UpdateHandler(System.String,`0)
+    name: UpdateHandler
+    nameWithType: MixBaseContentController(Of MixPostContentViewModel, MixPostContent, Int32).UpdateHandler
+    fullName: Mix.Portal.Controllers.MixBaseContentController(Of MixPostContentViewModel, MixPostContent, System.Int32).UpdateHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixPostContentViewModel
+    name: MixPostContentViewModel
+    nameWithType: MixPostContentViewModel
+    fullName: MixPostContentViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Portal.Controllers.MixBaseContentController`3
+  commentId: T:Mix.Portal.Controllers.MixBaseContentController`3
+  name: MixBaseContentController<TView, TEntity, TPrimaryKey>
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey)
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey)
+  name.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3
+    name: MixBaseContentController
+    nameWithType: MixBaseContentController
+    fullName: Mix.Portal.Controllers.MixBaseContentController
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3
+    name: MixBaseContentController
+    nameWithType: MixBaseContentController
+    fullName: Mix.Portal.Controllers.MixBaseContentController
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixBaseContentController`3._identityService
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController`3._identityService
+  name: _identityService
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>._identityService
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>._identityService
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey)._identityService
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey)._identityService
+- uid: Mix.Portal.Controllers.MixBaseContentController`3._contentType
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController`3._contentType
+  name: _contentType
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>._contentType
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>._contentType
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey)._contentType
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey)._contentType
+- uid: Mix.Portal.Controllers.MixBaseContentController`3._userManager
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController`3._userManager
+  name: _userManager
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>._userManager
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>._userManager
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey)._userManager
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey)._userManager
+- uid: Mix.Portal.Controllers.MixBaseContentController`3._currentUser
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController`3._currentUser
+  name: _currentUser
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>._currentUser
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>._currentUser
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey)._currentUser
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey)._currentUser
+- uid: Mix.Portal.Controllers.MixBaseContentController`3._cmsUOW
+  commentId: F:Mix.Portal.Controllers.MixBaseContentController`3._cmsUOW
+  name: _cmsUOW
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>._cmsUOW
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>._cmsUOW
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey)._cmsUOW
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey)._cmsUOW
+- uid: Mix.Portal.Controllers.MixBaseContentController`3.SearchHandler(SearchRequestDto)
+  commentId: M:Mix.Portal.Controllers.MixBaseContentController`3.SearchHandler(SearchRequestDto)
+  isExternal: true
+  name: SearchHandler(SearchRequestDto)
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>.SearchHandler(SearchRequestDto)
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>.SearchHandler(SearchRequestDto)
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey).SearchHandler(SearchRequestDto)
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey).SearchHandler(SearchRequestDto)
+  spec.csharp:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.SearchHandler(SearchRequestDto)
+    name: SearchHandler
+    nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>.SearchHandler
+    fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>.SearchHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchRequestDto
+    name: SearchRequestDto
+    nameWithType: SearchRequestDto
+    fullName: SearchRequestDto
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.SearchHandler(SearchRequestDto)
+    name: SearchHandler
+    nameWithType: MixBaseContentController(Of TView, TEntity, TPrimaryKey).SearchHandler
+    fullName: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey).SearchHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: SearchRequestDto
+    name: SearchRequestDto
+    nameWithType: SearchRequestDto
+    fullName: SearchRequestDto
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixBaseContentController`3.CreateHandlerAsync(`0)
+  commentId: M:Mix.Portal.Controllers.MixBaseContentController`3.CreateHandlerAsync(`0)
+  name: CreateHandlerAsync(TView)
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>.CreateHandlerAsync(TView)
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>.CreateHandlerAsync(TView)
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey).CreateHandlerAsync(TView)
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey).CreateHandlerAsync(TView)
+  spec.csharp:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.CreateHandlerAsync(`0)
+    name: CreateHandlerAsync
+    nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>.CreateHandlerAsync
+    fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>.CreateHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.CreateHandlerAsync(`0)
+    name: CreateHandlerAsync
+    nameWithType: MixBaseContentController(Of TView, TEntity, TPrimaryKey).CreateHandlerAsync
+    fullName: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey).CreateHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixBaseContentController`3.UpdateHandler(System.String,`0)
+  commentId: M:Mix.Portal.Controllers.MixBaseContentController`3.UpdateHandler(System.String,`0)
+  isExternal: true
+  name: UpdateHandler(String, TView)
+  nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>.UpdateHandler(String, TView)
+  fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>.UpdateHandler(System.String, TView)
+  nameWithType.vb: MixBaseContentController(Of TView, TEntity, TPrimaryKey).UpdateHandler(String, TView)
+  fullName.vb: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey).UpdateHandler(System.String, TView)
+  spec.csharp:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.UpdateHandler(System.String,`0)
+    name: UpdateHandler
+    nameWithType: MixBaseContentController<TView, TEntity, TPrimaryKey>.UpdateHandler
+    fullName: Mix.Portal.Controllers.MixBaseContentController<TView, TEntity, TPrimaryKey>.UpdateHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Portal.Controllers.MixBaseContentController`3.UpdateHandler(System.String,`0)
+    name: UpdateHandler
+    nameWithType: MixBaseContentController(Of TView, TEntity, TPrimaryKey).UpdateHandler
+    fullName: Mix.Portal.Controllers.MixBaseContentController(Of TView, TEntity, TPrimaryKey).UpdateHandler
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixPostContentController.#ctor*
+  commentId: Overload:Mix.Portal.Controllers.MixPostContentController.#ctor
+  name: MixPostContentController
+  nameWithType: MixPostContentController.MixPostContentController
+  fullName: Mix.Portal.Controllers.MixPostContentController.MixPostContentController
+- uid: MixIdentityService
+  isExternal: true
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: MixIdentityService
+- uid: TenantUserManager
+  isExternal: true
+  name: TenantUserManager
+  nameWithType: TenantUserManager
+  fullName: TenantUserManager
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: MixService
+  isExternal: true
+  name: MixService
+  nameWithType: MixService
+  fullName: MixService
+- uid: TranslatorService
+  isExternal: true
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{MixCacheDbContext}
+  commentId: '!:UnitOfWorkInfo{MixCacheDbContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType: UnitOfWorkInfo<MixCacheDbContext>
+  fullName: UnitOfWorkInfo<MixCacheDbContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  name.vb: UnitOfWorkInfo(Of MixCacheDbContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCacheDbContext
+    name: MixCacheDbContext
+    nameWithType: MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

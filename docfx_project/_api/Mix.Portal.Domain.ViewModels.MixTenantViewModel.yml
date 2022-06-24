@@ -1,0 +1,721 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  commentId: T:Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  id: MixTenantViewModel
+  parent: Mix.Portal.Domain.ViewModels
+  children:
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor(MixTenant,UnitOfWorkInfo)
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor(UnitOfWorkInfo)
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.CloneCulture(MixCulture)
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.Culture
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.Description
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.DisplayName
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.Domains
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.ExpandView
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.InitDomain
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.PrimaryDomain
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.SystemName
+  - Mix.Portal.Domain.ViewModels.MixTenantViewModel.Validate
+  langs:
+  - csharp
+  - vb
+  name: MixTenantViewModel
+  nameWithType: MixTenantViewModel
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantViewModel
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 4
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: 'public class MixTenantViewModel : ViewModelBase<MixCmsContext, MixTenant, int, MixTenantViewModel>'
+    content.vb: >-
+      Public Class MixTenantViewModel
+          Inherits ViewModelBase(Of MixCmsContext, MixTenant, Integer, MixTenantViewModel)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.PrimaryDomain
+  commentId: P:Mix.Portal.Domain.ViewModels.MixTenantViewModel.PrimaryDomain
+  id: PrimaryDomain
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: PrimaryDomain
+  nameWithType: MixTenantViewModel.PrimaryDomain
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.PrimaryDomain
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: PrimaryDomain
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 10
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public string PrimaryDomain { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PrimaryDomain As String
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.PrimaryDomain*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SystemName
+  commentId: P:Mix.Portal.Domain.ViewModels.MixTenantViewModel.SystemName
+  id: SystemName
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: SystemName
+  nameWithType: MixTenantViewModel.SystemName
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SystemName
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SystemName
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 11
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public string SystemName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SystemName As String
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SystemName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.DisplayName
+  commentId: P:Mix.Portal.Domain.ViewModels.MixTenantViewModel.DisplayName
+  id: DisplayName
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: MixTenantViewModel.DisplayName
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DisplayName
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 12
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.DisplayName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Description
+  commentId: P:Mix.Portal.Domain.ViewModels.MixTenantViewModel.Description
+  id: Description
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: MixTenantViewModel.Description
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Description
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Description
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 13
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Description*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Culture
+  commentId: P:Mix.Portal.Domain.ViewModels.MixTenantViewModel.Culture
+  id: Culture
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: MixTenantViewModel.Culture
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Culture
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Culture
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 15
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public MixCultureViewModel Culture { get; set; }
+    parameters: []
+    return:
+      type: Mix.Portal.Domain.ViewModels.MixCultureViewModel
+    content.vb: Public Property Culture As MixCultureViewModel
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Culture*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Domains
+  commentId: P:Mix.Portal.Domain.ViewModels.MixTenantViewModel.Domains
+  id: Domains
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: Domains
+  nameWithType: MixTenantViewModel.Domains
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Domains
+  type: Property
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Domains
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 16
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public List<MixDomainViewModel> Domains { get; set; }
+    parameters: []
+    return:
+      type: List{MixDomainViewModel}
+    content.vb: Public Property Domains As List(Of MixDomainViewModel)
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Domains*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor
+  commentId: M:Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor
+  id: '#ctor'
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixTenantViewModel()
+  nameWithType: MixTenantViewModel.MixTenantViewModel()
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.MixTenantViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 21
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public MixTenantViewModel()
+    content.vb: Public Sub New
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor(MixTenant,UnitOfWorkInfo)
+  commentId: M:Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor(MixTenant,UnitOfWorkInfo)
+  id: '#ctor(MixTenant,UnitOfWorkInfo)'
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixTenantViewModel(MixTenant, UnitOfWorkInfo)
+  nameWithType: MixTenantViewModel.MixTenantViewModel(MixTenant, UnitOfWorkInfo)
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.MixTenantViewModel(MixTenant, UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 25
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public MixTenantViewModel(MixTenant entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: MixTenant
+    - id: uowInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(entity As MixTenant, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor(UnitOfWorkInfo)
+  commentId: M:Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor(UnitOfWorkInfo)
+  id: '#ctor(UnitOfWorkInfo)'
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: MixTenantViewModel(UnitOfWorkInfo)
+  nameWithType: MixTenantViewModel.MixTenantViewModel(UnitOfWorkInfo)
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.MixTenantViewModel(UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 31
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public MixTenantViewModel(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: UnitOfWorkInfo
+    content.vb: Public Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.ExpandView
+  commentId: M:Mix.Portal.Domain.ViewModels.MixTenantViewModel.ExpandView
+  id: ExpandView
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: ExpandView()
+  nameWithType: MixTenantViewModel.ExpandView()
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.ExpandView()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: ExpandView
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 39
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public override Task ExpandView()
+    return:
+      type: Task
+    content.vb: Public Overrides Function ExpandView As Task
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.ExpandView*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Validate
+  commentId: M:Mix.Portal.Domain.ViewModels.MixTenantViewModel.Validate
+  id: Validate
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: Validate()
+  nameWithType: MixTenantViewModel.Validate()
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Validate()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Validate
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 44
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public override Task Validate()
+    return:
+      type: Task
+    content.vb: Public Overrides Function Validate As Task
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Validate*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  commentId: M:Mix.Portal.Domain.ViewModels.MixTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  id: SaveEntityRelationshipAsync(MixTenant)
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: SaveEntityRelationshipAsync(MixTenant)
+  nameWithType: MixTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SaveEntityRelationshipAsync(MixTenant)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SaveEntityRelationshipAsync
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 57
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: protected override Task SaveEntityRelationshipAsync(MixTenant parent)
+    parameters:
+    - id: parent
+      type: MixTenant
+    return:
+      type: Task
+    content.vb: Protected Overrides Function SaveEntityRelationshipAsync(parent As MixTenant) As Task
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SaveEntityRelationshipAsync*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.InitDomain
+  commentId: M:Mix.Portal.Domain.ViewModels.MixTenantViewModel.InitDomain
+  id: InitDomain
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: InitDomain()
+  nameWithType: MixTenantViewModel.InitDomain()
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.InitDomain()
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitDomain
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 90
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public void InitDomain()
+    content.vb: Public Sub InitDomain
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.InitDomain*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.CloneCulture(MixCulture)
+  commentId: M:Mix.Portal.Domain.ViewModels.MixTenantViewModel.CloneCulture(MixCulture)
+  id: CloneCulture(MixCulture)
+  parent: Mix.Portal.Domain.ViewModels.MixTenantViewModel
+  langs:
+  - csharp
+  - vb
+  name: CloneCulture(MixCulture)
+  nameWithType: MixTenantViewModel.CloneCulture(MixCulture)
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.CloneCulture(MixCulture)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CloneCulture
+    path: ../../mix.core/src/modules/mix.portal/Domain/ViewModels/MixTenantViewModel.cs
+    startLine: 103
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Domain.ViewModels
+  syntax:
+    content: public void CloneCulture(MixCulture culture)
+    parameters:
+    - id: culture
+      type: MixCulture
+    content.vb: Public Sub CloneCulture(culture As MixCulture)
+  overload: Mix.Portal.Domain.ViewModels.MixTenantViewModel.CloneCulture*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Portal.Domain.ViewModels
+  commentId: N:Mix.Portal.Domain.ViewModels
+  name: Mix.Portal.Domain.ViewModels
+  nameWithType: Mix.Portal.Domain.ViewModels
+  fullName: Mix.Portal.Domain.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.PrimaryDomain*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.PrimaryDomain
+  name: PrimaryDomain
+  nameWithType: MixTenantViewModel.PrimaryDomain
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.PrimaryDomain
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SystemName*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.SystemName
+  name: SystemName
+  nameWithType: MixTenantViewModel.SystemName
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SystemName
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.DisplayName*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.DisplayName
+  name: DisplayName
+  nameWithType: MixTenantViewModel.DisplayName
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.DisplayName
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Description*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.Description
+  name: Description
+  nameWithType: MixTenantViewModel.Description
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Description
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Culture*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.Culture
+  name: Culture
+  nameWithType: MixTenantViewModel.Culture
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Culture
+- uid: Mix.Portal.Domain.ViewModels.MixCultureViewModel
+  commentId: T:Mix.Portal.Domain.ViewModels.MixCultureViewModel
+  parent: Mix.Portal.Domain.ViewModels
+  name: MixCultureViewModel
+  nameWithType: MixCultureViewModel
+  fullName: Mix.Portal.Domain.ViewModels.MixCultureViewModel
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Domains*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.Domains
+  name: Domains
+  nameWithType: MixTenantViewModel.Domains
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Domains
+- uid: List{MixDomainViewModel}
+  commentId: '!:List{MixDomainViewModel}'
+  definition: List`1
+  name: List<MixDomainViewModel>
+  nameWithType: List<MixDomainViewModel>
+  fullName: List<MixDomainViewModel>
+  nameWithType.vb: List(Of MixDomainViewModel)
+  fullName.vb: List(Of MixDomainViewModel)
+  name.vb: List(Of MixDomainViewModel)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixDomainViewModel
+    name: MixDomainViewModel
+    nameWithType: MixDomainViewModel
+    fullName: MixDomainViewModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixDomainViewModel
+    name: MixDomainViewModel
+    nameWithType: MixDomainViewModel
+    fullName: MixDomainViewModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.#ctor
+  name: MixTenantViewModel
+  nameWithType: MixTenantViewModel.MixTenantViewModel
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.MixTenantViewModel
+- uid: MixTenant
+  isExternal: true
+  name: MixTenant
+  nameWithType: MixTenant
+  fullName: MixTenant
+- uid: UnitOfWorkInfo
+  isExternal: true
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: UnitOfWorkInfo
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.ExpandView*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.ExpandView
+  name: ExpandView
+  nameWithType: MixTenantViewModel.ExpandView
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.ExpandView
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Validate*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.Validate
+  name: Validate
+  nameWithType: MixTenantViewModel.Validate
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.Validate
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SaveEntityRelationshipAsync*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.SaveEntityRelationshipAsync
+  name: SaveEntityRelationshipAsync
+  nameWithType: MixTenantViewModel.SaveEntityRelationshipAsync
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.SaveEntityRelationshipAsync
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.InitDomain*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.InitDomain
+  name: InitDomain
+  nameWithType: MixTenantViewModel.InitDomain
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.InitDomain
+- uid: Mix.Portal.Domain.ViewModels.MixTenantViewModel.CloneCulture*
+  commentId: Overload:Mix.Portal.Domain.ViewModels.MixTenantViewModel.CloneCulture
+  name: CloneCulture
+  nameWithType: MixTenantViewModel.CloneCulture
+  fullName: Mix.Portal.Domain.ViewModels.MixTenantViewModel.CloneCulture
+- uid: MixCulture
+  isExternal: true
+  name: MixCulture
+  nameWithType: MixCulture
+  fullName: MixCulture
