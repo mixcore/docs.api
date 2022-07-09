@@ -146,11 +146,11 @@ items:
   - mix.shared
   namespace: Mix.Shared.Models
   syntax:
-    content: public PagingRequestModel(int defaultPageSize = 1000)
+    content: public PagingRequestModel(int defaultPageSize = default(int))
     parameters:
     - id: defaultPageSize
       type: System.Int32
-    content.vb: Public Sub New(defaultPageSize As Integer = 1000)
+    content.vb: Public Sub New(defaultPageSize As Integer = Nothing)
   overload: Mix.Shared.Models.PagingRequestModel.#ctor*
   modifiers.csharp:
   - public
@@ -179,13 +179,13 @@ items:
   - mix.shared
   namespace: Mix.Shared.Models
   syntax:
-    content: public PagingRequestModel(HttpRequest request, int defaultPageSize = 1000)
+    content: public PagingRequestModel(HttpRequest request, int defaultPageSize = default(int))
     parameters:
     - id: request
       type: Microsoft.AspNetCore.Http.HttpRequest
     - id: defaultPageSize
       type: System.Int32
-    content.vb: Public Sub New(request As HttpRequest, defaultPageSize As Integer = 1000)
+    content.vb: Public Sub New(request As HttpRequest, defaultPageSize As Integer = Nothing)
   overload: Mix.Shared.Models.PagingRequestModel.#ctor*
   modifiers.csharp:
   - public

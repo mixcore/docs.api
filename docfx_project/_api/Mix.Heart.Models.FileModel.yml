@@ -6,7 +6,7 @@ items:
   parent: Mix.Heart.Models
   children:
   - Mix.Heart.Models.FileModel.#ctor
-  - Mix.Heart.Models.FileModel.#ctor(Microsoft.AspNetCore.Http.IFormFile,System.String)
+  - Mix.Heart.Models.FileModel.#ctor(IFormFile,System.String)
   - Mix.Heart.Models.FileModel.Content
   - Mix.Heart.Models.FileModel.Extension
   - Mix.Heart.Models.FileModel.FileFolder
@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: FileModel
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: FolderName
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -101,7 +101,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: FileFolder
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -136,7 +136,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Filename
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Extension
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -206,7 +206,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Content
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: FileStream
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: FullPath
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: WebPath
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -346,7 +346,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: .ctor
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -362,21 +362,21 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Mix.Heart.Models.FileModel.#ctor(Microsoft.AspNetCore.Http.IFormFile,System.String)
-  commentId: M:Mix.Heart.Models.FileModel.#ctor(Microsoft.AspNetCore.Http.IFormFile,System.String)
-  id: '#ctor(Microsoft.AspNetCore.Http.IFormFile,System.String)'
+- uid: Mix.Heart.Models.FileModel.#ctor(IFormFile,System.String)
+  commentId: M:Mix.Heart.Models.FileModel.#ctor(IFormFile,System.String)
+  id: '#ctor(IFormFile,System.String)'
   parent: Mix.Heart.Models.FileModel
   langs:
   - csharp
   - vb
   name: FileModel(IFormFile, String)
   nameWithType: FileModel.FileModel(IFormFile, String)
-  fullName: Mix.Heart.Models.FileModel.FileModel(Microsoft.AspNetCore.Http.IFormFile, System.String)
+  fullName: Mix.Heart.Models.FileModel.FileModel(IFormFile, System.String)
   type: Constructor
   source:
     remote:
       path: src/Mix.Heart/Model/FileModel.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: .ctor
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Model/FileModel.cs
@@ -388,7 +388,7 @@ items:
     content: public FileModel(IFormFile file, string folder)
     parameters:
     - id: file
-      type: Microsoft.AspNetCore.Http.IFormFile
+      type: IFormFile
     - id: folder
       type: System.String
     content.vb: Public Sub New(file As IFormFile, folder As String)
@@ -747,16 +747,8 @@ references:
   name: FileModel
   nameWithType: FileModel.FileModel
   fullName: Mix.Heart.Models.FileModel.FileModel
-- uid: Microsoft.AspNetCore.Http.IFormFile
-  commentId: T:Microsoft.AspNetCore.Http.IFormFile
-  parent: Microsoft.AspNetCore.Http
+- uid: IFormFile
   isExternal: true
   name: IFormFile
   nameWithType: IFormFile
-  fullName: Microsoft.AspNetCore.Http.IFormFile
-- uid: Microsoft.AspNetCore.Http
-  commentId: N:Microsoft.AspNetCore.Http
-  isExternal: true
-  name: Microsoft.AspNetCore.Http
-  nameWithType: Microsoft.AspNetCore.Http
-  fullName: Microsoft.AspNetCore.Http
+  fullName: IFormFile

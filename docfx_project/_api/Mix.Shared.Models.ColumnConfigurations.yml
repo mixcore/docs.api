@@ -8,6 +8,7 @@ items:
   - Mix.Shared.Models.ColumnConfigurations.#ctor
   - Mix.Shared.Models.ColumnConfigurations.BelongTo
   - Mix.Shared.Models.ColumnConfigurations.IsEncrypt
+  - Mix.Shared.Models.ColumnConfigurations.IsRequire
   - Mix.Shared.Models.ColumnConfigurations.MaxLength
   - Mix.Shared.Models.ColumnConfigurations.OptionsConfigurationName
   - Mix.Shared.Models.ColumnConfigurations.Upload
@@ -78,6 +79,41 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: Mix.Shared.Models.ColumnConfigurations.IsRequire
+  commentId: P:Mix.Shared.Models.ColumnConfigurations.IsRequire
+  id: IsRequire
+  parent: Mix.Shared.Models.ColumnConfigurations
+  langs:
+  - csharp
+  - vb
+  name: IsRequire
+  nameWithType: ColumnConfigurations.IsRequire
+  fullName: Mix.Shared.Models.ColumnConfigurations.IsRequire
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.shared/Models/ColumnConfigurations.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IsRequire
+    path: ../../mix.core/src/platform/mix.shared/Models/ColumnConfigurations.cs
+    startLine: 11
+  assemblies:
+  - mix.shared
+  namespace: Mix.Shared.Models
+  syntax:
+    content: public bool IsRequire { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRequire As Boolean
+  overload: Mix.Shared.Models.ColumnConfigurations.IsRequire*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: Mix.Shared.Models.ColumnConfigurations.IsEncrypt
   commentId: P:Mix.Shared.Models.ColumnConfigurations.IsEncrypt
   id: IsEncrypt
@@ -96,7 +132,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: IsEncrypt
     path: ../../mix.core/src/platform/mix.shared/Models/ColumnConfigurations.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - mix.shared
   namespace: Mix.Shared.Models
@@ -131,7 +167,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MaxLength
     path: ../../mix.core/src/platform/mix.shared/Models/ColumnConfigurations.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - mix.shared
   namespace: Mix.Shared.Models
@@ -166,7 +202,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: BelongTo
     path: ../../mix.core/src/platform/mix.shared/Models/ColumnConfigurations.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - mix.shared
   namespace: Mix.Shared.Models
@@ -201,7 +237,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: OptionsConfigurationName
     path: ../../mix.core/src/platform/mix.shared/Models/ColumnConfigurations.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - mix.shared
   namespace: Mix.Shared.Models
@@ -236,7 +272,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: Upload
     path: ../../mix.core/src/platform/mix.shared/Models/ColumnConfigurations.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - mix.shared
   namespace: Mix.Shared.Models
@@ -556,11 +592,11 @@ references:
   name: ColumnConfigurations
   nameWithType: ColumnConfigurations.ColumnConfigurations
   fullName: Mix.Shared.Models.ColumnConfigurations.ColumnConfigurations
-- uid: Mix.Shared.Models.ColumnConfigurations.IsEncrypt*
-  commentId: Overload:Mix.Shared.Models.ColumnConfigurations.IsEncrypt
-  name: IsEncrypt
-  nameWithType: ColumnConfigurations.IsEncrypt
-  fullName: Mix.Shared.Models.ColumnConfigurations.IsEncrypt
+- uid: Mix.Shared.Models.ColumnConfigurations.IsRequire*
+  commentId: Overload:Mix.Shared.Models.ColumnConfigurations.IsRequire
+  name: IsRequire
+  nameWithType: ColumnConfigurations.IsRequire
+  fullName: Mix.Shared.Models.ColumnConfigurations.IsRequire
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -568,6 +604,11 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
+- uid: Mix.Shared.Models.ColumnConfigurations.IsEncrypt*
+  commentId: Overload:Mix.Shared.Models.ColumnConfigurations.IsEncrypt
+  name: IsEncrypt
+  nameWithType: ColumnConfigurations.IsEncrypt
+  fullName: Mix.Shared.Models.ColumnConfigurations.IsEncrypt
 - uid: Mix.Shared.Models.ColumnConfigurations.MaxLength*
   commentId: Overload:Mix.Shared.Models.ColumnConfigurations.MaxLength
   name: MaxLength

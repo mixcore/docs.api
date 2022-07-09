@@ -6,12 +6,14 @@ items:
   parent: Mix.Heart.Enums
   children:
   - Mix.Heart.Enums.ExpressionMethod.And
-  - Mix.Heart.Enums.ExpressionMethod.Ct
-  - Mix.Heart.Enums.ExpressionMethod.Eq
-  - Mix.Heart.Enums.ExpressionMethod.Gt
-  - Mix.Heart.Enums.ExpressionMethod.Gte
-  - Mix.Heart.Enums.ExpressionMethod.Lt
-  - Mix.Heart.Enums.ExpressionMethod.Lte
+  - Mix.Heart.Enums.ExpressionMethod.Equal
+  - Mix.Heart.Enums.ExpressionMethod.GreaterThan
+  - Mix.Heart.Enums.ExpressionMethod.GreaterThanOrEqual
+  - Mix.Heart.Enums.ExpressionMethod.In
+  - Mix.Heart.Enums.ExpressionMethod.LessThan
+  - Mix.Heart.Enums.ExpressionMethod.LessThanOrEqual
+  - Mix.Heart.Enums.ExpressionMethod.Like
+  - Mix.Heart.Enums.ExpressionMethod.NotEqual
   - Mix.Heart.Enums.ExpressionMethod.Or
   langs:
   - csharp
@@ -23,7 +25,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: ExpressionMethod
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
@@ -40,30 +42,30 @@ items:
   modifiers.vb:
   - Public
   - Enum
-- uid: Mix.Heart.Enums.ExpressionMethod.Eq
-  commentId: F:Mix.Heart.Enums.ExpressionMethod.Eq
-  id: Eq
+- uid: Mix.Heart.Enums.ExpressionMethod.Equal
+  commentId: F:Mix.Heart.Enums.ExpressionMethod.Equal
+  id: Equal
   parent: Mix.Heart.Enums.ExpressionMethod
   langs:
   - csharp
   - vb
-  name: Eq
-  nameWithType: ExpressionMethod.Eq
-  fullName: Mix.Heart.Enums.ExpressionMethod.Eq
+  name: Equal
+  nameWithType: ExpressionMethod.Equal
+  fullName: Mix.Heart.Enums.ExpressionMethod.Equal
   type: Field
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
-    id: Eq
+    id: Equal
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
     startLine: 4
   assemblies:
   - mix.heart
   namespace: Mix.Heart.Enums
   syntax:
-    content: Eq = 0
+    content: Equal = 0
     return:
       type: Mix.Heart.Enums.ExpressionMethod
   modifiers.csharp:
@@ -72,30 +74,30 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Mix.Heart.Enums.ExpressionMethod.Ct
-  commentId: F:Mix.Heart.Enums.ExpressionMethod.Ct
-  id: Ct
+- uid: Mix.Heart.Enums.ExpressionMethod.Like
+  commentId: F:Mix.Heart.Enums.ExpressionMethod.Like
+  id: Like
   parent: Mix.Heart.Enums.ExpressionMethod
   langs:
   - csharp
   - vb
-  name: Ct
-  nameWithType: ExpressionMethod.Ct
-  fullName: Mix.Heart.Enums.ExpressionMethod.Ct
+  name: Like
+  nameWithType: ExpressionMethod.Like
+  fullName: Mix.Heart.Enums.ExpressionMethod.Like
   type: Field
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
-    id: Ct
+    id: Like
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
     startLine: 5
   assemblies:
   - mix.heart
   namespace: Mix.Heart.Enums
   syntax:
-    content: Ct = 1
+    content: Like = 1
     return:
       type: Mix.Heart.Enums.ExpressionMethod
   modifiers.csharp:
@@ -104,30 +106,30 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Mix.Heart.Enums.ExpressionMethod.Lt
-  commentId: F:Mix.Heart.Enums.ExpressionMethod.Lt
-  id: Lt
+- uid: Mix.Heart.Enums.ExpressionMethod.In
+  commentId: F:Mix.Heart.Enums.ExpressionMethod.In
+  id: In
   parent: Mix.Heart.Enums.ExpressionMethod
   langs:
   - csharp
   - vb
-  name: Lt
-  nameWithType: ExpressionMethod.Lt
-  fullName: Mix.Heart.Enums.ExpressionMethod.Lt
+  name: In
+  nameWithType: ExpressionMethod.In
+  fullName: Mix.Heart.Enums.ExpressionMethod.In
   type: Field
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
-    id: Lt
+    id: In
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
     startLine: 6
   assemblies:
   - mix.heart
   namespace: Mix.Heart.Enums
   syntax:
-    content: Lt = 2
+    content: In = 2
     return:
       type: Mix.Heart.Enums.ExpressionMethod
   modifiers.csharp:
@@ -136,30 +138,30 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Mix.Heart.Enums.ExpressionMethod.Gt
-  commentId: F:Mix.Heart.Enums.ExpressionMethod.Gt
-  id: Gt
+- uid: Mix.Heart.Enums.ExpressionMethod.NotEqual
+  commentId: F:Mix.Heart.Enums.ExpressionMethod.NotEqual
+  id: NotEqual
   parent: Mix.Heart.Enums.ExpressionMethod
   langs:
   - csharp
   - vb
-  name: Gt
-  nameWithType: ExpressionMethod.Gt
-  fullName: Mix.Heart.Enums.ExpressionMethod.Gt
+  name: NotEqual
+  nameWithType: ExpressionMethod.NotEqual
+  fullName: Mix.Heart.Enums.ExpressionMethod.NotEqual
   type: Field
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
-    id: Gt
+    id: NotEqual
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
     startLine: 7
   assemblies:
   - mix.heart
   namespace: Mix.Heart.Enums
   syntax:
-    content: Gt = 3
+    content: NotEqual = 3
     return:
       type: Mix.Heart.Enums.ExpressionMethod
   modifiers.csharp:
@@ -168,30 +170,30 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Mix.Heart.Enums.ExpressionMethod.Lte
-  commentId: F:Mix.Heart.Enums.ExpressionMethod.Lte
-  id: Lte
+- uid: Mix.Heart.Enums.ExpressionMethod.LessThan
+  commentId: F:Mix.Heart.Enums.ExpressionMethod.LessThan
+  id: LessThan
   parent: Mix.Heart.Enums.ExpressionMethod
   langs:
   - csharp
   - vb
-  name: Lte
-  nameWithType: ExpressionMethod.Lte
-  fullName: Mix.Heart.Enums.ExpressionMethod.Lte
+  name: LessThan
+  nameWithType: ExpressionMethod.LessThan
+  fullName: Mix.Heart.Enums.ExpressionMethod.LessThan
   type: Field
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
-    id: Lte
+    id: LessThan
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
     startLine: 8
   assemblies:
   - mix.heart
   namespace: Mix.Heart.Enums
   syntax:
-    content: Lte = 4
+    content: LessThan = 4
     return:
       type: Mix.Heart.Enums.ExpressionMethod
   modifiers.csharp:
@@ -200,30 +202,94 @@ items:
   modifiers.vb:
   - Public
   - Const
-- uid: Mix.Heart.Enums.ExpressionMethod.Gte
-  commentId: F:Mix.Heart.Enums.ExpressionMethod.Gte
-  id: Gte
+- uid: Mix.Heart.Enums.ExpressionMethod.GreaterThan
+  commentId: F:Mix.Heart.Enums.ExpressionMethod.GreaterThan
+  id: GreaterThan
   parent: Mix.Heart.Enums.ExpressionMethod
   langs:
   - csharp
   - vb
-  name: Gte
-  nameWithType: ExpressionMethod.Gte
-  fullName: Mix.Heart.Enums.ExpressionMethod.Gte
+  name: GreaterThan
+  nameWithType: ExpressionMethod.GreaterThan
+  fullName: Mix.Heart.Enums.ExpressionMethod.GreaterThan
   type: Field
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
-    id: Gte
+    id: GreaterThan
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
     startLine: 9
   assemblies:
   - mix.heart
   namespace: Mix.Heart.Enums
   syntax:
-    content: Gte = 5
+    content: GreaterThan = 5
+    return:
+      type: Mix.Heart.Enums.ExpressionMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Mix.Heart.Enums.ExpressionMethod.LessThanOrEqual
+  commentId: F:Mix.Heart.Enums.ExpressionMethod.LessThanOrEqual
+  id: LessThanOrEqual
+  parent: Mix.Heart.Enums.ExpressionMethod
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual
+  nameWithType: ExpressionMethod.LessThanOrEqual
+  fullName: Mix.Heart.Enums.ExpressionMethod.LessThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: src/Mix.Heart/Enums/ExpressionMethod.cs
+      branch: develop/v2
+      repo: https://github.com/mixcore/mix.heart.git
+    id: LessThanOrEqual
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
+    startLine: 10
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Enums
+  syntax:
+    content: LessThanOrEqual = 6
+    return:
+      type: Mix.Heart.Enums.ExpressionMethod
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Mix.Heart.Enums.ExpressionMethod.GreaterThanOrEqual
+  commentId: F:Mix.Heart.Enums.ExpressionMethod.GreaterThanOrEqual
+  id: GreaterThanOrEqual
+  parent: Mix.Heart.Enums.ExpressionMethod
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual
+  nameWithType: ExpressionMethod.GreaterThanOrEqual
+  fullName: Mix.Heart.Enums.ExpressionMethod.GreaterThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: src/Mix.Heart/Enums/ExpressionMethod.cs
+      branch: develop/v2
+      repo: https://github.com/mixcore/mix.heart.git
+    id: GreaterThanOrEqual
+    path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
+    startLine: 11
+  assemblies:
+  - mix.heart
+  namespace: Mix.Heart.Enums
+  syntax:
+    content: GreaterThanOrEqual = 7
     return:
       type: Mix.Heart.Enums.ExpressionMethod
   modifiers.csharp:
@@ -246,16 +312,16 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: And
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - mix.heart
   namespace: Mix.Heart.Enums
   syntax:
-    content: And = 6
+    content: And = 8
     return:
       type: Mix.Heart.Enums.ExpressionMethod
   modifiers.csharp:
@@ -278,16 +344,16 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Enums/ExpressionMethod.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Or
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Enums/ExpressionMethod.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - mix.heart
   namespace: Mix.Heart.Enums
   syntax:
-    content: Or = 7
+    content: Or = 9
     return:
       type: Mix.Heart.Enums.ExpressionMethod
   modifiers.csharp:

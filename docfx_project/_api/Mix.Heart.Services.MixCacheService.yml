@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Services/MixCacheService.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: MixCacheService
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixCacheService.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Services/MixCacheService.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: IsCacheEnabled
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixCacheService.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Services/MixCacheService.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: serializer
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixCacheService.cs
@@ -109,7 +109,7 @@ items:
   syntax:
     content: protected JsonSerializer serializer
     return:
-      type: Newtonsoft.Json.JsonSerializer
+      type: JsonSerializer
     content.vb: Protected serializer As JsonSerializer
   modifiers.csharp:
   - protected
@@ -129,7 +129,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Services/MixCacheService.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: .ctor
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixCacheService.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Services/MixCacheService.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: GetAsync
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixCacheService.cs
@@ -203,7 +203,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Services/MixCacheService.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: SetAsync
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixCacheService.cs
@@ -249,7 +249,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Services/MixCacheService.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: RemoveCacheAsync
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixCacheService.cs
@@ -281,7 +281,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Services/MixCacheService.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: RemoveCacheAsync
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Services/MixCacheService.cs
@@ -614,19 +614,11 @@ references:
   name: Boolean
   nameWithType: Boolean
   fullName: System.Boolean
-- uid: Newtonsoft.Json.JsonSerializer
-  commentId: T:Newtonsoft.Json.JsonSerializer
-  parent: Newtonsoft.Json
+- uid: JsonSerializer
   isExternal: true
   name: JsonSerializer
   nameWithType: JsonSerializer
-  fullName: Newtonsoft.Json.JsonSerializer
-- uid: Newtonsoft.Json
-  commentId: N:Newtonsoft.Json
-  isExternal: true
-  name: Newtonsoft.Json
-  nameWithType: Newtonsoft.Json
-  fullName: Newtonsoft.Json
+  fullName: JsonSerializer
 - uid: Mix.Heart.Services.MixCacheService.#ctor*
   commentId: Overload:Mix.Heart.Services.MixCacheService.#ctor
   name: MixCacheService

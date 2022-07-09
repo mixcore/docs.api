@@ -5,7 +5,7 @@ items:
   id: MvcBaseController
   parent: Mixcore.Domain.Bases
   children:
-  - Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,UnitOfWorkInfo{MixCmsContext})
+  - Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.DatabaseService,UnitOfWorkInfo{MixCmsContext})
   - Mixcore.Domain.Bases.MvcBaseController._context
   - Mixcore.Domain.Bases.MvcBaseController._databaseService
   - Mixcore.Domain.Bases.MvcBaseController._translator
@@ -165,26 +165,26 @@ items:
   - mixcore
   namespace: Mixcore.Domain.Bases
   syntax:
-    content: protected readonly MixDatabaseService _databaseService
+    content: protected readonly DatabaseService _databaseService
     return:
-      type: Mix.Database.Services.MixDatabaseService
-    content.vb: Protected ReadOnly _databaseService As MixDatabaseService
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Protected ReadOnly _databaseService As DatabaseService
   modifiers.csharp:
   - protected
   - readonly
   modifiers.vb:
   - Protected
   - ReadOnly
-- uid: Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,UnitOfWorkInfo{MixCmsContext})
-  commentId: M:Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,UnitOfWorkInfo{MixCmsContext})
-  id: '#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,UnitOfWorkInfo{MixCmsContext})'
+- uid: Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.DatabaseService,UnitOfWorkInfo{MixCmsContext})
+  commentId: M:Mixcore.Domain.Bases.MvcBaseController.#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.DatabaseService,UnitOfWorkInfo{MixCmsContext})
+  id: '#ctor(IHttpContextAccessor,Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.DatabaseService,UnitOfWorkInfo{MixCmsContext})'
   parent: Mixcore.Domain.Bases.MvcBaseController
   langs:
   - csharp
   - vb
-  name: MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, UnitOfWorkInfo<MixCmsContext>)
-  nameWithType: MvcBaseController.MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, UnitOfWorkInfo<MixCmsContext>)
-  fullName: Mixcore.Domain.Bases.MvcBaseController.MvcBaseController(IHttpContextAccessor, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.MixDatabaseService, UnitOfWorkInfo<MixCmsContext>)
+  name: MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, DatabaseService, UnitOfWorkInfo<MixCmsContext>)
+  nameWithType: MvcBaseController.MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, DatabaseService, UnitOfWorkInfo<MixCmsContext>)
+  fullName: Mixcore.Domain.Bases.MvcBaseController.MvcBaseController(IHttpContextAccessor, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.DatabaseService, UnitOfWorkInfo<MixCmsContext>)
   type: Constructor
   source:
     remote:
@@ -198,7 +198,7 @@ items:
   - mixcore
   namespace: Mixcore.Domain.Bases
   syntax:
-    content: public MvcBaseController(IHttpContextAccessor httpContextAccessor, IPSecurityConfigService ipSecurityConfigService, MixService mixService, TranslatorService translator, MixDatabaseService databaseService, UnitOfWorkInfo<MixCmsContext> uow)
+    content: public MvcBaseController(IHttpContextAccessor httpContextAccessor, IPSecurityConfigService ipSecurityConfigService, MixService mixService, TranslatorService translator, DatabaseService databaseService, UnitOfWorkInfo<MixCmsContext> uow)
     parameters:
     - id: httpContextAccessor
       type: IHttpContextAccessor
@@ -209,18 +209,18 @@ items:
     - id: translator
       type: Mix.Lib.Services.TranslatorService
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
+      type: Mix.Database.Services.DatabaseService
     - id: uow
       type: UnitOfWorkInfo{MixCmsContext}
-    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, ipSecurityConfigService As IPSecurityConfigService, mixService As MixService, translator As TranslatorService, databaseService As MixDatabaseService, uow As UnitOfWorkInfo(Of MixCmsContext))
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, ipSecurityConfigService As IPSecurityConfigService, mixService As MixService, translator As TranslatorService, databaseService As DatabaseService, uow As UnitOfWorkInfo(Of MixCmsContext))
   overload: Mixcore.Domain.Bases.MvcBaseController.#ctor*
-  nameWithType.vb: MvcBaseController.MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, UnitOfWorkInfo(Of MixCmsContext))
+  nameWithType.vb: MvcBaseController.MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, DatabaseService, UnitOfWorkInfo(Of MixCmsContext))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Mixcore.Domain.Bases.MvcBaseController.MvcBaseController(IHttpContextAccessor, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.MixDatabaseService, UnitOfWorkInfo(Of MixCmsContext))
-  name.vb: MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, UnitOfWorkInfo(Of MixCmsContext))
+  fullName.vb: Mixcore.Domain.Bases.MvcBaseController.MvcBaseController(IHttpContextAccessor, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.DatabaseService, UnitOfWorkInfo(Of MixCmsContext))
+  name.vb: MvcBaseController(IHttpContextAccessor, IPSecurityConfigService, MixService, TranslatorService, DatabaseService, UnitOfWorkInfo(Of MixCmsContext))
 - uid: Mixcore.Domain.Bases.MvcBaseController.ValidateRequest
   commentId: M:Mixcore.Domain.Bases.MvcBaseController.ValidateRequest
   id: ValidateRequest
@@ -406,12 +406,12 @@ references:
   name: Mix.Lib.Services
   nameWithType: Mix.Lib.Services
   fullName: Mix.Lib.Services
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Database.Services
   commentId: N:Mix.Database.Services
   name: Mix.Database.Services

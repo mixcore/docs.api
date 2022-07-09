@@ -5,7 +5,7 @@ items:
   id: InitCmsService
   parent: Mix.Tenancy.Domain.Services
   children:
-  - Mix.Tenancy.Domain.Services.InitCmsService.#ctor(IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Mix.Lib.Services.MixIdentityService,Mix.Database.Services.MixDatabaseService,Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},IConfiguration,MixCmsContext,Mix.Lib.Services.MixDataService)
+  - Mix.Tenancy.Domain.Services.InitCmsService.#ctor(IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Mix.Lib.Services.MixIdentityService,Mix.Database.Services.DatabaseService,Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},IConfiguration,MixCmsContext,Mix.Lib.Services.MixDataService)
   - Mix.Tenancy.Domain.Services.InitCmsService.InitAccountAsync(Mix.Identity.Models.AccountViewModels.RegisterViewModel)
   - Mix.Tenancy.Domain.Services.InitCmsService.InitDbContext(Mix.Tenancy.Domain.Dtos.InitCmsDto)
   - Mix.Tenancy.Domain.Services.InitCmsService.InitTenantAsync(Mix.Tenancy.Domain.Dtos.InitCmsDto)
@@ -185,16 +185,16 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Mix.Tenancy.Domain.Services.InitCmsService.#ctor(IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Mix.Lib.Services.MixIdentityService,Mix.Database.Services.MixDatabaseService,Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},IConfiguration,MixCmsContext,Mix.Lib.Services.MixDataService)
-  commentId: M:Mix.Tenancy.Domain.Services.InitCmsService.#ctor(IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Mix.Lib.Services.MixIdentityService,Mix.Database.Services.MixDatabaseService,Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},IConfiguration,MixCmsContext,Mix.Lib.Services.MixDataService)
-  id: '#ctor(IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Mix.Lib.Services.MixIdentityService,Mix.Database.Services.MixDatabaseService,Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},IConfiguration,MixCmsContext,Mix.Lib.Services.MixDataService)'
+- uid: Mix.Tenancy.Domain.Services.InitCmsService.#ctor(IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Mix.Lib.Services.MixIdentityService,Mix.Database.Services.DatabaseService,Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},IConfiguration,MixCmsContext,Mix.Lib.Services.MixDataService)
+  commentId: M:Mix.Tenancy.Domain.Services.InitCmsService.#ctor(IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Mix.Lib.Services.MixIdentityService,Mix.Database.Services.DatabaseService,Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},IConfiguration,MixCmsContext,Mix.Lib.Services.MixDataService)
+  id: '#ctor(IHttpContextAccessor,Mix.Lib.Services.TenantUserManager,Mix.Lib.Services.MixIdentityService,Mix.Database.Services.DatabaseService,Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole},IConfiguration,MixCmsContext,Mix.Lib.Services.MixDataService)'
   parent: Mix.Tenancy.Domain.Services.InitCmsService
   langs:
   - csharp
   - vb
-  name: InitCmsService(IHttpContextAccessor, TenantUserManager, MixIdentityService, MixDatabaseService, RoleManager<MixRole>, IConfiguration, MixCmsContext, MixDataService)
-  nameWithType: InitCmsService.InitCmsService(IHttpContextAccessor, TenantUserManager, MixIdentityService, MixDatabaseService, RoleManager<MixRole>, IConfiguration, MixCmsContext, MixDataService)
-  fullName: Mix.Tenancy.Domain.Services.InitCmsService.InitCmsService(IHttpContextAccessor, Mix.Lib.Services.TenantUserManager, Mix.Lib.Services.MixIdentityService, Mix.Database.Services.MixDatabaseService, Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>, IConfiguration, MixCmsContext, Mix.Lib.Services.MixDataService)
+  name: InitCmsService(IHttpContextAccessor, TenantUserManager, MixIdentityService, DatabaseService, RoleManager<MixRole>, IConfiguration, MixCmsContext, MixDataService)
+  nameWithType: InitCmsService.InitCmsService(IHttpContextAccessor, TenantUserManager, MixIdentityService, DatabaseService, RoleManager<MixRole>, IConfiguration, MixCmsContext, MixDataService)
+  fullName: Mix.Tenancy.Domain.Services.InitCmsService.InitCmsService(IHttpContextAccessor, Mix.Lib.Services.TenantUserManager, Mix.Lib.Services.MixIdentityService, Mix.Database.Services.DatabaseService, Microsoft.AspNetCore.Identity.RoleManager<Mix.Database.Entities.Account.MixRole>, IConfiguration, MixCmsContext, Mix.Lib.Services.MixDataService)
   type: Constructor
   source:
     remote:
@@ -208,7 +208,7 @@ items:
   - mix.tenancy
   namespace: Mix.Tenancy.Domain.Services
   syntax:
-    content: public InitCmsService(IHttpContextAccessor httpContextAccessor, TenantUserManager userManager, MixIdentityService identityService, MixDatabaseService databaseService, RoleManager<MixRole> roleManager, IConfiguration configuration, MixCmsContext context, MixDataService mixDataService)
+    content: public InitCmsService(IHttpContextAccessor httpContextAccessor, TenantUserManager userManager, MixIdentityService identityService, DatabaseService databaseService, RoleManager<MixRole> roleManager, IConfiguration configuration, MixCmsContext context, MixDataService mixDataService)
     parameters:
     - id: httpContextAccessor
       type: IHttpContextAccessor
@@ -217,7 +217,7 @@ items:
     - id: identityService
       type: Mix.Lib.Services.MixIdentityService
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
+      type: Mix.Database.Services.DatabaseService
     - id: roleManager
       type: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
     - id: configuration
@@ -226,15 +226,15 @@ items:
       type: MixCmsContext
     - id: mixDataService
       type: Mix.Lib.Services.MixDataService
-    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, userManager As TenantUserManager, identityService As MixIdentityService, databaseService As MixDatabaseService, roleManager As RoleManager(Of MixRole), configuration As IConfiguration, context As MixCmsContext, mixDataService As MixDataService)
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, userManager As TenantUserManager, identityService As MixIdentityService, databaseService As DatabaseService, roleManager As RoleManager(Of MixRole), configuration As IConfiguration, context As MixCmsContext, mixDataService As MixDataService)
   overload: Mix.Tenancy.Domain.Services.InitCmsService.#ctor*
-  nameWithType.vb: InitCmsService.InitCmsService(IHttpContextAccessor, TenantUserManager, MixIdentityService, MixDatabaseService, RoleManager(Of MixRole), IConfiguration, MixCmsContext, MixDataService)
+  nameWithType.vb: InitCmsService.InitCmsService(IHttpContextAccessor, TenantUserManager, MixIdentityService, DatabaseService, RoleManager(Of MixRole), IConfiguration, MixCmsContext, MixDataService)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Mix.Tenancy.Domain.Services.InitCmsService.InitCmsService(IHttpContextAccessor, Mix.Lib.Services.TenantUserManager, Mix.Lib.Services.MixIdentityService, Mix.Database.Services.MixDatabaseService, Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole), IConfiguration, MixCmsContext, Mix.Lib.Services.MixDataService)
-  name.vb: InitCmsService(IHttpContextAccessor, TenantUserManager, MixIdentityService, MixDatabaseService, RoleManager(Of MixRole), IConfiguration, MixCmsContext, MixDataService)
+  fullName.vb: Mix.Tenancy.Domain.Services.InitCmsService.InitCmsService(IHttpContextAccessor, Mix.Lib.Services.TenantUserManager, Mix.Lib.Services.MixIdentityService, Mix.Database.Services.DatabaseService, Microsoft.AspNetCore.Identity.RoleManager(Of Mix.Database.Entities.Account.MixRole), IConfiguration, MixCmsContext, Mix.Lib.Services.MixDataService)
+  name.vb: InitCmsService(IHttpContextAccessor, TenantUserManager, MixIdentityService, DatabaseService, RoleManager(Of MixRole), IConfiguration, MixCmsContext, MixDataService)
 references:
 - uid: Mix.Tenancy.Domain.Services
   commentId: N:Mix.Tenancy.Domain.Services
@@ -683,12 +683,12 @@ references:
   name: MixIdentityService
   nameWithType: MixIdentityService
   fullName: Mix.Lib.Services.MixIdentityService
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
   commentId: T:Microsoft.AspNetCore.Identity.RoleManager{Mix.Database.Entities.Account.MixRole}
   parent: Microsoft.AspNetCore.Identity

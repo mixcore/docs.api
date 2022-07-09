@@ -113,18 +113,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_MixThemeImportService__ctor_MixCmsContext_Microsoft_AspNetCore_Http_IHttpContextAccessor_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.MixThemeImportService.%23ctor(MixCmsContext%2CMicrosoft.AspNetCore.Http.IHttpContextAccessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_MixThemeImportService__ctor_UnitOfWorkInfo_MixCmsContext__Microsoft_AspNetCore_Http_IHttpContextAccessor_Mix_Database_Services_DatabaseService_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.MixThemeImportService.%23ctor(UnitOfWorkInfo%7BMixCmsContext%7D%2CMicrosoft.AspNetCore.Http.IHttpContextAccessor%2CMix.Database.Services.DatabaseService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L31">View Source</a>
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L33">View Source</a>
   </span>
   <a id="Mix_Lib_Services_MixThemeImportService__ctor_" data-uid="Mix.Lib.Services.MixThemeImportService.#ctor*"></a>
-  <h4 id="Mix_Lib_Services_MixThemeImportService__ctor_MixCmsContext_Microsoft_AspNetCore_Http_IHttpContextAccessor_" data-uid="Mix.Lib.Services.MixThemeImportService.#ctor(MixCmsContext,Microsoft.AspNetCore.Http.IHttpContextAccessor)">MixThemeImportService(MixCmsContext, IHttpContextAccessor)</h4>
+  <h4 id="Mix_Lib_Services_MixThemeImportService__ctor_UnitOfWorkInfo_MixCmsContext__Microsoft_AspNetCore_Http_IHttpContextAccessor_Mix_Database_Services_DatabaseService_" data-uid="Mix.Lib.Services.MixThemeImportService.#ctor(UnitOfWorkInfo{MixCmsContext},Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Services.DatabaseService)">MixThemeImportService(UnitOfWorkInfo&lt;MixCmsContext&gt;, IHttpContextAccessor, DatabaseService)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MixThemeImportService(MixCmsContext cmsContext, IHttpContextAccessor httpContext)</code></pre>
+    <pre><code class="lang-csharp hljs">public MixThemeImportService(UnitOfWorkInfo&lt;MixCmsContext&gt; uow, IHttpContextAccessor httpContext, DatabaseService databaseService)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,13 +137,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">MixCmsContext</span></td>
-        <td><span class="parametername">cmsContext</span></td>
+        <td><span class="xref">UnitOfWorkInfo</span>&lt;<span class="xref">MixCmsContext</span>&gt;</td>
+        <td><span class="parametername">uow</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">Microsoft.AspNetCore.Http.IHttpContextAccessor</span></td>
         <td><span class="parametername">httpContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Services.DatabaseService.html">DatabaseService</a></td>
+        <td><span class="parametername">databaseService</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -155,7 +160,7 @@
     <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_MixThemeImportService_tenantId.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.MixThemeImportService.tenantId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L13">View Source</a>
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L14">View Source</a>
   </span>
   <h4 id="Mix_Lib_Services_MixThemeImportService_tenantId" data-uid="Mix.Lib.Services.MixThemeImportService.tenantId">tenantId</h4>
   <div class="markdown level1 summary"></div>
@@ -186,7 +191,7 @@
     <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_MixThemeImportService_DownloadThemeAsync_JObject_IProgress_System_Int32__HttpService_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.MixThemeImportService.DownloadThemeAsync(JObject%2CIProgress%7BSystem.Int32%7D%2CHttpService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L44">View Source</a>
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L47">View Source</a>
   </span>
   <a id="Mix_Lib_Services_MixThemeImportService_DownloadThemeAsync_" data-uid="Mix.Lib.Services.MixThemeImportService.DownloadThemeAsync*"></a>
   <h4 id="Mix_Lib_Services_MixThemeImportService_DownloadThemeAsync_JObject_IProgress_System_Int32__HttpService_" data-uid="Mix.Lib.Services.MixThemeImportService.DownloadThemeAsync(JObject,IProgress{System.Int32},HttpService)">DownloadThemeAsync(JObject, IProgress&lt;Int32&gt;, HttpService)</h4>
@@ -243,7 +248,7 @@
     <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_MixThemeImportService_ExtractTheme_Microsoft_AspNetCore_Http_IFormFile_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.MixThemeImportService.ExtractTheme(Microsoft.AspNetCore.Http.IFormFile)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L67">View Source</a>
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L70">View Source</a>
   </span>
   <a id="Mix_Lib_Services_MixThemeImportService_ExtractTheme_" data-uid="Mix.Lib.Services.MixThemeImportService.ExtractTheme*"></a>
   <h4 id="Mix_Lib_Services_MixThemeImportService_ExtractTheme_Microsoft_AspNetCore_Http_IFormFile_" data-uid="Mix.Lib.Services.MixThemeImportService.ExtractTheme(Microsoft.AspNetCore.Http.IFormFile)">ExtractTheme(IFormFile)</h4>
@@ -275,7 +280,7 @@
     <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_MixThemeImportService_ImportSelectedItemsAsync_SiteDataViewModel_.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.MixThemeImportService.ImportSelectedItemsAsync(SiteDataViewModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L87">View Source</a>
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L90">View Source</a>
   </span>
   <a id="Mix_Lib_Services_MixThemeImportService_ImportSelectedItemsAsync_" data-uid="Mix.Lib.Services.MixThemeImportService.ImportSelectedItemsAsync*"></a>
   <h4 id="Mix_Lib_Services_MixThemeImportService_ImportSelectedItemsAsync_SiteDataViewModel_" data-uid="Mix.Lib.Services.MixThemeImportService.ImportSelectedItemsAsync(SiteDataViewModel)">ImportSelectedItemsAsync(SiteDataViewModel)</h4>
@@ -322,7 +327,7 @@
     <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_Lib_Services_MixThemeImportService_LoadSchema.md&amp;value=---%0Auid%3A%20Mix.Lib.Services.MixThemeImportService.LoadSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L60">View Source</a>
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.library/Services/MixThemeImportService.cs/#L63">View Source</a>
   </span>
   <a id="Mix_Lib_Services_MixThemeImportService_LoadSchema_" data-uid="Mix.Lib.Services.MixThemeImportService.LoadSchema*"></a>
   <h4 id="Mix_Lib_Services_MixThemeImportService_LoadSchema" data-uid="Mix.Lib.Services.MixThemeImportService.LoadSchema">LoadSchema()</h4>

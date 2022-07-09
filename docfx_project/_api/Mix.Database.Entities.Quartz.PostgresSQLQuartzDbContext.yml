@@ -5,7 +5,7 @@ items:
   id: PostgresSQLQuartzDbContext
   parent: Mix.Database.Entities.Quartz
   children:
-  - Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  - Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.#ctor(Mix.Database.Services.DatabaseService)
   - Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.#ctor(System.String)
   - Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.OnConfiguring(DbContextOptionsBuilder)
   - Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.OnModelCreating(ModelBuilder)
@@ -55,16 +55,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  commentId: M:Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  id: '#ctor(Mix.Database.Services.MixDatabaseService)'
+- uid: Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.#ctor(Mix.Database.Services.DatabaseService)
+  commentId: M:Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.#ctor(Mix.Database.Services.DatabaseService)
+  id: '#ctor(Mix.Database.Services.DatabaseService)'
   parent: Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext
   langs:
   - csharp
   - vb
-  name: PostgresSQLQuartzDbContext(MixDatabaseService)
-  nameWithType: PostgresSQLQuartzDbContext.PostgresSQLQuartzDbContext(MixDatabaseService)
-  fullName: Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.PostgresSQLQuartzDbContext(Mix.Database.Services.MixDatabaseService)
+  name: PostgresSQLQuartzDbContext(DatabaseService)
+  nameWithType: PostgresSQLQuartzDbContext.PostgresSQLQuartzDbContext(DatabaseService)
+  fullName: Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.PostgresSQLQuartzDbContext(Mix.Database.Services.DatabaseService)
   type: Constructor
   source:
     remote:
@@ -78,11 +78,11 @@ items:
   - mix.database
   namespace: Mix.Database.Entities.Quartz
   syntax:
-    content: public PostgresSQLQuartzDbContext(MixDatabaseService databaseService)
+    content: public PostgresSQLQuartzDbContext(DatabaseService databaseService)
     parameters:
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
-    content.vb: Public Sub New(databaseService As MixDatabaseService)
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Public Sub New(databaseService As DatabaseService)
   overload: Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.#ctor*
   modifiers.csharp:
   - public
@@ -299,12 +299,12 @@ references:
   name: PostgresSQLQuartzDbContext
   nameWithType: PostgresSQLQuartzDbContext.PostgresSQLQuartzDbContext
   fullName: Mix.Database.Entities.Quartz.PostgresSQLQuartzDbContext.PostgresSQLQuartzDbContext
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Database.Services
   commentId: N:Mix.Database.Services
   name: Mix.Database.Services

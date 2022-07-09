@@ -5,7 +5,7 @@ items:
   id: SqlServerAccountContext
   parent: Mix.Database.Entities.Account
   children:
-  - Mix.Database.Entities.Account.SqlServerAccountContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  - Mix.Database.Entities.Account.SqlServerAccountContext.#ctor(Mix.Database.Services.DatabaseService)
   - Mix.Database.Entities.Account.SqlServerAccountContext.OnModelCreating(ModelBuilder)
   langs:
   - csharp
@@ -52,16 +52,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Mix.Database.Entities.Account.SqlServerAccountContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  commentId: M:Mix.Database.Entities.Account.SqlServerAccountContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  id: '#ctor(Mix.Database.Services.MixDatabaseService)'
+- uid: Mix.Database.Entities.Account.SqlServerAccountContext.#ctor(Mix.Database.Services.DatabaseService)
+  commentId: M:Mix.Database.Entities.Account.SqlServerAccountContext.#ctor(Mix.Database.Services.DatabaseService)
+  id: '#ctor(Mix.Database.Services.DatabaseService)'
   parent: Mix.Database.Entities.Account.SqlServerAccountContext
   langs:
   - csharp
   - vb
-  name: SqlServerAccountContext(MixDatabaseService)
-  nameWithType: SqlServerAccountContext.SqlServerAccountContext(MixDatabaseService)
-  fullName: Mix.Database.Entities.Account.SqlServerAccountContext.SqlServerAccountContext(Mix.Database.Services.MixDatabaseService)
+  name: SqlServerAccountContext(DatabaseService)
+  nameWithType: SqlServerAccountContext.SqlServerAccountContext(DatabaseService)
+  fullName: Mix.Database.Entities.Account.SqlServerAccountContext.SqlServerAccountContext(Mix.Database.Services.DatabaseService)
   type: Constructor
   source:
     remote:
@@ -77,11 +77,11 @@ items:
   summary: "\nInitializes a new instance of the <xref href=\"Mix.Database.Entities.Account.MixCmsAccountContext\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
   example: []
   syntax:
-    content: public SqlServerAccountContext(MixDatabaseService databaseService)
+    content: public SqlServerAccountContext(DatabaseService databaseService)
     parameters:
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
-    content.vb: Public Sub New(databaseService As MixDatabaseService)
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Public Sub New(databaseService As DatabaseService)
   overload: Mix.Database.Entities.Account.SqlServerAccountContext.#ctor*
   modifiers.csharp:
   - public
@@ -280,12 +280,12 @@ references:
   name: SqlServerAccountContext
   nameWithType: SqlServerAccountContext.SqlServerAccountContext
   fullName: Mix.Database.Entities.Account.SqlServerAccountContext.SqlServerAccountContext
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Database.Services
   commentId: N:Mix.Database.Services
   name: Mix.Database.Services

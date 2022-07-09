@@ -5,7 +5,7 @@ items:
   id: UnitOfWorkInfo
   parent: Mix.Heart.UnitOfWork
   children:
-  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor(Microsoft.EntityFrameworkCore.DbContext)
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor(DbContext)
   - Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveDbContext
   - Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction
   - Mix.Heart.UnitOfWork.UnitOfWorkInfo.Begin
@@ -15,8 +15,8 @@ items:
   - Mix.Heart.UnitOfWork.UnitOfWorkInfo.CompleteAsync
   - Mix.Heart.UnitOfWork.UnitOfWorkInfo.Rollback
   - Mix.Heart.UnitOfWork.UnitOfWorkInfo.RollbackAsync
-  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
-  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(DbContext)
+  - Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(IDbContextTransaction)
   langs:
   - csharp
   - vb
@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: UnitOfWorkInfo
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: ActiveDbContext
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -82,7 +82,7 @@ items:
     content: public DbContext ActiveDbContext { get; }
     parameters: []
     return:
-      type: Microsoft.EntityFrameworkCore.DbContext
+      type: DbContext
     content.vb: Public ReadOnly Property ActiveDbContext As DbContext
   overload: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveDbContext*
   modifiers.csharp:
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: ActiveTransaction
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -117,7 +117,7 @@ items:
     content: public IDbContextTransaction ActiveTransaction { get; }
     parameters: []
     return:
-      type: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+      type: IDbContextTransaction
     content.vb: Public ReadOnly Property ActiveTransaction As IDbContextTransaction
   overload: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction*
   modifiers.csharp:
@@ -126,21 +126,21 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor(Microsoft.EntityFrameworkCore.DbContext)
-  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor(Microsoft.EntityFrameworkCore.DbContext)
-  id: '#ctor(Microsoft.EntityFrameworkCore.DbContext)'
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor(DbContext)
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor(DbContext)
+  id: '#ctor(DbContext)'
   parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
   langs:
   - csharp
   - vb
   name: UnitOfWorkInfo(DbContext)
   nameWithType: UnitOfWorkInfo.UnitOfWorkInfo(DbContext)
-  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.UnitOfWorkInfo(Microsoft.EntityFrameworkCore.DbContext)
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.UnitOfWorkInfo(DbContext)
   type: Constructor
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: .ctor
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -152,28 +152,28 @@ items:
     content: public UnitOfWorkInfo(DbContext dbContext)
     parameters:
     - id: dbContext
-      type: Microsoft.EntityFrameworkCore.DbContext
+      type: DbContext
     content.vb: Public Sub New(dbContext As DbContext)
   overload: Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
-  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
-  id: SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(DbContext)
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(DbContext)
+  id: SetDbContext(DbContext)
   parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
   langs:
   - csharp
   - vb
   name: SetDbContext(DbContext)
   nameWithType: UnitOfWorkInfo.SetDbContext(DbContext)
-  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(Microsoft.EntityFrameworkCore.DbContext)
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext(DbContext)
   type: Method
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: SetDbContext
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -185,28 +185,28 @@ items:
     content: public void SetDbContext(DbContext dbContext)
     parameters:
     - id: dbContext
-      type: Microsoft.EntityFrameworkCore.DbContext
+      type: DbContext
     content.vb: Public Sub SetDbContext(dbContext As DbContext)
   overload: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetDbContext*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
-  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
-  id: SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(IDbContextTransaction)
+  commentId: M:Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(IDbContextTransaction)
+  id: SetTransaction(IDbContextTransaction)
   parent: Mix.Heart.UnitOfWork.UnitOfWorkInfo
   langs:
   - csharp
   - vb
   name: SetTransaction(IDbContextTransaction)
   nameWithType: UnitOfWorkInfo.SetTransaction(IDbContextTransaction)
-  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction)
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction(IDbContextTransaction)
   type: Method
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: SetTransaction
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -218,7 +218,7 @@ items:
     content: public void SetTransaction(IDbContextTransaction dbContextTransaction)
     parameters:
     - id: dbContextTransaction
-      type: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
+      type: IDbContextTransaction
     content.vb: Public Sub SetTransaction(dbContextTransaction As IDbContextTransaction)
   overload: Mix.Heart.UnitOfWork.UnitOfWorkInfo.SetTransaction*
   modifiers.csharp:
@@ -239,7 +239,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Begin
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -269,7 +269,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Close
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -301,7 +301,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: CloseAsync
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -335,7 +335,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Complete
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -367,7 +367,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Rollback
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -399,7 +399,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: CompleteAsync
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -433,7 +433,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: RollbackAsync
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/UnitOfWork/UnitOfWorkInfo.cs
@@ -756,37 +756,21 @@ references:
   name: ActiveDbContext
   nameWithType: UnitOfWorkInfo.ActiveDbContext
   fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveDbContext
-- uid: Microsoft.EntityFrameworkCore.DbContext
-  commentId: T:Microsoft.EntityFrameworkCore.DbContext
-  parent: Microsoft.EntityFrameworkCore
+- uid: DbContext
   isExternal: true
   name: DbContext
   nameWithType: DbContext
-  fullName: Microsoft.EntityFrameworkCore.DbContext
-- uid: Microsoft.EntityFrameworkCore
-  commentId: N:Microsoft.EntityFrameworkCore
-  isExternal: true
-  name: Microsoft.EntityFrameworkCore
-  nameWithType: Microsoft.EntityFrameworkCore
-  fullName: Microsoft.EntityFrameworkCore
+  fullName: DbContext
 - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction*
   commentId: Overload:Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction
   name: ActiveTransaction
   nameWithType: UnitOfWorkInfo.ActiveTransaction
   fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo.ActiveTransaction
-- uid: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
-  commentId: T:Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
-  parent: Microsoft.EntityFrameworkCore.Storage
+- uid: IDbContextTransaction
   isExternal: true
   name: IDbContextTransaction
   nameWithType: IDbContextTransaction
-  fullName: Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction
-- uid: Microsoft.EntityFrameworkCore.Storage
-  commentId: N:Microsoft.EntityFrameworkCore.Storage
-  isExternal: true
-  name: Microsoft.EntityFrameworkCore.Storage
-  nameWithType: Microsoft.EntityFrameworkCore.Storage
-  fullName: Microsoft.EntityFrameworkCore.Storage
+  fullName: IDbContextTransaction
 - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor*
   commentId: Overload:Mix.Heart.UnitOfWork.UnitOfWorkInfo.#ctor
   name: UnitOfWorkInfo

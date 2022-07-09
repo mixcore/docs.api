@@ -5,7 +5,7 @@ items:
   id: ServiceCollectionExtensions
   parent: Microsoft.Extensions.DependencyInjection
   children:
-  - Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache(IServiceCollection)
   langs:
   - csharp
   - vb
@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/ServiceCollectionExtensions.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: ServiceCollectionExtensions
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/ServiceCollectionExtensions.cs
@@ -44,9 +44,9 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  id: AddMixCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache(IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache(IServiceCollection)
+  id: AddMixCache(IServiceCollection)
   isExtensionMethod: true
   parent: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
   langs:
@@ -54,12 +54,12 @@ items:
   - vb
   name: AddMixCache(IServiceCollection)
   nameWithType: ServiceCollectionExtensions.AddMixCache(IServiceCollection)
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache(IServiceCollection)
   type: Method
   source:
     remote:
       path: src/Mix.Heart/ServiceCollectionExtensions.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: AddMixCache
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/ServiceCollectionExtensions.cs
@@ -71,9 +71,9 @@ items:
     content: public static IServiceCollection AddMixCache(this IServiceCollection services)
     parameters:
     - id: services
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      type: IServiceCollection
     return:
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      type: IServiceCollection
     content.vb: >-
       <ExtensionAttribute>
 
@@ -388,10 +388,8 @@ references:
   name: AddMixCache
   nameWithType: ServiceCollectionExtensions.AddMixCache
   fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddMixCache
-- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
-  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
-  parent: Microsoft.Extensions.DependencyInjection
+- uid: IServiceCollection
   isExternal: true
   name: IServiceCollection
   nameWithType: IServiceCollection
-  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  fullName: IServiceCollection

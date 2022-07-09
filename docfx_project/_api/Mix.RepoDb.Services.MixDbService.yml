@@ -1,0 +1,765 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.RepoDb.Services.MixDbService
+  commentId: T:Mix.RepoDb.Services.MixDbService
+  id: MixDbService
+  parent: Mix.RepoDb.Services
+  children:
+  - Mix.RepoDb.Services.MixDbService.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo{Mix.Database.Entities.Cms.MixCmsContext},Mix.Database.Services.DatabaseService,Mix.RepoDb.Repositories.MixRepoDbRepository,RepoDb.Interfaces.ICache)
+  - Mix.RepoDb.Services.MixDbService.BackupDatabase(System.String)
+  - Mix.RepoDb.Services.MixDbService.Cache
+  - Mix.RepoDb.Services.MixDbService.MigrateDatabase(System.String)
+  - Mix.RepoDb.Services.MixDbService.Trace
+  langs:
+  - csharp
+  - vb
+  name: MixDbService
+  nameWithType: MixDbService
+  fullName: Mix.RepoDb.Services.MixDbService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.repodb/Services/MixDbService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDbService
+    path: ../../mix.core/src/platform/mix.repodb/Services/MixDbService.cs
+    startLine: 14
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Services
+  syntax:
+    content: public class MixDbService
+    content.vb: Public Class MixDbService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.RepoDb.Services.MixDbService.Trace
+  commentId: P:Mix.RepoDb.Services.MixDbService.Trace
+  id: Trace
+  parent: Mix.RepoDb.Services.MixDbService
+  langs:
+  - csharp
+  - vb
+  name: Trace
+  nameWithType: MixDbService.Trace
+  fullName: Mix.RepoDb.Services.MixDbService.Trace
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.repodb/Services/MixDbService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Trace
+    path: ../../mix.core/src/platform/mix.repodb/Services/MixDbService.cs
+    startLine: 20
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Services
+  syntax:
+    content: public ITrace Trace { get; }
+    parameters: []
+    return:
+      type: RepoDb.Interfaces.ITrace
+    content.vb: Public ReadOnly Property Trace As ITrace
+  overload: Mix.RepoDb.Services.MixDbService.Trace*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.RepoDb.Services.MixDbService.Cache
+  commentId: P:Mix.RepoDb.Services.MixDbService.Cache
+  id: Cache
+  parent: Mix.RepoDb.Services.MixDbService
+  langs:
+  - csharp
+  - vb
+  name: Cache
+  nameWithType: MixDbService.Cache
+  fullName: Mix.RepoDb.Services.MixDbService.Cache
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.repodb/Services/MixDbService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Cache
+    path: ../../mix.core/src/platform/mix.repodb/Services/MixDbService.cs
+    startLine: 22
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Services
+  syntax:
+    content: public ICache Cache { get; }
+    parameters: []
+    return:
+      type: RepoDb.Interfaces.ICache
+    content.vb: Public ReadOnly Property Cache As ICache
+  overload: Mix.RepoDb.Services.MixDbService.Cache*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.RepoDb.Services.MixDbService.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo{Mix.Database.Entities.Cms.MixCmsContext},Mix.Database.Services.DatabaseService,Mix.RepoDb.Repositories.MixRepoDbRepository,RepoDb.Interfaces.ICache)
+  commentId: M:Mix.RepoDb.Services.MixDbService.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo{Mix.Database.Entities.Cms.MixCmsContext},Mix.Database.Services.DatabaseService,Mix.RepoDb.Repositories.MixRepoDbRepository,RepoDb.Interfaces.ICache)
+  id: '#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo{Mix.Database.Entities.Cms.MixCmsContext},Mix.Database.Services.DatabaseService,Mix.RepoDb.Repositories.MixRepoDbRepository,RepoDb.Interfaces.ICache)'
+  parent: Mix.RepoDb.Services.MixDbService
+  langs:
+  - csharp
+  - vb
+  name: MixDbService(UnitOfWorkInfo<MixCmsContext>, DatabaseService, MixRepoDbRepository, ICache)
+  nameWithType: MixDbService.MixDbService(UnitOfWorkInfo<MixCmsContext>, DatabaseService, MixRepoDbRepository, ICache)
+  fullName: Mix.RepoDb.Services.MixDbService.MixDbService(Mix.Heart.UnitOfWork.UnitOfWorkInfo<Mix.Database.Entities.Cms.MixCmsContext>, Mix.Database.Services.DatabaseService, Mix.RepoDb.Repositories.MixRepoDbRepository, RepoDb.Interfaces.ICache)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.repodb/Services/MixDbService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.repodb/Services/MixDbService.cs
+    startLine: 27
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Services
+  syntax:
+    content: public MixDbService(UnitOfWorkInfo<MixCmsContext> uow, DatabaseService databaseService, MixRepoDbRepository repository, ICache cache)
+    parameters:
+    - id: uow
+      type: Mix.Heart.UnitOfWork.UnitOfWorkInfo{Mix.Database.Entities.Cms.MixCmsContext}
+    - id: databaseService
+      type: Mix.Database.Services.DatabaseService
+    - id: repository
+      type: Mix.RepoDb.Repositories.MixRepoDbRepository
+    - id: cache
+      type: RepoDb.Interfaces.ICache
+    content.vb: Public Sub New(uow As UnitOfWorkInfo(Of MixCmsContext), databaseService As DatabaseService, repository As MixRepoDbRepository, cache As ICache)
+  overload: Mix.RepoDb.Services.MixDbService.#ctor*
+  nameWithType.vb: MixDbService.MixDbService(UnitOfWorkInfo(Of MixCmsContext), DatabaseService, MixRepoDbRepository, ICache)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.RepoDb.Services.MixDbService.MixDbService(Mix.Heart.UnitOfWork.UnitOfWorkInfo(Of Mix.Database.Entities.Cms.MixCmsContext), Mix.Database.Services.DatabaseService, Mix.RepoDb.Repositories.MixRepoDbRepository, RepoDb.Interfaces.ICache)
+  name.vb: MixDbService(UnitOfWorkInfo(Of MixCmsContext), DatabaseService, MixRepoDbRepository, ICache)
+- uid: Mix.RepoDb.Services.MixDbService.MigrateDatabase(System.String)
+  commentId: M:Mix.RepoDb.Services.MixDbService.MigrateDatabase(System.String)
+  id: MigrateDatabase(System.String)
+  parent: Mix.RepoDb.Services.MixDbService
+  langs:
+  - csharp
+  - vb
+  name: MigrateDatabase(String)
+  nameWithType: MixDbService.MigrateDatabase(String)
+  fullName: Mix.RepoDb.Services.MixDbService.MigrateDatabase(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Services/MixDbService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MigrateDatabase
+    path: ../../mix.core/src/platform/mix.repodb/Services/MixDbService.cs
+    startLine: 38
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Services
+  syntax:
+    content: public Task<bool> MigrateDatabase(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Task{System.Boolean}
+    content.vb: Public Function MigrateDatabase(name As String) As Task(Of Boolean)
+  overload: Mix.RepoDb.Services.MixDbService.MigrateDatabase*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.RepoDb.Services.MixDbService.BackupDatabase(System.String)
+  commentId: M:Mix.RepoDb.Services.MixDbService.BackupDatabase(System.String)
+  id: BackupDatabase(System.String)
+  parent: Mix.RepoDb.Services.MixDbService
+  langs:
+  - csharp
+  - vb
+  name: BackupDatabase(String)
+  nameWithType: MixDbService.BackupDatabase(String)
+  fullName: Mix.RepoDb.Services.MixDbService.BackupDatabase(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Services/MixDbService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: BackupDatabase
+    path: ../../mix.core/src/platform/mix.repodb/Services/MixDbService.cs
+    startLine: 53
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Services
+  syntax:
+    content: public Task<bool> BackupDatabase(string databaseName)
+    parameters:
+    - id: databaseName
+      type: System.String
+    return:
+      type: Task{System.Boolean}
+    content.vb: Public Function BackupDatabase(databaseName As String) As Task(Of Boolean)
+  overload: Mix.RepoDb.Services.MixDbService.BackupDatabase*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.RepoDb.Services
+  commentId: N:Mix.RepoDb.Services
+  name: Mix.RepoDb.Services
+  nameWithType: Mix.RepoDb.Services
+  fullName: Mix.RepoDb.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.RepoDb.Services.MixDbService.Trace*
+  commentId: Overload:Mix.RepoDb.Services.MixDbService.Trace
+  name: Trace
+  nameWithType: MixDbService.Trace
+  fullName: Mix.RepoDb.Services.MixDbService.Trace
+- uid: RepoDb.Interfaces.ITrace
+  commentId: T:RepoDb.Interfaces.ITrace
+  parent: RepoDb.Interfaces
+  isExternal: true
+  name: ITrace
+  nameWithType: ITrace
+  fullName: RepoDb.Interfaces.ITrace
+- uid: RepoDb.Interfaces
+  commentId: N:RepoDb.Interfaces
+  isExternal: true
+  name: RepoDb.Interfaces
+  nameWithType: RepoDb.Interfaces
+  fullName: RepoDb.Interfaces
+- uid: Mix.RepoDb.Services.MixDbService.Cache*
+  commentId: Overload:Mix.RepoDb.Services.MixDbService.Cache
+  name: Cache
+  nameWithType: MixDbService.Cache
+  fullName: Mix.RepoDb.Services.MixDbService.Cache
+- uid: RepoDb.Interfaces.ICache
+  commentId: T:RepoDb.Interfaces.ICache
+  parent: RepoDb.Interfaces
+  isExternal: true
+  name: ICache
+  nameWithType: ICache
+  fullName: RepoDb.Interfaces.ICache
+- uid: Mix.RepoDb.Services.MixDbService.#ctor*
+  commentId: Overload:Mix.RepoDb.Services.MixDbService.#ctor
+  name: MixDbService
+  nameWithType: MixDbService.MixDbService
+  fullName: Mix.RepoDb.Services.MixDbService.MixDbService
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo{Mix.Database.Entities.Cms.MixCmsContext}
+  commentId: T:Mix.Heart.UnitOfWork.UnitOfWorkInfo{Mix.Database.Entities.Cms.MixCmsContext}
+  parent: Mix.Heart.UnitOfWork
+  definition: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo<Mix.Database.Entities.Cms.MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: Mix.Heart.UnitOfWork.UnitOfWorkInfo(Of Mix.Database.Entities.Cms.MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Cms.MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: Mix.Database.Entities.Cms.MixCmsContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Cms.MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: Mix.Database.Entities.Cms.MixCmsContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
+  parent: Mix.Database.Services
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
+- uid: Mix.RepoDb.Repositories.MixRepoDbRepository
+  commentId: T:Mix.RepoDb.Repositories.MixRepoDbRepository
+  parent: Mix.RepoDb.Repositories
+  name: MixRepoDbRepository
+  nameWithType: MixRepoDbRepository
+  fullName: Mix.RepoDb.Repositories.MixRepoDbRepository
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+  commentId: T:Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<T>
+  nameWithType: UnitOfWorkInfo<T>
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo<T>
+  nameWithType.vb: UnitOfWorkInfo(Of T)
+  fullName.vb: Mix.Heart.UnitOfWork.UnitOfWorkInfo(Of T)
+  name.vb: UnitOfWorkInfo(Of T)
+  spec.csharp:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.UnitOfWork
+  commentId: N:Mix.Heart.UnitOfWork
+  name: Mix.Heart.UnitOfWork
+  nameWithType: Mix.Heart.UnitOfWork
+  fullName: Mix.Heart.UnitOfWork
+- uid: Mix.Database.Services
+  commentId: N:Mix.Database.Services
+  name: Mix.Database.Services
+  nameWithType: Mix.Database.Services
+  fullName: Mix.Database.Services
+- uid: Mix.RepoDb.Repositories
+  commentId: N:Mix.RepoDb.Repositories
+  name: Mix.RepoDb.Repositories
+  nameWithType: Mix.RepoDb.Repositories
+  fullName: Mix.RepoDb.Repositories
+- uid: Mix.RepoDb.Services.MixDbService.MigrateDatabase*
+  commentId: Overload:Mix.RepoDb.Services.MixDbService.MigrateDatabase
+  name: MigrateDatabase
+  nameWithType: MixDbService.MigrateDatabase
+  fullName: Mix.RepoDb.Services.MixDbService.MigrateDatabase
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Services.MixDbService.BackupDatabase*
+  commentId: Overload:Mix.RepoDb.Services.MixDbService.BackupDatabase
+  name: BackupDatabase
+  nameWithType: MixDbService.BackupDatabase
+  fullName: Mix.RepoDb.Services.MixDbService.BackupDatabase

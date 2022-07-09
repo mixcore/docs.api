@@ -5,7 +5,7 @@ items:
   id: PostgresqlMixCmsContext
   parent: Mix.Database.Entities
   children:
-  - Mix.Database.Entities.PostgresqlMixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  - Mix.Database.Entities.PostgresqlMixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
   - Mix.Database.Entities.PostgresqlMixCmsContext.OnModelCreating(ModelBuilder)
   langs:
   - csharp
@@ -38,16 +38,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Mix.Database.Entities.PostgresqlMixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  commentId: M:Mix.Database.Entities.PostgresqlMixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  id: '#ctor(Mix.Database.Services.MixDatabaseService)'
+- uid: Mix.Database.Entities.PostgresqlMixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
+  commentId: M:Mix.Database.Entities.PostgresqlMixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
+  id: '#ctor(Mix.Database.Services.DatabaseService)'
   parent: Mix.Database.Entities.PostgresqlMixCmsContext
   langs:
   - csharp
   - vb
-  name: PostgresqlMixCmsContext(MixDatabaseService)
-  nameWithType: PostgresqlMixCmsContext.PostgresqlMixCmsContext(MixDatabaseService)
-  fullName: Mix.Database.Entities.PostgresqlMixCmsContext.PostgresqlMixCmsContext(Mix.Database.Services.MixDatabaseService)
+  name: PostgresqlMixCmsContext(DatabaseService)
+  nameWithType: PostgresqlMixCmsContext.PostgresqlMixCmsContext(DatabaseService)
+  fullName: Mix.Database.Entities.PostgresqlMixCmsContext.PostgresqlMixCmsContext(Mix.Database.Services.DatabaseService)
   type: Constructor
   source:
     remote:
@@ -61,11 +61,11 @@ items:
   - mix.database
   namespace: Mix.Database.Entities
   syntax:
-    content: public PostgresqlMixCmsContext(MixDatabaseService databaseService)
+    content: public PostgresqlMixCmsContext(DatabaseService databaseService)
     parameters:
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
-    content.vb: Public Sub New(databaseService As MixDatabaseService)
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Public Sub New(databaseService As DatabaseService)
   overload: Mix.Database.Entities.PostgresqlMixCmsContext.#ctor*
   modifiers.csharp:
   - public
@@ -130,12 +130,12 @@ references:
   name: PostgresqlMixCmsContext
   nameWithType: PostgresqlMixCmsContext.PostgresqlMixCmsContext
   fullName: Mix.Database.Entities.PostgresqlMixCmsContext.PostgresqlMixCmsContext
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Database.Services
   commentId: N:Mix.Database.Services
   name: Mix.Database.Services

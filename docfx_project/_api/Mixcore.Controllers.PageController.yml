@@ -5,7 +5,7 @@ items:
   id: PageController
   parent: Mixcore.Controllers
   children:
-  - Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,MixCmsContext,MixCacheService)
+  - Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.DatabaseService,MixCmsContext,MixCacheService)
   - Mixcore.Controllers.PageController._context
   - Mixcore.Controllers.PageController._uow
   - Mixcore.Controllers.PageController.Index(System.Int32,System.String)
@@ -117,16 +117,16 @@ items:
   modifiers.vb:
   - Protected
   - ReadOnly
-- uid: Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,MixCmsContext,MixCacheService)
-  commentId: M:Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,MixCmsContext,MixCacheService)
-  id: '#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.MixDatabaseService,MixCmsContext,MixCacheService)'
+- uid: Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.DatabaseService,MixCmsContext,MixCacheService)
+  commentId: M:Mixcore.Controllers.PageController.#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.DatabaseService,MixCmsContext,MixCacheService)
+  id: '#ctor(IHttpContextAccessor,ILogger{Mixcore.Controllers.HomeController},Mix.Shared.Services.IPSecurityConfigService,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,Mix.Database.Services.DatabaseService,MixCmsContext,MixCacheService)'
   parent: Mixcore.Controllers.PageController
   langs:
   - csharp
   - vb
-  name: PageController(IHttpContextAccessor, ILogger<HomeController>, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, MixCmsContext, MixCacheService)
-  nameWithType: PageController.PageController(IHttpContextAccessor, ILogger<HomeController>, IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, MixCmsContext, MixCacheService)
-  fullName: Mixcore.Controllers.PageController.PageController(IHttpContextAccessor, ILogger<Mixcore.Controllers.HomeController>, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.MixDatabaseService, MixCmsContext, MixCacheService)
+  name: PageController(IHttpContextAccessor, ILogger<HomeController>, IPSecurityConfigService, MixService, TranslatorService, DatabaseService, MixCmsContext, MixCacheService)
+  nameWithType: PageController.PageController(IHttpContextAccessor, ILogger<HomeController>, IPSecurityConfigService, MixService, TranslatorService, DatabaseService, MixCmsContext, MixCacheService)
+  fullName: Mixcore.Controllers.PageController.PageController(IHttpContextAccessor, ILogger<Mixcore.Controllers.HomeController>, Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.DatabaseService, MixCmsContext, MixCacheService)
   type: Constructor
   source:
     remote:
@@ -140,7 +140,7 @@ items:
   - mixcore
   namespace: Mixcore.Controllers
   syntax:
-    content: public PageController(IHttpContextAccessor httpContextAccessor, ILogger<HomeController> logger, IPSecurityConfigService ipSecurityConfigService, MixService mixService, TranslatorService translator, MixDatabaseService databaseService, MixCmsContext context, MixCacheService cacheService)
+    content: public PageController(IHttpContextAccessor httpContextAccessor, ILogger<HomeController> logger, IPSecurityConfigService ipSecurityConfigService, MixService mixService, TranslatorService translator, DatabaseService databaseService, MixCmsContext context, MixCacheService cacheService)
     parameters:
     - id: httpContextAccessor
       type: IHttpContextAccessor
@@ -153,20 +153,20 @@ items:
     - id: translator
       type: Mix.Lib.Services.TranslatorService
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
+      type: Mix.Database.Services.DatabaseService
     - id: context
       type: MixCmsContext
     - id: cacheService
       type: MixCacheService
-    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, logger As ILogger(Of HomeController), ipSecurityConfigService As IPSecurityConfigService, mixService As MixService, translator As TranslatorService, databaseService As MixDatabaseService, context As MixCmsContext, cacheService As MixCacheService)
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, logger As ILogger(Of HomeController), ipSecurityConfigService As IPSecurityConfigService, mixService As MixService, translator As TranslatorService, databaseService As DatabaseService, context As MixCmsContext, cacheService As MixCacheService)
   overload: Mixcore.Controllers.PageController.#ctor*
-  nameWithType.vb: PageController.PageController(IHttpContextAccessor, ILogger(Of HomeController), IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, MixCmsContext, MixCacheService)
+  nameWithType.vb: PageController.PageController(IHttpContextAccessor, ILogger(Of HomeController), IPSecurityConfigService, MixService, TranslatorService, DatabaseService, MixCmsContext, MixCacheService)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Mixcore.Controllers.PageController.PageController(IHttpContextAccessor, ILogger(Of Mixcore.Controllers.HomeController), Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.MixDatabaseService, MixCmsContext, MixCacheService)
-  name.vb: PageController(IHttpContextAccessor, ILogger(Of HomeController), IPSecurityConfigService, MixService, TranslatorService, MixDatabaseService, MixCmsContext, MixCacheService)
+  fullName.vb: Mixcore.Controllers.PageController.PageController(IHttpContextAccessor, ILogger(Of Mixcore.Controllers.HomeController), Mix.Shared.Services.IPSecurityConfigService, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, Mix.Database.Services.DatabaseService, MixCmsContext, MixCacheService)
+  name.vb: PageController(IHttpContextAccessor, ILogger(Of HomeController), IPSecurityConfigService, MixService, TranslatorService, DatabaseService, MixCmsContext, MixCacheService)
 - uid: Mixcore.Controllers.PageController.ValidateRequest
   commentId: M:Mixcore.Controllers.PageController.ValidateRequest
   id: ValidateRequest
@@ -383,12 +383,12 @@ references:
   name: TranslatorService
   nameWithType: TranslatorService
   fullName: Mix.Lib.Services.TranslatorService
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: MixCacheService
   isExternal: true
   name: MixCacheService

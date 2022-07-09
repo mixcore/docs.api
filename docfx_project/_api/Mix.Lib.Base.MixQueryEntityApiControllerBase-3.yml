@@ -5,7 +5,7 @@ items:
   id: MixQueryEntityApiControllerBase`3
   parent: Mix.Lib.Base
   children:
-  - Mix.Lib.Base.MixQueryEntityApiControllerBase`3.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,`0,IQueueService{MessageQueueModel},Mix.Heart.Entities.Cache.MixCacheDbContext)
+  - Mix.Lib.Base.MixQueryEntityApiControllerBase`3.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,`0,IQueueService{MessageQueueModel},MixCacheDbContext)
   - Mix.Lib.Base.MixQueryEntityApiControllerBase`3._cacheDbContext
   - Mix.Lib.Base.MixQueryEntityApiControllerBase`3._cacheService
   - Mix.Lib.Base.MixQueryEntityApiControllerBase`3._cacheUOW
@@ -35,7 +35,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixQueryEntityApiControllerBase
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -297,7 +297,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: _repository
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -332,7 +332,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: _context
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -367,7 +367,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: _forbidden
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 21
+    startLine: 20
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -400,7 +400,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: _uow
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -433,7 +433,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: _cacheUOW
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -466,14 +466,14 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: _cacheDbContext
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
   syntax:
     content: protected MixCacheDbContext _cacheDbContext
     return:
-      type: Mix.Heart.Entities.Cache.MixCacheDbContext
+      type: MixCacheDbContext
     content.vb: Protected _cacheDbContext As MixCacheDbContext
   nameWithType.vb: MixQueryEntityApiControllerBase(Of TDbContext, TEntity, TPrimaryKey)._cacheDbContext
   modifiers.csharp:
@@ -499,7 +499,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: classConstructor
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -532,7 +532,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: _cacheService
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -547,16 +547,16 @@ items:
   modifiers.vb:
   - Protected
   fullName.vb: Mix.Lib.Base.MixQueryEntityApiControllerBase(Of TDbContext, TEntity, TPrimaryKey)._cacheService
-- uid: Mix.Lib.Base.MixQueryEntityApiControllerBase`3.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,`0,IQueueService{MessageQueueModel},Mix.Heart.Entities.Cache.MixCacheDbContext)
-  commentId: M:Mix.Lib.Base.MixQueryEntityApiControllerBase`3.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,`0,IQueueService{MessageQueueModel},Mix.Heart.Entities.Cache.MixCacheDbContext)
-  id: '#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,`0,IQueueService{MessageQueueModel},Mix.Heart.Entities.Cache.MixCacheDbContext)'
+- uid: Mix.Lib.Base.MixQueryEntityApiControllerBase`3.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,`0,IQueueService{MessageQueueModel},MixCacheDbContext)
+  commentId: M:Mix.Lib.Base.MixQueryEntityApiControllerBase`3.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,`0,IQueueService{MessageQueueModel},MixCacheDbContext)
+  id: '#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Configuration.IConfiguration,Mix.Lib.Services.MixService,Mix.Lib.Services.TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},Mix.Lib.Services.MixIdentityService,`0,IQueueService{MessageQueueModel},MixCacheDbContext)'
   parent: Mix.Lib.Base.MixQueryEntityApiControllerBase`3
   langs:
   - csharp
   - vb
   name: MixQueryEntityApiControllerBase(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, TDbContext, IQueueService<MessageQueueModel>, MixCacheDbContext)
   nameWithType: MixQueryEntityApiControllerBase<TDbContext, TEntity, TPrimaryKey>.MixQueryEntityApiControllerBase(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, TDbContext, IQueueService<MessageQueueModel>, MixCacheDbContext)
-  fullName: Mix.Lib.Base.MixQueryEntityApiControllerBase<TDbContext, TEntity, TPrimaryKey>.MixQueryEntityApiControllerBase(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.Extensions.Configuration.IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, Mix.Lib.Services.MixIdentityService, TDbContext, IQueueService<MessageQueueModel>, Mix.Heart.Entities.Cache.MixCacheDbContext)
+  fullName: Mix.Lib.Base.MixQueryEntityApiControllerBase<TDbContext, TEntity, TPrimaryKey>.MixQueryEntityApiControllerBase(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.Extensions.Configuration.IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, Mix.Lib.Services.MixIdentityService, TDbContext, IQueueService<MessageQueueModel>, MixCacheDbContext)
   type: Constructor
   source:
     remote:
@@ -565,7 +565,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: .ctor
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -589,7 +589,7 @@ items:
     - id: queueService
       type: IQueueService{MessageQueueModel}
     - id: cacheDbContext
-      type: Mix.Heart.Entities.Cache.MixCacheDbContext
+      type: MixCacheDbContext
     content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, context As TDbContext, queueService As IQueueService(Of MessageQueueModel), cacheDbContext As MixCacheDbContext)
   overload: Mix.Lib.Base.MixQueryEntityApiControllerBase`3.#ctor*
   nameWithType.vb: MixQueryEntityApiControllerBase(Of TDbContext, TEntity, TPrimaryKey).MixQueryEntityApiControllerBase(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, TDbContext, IQueueService(Of MessageQueueModel), MixCacheDbContext)
@@ -597,7 +597,7 @@ items:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Mix.Lib.Base.MixQueryEntityApiControllerBase(Of TDbContext, TEntity, TPrimaryKey).MixQueryEntityApiControllerBase(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.Extensions.Configuration.IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), Mix.Lib.Services.MixIdentityService, TDbContext, IQueueService(Of MessageQueueModel), Mix.Heart.Entities.Cache.MixCacheDbContext)
+  fullName.vb: Mix.Lib.Base.MixQueryEntityApiControllerBase(Of TDbContext, TEntity, TPrimaryKey).MixQueryEntityApiControllerBase(Microsoft.AspNetCore.Http.IHttpContextAccessor, Microsoft.Extensions.Configuration.IConfiguration, Mix.Lib.Services.MixService, Mix.Lib.Services.TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), Mix.Lib.Services.MixIdentityService, TDbContext, IQueueService(Of MessageQueueModel), MixCacheDbContext)
   name.vb: MixQueryEntityApiControllerBase(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, TDbContext, IQueueService(Of MessageQueueModel), MixCacheDbContext)
 - uid: Mix.Lib.Base.MixQueryEntityApiControllerBase`3.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
   commentId: M:Mix.Lib.Base.MixQueryEntityApiControllerBase`3.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
@@ -617,7 +617,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: OnActionExecuted
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 47
+    startLine: 46
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -655,7 +655,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: Get
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 66
+    startLine: 65
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -708,7 +708,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: GetSingle
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 92
+    startLine: 91
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -757,7 +757,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: GetDefault
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 101
+    startLine: 100
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -815,7 +815,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: BuildSearchRequest
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 115
+    startLine: 114
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -854,7 +854,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: BuildAndPredicate
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 127
+    startLine: 126
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -893,7 +893,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: GetById
     path: ../../mix.core/src/platform/mix.library/Base/MixQueryEntityApiControllerBase.cs
-    startLine: 146
+    startLine: 145
   assemblies:
   - mix.library
   namespace: Mix.Lib.Base
@@ -13800,17 +13800,11 @@ references:
   name: UnitOfWorkInfo
   nameWithType: UnitOfWorkInfo
   fullName: UnitOfWorkInfo
-- uid: Mix.Heart.Entities.Cache.MixCacheDbContext
-  commentId: T:Mix.Heart.Entities.Cache.MixCacheDbContext
-  parent: Mix.Heart.Entities.Cache
+- uid: MixCacheDbContext
+  isExternal: true
   name: MixCacheDbContext
   nameWithType: MixCacheDbContext
-  fullName: Mix.Heart.Entities.Cache.MixCacheDbContext
-- uid: Mix.Heart.Entities.Cache
-  commentId: N:Mix.Heart.Entities.Cache
-  name: Mix.Heart.Entities.Cache
-  nameWithType: Mix.Heart.Entities.Cache
-  fullName: Mix.Heart.Entities.Cache
+  fullName: MixCacheDbContext
 - uid: System.Reflection.ConstructorInfo
   commentId: T:System.Reflection.ConstructorInfo
   parent: System.Reflection

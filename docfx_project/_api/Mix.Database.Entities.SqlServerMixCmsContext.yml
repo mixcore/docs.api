@@ -5,7 +5,7 @@ items:
   id: SqlServerMixCmsContext
   parent: Mix.Database.Entities
   children:
-  - Mix.Database.Entities.SqlServerMixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  - Mix.Database.Entities.SqlServerMixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
   - Mix.Database.Entities.SqlServerMixCmsContext.OnModelCreating(ModelBuilder)
   langs:
   - csharp
@@ -38,16 +38,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Mix.Database.Entities.SqlServerMixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  commentId: M:Mix.Database.Entities.SqlServerMixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  id: '#ctor(Mix.Database.Services.MixDatabaseService)'
+- uid: Mix.Database.Entities.SqlServerMixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
+  commentId: M:Mix.Database.Entities.SqlServerMixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
+  id: '#ctor(Mix.Database.Services.DatabaseService)'
   parent: Mix.Database.Entities.SqlServerMixCmsContext
   langs:
   - csharp
   - vb
-  name: SqlServerMixCmsContext(MixDatabaseService)
-  nameWithType: SqlServerMixCmsContext.SqlServerMixCmsContext(MixDatabaseService)
-  fullName: Mix.Database.Entities.SqlServerMixCmsContext.SqlServerMixCmsContext(Mix.Database.Services.MixDatabaseService)
+  name: SqlServerMixCmsContext(DatabaseService)
+  nameWithType: SqlServerMixCmsContext.SqlServerMixCmsContext(DatabaseService)
+  fullName: Mix.Database.Entities.SqlServerMixCmsContext.SqlServerMixCmsContext(Mix.Database.Services.DatabaseService)
   type: Constructor
   source:
     remote:
@@ -61,11 +61,11 @@ items:
   - mix.database
   namespace: Mix.Database.Entities
   syntax:
-    content: public SqlServerMixCmsContext(MixDatabaseService databaseService)
+    content: public SqlServerMixCmsContext(DatabaseService databaseService)
     parameters:
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
-    content.vb: Public Sub New(databaseService As MixDatabaseService)
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Public Sub New(databaseService As DatabaseService)
   overload: Mix.Database.Entities.SqlServerMixCmsContext.#ctor*
   modifiers.csharp:
   - public
@@ -130,12 +130,12 @@ references:
   name: SqlServerMixCmsContext
   nameWithType: SqlServerMixCmsContext.SqlServerMixCmsContext
   fullName: Mix.Database.Entities.SqlServerMixCmsContext.SqlServerMixCmsContext
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Database.Services
   commentId: N:Mix.Database.Services
   name: Mix.Database.Services

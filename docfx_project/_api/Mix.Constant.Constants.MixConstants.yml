@@ -13,6 +13,7 @@ items:
   - Mix.Constant.Constants.MixConstants.CONST_DEFAULT_AVATAR
   - Mix.Constant.Constants.MixConstants.CONST_DEFAULT_EXTENSION_FILE_NAME
   - Mix.Constant.Constants.MixConstants.CONST_DEFAULT_EXTENSIONS_FILE_PATH
+  - Mix.Constant.Constants.MixConstants.CONST_DEFAULT_PAGESIZE
   - Mix.Constant.Constants.MixConstants.CONST_DEFAULT_STRING_ID
   - Mix.Constant.Constants.MixConstants.CONST_DOMAIN_NOTIFICATION
   - Mix.Constant.Constants.MixConstants.CONST_DOMAIN_NOTIFICATION_KEY_COMMIT
@@ -930,6 +931,39 @@ items:
   modifiers.vb:
   - Public
   - Const
+- uid: Mix.Constant.Constants.MixConstants.CONST_DEFAULT_PAGESIZE
+  commentId: F:Mix.Constant.Constants.MixConstants.CONST_DEFAULT_PAGESIZE
+  id: CONST_DEFAULT_PAGESIZE
+  parent: Mix.Constant.Constants.MixConstants
+  langs:
+  - csharp
+  - vb
+  name: CONST_DEFAULT_PAGESIZE
+  nameWithType: MixConstants.CONST_DEFAULT_PAGESIZE
+  fullName: Mix.Constant.Constants.MixConstants.CONST_DEFAULT_PAGESIZE
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.constant/Constants/MixConstants.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CONST_DEFAULT_PAGESIZE
+    path: ../../mix.core/src/platform/mix.constant/Constants/MixConstants.cs
+    startLine: 30
+  assemblies:
+  - mix.constant
+  namespace: Mix.Constant.Constants
+  syntax:
+    content: public const int CONST_DEFAULT_PAGESIZE = 1000
+    return:
+      type: System.Int32
+    content.vb: Public Const CONST_DEFAULT_PAGESIZE As Integer = 1000
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
 - uid: Mix.Constant.Constants.MixConstants.CONST_UPLOAD_FOLDER_DATE_FORMAT
   commentId: F:Mix.Constant.Constants.MixConstants.CONST_UPLOAD_FOLDER_DATE_FORMAT
   id: CONST_UPLOAD_FOLDER_DATE_FORMAT
@@ -948,7 +982,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: CONST_UPLOAD_FOLDER_DATE_FORMAT
     path: ../../mix.core/src/platform/mix.constant/Constants/MixConstants.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - mix.constant
   namespace: Mix.Constant.Constants
@@ -981,7 +1015,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: CONST_MIXDB_PREFIX
     path: ../../mix.core/src/platform/mix.constant/Constants/MixConstants.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - mix.constant
   namespace: Mix.Constant.Constants
@@ -1014,7 +1048,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: CONST_RSA_PUBLIC_KEY
     path: ../../mix.core/src/platform/mix.constant/Constants/MixConstants.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - mix.constant
   namespace: Mix.Constant.Constants
@@ -1047,7 +1081,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: CONST_RSA_PRIVATE_KEY
     path: ../../mix.core/src/platform/mix.constant/Constants/MixConstants.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - mix.constant
   namespace: Mix.Constant.Constants
@@ -1367,3 +1401,10 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

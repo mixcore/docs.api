@@ -6,7 +6,7 @@ items:
   parent: Mix.Database.Entities.Cms
   children:
   - Mix.Database.Entities.Cms.MixCmsContext.#ctor
-  - Mix.Database.Entities.Cms.MixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  - Mix.Database.Entities.Cms.MixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
   - Mix.Database.Entities.Cms.MixCmsContext.#ctor(System.String,MixDatabaseProvider)
   - Mix.Database.Entities.Cms.MixCmsContext.Dispose
   - Mix.Database.Entities.Cms.MixCmsContext.MixConfiguration
@@ -16,6 +16,8 @@ items:
   - Mix.Database.Entities.Cms.MixCmsContext.MixData
   - Mix.Database.Entities.Cms.MixCmsContext.MixDatabase
   - Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseColumn
+  - Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContext
+  - Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContextDatabaseAssociation
   - Mix.Database.Entities.Cms.MixCmsContext.MixDataContent
   - Mix.Database.Entities.Cms.MixCmsContext.MixDataContentAssociation
   - Mix.Database.Entities.Cms.MixCmsContext.MixDataContentValue
@@ -135,16 +137,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Mix.Database.Entities.Cms.MixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  commentId: M:Mix.Database.Entities.Cms.MixCmsContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  id: '#ctor(Mix.Database.Services.MixDatabaseService)'
+- uid: Mix.Database.Entities.Cms.MixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
+  commentId: M:Mix.Database.Entities.Cms.MixCmsContext.#ctor(Mix.Database.Services.DatabaseService)
+  id: '#ctor(Mix.Database.Services.DatabaseService)'
   parent: Mix.Database.Entities.Cms.MixCmsContext
   langs:
   - csharp
   - vb
-  name: MixCmsContext(MixDatabaseService)
-  nameWithType: MixCmsContext.MixCmsContext(MixDatabaseService)
-  fullName: Mix.Database.Entities.Cms.MixCmsContext.MixCmsContext(Mix.Database.Services.MixDatabaseService)
+  name: MixCmsContext(DatabaseService)
+  nameWithType: MixCmsContext.MixCmsContext(DatabaseService)
+  fullName: Mix.Database.Entities.Cms.MixCmsContext.MixCmsContext(Mix.Database.Services.DatabaseService)
   type: Constructor
   source:
     remote:
@@ -158,11 +160,11 @@ items:
   - mix.database
   namespace: Mix.Database.Entities.Cms
   syntax:
-    content: public MixCmsContext(MixDatabaseService databaseService)
+    content: public MixCmsContext(DatabaseService databaseService)
     parameters:
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
-    content.vb: Public Sub New(databaseService As MixDatabaseService)
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Public Sub New(databaseService As DatabaseService)
   overload: Mix.Database.Entities.Cms.MixCmsContext.#ctor*
   modifiers.csharp:
   - public
@@ -788,6 +790,43 @@ items:
   modifiers.vb:
   - Public
   - Overridable
+- uid: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContext
+  commentId: P:Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContext
+  id: MixDatabaseContext
+  parent: Mix.Database.Entities.Cms.MixCmsContext
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseContext
+  nameWithType: MixCmsContext.MixDatabaseContext
+  fullName: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContext
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDatabaseContext
+    path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
+    startLine: 119
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Cms
+  syntax:
+    content: public virtual DbSet<MixDatabaseContext> MixDatabaseContext { get; set; }
+    parameters: []
+    return:
+      type: DbSet{Mix.Database.Entities.Cms.MixDatabaseContext}
+    content.vb: Public Overridable Property MixDatabaseContext As DbSet(Of MixDatabaseContext)
+  overload: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContext*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
 - uid: Mix.Database.Entities.Cms.MixCmsContext.MixDatabase
   commentId: P:Mix.Database.Entities.Cms.MixCmsContext.MixDatabase
   id: MixDatabase
@@ -806,7 +845,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixDatabase
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 119
+    startLine: 120
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -843,7 +882,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixTheme
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 120
+    startLine: 121
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -880,7 +919,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixViewTemplate
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 121
+    startLine: 122
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -917,7 +956,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixConfigurationContent
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 122
+    startLine: 123
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -954,7 +993,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixLanguageContent
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 123
+    startLine: 124
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -991,7 +1030,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixDatabaseColumn
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 124
+    startLine: 125
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1028,7 +1067,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixData
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 125
+    startLine: 126
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1065,7 +1104,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixDataContent
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 126
+    startLine: 127
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1102,7 +1141,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixDataContentValue
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 127
+    startLine: 128
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1113,6 +1152,43 @@ items:
       type: DbSet{Mix.Database.Entities.Cms.MixDataContentValue}
     content.vb: Public Overridable Property MixDataContentValue As DbSet(Of MixDataContentValue)
   overload: Mix.Database.Entities.Cms.MixCmsContext.MixDataContentValue*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContextDatabaseAssociation
+  commentId: P:Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContextDatabaseAssociation
+  id: MixDatabaseContextDatabaseAssociation
+  parent: Mix.Database.Entities.Cms.MixCmsContext
+  langs:
+  - csharp
+  - vb
+  name: MixDatabaseContextDatabaseAssociation
+  nameWithType: MixCmsContext.MixDatabaseContextDatabaseAssociation
+  fullName: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContextDatabaseAssociation
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDatabaseContextDatabaseAssociation
+    path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
+    startLine: 129
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Entities.Cms
+  syntax:
+    content: public virtual DbSet<MixDatabaseContextDatabaseAssociation> MixDatabaseContextDatabaseAssociation { get; set; }
+    parameters: []
+    return:
+      type: DbSet{Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation}
+    content.vb: Public Overridable Property MixDatabaseContextDatabaseAssociation As DbSet(Of MixDatabaseContextDatabaseAssociation)
+  overload: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContextDatabaseAssociation*
   modifiers.csharp:
   - public
   - virtual
@@ -1139,7 +1215,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixDataContentAssociation
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 128
+    startLine: 130
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1176,7 +1252,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixPagePostAssociation
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 129
+    startLine: 131
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1213,7 +1289,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixPageModuleAssociation
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 130
+    startLine: 132
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1250,7 +1326,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixModulePostAssociation
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 131
+    startLine: 133
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1287,7 +1363,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixContributor
     path: ../../mix.core/src/platform/mix.database/Entities/Cms/_MixCmsContext.cs
-    startLine: 132
+    startLine: 134
   assemblies:
   - mix.database
   namespace: Mix.Database.Entities.Cms
@@ -1342,12 +1418,12 @@ references:
   name: MixDatabaseProvider
   nameWithType: MixDatabaseProvider
   fullName: MixDatabaseProvider
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Database.Services
   commentId: N:Mix.Database.Services
   name: Mix.Database.Services
@@ -2060,6 +2136,52 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContext*
+  commentId: Overload:Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContext
+  name: MixDatabaseContext
+  nameWithType: MixCmsContext.MixDatabaseContext
+  fullName: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContext
+- uid: DbSet{Mix.Database.Entities.Cms.MixDatabaseContext}
+  commentId: '!:DbSet{Mix.Database.Entities.Cms.MixDatabaseContext}'
+  definition: DbSet`1
+  name: DbSet<MixDatabaseContext>
+  nameWithType: DbSet<MixDatabaseContext>
+  fullName: DbSet<Mix.Database.Entities.Cms.MixDatabaseContext>
+  nameWithType.vb: DbSet(Of MixDatabaseContext)
+  fullName.vb: DbSet(Of Mix.Database.Entities.Cms.MixDatabaseContext)
+  name.vb: DbSet(Of MixDatabaseContext)
+  spec.csharp:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Cms.MixDatabaseContext
+    name: MixDatabaseContext
+    nameWithType: MixDatabaseContext
+    fullName: Mix.Database.Entities.Cms.MixDatabaseContext
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Cms.MixDatabaseContext
+    name: MixDatabaseContext
+    nameWithType: MixDatabaseContext
+    fullName: Mix.Database.Entities.Cms.MixDatabaseContext
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Mix.Database.Entities.Cms.MixCmsContext.MixDatabase*
   commentId: Overload:Mix.Database.Entities.Cms.MixCmsContext.MixDatabase
   name: MixDatabase
@@ -2471,6 +2593,52 @@ references:
     name: MixDataContentValue
     nameWithType: MixDataContentValue
     fullName: Mix.Database.Entities.Cms.MixDataContentValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContextDatabaseAssociation*
+  commentId: Overload:Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContextDatabaseAssociation
+  name: MixDatabaseContextDatabaseAssociation
+  nameWithType: MixCmsContext.MixDatabaseContextDatabaseAssociation
+  fullName: Mix.Database.Entities.Cms.MixCmsContext.MixDatabaseContextDatabaseAssociation
+- uid: DbSet{Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation}
+  commentId: '!:DbSet{Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation}'
+  definition: DbSet`1
+  name: DbSet<MixDatabaseContextDatabaseAssociation>
+  nameWithType: DbSet<MixDatabaseContextDatabaseAssociation>
+  fullName: DbSet<Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation>
+  nameWithType.vb: DbSet(Of MixDatabaseContextDatabaseAssociation)
+  fullName.vb: DbSet(Of Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation)
+  name.vb: DbSet(Of MixDatabaseContextDatabaseAssociation)
+  spec.csharp:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation
+    name: MixDatabaseContextDatabaseAssociation
+    nameWithType: MixDatabaseContextDatabaseAssociation
+    fullName: Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation
+    name: MixDatabaseContextDatabaseAssociation
+    nameWithType: MixDatabaseContextDatabaseAssociation
+    fullName: Mix.Database.Entities.Cms.MixDatabaseContextDatabaseAssociation
   - name: )
     nameWithType: )
     fullName: )

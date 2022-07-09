@@ -1,0 +1,979 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Portal.Controllers.MixDbController
+  commentId: T:Mix.Portal.Controllers.MixDbController
+  id: MixDbController
+  parent: Mix.Portal.Controllers
+  children:
+  - Mix.Portal.Controllers.MixDbController.#ctor(IHttpContextAccessor,IConfiguration,MixCmsContext,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,IQueueService{MessageQueueModel},Mix.RepoDb.Repositories.MixRepoDbRepository)
+  - Mix.Portal.Controllers.MixDbController.Create(JObject)
+  - Mix.Portal.Controllers.MixDbController.Delete(System.Int32)
+  - Mix.Portal.Controllers.MixDbController.Get(SearchRequestDto)
+  - Mix.Portal.Controllers.MixDbController.GetSingle(System.Int32)
+  - Mix.Portal.Controllers.MixDbController.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  - Mix.Portal.Controllers.MixDbController.Update(JObject)
+  langs:
+  - csharp
+  - vb
+  name: MixDbController
+  nameWithType: MixDbController
+  fullName: Mix.Portal.Controllers.MixDbController
+  type: Class
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDbController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixDbController
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDbController.cs
+    startLine: 9
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [Route("api/v2/rest/mix-portal/mix-db/{name}")]
+
+      [ApiController]
+
+      public class MixDbController : MixApiControllerBase
+    content.vb: >-
+      <Route("api/v2/rest/mix-portal/mix-db/{name}")>
+
+      <ApiController>
+
+      Public Class MixDbController
+          Inherits MixApiControllerBase
+  inheritance:
+  - System.Object
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/v2/rest/mix-portal/mix-db/{name}
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Portal.Controllers.MixDbController.#ctor(IHttpContextAccessor,IConfiguration,MixCmsContext,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,IQueueService{MessageQueueModel},Mix.RepoDb.Repositories.MixRepoDbRepository)
+  commentId: M:Mix.Portal.Controllers.MixDbController.#ctor(IHttpContextAccessor,IConfiguration,MixCmsContext,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,IQueueService{MessageQueueModel},Mix.RepoDb.Repositories.MixRepoDbRepository)
+  id: '#ctor(IHttpContextAccessor,IConfiguration,MixCmsContext,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,IQueueService{MessageQueueModel},Mix.RepoDb.Repositories.MixRepoDbRepository)'
+  parent: Mix.Portal.Controllers.MixDbController
+  langs:
+  - csharp
+  - vb
+  name: MixDbController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, IQueueService<MessageQueueModel>, MixRepoDbRepository)
+  nameWithType: MixDbController.MixDbController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, IQueueService<MessageQueueModel>, MixRepoDbRepository)
+  fullName: Mix.Portal.Controllers.MixDbController.MixDbController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, MixIdentityService, IQueueService<MessageQueueModel>, Mix.RepoDb.Repositories.MixRepoDbRepository)
+  type: Constructor
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDbController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDbController.cs
+    startLine: 15
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: public MixDbController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixCmsContext context, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, IQueueService<MessageQueueModel> queueService, MixRepoDbRepository repository)
+    parameters:
+    - id: httpContextAccessor
+      type: IHttpContextAccessor
+    - id: configuration
+      type: IConfiguration
+    - id: context
+      type: MixCmsContext
+    - id: mixService
+      type: MixService
+    - id: translator
+      type: TranslatorService
+    - id: cultureRepository
+      type: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+    - id: mixIdentityService
+      type: MixIdentityService
+    - id: queueService
+      type: IQueueService{MessageQueueModel}
+    - id: repository
+      type: Mix.RepoDb.Repositories.MixRepoDbRepository
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, context As MixCmsContext, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, queueService As IQueueService(Of MessageQueueModel), repository As MixRepoDbRepository)
+  overload: Mix.Portal.Controllers.MixDbController.#ctor*
+  nameWithType.vb: MixDbController.MixDbController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, IQueueService(Of MessageQueueModel), MixRepoDbRepository)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.Portal.Controllers.MixDbController.MixDbController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), MixIdentityService, IQueueService(Of MessageQueueModel), Mix.RepoDb.Repositories.MixRepoDbRepository)
+  name.vb: MixDbController(IHttpContextAccessor, IConfiguration, MixCmsContext, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, IQueueService(Of MessageQueueModel), MixRepoDbRepository)
+- uid: Mix.Portal.Controllers.MixDbController.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  commentId: M:Mix.Portal.Controllers.MixDbController.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  id: OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  parent: Mix.Portal.Controllers.MixDbController
+  langs:
+  - csharp
+  - vb
+  name: OnActionExecuting(ActionExecutingContext)
+  nameWithType: MixDbController.OnActionExecuting(ActionExecutingContext)
+  fullName: Mix.Portal.Controllers.MixDbController.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDbController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: OnActionExecuting
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDbController.cs
+    startLine: 32
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: public override void OnActionExecuting(ActionExecutingContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+    content.vb: Public Overrides Sub OnActionExecuting(context As ActionExecutingContext)
+  overload: Mix.Portal.Controllers.MixDbController.OnActionExecuting*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Mix.Portal.Controllers.MixDbController.Get(SearchRequestDto)
+  commentId: M:Mix.Portal.Controllers.MixDbController.Get(SearchRequestDto)
+  id: Get(SearchRequestDto)
+  parent: Mix.Portal.Controllers.MixDbController
+  langs:
+  - csharp
+  - vb
+  name: Get(SearchRequestDto)
+  nameWithType: MixDbController.Get(SearchRequestDto)
+  fullName: Mix.Portal.Controllers.MixDbController.Get(SearchRequestDto)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDbController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Get
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDbController.cs
+    startLine: 40
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpGet]
+
+      public Task<ActionResult<PagingResponseModel<JObject>>> Get([FromQuery] SearchRequestDto req)
+    parameters:
+    - id: req
+      type: SearchRequestDto
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+        arguments: []
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{PagingResponseModel{JObject}}}
+    content.vb: >-
+      <HttpGet>
+
+      Public Function Get(req As SearchRequestDto) As Task(Of ActionResult(Of PagingResponseModel(Of JObject)))
+  overload: Mix.Portal.Controllers.MixDbController.Get*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixDbController.GetSingle(System.Int32)
+  commentId: M:Mix.Portal.Controllers.MixDbController.GetSingle(System.Int32)
+  id: GetSingle(System.Int32)
+  parent: Mix.Portal.Controllers.MixDbController
+  langs:
+  - csharp
+  - vb
+  name: GetSingle(Int32)
+  nameWithType: MixDbController.GetSingle(Int32)
+  fullName: Mix.Portal.Controllers.MixDbController.GetSingle(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDbController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetSingle
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDbController.cs
+    startLine: 49
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpGet("{id}")]
+
+      public Task<ActionResult<JObject>> GetSingle(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{JObject}}
+    content.vb: >-
+      <HttpGet("{id}")>
+
+      Public Function GetSingle(id As Integer) As Task(Of ActionResult(Of JObject))
+  overload: Mix.Portal.Controllers.MixDbController.GetSingle*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id}'
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixDbController.Create(JObject)
+  commentId: M:Mix.Portal.Controllers.MixDbController.Create(JObject)
+  id: Create(JObject)
+  parent: Mix.Portal.Controllers.MixDbController
+  langs:
+  - csharp
+  - vb
+  name: Create(JObject)
+  nameWithType: MixDbController.Create(JObject)
+  fullName: Mix.Portal.Controllers.MixDbController.Create(JObject)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDbController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Create
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDbController.cs
+    startLine: 56
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpPost]
+
+      public Task<ActionResult<object>> Create(JObject obj)
+    parameters:
+    - id: obj
+      type: JObject
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Object}}
+    content.vb: >-
+      <HttpPost>
+
+      Public Function Create(obj As JObject) As Task(Of ActionResult(Of Object))
+  overload: Mix.Portal.Controllers.MixDbController.Create*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixDbController.Update(JObject)
+  commentId: M:Mix.Portal.Controllers.MixDbController.Update(JObject)
+  id: Update(JObject)
+  parent: Mix.Portal.Controllers.MixDbController
+  langs:
+  - csharp
+  - vb
+  name: Update(JObject)
+  nameWithType: MixDbController.Update(JObject)
+  fullName: Mix.Portal.Controllers.MixDbController.Update(JObject)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDbController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Update
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDbController.cs
+    startLine: 63
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpPut]
+
+      public Task<ActionResult<object>> Update(JObject obj)
+    parameters:
+    - id: obj
+      type: JObject
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Object}}
+    content.vb: >-
+      <HttpPut>
+
+      Public Function Update(obj As JObject) As Task(Of ActionResult(Of Object))
+  overload: Mix.Portal.Controllers.MixDbController.Update*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPutAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPutAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixDbController.Delete(System.Int32)
+  commentId: M:Mix.Portal.Controllers.MixDbController.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Mix.Portal.Controllers.MixDbController
+  langs:
+  - csharp
+  - vb
+  name: Delete(Int32)
+  nameWithType: MixDbController.Delete(Int32)
+  fullName: Mix.Portal.Controllers.MixDbController.Delete(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDbController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Delete
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDbController.cs
+    startLine: 70
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpDelete]
+
+      public Task<ActionResult<object>> Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Object}}
+    content.vb: >-
+      <HttpDelete>
+
+      Public Function Delete(id As Integer) As Task(Of ActionResult(Of Object))
+  overload: Mix.Portal.Controllers.MixDbController.Delete*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Portal.Controllers
+  commentId: N:Mix.Portal.Controllers
+  name: Mix.Portal.Controllers
+  nameWithType: Mix.Portal.Controllers
+  fullName: Mix.Portal.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Portal.Controllers.MixDbController.#ctor*
+  commentId: Overload:Mix.Portal.Controllers.MixDbController.#ctor
+  name: MixDbController
+  nameWithType: MixDbController.MixDbController
+  fullName: Mix.Portal.Controllers.MixDbController.MixDbController
+- uid: IHttpContextAccessor
+  isExternal: true
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: IHttpContextAccessor
+- uid: IConfiguration
+  isExternal: true
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: IConfiguration
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: MixService
+  isExternal: true
+  name: MixService
+  nameWithType: MixService
+  fullName: MixService
+- uid: TranslatorService
+  isExternal: true
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: TranslatorService
+- uid: EntityRepository{MixCmsContext,MixCulture,System.Int32}
+  commentId: '!:EntityRepository{MixCmsContext,MixCulture,System.Int32}'
+  definition: EntityRepository`3
+  name: EntityRepository<MixCmsContext, MixCulture, Int32>
+  nameWithType: EntityRepository<MixCmsContext, MixCulture, Int32>
+  fullName: EntityRepository<MixCmsContext, MixCulture, System.Int32>
+  nameWithType.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  fullName.vb: EntityRepository(Of MixCmsContext, MixCulture, System.Int32)
+  name.vb: EntityRepository(Of MixCmsContext, MixCulture, Int32)
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MixCulture
+    name: MixCulture
+    nameWithType: MixCulture
+    fullName: MixCulture
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MixIdentityService
+  isExternal: true
+  name: MixIdentityService
+  nameWithType: MixIdentityService
+  fullName: MixIdentityService
+- uid: IQueueService{MessageQueueModel}
+  commentId: '!:IQueueService{MessageQueueModel}'
+  definition: IQueueService`1
+  name: IQueueService<MessageQueueModel>
+  nameWithType: IQueueService<MessageQueueModel>
+  fullName: IQueueService<MessageQueueModel>
+  nameWithType.vb: IQueueService(Of MessageQueueModel)
+  fullName.vb: IQueueService(Of MessageQueueModel)
+  name.vb: IQueueService(Of MessageQueueModel)
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MessageQueueModel
+    name: MessageQueueModel
+    nameWithType: MessageQueueModel
+    fullName: MessageQueueModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Repositories.MixRepoDbRepository
+  commentId: T:Mix.RepoDb.Repositories.MixRepoDbRepository
+  parent: Mix.RepoDb.Repositories
+  name: MixRepoDbRepository
+  nameWithType: MixRepoDbRepository
+  fullName: Mix.RepoDb.Repositories.MixRepoDbRepository
+- uid: EntityRepository`3
+  isExternal: true
+  name: EntityRepository<, , >
+  nameWithType: EntityRepository<, , >
+  fullName: EntityRepository<, , >
+  nameWithType.vb: EntityRepository(Of , , )
+  fullName.vb: EntityRepository(Of , , )
+  name.vb: EntityRepository(Of , , )
+  spec.csharp:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: EntityRepository`3
+    name: EntityRepository
+    nameWithType: EntityRepository
+    fullName: EntityRepository
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IQueueService`1
+  isExternal: true
+  name: IQueueService<>
+  nameWithType: IQueueService<>
+  fullName: IQueueService<>
+  nameWithType.vb: IQueueService(Of )
+  fullName.vb: IQueueService(Of )
+  name.vb: IQueueService(Of )
+  spec.csharp:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IQueueService`1
+    name: IQueueService
+    nameWithType: IQueueService
+    fullName: IQueueService
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Repositories
+  commentId: N:Mix.RepoDb.Repositories
+  name: Mix.RepoDb.Repositories
+  nameWithType: Mix.RepoDb.Repositories
+  fullName: Mix.RepoDb.Repositories
+- uid: Mix.Portal.Controllers.MixDbController.OnActionExecuting*
+  commentId: Overload:Mix.Portal.Controllers.MixDbController.OnActionExecuting
+  name: OnActionExecuting
+  nameWithType: MixDbController.OnActionExecuting
+  fullName: Mix.Portal.Controllers.MixDbController.OnActionExecuting
+- uid: Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  name: ActionExecutingContext
+  nameWithType: ActionExecutingContext
+  fullName: Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+- uid: Microsoft.AspNetCore.Mvc.Filters
+  commentId: N:Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  name: Microsoft.AspNetCore.Mvc.Filters
+  nameWithType: Microsoft.AspNetCore.Mvc.Filters
+  fullName: Microsoft.AspNetCore.Mvc.Filters
+- uid: Mix.Portal.Controllers.MixDbController.Get*
+  commentId: Overload:Mix.Portal.Controllers.MixDbController.Get
+  name: Get
+  nameWithType: MixDbController.Get
+  fullName: Mix.Portal.Controllers.MixDbController.Get
+- uid: SearchRequestDto
+  isExternal: true
+  name: SearchRequestDto
+  nameWithType: SearchRequestDto
+  fullName: SearchRequestDto
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{PagingResponseModel{JObject}}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{PagingResponseModel{JObject}}}'
+  definition: Task`1
+  name: Task<ActionResult<PagingResponseModel<JObject>>>
+  nameWithType: Task<ActionResult<PagingResponseModel<JObject>>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<PagingResponseModel<JObject>>>
+  nameWithType.vb: Task(Of ActionResult(Of PagingResponseModel(Of JObject)))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of PagingResponseModel(Of JObject)))
+  name.vb: Task(Of ActionResult(Of PagingResponseModel(Of JObject)))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: PagingResponseModel`1
+    name: PagingResponseModel
+    nameWithType: PagingResponseModel
+    fullName: PagingResponseModel
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: PagingResponseModel`1
+    name: PagingResponseModel
+    nameWithType: PagingResponseModel
+    fullName: PagingResponseModel
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixDbController.GetSingle*
+  commentId: Overload:Mix.Portal.Controllers.MixDbController.GetSingle
+  name: GetSingle
+  nameWithType: MixDbController.GetSingle
+  fullName: Mix.Portal.Controllers.MixDbController.GetSingle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{JObject}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{JObject}}'
+  definition: Task`1
+  name: Task<ActionResult<JObject>>
+  nameWithType: Task<ActionResult<JObject>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<JObject>>
+  nameWithType.vb: Task(Of ActionResult(Of JObject))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of JObject))
+  name.vb: Task(Of ActionResult(Of JObject))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JObject
+    name: JObject
+    nameWithType: JObject
+    fullName: JObject
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixDbController.Create*
+  commentId: Overload:Mix.Portal.Controllers.MixDbController.Create
+  name: Create
+  nameWithType: MixDbController.Create
+  fullName: Mix.Portal.Controllers.MixDbController.Create
+- uid: JObject
+  isExternal: true
+  name: JObject
+  nameWithType: JObject
+  fullName: JObject
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Object}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{System.Object}}'
+  definition: Task`1
+  name: Task<ActionResult<Object>>
+  nameWithType: Task<ActionResult<Object>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<System.Object>>
+  nameWithType.vb: Task(Of ActionResult(Of Object))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of System.Object))
+  name.vb: Task(Of ActionResult(Of Object))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult`1
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixDbController.Update*
+  commentId: Overload:Mix.Portal.Controllers.MixDbController.Update
+  name: Update
+  nameWithType: MixDbController.Update
+  fullName: Mix.Portal.Controllers.MixDbController.Update
+- uid: Mix.Portal.Controllers.MixDbController.Delete*
+  commentId: Overload:Mix.Portal.Controllers.MixDbController.Delete
+  name: Delete
+  nameWithType: MixDbController.Delete
+  fullName: Mix.Portal.Controllers.MixDbController.Delete

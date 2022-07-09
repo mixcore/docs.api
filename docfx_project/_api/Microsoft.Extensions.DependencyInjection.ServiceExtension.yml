@@ -5,8 +5,8 @@ items:
   id: ServiceExtension
   parent: Microsoft.Extensions.DependencyInjection
   children:
-  - Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable{System.Type},System.Type)
-  - Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(IServiceCollection,System.Collections.Generic.IEnumerable{System.Type},System.Type)
+  - Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService``1(IServiceCollection)
   langs:
   - csharp
   - vb
@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Extensions/ServiceExtension.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: ServiceExtension
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/ServiceExtension.cs
@@ -45,9 +45,9 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  id: GetService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService``1(IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService``1(IServiceCollection)
+  id: GetService``1(IServiceCollection)
   isExtensionMethod: true
   parent: Microsoft.Extensions.DependencyInjection.ServiceExtension
   langs:
@@ -55,12 +55,12 @@ items:
   - vb
   name: GetService<T>(IServiceCollection)
   nameWithType: ServiceExtension.GetService<T>(IServiceCollection)
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService<T>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService<T>(IServiceCollection)
   type: Method
   source:
     remote:
       path: src/Mix.Heart/Extensions/ServiceExtension.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: GetService
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/ServiceExtension.cs
@@ -72,7 +72,7 @@ items:
     content: public static T GetService<T>(this IServiceCollection services)
     parameters:
     - id: services
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      type: IServiceCollection
     typeParameters:
     - id: T
     return:
@@ -89,11 +89,11 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService(Of T)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService(Of T)(IServiceCollection)
   name.vb: GetService(Of T)(IServiceCollection)
-- uid: Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable{System.Type},System.Type)
-  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable{System.Type},System.Type)
-  id: AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable{System.Type},System.Type)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(IServiceCollection,System.Collections.Generic.IEnumerable{System.Type},System.Type)
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(IServiceCollection,System.Collections.Generic.IEnumerable{System.Type},System.Type)
+  id: AddRepositories(IServiceCollection,System.Collections.Generic.IEnumerable{System.Type},System.Type)
   isExtensionMethod: true
   parent: Microsoft.Extensions.DependencyInjection.ServiceExtension
   langs:
@@ -101,12 +101,12 @@ items:
   - vb
   name: AddRepositories(IServiceCollection, IEnumerable<Type>, Type)
   nameWithType: ServiceExtension.AddRepositories(IServiceCollection, IEnumerable<Type>, Type)
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.IEnumerable<System.Type>, System.Type)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(IServiceCollection, System.Collections.Generic.IEnumerable<System.Type>, System.Type)
   type: Method
   source:
     remote:
       path: src/Mix.Heart/Extensions/ServiceExtension.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: AddRepositories
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/ServiceExtension.cs
@@ -118,13 +118,13 @@ items:
     content: public static IServiceCollection AddRepositories(this IServiceCollection services, IEnumerable<Type> entities, Type dbContextType)
     parameters:
     - id: services
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      type: IServiceCollection
     - id: entities
       type: System.Collections.Generic.IEnumerable{System.Type}
     - id: dbContextType
       type: System.Type
     return:
-      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      type: IServiceCollection
     content.vb: >-
       <ExtensionAttribute>
 
@@ -137,7 +137,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.IEnumerable(Of System.Type), System.Type)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceExtension.AddRepositories(IServiceCollection, System.Collections.Generic.IEnumerable(Of System.Type), System.Type)
   name.vb: AddRepositories(IServiceCollection, IEnumerable(Of Type), Type)
 references:
 - uid: Microsoft.Extensions.DependencyInjection
@@ -442,13 +442,11 @@ references:
   name: GetService
   nameWithType: ServiceExtension.GetService
   fullName: Microsoft.Extensions.DependencyInjection.ServiceExtension.GetService
-- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
-  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
-  parent: Microsoft.Extensions.DependencyInjection
+- uid: IServiceCollection
   isExternal: true
   name: IServiceCollection
   nameWithType: IServiceCollection
-  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  fullName: IServiceCollection
 - uid: '{T}'
   commentId: '!:T'
   definition: T

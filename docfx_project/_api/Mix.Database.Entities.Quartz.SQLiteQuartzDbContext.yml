@@ -5,7 +5,7 @@ items:
   id: SQLiteQuartzDbContext
   parent: Mix.Database.Entities.Quartz
   children:
-  - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.DatabaseService)
   - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(System.String)
   - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnConfiguring(DbContextOptionsBuilder)
   - Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.OnModelCreating(ModelBuilder)
@@ -55,16 +55,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  commentId: M:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  id: '#ctor(Mix.Database.Services.MixDatabaseService)'
+- uid: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.DatabaseService)
+  commentId: M:Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor(Mix.Database.Services.DatabaseService)
+  id: '#ctor(Mix.Database.Services.DatabaseService)'
   parent: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext
   langs:
   - csharp
   - vb
-  name: SQLiteQuartzDbContext(MixDatabaseService)
-  nameWithType: SQLiteQuartzDbContext.SQLiteQuartzDbContext(MixDatabaseService)
-  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.SQLiteQuartzDbContext(Mix.Database.Services.MixDatabaseService)
+  name: SQLiteQuartzDbContext(DatabaseService)
+  nameWithType: SQLiteQuartzDbContext.SQLiteQuartzDbContext(DatabaseService)
+  fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.SQLiteQuartzDbContext(Mix.Database.Services.DatabaseService)
   type: Constructor
   source:
     remote:
@@ -78,11 +78,11 @@ items:
   - mix.database
   namespace: Mix.Database.Entities.Quartz
   syntax:
-    content: public SQLiteQuartzDbContext(MixDatabaseService databaseService)
+    content: public SQLiteQuartzDbContext(DatabaseService databaseService)
     parameters:
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
-    content.vb: Public Sub New(databaseService As MixDatabaseService)
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Public Sub New(databaseService As DatabaseService)
   overload: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.#ctor*
   modifiers.csharp:
   - public
@@ -299,12 +299,12 @@ references:
   name: SQLiteQuartzDbContext
   nameWithType: SQLiteQuartzDbContext.SQLiteQuartzDbContext
   fullName: Mix.Database.Entities.Quartz.SQLiteQuartzDbContext.SQLiteQuartzDbContext
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Database.Services
   commentId: N:Mix.Database.Services
   name: Mix.Database.Services

@@ -5,9 +5,11 @@ items:
   id: MixDatabaseController
   parent: Mix.Portal.Controllers
   children:
-  - Mix.Portal.Controllers.MixDatabaseController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
-  - Mix.Portal.Controllers.MixDatabaseController.DeleteHandler(MixDatabaseViewModel)
+  - Mix.Portal.Controllers.MixDatabaseController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel},Mix.RepoDb.Services.MixDbService)
+  - Mix.Portal.Controllers.MixDatabaseController.Backup(System.String)
+  - Mix.Portal.Controllers.MixDatabaseController.DeleteHandler(Mix.Lib.ViewModels.MixDatabaseViewModel)
   - Mix.Portal.Controllers.MixDatabaseController.GetByName(System.String)
+  - Mix.Portal.Controllers.MixDatabaseController.Migrate(System.String)
   langs:
   - csharp
   - vb
@@ -57,16 +59,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Mix.Portal.Controllers.MixDatabaseController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
-  commentId: M:Mix.Portal.Controllers.MixDatabaseController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})
-  id: '#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel})'
+- uid: Mix.Portal.Controllers.MixDatabaseController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel},Mix.RepoDb.Services.MixDbService)
+  commentId: M:Mix.Portal.Controllers.MixDatabaseController.#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel},Mix.RepoDb.Services.MixDbService)
+  id: '#ctor(IHttpContextAccessor,IConfiguration,MixService,TranslatorService,EntityRepository{MixCmsContext,MixCulture,System.Int32},MixIdentityService,UnitOfWorkInfo{MixCacheDbContext},UnitOfWorkInfo{MixCmsContext},IQueueService{MessageQueueModel},Mix.RepoDb.Services.MixDbService)'
   parent: Mix.Portal.Controllers.MixDatabaseController
   langs:
   - csharp
   - vb
-  name: MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
-  nameWithType: MixDatabaseController.MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
-  fullName: Mix.Portal.Controllers.MixDatabaseController.MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, MixIdentityService, UnitOfWorkInfo<Mix.Heart.Entities.Cache.MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>)
+  name: MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>, MixDbService)
+  nameWithType: MixDatabaseController.MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>, MixDbService)
+  fullName: Mix.Portal.Controllers.MixDatabaseController.MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository<MixCmsContext, MixCulture, System.Int32>, MixIdentityService, UnitOfWorkInfo<MixCacheDbContext>, UnitOfWorkInfo<MixCmsContext>, IQueueService<MessageQueueModel>, Mix.RepoDb.Services.MixDbService)
   type: Constructor
   source:
     remote:
@@ -75,12 +77,12 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: .ctor
     path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseController.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - mix.portal
   namespace: Mix.Portal.Controllers
   syntax:
-    content: public MixDatabaseController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, UnitOfWorkInfo<MixCacheDbContext> cacheUOW, UnitOfWorkInfo<MixCmsContext> cmsUOW, IQueueService<MessageQueueModel> queueService)
+    content: public MixDatabaseController(IHttpContextAccessor httpContextAccessor, IConfiguration configuration, MixService mixService, TranslatorService translator, EntityRepository<MixCmsContext, MixCulture, int> cultureRepository, MixIdentityService mixIdentityService, UnitOfWorkInfo<MixCacheDbContext> cacheUOW, UnitOfWorkInfo<MixCmsContext> cmsUOW, IQueueService<MessageQueueModel> queueService, MixDbService mixDbService)
     parameters:
     - id: httpContextAccessor
       type: IHttpContextAccessor
@@ -95,20 +97,22 @@ items:
     - id: mixIdentityService
       type: MixIdentityService
     - id: cacheUOW
-      type: UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext}
+      type: UnitOfWorkInfo{MixCacheDbContext}
     - id: cmsUOW
       type: UnitOfWorkInfo{MixCmsContext}
     - id: queueService
       type: IQueueService{MessageQueueModel}
-    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, cacheUOW As UnitOfWorkInfo(Of MixCacheDbContext), cmsUOW As UnitOfWorkInfo(Of MixCmsContext), queueService As IQueueService(Of MessageQueueModel))
+    - id: mixDbService
+      type: Mix.RepoDb.Services.MixDbService
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, configuration As IConfiguration, mixService As MixService, translator As TranslatorService, cultureRepository As EntityRepository(Of MixCmsContext, MixCulture, Integer), mixIdentityService As MixIdentityService, cacheUOW As UnitOfWorkInfo(Of MixCacheDbContext), cmsUOW As UnitOfWorkInfo(Of MixCmsContext), queueService As IQueueService(Of MessageQueueModel), mixDbService As MixDbService)
   overload: Mix.Portal.Controllers.MixDatabaseController.#ctor*
-  nameWithType.vb: MixDatabaseController.MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  nameWithType.vb: MixDatabaseController.MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel), MixDbService)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Mix.Portal.Controllers.MixDatabaseController.MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), MixIdentityService, UnitOfWorkInfo(Of Mix.Heart.Entities.Cache.MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
-  name.vb: MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel))
+  fullName.vb: Mix.Portal.Controllers.MixDatabaseController.MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, System.Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel), Mix.RepoDb.Services.MixDbService)
+  name.vb: MixDatabaseController(IHttpContextAccessor, IConfiguration, MixService, TranslatorService, EntityRepository(Of MixCmsContext, MixCulture, Int32), MixIdentityService, UnitOfWorkInfo(Of MixCacheDbContext), UnitOfWorkInfo(Of MixCmsContext), IQueueService(Of MessageQueueModel), MixDbService)
 - uid: Mix.Portal.Controllers.MixDatabaseController.GetByName(System.String)
   commentId: M:Mix.Portal.Controllers.MixDatabaseController.GetByName(System.String)
   id: GetByName(System.String)
@@ -127,7 +131,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: GetByName
     path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseController.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - mix.portal
   namespace: Mix.Portal.Controllers
@@ -140,7 +144,7 @@ items:
     - id: name
       type: System.String
     return:
-      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{MixDatabaseViewModel}}
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.MixDatabaseViewModel}}
     content.vb: >-
       <HttpGet("get-by-name/{name}")>
 
@@ -156,16 +160,110 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Mix.Portal.Controllers.MixDatabaseController.DeleteHandler(MixDatabaseViewModel)
-  commentId: M:Mix.Portal.Controllers.MixDatabaseController.DeleteHandler(MixDatabaseViewModel)
-  id: DeleteHandler(MixDatabaseViewModel)
+- uid: Mix.Portal.Controllers.MixDatabaseController.Migrate(System.String)
+  commentId: M:Mix.Portal.Controllers.MixDatabaseController.Migrate(System.String)
+  id: Migrate(System.String)
+  parent: Mix.Portal.Controllers.MixDatabaseController
+  langs:
+  - csharp
+  - vb
+  name: Migrate(String)
+  nameWithType: MixDatabaseController.Migrate(String)
+  fullName: Mix.Portal.Controllers.MixDatabaseController.Migrate(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDatabaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Migrate
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseController.cs
+    startLine: 38
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpGet("migrate/{name}")]
+
+      public Task<ActionResult> Migrate(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult}
+    content.vb: >-
+      <HttpGet("migrate/{name}")>
+
+      Public Function Migrate(name As String) As Task(Of ActionResult)
+  overload: Mix.Portal.Controllers.MixDatabaseController.Migrate*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: migrate/{name}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixDatabaseController.Backup(System.String)
+  commentId: M:Mix.Portal.Controllers.MixDatabaseController.Backup(System.String)
+  id: Backup(System.String)
+  parent: Mix.Portal.Controllers.MixDatabaseController
+  langs:
+  - csharp
+  - vb
+  name: Backup(String)
+  nameWithType: MixDatabaseController.Backup(String)
+  fullName: Mix.Portal.Controllers.MixDatabaseController.Backup(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/modules/mix.portal/Controllers/MixDatabaseController.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Backup
+    path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseController.cs
+    startLine: 45
+  assemblies:
+  - mix.portal
+  namespace: Mix.Portal.Controllers
+  syntax:
+    content: >-
+      [HttpGet("backup/{name}")]
+
+      public Task<ActionResult> Backup(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Task{Microsoft.AspNetCore.Mvc.ActionResult}
+    content.vb: >-
+      <HttpGet("backup/{name}")>
+
+      Public Function Backup(name As String) As Task(Of ActionResult)
+  overload: Mix.Portal.Controllers.MixDatabaseController.Backup*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: backup/{name}
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Portal.Controllers.MixDatabaseController.DeleteHandler(Mix.Lib.ViewModels.MixDatabaseViewModel)
+  commentId: M:Mix.Portal.Controllers.MixDatabaseController.DeleteHandler(Mix.Lib.ViewModels.MixDatabaseViewModel)
+  id: DeleteHandler(Mix.Lib.ViewModels.MixDatabaseViewModel)
   parent: Mix.Portal.Controllers.MixDatabaseController
   langs:
   - csharp
   - vb
   name: DeleteHandler(MixDatabaseViewModel)
   nameWithType: MixDatabaseController.DeleteHandler(MixDatabaseViewModel)
-  fullName: Mix.Portal.Controllers.MixDatabaseController.DeleteHandler(MixDatabaseViewModel)
+  fullName: Mix.Portal.Controllers.MixDatabaseController.DeleteHandler(Mix.Lib.ViewModels.MixDatabaseViewModel)
   type: Method
   source:
     remote:
@@ -174,7 +272,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: DeleteHandler
     path: ../../mix.core/src/modules/mix.portal/Controllers/MixDatabaseController.cs
-    startLine: 40
+    startLine: 56
   assemblies:
   - mix.portal
   namespace: Mix.Portal.Controllers
@@ -182,7 +280,7 @@ items:
     content: protected override Task DeleteHandler(MixDatabaseViewModel data)
     parameters:
     - id: data
-      type: MixDatabaseViewModel
+      type: Mix.Lib.ViewModels.MixDatabaseViewModel
     return:
       type: Task
     content.vb: Protected Overrides Function DeleteHandler(data As MixDatabaseViewModel) As Task
@@ -317,14 +415,14 @@ references:
   name: MixIdentityService
   nameWithType: MixIdentityService
   fullName: MixIdentityService
-- uid: UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext}
-  commentId: '!:UnitOfWorkInfo{Mix.Heart.Entities.Cache.MixCacheDbContext}'
+- uid: UnitOfWorkInfo{MixCacheDbContext}
+  commentId: '!:UnitOfWorkInfo{MixCacheDbContext}'
   definition: UnitOfWorkInfo`1
   name: UnitOfWorkInfo<MixCacheDbContext>
   nameWithType: UnitOfWorkInfo<MixCacheDbContext>
-  fullName: UnitOfWorkInfo<Mix.Heart.Entities.Cache.MixCacheDbContext>
+  fullName: UnitOfWorkInfo<MixCacheDbContext>
   nameWithType.vb: UnitOfWorkInfo(Of MixCacheDbContext)
-  fullName.vb: UnitOfWorkInfo(Of Mix.Heart.Entities.Cache.MixCacheDbContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCacheDbContext)
   name.vb: UnitOfWorkInfo(Of MixCacheDbContext)
   spec.csharp:
   - uid: UnitOfWorkInfo`1
@@ -335,10 +433,11 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: Mix.Heart.Entities.Cache.MixCacheDbContext
+  - uid: MixCacheDbContext
     name: MixCacheDbContext
     nameWithType: MixCacheDbContext
-    fullName: Mix.Heart.Entities.Cache.MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -351,10 +450,11 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: Mix.Heart.Entities.Cache.MixCacheDbContext
+  - uid: MixCacheDbContext
     name: MixCacheDbContext
     nameWithType: MixCacheDbContext
-    fullName: Mix.Heart.Entities.Cache.MixCacheDbContext
+    fullName: MixCacheDbContext
+    isExternal: true
   - name: )
     nameWithType: )
     fullName: )
@@ -444,6 +544,12 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Mix.RepoDb.Services.MixDbService
+  commentId: T:Mix.RepoDb.Services.MixDbService
+  parent: Mix.RepoDb.Services
+  name: MixDbService
+  nameWithType: MixDbService
+  fullName: Mix.RepoDb.Services.MixDbService
 - uid: EntityRepository`3
   isExternal: true
   name: EntityRepository<, , >
@@ -582,6 +688,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Mix.RepoDb.Services
+  commentId: N:Mix.RepoDb.Services
+  name: Mix.RepoDb.Services
+  nameWithType: Mix.RepoDb.Services
+  fullName: Mix.RepoDb.Services
 - uid: Mix.Portal.Controllers.MixDatabaseController.GetByName*
   commentId: Overload:Mix.Portal.Controllers.MixDatabaseController.GetByName
   name: GetByName
@@ -594,14 +705,14 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{MixDatabaseViewModel}}
-  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{MixDatabaseViewModel}}'
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.MixDatabaseViewModel}}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult{Mix.Lib.ViewModels.MixDatabaseViewModel}}'
   definition: Task`1
   name: Task<ActionResult<MixDatabaseViewModel>>
   nameWithType: Task<ActionResult<MixDatabaseViewModel>>
-  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<MixDatabaseViewModel>>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult<Mix.Lib.ViewModels.MixDatabaseViewModel>>
   nameWithType.vb: Task(Of ActionResult(Of MixDatabaseViewModel))
-  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of MixDatabaseViewModel))
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult(Of Mix.Lib.ViewModels.MixDatabaseViewModel))
   name.vb: Task(Of ActionResult(Of MixDatabaseViewModel))
   spec.csharp:
   - uid: Task`1
@@ -620,11 +731,10 @@ references:
   - name: <
     nameWithType: <
     fullName: <
-  - uid: MixDatabaseViewModel
+  - uid: Mix.Lib.ViewModels.MixDatabaseViewModel
     name: MixDatabaseViewModel
     nameWithType: MixDatabaseViewModel
-    fullName: MixDatabaseViewModel
-    isExternal: true
+    fullName: Mix.Lib.ViewModels.MixDatabaseViewModel
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -648,11 +758,10 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: MixDatabaseViewModel
+  - uid: Mix.Lib.ViewModels.MixDatabaseViewModel
     name: MixDatabaseViewModel
     nameWithType: MixDatabaseViewModel
-    fullName: MixDatabaseViewModel
-    isExternal: true
+    fullName: Mix.Lib.ViewModels.MixDatabaseViewModel
   - name: )
     nameWithType: )
     fullName: )
@@ -697,19 +806,77 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: Mix.Portal.Controllers.MixDatabaseController.Migrate*
+  commentId: Overload:Mix.Portal.Controllers.MixDatabaseController.Migrate
+  name: Migrate
+  nameWithType: MixDatabaseController.Migrate
+  fullName: Mix.Portal.Controllers.MixDatabaseController.Migrate
+- uid: Task{Microsoft.AspNetCore.Mvc.ActionResult}
+  commentId: '!:Task{Microsoft.AspNetCore.Mvc.ActionResult}'
+  definition: Task`1
+  name: Task<ActionResult>
+  nameWithType: Task<ActionResult>
+  fullName: Task<Microsoft.AspNetCore.Mvc.ActionResult>
+  nameWithType.vb: Task(Of ActionResult)
+  fullName.vb: Task(Of Microsoft.AspNetCore.Mvc.ActionResult)
+  name.vb: Task(Of ActionResult)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.AspNetCore.Mvc.ActionResult
+    name: ActionResult
+    nameWithType: ActionResult
+    fullName: Microsoft.AspNetCore.Mvc.ActionResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Portal.Controllers.MixDatabaseController.Backup*
+  commentId: Overload:Mix.Portal.Controllers.MixDatabaseController.Backup
+  name: Backup
+  nameWithType: MixDatabaseController.Backup
+  fullName: Mix.Portal.Controllers.MixDatabaseController.Backup
 - uid: Mix.Portal.Controllers.MixDatabaseController.DeleteHandler*
   commentId: Overload:Mix.Portal.Controllers.MixDatabaseController.DeleteHandler
   name: DeleteHandler
   nameWithType: MixDatabaseController.DeleteHandler
   fullName: Mix.Portal.Controllers.MixDatabaseController.DeleteHandler
-- uid: MixDatabaseViewModel
-  commentId: '!:MixDatabaseViewModel'
-  isExternal: true
+- uid: Mix.Lib.ViewModels.MixDatabaseViewModel
+  commentId: T:Mix.Lib.ViewModels.MixDatabaseViewModel
+  parent: Mix.Lib.ViewModels
   name: MixDatabaseViewModel
   nameWithType: MixDatabaseViewModel
-  fullName: MixDatabaseViewModel
+  fullName: Mix.Lib.ViewModels.MixDatabaseViewModel
 - uid: Task
   isExternal: true
   name: Task
   nameWithType: Task
   fullName: Task
+- uid: Mix.Lib.ViewModels
+  commentId: N:Mix.Lib.ViewModels
+  name: Mix.Lib.ViewModels
+  nameWithType: Mix.Lib.ViewModels
+  fullName: Mix.Lib.ViewModels

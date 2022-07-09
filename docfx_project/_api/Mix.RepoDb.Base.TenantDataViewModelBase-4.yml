@@ -1,0 +1,3019 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  commentId: T:Mix.RepoDb.Base.TenantDataViewModelBase`4
+  id: TenantDataViewModelBase`4
+  parent: Mix.RepoDb.Base
+  children:
+  - Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor
+  - Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor(`1,Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  - Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  - Mix.RepoDb.Base.TenantDataViewModelBase`4.Description
+  - Mix.RepoDb.Base.TenantDataViewModelBase`4.DisplayName
+  - Mix.RepoDb.Base.TenantDataViewModelBase`4.Image
+  - Mix.RepoDb.Base.TenantDataViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.RepoDb.Base.TenantDataViewModelBase`4.MixTenantId
+  langs:
+  - csharp
+  - vb
+  name: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: TenantDataViewModelBase
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 8
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: 'public abstract class TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView> : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>, IViewModel where TDbContext : DbContext where TEntity : class, IEntity<TPrimaryKey> where TPrimaryKey : IComparable where TView : ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>'
+    typeParameters:
+    - id: TDbContext
+    - id: TEntity
+    - id: TPrimaryKey
+    - id: TView
+    content.vb: >-
+      Public MustInherit Class TenantDataViewModelBase(Of TDbContext As DbContext, TEntity As {Class, IEntity(Of TPrimaryKey)}, TPrimaryKey As IComparable, TView As ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView))
+          Inherits ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+          Implements IViewModel
+  inheritance:
+  - System.Object
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  derivedClasses:
+  - Mix.RepoDb.ViewModels.MixDatabaseViewModel
+  implements:
+  - Mix.Heart.ViewModel.IViewModel
+  inheritedMembers:
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.DeleteAsync
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.DeleteHandlerAsync
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SaveAsync
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SaveHandlerAsync
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SaveEntityRelationshipAsync({TEntity})
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Id
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.CreatedDateTime
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.LastModified
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.CreatedBy
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ModifiedBy
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Priority
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Status
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.IsValid
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.UowInfo
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Errors
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Repository
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Context
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ExpandView
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.GetRootRepository({TDbContext})
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Validate
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SetDbContext({TDbContext})
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitModel
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParseEntity
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParseView``1({TSource})
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.IsDefaultId({TPrimaryKey})
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.HandleErrorsAsync
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.HandleExceptionAsync(System.Exception)
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.HandleException(System.Exception)
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.BeginUow
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitRootUow
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.CloseUowAsync
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.CompleteUowAsync
+  - Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDbContext
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor
+  commentId: M:Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor
+  id: '#ctor'
+  parent: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: TenantDataViewModelBase()
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase()
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 16
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: protected TenantDataViewModelBase()
+    content.vb: Protected Sub New
+  overload: Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase()
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  id: '#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)'
+  parent: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: TenantDataViewModelBase(UnitOfWorkInfo)
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase(UnitOfWorkInfo)
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 20
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: protected TenantDataViewModelBase(UnitOfWorkInfo unitOfWorkInfo)
+    parameters:
+    - id: unitOfWorkInfo
+      type: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    content.vb: Protected Sub New(unitOfWorkInfo As UnitOfWorkInfo)
+  overload: Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase(UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor(`1,Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor(`1,Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  id: '#ctor(`1,Mix.Heart.UnitOfWork.UnitOfWorkInfo)'
+  parent: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: TenantDataViewModelBase(TEntity, UnitOfWorkInfo)
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase(TEntity, UnitOfWorkInfo)
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase(TEntity, Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 24
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: protected TenantDataViewModelBase(TEntity entity, UnitOfWorkInfo uowInfo = null)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: uowInfo
+      type: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    content.vb: Protected Sub New(entity As TEntity, uowInfo As UnitOfWorkInfo = Nothing)
+  overload: Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase(TEntity, UnitOfWorkInfo)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase(TEntity, Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.Description
+  commentId: P:Mix.RepoDb.Base.TenantDataViewModelBase`4.Description
+  id: Description
+  parent: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Description
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Description
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Description
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 33
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Mix.RepoDb.Base.TenantDataViewModelBase`4.Description*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Description
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Description
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.Image
+  commentId: P:Mix.RepoDb.Base.TenantDataViewModelBase`4.Image
+  id: Image
+  parent: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Image
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 35
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: public virtual string Image { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable Property Image As String
+  overload: Mix.RepoDb.Base.TenantDataViewModelBase`4.Image*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.DisplayName
+  commentId: P:Mix.RepoDb.Base.TenantDataViewModelBase`4.DisplayName
+  id: DisplayName
+  parent: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DisplayName
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DisplayName
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 36
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: >-
+      [Required]
+
+      public virtual string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Overridable Property DisplayName As String
+  overload: Mix.RepoDb.Base.TenantDataViewModelBase`4.DisplayName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DisplayName
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DisplayName
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.MixTenantId
+  commentId: P:Mix.RepoDb.Base.TenantDataViewModelBase`4.MixTenantId
+  id: MixTenantId
+  parent: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: MixTenantId
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixTenantId
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 38
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: public int MixTenantId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MixTenantId As Integer
+  overload: Mix.RepoDb.Base.TenantDataViewModelBase`4.MixTenantId*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.RepoDb.Base.TenantDataViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  id: InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.RepoDb.Base.TenantDataViewModelBase`4
+  langs:
+  - csharp
+  - vb
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitDefaultValues
+    path: ../../mix.core/src/platform/mix.repodb/Base/TenantDataViewModelBase.cs
+    startLine: 44
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Base
+  syntax:
+    content: public override void InitDefaultValues(string language = null, int? cultureId = default(int? ))
+    parameters:
+    - id: language
+      type: System.String
+    - id: cultureId
+      type: System.Nullable{System.Int32}
+    content.vb: Public Overrides Sub InitDefaultValues(language As String = Nothing, cultureId As Integer? = Nothing)
+  overridden: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  overload: Mix.RepoDb.Base.TenantDataViewModelBase`4.InitDefaultValues*
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+references:
+- uid: Mix.RepoDb.Base
+  commentId: N:Mix.RepoDb.Base
+  name: Mix.RepoDb.Base
+  nameWithType: Mix.RepoDb.Base
+  fullName: Mix.RepoDb.Base
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  commentId: T:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}
+  parent: Mix.Heart.ViewModel
+  definition: Mix.Heart.ViewModel.ViewModelBase`4
+  name: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4
+    name: ViewModelBase
+    nameWithType: ViewModelBase
+    fullName: Mix.Heart.ViewModel.ViewModelBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4
+    name: ViewModelBase
+    nameWithType: ViewModelBase
+    fullName: Mix.Heart.ViewModel.ViewModelBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.IViewModel
+  commentId: T:Mix.Heart.ViewModel.IViewModel
+  parent: Mix.Heart.ViewModel
+  name: IViewModel
+  nameWithType: IViewModel
+  fullName: Mix.Heart.ViewModel.IViewModel
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.DeleteAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.DeleteAsync
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync
+  name: DeleteAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync
+    name: DeleteAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync
+    name: DeleteAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.DeleteHandlerAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.DeleteHandlerAsync
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync
+  name: DeleteHandlerAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteHandlerAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteHandlerAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteHandlerAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteHandlerAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync
+    name: DeleteHandlerAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteHandlerAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync
+    name: DeleteHandlerAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteHandlerAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SaveAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.SaveAsync
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync
+  name: SaveAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync
+    name: SaveAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync
+    name: SaveAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+  name: SaveFieldsAsync(IEnumerable<EntityPropertyModel>)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveFieldsAsync(IEnumerable<EntityPropertyModel>)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveFieldsAsync(System.Collections.Generic.IEnumerable<Mix.Heart.Models.EntityPropertyModel>)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveFieldsAsync(IEnumerable(Of EntityPropertyModel))
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveFieldsAsync(System.Collections.Generic.IEnumerable(Of Mix.Heart.Models.EntityPropertyModel))
+  name.vb: SaveFieldsAsync(IEnumerable(Of EntityPropertyModel))
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+    name: SaveFieldsAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveFieldsAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveFieldsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Heart.Models.EntityPropertyModel
+    name: EntityPropertyModel
+    nameWithType: EntityPropertyModel
+    fullName: Mix.Heart.Models.EntityPropertyModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+    name: SaveFieldsAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveFieldsAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveFieldsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Heart.Models.EntityPropertyModel
+    name: EntityPropertyModel
+    nameWithType: EntityPropertyModel
+    fullName: Mix.Heart.Models.EntityPropertyModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SaveHandlerAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.SaveHandlerAsync
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync
+  name: SaveHandlerAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync
+    name: SaveHandlerAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync
+    name: SaveHandlerAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SaveEntityRelationshipAsync({TEntity})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.SaveEntityRelationshipAsync(`1)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync(`1)
+  name: SaveEntityRelationshipAsync(TEntity)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveEntityRelationshipAsync(TEntity)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveEntityRelationshipAsync(TEntity)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveEntityRelationshipAsync(TEntity)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveEntityRelationshipAsync(TEntity)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync(`1)
+    name: SaveEntityRelationshipAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveEntityRelationshipAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveEntityRelationshipAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync(`1)
+    name: SaveEntityRelationshipAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveEntityRelationshipAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveEntityRelationshipAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Id
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.Id
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.Id
+  name: Id
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Id
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Id
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Id
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Id
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.CreatedDateTime
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.CreatedDateTime
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.CreatedDateTime
+  name: CreatedDateTime
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreatedDateTime
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreatedDateTime
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreatedDateTime
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreatedDateTime
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.LastModified
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.LastModified
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.LastModified
+  name: LastModified
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LastModified
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LastModified
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LastModified
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LastModified
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.CreatedBy
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.CreatedBy
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.CreatedBy
+  name: CreatedBy
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreatedBy
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreatedBy
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreatedBy
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreatedBy
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ModifiedBy
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.ModifiedBy
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.ModifiedBy
+  name: ModifiedBy
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ModifiedBy
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ModifiedBy
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ModifiedBy
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ModifiedBy
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Priority
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.Priority
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.Priority
+  name: Priority
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Priority
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Priority
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Priority
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Priority
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Status
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.Status
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.Status
+  name: Status
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Status
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Status
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Status
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Status
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.IsValid
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.IsValid
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.IsValid
+  name: IsValid
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsValid
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsValid
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsValid
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsValid
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.UowInfo
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.UowInfo
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.UowInfo
+  name: UowInfo
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.UowInfo
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.UowInfo
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).UowInfo
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).UowInfo
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Errors
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.Errors
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.Errors
+  name: Errors
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Errors
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Errors
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Errors
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Errors
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Repository
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.Repository
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.Repository
+  name: Repository
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Repository
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Repository
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Repository
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Repository
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Context
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.Context
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.Context
+  name: Context
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Context
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Context
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Context
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Context
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ExpandView
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.ExpandView
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.ExpandView
+  name: ExpandView()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ExpandView
+    name: ExpandView
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ExpandView
+    name: ExpandView
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  name: GetRepository(UnitOfWorkInfo)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRepository(UnitOfWorkInfo)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRepository(UnitOfWorkInfo)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: GetRepository
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRepository
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: GetRepository
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRepository
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.GetRootRepository({TDbContext})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.GetRootRepository(`0)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository(`0)
+  name: GetRootRepository(TDbContext)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRootRepository(TDbContext)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRootRepository(TDbContext)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRootRepository(TDbContext)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRootRepository(TDbContext)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository(`0)
+    name: GetRootRepository
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRootRepository
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRootRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository(`0)
+    name: GetRootRepository
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRootRepository
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRootRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.Validate
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.Validate
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.Validate
+  name: Validate()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Validate()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Validate()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Validate()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Validate()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.Validate
+    name: Validate
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Validate
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.Validate
+    name: Validate
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Validate
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SetDbContext({TDbContext})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.SetDbContext(`0)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext(`0)
+  name: SetDbContext(TDbContext)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetDbContext(TDbContext)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetDbContext(TDbContext)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetDbContext(TDbContext)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetDbContext(TDbContext)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext(`0)
+    name: SetDbContext
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetDbContext
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext(`0)
+    name: SetDbContext
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetDbContext
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitModel
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.InitModel
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.InitModel
+  name: InitModel()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitModel()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitModel()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitModel()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitModel()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitModel
+    name: InitModel
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitModel
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitModel
+    name: InitModel
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitModel
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParseEntity
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.ParseEntity
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity
+  name: ParseEntity()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.ParseView``1({TSource})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.ParseView``1(``0)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.ParseView``1(``0)
+  name: ParseView<TSource>(TSource)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseView<TSource>(TSource)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseView<TSource>(TSource)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseView(Of TSource)(TSource)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseView(Of TSource)(TSource)
+  name.vb: ParseView(Of TSource)(TSource)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseView``1(``0)
+    name: ParseView<TSource>
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseView<TSource>
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseView<TSource>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseView``1(``0)
+    name: ParseView(Of TSource)
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseView(Of TSource)
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseView(Of TSource)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.IsDefaultId({TPrimaryKey})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.IsDefaultId(`2)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId(`2)
+  name: IsDefaultId(TPrimaryKey)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsDefaultId(TPrimaryKey)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsDefaultId(TPrimaryKey)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsDefaultId(TPrimaryKey)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsDefaultId(TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId(`2)
+    name: IsDefaultId
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsDefaultId
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsDefaultId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId(`2)
+    name: IsDefaultId
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsDefaultId
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsDefaultId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.HandleErrorsAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.HandleErrorsAsync
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync
+  name: HandleErrorsAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleErrorsAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleErrorsAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleErrorsAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleErrorsAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync
+    name: HandleErrorsAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleErrorsAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleErrorsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync
+    name: HandleErrorsAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleErrorsAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleErrorsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.HandleExceptionAsync(System.Exception)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.HandleExceptionAsync(System.Exception)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync(System.Exception)
+  name: HandleExceptionAsync(Exception)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleExceptionAsync(Exception)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleExceptionAsync(System.Exception)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleExceptionAsync(Exception)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleExceptionAsync(System.Exception)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync(System.Exception)
+    name: HandleExceptionAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleExceptionAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync(System.Exception)
+    name: HandleExceptionAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleExceptionAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.HandleException(System.Exception)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.HandleException(System.Exception)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.HandleException(System.Exception)
+  name: HandleException(Exception)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleException(Exception)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleException(System.Exception)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleException(Exception)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleException(System.Exception)
+    name: HandleException
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleException
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleException(System.Exception)
+    name: HandleException
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleException
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.BeginUow
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.BeginUow
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.BeginUow
+  name: BeginUow()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.BeginUow()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.BeginUow()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).BeginUow()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).BeginUow()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.BeginUow
+    name: BeginUow
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.BeginUow
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.BeginUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.BeginUow
+    name: BeginUow
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).BeginUow
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).BeginUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  name: SetUowInfo(UnitOfWorkInfo)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetUowInfo(UnitOfWorkInfo)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetUowInfo(UnitOfWorkInfo)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: SetUowInfo
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetUowInfo
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetUowInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: SetUowInfo
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetUowInfo
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetUowInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitRootUow
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.InitRootUow
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow
+  name: InitRootUow()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitRootUow()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitRootUow()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitRootUow()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitRootUow()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow
+    name: InitRootUow
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitRootUow
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitRootUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow
+    name: InitRootUow
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitRootUow
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitRootUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.CloseUowAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.CloseUowAsync
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync
+  name: CloseUowAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CloseUowAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CloseUowAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CloseUowAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CloseUowAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync
+    name: CloseUowAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CloseUowAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CloseUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync
+    name: CloseUowAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CloseUowAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CloseUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.CompleteUowAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.CompleteUowAsync
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync
+  name: CompleteUowAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CompleteUowAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CompleteUowAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CompleteUowAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CompleteUowAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync
+    name: CompleteUowAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CompleteUowAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CompleteUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync
+    name: CompleteUowAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CompleteUowAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CompleteUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}.InitDbContext
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase{`0,`1,`2,`3}.InitDbContext
+  parent: Mix.Heart.ViewModel.ViewModelBase{{TDbContext},{TEntity},{TPrimaryKey},{TView}}
+  definition: Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext
+  name: InitDbContext()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDbContext()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDbContext()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDbContext()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDbContext()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext
+    name: InitDbContext
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDbContext
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext
+    name: InitDbContext
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDbContext
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Heart.ViewModel.ViewModelBase`4
+  commentId: T:Mix.Heart.ViewModel.ViewModelBase`4
+  name: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  name.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4
+    name: ViewModelBase
+    nameWithType: ViewModelBase
+    fullName: Mix.Heart.ViewModel.ViewModelBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4
+    name: ViewModelBase
+    nameWithType: ViewModelBase
+    fullName: Mix.Heart.ViewModel.ViewModelBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TView
+    nameWithType: TView
+    fullName: TView
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel
+  commentId: N:Mix.Heart.ViewModel
+  name: Mix.Heart.ViewModel
+  nameWithType: Mix.Heart.ViewModel
+  fullName: Mix.Heart.ViewModel
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync
+  name: DeleteAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync
+    name: DeleteAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteAsync
+    name: DeleteAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync
+  name: DeleteHandlerAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteHandlerAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteHandlerAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteHandlerAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteHandlerAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync
+    name: DeleteHandlerAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteHandlerAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DeleteHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.DeleteHandlerAsync
+    name: DeleteHandlerAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteHandlerAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DeleteHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync
+  name: SaveAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync
+    name: SaveAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveAsync
+    name: SaveAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+  isExternal: true
+  name: SaveFieldsAsync(IEnumerable<EntityPropertyModel>)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveFieldsAsync(IEnumerable<EntityPropertyModel>)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveFieldsAsync(System.Collections.Generic.IEnumerable<Mix.Heart.Models.EntityPropertyModel>)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveFieldsAsync(IEnumerable(Of EntityPropertyModel))
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveFieldsAsync(System.Collections.Generic.IEnumerable(Of Mix.Heart.Models.EntityPropertyModel))
+  name.vb: SaveFieldsAsync(IEnumerable(Of EntityPropertyModel))
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+    name: SaveFieldsAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveFieldsAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveFieldsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Heart.Models.EntityPropertyModel
+    name: EntityPropertyModel
+    nameWithType: EntityPropertyModel
+    fullName: Mix.Heart.Models.EntityPropertyModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveFieldsAsync(System.Collections.Generic.IEnumerable{Mix.Heart.Models.EntityPropertyModel})
+    name: SaveFieldsAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveFieldsAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveFieldsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Heart.Models.EntityPropertyModel
+    name: EntityPropertyModel
+    nameWithType: EntityPropertyModel
+    fullName: Mix.Heart.Models.EntityPropertyModel
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync
+  name: SaveHandlerAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync
+    name: SaveHandlerAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveHandlerAsync
+    name: SaveHandlerAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveHandlerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync(`1)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync(`1)
+  name: SaveEntityRelationshipAsync(TEntity)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveEntityRelationshipAsync(TEntity)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveEntityRelationshipAsync(TEntity)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveEntityRelationshipAsync(TEntity)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveEntityRelationshipAsync(TEntity)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync(`1)
+    name: SaveEntityRelationshipAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveEntityRelationshipAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SaveEntityRelationshipAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SaveEntityRelationshipAsync(`1)
+    name: SaveEntityRelationshipAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveEntityRelationshipAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SaveEntityRelationshipAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.Id
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.Id
+  name: Id
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Id
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Id
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Id
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Id
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.CreatedDateTime
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.CreatedDateTime
+  name: CreatedDateTime
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreatedDateTime
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreatedDateTime
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreatedDateTime
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreatedDateTime
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.LastModified
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.LastModified
+  name: LastModified
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LastModified
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.LastModified
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LastModified
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).LastModified
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.CreatedBy
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.CreatedBy
+  name: CreatedBy
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreatedBy
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CreatedBy
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreatedBy
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CreatedBy
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.ModifiedBy
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.ModifiedBy
+  name: ModifiedBy
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ModifiedBy
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ModifiedBy
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ModifiedBy
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ModifiedBy
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.Priority
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.Priority
+  name: Priority
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Priority
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Priority
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Priority
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Priority
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.Status
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.Status
+  name: Status
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Status
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Status
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Status
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Status
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.IsValid
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.IsValid
+  name: IsValid
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsValid
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsValid
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsValid
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsValid
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.UowInfo
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.UowInfo
+  name: UowInfo
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.UowInfo
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.UowInfo
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).UowInfo
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).UowInfo
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.Errors
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.Errors
+  name: Errors
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Errors
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Errors
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Errors
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Errors
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.Repository
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.Repository
+  name: Repository
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Repository
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Repository
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Repository
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Repository
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.Context
+  commentId: P:Mix.Heart.ViewModel.ViewModelBase`4.Context
+  name: Context
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Context
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Context
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Context
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Context
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+  isExternal: true
+  name: InitDefaultValues(String, Nullable<Int32>)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(String, Nullable<Int32>)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues(System.String, System.Nullable<System.Int32>)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(String, Nullable(Of Int32))
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues(System.String, System.Nullable(Of System.Int32))
+  name.vb: InitDefaultValues(String, Nullable(Of Int32))
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDefaultValues(System.String,System.Nullable{System.Int32})
+    name: InitDefaultValues
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.ExpandView
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.ExpandView
+  name: ExpandView()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ExpandView
+    name: ExpandView
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ExpandView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ExpandView
+    name: ExpandView
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ExpandView
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  name: GetRepository(UnitOfWorkInfo)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRepository(UnitOfWorkInfo)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRepository(UnitOfWorkInfo)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: GetRepository
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRepository
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRepository(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: GetRepository
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRepository
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository(`0)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository(`0)
+  name: GetRootRepository(TDbContext)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRootRepository(TDbContext)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRootRepository(TDbContext)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRootRepository(TDbContext)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRootRepository(TDbContext)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository(`0)
+    name: GetRootRepository
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRootRepository
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.GetRootRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.GetRootRepository(`0)
+    name: GetRootRepository
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRootRepository
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).GetRootRepository
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.Validate
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.Validate
+  name: Validate()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Validate()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Validate()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Validate()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Validate()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.Validate
+    name: Validate
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Validate
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.Validate
+    name: Validate
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Validate
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Validate
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext(`0)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext(`0)
+  name: SetDbContext(TDbContext)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetDbContext(TDbContext)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetDbContext(TDbContext)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetDbContext(TDbContext)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetDbContext(TDbContext)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext(`0)
+    name: SetDbContext
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetDbContext
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SetDbContext(`0)
+    name: SetDbContext
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetDbContext
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TDbContext
+    nameWithType: TDbContext
+    fullName: TDbContext
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.InitModel
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.InitModel
+  name: InitModel()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitModel()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitModel()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitModel()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitModel()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitModel
+    name: InitModel
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitModel
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitModel
+    name: InitModel
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitModel
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitModel
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity
+  name: ParseEntity()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseEntity
+    name: ParseEntity
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseEntity
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseView``1(``0)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.ParseView``1(``0)
+  name: ParseView<TSource>(TSource)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseView<TSource>(TSource)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseView<TSource>(TSource)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseView(Of TSource)(TSource)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseView(Of TSource)(TSource)
+  name.vb: ParseView(Of TSource)(TSource)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseView``1(``0)
+    name: ParseView<TSource>
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseView<TSource>
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.ParseView<TSource>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.ParseView``1(``0)
+    name: ParseView(Of TSource)
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseView(Of TSource)
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).ParseView(Of TSource)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TSource
+    nameWithType: TSource
+    fullName: TSource
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId(`2)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId(`2)
+  name: IsDefaultId(TPrimaryKey)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsDefaultId(TPrimaryKey)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsDefaultId(TPrimaryKey)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsDefaultId(TPrimaryKey)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsDefaultId(TPrimaryKey)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId(`2)
+    name: IsDefaultId
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsDefaultId
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.IsDefaultId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.IsDefaultId(`2)
+    name: IsDefaultId
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsDefaultId
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).IsDefaultId
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TPrimaryKey
+    nameWithType: TPrimaryKey
+    fullName: TPrimaryKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync
+  name: HandleErrorsAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleErrorsAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleErrorsAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleErrorsAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleErrorsAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync
+    name: HandleErrorsAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleErrorsAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleErrorsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleErrorsAsync
+    name: HandleErrorsAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleErrorsAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleErrorsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync(System.Exception)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync(System.Exception)
+  isExternal: true
+  name: HandleExceptionAsync(Exception)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleExceptionAsync(Exception)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleExceptionAsync(System.Exception)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleExceptionAsync(Exception)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleExceptionAsync(System.Exception)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync(System.Exception)
+    name: HandleExceptionAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleExceptionAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleExceptionAsync(System.Exception)
+    name: HandleExceptionAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleExceptionAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleException(System.Exception)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.HandleException(System.Exception)
+  isExternal: true
+  name: HandleException(Exception)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleException(Exception)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleException(System.Exception)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleException(Exception)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleException(System.Exception)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleException(System.Exception)
+    name: HandleException
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleException
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.HandleException(System.Exception)
+    name: HandleException
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleException
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).HandleException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.BeginUow
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.BeginUow
+  name: BeginUow()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.BeginUow()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.BeginUow()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).BeginUow()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).BeginUow()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.BeginUow
+    name: BeginUow
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.BeginUow
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.BeginUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.BeginUow
+    name: BeginUow
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).BeginUow
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).BeginUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  name: SetUowInfo(UnitOfWorkInfo)
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetUowInfo(UnitOfWorkInfo)
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetUowInfo(UnitOfWorkInfo)
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: SetUowInfo
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetUowInfo
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.SetUowInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.SetUowInfo(Mix.Heart.UnitOfWork.UnitOfWorkInfo)
+    name: SetUowInfo
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetUowInfo
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).SetUowInfo
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow
+  name: InitRootUow()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitRootUow()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitRootUow()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitRootUow()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitRootUow()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow
+    name: InitRootUow
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitRootUow
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitRootUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitRootUow
+    name: InitRootUow
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitRootUow
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitRootUow
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync
+  name: CloseUowAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CloseUowAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CloseUowAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CloseUowAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CloseUowAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync
+    name: CloseUowAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CloseUowAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CloseUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.CloseUowAsync
+    name: CloseUowAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CloseUowAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CloseUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync
+  name: CompleteUowAsync()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CompleteUowAsync()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CompleteUowAsync()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CompleteUowAsync()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CompleteUowAsync()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync
+    name: CompleteUowAsync
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CompleteUowAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.CompleteUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.CompleteUowAsync
+    name: CompleteUowAsync
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CompleteUowAsync
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).CompleteUowAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext
+  commentId: M:Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext
+  name: InitDbContext()
+  nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDbContext()
+  fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDbContext()
+  nameWithType.vb: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDbContext()
+  fullName.vb: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDbContext()
+  spec.csharp:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext
+    name: InitDbContext
+    nameWithType: ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDbContext
+    fullName: Mix.Heart.ViewModel.ViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.ViewModel.ViewModelBase`4.InitDbContext
+    name: InitDbContext
+    nameWithType: ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDbContext
+    fullName: Mix.Heart.ViewModel.ViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDbContext
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor*
+  commentId: Overload:Mix.RepoDb.Base.TenantDataViewModelBase`4.#ctor
+  name: TenantDataViewModelBase
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.TenantDataViewModelBase
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).TenantDataViewModelBase
+- uid: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  commentId: T:Mix.Heart.UnitOfWork.UnitOfWorkInfo
+  parent: Mix.Heart.UnitOfWork
+  name: UnitOfWorkInfo
+  nameWithType: UnitOfWorkInfo
+  fullName: Mix.Heart.UnitOfWork.UnitOfWorkInfo
+- uid: Mix.Heart.UnitOfWork
+  commentId: N:Mix.Heart.UnitOfWork
+  name: Mix.Heart.UnitOfWork
+  nameWithType: Mix.Heart.UnitOfWork
+  fullName: Mix.Heart.UnitOfWork
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.Description*
+  commentId: Overload:Mix.RepoDb.Base.TenantDataViewModelBase`4.Description
+  name: Description
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Description
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Description
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Description
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.Image*
+  commentId: Overload:Mix.RepoDb.Base.TenantDataViewModelBase`4.Image
+  name: Image
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.Image
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).Image
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.DisplayName*
+  commentId: Overload:Mix.RepoDb.Base.TenantDataViewModelBase`4.DisplayName
+  name: DisplayName
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DisplayName
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.DisplayName
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DisplayName
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).DisplayName
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.MixTenantId*
+  commentId: Overload:Mix.RepoDb.Base.TenantDataViewModelBase`4.MixTenantId
+  name: MixTenantId
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.MixTenantId
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).MixTenantId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Mix.RepoDb.Base.TenantDataViewModelBase`4.InitDefaultValues*
+  commentId: Overload:Mix.RepoDb.Base.TenantDataViewModelBase`4.InitDefaultValues
+  name: InitDefaultValues
+  nameWithType: TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  fullName: Mix.RepoDb.Base.TenantDataViewModelBase<TDbContext, TEntity, TPrimaryKey, TView>.InitDefaultValues
+  nameWithType.vb: TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+  fullName.vb: Mix.RepoDb.Base.TenantDataViewModelBase(Of TDbContext, TEntity, TPrimaryKey, TView).InitDefaultValues
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

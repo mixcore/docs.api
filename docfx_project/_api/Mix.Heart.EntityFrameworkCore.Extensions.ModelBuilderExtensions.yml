@@ -5,7 +5,7 @@ items:
   id: ModelBuilderExtensions
   parent: Mix.Heart.EntityFrameworkCore.Extensions
   children:
-  - Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(Microsoft.EntityFrameworkCore.ModelBuilder,System.Reflection.Assembly,System.String)
+  - Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(ModelBuilder,System.Reflection.Assembly,System.String)
   langs:
   - csharp
   - vb
@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/Extensions/ModelBuilderExtensions.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: ModelBuilderExtensions
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/ModelBuilderExtensions.cs
@@ -44,9 +44,9 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(Microsoft.EntityFrameworkCore.ModelBuilder,System.Reflection.Assembly,System.String)
-  commentId: M:Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(Microsoft.EntityFrameworkCore.ModelBuilder,System.Reflection.Assembly,System.String)
-  id: ApplyAllConfigurationsFromNamespace(Microsoft.EntityFrameworkCore.ModelBuilder,System.Reflection.Assembly,System.String)
+- uid: Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(ModelBuilder,System.Reflection.Assembly,System.String)
+  commentId: M:Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(ModelBuilder,System.Reflection.Assembly,System.String)
+  id: ApplyAllConfigurationsFromNamespace(ModelBuilder,System.Reflection.Assembly,System.String)
   isExtensionMethod: true
   parent: Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions
   langs:
@@ -54,12 +54,12 @@ items:
   - vb
   name: ApplyAllConfigurationsFromNamespace(ModelBuilder, Assembly, String)
   nameWithType: ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(ModelBuilder, Assembly, String)
-  fullName: Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(Microsoft.EntityFrameworkCore.ModelBuilder, System.Reflection.Assembly, System.String)
+  fullName: Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace(ModelBuilder, System.Reflection.Assembly, System.String)
   type: Method
   source:
     remote:
       path: src/Mix.Heart/Extensions/ModelBuilderExtensions.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: ApplyAllConfigurationsFromNamespace
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/Extensions/ModelBuilderExtensions.cs
@@ -71,13 +71,13 @@ items:
     content: public static ModelBuilder ApplyAllConfigurationsFromNamespace(this ModelBuilder modelBuilder, Assembly assembly, string ns)
     parameters:
     - id: modelBuilder
-      type: Microsoft.EntityFrameworkCore.ModelBuilder
+      type: ModelBuilder
     - id: assembly
       type: System.Reflection.Assembly
     - id: ns
       type: System.String
     return:
-      type: Microsoft.EntityFrameworkCore.ModelBuilder
+      type: ModelBuilder
     content.vb: >-
       <ExtensionAttribute>
 
@@ -392,13 +392,11 @@ references:
   name: ApplyAllConfigurationsFromNamespace
   nameWithType: ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace
   fullName: Mix.Heart.EntityFrameworkCore.Extensions.ModelBuilderExtensions.ApplyAllConfigurationsFromNamespace
-- uid: Microsoft.EntityFrameworkCore.ModelBuilder
-  commentId: T:Microsoft.EntityFrameworkCore.ModelBuilder
-  parent: Microsoft.EntityFrameworkCore
+- uid: ModelBuilder
   isExternal: true
   name: ModelBuilder
   nameWithType: ModelBuilder
-  fullName: Microsoft.EntityFrameworkCore.ModelBuilder
+  fullName: ModelBuilder
 - uid: System.Reflection.Assembly
   commentId: T:System.Reflection.Assembly
   parent: System.Reflection
@@ -413,12 +411,6 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: Microsoft.EntityFrameworkCore
-  commentId: N:Microsoft.EntityFrameworkCore
-  isExternal: true
-  name: Microsoft.EntityFrameworkCore
-  nameWithType: Microsoft.EntityFrameworkCore
-  fullName: Microsoft.EntityFrameworkCore
 - uid: System.Reflection
   commentId: N:System.Reflection
   isExternal: true

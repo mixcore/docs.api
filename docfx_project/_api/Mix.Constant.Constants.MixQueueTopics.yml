@@ -6,6 +6,7 @@ items:
   parent: Mix.Constant.Constants
   children:
   - Mix.Constant.Constants.MixQueueTopics.MixBackgroundTasks
+  - Mix.Constant.Constants.MixQueueTopics.MixRepoDb
   langs:
   - csharp
   - vb
@@ -70,6 +71,39 @@ items:
     return:
       type: System.String
     content.vb: Public Const MixBackgroundTasks As String = "MixBackgroundTasks"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Mix.Constant.Constants.MixQueueTopics.MixRepoDb
+  commentId: F:Mix.Constant.Constants.MixQueueTopics.MixRepoDb
+  id: MixRepoDb
+  parent: Mix.Constant.Constants.MixQueueTopics
+  langs:
+  - csharp
+  - vb
+  name: MixRepoDb
+  nameWithType: MixQueueTopics.MixRepoDb
+  fullName: Mix.Constant.Constants.MixQueueTopics.MixRepoDb
+  type: Field
+  source:
+    remote:
+      path: src/platform/mix.constant/Constants/MixQueueTopics.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixRepoDb
+    path: ../../mix.core/src/platform/mix.constant/Constants/MixQueueTopics.cs
+    startLine: 5
+  assemblies:
+  - mix.constant
+  namespace: Mix.Constant.Constants
+  syntax:
+    content: public const string MixRepoDb = "MixRepoDb"
+    return:
+      type: System.String
+    content.vb: Public Const MixRepoDb As String = "MixRepoDb"
   modifiers.csharp:
   - public
   - const

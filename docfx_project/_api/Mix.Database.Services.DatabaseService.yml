@@ -1,0 +1,1805 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
+  id: DatabaseService
+  parent: Mix.Database.Services
+  children:
+  - Mix.Database.Services.DatabaseService.#ctor
+  - Mix.Database.Services.DatabaseService.DatabaseProvider
+  - Mix.Database.Services.DatabaseService.GetAccountDbContext
+  - Mix.Database.Services.DatabaseService.GetCacheDbContext
+  - Mix.Database.Services.DatabaseService.GetConnectionString(System.String)
+  - Mix.Database.Services.DatabaseService.GetDbContext
+  - Mix.Database.Services.DatabaseService.GetQuartzDbContext
+  - Mix.Database.Services.DatabaseService.InitConnectionStrings(System.String,MixDatabaseProvider,System.String)
+  - Mix.Database.Services.DatabaseService.InitQuartzContextAsync
+  - Mix.Database.Services.DatabaseService.LoadAppSettings
+  - Mix.Database.Services.DatabaseService.SetConnectionString(System.String,System.String)
+  - Mix.Database.Services.DatabaseService.UpdateMixCmsContextAsync
+  langs:
+  - csharp
+  - vb
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
+  type: Class
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DatabaseService
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 12
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: 'public class DatabaseService : ConfigurationServiceBase<DatabaseConfigurations>'
+    content.vb: >-
+      Public Class DatabaseService
+          Inherits ConfigurationServiceBase(Of DatabaseConfigurations)
+  inheritance:
+  - System.Object
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  inheritedMembers:
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}._isEncrypt
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.AesKey
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.AppSettings
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.FilePath
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.watcher
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetConfig``1(System.String,{TValue})
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetConfig``1(System.String,System.String,{TValue})
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetEnumConfig``1(System.String)
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SetConfig``1(System.String,{TValue})
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SetConfig``1(System.String,System.String,{TValue})
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SaveSettings
+  - Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.WatchFile
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Mix.Database.Services.DatabaseService.DatabaseProvider
+  commentId: P:Mix.Database.Services.DatabaseService.DatabaseProvider
+  id: DatabaseProvider
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: DatabaseProvider
+  nameWithType: DatabaseService.DatabaseProvider
+  fullName: Mix.Database.Services.DatabaseService.DatabaseProvider
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DatabaseProvider
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 14
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public MixDatabaseProvider DatabaseProvider { get; }
+    parameters: []
+    return:
+      type: MixDatabaseProvider
+    content.vb: Public ReadOnly Property DatabaseProvider As MixDatabaseProvider
+  overload: Mix.Database.Services.DatabaseService.DatabaseProvider*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Mix.Database.Services.DatabaseService.#ctor
+  commentId: M:Mix.Database.Services.DatabaseService.#ctor
+  id: '#ctor'
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: DatabaseService()
+  nameWithType: DatabaseService.DatabaseService()
+  fullName: Mix.Database.Services.DatabaseService.DatabaseService()
+  type: Constructor
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: .ctor
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 16
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public DatabaseService()
+    content.vb: Public Sub New
+  overload: Mix.Database.Services.DatabaseService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.LoadAppSettings
+  commentId: M:Mix.Database.Services.DatabaseService.LoadAppSettings
+  id: LoadAppSettings
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: LoadAppSettings()
+  nameWithType: DatabaseService.LoadAppSettings()
+  fullName: Mix.Database.Services.DatabaseService.LoadAppSettings()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: LoadAppSettings
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 22
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: protected override void LoadAppSettings()
+    content.vb: Protected Overrides Sub LoadAppSettings
+  overridden: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.LoadAppSettings
+  overload: Mix.Database.Services.DatabaseService.LoadAppSettings*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Mix.Database.Services.DatabaseService.GetConnectionString(System.String)
+  commentId: M:Mix.Database.Services.DatabaseService.GetConnectionString(System.String)
+  id: GetConnectionString(System.String)
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: GetConnectionString(String)
+  nameWithType: DatabaseService.GetConnectionString(String)
+  fullName: Mix.Database.Services.DatabaseService.GetConnectionString(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetConnectionString
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 28
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public string GetConnectionString(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetConnectionString(name As String) As String
+  overload: Mix.Database.Services.DatabaseService.GetConnectionString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.SetConnectionString(System.String,System.String)
+  commentId: M:Mix.Database.Services.DatabaseService.SetConnectionString(System.String,System.String)
+  id: SetConnectionString(System.String,System.String)
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: SetConnectionString(String, String)
+  nameWithType: DatabaseService.SetConnectionString(String, String)
+  fullName: Mix.Database.Services.DatabaseService.SetConnectionString(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: SetConnectionString
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 41
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public void SetConnectionString(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.String
+    content.vb: Public Sub SetConnectionString(name As String, value As String)
+  overload: Mix.Database.Services.DatabaseService.SetConnectionString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.GetDbContext
+  commentId: M:Mix.Database.Services.DatabaseService.GetDbContext
+  id: GetDbContext
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: GetDbContext()
+  nameWithType: DatabaseService.GetDbContext()
+  fullName: Mix.Database.Services.DatabaseService.GetDbContext()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetDbContext
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 57
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public MixCmsContext GetDbContext()
+    return:
+      type: MixCmsContext
+    content.vb: Public Function GetDbContext As MixCmsContext
+  overload: Mix.Database.Services.DatabaseService.GetDbContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.GetAccountDbContext
+  commentId: M:Mix.Database.Services.DatabaseService.GetAccountDbContext
+  id: GetAccountDbContext
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: GetAccountDbContext()
+  nameWithType: DatabaseService.GetAccountDbContext()
+  fullName: Mix.Database.Services.DatabaseService.GetAccountDbContext()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetAccountDbContext
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 69
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public MixCmsAccountContext GetAccountDbContext()
+    return:
+      type: Mix.Database.Entities.Account.MixCmsAccountContext
+    content.vb: Public Function GetAccountDbContext As MixCmsAccountContext
+  overload: Mix.Database.Services.DatabaseService.GetAccountDbContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.GetQuartzDbContext
+  commentId: M:Mix.Database.Services.DatabaseService.GetQuartzDbContext
+  id: GetQuartzDbContext
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: GetQuartzDbContext()
+  nameWithType: DatabaseService.GetQuartzDbContext()
+  fullName: Mix.Database.Services.DatabaseService.GetQuartzDbContext()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetQuartzDbContext
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 81
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public QuartzDbContext GetQuartzDbContext()
+    return:
+      type: Mix.Database.Entities.Quartz.QuartzDbContext
+    content.vb: Public Function GetQuartzDbContext As QuartzDbContext
+  overload: Mix.Database.Services.DatabaseService.GetQuartzDbContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.GetCacheDbContext
+  commentId: M:Mix.Database.Services.DatabaseService.GetCacheDbContext
+  id: GetCacheDbContext
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: GetCacheDbContext()
+  nameWithType: DatabaseService.GetCacheDbContext()
+  fullName: Mix.Database.Services.DatabaseService.GetCacheDbContext()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetCacheDbContext
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 93
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public MixCacheDbContext GetCacheDbContext()
+    return:
+      type: Mix.Heart.Entities.Cache.MixCacheDbContext
+    content.vb: Public Function GetCacheDbContext As MixCacheDbContext
+  overload: Mix.Database.Services.DatabaseService.GetCacheDbContext*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.InitConnectionStrings(System.String,MixDatabaseProvider,System.String)
+  commentId: M:Mix.Database.Services.DatabaseService.InitConnectionStrings(System.String,MixDatabaseProvider,System.String)
+  id: InitConnectionStrings(System.String,MixDatabaseProvider,System.String)
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: InitConnectionStrings(String, MixDatabaseProvider, String)
+  nameWithType: DatabaseService.InitConnectionStrings(String, MixDatabaseProvider, String)
+  fullName: Mix.Database.Services.DatabaseService.InitConnectionStrings(System.String, MixDatabaseProvider, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitConnectionStrings
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 105
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public void InitConnectionStrings(string connectionString, MixDatabaseProvider databaseProvider, string defaultCulture)
+    parameters:
+    - id: connectionString
+      type: System.String
+    - id: databaseProvider
+      type: MixDatabaseProvider
+    - id: defaultCulture
+      type: System.String
+    content.vb: Public Sub InitConnectionStrings(connectionString As String, databaseProvider As MixDatabaseProvider, defaultCulture As String)
+  overload: Mix.Database.Services.DatabaseService.InitConnectionStrings*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.UpdateMixCmsContextAsync
+  commentId: M:Mix.Database.Services.DatabaseService.UpdateMixCmsContextAsync
+  id: UpdateMixCmsContextAsync
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: UpdateMixCmsContextAsync()
+  nameWithType: DatabaseService.UpdateMixCmsContextAsync()
+  fullName: Mix.Database.Services.DatabaseService.UpdateMixCmsContextAsync()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UpdateMixCmsContextAsync
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 128
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public Task UpdateMixCmsContextAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UpdateMixCmsContextAsync As Task
+  overload: Mix.Database.Services.DatabaseService.UpdateMixCmsContextAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Mix.Database.Services.DatabaseService.InitQuartzContextAsync
+  commentId: M:Mix.Database.Services.DatabaseService.InitQuartzContextAsync
+  id: InitQuartzContextAsync
+  parent: Mix.Database.Services.DatabaseService
+  langs:
+  - csharp
+  - vb
+  name: InitQuartzContextAsync()
+  nameWithType: DatabaseService.InitQuartzContextAsync()
+  fullName: Mix.Database.Services.DatabaseService.InitQuartzContextAsync()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.database/Services/DatabaseService.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InitQuartzContextAsync
+    path: ../../mix.core/src/platform/mix.database/Services/DatabaseService.cs
+    startLine: 152
+  assemblies:
+  - mix.database
+  namespace: Mix.Database.Services
+  syntax:
+    content: public Task InitQuartzContextAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function InitQuartzContextAsync As Task
+  overload: Mix.Database.Services.DatabaseService.InitQuartzContextAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Mix.Database.Services
+  commentId: N:Mix.Database.Services
+  name: Mix.Database.Services
+  nameWithType: Mix.Database.Services
+  fullName: Mix.Database.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  commentId: T:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  parent: Mix.Heart.Services
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1
+  name: ConfigurationServiceBase<DatabaseConfigurations>
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations)
+  name.vb: ConfigurationServiceBase(Of DatabaseConfigurations)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1
+    name: ConfigurationServiceBase
+    nameWithType: ConfigurationServiceBase
+    fullName: Mix.Heart.Services.ConfigurationServiceBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Mix.Shared.Models.DatabaseConfigurations
+    name: DatabaseConfigurations
+    nameWithType: DatabaseConfigurations
+    fullName: Mix.Shared.Models.DatabaseConfigurations
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1
+    name: ConfigurationServiceBase
+    nameWithType: ConfigurationServiceBase
+    fullName: Mix.Heart.Services.ConfigurationServiceBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Mix.Shared.Models.DatabaseConfigurations
+    name: DatabaseConfigurations
+    nameWithType: DatabaseConfigurations
+    fullName: Mix.Shared.Models.DatabaseConfigurations
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}._isEncrypt
+  commentId: F:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}._isEncrypt
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1._isEncrypt
+  name: _isEncrypt
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>._isEncrypt
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>._isEncrypt
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations)._isEncrypt
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations)._isEncrypt
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.AesKey
+  commentId: P:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.AesKey
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.AesKey
+  name: AesKey
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.AesKey
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.AesKey
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).AesKey
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).AesKey
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.AppSettings
+  commentId: P:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.AppSettings
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.AppSettings
+  name: AppSettings
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.AppSettings
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.AppSettings
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).AppSettings
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).AppSettings
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.FilePath
+  commentId: P:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.FilePath
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.FilePath
+  name: FilePath
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.FilePath
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.FilePath
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).FilePath
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).FilePath
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.watcher
+  commentId: F:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.watcher
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.watcher
+  name: watcher
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.watcher
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.watcher
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).watcher
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).watcher
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetConfig``1(System.String,{TValue})
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetConfig``1(System.String,``0)
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,``0)
+  name: GetConfig<TValue>(String, TValue)
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.GetConfig<TValue>(String, TValue)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.GetConfig<TValue>(System.String, TValue)
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).GetConfig(Of TValue)(String, TValue)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).GetConfig(Of TValue)(System.String, TValue)
+  name.vb: GetConfig(Of TValue)(String, TValue)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,``0)
+    name: GetConfig<TValue>
+    nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.GetConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.GetConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,``0)
+    name: GetConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of DatabaseConfigurations).GetConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).GetConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetConfig``1(System.String,System.String,{TValue})
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetConfig``1(System.String,System.String,``0)
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,System.String,``0)
+  name: GetConfig<TValue>(String, String, TValue)
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.GetConfig<TValue>(String, String, TValue)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.GetConfig<TValue>(System.String, System.String, TValue)
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).GetConfig(Of TValue)(String, String, TValue)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).GetConfig(Of TValue)(System.String, System.String, TValue)
+  name.vb: GetConfig(Of TValue)(String, String, TValue)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,System.String,``0)
+    name: GetConfig<TValue>
+    nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.GetConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.GetConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,System.String,``0)
+    name: GetConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of DatabaseConfigurations).GetConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).GetConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetEnumConfig``1(System.String)
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.GetEnumConfig``1(System.String)
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.GetEnumConfig``1(System.String)
+  name: GetEnumConfig<TValue>(String)
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.GetEnumConfig<TValue>(String)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.GetEnumConfig<TValue>(System.String)
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).GetEnumConfig(Of TValue)(String)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).GetEnumConfig(Of TValue)(System.String)
+  name.vb: GetEnumConfig(Of TValue)(String)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetEnumConfig``1(System.String)
+    name: GetEnumConfig<TValue>
+    nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.GetEnumConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.GetEnumConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetEnumConfig``1(System.String)
+    name: GetEnumConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of DatabaseConfigurations).GetEnumConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).GetEnumConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SetConfig``1(System.String,{TValue})
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SetConfig``1(System.String,``0)
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,``0)
+  name: SetConfig<TValue>(String, TValue)
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.SetConfig<TValue>(String, TValue)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.SetConfig<TValue>(System.String, TValue)
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).SetConfig(Of TValue)(String, TValue)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).SetConfig(Of TValue)(System.String, TValue)
+  name.vb: SetConfig(Of TValue)(String, TValue)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,``0)
+    name: SetConfig<TValue>
+    nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.SetConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.SetConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,``0)
+    name: SetConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of DatabaseConfigurations).SetConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).SetConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SetConfig``1(System.String,System.String,{TValue})
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SetConfig``1(System.String,System.String,``0)
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,System.String,``0)
+  name: SetConfig<TValue>(String, String, TValue)
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.SetConfig<TValue>(String, String, TValue)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.SetConfig<TValue>(System.String, System.String, TValue)
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).SetConfig(Of TValue)(String, String, TValue)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).SetConfig(Of TValue)(System.String, System.String, TValue)
+  name.vb: SetConfig(Of TValue)(String, String, TValue)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,System.String,``0)
+    name: SetConfig<TValue>
+    nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.SetConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.SetConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,System.String,``0)
+    name: SetConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of DatabaseConfigurations).SetConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).SetConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SaveSettings
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.SaveSettings
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.SaveSettings
+  name: SaveSettings()
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.SaveSettings()
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.SaveSettings()
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).SaveSettings()
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).SaveSettings()
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SaveSettings
+    name: SaveSettings
+    nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.SaveSettings
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.SaveSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SaveSettings
+    name: SaveSettings
+    nameWithType: ConfigurationServiceBase(Of DatabaseConfigurations).SaveSettings
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).SaveSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.WatchFile
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.WatchFile
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.WatchFile
+  name: WatchFile()
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.WatchFile()
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.WatchFile()
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).WatchFile()
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).WatchFile()
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.WatchFile
+    name: WatchFile
+    nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.WatchFile
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.WatchFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.WatchFile
+    name: WatchFile
+    nameWithType: ConfigurationServiceBase(Of DatabaseConfigurations).WatchFile
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).WatchFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1
+  commentId: T:Mix.Heart.Services.ConfigurationServiceBase`1
+  name: ConfigurationServiceBase<T>
+  nameWithType: ConfigurationServiceBase<T>
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>
+  nameWithType.vb: ConfigurationServiceBase(Of T)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T)
+  name.vb: ConfigurationServiceBase(Of T)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1
+    name: ConfigurationServiceBase
+    nameWithType: ConfigurationServiceBase
+    fullName: Mix.Heart.Services.ConfigurationServiceBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1
+    name: ConfigurationServiceBase
+    nameWithType: ConfigurationServiceBase
+    fullName: Mix.Heart.Services.ConfigurationServiceBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services
+  commentId: N:Mix.Heart.Services
+  name: Mix.Heart.Services
+  nameWithType: Mix.Heart.Services
+  fullName: Mix.Heart.Services
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1._isEncrypt
+  commentId: F:Mix.Heart.Services.ConfigurationServiceBase`1._isEncrypt
+  name: _isEncrypt
+  nameWithType: ConfigurationServiceBase<T>._isEncrypt
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>._isEncrypt
+  nameWithType.vb: ConfigurationServiceBase(Of T)._isEncrypt
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T)._isEncrypt
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.AesKey
+  commentId: P:Mix.Heart.Services.ConfigurationServiceBase`1.AesKey
+  name: AesKey
+  nameWithType: ConfigurationServiceBase<T>.AesKey
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.AesKey
+  nameWithType.vb: ConfigurationServiceBase(Of T).AesKey
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).AesKey
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.AppSettings
+  commentId: P:Mix.Heart.Services.ConfigurationServiceBase`1.AppSettings
+  name: AppSettings
+  nameWithType: ConfigurationServiceBase<T>.AppSettings
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.AppSettings
+  nameWithType.vb: ConfigurationServiceBase(Of T).AppSettings
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).AppSettings
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.FilePath
+  commentId: P:Mix.Heart.Services.ConfigurationServiceBase`1.FilePath
+  name: FilePath
+  nameWithType: ConfigurationServiceBase<T>.FilePath
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.FilePath
+  nameWithType.vb: ConfigurationServiceBase(Of T).FilePath
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).FilePath
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.watcher
+  commentId: F:Mix.Heart.Services.ConfigurationServiceBase`1.watcher
+  name: watcher
+  nameWithType: ConfigurationServiceBase<T>.watcher
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.watcher
+  nameWithType.vb: ConfigurationServiceBase(Of T).watcher
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).watcher
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,``0)
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,``0)
+  isExternal: true
+  name: GetConfig<TValue>(String, TValue)
+  nameWithType: ConfigurationServiceBase<T>.GetConfig<TValue>(String, TValue)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.GetConfig<TValue>(System.String, TValue)
+  nameWithType.vb: ConfigurationServiceBase(Of T).GetConfig(Of TValue)(String, TValue)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).GetConfig(Of TValue)(System.String, TValue)
+  name.vb: GetConfig(Of TValue)(String, TValue)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,``0)
+    name: GetConfig<TValue>
+    nameWithType: ConfigurationServiceBase<T>.GetConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.GetConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,``0)
+    name: GetConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of T).GetConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of T).GetConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,System.String,``0)
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,System.String,``0)
+  isExternal: true
+  name: GetConfig<TValue>(String, String, TValue)
+  nameWithType: ConfigurationServiceBase<T>.GetConfig<TValue>(String, String, TValue)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.GetConfig<TValue>(System.String, System.String, TValue)
+  nameWithType.vb: ConfigurationServiceBase(Of T).GetConfig(Of TValue)(String, String, TValue)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).GetConfig(Of TValue)(System.String, System.String, TValue)
+  name.vb: GetConfig(Of TValue)(String, String, TValue)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,System.String,``0)
+    name: GetConfig<TValue>
+    nameWithType: ConfigurationServiceBase<T>.GetConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.GetConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetConfig``1(System.String,System.String,``0)
+    name: GetConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of T).GetConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of T).GetConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetEnumConfig``1(System.String)
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase`1.GetEnumConfig``1(System.String)
+  isExternal: true
+  name: GetEnumConfig<TValue>(String)
+  nameWithType: ConfigurationServiceBase<T>.GetEnumConfig<TValue>(String)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.GetEnumConfig<TValue>(System.String)
+  nameWithType.vb: ConfigurationServiceBase(Of T).GetEnumConfig(Of TValue)(String)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).GetEnumConfig(Of TValue)(System.String)
+  name.vb: GetEnumConfig(Of TValue)(String)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetEnumConfig``1(System.String)
+    name: GetEnumConfig<TValue>
+    nameWithType: ConfigurationServiceBase<T>.GetEnumConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.GetEnumConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.GetEnumConfig``1(System.String)
+    name: GetEnumConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of T).GetEnumConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of T).GetEnumConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,``0)
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,``0)
+  isExternal: true
+  name: SetConfig<TValue>(String, TValue)
+  nameWithType: ConfigurationServiceBase<T>.SetConfig<TValue>(String, TValue)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.SetConfig<TValue>(System.String, TValue)
+  nameWithType.vb: ConfigurationServiceBase(Of T).SetConfig(Of TValue)(String, TValue)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).SetConfig(Of TValue)(System.String, TValue)
+  name.vb: SetConfig(Of TValue)(String, TValue)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,``0)
+    name: SetConfig<TValue>
+    nameWithType: ConfigurationServiceBase<T>.SetConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.SetConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,``0)
+    name: SetConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of T).SetConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of T).SetConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,System.String,``0)
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,System.String,``0)
+  isExternal: true
+  name: SetConfig<TValue>(String, String, TValue)
+  nameWithType: ConfigurationServiceBase<T>.SetConfig<TValue>(String, String, TValue)
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.SetConfig<TValue>(System.String, System.String, TValue)
+  nameWithType.vb: ConfigurationServiceBase(Of T).SetConfig(Of TValue)(String, String, TValue)
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).SetConfig(Of TValue)(System.String, System.String, TValue)
+  name.vb: SetConfig(Of TValue)(String, String, TValue)
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,System.String,``0)
+    name: SetConfig<TValue>
+    nameWithType: ConfigurationServiceBase<T>.SetConfig<TValue>
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.SetConfig<TValue>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SetConfig``1(System.String,System.String,``0)
+    name: SetConfig(Of TValue)
+    nameWithType: ConfigurationServiceBase(Of T).SetConfig(Of TValue)
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of T).SetConfig(Of TValue)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.SaveSettings
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase`1.SaveSettings
+  name: SaveSettings()
+  nameWithType: ConfigurationServiceBase<T>.SaveSettings()
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.SaveSettings()
+  nameWithType.vb: ConfigurationServiceBase(Of T).SaveSettings()
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).SaveSettings()
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SaveSettings
+    name: SaveSettings
+    nameWithType: ConfigurationServiceBase<T>.SaveSettings
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.SaveSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.SaveSettings
+    name: SaveSettings
+    nameWithType: ConfigurationServiceBase(Of T).SaveSettings
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of T).SaveSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.WatchFile
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase`1.WatchFile
+  name: WatchFile()
+  nameWithType: ConfigurationServiceBase<T>.WatchFile()
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.WatchFile()
+  nameWithType.vb: ConfigurationServiceBase(Of T).WatchFile()
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).WatchFile()
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.WatchFile
+    name: WatchFile
+    nameWithType: ConfigurationServiceBase<T>.WatchFile
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.WatchFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.WatchFile
+    name: WatchFile
+    nameWithType: ConfigurationServiceBase(Of T).WatchFile
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of T).WatchFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Services.DatabaseService.DatabaseProvider*
+  commentId: Overload:Mix.Database.Services.DatabaseService.DatabaseProvider
+  name: DatabaseProvider
+  nameWithType: DatabaseService.DatabaseProvider
+  fullName: Mix.Database.Services.DatabaseService.DatabaseProvider
+- uid: MixDatabaseProvider
+  isExternal: true
+  name: MixDatabaseProvider
+  nameWithType: MixDatabaseProvider
+  fullName: MixDatabaseProvider
+- uid: Mix.Database.Services.DatabaseService.#ctor*
+  commentId: Overload:Mix.Database.Services.DatabaseService.#ctor
+  name: DatabaseService
+  nameWithType: DatabaseService.DatabaseService
+  fullName: Mix.Database.Services.DatabaseService.DatabaseService
+- uid: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.LoadAppSettings
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}.LoadAppSettings
+  parent: Mix.Heart.Services.ConfigurationServiceBase{Mix.Shared.Models.DatabaseConfigurations}
+  definition: Mix.Heart.Services.ConfigurationServiceBase`1.LoadAppSettings
+  name: LoadAppSettings()
+  nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.LoadAppSettings()
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.LoadAppSettings()
+  nameWithType.vb: ConfigurationServiceBase(Of DatabaseConfigurations).LoadAppSettings()
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).LoadAppSettings()
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.LoadAppSettings
+    name: LoadAppSettings
+    nameWithType: ConfigurationServiceBase<DatabaseConfigurations>.LoadAppSettings
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<Mix.Shared.Models.DatabaseConfigurations>.LoadAppSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.LoadAppSettings
+    name: LoadAppSettings
+    nameWithType: ConfigurationServiceBase(Of DatabaseConfigurations).LoadAppSettings
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of Mix.Shared.Models.DatabaseConfigurations).LoadAppSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Services.DatabaseService.LoadAppSettings*
+  commentId: Overload:Mix.Database.Services.DatabaseService.LoadAppSettings
+  name: LoadAppSettings
+  nameWithType: DatabaseService.LoadAppSettings
+  fullName: Mix.Database.Services.DatabaseService.LoadAppSettings
+- uid: Mix.Heart.Services.ConfigurationServiceBase`1.LoadAppSettings
+  commentId: M:Mix.Heart.Services.ConfigurationServiceBase`1.LoadAppSettings
+  name: LoadAppSettings()
+  nameWithType: ConfigurationServiceBase<T>.LoadAppSettings()
+  fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.LoadAppSettings()
+  nameWithType.vb: ConfigurationServiceBase(Of T).LoadAppSettings()
+  fullName.vb: Mix.Heart.Services.ConfigurationServiceBase(Of T).LoadAppSettings()
+  spec.csharp:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.LoadAppSettings
+    name: LoadAppSettings
+    nameWithType: ConfigurationServiceBase<T>.LoadAppSettings
+    fullName: Mix.Heart.Services.ConfigurationServiceBase<T>.LoadAppSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Mix.Heart.Services.ConfigurationServiceBase`1.LoadAppSettings
+    name: LoadAppSettings
+    nameWithType: ConfigurationServiceBase(Of T).LoadAppSettings
+    fullName: Mix.Heart.Services.ConfigurationServiceBase(Of T).LoadAppSettings
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.Database.Services.DatabaseService.GetConnectionString*
+  commentId: Overload:Mix.Database.Services.DatabaseService.GetConnectionString
+  name: GetConnectionString
+  nameWithType: DatabaseService.GetConnectionString
+  fullName: Mix.Database.Services.DatabaseService.GetConnectionString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Mix.Database.Services.DatabaseService.SetConnectionString*
+  commentId: Overload:Mix.Database.Services.DatabaseService.SetConnectionString
+  name: SetConnectionString
+  nameWithType: DatabaseService.SetConnectionString
+  fullName: Mix.Database.Services.DatabaseService.SetConnectionString
+- uid: Mix.Database.Services.DatabaseService.GetDbContext*
+  commentId: Overload:Mix.Database.Services.DatabaseService.GetDbContext
+  name: GetDbContext
+  nameWithType: DatabaseService.GetDbContext
+  fullName: Mix.Database.Services.DatabaseService.GetDbContext
+- uid: MixCmsContext
+  isExternal: true
+  name: MixCmsContext
+  nameWithType: MixCmsContext
+  fullName: MixCmsContext
+- uid: Mix.Database.Services.DatabaseService.GetAccountDbContext*
+  commentId: Overload:Mix.Database.Services.DatabaseService.GetAccountDbContext
+  name: GetAccountDbContext
+  nameWithType: DatabaseService.GetAccountDbContext
+  fullName: Mix.Database.Services.DatabaseService.GetAccountDbContext
+- uid: Mix.Database.Entities.Account.MixCmsAccountContext
+  commentId: T:Mix.Database.Entities.Account.MixCmsAccountContext
+  parent: Mix.Database.Entities.Account
+  name: MixCmsAccountContext
+  nameWithType: MixCmsAccountContext
+  fullName: Mix.Database.Entities.Account.MixCmsAccountContext
+- uid: Mix.Database.Entities.Account
+  commentId: N:Mix.Database.Entities.Account
+  name: Mix.Database.Entities.Account
+  nameWithType: Mix.Database.Entities.Account
+  fullName: Mix.Database.Entities.Account
+- uid: Mix.Database.Services.DatabaseService.GetQuartzDbContext*
+  commentId: Overload:Mix.Database.Services.DatabaseService.GetQuartzDbContext
+  name: GetQuartzDbContext
+  nameWithType: DatabaseService.GetQuartzDbContext
+  fullName: Mix.Database.Services.DatabaseService.GetQuartzDbContext
+- uid: Mix.Database.Entities.Quartz.QuartzDbContext
+  commentId: T:Mix.Database.Entities.Quartz.QuartzDbContext
+  parent: Mix.Database.Entities.Quartz
+  name: QuartzDbContext
+  nameWithType: QuartzDbContext
+  fullName: Mix.Database.Entities.Quartz.QuartzDbContext
+- uid: Mix.Database.Entities.Quartz
+  commentId: N:Mix.Database.Entities.Quartz
+  name: Mix.Database.Entities.Quartz
+  nameWithType: Mix.Database.Entities.Quartz
+  fullName: Mix.Database.Entities.Quartz
+- uid: Mix.Database.Services.DatabaseService.GetCacheDbContext*
+  commentId: Overload:Mix.Database.Services.DatabaseService.GetCacheDbContext
+  name: GetCacheDbContext
+  nameWithType: DatabaseService.GetCacheDbContext
+  fullName: Mix.Database.Services.DatabaseService.GetCacheDbContext
+- uid: Mix.Heart.Entities.Cache.MixCacheDbContext
+  commentId: T:Mix.Heart.Entities.Cache.MixCacheDbContext
+  parent: Mix.Heart.Entities.Cache
+  name: MixCacheDbContext
+  nameWithType: MixCacheDbContext
+  fullName: Mix.Heart.Entities.Cache.MixCacheDbContext
+- uid: Mix.Heart.Entities.Cache
+  commentId: N:Mix.Heart.Entities.Cache
+  name: Mix.Heart.Entities.Cache
+  nameWithType: Mix.Heart.Entities.Cache
+  fullName: Mix.Heart.Entities.Cache
+- uid: Mix.Database.Services.DatabaseService.InitConnectionStrings*
+  commentId: Overload:Mix.Database.Services.DatabaseService.InitConnectionStrings
+  name: InitConnectionStrings
+  nameWithType: DatabaseService.InitConnectionStrings
+  fullName: Mix.Database.Services.DatabaseService.InitConnectionStrings
+- uid: Mix.Database.Services.DatabaseService.UpdateMixCmsContextAsync*
+  commentId: Overload:Mix.Database.Services.DatabaseService.UpdateMixCmsContextAsync
+  name: UpdateMixCmsContextAsync
+  nameWithType: DatabaseService.UpdateMixCmsContextAsync
+  fullName: Mix.Database.Services.DatabaseService.UpdateMixCmsContextAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Mix.Database.Services.DatabaseService.InitQuartzContextAsync*
+  commentId: Overload:Mix.Database.Services.DatabaseService.InitQuartzContextAsync
+  name: InitQuartzContextAsync
+  nameWithType: DatabaseService.InitQuartzContextAsync
+  fullName: Mix.Database.Services.DatabaseService.InitQuartzContextAsync

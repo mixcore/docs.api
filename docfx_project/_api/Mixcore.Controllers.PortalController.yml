@@ -5,7 +5,7 @@ items:
   id: PortalController
   parent: Mixcore.Controllers
   children:
-  - Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.MixDatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
+  - Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.DatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
   - Mixcore.Controllers.PortalController.Index
   - Mixcore.Controllers.PortalController.ValidateRequest
   langs:
@@ -39,16 +39,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.MixDatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
-  commentId: M:Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.MixDatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
-  id: '#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.MixDatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)'
+- uid: Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.DatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
+  commentId: M:Mixcore.Controllers.PortalController.#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.DatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)
+  id: '#ctor(IHttpContextAccessor,Mix.Lib.Services.MixService,Mix.Database.Services.DatabaseService,Mix.Shared.Services.IPSecurityConfigService,MixCacheService)'
   parent: Mixcore.Controllers.PortalController
   langs:
   - csharp
   - vb
-  name: PortalController(IHttpContextAccessor, MixService, MixDatabaseService, IPSecurityConfigService, MixCacheService)
-  nameWithType: PortalController.PortalController(IHttpContextAccessor, MixService, MixDatabaseService, IPSecurityConfigService, MixCacheService)
-  fullName: Mixcore.Controllers.PortalController.PortalController(IHttpContextAccessor, Mix.Lib.Services.MixService, Mix.Database.Services.MixDatabaseService, Mix.Shared.Services.IPSecurityConfigService, MixCacheService)
+  name: PortalController(IHttpContextAccessor, MixService, DatabaseService, IPSecurityConfigService, MixCacheService)
+  nameWithType: PortalController.PortalController(IHttpContextAccessor, MixService, DatabaseService, IPSecurityConfigService, MixCacheService)
+  fullName: Mixcore.Controllers.PortalController.PortalController(IHttpContextAccessor, Mix.Lib.Services.MixService, Mix.Database.Services.DatabaseService, Mix.Shared.Services.IPSecurityConfigService, MixCacheService)
   type: Constructor
   source:
     remote:
@@ -62,19 +62,19 @@ items:
   - mixcore
   namespace: Mixcore.Controllers
   syntax:
-    content: public PortalController(IHttpContextAccessor httpContextAccessor, MixService mixService, MixDatabaseService databaseService, IPSecurityConfigService ipSecurityConfigService, MixCacheService cacheService)
+    content: public PortalController(IHttpContextAccessor httpContextAccessor, MixService mixService, DatabaseService databaseService, IPSecurityConfigService ipSecurityConfigService, MixCacheService cacheService)
     parameters:
     - id: httpContextAccessor
       type: IHttpContextAccessor
     - id: mixService
       type: Mix.Lib.Services.MixService
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
+      type: Mix.Database.Services.DatabaseService
     - id: ipSecurityConfigService
       type: Mix.Shared.Services.IPSecurityConfigService
     - id: cacheService
       type: MixCacheService
-    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, mixService As MixService, databaseService As MixDatabaseService, ipSecurityConfigService As IPSecurityConfigService, cacheService As MixCacheService)
+    content.vb: Public Sub New(httpContextAccessor As IHttpContextAccessor, mixService As MixService, databaseService As DatabaseService, ipSecurityConfigService As IPSecurityConfigService, cacheService As MixCacheService)
   overload: Mixcore.Controllers.PortalController.#ctor*
   modifiers.csharp:
   - public
@@ -279,12 +279,12 @@ references:
   name: MixService
   nameWithType: MixService
   fullName: Mix.Lib.Services.MixService
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Shared.Services.IPSecurityConfigService
   commentId: T:Mix.Shared.Services.IPSecurityConfigService
   parent: Mix.Shared.Services

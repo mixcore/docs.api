@@ -5,7 +5,7 @@ items:
   id: MixCacheConfiguration
   parent: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES
   children:
-  - Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
+  - Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
   langs:
   - csharp
   - vb
@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: src/Mix.Heart/EntitiyConfigurations/POSTGRES/MixCacheConfiguration.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: MixCacheConfiguration
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/EntitiyConfigurations/POSTGRES/MixCacheConfiguration.cs
@@ -28,40 +28,30 @@ items:
     content: 'public class MixCacheConfiguration : IEntityTypeConfiguration<MixCache>'
     content.vb: >-
       Public Class MixCacheConfiguration
-          Implements IEntityTypeConfiguration(Of MixCache)
+          Inherits IEntityTypeConfiguration(Of MixCache)
   inheritance:
   - System.Object
-  implements:
-  - Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{Mix.Heart.Entities.Cache.MixCache}
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
-  commentId: M:Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
-  id: Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
+- uid: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
+  commentId: M:Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
+  id: Configure(EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
   parent: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration
   langs:
   - csharp
   - vb
   name: Configure(EntityTypeBuilder<MixCache>)
   nameWithType: MixCacheConfiguration.Configure(EntityTypeBuilder<MixCache>)
-  fullName: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Mix.Heart.Entities.Cache.MixCache>)
+  fullName: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(EntityTypeBuilder<Mix.Heart.Entities.Cache.MixCache>)
   type: Method
   source:
     remote:
       path: src/Mix.Heart/EntitiyConfigurations/POSTGRES/MixCacheConfiguration.cs
-      branch: f1bc78bfdfbe944f6c2070f069bbcc6ed9c06436
+      branch: develop/v2
       repo: https://github.com/mixcore/mix.heart.git
     id: Configure
     path: ../../mix.core/src/framework/mix-heart/src/Mix.Heart/EntitiyConfigurations/POSTGRES/MixCacheConfiguration.cs
@@ -73,17 +63,15 @@ items:
     content: public void Configure(EntityTypeBuilder<MixCache> entity)
     parameters:
     - id: entity
-      type: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache}
+      type: EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache}
     content.vb: Public Sub Configure(entity As EntityTypeBuilder(Of MixCache))
   overload: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure*
-  implements:
-  - Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{Mix.Heart.Entities.Cache.MixCache}.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
   nameWithType.vb: MixCacheConfiguration.Configure(EntityTypeBuilder(Of MixCache))
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-  fullName.vb: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of Mix.Heart.Entities.Cache.MixCache))
+  fullName.vb: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure(EntityTypeBuilder(Of Mix.Heart.Entities.Cache.MixCache))
   name.vb: Configure(EntityTypeBuilder(Of MixCache))
 references:
 - uid: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES
@@ -98,462 +86,31 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{Mix.Heart.Entities.Cache.MixCache}
-  commentId: T:Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{Mix.Heart.Entities.Cache.MixCache}
-  parent: Microsoft.EntityFrameworkCore
-  definition: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
-  name: IEntityTypeConfiguration<MixCache>
-  nameWithType: IEntityTypeConfiguration<MixCache>
-  fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<Mix.Heart.Entities.Cache.MixCache>
-  nameWithType.vb: IEntityTypeConfiguration(Of MixCache)
-  fullName.vb: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of Mix.Heart.Entities.Cache.MixCache)
-  name.vb: IEntityTypeConfiguration(Of MixCache)
-  spec.csharp:
-  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
-    name: IEntityTypeConfiguration
-    nameWithType: IEntityTypeConfiguration
-    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Mix.Heart.Entities.Cache.MixCache
-    name: MixCache
-    nameWithType: MixCache
-    fullName: Mix.Heart.Entities.Cache.MixCache
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
-    name: IEntityTypeConfiguration
-    nameWithType: IEntityTypeConfiguration
-    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Mix.Heart.Entities.Cache.MixCache
-    name: MixCache
-    nameWithType: MixCache
-    fullName: Mix.Heart.Entities.Cache.MixCache
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
   name: System
   nameWithType: System
   fullName: System
-- uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
-  commentId: T:Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
-  isExternal: true
-  name: IEntityTypeConfiguration<TEntity>
-  nameWithType: IEntityTypeConfiguration<TEntity>
-  fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>
-  nameWithType.vb: IEntityTypeConfiguration(Of TEntity)
-  fullName.vb: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of TEntity)
-  name.vb: IEntityTypeConfiguration(Of TEntity)
-  spec.csharp:
-  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
-    name: IEntityTypeConfiguration
-    nameWithType: IEntityTypeConfiguration
-    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TEntity
-    nameWithType: TEntity
-    fullName: TEntity
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1
-    name: IEntityTypeConfiguration
-    nameWithType: IEntityTypeConfiguration
-    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TEntity
-    nameWithType: TEntity
-    fullName: TEntity
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Microsoft.EntityFrameworkCore
-  commentId: N:Microsoft.EntityFrameworkCore
-  isExternal: true
-  name: Microsoft.EntityFrameworkCore
-  nameWithType: Microsoft.EntityFrameworkCore
-  fullName: Microsoft.EntityFrameworkCore
 - uid: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure*
   commentId: Overload:Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure
   name: Configure
   nameWithType: MixCacheConfiguration.Configure
   fullName: Mix.Heart.Infrastructure.EntityConfigurations.POSTGRES.MixCacheConfiguration.Configure
-- uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{Mix.Heart.Entities.Cache.MixCache}.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
-  commentId: M:Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{Mix.Heart.Entities.Cache.MixCache}.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache})
-  parent: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration{Mix.Heart.Entities.Cache.MixCache}
-  definition: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
-  name: Configure(EntityTypeBuilder<MixCache>)
-  nameWithType: IEntityTypeConfiguration<MixCache>.Configure(EntityTypeBuilder<MixCache>)
-  fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<Mix.Heart.Entities.Cache.MixCache>.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Mix.Heart.Entities.Cache.MixCache>)
-  nameWithType.vb: IEntityTypeConfiguration(Of MixCache).Configure(EntityTypeBuilder(Of MixCache))
-  fullName.vb: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of Mix.Heart.Entities.Cache.MixCache).Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of Mix.Heart.Entities.Cache.MixCache))
-  name.vb: Configure(EntityTypeBuilder(Of MixCache))
-  spec.csharp:
-  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
-    name: Configure
-    nameWithType: IEntityTypeConfiguration<MixCache>.Configure
-    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<Mix.Heart.Entities.Cache.MixCache>.Configure
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
-    name: EntityTypeBuilder
-    nameWithType: EntityTypeBuilder
-    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: Mix.Heart.Entities.Cache.MixCache
-    name: MixCache
-    nameWithType: MixCache
-    fullName: Mix.Heart.Entities.Cache.MixCache
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
-    name: Configure
-    nameWithType: IEntityTypeConfiguration(Of MixCache).Configure
-    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of Mix.Heart.Entities.Cache.MixCache).Configure
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
-    name: EntityTypeBuilder
-    nameWithType: EntityTypeBuilder
-    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: Mix.Heart.Entities.Cache.MixCache
-    name: MixCache
-    nameWithType: MixCache
-    fullName: Mix.Heart.Entities.Cache.MixCache
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache}
-  commentId: T:Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache}
-  parent: Microsoft.EntityFrameworkCore.Metadata.Builders
-  definition: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+- uid: EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache}
+  commentId: '!:EntityTypeBuilder{Mix.Heart.Entities.Cache.MixCache}'
+  definition: EntityTypeBuilder`1
   name: EntityTypeBuilder<MixCache>
   nameWithType: EntityTypeBuilder<MixCache>
-  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Mix.Heart.Entities.Cache.MixCache>
+  fullName: EntityTypeBuilder<Mix.Heart.Entities.Cache.MixCache>
   nameWithType.vb: EntityTypeBuilder(Of MixCache)
-  fullName.vb: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of Mix.Heart.Entities.Cache.MixCache)
+  fullName.vb: EntityTypeBuilder(Of Mix.Heart.Entities.Cache.MixCache)
   name.vb: EntityTypeBuilder(Of MixCache)
   spec.csharp:
-  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  - uid: EntityTypeBuilder`1
     name: EntityTypeBuilder
     nameWithType: EntityTypeBuilder
-    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    fullName: EntityTypeBuilder
     isExternal: true
   - name: <
     nameWithType: <
@@ -566,10 +123,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  - uid: EntityTypeBuilder`1
     name: EntityTypeBuilder
     nameWithType: EntityTypeBuilder
-    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    fullName: EntityTypeBuilder
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -581,109 +138,41 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
-  commentId: M:Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
+- uid: EntityTypeBuilder`1
   isExternal: true
-  name: Configure(EntityTypeBuilder<TEntity>)
-  nameWithType: IEntityTypeConfiguration<TEntity>.Configure(EntityTypeBuilder<TEntity>)
-  fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>)
-  nameWithType.vb: IEntityTypeConfiguration(Of TEntity).Configure(EntityTypeBuilder(Of TEntity))
-  fullName.vb: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of TEntity).Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity))
-  name.vb: Configure(EntityTypeBuilder(Of TEntity))
+  name: EntityTypeBuilder<>
+  nameWithType: EntityTypeBuilder<>
+  fullName: EntityTypeBuilder<>
+  nameWithType.vb: EntityTypeBuilder(Of )
+  fullName.vb: EntityTypeBuilder(Of )
+  name.vb: EntityTypeBuilder(Of )
   spec.csharp:
-  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
-    name: Configure
-    nameWithType: IEntityTypeConfiguration<TEntity>.Configure
-    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration<TEntity>.Configure
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  - uid: EntityTypeBuilder`1
     name: EntityTypeBuilder
     nameWithType: EntityTypeBuilder
-    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    fullName: EntityTypeBuilder
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: TEntity
-    nameWithType: TEntity
-    fullName: TEntity
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration`1.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{`0})
-    name: Configure
-    nameWithType: IEntityTypeConfiguration(Of TEntity).Configure
-    fullName: Microsoft.EntityFrameworkCore.IEntityTypeConfiguration(Of TEntity).Configure
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
-    name: EntityTypeBuilder
-    nameWithType: EntityTypeBuilder
-    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TEntity
-    nameWithType: TEntity
-    fullName: TEntity
-  - name: )
-    nameWithType: )
-    fullName: )
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
-  commentId: T:Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
-  isExternal: true
-  name: EntityTypeBuilder<TEntity>
-  nameWithType: EntityTypeBuilder<TEntity>
-  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>
-  nameWithType.vb: EntityTypeBuilder(Of TEntity)
-  fullName.vb: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity)
-  name.vb: EntityTypeBuilder(Of TEntity)
-  spec.csharp:
-  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
-    name: EntityTypeBuilder
-    nameWithType: EntityTypeBuilder
-    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TEntity
-    nameWithType: TEntity
-    fullName: TEntity
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1
+  - uid: EntityTypeBuilder`1
     name: EntityTypeBuilder
     nameWithType: EntityTypeBuilder
-    fullName: Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder
+    fullName: EntityTypeBuilder
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: TEntity
-    nameWithType: TEntity
-    fullName: TEntity
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: Microsoft.EntityFrameworkCore.Metadata.Builders
-  commentId: N:Microsoft.EntityFrameworkCore.Metadata.Builders
-  isExternal: true
-  name: Microsoft.EntityFrameworkCore.Metadata.Builders
-  nameWithType: Microsoft.EntityFrameworkCore.Metadata.Builders
-  fullName: Microsoft.EntityFrameworkCore.Metadata.Builders

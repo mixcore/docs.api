@@ -1,0 +1,1050 @@
+### YamlMime:ManagedReference
+items:
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2
+  commentId: T:Mix.RepoDb.Interfaces.IRepoDb`2
+  id: IRepoDb`2
+  parent: Mix.RepoDb.Interfaces
+  children:
+  - Mix.RepoDb.Interfaces.IRepoDb`2.Cache
+  - Mix.RepoDb.Interfaces.IRepoDb`2.CreateConnection
+  - Mix.RepoDb.Interfaces.IRepoDb`2.Delete(System.Int32)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.DeleteAsync(System.Int32)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.Get(System.Int32)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.GetAll(System.String)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.GetAllAsync(System.String)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.GetAsync(System.Int32)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.Insert(`1,System.Data.IDbTransaction)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.InsertAsync(`1)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.Merge(`1,System.Data.IDbTransaction)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.MergeAsync(`1)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.Trace
+  - Mix.RepoDb.Interfaces.IRepoDb`2.Update(`1,System.Data.IDbTransaction)
+  - Mix.RepoDb.Interfaces.IRepoDb`2.UpdateAsync(`1)
+  langs:
+  - csharp
+  - vb
+  name: IRepoDb<TDbConnection, TEntity>
+  nameWithType: IRepoDb<TDbConnection, TEntity>
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>
+  type: Interface
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: IRepoDb
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 6
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: >-
+      public interface IRepoDb<TDbConnection, TEntity>
+          where TDbConnection : DbConnection where TEntity : class
+    typeParameters:
+    - id: TDbConnection
+    - id: TEntity
+    content.vb: Public Interface IRepoDb(Of TDbConnection As DbConnection, TEntity As Class)
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity)
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity)
+  name.vb: IRepoDb(Of TDbConnection, TEntity)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Cache
+  commentId: P:Mix.RepoDb.Interfaces.IRepoDb`2.Cache
+  id: Cache
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: Cache
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Cache
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Cache
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Cache
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 10
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: ICache Cache { get; }
+    parameters: []
+    return:
+      type: RepoDb.Interfaces.ICache
+    content.vb: ReadOnly Property Cache As ICache
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.Cache*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Cache
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Cache
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Trace
+  commentId: P:Mix.RepoDb.Interfaces.IRepoDb`2.Trace
+  id: Trace
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: Trace
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Trace
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Trace
+  type: Property
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Trace
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 11
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: ITrace Trace { get; }
+    parameters: []
+    return:
+      type: RepoDb.Interfaces.ITrace
+    content.vb: ReadOnly Property Trace As ITrace
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.Trace*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Trace
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Trace
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.CreateConnection
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.CreateConnection
+  id: CreateConnection
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: CreateConnection()
+  nameWithType: IRepoDb<TDbConnection, TEntity>.CreateConnection()
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.CreateConnection()
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: CreateConnection
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 13
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: TDbConnection CreateConnection()
+    return:
+      type: '{TDbConnection}'
+    content.vb: Function CreateConnection As TDbConnection
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.CreateConnection*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).CreateConnection()
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).CreateConnection()
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Delete(System.Int32)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: Delete(Int32)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Delete(Int32)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Delete(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Delete
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 14
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: int Delete(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function Delete(id As Integer) As Integer
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.Delete*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Delete(Int32)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Delete(System.Int32)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.DeleteAsync(System.Int32)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.DeleteAsync(System.Int32)
+  id: DeleteAsync(System.Int32)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Int32)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.DeleteAsync(Int32)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.DeleteAsync(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: DeleteAsync
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 15
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: Task<int> DeleteAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Task{System.Int32}
+    content.vb: Function DeleteAsync(id As Integer) As Task(Of Integer)
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.DeleteAsync*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).DeleteAsync(Int32)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).DeleteAsync(System.Int32)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Get(System.Int32)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: Get(Int32)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Get(Int32)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Get(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Get
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 16
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: TEntity Get(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: '{TEntity}'
+    content.vb: Function Get(id As Integer) As TEntity
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.Get*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Get(Int32)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Get(System.Int32)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.GetAll(System.String)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.GetAll(System.String)
+  id: GetAll(System.String)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: GetAll(String)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.GetAll(String)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.GetAll(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetAll
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 17
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: IEnumerable<TEntity> GetAll(string cacheKey = null)
+    parameters:
+    - id: cacheKey
+      type: System.String
+    return:
+      type: IEnumerable{{TEntity}}
+    content.vb: Function GetAll(cacheKey As String = Nothing) As IEnumerable(Of TEntity)
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.GetAll*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).GetAll(String)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).GetAll(System.String)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.GetAllAsync(System.String)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.GetAllAsync(System.String)
+  id: GetAllAsync(System.String)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync(String)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.GetAllAsync(String)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.GetAllAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetAllAsync
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 18
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: Task<IEnumerable<TEntity>> GetAllAsync(string cacheKey = null)
+    parameters:
+    - id: cacheKey
+      type: System.String
+    return:
+      type: Task{IEnumerable{{TEntity}}}
+    content.vb: Function GetAllAsync(cacheKey As String = Nothing) As Task(Of IEnumerable(Of TEntity))
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.GetAllAsync*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).GetAllAsync(String)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).GetAllAsync(System.String)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.GetAsync(System.Int32)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.GetAsync(System.Int32)
+  id: GetAsync(System.Int32)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Int32)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.GetAsync(Int32)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.GetAsync(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: GetAsync
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 19
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: Task<TEntity> GetAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: Task{{TEntity}}
+    content.vb: Function GetAsync(id As Integer) As Task(Of TEntity)
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.GetAsync*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).GetAsync(Int32)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).GetAsync(System.Int32)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Merge(`1,System.Data.IDbTransaction)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.Merge(`1,System.Data.IDbTransaction)
+  id: Merge(`1,System.Data.IDbTransaction)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: Merge(TEntity, IDbTransaction)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Merge(TEntity, IDbTransaction)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Merge(TEntity, System.Data.IDbTransaction)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Merge
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 20
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: int Merge(TEntity entity, IDbTransaction transaction = null)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: transaction
+      type: System.Data.IDbTransaction
+    return:
+      type: System.Int32
+    content.vb: Function Merge(entity As TEntity, transaction As IDbTransaction = Nothing) As Integer
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.Merge*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Merge(TEntity, IDbTransaction)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Merge(TEntity, System.Data.IDbTransaction)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.MergeAsync(`1)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.MergeAsync(`1)
+  id: MergeAsync(`1)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: MergeAsync(TEntity)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.MergeAsync(TEntity)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.MergeAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MergeAsync
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 21
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: Task<object> MergeAsync(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    return:
+      type: Task{System.Object}
+    content.vb: Function MergeAsync(entity As TEntity) As Task(Of Object)
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.MergeAsync*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).MergeAsync(TEntity)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).MergeAsync(TEntity)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Insert(`1,System.Data.IDbTransaction)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.Insert(`1,System.Data.IDbTransaction)
+  id: Insert(`1,System.Data.IDbTransaction)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: Insert(TEntity, IDbTransaction)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Insert(TEntity, IDbTransaction)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Insert(TEntity, System.Data.IDbTransaction)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Insert
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 22
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: object Insert(TEntity entity, IDbTransaction transaction = null)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: transaction
+      type: System.Data.IDbTransaction
+    return:
+      type: System.Object
+    content.vb: Function Insert(entity As TEntity, transaction As IDbTransaction = Nothing) As Object
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.Insert*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Insert(TEntity, IDbTransaction)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Insert(TEntity, System.Data.IDbTransaction)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.InsertAsync(`1)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.InsertAsync(`1)
+  id: InsertAsync(`1)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: InsertAsync(TEntity)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.InsertAsync(TEntity)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.InsertAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: InsertAsync
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 23
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: Task<object> InsertAsync(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    return:
+      type: Task{System.Object}
+    content.vb: Function InsertAsync(entity As TEntity) As Task(Of Object)
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.InsertAsync*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).InsertAsync(TEntity)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).InsertAsync(TEntity)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Update(`1,System.Data.IDbTransaction)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.Update(`1,System.Data.IDbTransaction)
+  id: Update(`1,System.Data.IDbTransaction)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: Update(TEntity, IDbTransaction)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Update(TEntity, IDbTransaction)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Update(TEntity, System.Data.IDbTransaction)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: Update
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 24
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: int Update(TEntity entity, IDbTransaction transaction = null)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    - id: transaction
+      type: System.Data.IDbTransaction
+    return:
+      type: System.Int32
+    content.vb: Function Update(entity As TEntity, transaction As IDbTransaction = Nothing) As Integer
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.Update*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Update(TEntity, IDbTransaction)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Update(TEntity, System.Data.IDbTransaction)
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.UpdateAsync(`1)
+  commentId: M:Mix.RepoDb.Interfaces.IRepoDb`2.UpdateAsync(`1)
+  id: UpdateAsync(`1)
+  parent: Mix.RepoDb.Interfaces.IRepoDb`2
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(TEntity)
+  nameWithType: IRepoDb<TDbConnection, TEntity>.UpdateAsync(TEntity)
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.UpdateAsync(TEntity)
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.repodb/Interfaces/IRepoDb.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: UpdateAsync
+    path: ../../mix.core/src/platform/mix.repodb/Interfaces/IRepoDb.cs
+    startLine: 25
+  assemblies:
+  - mix.repodb
+  namespace: Mix.RepoDb.Interfaces
+  syntax:
+    content: Task<int> UpdateAsync(TEntity entity)
+    parameters:
+    - id: entity
+      type: '{TEntity}'
+    return:
+      type: Task{System.Int32}
+    content.vb: Function UpdateAsync(entity As TEntity) As Task(Of Integer)
+  overload: Mix.RepoDb.Interfaces.IRepoDb`2.UpdateAsync*
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).UpdateAsync(TEntity)
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).UpdateAsync(TEntity)
+references:
+- uid: Mix.RepoDb.Interfaces
+  commentId: N:Mix.RepoDb.Interfaces
+  name: Mix.RepoDb.Interfaces
+  nameWithType: Mix.RepoDb.Interfaces
+  fullName: Mix.RepoDb.Interfaces
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Cache*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.Cache
+  name: Cache
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Cache
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Cache
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Cache
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Cache
+- uid: RepoDb.Interfaces.ICache
+  commentId: T:RepoDb.Interfaces.ICache
+  parent: RepoDb.Interfaces
+  isExternal: true
+  name: ICache
+  nameWithType: ICache
+  fullName: RepoDb.Interfaces.ICache
+- uid: RepoDb.Interfaces
+  commentId: N:RepoDb.Interfaces
+  isExternal: true
+  name: RepoDb.Interfaces
+  nameWithType: RepoDb.Interfaces
+  fullName: RepoDb.Interfaces
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Trace*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.Trace
+  name: Trace
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Trace
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Trace
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Trace
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Trace
+- uid: RepoDb.Interfaces.ITrace
+  commentId: T:RepoDb.Interfaces.ITrace
+  parent: RepoDb.Interfaces
+  isExternal: true
+  name: ITrace
+  nameWithType: ITrace
+  fullName: RepoDb.Interfaces.ITrace
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.CreateConnection*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.CreateConnection
+  name: CreateConnection
+  nameWithType: IRepoDb<TDbConnection, TEntity>.CreateConnection
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.CreateConnection
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).CreateConnection
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).CreateConnection
+- uid: '{TDbConnection}'
+  commentId: '!:TDbConnection'
+  definition: TDbConnection
+  name: TDbConnection
+  nameWithType: TDbConnection
+  fullName: TDbConnection
+- uid: TDbConnection
+  name: TDbConnection
+  nameWithType: TDbConnection
+  fullName: TDbConnection
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Delete*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.Delete
+  name: Delete
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Delete
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Delete
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Delete
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Delete
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.DeleteAsync*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.DeleteAsync
+  name: DeleteAsync
+  nameWithType: IRepoDb<TDbConnection, TEntity>.DeleteAsync
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.DeleteAsync
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).DeleteAsync
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).DeleteAsync
+- uid: Task{System.Int32}
+  commentId: '!:Task{System.Int32}'
+  definition: Task`1
+  name: Task<Int32>
+  nameWithType: Task<Int32>
+  fullName: Task<System.Int32>
+  nameWithType.vb: Task(Of Int32)
+  fullName.vb: Task(Of System.Int32)
+  name.vb: Task(Of Int32)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Get*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.Get
+  name: Get
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Get
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Get
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Get
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Get
+- uid: '{TEntity}'
+  commentId: '!:TEntity'
+  definition: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: TEntity
+  name: TEntity
+  nameWithType: TEntity
+  fullName: TEntity
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.GetAll*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.GetAll
+  name: GetAll
+  nameWithType: IRepoDb<TDbConnection, TEntity>.GetAll
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.GetAll
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).GetAll
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).GetAll
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: IEnumerable{{TEntity}}
+  commentId: '!:IEnumerable{`1}'
+  definition: IEnumerable`1
+  name: IEnumerable<TEntity>
+  nameWithType: IEnumerable<TEntity>
+  fullName: IEnumerable<TEntity>
+  nameWithType.vb: IEnumerable(Of TEntity)
+  fullName.vb: IEnumerable(Of TEntity)
+  name.vb: IEnumerable(Of TEntity)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.GetAllAsync*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.GetAllAsync
+  name: GetAllAsync
+  nameWithType: IRepoDb<TDbConnection, TEntity>.GetAllAsync
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.GetAllAsync
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).GetAllAsync
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).GetAllAsync
+- uid: Task{IEnumerable{{TEntity}}}
+  commentId: '!:Task{IEnumerable{`1}}'
+  definition: Task`1
+  name: Task<IEnumerable<TEntity>>
+  nameWithType: Task<IEnumerable<TEntity>>
+  fullName: Task<IEnumerable<TEntity>>
+  nameWithType.vb: Task(Of IEnumerable(Of TEntity))
+  fullName.vb: Task(Of IEnumerable(Of TEntity))
+  name.vb: Task(Of IEnumerable(Of TEntity))
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.GetAsync*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.GetAsync
+  name: GetAsync
+  nameWithType: IRepoDb<TDbConnection, TEntity>.GetAsync
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.GetAsync
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).GetAsync
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).GetAsync
+- uid: Task{{TEntity}}
+  commentId: '!:Task{`1}'
+  definition: Task`1
+  name: Task<TEntity>
+  nameWithType: Task<TEntity>
+  fullName: Task<TEntity>
+  nameWithType.vb: Task(Of TEntity)
+  fullName.vb: Task(Of TEntity)
+  name.vb: Task(Of TEntity)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TEntity
+    nameWithType: TEntity
+    fullName: TEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Merge*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.Merge
+  name: Merge
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Merge
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Merge
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Merge
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Merge
+- uid: System.Data.IDbTransaction
+  commentId: T:System.Data.IDbTransaction
+  parent: System.Data
+  isExternal: true
+  name: IDbTransaction
+  nameWithType: IDbTransaction
+  fullName: System.Data.IDbTransaction
+- uid: System.Data
+  commentId: N:System.Data
+  isExternal: true
+  name: System.Data
+  nameWithType: System.Data
+  fullName: System.Data
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.MergeAsync*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.MergeAsync
+  name: MergeAsync
+  nameWithType: IRepoDb<TDbConnection, TEntity>.MergeAsync
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.MergeAsync
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).MergeAsync
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).MergeAsync
+- uid: Task{System.Object}
+  commentId: '!:Task{System.Object}'
+  definition: Task`1
+  name: Task<Object>
+  nameWithType: Task<Object>
+  fullName: Task<System.Object>
+  nameWithType.vb: Task(Of Object)
+  fullName.vb: Task(Of System.Object)
+  name.vb: Task(Of Object)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Insert*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.Insert
+  name: Insert
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Insert
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Insert
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Insert
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Insert
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.InsertAsync*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.InsertAsync
+  name: InsertAsync
+  nameWithType: IRepoDb<TDbConnection, TEntity>.InsertAsync
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.InsertAsync
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).InsertAsync
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).InsertAsync
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.Update*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.Update
+  name: Update
+  nameWithType: IRepoDb<TDbConnection, TEntity>.Update
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.Update
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).Update
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).Update
+- uid: Mix.RepoDb.Interfaces.IRepoDb`2.UpdateAsync*
+  commentId: Overload:Mix.RepoDb.Interfaces.IRepoDb`2.UpdateAsync
+  name: UpdateAsync
+  nameWithType: IRepoDb<TDbConnection, TEntity>.UpdateAsync
+  fullName: Mix.RepoDb.Interfaces.IRepoDb<TDbConnection, TEntity>.UpdateAsync
+  nameWithType.vb: IRepoDb(Of TDbConnection, TEntity).UpdateAsync
+  fullName.vb: Mix.RepoDb.Interfaces.IRepoDb(Of TDbConnection, TEntity).UpdateAsync

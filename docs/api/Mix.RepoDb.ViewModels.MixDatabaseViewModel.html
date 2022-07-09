@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MixDatabaseViewModel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MixDatabaseViewModel
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel">
+  
+  
+  <h1 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel" class="text-break">Class MixDatabaseViewModel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html">ViewModelBase</a>&lt;<a class="xref" href="Mix.Database.Entities.Cms.MixCmsContext.html">MixCmsContext</a>, <a class="xref" href="Mix.Database.Entities.Cms.MixDatabase.html">MixDatabase</a>, <span class="xref">System.Int32</span>, <a class="xref" href="Mix.RepoDb.ViewModels.MixDatabaseViewModel.html">MixDatabaseViewModel</a>&gt;</div>
+    <div class="level2"><a class="xref" href="Mix.RepoDb.Base.TenantDataViewModelBase-4.html">TenantDataViewModelBase</a>&lt;<a class="xref" href="Mix.Database.Entities.Cms.MixCmsContext.html">MixCmsContext</a>, <a class="xref" href="Mix.Database.Entities.Cms.MixDatabase.html">MixDatabase</a>, <span class="xref">System.Int32</span>, <a class="xref" href="Mix.RepoDb.ViewModels.MixDatabaseViewModel.html">MixDatabaseViewModel</a>&gt;</div>
+    <div class="level3"><span class="xref">MixDatabaseViewModel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Mix.Heart.ViewModel.IViewModel.html">IViewModel</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Mix.RepoDb.Base.TenantDataViewModelBase-4.html#Mix_RepoDb_Base_TenantDataViewModelBase_4_Description">TenantDataViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.RepoDb.Base.TenantDataViewModelBase-4.html#Mix_RepoDb_Base_TenantDataViewModelBase_4_Image">TenantDataViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Image</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.RepoDb.Base.TenantDataViewModelBase-4.html#Mix_RepoDb_Base_TenantDataViewModelBase_4_DisplayName">TenantDataViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.DisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.RepoDb.Base.TenantDataViewModelBase-4.html#Mix_RepoDb_Base_TenantDataViewModelBase_4_MixTenantId">TenantDataViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.MixTenantId</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.RepoDb.Base.TenantDataViewModelBase-4.html#Mix_RepoDb_Base_TenantDataViewModelBase_4_InitDefaultValues_System_String_System_Nullable_System_Int32__">TenantDataViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.InitDefaultValues(String, Nullable&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_DeleteAsync">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.DeleteAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_DeleteHandlerAsync">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.DeleteHandlerAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_SaveAsync">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.SaveAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_SaveFieldsAsync_System_Collections_Generic_IEnumerable_Mix_Heart_Models_EntityPropertyModel__">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.SaveFieldsAsync(IEnumerable&lt;EntityPropertyModel&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_SaveHandlerAsync">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.SaveHandlerAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_SaveEntityRelationshipAsync__1_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.SaveEntityRelationshipAsync(MixDatabase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_Id">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_CreatedDateTime">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.CreatedDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_LastModified">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.LastModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_CreatedBy">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.CreatedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_ModifiedBy">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.ModifiedBy</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_Priority">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Priority</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_Status">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_IsValid">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.IsValid</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_UowInfo">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.UowInfo</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_Errors">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Errors</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_Repository">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Repository</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_Context">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Context</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_ExpandView">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.ExpandView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_GetRepository_Mix_Heart_UnitOfWork_UnitOfWorkInfo_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.GetRepository(UnitOfWorkInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_GetRootRepository__0_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.GetRootRepository(MixCmsContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_Validate">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.Validate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_SetDbContext__0_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.SetDbContext(MixCmsContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_InitModel">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.InitModel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_ParseEntity">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.ParseEntity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_ParseView__1___0_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.ParseView&lt;TSource&gt;(TSource)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_IsDefaultId__2_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.IsDefaultId(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_HandleErrorsAsync">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.HandleErrorsAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_HandleExceptionAsync_System_Exception_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.HandleExceptionAsync(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_HandleException_System_Exception_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.HandleException(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_BeginUow">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.BeginUow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_SetUowInfo_Mix_Heart_UnitOfWork_UnitOfWorkInfo_">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.SetUowInfo(UnitOfWorkInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_InitRootUow">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.InitRootUow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_CloseUowAsync">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.CloseUowAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_CompleteUowAsync">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.CompleteUowAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Mix.Heart.ViewModel.ViewModelBase-4.html#Mix_Heart_ViewModel_ViewModelBase_4_InitDbContext">ViewModelBase&lt;MixCmsContext, MixDatabase, Int32, MixDatabaseViewModel&gt;.InitDbContext()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Mix.RepoDb.ViewModels.html">Mix.RepoDb.ViewModels</a></h6>
+  <h6><strong>Assembly</strong>: mix.repodb.dll</h6>
+  <h5 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MixDatabaseViewModel : TenantDataViewModelBase&lt;MixCmsContext, MixDatabase, int, MixDatabaseViewModel&gt;, IViewModel</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L23">View Source</a>
+  </span>
+  <a id="Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.#ctor*"></a>
+  <h4 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.#ctor">MixDatabaseViewModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixDatabaseViewModel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor_Mix_Database_Entities_Cms_MixDatabase_Mix_Heart_UnitOfWork_UnitOfWorkInfo_.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel.%23ctor(Mix.Database.Entities.Cms.MixDatabase%2CMix.Heart.UnitOfWork.UnitOfWorkInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L32">View Source</a>
+  </span>
+  <a id="Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.#ctor*"></a>
+  <h4 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor_Mix_Database_Entities_Cms_MixDatabase_Mix_Heart_UnitOfWork_UnitOfWorkInfo_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.#ctor(Mix.Database.Entities.Cms.MixDatabase,Mix.Heart.UnitOfWork.UnitOfWorkInfo)">MixDatabaseViewModel(MixDatabase, UnitOfWorkInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixDatabaseViewModel(MixDatabase entity, UnitOfWorkInfo uowInfo = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Cms.MixDatabase.html">MixDatabase</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.UnitOfWork.UnitOfWorkInfo.html">UnitOfWorkInfo</a></td>
+        <td><span class="parametername">uowInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor_Mix_Heart_UnitOfWork_UnitOfWorkInfo_.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel.%23ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L28">View Source</a>
+  </span>
+  <a id="Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.#ctor*"></a>
+  <h4 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel__ctor_Mix_Heart_UnitOfWork_UnitOfWorkInfo_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.#ctor(Mix.Heart.UnitOfWork.UnitOfWorkInfo)">MixDatabaseViewModel(UnitOfWorkInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixDatabaseViewModel(UnitOfWorkInfo unitOfWorkInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Heart.UnitOfWork.UnitOfWorkInfo.html">UnitOfWorkInfo</a></td>
+        <td><span class="parametername">unitOfWorkInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel_Columns.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel.Columns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L18">View Source</a>
+  </span>
+  <a id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_Columns_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.Columns*"></a>
+  <h4 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_Columns" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.Columns">Columns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MixDatabaseColumnViewModel&gt; Columns { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Mix.RepoDb.ViewModels.MixDatabaseColumnViewModel.html">MixDatabaseColumnViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel_SystemName.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel.SystemName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L13">View Source</a>
+  </span>
+  <a id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_SystemName_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.SystemName*"></a>
+  <h4 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_SystemName" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.SystemName">SystemName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Required]
+public virtual string SystemName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel_Type.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L16">View Source</a>
+  </span>
+  <a id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_Type_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.Type*"></a>
+  <h4 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_Type" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MixDatabaseType Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Constant.Enums.MixDatabaseType.html">MixDatabaseType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel_ExpandView.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel.ExpandView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L40">View Source</a>
+  </span>
+  <a id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_ExpandView_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.ExpandView*"></a>
+  <h4 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_ExpandView" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.ExpandView">ExpandView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task ExpandView()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Heart.ViewModel.ViewModelBase&lt;Mix.Database.Entities.Cms.MixCmsContext, Mix.Database.Entities.Cms.MixDatabase, System.Int32, Mix.RepoDb.ViewModels.MixDatabaseViewModel&gt;.ExpandView()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel_SaveEntityRelationshipAsync_Mix_Database_Entities_Cms_MixDatabase_.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync(Mix.Database.Entities.Cms.MixDatabase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L46">View Source</a>
+  </span>
+  <a id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_SaveEntityRelationshipAsync_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync*"></a>
+  <h4 id="Mix_RepoDb_ViewModels_MixDatabaseViewModel_SaveEntityRelationshipAsync_Mix_Database_Entities_Cms_MixDatabase_" data-uid="Mix.RepoDb.ViewModels.MixDatabaseViewModel.SaveEntityRelationshipAsync(Mix.Database.Entities.Cms.MixDatabase)">SaveEntityRelationshipAsync(MixDatabase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task SaveEntityRelationshipAsync(MixDatabase parentEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Mix.Database.Entities.Cms.MixDatabase.html">MixDatabase</a></td>
+        <td><span class="parametername">parentEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Mix.Heart.ViewModel.ViewModelBase&lt;Mix.Database.Entities.Cms.MixCmsContext, Mix.Database.Entities.Cms.MixDatabase, System.Int32, Mix.RepoDb.ViewModels.MixDatabaseViewModel&gt;.SaveEntityRelationshipAsync(Mix.Database.Entities.Cms.MixDatabase)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Mix.Heart.ViewModel.IViewModel.html">IViewModel</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/new/develop/apiSpec/new?filename=Mix_RepoDb_ViewModels_MixDatabaseViewModel.md&amp;value=---%0Auid%3A%20Mix.RepoDb.ViewModels.MixDatabaseViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mixcore/mix.core/blob/develop/src/platform/mix.repodb/ViewModels/MixDatabaseViewModel.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <h5>In This Article</h5>
+              <div></div>
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <div class="pull-left">
+              
+              <span>Generated by <strong>DocFX</strong></span>
+            </div>
+            <div class="toggle-mode pull-right visible-sm visible-xs">
+              <div class="icon">
+                <i aria-hidden="true">☀</i>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="switch-style-m">
+                <span class="slider round"></span>
+              </label>
+              <div class="icon">
+                <i aria-hidden="true">☾</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

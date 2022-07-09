@@ -11,6 +11,7 @@ items:
   - Mix.Lib.Helpers.MixHelper.HandleException``1(``0,Exception)
   - Mix.Lib.Helpers.MixHelper.IsDefaultId``1(``0)
   - Mix.Lib.Helpers.MixHelper.LoadEnumValues(Type)
+  - Mix.Lib.Helpers.MixHelper.MixCli(System.String[])
   - Mix.Lib.Helpers.MixHelper.ParseEnumToObject(Type)
   - Mix.Lib.Helpers.MixHelper.SerializeObject(System.Object)
   langs:
@@ -27,7 +28,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: MixHelper
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -68,7 +69,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: CreateHostBuilder
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 13
+    startLine: 20
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -94,6 +95,44 @@ items:
   - Shared
   fullName.vb: Mix.Lib.Helpers.MixHelper.CreateHostBuilder(Of Startup)(System.String())
   name.vb: CreateHostBuilder(Of Startup)(String())
+- uid: Mix.Lib.Helpers.MixHelper.MixCli(System.String[])
+  commentId: M:Mix.Lib.Helpers.MixHelper.MixCli(System.String[])
+  id: MixCli(System.String[])
+  parent: Mix.Lib.Helpers.MixHelper
+  langs:
+  - csharp
+  - vb
+  name: MixCli(String[])
+  nameWithType: MixHelper.MixCli(String[])
+  fullName: Mix.Lib.Helpers.MixHelper.MixCli(System.String[])
+  type: Method
+  source:
+    remote:
+      path: src/platform/mix.library/Helpers/MixHelper.cs
+      branch: develop
+      repo: https://github.com/mixcore/mix.core.git
+    id: MixCli
+    path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
+    startLine: 58
+  assemblies:
+  - mix.library
+  namespace: Mix.Lib.Helpers
+  syntax:
+    content: public static void MixCli(string[] args)
+    parameters:
+    - id: args
+      type: System.String[]
+    content.vb: Public Shared Sub MixCli(args As String())
+  overload: Mix.Lib.Helpers.MixHelper.MixCli*
+  nameWithType.vb: MixHelper.MixCli(String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Mix.Lib.Helpers.MixHelper.MixCli(System.String())
+  name.vb: MixCli(String())
 - uid: Mix.Lib.Helpers.MixHelper.CopyFolder(System.String,System.String)
   commentId: M:Mix.Lib.Helpers.MixHelper.CopyFolder(System.String,System.String)
   id: CopyFolder(System.String,System.String)
@@ -112,7 +151,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: CopyFolder
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 45
+    startLine: 99
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -151,7 +190,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: IsDefaultId
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 67
+    startLine: 121
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -193,7 +232,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: SerializeObject
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 72
+    startLine: 126
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -230,7 +269,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: GetFileModel
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 87
+    startLine: 141
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -269,7 +308,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: ParseEnumToObject
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 97
+    startLine: 151
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -306,7 +345,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: LoadEnumValues
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 108
+    startLine: 162
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -343,7 +382,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: HandleException
     path: ../../mix.core/src/platform/mix.library/Helpers/MixHelper.cs
-    startLine: 119
+    startLine: 173
   assemblies:
   - mix.library
   namespace: Mix.Lib.Helpers
@@ -709,6 +748,11 @@ references:
   name: Microsoft.Extensions.Hosting
   nameWithType: Microsoft.Extensions.Hosting
   fullName: Microsoft.Extensions.Hosting
+- uid: Mix.Lib.Helpers.MixHelper.MixCli*
+  commentId: Overload:Mix.Lib.Helpers.MixHelper.MixCli
+  name: MixCli
+  nameWithType: MixHelper.MixCli
+  fullName: Mix.Lib.Helpers.MixHelper.MixCli
 - uid: Mix.Lib.Helpers.MixHelper.CopyFolder*
   commentId: Overload:Mix.Lib.Helpers.MixHelper.CopyFolder
   name: CopyFolder
@@ -787,9 +831,9 @@ references:
   name: List<Object>
   nameWithType: List<Object>
   fullName: List<System.Object>
-  nameWithType.vb: List(Of Object)
-  fullName.vb: List(Of System.Object)
-  name.vb: List(Of Object)
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
   spec.csharp:
   - uid: List`1
     name: List
@@ -803,7 +847,6 @@ references:
     name: Object
     nameWithType: Object
     fullName: System.Object
-    isExternal: true
   - name: '>'
     nameWithType: '>'
     fullName: '>'
@@ -816,11 +859,6 @@ references:
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
   - name: )
     nameWithType: )
     fullName: )

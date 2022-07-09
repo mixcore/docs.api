@@ -5,7 +5,7 @@ items:
   id: MixThemeImportService
   parent: Mix.Lib.Services
   children:
-  - Mix.Lib.Services.MixThemeImportService.#ctor(MixCmsContext,Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  - Mix.Lib.Services.MixThemeImportService.#ctor(UnitOfWorkInfo{MixCmsContext},Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Services.DatabaseService)
   - Mix.Lib.Services.MixThemeImportService.DownloadThemeAsync(JObject,IProgress{System.Int32},HttpService)
   - Mix.Lib.Services.MixThemeImportService.ExtractTheme(Microsoft.AspNetCore.Http.IFormFile)
   - Mix.Lib.Services.MixThemeImportService.ImportSelectedItemsAsync(SiteDataViewModel)
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: tenantId
     path: ../../mix.core/src/platform/mix.library/Services/MixThemeImportService.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - mix.library
   namespace: Mix.Lib.Services
@@ -81,16 +81,16 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: Mix.Lib.Services.MixThemeImportService.#ctor(MixCmsContext,Microsoft.AspNetCore.Http.IHttpContextAccessor)
-  commentId: M:Mix.Lib.Services.MixThemeImportService.#ctor(MixCmsContext,Microsoft.AspNetCore.Http.IHttpContextAccessor)
-  id: '#ctor(MixCmsContext,Microsoft.AspNetCore.Http.IHttpContextAccessor)'
+- uid: Mix.Lib.Services.MixThemeImportService.#ctor(UnitOfWorkInfo{MixCmsContext},Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Services.DatabaseService)
+  commentId: M:Mix.Lib.Services.MixThemeImportService.#ctor(UnitOfWorkInfo{MixCmsContext},Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Services.DatabaseService)
+  id: '#ctor(UnitOfWorkInfo{MixCmsContext},Microsoft.AspNetCore.Http.IHttpContextAccessor,Mix.Database.Services.DatabaseService)'
   parent: Mix.Lib.Services.MixThemeImportService
   langs:
   - csharp
   - vb
-  name: MixThemeImportService(MixCmsContext, IHttpContextAccessor)
-  nameWithType: MixThemeImportService.MixThemeImportService(MixCmsContext, IHttpContextAccessor)
-  fullName: Mix.Lib.Services.MixThemeImportService.MixThemeImportService(MixCmsContext, Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name: MixThemeImportService(UnitOfWorkInfo<MixCmsContext>, IHttpContextAccessor, DatabaseService)
+  nameWithType: MixThemeImportService.MixThemeImportService(UnitOfWorkInfo<MixCmsContext>, IHttpContextAccessor, DatabaseService)
+  fullName: Mix.Lib.Services.MixThemeImportService.MixThemeImportService(UnitOfWorkInfo<MixCmsContext>, Microsoft.AspNetCore.Http.IHttpContextAccessor, Mix.Database.Services.DatabaseService)
   type: Constructor
   source:
     remote:
@@ -99,23 +99,28 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: .ctor
     path: ../../mix.core/src/platform/mix.library/Services/MixThemeImportService.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - mix.library
   namespace: Mix.Lib.Services
   syntax:
-    content: public MixThemeImportService(MixCmsContext cmsContext, IHttpContextAccessor httpContext)
+    content: public MixThemeImportService(UnitOfWorkInfo<MixCmsContext> uow, IHttpContextAccessor httpContext, DatabaseService databaseService)
     parameters:
-    - id: cmsContext
-      type: MixCmsContext
+    - id: uow
+      type: UnitOfWorkInfo{MixCmsContext}
     - id: httpContext
       type: Microsoft.AspNetCore.Http.IHttpContextAccessor
-    content.vb: Public Sub New(cmsContext As MixCmsContext, httpContext As IHttpContextAccessor)
+    - id: databaseService
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Public Sub New(uow As UnitOfWorkInfo(Of MixCmsContext), httpContext As IHttpContextAccessor, databaseService As DatabaseService)
   overload: Mix.Lib.Services.MixThemeImportService.#ctor*
+  nameWithType.vb: MixThemeImportService.MixThemeImportService(UnitOfWorkInfo(Of MixCmsContext), IHttpContextAccessor, DatabaseService)
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
+  fullName.vb: Mix.Lib.Services.MixThemeImportService.MixThemeImportService(UnitOfWorkInfo(Of MixCmsContext), Microsoft.AspNetCore.Http.IHttpContextAccessor, Mix.Database.Services.DatabaseService)
+  name.vb: MixThemeImportService(UnitOfWorkInfo(Of MixCmsContext), IHttpContextAccessor, DatabaseService)
 - uid: Mix.Lib.Services.MixThemeImportService.DownloadThemeAsync(JObject,IProgress{System.Int32},HttpService)
   commentId: M:Mix.Lib.Services.MixThemeImportService.DownloadThemeAsync(JObject,IProgress{System.Int32},HttpService)
   id: DownloadThemeAsync(JObject,IProgress{System.Int32},HttpService)
@@ -134,7 +139,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: DownloadThemeAsync
     path: ../../mix.core/src/platform/mix.library/Services/MixThemeImportService.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - mix.library
   namespace: Mix.Lib.Services
@@ -176,7 +181,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: LoadSchema
     path: ../../mix.core/src/platform/mix.library/Services/MixThemeImportService.cs
-    startLine: 59
+    startLine: 62
   assemblies:
   - mix.library
   namespace: Mix.Lib.Services
@@ -208,7 +213,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: ExtractTheme
     path: ../../mix.core/src/platform/mix.library/Services/MixThemeImportService.cs
-    startLine: 66
+    startLine: 69
   assemblies:
   - mix.library
   namespace: Mix.Lib.Services
@@ -241,7 +246,7 @@ items:
       repo: https://github.com/mixcore/mix.core.git
     id: ImportSelectedItemsAsync
     path: ../../mix.core/src/platform/mix.library/Services/MixThemeImportService.cs
-    startLine: 86
+    startLine: 89
   assemblies:
   - mix.library
   namespace: Mix.Lib.Services
@@ -568,11 +573,49 @@ references:
   name: MixThemeImportService
   nameWithType: MixThemeImportService.MixThemeImportService
   fullName: Mix.Lib.Services.MixThemeImportService.MixThemeImportService
-- uid: MixCmsContext
-  isExternal: true
-  name: MixCmsContext
-  nameWithType: MixCmsContext
-  fullName: MixCmsContext
+- uid: UnitOfWorkInfo{MixCmsContext}
+  commentId: '!:UnitOfWorkInfo{MixCmsContext}'
+  definition: UnitOfWorkInfo`1
+  name: UnitOfWorkInfo<MixCmsContext>
+  nameWithType: UnitOfWorkInfo<MixCmsContext>
+  fullName: UnitOfWorkInfo<MixCmsContext>
+  nameWithType.vb: UnitOfWorkInfo(Of MixCmsContext)
+  fullName.vb: UnitOfWorkInfo(Of MixCmsContext)
+  name.vb: UnitOfWorkInfo(Of MixCmsContext)
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MixCmsContext
+    name: MixCmsContext
+    nameWithType: MixCmsContext
+    fullName: MixCmsContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
   commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
   parent: Microsoft.AspNetCore.Http
@@ -580,12 +623,61 @@ references:
   name: IHttpContextAccessor
   nameWithType: IHttpContextAccessor
   fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
+  parent: Mix.Database.Services
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
+- uid: UnitOfWorkInfo`1
+  isExternal: true
+  name: UnitOfWorkInfo<>
+  nameWithType: UnitOfWorkInfo<>
+  fullName: UnitOfWorkInfo<>
+  nameWithType.vb: UnitOfWorkInfo(Of )
+  fullName.vb: UnitOfWorkInfo(Of )
+  name.vb: UnitOfWorkInfo(Of )
+  spec.csharp:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: UnitOfWorkInfo`1
+    name: UnitOfWorkInfo
+    nameWithType: UnitOfWorkInfo
+    fullName: UnitOfWorkInfo
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: Microsoft.AspNetCore.Http
   commentId: N:Microsoft.AspNetCore.Http
   isExternal: true
   name: Microsoft.AspNetCore.Http
   nameWithType: Microsoft.AspNetCore.Http
   fullName: Microsoft.AspNetCore.Http
+- uid: Mix.Database.Services
+  commentId: N:Mix.Database.Services
+  name: Mix.Database.Services
+  nameWithType: Mix.Database.Services
+  fullName: Mix.Database.Services
 - uid: Mix.Lib.Services.MixThemeImportService.DownloadThemeAsync*
   commentId: Overload:Mix.Lib.Services.MixThemeImportService.DownloadThemeAsync
   name: DownloadThemeAsync

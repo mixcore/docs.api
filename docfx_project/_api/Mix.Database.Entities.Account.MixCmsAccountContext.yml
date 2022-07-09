@@ -6,7 +6,7 @@ items:
   parent: Mix.Database.Entities.Account
   children:
   - Mix.Database.Entities.Account.MixCmsAccountContext.#ctor
-  - Mix.Database.Entities.Account.MixCmsAccountContext.#ctor(Mix.Database.Services.MixDatabaseService)
+  - Mix.Database.Entities.Account.MixCmsAccountContext.#ctor(Mix.Database.Services.DatabaseService)
   - Mix.Database.Entities.Account.MixCmsAccountContext.AspNetRoleClaims
   - Mix.Database.Entities.Account.MixCmsAccountContext.AspNetUserClaims
   - Mix.Database.Entities.Account.MixCmsAccountContext.AspNetUserLogins
@@ -456,16 +456,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Mix.Database.Entities.Account.MixCmsAccountContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  commentId: M:Mix.Database.Entities.Account.MixCmsAccountContext.#ctor(Mix.Database.Services.MixDatabaseService)
-  id: '#ctor(Mix.Database.Services.MixDatabaseService)'
+- uid: Mix.Database.Entities.Account.MixCmsAccountContext.#ctor(Mix.Database.Services.DatabaseService)
+  commentId: M:Mix.Database.Entities.Account.MixCmsAccountContext.#ctor(Mix.Database.Services.DatabaseService)
+  id: '#ctor(Mix.Database.Services.DatabaseService)'
   parent: Mix.Database.Entities.Account.MixCmsAccountContext
   langs:
   - csharp
   - vb
-  name: MixCmsAccountContext(MixDatabaseService)
-  nameWithType: MixCmsAccountContext.MixCmsAccountContext(MixDatabaseService)
-  fullName: Mix.Database.Entities.Account.MixCmsAccountContext.MixCmsAccountContext(Mix.Database.Services.MixDatabaseService)
+  name: MixCmsAccountContext(DatabaseService)
+  nameWithType: MixCmsAccountContext.MixCmsAccountContext(DatabaseService)
+  fullName: Mix.Database.Entities.Account.MixCmsAccountContext.MixCmsAccountContext(Mix.Database.Services.DatabaseService)
   type: Constructor
   source:
     remote:
@@ -481,11 +481,11 @@ items:
   summary: "\nInitializes a new instance of the <xref href=\"Mix.Database.Entities.Account.MixCmsAccountContext\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
   example: []
   syntax:
-    content: public MixCmsAccountContext(MixDatabaseService databaseService)
+    content: public MixCmsAccountContext(DatabaseService databaseService)
     parameters:
     - id: databaseService
-      type: Mix.Database.Services.MixDatabaseService
-    content.vb: Public Sub New(databaseService As MixDatabaseService)
+      type: Mix.Database.Services.DatabaseService
+    content.vb: Public Sub New(databaseService As DatabaseService)
   overload: Mix.Database.Entities.Account.MixCmsAccountContext.#ctor*
   modifiers.csharp:
   - public
@@ -1121,12 +1121,12 @@ references:
   name: MixCmsAccountContext
   nameWithType: MixCmsAccountContext
   fullName: Mix.Database.Entities.Account.MixCmsAccountContext
-- uid: Mix.Database.Services.MixDatabaseService
-  commentId: T:Mix.Database.Services.MixDatabaseService
+- uid: Mix.Database.Services.DatabaseService
+  commentId: T:Mix.Database.Services.DatabaseService
   parent: Mix.Database.Services
-  name: MixDatabaseService
-  nameWithType: MixDatabaseService
-  fullName: Mix.Database.Services.MixDatabaseService
+  name: DatabaseService
+  nameWithType: DatabaseService
+  fullName: Mix.Database.Services.DatabaseService
 - uid: Mix.Database.Services
   commentId: N:Mix.Database.Services
   name: Mix.Database.Services
